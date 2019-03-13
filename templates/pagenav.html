@@ -1,0 +1,19 @@
+<div class="container-fluid  border-bottom border-light">
+  <div class="row flex-xl-nowrap {{ bag('alternatives', this.alt, 'order') }}">
+    <div class="row col-12 justify-content-center">
+      <ul class="nav">
+        {% set menubag = this.section_id + '+' + this.alt %}
+        {% for id, item in bag(menubag).items() %}
+        <li{% if this.path == '/' + item.path %} class="nav-item active border-active" {% else %} class="nav-item" {% endif %}>
+          {% set item_path = site.get(item.path) %}
+          <a class="nav-link" href="{{ this.url_to(item_path) }}">{{ item.label }}
+          {% if this.path == '/' + item.path %}
+            <span class="sr-only">(current)</span>
+          {% endif %}
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>

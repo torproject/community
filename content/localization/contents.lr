@@ -1,0 +1,17 @@
+section: localization
+---
+section_id: localization
+---
+color: primary
+---
+_template: jumbotron.html
+---
+title: Join the Tor Community
+---
+subtitle: We want Tor to work for everyone in the world, which means a lot of languages. Will you help us to translate?
+---
+key: 5
+---
+html: localization.html
+---
+body:

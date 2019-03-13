@@ -1,0 +1,21 @@
+[project]
+name = Tor Community Website
+url = https://community.torproject.org/
+url_style = relative
+locale = en_US
+
+[alternatives.en]
+name = English
+primary = yes
+url_prefix = /
+locale = en_US
+
+[alternatives.es]
+name = Español
+url_prefix = /es/
+locale = es
+
+[alternatives.fr]
+name = Français
+url_prefix = /fr/
+locale = fr

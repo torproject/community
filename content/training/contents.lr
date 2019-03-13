@@ -1,0 +1,17 @@
+section: training
+---
+section_id: training
+---
+color: primary
+---
+_template: jumbotron.html
+---
+title: Training
+---
+subtitle: Do you teach your community about using Tor? These resources are for you.
+---
+key: 3
+---
+html: training.html
+---
+body:

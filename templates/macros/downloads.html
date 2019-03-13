@@ -1,0 +1,48 @@
+{% macro render_windows(version, alt) %}
+  {% set download_prefix = 'https://www.torproject.org/dist/torbrowser/' + version + '/' %}
+  {% if alt == 'en' %}
+    {% set alt = 'en-US' %}
+  {% endif %}
+  {% set download_link_64 = download_prefix + 'torbrowser-install-win64-' + version + '_' + alt + '.exe' %}
+  {% set download_link_32 = download_prefix + 'torbrowser-install-' + version + '_' + alt + '.exe' %}
+  {% set sig_link_64 = download_link_64 + '.asc' %}
+  {% set sig_link_32 = download_link_32 + '.asc' %}
+
+  <a class="downloadLink" href="{{ download_link_32 }}">32-bit</a> (<a href="{{ sig_link_32 }}">sig</a>) / <a href="{{ download_link_32 }}">64-bit</a> (<a href="{{ sig_link_64 }}">sig<a/>)
+{% endmacro %}
+
+{% macro render_mac(version, alt) %}
+  {% set download_prefix = 'https://www.torproject.org/dist/torbrowser/' + version + '/' %}
+  {% if alt == 'en' %}
+    {% set alt = 'en-US' %}
+  {% endif %}
+  {% set download_link = download_prefix + 'TorBrowser-' + version + '-osx64' + '_' + alt + '.dmg' %}
+  {% set sig_link = download_link + '.asc' %}
+
+  <a class="downloadLink" href="{{ download_link }}">64-bit</a> (<a href="{{ sig_link }}">sig</a>)
+{% endmacro %}
+
+{% macro render_linux(version, alt) %}
+  {% set download_prefix = 'https://www.torproject.org/dist/torbrowser/' + version + '/' %}
+  {% if alt == 'en' %}
+    {% set alt = 'en-US' %}
+  {% endif %}
+  {% set download_link_64 = download_prefix + 'tor-browser-linux64-' + version + '_' + alt + '.tar.xz' %}
+  {% set download_link_32 = download_prefix + 'tor-browser-linux32-' + version + '_' + alt + '.tar.xz' %}
+  {% set sig_link_64 = download_link_64 + '.asc' %}
+  {% set sig_link_32 = download_link_32 + '.asc' %}
+
+  <a class="downloadLink" href="{{ download_link_32 }}">32-bit</a> (<a href="{{ sig_link_32 }}">sig</a>) / <a href="{{ download_link_32 }}">64-bit</a> (<a href="{{ sig_link_64 }}">sig<a/>)
+{% endmacro %}
+
+{% macro render_fdroid() %}
+  <small class="badge-pill badge-dark mx-1 nick">S00N</small>
+{% endmacro %}
+
+{% macro render_onion_browser() %}
+  <a class="mx-auto" href=""><u>Onion Browser.</u></a>
+{% endmacro %}
+
+{% macro render_tor_browser_manual() %}
+  <a class="mx-auto" href="https://tb-manual.torproject.org" target="_blank"><u>tor browser manual</u></a>
+{% endmacro %}

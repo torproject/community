@@ -1,0 +1,27 @@
+{% if this.color == 'primary' %}
+<div class="container-fluid bg-primary">
+{% else %}
+<div class="container-fluid bg-dark">
+{% endif %}
+  <div class="row flex-xl-nowrap {{ bag('alternatives', this.alt, 'order') }}">
+    {% if this.color == 'primary' %}
+    <div class="container bg-primary pt-5">
+    {% else %}
+    <div class="container bg-dark pt-5">
+    {% endif %}
+      <div class="row">
+        <div class="col-12 content-center pt-5">
+          <div class="row">
+            <h6 class="mx-auto text-white text-uppercase">{% block section %}{{ this.section }}{% endblock %}</h6>
+          </div>
+          <div class="row pb-5">
+            <h2 class="mx-auto display-3 text-white text-capitalize">{% block title %}{{ this.title }}{% endblock %}</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% if this.section_id == 'about' %}
+  {% include 'pagenav.html' %}
+{% endif %}

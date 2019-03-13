@@ -1,0 +1,19 @@
+{% macro render_release(item, alternative) %}
+<div class="card mx-auto" style="width: 365px; height: 485px;">
+  <img class="card-img-top" src="{{ '/static/images/index.svg'|asseturl }}" alt="Card image cap">
+  <div class="card-body">
+    <div class="card-title">
+      <a class="h4 text-primary" href="{{ item.link }}">{{ item.title }}</a>
+    </div>
+    <p class="card-text description">{{ item.summary }}</p>
+  </div>
+</div>
+{% endmacro %}
+
+{% macro render_snippet(item, alternative) %}
+<tr>
+  <th scope="row">{{ item.pub_date }}</th>
+  <td>{{ item.publisher }}</td>
+  <td><a class="h5 text-primary" href="{{ item.link }}">{{ item.title }}</a></td>
+</tr>
+{% endmacro %}

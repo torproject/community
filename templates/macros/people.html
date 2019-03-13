@@ -1,0 +1,49 @@
+{% macro render_board(item, alternative) %}
+  <div class="col-md-6 col-sm-12 col-xl-3 my-4">
+    <div class="card h-100 my-2">
+      <div class="card-body">
+        <h5 class="card-title human-name">{{ item.name }}</h5>
+        <h6 class="card-subtitle mb-2 text-primary nick text-capitalize">{{ item.title }}</h6>
+        <h6 class="card-subtitle mb-2 text-primary nick text-capitalize">{{ item.nickname }}{% if item.twitter_handle %} - <a href="https://twitter.com/{{ item.twitter_handle }}">@{{ item.twitter_handle }}</a>{% endif %}</h6>
+        {{ item.description }}
+      </div>
+    </div>
+  </div>
+{% endmacro %}
+
+{% macro render_core(item, alternative) %}
+  <div class="col-md-6 col-sm-12 col-xl-3 my-3">
+    <div class="card h-100">
+      <div class="card-header bg-white border-0">
+        {% if item.image %}
+          <picture>
+            <img src="{{ item.image|asseturl }}" class="rounded-circle float-left image-thumb" alt="{{ item.nickname }}">
+        {% else %}
+          <img src="{{ '/static/images/people/no_photo.png'|asseturl }}" class="rounded-circle float-left image-thumb" alt="no-photo">
+        {% endif %}
+        {% if item.twitter_handle %}
+          <a class="float-right py-4 px-2" href="https://twitter.com/{{ item.twitter_handle }}"><i class="fab fa-twitter"></i></a>
+        {% endif %}
+        {% if item.gpg %}
+          {% set link = site.get(item.gpg) %}
+          {% if link %}
+            <a class="float-right py-4 px-2" href="{{ item.gpg|asseturl }}">
+          {% else %}
+            <a class="float-right py-4 px-2" href="{{ item.gpg }}">
+          {% endif %}
+          <i class="fas fa-key"></i></a>
+        {% endif %}
+      </div>
+      <div class="card-body">
+      <h5 class="card-title human-name">{{ item.name }}</h5>
+      {% if item.pronoun %}
+        <h6 class="nick text-primary m-0">PRO:{{ item.pronoun }}</h6>
+      {% endif %}
+      {% if item.nickname %}
+        <label class="nick text-primary">IRC:{{ item.nickname }}</label>
+      {% endif %}
+      {{ item.description }}
+    </div>
+    </div>
+  </div>
+{% endmacro %}

@@ -1,0 +1,17 @@
+section: community
+---
+section_id: community
+---
+color: primary
+---
+_template: jumbotron.html
+---
+title: Join the Tor Community
+---
+subtitle: Our community is made up of human rights defenders around the world.
+---
+html: home.html
+---
+body:
+
+The Tor community is made up of all kinds of contributors. Some people write documentation and bug reports, while others hold Tor events and conduct outreach. Whether you have a lot of time to volunteer or a little, and whether you consider yourself technical or not, we want you to join our community, too. Below you'll find some different ways to volunteer with the Tor community as well as resources to help you help Tor.

@@ -1,0 +1,153 @@
+/* TPO Styles
+*
+*/
+
+#sidenav-topics .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #7D4698;
+    background-color: #fff;
+    font-weight: bold;
+}
+
+#wrapper {
+  width: 100%;
+  position: relative !important;
+  bottom: 0;
+}
+
+.shape {
+  padding: 35%;
+}
+.page {
+  padding-top: 7rem !important;
+}
+
+.section-nav {
+  padding-top: 0 !important;
+  border: 0 !important;
+}
+
+.toc-entry a:hover {
+  color: $purple !important;
+}
+
+.footer {
+  position: relative;
+  z-index:99999999999;
+  a.text-light:hover {
+    color: #fff !important;
+  }
+}
+
+.footer a.nav-link {
+  padding: 0.2rem;
+}
+
+footer .border{
+  border: 0 !important;
+  border-bottom: 1px solid rgba(255,255,255,0.3) !important;
+}
+
+main{
+  padding-bottom: 5em;
+}
+
+.window-bg {
+  background-image: url("images/tb85/tb85@2x.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.onion-bg{
+  background: url("images/circle-pattern.png");
+  background-color: rgba(0, 0, 0, 0);
+  background-position-x: -85%;
+  background-repeat: no-repeat;
+  background-size: 65%;
+}
+
+
+@include media-breakpoint-down(sm) {
+   .display-4 {
+     font-size: 2rem;
+   }
+   .toc-entry a {
+       display: block;
+       padding: 0.4rem 0 !important;
+       font-size: 1.3rem;
+   }
+ }
+
+.defend {
+  color: #FFFFFF;
+  font-family: Source Sans Pro;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 35px;
+  opacity: 0.699999988079071;
+  width: 822px;
+  text-align: center;
+ }
+
+.btn-shadow {
+  box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.20000000298023224);
+  opacity: 0.8;
+  border: 2px solid #FFFFFF;
+  border-radius: 2px;
+ }
+
+ .oval {
+  background-color: #D8D8D8;
+  border-radius: 100%;
+  width: 390px;
+  height: 390px;
+}
+
+ .oval-2 {
+  background-color: #D8D8D8;
+  border-radius: 100%;
+  width: 150px;
+  height: 150px;
+}
+
+.oval-3 {
+    background-color: #D8D8D8;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+}
+
+.oval-2 i{
+   font-size: 5em;
+   padding: 0.4em 0.5em;
+   text-align: center;
+ }
+
+.oval-3 i {
+  padding: 1em;
+}
+
+.oval-right {
+  float: right;
+}
+
+.hero > p{
+  color: #484848;
+  font-family: Source Sans Pro Light;
+  font-size: 60px;
+  line-height: 72px;
+  text-align: left;
+}
+
+ @include media-breakpoint-up(md) {
+ }
+
+ @include media-breakpoint-up(lg) {
+
+ }
+
+.row--limit-overflow {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  left: -($grid-gutter-width/2);
+}
