@@ -4,7 +4,7 @@ section_id: relay-operations
 ---
 color: primary
 ---
-_template: jumbotron.html
+_template: layout.html
 ---
 title: Relay Operations
 ---

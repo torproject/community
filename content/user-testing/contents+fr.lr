@@ -4,7 +4,7 @@ section_id: user-testing
 ---
 color: primary
 ---
-_template: jumbotron.html
+_template: layout.html
 ---
 title: User Testing
 ---

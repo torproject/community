@@ -4,7 +4,7 @@ section_id: onion-services
 ---
 color: primary
 ---
-_template: jumbotron.html
+_template: layout.html
 ---
 title: .onion Services
 ---

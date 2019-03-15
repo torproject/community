@@ -4,7 +4,7 @@ section_id: outreach
 ---
 color: primary
 ---
-_template: jumbotron.html
+_template: layout.html
 ---
 title: Outreach
 ---
