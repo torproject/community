@@ -1,0 +1,17 @@
+section: relay operations
+---
+section_id: relay-operations
+---
+color: primary
+---
+_template: layout.html
+---
+title: Types of relays on the Tor network
+---
+subtitle: Bridges, guards, middle relays, and exits all serve important functions in the Tor network. Learn about the different relays you can run.
+---
+key: 1
+---
+html: relay-operations.html
+---
+body:

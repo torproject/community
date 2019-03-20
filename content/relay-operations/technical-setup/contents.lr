@@ -1,0 +1,17 @@
+section: relay operations
+---
+section_id: relay-operations
+---
+color: primary
+---
+_template: layout.html
+---
+title: Technical setup
+---
+subtitle: Installing and configuring your Tor relay. 
+---
+key: 3
+---
+html: relay-operations.html
+---
+body:

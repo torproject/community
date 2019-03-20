@@ -1,0 +1,17 @@
+section: relay operations
+---
+section_id: relay-operations
+---
+color: primary
+---
+_template: layout.html
+---
+title: Relays requirements
+---
+subtitle: Requirements for Tor relays depend on the type of relay and the bandwidth they provide.  Learn more about specific relay requirements. 
+---
+key: 2
+---
+html: relay-operations.html
+---
+body:
