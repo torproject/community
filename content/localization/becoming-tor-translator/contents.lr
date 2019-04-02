@@ -1,0 +1,17 @@
+section: localization
+---
+section_id: localization
+---
+color: primary
+---
+_template: layout.html
+---
+title: Becoming Tor translator
+---
+subtitle: 
+---
+key: 5
+---
+html: localization.html
+---
+body:
