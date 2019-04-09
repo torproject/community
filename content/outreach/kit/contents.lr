@@ -1,0 +1,17 @@
+section: outreach
+---
+section_id: outreach
+---
+color: primary
+---
+_template: layout.html
+---
+title: Stream team kit
+---
+subtitle: This kit includes printable flyers, stickers, and other materials to get people excited about using Tor.
+---
+key: 1
+---
+html: outreach.html
+---
+body:

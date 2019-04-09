@@ -1,0 +1,17 @@
+section: outreach
+---
+section_id: outreach
+---
+color: primary
+---
+_template: layout.html
+---
+title: Talk about Tor
+---
+subtitle: Here you'll find materials on basic Tor explainers and concepts, ideas for preparing a Tor talk, suggested social media posts, and more. 
+---
+key: 2
+---
+html: outreach.html
+---
+body:

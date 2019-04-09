@@ -1,0 +1,17 @@
+section: outreach
+---
+section_id: outreach
+---
+color: primary
+---
+_template: layout.html
+---
+title: Tor Speakers Bureau
+---
+subtitle: We have a dedicated group of Tor core contributors who are ready to speak at your next event. You can request a speaker by contacting speaking@torproject.org with your preferred topic, language requirement, date, and other details.
+---
+key: 3
+---
+html: outreach.html
+---
+body:
