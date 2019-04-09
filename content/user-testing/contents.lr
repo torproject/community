@@ -8,10 +8,14 @@ _template: layout.html
 ---
 title: User Testing
 ---
-subtitle: We conduct user reaserch while also respecting user privacy. Learn how you can help.
+subtitle: We conduct user research while also respecting user privacy. Learn how you can help.
 ---
 key: 2
 ---
 html: user-testing.html
 ---
 body:
+
+Protecting privacy is what we do at Tor. So how do we collect meaningful user
+feedback without violating user consent? We conduct all of our user research
+through in-person studies that users explicitly opt into.
