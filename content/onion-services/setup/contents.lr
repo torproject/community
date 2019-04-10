@@ -1,0 +1,19 @@
+section: onion services
+---
+section_id: onion-services
+---
+color: primary
+---
+image: cloud-upload-alt
+---
+_template: layout.html
+---
+title: Set up your .onion Service
+---
+subtitle: Learn how to set up a .onion of your very own.
+---
+key: 1
+---
+html: onion-services.html
+---
+body:

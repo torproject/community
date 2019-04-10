@@ -6,11 +6,11 @@ color: primary
 ---
 _template: layout.html
 ---
-title: Becoming Tor translator
+title: Translate strings
 ---
-subtitle: Pictures and instructions ... 
+subtitle: How to do this ...
 ---
-key: 1
+key: 3
 ---
 html: localization.html
 ---

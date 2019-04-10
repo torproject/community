@@ -15,3 +15,5 @@ key: 6
 html: onion-services.html
 ---
 body:
+
+Onion services are services that can only be accessed over Tor. Running an onion service gives your users all the security of HTTPS with the added privacy benefits of Tor Browser.

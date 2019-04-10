@@ -1,0 +1,78 @@
+<div class="container py-5">
+  <h2 class="text-primary">{{ _('Localization is how we reach a global community.') }}</h2>
+  <div class="row py-5">
+    <div class="col-8">
+      {{ this.body }}
+    </div>
+    <div class="col-4 bg-light">
+      <p>Illustration area</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6 col-md-6 col-sm-12 col-xl-6 py-4">
+      <h4 class="text-primary text-uppercase">Tier 1</h4>
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">{{ _('Language') }}</th>
+            <th scope="col">{{ _('Projects supported') }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{{ _('English') }}</td>
+            <td>{{ _('Tor Browser, Website') }}</td>
+          </tr>
+          <tr>
+            <td>{{ _('German') }}</td>
+            <td>{{ _('Tor Browser, Website') }}</td>
+          </tr>
+          <tr>
+            <td>{{ _('French') }}</td>
+            <td>{{ _('Tor Browser, Website') }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-sm-6 col-md-6 col-sm-12 col-xl-6 py-4">
+      <h4 class="text-primary text-uppercase">Tier 2</h4>
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">{{ _('Language') }}</th>
+            <th scope="col">{{ _('Projects supported') }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{{ _('Portuguese') }}</td>
+            <td>{{ _('Tor Browser, Website') }}</td>
+          </tr>
+          <tr>
+            <td>{{ _('Arabic') }}</td>
+            <td>{{ _('Tor Browser, Website') }}</td>
+          </tr>
+          <tr>
+            <td>{{ _('Greek') }}</td>
+            <td>{{ _('Tor Browser, Website') }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="row">
+    {% for child in this.children|sort(attribute='key') %}
+      <div class="col-sm-6 col-md-6 col-sm-12 col-xl-6 py-4">
+        <div class="card h-100 border-0">
+          <div class="card-body">
+            <div class="card-body">
+              <h4 class="text-primary">.{{ child.key }}</h4>
+              <h4 class="card-title text-primary">{{ child.title }}</h4>
+              <p class="card-text">{{ child.subtitle }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
