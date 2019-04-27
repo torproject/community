@@ -1,5 +1,4 @@
 <div class="container py-5">
-  <h2 class="text-primary">{{ _('Why run a Tor Relay?') }}</h2>
   <div class="row py-5">
     <div class="col-8">
       {{ this.body }}
@@ -8,7 +7,6 @@
       <p>Illustration area</p>
     </div>
   </div>
-  <h2 class="text-primary">{{ _('How to run a Relay?') }}</h2>
   <div class="row py-5">
     {% for child in this.children|sort(attribute='key') %}
       <div class="col-sm-6 col-md-6 col-sm-12 col-xl-6 py-4">
@@ -21,26 +19,5 @@
         </div>
       </div>
     {% endfor %}
-  </div>
-  <h2 class="text-primary text-center">{{ _('Can\'t run a relay yourself?') }}</h2>
-  <p class="text-center">{{ _('You can donate to these organizations that help relay operators:') }}</p>
-  <div class="row">
-  <div class="col-sm-6 col-md-6 col-sm-12 col-xl-6 py-4">
-    <div class="card h-100 border-1">
-      <img class="card-img-top" src="{{ 'static/images/gray-image.png'|asseturl }}" alt="Card image cap">
-      <div class="card-body">
-        <h4 class="card-title text-primary">{{ _('Tor Servers') }}</h4>
-        <p class="card-text">{{ _('Two lines about the here. Two lines about the here. Two lines about the here. Two lines about the here.')}}</p>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-6 col-md-6 col-sm-12 col-xl-6 py-4">
-    <div class="card h-100 border-1">
-      <img class="card-img-top" src="{{ 'static/images/gray-image.png'|asseturl }}" alt="Card image cap">
-      <div class="card-body">
-        <h4 class="card-title text-primary">{{ _('Nos Ognions') }}</h4>
-        <p class="card-text">{{ _('Two lines about the here. Two lines about the here. Two lines about the here. Two lines about the here.') }} </p>
-      </div>
-    </div>
   </div>
 </div>
