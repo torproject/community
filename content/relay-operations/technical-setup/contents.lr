@@ -224,7 +224,7 @@ can be used to restrict bandwidth and traffic:
 Having a fast relay for some time of the month is preferred over a slow relay
 for the entire month.
 
-Also see the bandwidth entry in the FAQ: ​https://www.torproject.org/docs/faq.html.en#BandwidthShaping
+Also see the bandwidth entry in the FAQ: https://www.torproject.org/docs/faq.html.en#BandwidthShaping
 
 # IPv6
 
@@ -318,7 +318,7 @@ indications that this is a Tor exit relay.
 
 To make it even more obvious that this is a Tor exit relay you should serve a
 Tor exit notice HTML page. Tor can do that for you if your DirPort is on TCP
-port 80, you can make use of tor's ​DirPortFrontPage feature to display a
+port 80, you can make use of tor's DirPortFrontPage feature to display a
 HTML file on that port. This file will be shown to anyone directing his browser
 to your Tor exit relay IP address.
 
