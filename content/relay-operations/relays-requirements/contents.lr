@@ -6,7 +6,7 @@ color: primary
 ---
 _template: layout.html
 ---
-title: Relays requirements
+title: Relay requirements
 ---
 subtitle: Requirements for Tor relays depend on the type of relay and the bandwidth they provide.  Learn more about specific relay requirements. 
 ---
@@ -15,3 +15,83 @@ key: 2
 html: relay-operations.html
 ---
 body:
+
+Requirements for Tor relays depend on the type of relay and the bandwidth they
+provide.
+
+# Bandwidth and Connections
+
+A non-exit relay should be able to handle at least 7000 concurrent
+connections. This can overwhelm consumer-level routers. If you run the Tor
+relay from a server (virtual or dedicated) in a data center you will be fine.
+If you run it behind a consumer-level router at home you will have to try and
+see if your home router can handle it or if it starts failing. Fast exit
+relays (>=100 Mbit/s) usually have to handle a lot more concurrent connections
+(>100k).
+
+It is recommended that a relay have at least 16 Mbit/s (Mbps) upload bandwidth
+and 16 Mbit/s (Mbps) download bandwidth available for Tor. More is better. The
+minimum requirements for a relay are 10 Mbit/s (Mbps). If you have less than 10
+Mbit/s but at least 1 Mbit/s we recommend you run a [bridge with obfs4
+support](https://trac.torproject.org/projects/tor/wiki/doc/PluggableTransports/obfs4proxy).
+If you do not know your bandwidth you can use http://beta.speedtest.net to
+measure it.
+
+# Monthly Outbound Traffic
+
+It is required that a Tor relay be allowed to use a minimum of 100 GByte of
+outbound traffic (and the same amount of incoming traffic) per month. Note: That
+is only about 1 day worth of traffic on a 10 Mbit/s (Mbps) connection. More (>2
+TB/month) is better and recommended. **Ideally a relay runs on an unmetered plan**
+or includes 20 TB/month or more. If you have a metered plan you might want to
+configure tor to only use a given amount of [bandwidth or monthly traffic](FIXME).
+
+# Public IPv4 Address
+
+Every relay needs a public IPv4 address - either directly on the host
+(preferred) or via NAT and port forwarding.
+
+The IPv4 address is not required to be static but static IP addresses are
+preferred. Your IPv4 address should remain unchanged for at least 3 hours (if it
+regularly changes more often than that, it does not make much sense to run a
+relay or bridge there since it takes time to distribute the new list of relay
+IPs to clients - which happens only once every hour).
+
+Additional IPv6 connectivity is great and recommended/encouraged but not a
+requirement. There should be no problem at all with this requirement (all
+commercially available servers come with at least one IPv4 address).
+
+Note: You can only run two Tor relays per public IPv4 address. If you want to
+run more than two relays you will need more IPv4 addresses.
+
+# Memory Requirements
+
+* A <40 Mbit/s non-exit relay should have at least 512 MB of RAM available.
+* A non-exit relay faster than 40 Mbit/s should have at least 1 GB of RAM.
+* On an exit relay we recommend at least 1.5 GB of RAM per tor instance.
+
+# Disk Storage
+
+Tor does not need much disk storage. A typical Tor relay needs less than 200 MB
+for Tor related data (in addition to the operating system itself).
+
+# CPU
+
+* Any modern CPU should be fine.
+* It is recommended to use CPUs with AESNI support (that will improve performance
+and allow for up to about ~400-450 Mbps in each direction on a single tor
+instance on modern CPUs). If the file /proc/cpuinfo contains the word aes your
+CPU has support for AES-NI.
+
+# Uptime
+
+Tor has no hard uptime requirement but if your relay is not running for more
+than 2 hours a day its usefulness is limited. Ideally the relay runs on a server
+which runs 24/7. Reboots and tor daemon restarts are fine.
+
+# Tor Version
+
+For security reasons, Tor relays should not downgrade their tor version from a
+supported to an unsupported version of tor. Some unsupported versions are
+insecure. Relays that attempt to downgrade to an insecure version will be
+rejected from the network automatically.
