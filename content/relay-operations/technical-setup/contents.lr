@@ -53,6 +53,7 @@ exit relay there)
 reduce the amount of abuse sent to the hoster instead of you.
 * Does the hoster allow you to set a custom DNS reverse entry? (DNS PTR record)
 This are probably things you will need to ask the hoster in a Pre-Sales ticket
+
 # AS/location diversity
 
 When selecting your hosting provider, consider network diversity on an
@@ -407,7 +408,7 @@ To avoid that the configuration gets changed (for example by the DHCP client):
 chattr +i /etc/resolv.conf
 ```
 
-The Debian configuration ships with QNAME minimisation (​RFC7816) enabled
+The Debian configuration ships with QNAME minimisation (RFC7816) enabled
 by default so you don't need to enable it explicitly. The unbound resolver you
 just installed does also DNSSEC validation.
 
