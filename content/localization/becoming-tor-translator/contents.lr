@@ -4,11 +4,11 @@ section_id: localization
 ---
 color: primary
 ---
-_template: layout.html
+_template: page.html
 ---
 title: Becoming Tor translator
 ---
-subtitle: Pictures and instructions ... 
+subtitle: Tor Project localization is hosted in the Localization Lab Hub on Transifex, a third-party translation tool. Read on for details on how to sign up and begin contributing.
 ---
 key: 1
 ---
