@@ -9,58 +9,6 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-sm-6 col-md-6 col-sm-12 col-xl-6 py-4">
-      <h4 class="text-primary text-uppercase">Tier 1</h4>
-      <table class="table table-hover">
-        <thead>
-          <tr>
-            <th scope="col">{{ _('Language') }}</th>
-            <th scope="col">{{ _('Projects supported') }}</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>{{ _('English') }}</td>
-            <td>{{ _('Tor Browser, Website') }}</td>
-          </tr>
-          <tr>
-            <td>{{ _('German') }}</td>
-            <td>{{ _('Tor Browser, Website') }}</td>
-          </tr>
-          <tr>
-            <td>{{ _('French') }}</td>
-            <td>{{ _('Tor Browser, Website') }}</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="col-sm-6 col-md-6 col-sm-12 col-xl-6 py-4">
-      <h4 class="text-primary text-uppercase">Tier 2</h4>
-      <table class="table table-hover">
-        <thead>
-          <tr>
-            <th scope="col">{{ _('Language') }}</th>
-            <th scope="col">{{ _('Projects supported') }}</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>{{ _('Portuguese') }}</td>
-            <td>{{ _('Tor Browser, Website') }}</td>
-          </tr>
-          <tr>
-            <td>{{ _('Arabic') }}</td>
-            <td>{{ _('Tor Browser, Website') }}</td>
-          </tr>
-          <tr>
-            <td>{{ _('Greek') }}</td>
-            <td>{{ _('Tor Browser, Website') }}</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-  <div class="row">
     {% for child in this.children|sort(attribute='key') %}
       <div class="col-sm-6 col-md-6 col-sm-12 col-xl-6 py-4">
         <div class="card h-100 border-0">
@@ -74,5 +22,14 @@
         </div>
       </div>
     {% endfor %}
+  </div>
+    <div class="row py-5 text-center mx-auto">
+    <h2 class="display-4 text-primary text-center mx-auto">{{ _('Help us to improve our translations!') }}</h2>
+    <p class="text-center">
+      {{ _('Notice any improvements we could make to our translations?') }}</p>
+      {{ _('Don't hesitate to reach out to us here.) }}</p>
+    <h3 class="text-primary text-center mx-auto"><u>{{ _('Translators list') }}
+      <i class="fas fa-arrow-right"></i></u>
+    </h3>
   </div>
 </div>
