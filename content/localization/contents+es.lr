@@ -8,7 +8,9 @@ _template: layout.html
 ---
 title: Localization
 ---
-subtitle: We want Tor to work for everyone in the world, which means a lot of languages. Will you help us to translate?
+subtitle: We want Tor to work for everyone in the world, which means a lot of languages.
+---
+cta: Will you help us to translate?
 ---
 key: 5
 ---
