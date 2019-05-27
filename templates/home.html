@@ -9,12 +9,15 @@
       <div class="row">
         {% for child in this.children|sort(attribute='key') %}
           <div class="col-sm-6 col-md-4 col-sm-12 col-xl-4 py-4">
-            <div class="card h-100 border-0 p-2">
+            <div class="card h-100 p-2">
               <div class="card-body">
-                <h4 class="card-title ">{{ child.title }}</h4>
+                <h2 class="card-title ">{{ child.title }}</h2>
                 <p class="card-text">{{ child.subtitle }}</p>
+                <div class="illo-container">
+                  <img src="{{ '/static/images/home/png/localization.png'|asseturl }}" class="img-fluid" alt="{{ _("Localization") }}" />
+                </div>
               </div>
-              <a href="{{ child.path|url }}" class="btn btn-primary my-3 mx-5">{{ _('Start now') }}</a>
+              <a href="{{ child.path|url }}" class="btn btn-primary">{{ child.cta }}</a>
             </div>
           </div>
         {% endfor %}
