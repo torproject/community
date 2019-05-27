@@ -1,0 +1,19 @@
+section: localization
+---
+section_id: localization
+---
+color: primary
+---
+_template: localization.html
+---
+title: Current Status of Translations
+---
+subtitle: Not sure where to start? Here you can find an overview of the current localization status for all of the different Tor Project projects.
+---
+key: 2
+---
+html: localization.html
+---
+body:
+
+Graph will go here

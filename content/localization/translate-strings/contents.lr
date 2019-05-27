@@ -8,10 +8,12 @@ _template: layout.html
 ---
 title: Translate strings
 ---
-subtitle: How to do this ...
+subtitle: How to translate
 ---
-key: 3
+key: 4
 ---
 html: localization.html
 ---
 body:
+The Tor Project translatable strings are spread over different projects in Transifex.
+To find out about our priorities and translation needs you can read the [Tor Localization Lab wiki page](https://wiki.localizationlab.org/index.php/Tor)
