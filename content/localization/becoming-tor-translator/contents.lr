@@ -16,9 +16,13 @@ html: localization.html
 ---
 body:
 
-If you are interested in helping out the project by translating the manual or the Tor Browser to your language, your help would be greatly appreciated! Tor Project localization is hosted in the [Localization Lab Hub](https://www.localizationlab.org/) on Transifex, a third-party translation tool. In order to begin contributing you will have to sign up with Transifex. Below is an outline of how to sign up and begin.
+If you are interested in helping out the project by translating the manual or the Tor Browser to your language, your help would be greatly appreciated! Tor Project localization is hosted in the [Localization Lab Hub](https://www.localizationlab.org/) on Transifex, a third-party translation platform.
+In order to begin contributing you will have to sign up with Transifex. Below is an outline of how to sign up and begin.
 
-Before translating, please read through the Tor Project page on the [Localization Lab Wiki](https://wiki.localizationlab.org/index.php/Tor). There you will find translation guidelines and resources that will help you contribute to Tor translations.
+Before translating, please read through the Tor Project page on the [Localization Lab Wiki](https://wiki.localizationlab.org/index.php/Tor).
+There you will find translation guidelines and resources that will help you contribute to Tor translations.
+
+You are cordially invited to join the [Tor localization mailing list](https://lists.torproject.org/cgi-bin/mailman/listinfo/tor-l10n), to organize translations, participate in our decisions, report errors in source strings, etc.
 
 # Signing Up On Transifex
 
