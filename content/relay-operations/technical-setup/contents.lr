@@ -4,13 +4,13 @@ section_id: relay-operations
 ---
 color: primary
 ---
+key: 3
+---
 _template: layout.html
 ---
 title: Technical setup
 ---
 subtitle: Installing and configuring your Tor relay.
----
-key: 3
 ---
 html: relay-operations.html
 ---
@@ -18,22 +18,16 @@ body:
 
 # Considerations when choosing a hosting provider
 
-If you have access to a high speed internet connection (>=100 Mbit/s in both
-directions) and a physical piece of computer hardware, this is the best way to
-run a relay. Having full control over the hardware and connection gives you a
-more controllable and (if done correctly) secure environment. You can host your
-own physical hardware at home (do NOT run a Tor exit relay from your home) or in
-a data center. Sometimes this is referred to as installing the relay on "bare
-metal".
+If you have access to a high speed internet connection (>=100 Mbit/s in both directions) and a physical piece of computer hardware, this is the best way to run a relay.
+Having full control over the hardware and connection gives you a more controllable and (if done correctly) secure environment.
+You can host your own physical hardware at home (do NOT run a Tor exit relay from your home) or in a data center.
+Sometimes this is referred to as installing the relay on "bare metal".
 
-If you do not own physical hardware, you could run a relay on a rented dedicated
-server or virtual private server (VPS). This can cost anywhere between
-$3.00/month and thousands per month, depending on your provider, hardware
-configuration, and bandwidth usage. Many VPS providers will not allow you to run
-exit relays. You must follow the VPS provider's terms of service, or risk having
-your account disabled. For more information on hosting providers and their
-policies on allowing Tor relays, please see this list maintained by the Tor
-community: [GoodBadISPs](FIXME).
+If you do not own physical hardware, you could run a relay on a rented dedicated server or virtual private server (VPS).
+This can cost anywhere between $3.00/month and thousands per month, depending on your provider, hardware configuration, and bandwidth usage.
+Many VPS providers will not allow you to run exit relays.
+You must follow the VPS provider's terms of service, or risk having your account disabled.
+For more information on hosting providers and their policies on allowing Tor relays, please see this list maintained by the Tor community: [GoodBadISPs](FIXME).
 
 ## Questions to consider when choosing a hoster
 
@@ -41,71 +35,57 @@ community: [GoodBadISPs](FIXME).
 * Does the hoster provide IPv6 connectivity? (it is recommended, but not required)
 * What virtualization / hypervisor (if any) does the provider use? (anything but OpenVZ should be fine)
 * Does the hoster start to throttle bandwidth after a certain amount of traffic?
-* How well connected is the autonomous system of the hoster? To answer this
-question you can use the AS rank of the autonomous systems if you want to
+* How well connected is the autonomous system of the hoster? To answer this question you can use the AS rank of the autonomous systems if you want to
 compare: http://as-rank.caida.org/ (a lower value is better)
 
 ## If you plan to run Exit Relays
 
-* Does the hoster allow Tor exit relays? (explicitly ask them before starting an
-exit relay there)
-* Does the hoster allow custom WHOIS records for your IP addresses? This helps
-reduce the amount of abuse sent to the hoster instead of you.
+* Does the hoster allow Tor exit relays? (explicitly ask them before starting an exit relay there)
+* Does the hoster allow custom WHOIS records for your IP addresses? This helps reduce the amount of abuse sent to the hoster instead of you.
 * Does the hoster allow you to set a custom DNS reverse entry? (DNS PTR record)
-This are probably things you will need to ask the hoster in a Pre-Sales ticket
+  This are probably things you will need to ask the hoster in a Pre-Sales ticket
 
 # AS/location diversity
 
-When selecting your hosting provider, consider network diversity on an
-autonomous system (AS) and country level. A more diverse network is more
-resilient to attacks and outages. Sometimes it is not clear which AS you are
-buying from in case of resellers. To be sure it is best to ask the hoster about
-the AS number before ordering a server.
+When selecting your hosting provider, consider network diversity on an autonomous system (AS) and country level.
+A more diverse network is more resilient to attacks and outages.
+Sometimes it is not clear which AS you are buying from in case of resellers.
+To be sure it is best to ask the hoster about the AS number before ordering a server.
 
-It is best to avoid hosters where many Tor relays are already hosted, but it is
-still better to add one there than to run no relay at all. **Try to avoid** the
-following hoster:
+It is best to avoid hosters where many Tor relays are already hosted, but it is still better to add one there than to run no relay at all.
+ **Try to avoid** the following hosters:
 
 * OVH SAS (AS16276)
 * Online S.a.s. (AS12876)
 * Hetzner Online GmbH (AS24940)
 * DigitalOcean, LLC (AS14061)
 
-To find out which hoster and countries are already used by many other operators
-(that should be avoided) you can use Relay Search:
+To find out which hoster and countries are already used by many other operators (that should be avoided) you can use Relay Search:
 
-* [Autonomous System Level
-Overview](https://metrics.torproject.org/rs.html#aggregate/as)
+* [Autonomous System Level Overview](https://metrics.torproject.org/rs.html#aggregate/as)
 * [Country Level Overview](https://metrics.torproject.org/rs.html#aggregate/cc)
 
 # Choosing an Operating System
 
-We recommend you use the operating system you are most familiar with. Please
-keep in mind that since most relays run on Debian and we want to avoid a
-monoculture, BSD and other non-Linux based relays are greatly needed.
+We recommend you use the operating system you are most familiar with.
+Please keep in mind that since most relays run on Debian and we want to avoid a monoculture, BSD and other non-Linux based relays are greatly needed.
 
-The following table shows the current OS distribution on the Tor network to give
-you an idea of how much more non-Linux relays we should have:
+The following table shows the current OS distribution on the Tor network to give you an idea of how much more non-Linux relays we should have:
 
 * https://nusenu.github.io/OrNetStats/#os-distribution-relays
 
 # OS Level Configuration
 
-OS configuration is outside the scope of this guide but the following points are
-crucial for a Tor relay, so we want to mention them here nonetheless.
+OS configuration is outside the scope of this guide but the following points are crucial for a Tor relay, so we want to mention them here nonetheless.
 
 ## Time Synchronization (NTP)
 
-Correct time settings are essential for Tor relays. It is recommended that you
-use the network time protocol (NTP) for time synchronization and ensure your
-timezone is set correctly.
+Correct time settings are essential for Tor relays. It is recommended that you use the network time protocol (NTP) for time synchronization and ensure your timezone is set correctly.
 
 ## Automatic Software Updates
 
-One of the most imported things to keeps your relay secure is to install
-security updates timely and ideally automatically so you can not forget about
-it. We collected the steps to enable automatic software updates for different
-operating systems:
+One of the most imported things to keeps your relay secure is to install security updates timely and ideally automatically so you can not forget about it.
+We collected the steps to enable automatic software updates for different operating systems:
 
 * [RPM-based distributions](FIXME) (RHEL, CentOS, Fedora, openSUSE)
 * [Debian/Ubuntu](FIXME)
@@ -113,30 +93,24 @@ operating systems:
 
 # Tor Relay Setup: Installation and Configuration
 
-This section covers the installation and configuration of the program required
-to run a Tor relay for various operating systems. These steps are intended for
-the latest stable version of the given OS, on Ubuntu for the latest LTS release.
+This section covers the installation and configuration of the program required to run a Tor relay for various operating systems.
+These steps are intended for the latest stable version of the given OS, on Ubuntu for the latest LTS release.
 
-Note: For some operating systems, there are alpha version packages available
-(tor versions with new features not deemed to be stable yet). These are only
-recommended for people eager to test and report bugs in bleeding edge
-releases/features. If you are looking to run a relay with minimal effort we
-recommend you stick to stable releases.
+Note: For some operating systems, there are alpha version packages available (tor versions with new features not deemed to be stable yet).
+These are only recommended for people eager to test and report bugs in bleeding edge releases/features.
+If you are looking to run a relay with minimal effort we recommend you stick to stable releases.
 
-In this guide we describe how to setup a new non-exit relay. By reading further
-you can easily switch to become an exit relay.
+In this guide we describe how to setup a new non-exit relay.
+By reading further you can easily switch to become an exit relay.
 
 **Questions you should clarify before configuring Tor:**
 
 * Do you want to run a Tor exit or non-exit (guard/middle) relay?
-* If you want to run an exit relay: Which ports do you want to allow in your
-exit policy? (more ports usually means potentially more abuse complains)
+* If you want to run an exit relay: Which ports do you want to allow in your exit policy? (more ports usually means potentially more abuse complains)
 * What external TCP port do you want to use for incoming Tor connections?
-("ORPort" configuration, we recommend port 443 if that is not used by another
-daemon on your server already. ORPort 443 is recommended because it is often one
-of the few open ports on public WIFI networks. Port 9001 is another commonly used ORPort.)
+  ("ORPort" configuration, we recommend port 443 if that is not used by another daemon on your server already. ORPort 443 is recommended because it is often one of the few open ports on public WIFI networks. Port 9001 is another commonly used ORPort.)
 * What email address will you use in the ContactInfo field of your relay(s)?
-Note: This information will be made public.
+  Note: This information will be made public.
 * How much bandwidth/monthly traffic do you want to allow for Tor traffic?
 * Does the server have an IPv6 address?
 
@@ -144,32 +118,21 @@ The installation commands are shown in code blocks and must be executed with roo
 
 ## Make sure relay ports can be reached
 
-If you are using a firewall, open a hole in your firewall so incoming
-connections can reach the ports you will use for your relay (ORPort, plus
-DirPort if you enabled it). Also, make sure you allow all outgoing connections
-too, so your relay can reach the other Tor relays, clients and destinations. You
-can find the specific ORPort TCP port number in the torrc configuration samples
-bellow (in the OS specific sections).
+If you are using a firewall, open a hole in your firewall so incoming connections can reach the ports you will use for your relay (ORPort, plus DirPort if you enabled it).
+Also, make sure you allow all outgoing connections too, so your relay can reach the other Tor relays, clients and destinations.
+You can find the specific ORPort TCP port number in the torrc configuration samples bellow (in the OS specific sections).
 
 ## Configuration Management
 
-Tor does not scale well on multi-core machines. If you run a Tor relay on a
-server with a fast Internet uplink (>200 Mbit/s) you might want to consider
-running multiple Tor instances on a single server with multiple cores. Note: You
-can only run two tor instances per public IPv4 address.
+Tor does not scale well on multi-core machines.
+If you run a Tor relay on a server with a fast Internet uplink (>200 Mbit/s) you might want to consider running multiple Tor instances on a single server with multiple cores.
+Note: You can only run two tor instances per public IPv4 address.
 
-If you plan to run more than a single relay, or you want to run a high capacity
-relay (multiple Tor instances per server) or want to use strong security
-features like [Offline Master
-Keys](https://trac.torproject.org/projects/tor/wiki/doc/TorRelaySecurity/OfflineKeys)
-without performing additional steps manually, you may want to use a configuration
-management for better maintainability.
+If you plan to run more than a single relay, or you want to run a high capacity relay (multiple Tor instances per server) or want to use strong security features like [Offline Master Keys](https://trac.torproject.org/projects/tor/wiki/doc/TorRelaySecurity/OfflineKeys) without performing additional steps manually, you may want to use a configuration management for better maintainability.
 
-There are multiple configuration management solutions for Unix based operating
-systems (Ansible, Puppet, Salt, ...).
+There are multiple configuration management solutions for Unix based operating systems (Ansible, Puppet, Salt, ...).
 
-The following Ansible Role has specifically been build for Tor relay operators
-and supports multiple operating systems:
+The following Ansible Role has specifically been build for Tor relay operators and supports multiple operating systems:
 
 http://github.com/nusenu/ansible-relayor
 
@@ -185,35 +148,30 @@ Please choose your platform:
 
 ## Verify that your relay works
 
-If your logfile (syslog) contains the following entry after starting your tor
-daemon your relay should be up and running as expected:
+If your logfile (syslog) contains the following entry after starting your tor daemon your relay should be up and running as expected:
 
 ```
 Self-testing indicates your ORPort is reachable from the outside. Excellent.
 Publishing server descriptor.
 ```
 
-About 3 hours after you started your relay it should appear on
-[Relay Search](https://metrics.torproject.org/rs.html). You can search for your
-relay using your nickname or IP address.
+About 3 hours after you started your relay it should appear on [Relay Search](https://metrics.torproject.org/rs.html).
+You can search for your relay using your nickname or IP address.
 
 # Getting Help
 
-If you run into problems while setting up your relay you can ask your questions
-on the public tor-relays mailing list:
+If you run into problems while setting up your relay you can ask your questions on the public tor-relays mailing list:
 
 * https://lists.torproject.org/cgi-bin/mailman/listinfo/tor-relays
 
-This is a great resource for asking (and answering) questions, and generally
-getting to know other relay operators. Make sure to check out the archives!
+This is a great resource for asking (and answering) questions, and generally getting to know other relay operators.
+Make sure to check out the archives!
 
 # Limiting bandwidth usage (and traffic)
 
-Tor will not limit its bandwidth usage by default, but supports multiple ways to
-restrict the used bandwidth and the amount of traffic. This can be handy if you
-want to ensure that your Tor relay does not exceed a certain amount of bandwidth
-or total traffic per day/week/month. The following torrc configuration options
-can be used to restrict bandwidth and traffic:
+Tor will not limit its bandwidth usage by default, but supports multiple ways to restrict the used bandwidth and the amount of traffic.
+This can be handy if you want to ensure that your Tor relay does not exceed a certain amount of bandwidth or total traffic per day/week/month.
+The following torrc configuration options can be used to restrict bandwidth and traffic:
 
 * AccountingMax
 * AccountingRule

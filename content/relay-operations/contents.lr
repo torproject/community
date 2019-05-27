@@ -18,7 +18,9 @@ html: relay-operations.html
 ---
 body:
 
-The Tor network relies on volunteers to donate bandwidth. The more people who run relays, the better the Tor network will be. The current Tor network is quite small compared to the number of people who need to use Tor, which means we need more dedicated volunteers like you to run relays.
+The Tor network relies on volunteers to donate bandwidth.
+The more people who run relays, the better the Tor network will be.
+The current Tor network is quite small compared to the number of people who need to use Tor, which means we need more dedicated volunteers like you to run relays.
 
 By running a Tor relay you can help make the Tor network:
 
@@ -27,4 +29,5 @@ By running a Tor relay you can help make the Tor network:
 * more stable in case of outages
 * safer for its users (spying on more relays is harder than on a few)
 
-Running a relay requires technical skill and commitment, which is why we've created a wealth of resources to help our relay operators. The best resource of all is the active community of relay operators on tor-relays@lists.torproject.org and on IRC in #tor-relays.
+Running a relay requires technical skill and commitment, which is why we've created a wealth of resources to help our relay operators.
+The best resource of all is the active community of relay operators on tor-relays@lists.torproject.org and on IRC in #tor-relays.
