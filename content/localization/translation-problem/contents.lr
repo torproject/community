@@ -1,0 +1,24 @@
+section: localization
+---
+section_id: localization
+---
+color: primary
+---
+_template: layout.html
+---
+title: Report a problem with a translation
+---
+subtitle: Sometimes the translations of apps are not working correctly. Here you can learn to fix it.
+---
+key: 9
+---
+html: localization.html
+---
+body:
+
+### Reporting an error with a translation
+
+* If you are already a [Tor translator](becoming-tor-translator), you can simply find the string and add a comment in [transifex](https://www.transifex.com/otf/torproject/).
+* If you don't know how to find the string to fix, you can [open a ticket on our Bugtracker](https://trac.torproject.org/projects/tor/wiki/doc/community/HowToReportBugFeedback), under the **Community/Translations** component.
+* You can report such issues on [irc](https://webchat.oftc.net/), on the #tor-l10n channel (you may need to be registered to log in).
+* You can send an email to the [tor localization mailing list](https://lists.torproject.org/cgi-bin/mailman/listinfo/tor-l10n).
