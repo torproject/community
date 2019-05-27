@@ -16,12 +16,11 @@ html: relay-operations.html
 ---
 body:
 
-Requirements for Tor relays depend on the type of relay and the bandwidth they
-provide.
+Requirements for Tor relays depend on the type of relay and the bandwidth they provide.
 
 # Bandwidth and Connections
 
-A non-exit relay should be able to handle at least 7000 concurrent connections. 
+A non-exit relay should be able to handle at least 7000 concurrent connections.
 This can overwhelm consumer-level routers. If you run the Tor relay from a server (virtual or dedicated) in a data center you will be fine.
 If you run it behind a consumer-level router at home you will have to try and see if your home router can handle it or if it starts failing.
 Fast exit relays (>=100 Mbit/s) usually have to handle a lot more concurrent connections (>100k).

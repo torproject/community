@@ -8,6 +8,8 @@ section: relay operations
 ---
 section_id: relay-operations
 ---
+key: 2
+---
 body:
 
 # 1. Configure Tor Package Repository
