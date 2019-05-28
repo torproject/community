@@ -8,10 +8,18 @@ _template: layout.html
 ---
 title: Pick a project
 ---
-subtitle: How to find things ... 
+subtitle: How to find a project to contribute to
 ---
 key: 3
 ---
 html: localization.html
 ---
 body:
+We have some statistics to help you choose a project. Here you have the current situation for all languages:
+
+<img class="col-lg-6" src="../../static/images/localization/stats.png">
+
+* The Tor Browser is translated in many different Transifex resources, but you can see the [Tor Browser total strings translated per language](https://torpat.ch/locales).
+* The Tor Browser User Manual is a very useful resource for new users that do not speak English, see [Tor Browser User Manual translation statistics](https://torpat.ch/manual-locales) or [translate](https://www.transifex.com/otf/tor-project-support-community-portal/tbmanual-contentspot/)
+* Same with the support portal, see [Tor Support Portal translation statistics](https://torpat.ch/support-locales) or [translate](https://www.transifex.com/otf/tor-project-support-community-portal/support-portal/)
+
