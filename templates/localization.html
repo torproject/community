@@ -15,8 +15,8 @@
           <div class="card-body">
             <div class="card-body">
               <h4 class="text-primary">.{{ child.key }}</h4>
-              <h4 class="card-title text-primary">{{ child.title }}</h4>
-              <p class="card-text">{{ child.subtitle }}</p>
+              <h4 class="card-title text-primary"><a href="{{ _(child.path) }}">{{ _(child.title) }}</a></h4>
+              <p class="card-text">{{ _(child.subtitle) }}</p>
             </div>
           </div>
         </div>
