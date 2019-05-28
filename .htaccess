@@ -1,0 +1,4 @@
+# forward requests in /en to the root folder
+RewriteRule ^(en-US|en)$ / [R=302,L]
+RewriteRule ^(en-US|en)/(.*) /$2 [R=302,L]
+
