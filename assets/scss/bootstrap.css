@@ -439,8 +439,7 @@ mark,
     margin-right: 5px; }
 
 .initialism {
-  font-size: 90%;
-  text-transform: uppercase; }
+  font-size: 90%; }
 
 .blockquote {
   margin-bottom: 1rem;
@@ -6401,7 +6400,6 @@ a.text-dark:focus, a.text-dark:hover {
   font-family: Source Sans Pro Bold; }
 
 h6 {
-  text-transform: uppercase;
   font-weight: bold;
   color: #7D4698; }
 
@@ -6593,9 +6591,6 @@ mark, .mark {
   width: 100% !important; }
   .form-wide input {
     padding: 20px !important; }
-
-.badge {
-  text-transform: uppercase; }
 
 .breadcrumb {
   background-color: #fff; }
