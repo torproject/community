@@ -4,7 +4,7 @@ section_id: localization
 ---
 color: primary
 ---
-_template: localization.html
+_template: layout.html
 ---
 title: Becoming a Tor translator
 ---
