@@ -18,6 +18,6 @@ html: user-testing.html
 ---
 body:
 
-Protecting privacy is what we do at Tor. So how do we collect meaningful user
-feedback without violating user consent? We conduct all of our user research
-through in-person studies that users explicitly opt into.
+Protecting privacy is what we do at Tor.
+So how do we collect meaningful user feedback without violating user consent?
+We conduct all of our user research through in-person studies that users explicitly opt into.

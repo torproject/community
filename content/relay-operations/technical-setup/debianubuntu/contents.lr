@@ -14,8 +14,7 @@ body:
 
 # 1. Configure Tor Package Repository
 
-Enable the Torproject package repository by following the instructions 
-**[here](https://2019.www.torproject.org/docs/debian.html.en#ubuntu)**.
+Enable the Torproject package repository by following the instructions **[here](https://2019.www.torproject.org/docs/debian.html.en#ubuntu)**.
 
 # 2. Package Installation
 
@@ -25,7 +24,7 @@ Install the `tor` package:
 
 # 3. Configuration File
 
-Put the configuration file `/etc/tor/torrc` in place: 
+Put the configuration file `/etc/tor/torrc` in place:
 
 ```
 #change the nickname "myNiceRelay" to a name that you like
