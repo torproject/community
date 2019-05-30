@@ -1,11 +1,11 @@
 <div class="container py-5">
-  <h2 class="text-primary">{{ _('Localization is how we reach a global community.') }}</h2>
-  <div class="row py-5">
-    <div class="col-8">
+  <div class="row pt-5">
+    <div class="col-lg-7">
+      <h2 class="text-primary">{{ _('Localization is how we reach a global community.') }}</h2>
       {{ this.body }}
     </div>
-    <div class="col-4 bg-light">
-      <p>Illustration area</p>
+    <div class="col-lg-5">
+      <img src="/static/images/home/png/{{ this.section_id }}.png" class="img-fluid" alt="{{ _(this.section) }}" />
     </div>
   </div>
   <div class="row">
