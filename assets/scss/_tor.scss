@@ -259,6 +259,12 @@ mark, .mark {
     padding: 1rem;
 }
 
+.sticky{
+  position: sticky;
+  top: 110px;
+  z-index: 99;
+}
+
 /*
  * Sidebar
  */
