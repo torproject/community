@@ -200,7 +200,7 @@ small, .small{
 }
 
 h6 {
-  text-transform: uppercase;
+  text-transform: none !important;
   font-weight: bold;
   color: $purple;
 }
@@ -248,7 +248,6 @@ mark, .mark {
 }
 
 .navbar-brand {
-  padding-left: 80px;
   span {
     font-size: 0.6em;
     display: flex;
@@ -326,6 +325,8 @@ mark, .mark {
 .dropdown .btn {
     border-radius: 0;
 }
+
+.btn {text-transform: none !important;}
 
 label {
   cursor: pointer;
@@ -424,7 +425,7 @@ a.side-nav.active {
 // Badges
 //
 .badge{
-  text-transform: uppercase;
+  text-transform: none !important;
 }
 
 //
@@ -719,6 +720,16 @@ a.side-nav.active {
     width:100%;
     position: sticky;
     padding-top: inherit;
+  }
+}
+
+
+// Tablet and Mobile menu
+@include media-breakpoint-down(md) {
+  .nav-link {
+    padding-bottom: 1rem;
+    padding-top: 2rem;
+    font-size: 150%;
   }
 }
 
