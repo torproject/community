@@ -10,11 +10,10 @@
   </div>
   <div class="row">
     {% for child in this.children|sort(attribute='key') %}
-      <div class="col-sm-6 col-md-6 col-sm-12 col-xl-6 py-4">
-        <div class="card h-100 border-0">
+      <div class="col-sm-6 col-md-6 col-sm-12 col-xl-6 py-3">
+        <div class="card h-100">
           <div class="card-body">
             <div class="card-body">
-              <h4 class="text-primary">.{{ child.key }}</h4>
               <h4 class="card-title text-primary"><a href="/{{ this.alt}}{{ child.path }}">{{ _(child.title) }}</a></h4>
               <p class="card-text">{{ _(child.subtitle) }}</p>
             </div>
@@ -23,12 +22,13 @@
       </div>
     {% endfor %}
   </div>
-    <div class="row py-5 text-center mx-auto">
-    <h2 class="display-4 text-primary text-center mx-auto">{{ _('Help us to improve our translations!') }}</h2>
+  <div class="row py-5 text-center mx-auto">
+    <h2 class="display-4 text-primary text-center mx-auto my-3">{{ _('Help us to improve our translations!') }}</h2>
     <p class="text-center">
-      {{ _('Localization is a continuous process across our applications. Notice any improvements we could make to our translations? Open a ticket, reach out to us, or become part of our translators army!') }}</p>
-    <h3 class="text-primary text-center mx-auto"><u><a href="https://lists.torproject.org/cgi-bin/mailman/listinfo/tor-l10n">{{ _('Translators mailing list') }}
-        <i class="fas fa-arrow-right"></i></a></u>
-    </h3>
+      {{ _('Localization is a continuous process across our applications. Notice any improvements we could make to our translations? Open a ticket, reach out to us, or become part of our translators army!') }}
+    </p>
+    <btn class="btn btn-lg btn-outline-primary mx-auto my-3" href="https://lists.torproject.org/cgi-bin/mailman/listinfo/tor-l10n">
+          {{ _('Translators mailing list') }}<i class="ml-3 pt-2 fas fa-arrow-right"></i>
+    </btn>
   </div>
 </div>
