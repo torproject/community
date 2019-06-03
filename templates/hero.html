@@ -1,19 +1,15 @@
 <div class="container bg-{{ this.color }} pt-5">
   <div class="row">
-    <div class="col-12 content-center pt-5">
-      <div class="row">
-        <div class="col-12 content-center pt-5">
-          <div class="row">
-            <h6 class="mx-auto text-white">{% block section %}{{ this.section }}{% endblock %}</h6>
-          </div>
-          <div class="row pb-5">
-            <h2 class="mx-auto display-4 text-white">{% block title %}{{ this.title }}{% endblock %}</h2>
-          </div>
-          <div class="row pb-5">
-            <h4 class="mx-auto text-white">{% block subtitle %}{{ this.subtitle }}{% endblock %}</h4>
-          </div>
+      <div class="col-12 content-center">
+        <div class="row">
+          <h6 class="mx-auto text-white">{% block section %}{{ this.section }}{% endblock %}</h6>
+        </div>
+        <div class="row">
+          <h2 class="mx-auto display-3 text-white">{% block title %}{{ this.title }}{% endblock %}</h2>
+        </div>
+        <div class="row pb-5">
+          <h4 class="mx-auto text-white">{% block subtitle %}{{ this.subtitle }}{% endblock %}</h4>
         </div>
       </div>
-    </div>
   </div>
 </div>
