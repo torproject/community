@@ -1,6 +1,6 @@
-section: user testing
+section: user research
 ---
-section_id: user-testing
+section_id: user-research
 ---
 color: primary
 ---
@@ -14,6 +14,6 @@ subtitle: Will you help us by becoming a Tor tester? Sign up for the user testin
 ---
 key: 2
 ---
-html: user-testing.html
+html: user-research.html
 ---
 body:

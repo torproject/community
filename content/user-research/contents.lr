@@ -1,12 +1,12 @@
-section: user testing
+section: user research
 ---
-section_id: user-testing
+section_id: user-research
 ---
 color: primary
 ---
 _template: layout.html
 ---
-title: User Testing
+title: User Research
 ---
 subtitle: We conduct user research while also respecting user privacy.
 ---
@@ -14,7 +14,7 @@ cta: Learn how you can help
 ---
 key: 2
 ---
-html: user-testing.html
+html: user-research.html
 ---
 body:
 
