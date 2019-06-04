@@ -12,7 +12,7 @@ subtitle: How to translate
 ---
 key: 4
 ---
-html: localization.html
+html: two-columns-page.html
 ---
 body:
 The Tor Project translatable strings are spread over different projects in Transifex.

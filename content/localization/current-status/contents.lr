@@ -12,11 +12,10 @@ subtitle: Not sure where to start? Here you can find an overview of the current 
 ---
 key: 2
 ---
-html: localization.html
+html: two-columns-page.html
 ---
 body:
 
 Our last update on the Translations is here:
 
 <img class="col-lg-6" src="../../static/images/localization/stats.png">
-

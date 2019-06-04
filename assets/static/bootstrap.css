@@ -10228,8 +10228,6 @@ mark, .mark {
  */
 .sidetopics {
   z-index: 1000;
-  padding: 20px 0;
-  border-right: 1px solid #eee;
 }
 
 .sidetopics .nav {

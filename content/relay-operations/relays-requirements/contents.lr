@@ -8,7 +8,7 @@ _template: layout.html
 ---
 title: Relay requirements
 ---
-subtitle: Requirements for Tor relays depend on the type of relay and the bandwidth they provide.  Learn more about specific relay requirements. 
+subtitle: Requirements for Tor relays depend on the type of relay and the bandwidth they provide.  Learn more about specific relay requirements.
 ---
 key: 2
 ---

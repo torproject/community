@@ -1,6 +1,6 @@
 <div class="row pt-5">
   {% include 'sidenav.html' %}
-  <div class="col-sm-12 col-xs-12  ml-sm-auto col-md-9 col-lg-9 {{ bag('alternatives', this.alt, 'order') }}">
+  <div class="col-sm-12 col-xs-12 col-md-8 col-lg-8 mr-auto {{ bag('alternatives', this.alt, 'order') }}">
     {{ this.body }}
     <div class="row">
     {% for child in this.children|sort(attribute='key') %}
