@@ -4,11 +4,13 @@
       <ul class="nav">
         {% set menubag = 'pagenav' + '+' + this.alt %}
         {% for id, item in bag(menubag).items() %}
-        <li{% if this.path == '/' + item.path %} class="nav-item active border-active" {% else %} class="nav-item" {% endif %}>
+        {% set abs_path = item.path %}
+        <li{% if this.is_child_of(abs_path) %} class="nav-item active border-active" {% else %} class="nav-item" {% endif %}>
           {% set elm = site.get(item.path) %}
           {% if elm %}
             <a class="nav-link" href="{{ elm.path|url }}">{{ item.label }}
-          {% elif this.path == '/' + item.path %}
+          {% endif %}
+          {% if this.is_child_of(abs_path) %}
             <span class="sr-only">(current)</span>
           {% endif %}
           </a>

@@ -13,7 +13,9 @@
         <div class="card h-100">
           <div class="card-body">
             <div class="card-body">
-              <h4 class="card-title text-primary"><a href="/{{ this.alt}}{{ child.path }}">{{ _(child.title) }}</a></h4>
+              <h4 class="card-title text-primary">
+                <a href="{{ child.path|url(alt=this.alt) }}">{{ _(child.title) }}</a>
+              </h4>
               <p class="card-text">{{ _(child.subtitle) }}</p>
             </div>
           </div>
