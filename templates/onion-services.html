@@ -1,27 +1,31 @@
 <div class="container py-5">
   <div class="row py-5">
-    <div class="col-lg-7">
+    <div class="col-8">
       {{ this.body }}
     </div>
-    <div class="col-lg-5">
-        <img src="/static/images/home/png/{{ this.section_id }}.png" class="img-fluid" alt="{{ _(this.section) }}" />
+    <div class="col-4 bg-light">
+      <div class="illo-container">
+        <img src="/static/images/home/png/{{ this.section_id }}.png" class="img-fluid" alt="{{ this.section }}" />
+      </div>
     </div>
   </div>
-  <h2 class="text-primary"><u>{{ _('Learn more about onion services here') }}
+  <a href="{{ this.path|url }}overview/"><h2 class="text-primary"><u>{{ _('Learn more about onion services here') }}
     <i class="fas fa-arrow-right"></i></u>
-  </h2>
+  </h2></a>
   <div class="row py-5">
     {% for child in this.children|sort(attribute='key') %}
+      {% if child.key != '0' %}
       <div class="col-sm-6 col-md-6 col-sm-12 col-xl-6 py-4">
         <div class="card h-100 border-0">
           <div class="card-body">
             <h2 class="text-primary display-2"><i class="fas fa-{{ child.image }}"></i></h2>
             <h4 class="card-title text-primary">{{ child.title }}</h4>
             <p class="card-text">{{ child.subtitle }}</p>
-            <a href="{{ this.path }}">Call to action <i class="fas fa-arrow-right"></i></a>
+            <a href="{{ child.path|url }}">{{ child.cta }} <i class="fas fa-arrow-right"></i></a>
           </div>
         </div>
       </div>
+      {% endif %}
     {% endfor %}
   </div>
   <div class="row py-5 text-center mx-auto">
@@ -32,14 +36,15 @@
   </div>
   <div class="row mx-auto">
     <div class="col-6">
+      <a href="https://github.com/alecmuffett/eotk#i-want-to-create-my-own-project">
       <h3 class="text-primary text-center mx-auto"><u>{{ _('Learn more') }}
         <i class="fas fa-arrow-right"></i></u>
-      </h3>
+      </h3></a>
     </div>
     <div class="col-6">
-      <h3 class="text-primary text-center mx-auto"><u>{{ _('Check out the code') }}
+      <a href="https://github.com/alecmuffett/eotk"><h3 class="text-primary text-center mx-auto"><u>{{ _('Check out the code') }}
         <i class="fas fa-arrow-right"></i></u>
-      </h3>
+      </h3></a>
     </div>
   </div>
 </div>

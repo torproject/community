@@ -14,6 +14,61 @@ subtitle: Learn how to set up a .onion of your very own.
 ---
 key: 1
 ---
-html: onion-services.html
+cta: Get Started
+---
+html: two-columns-page.html
 ---
 body:
+
+This guide will go over setting up an onion service for your website:
+
+## Step 0: Get a working Tor
+
+As part of this guide we will assume you have a functional Tor in your machine. Tor should be up and running correctly for this guide to work. You should also know where Tor's configuration files are.
+
+To setup Tor, Windows users can follow the [Windows howto](https://2019.www.torproject.org/docs/tor-doc-windows.html.en), OS X users should follow the [OS X howto](https://2019.www.torproject.org/docs/tor-doc-osx.html.en), and Linux/BSD/Unix users should follow the [Unix howto](https://2019.www.torproject.org/docs/tor-doc-unix.html.en).
+
+## Step 1: Get a web server working
+
+As a first step you should setup a web server locally, like nginx or lighttpd. Setting up a web server can be complex. We're not going to cover how to set up a web server here. If you get stuck or want to do more, find a friend who can help you. We recommend you install a new separate web server for your onion service.
+
+You need to configure your web server so it doesn't give away any information about you, your computer, or your location. This is not an easy task and in the end of this document we will offer more resources on how to make this possible.
+
+Once your web server is set up, make sure it works: open your browser and go to http://localhost:8080/, where 8080 is the webserver port you chose during setup (you can choose any port, 8080 is just an example). Then try putting a file in the main html directory, and make sure it shows up when you access the site.
+
+## Step 2: Configure your Tor onion service
+
+The next step is opening the config file of Tor (torrc) and doing the appropriate configurations to setup an onion service. Depending on your operating system and setup, your Tor configuration file can be at a different location or look different. You will need to put the following two lines in your torrc:
+
+     HiddenServiceDir /var/lib/tor/hidden_service/
+     HiddenServicePort 80 127.0.0.1:8080
+
+
+The `HiddenServiceDir` line specifies the directory which should contain information and cryptographic keys for your onion service. You will want to change the `HiddenServiceDir` line, so that it points to an actual directory that is readable/writeable by the user that will be running Tor.
+
+The `HiddenServicePort` line specifies a _virtual port_ (that is, the port that people visiting your onion service will be using), and in the above case it says that any traffic incoming to port 80 of your onion service should be redirected to `127.0.0.1:8080` (which is where the web server from step 1 is listening).
+
+## Step 3: Restart Tor and check that it worked
+
+Now save your `torrc` and restart Tor.
+
+If Tor starts up again, great. Otherwise, something is wrong. First look at your logfiles for hints. It will print some warnings or error messages. That should give you an idea what went wrong. Typically there are typos in the torrc or wrong directory permissions (See the logging FAQ entry if you don't know how to enable or find your log file.)
+
+When Tor starts, it will automatically create the `HiddenServiceDir` that you specified (if necessary). Make sure this is the case.
+
+## Step 4: Test that your onion service works
+
+Now to get your onion service address, go to your `HiddenServiceDir` directory, and find a file named `hostname`. The `hostname` file in your hidden service configuration directory contains the hostname for your new Onion v3 hidden service. The other files are your hidden service keys, so it is imperative that these are kept private. If your keys leak, other people can impersonate your hidden service, deeming it compromised, useless and dangerous to visit.
+
+Now you can connect to your onion service using the Tor Browser and you should get the html page you setup back in step 1. If it doesn't work, look in your logs for some hints, and keep playing with it until it works.
+
+## Step 5: More advanced tips
+
+The above guide is just a baseline to setup an onion service. In this section we will offer more resources to better configure and protect your onion service:
+
+- Best practices for onion services 
+https://riseup.net/el/security/network-security/tor/onionservices-best-practices
+- More advanced tips for onion services
+https://2019.www.torproject.org/docs/tor-onion-service.html.en#three
+- Advanced onion service security
+https://blog.torproject.org/announcing-vanguards-add-onion-services
