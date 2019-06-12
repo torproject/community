@@ -1,0 +1,29 @@
+<div class="row pt-5">
+  {% include 'sidenav.html' %}
+  <div class="col-sm-12 col-xs-12  ml-sm-auto col-md-9 col-lg-9 {{ bag('alternatives', this.alt, 'order') }}">
+    {{ this.body }}
+    <div class="container py-3">
+      <div class="row">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Title</th>
+              <th scope="col">Description</th>
+              <th scope="col">Formats</th>
+              <th scope="col">Last Updated</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% from "macros/resources.html" import render_resource %}
+            {% for item in this.attachments %}
+              {{ render_resource(item) }}
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+

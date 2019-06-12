@@ -7,10 +7,21 @@
       <img src="/static/images/home/png/{{ this.section_id }}.png" class="img-fluid" alt="{{ _(this.section) }}" />
     </div>
   </div>
-
   <div class="row py-5">
-    <h2 class="text-primary text-center mx-auto"><u>{{ _('Resources') }}</u>
-    </h2>
+    {% for child in this.children|sort(attribute='key') %}
+      {% if child.key != '0' %}
+      <div class="col-sm-6 col-md-6 col-sm-12 col-xl-6 py-4">
+        <div class="card h-100 border-0">
+          <div class="card-body">
+            <h2 class="text-primary display-2"><i class="fas fa-{{ child.image }}"></i></h2>
+            <h4 class="card-title text-primary">{{ child.title }}</h4>
+            <p class="card-text">{{ child.subtitle }}</p>
+            <a href="{{ child.path|url }}">{{ child.cta }} <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      {% endif %}
+    {% endfor %}
   </div>
   <div class="row py-5 text-center mx-auto">
     <h2 class="display-4 text-primary text-center mx-auto">{{ _('Join the Community') }}</h2>

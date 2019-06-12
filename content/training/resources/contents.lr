@@ -1,0 +1,19 @@
+section: training
+---
+section_id: training
+---
+color: primary
+---
+_template: layout.html
+---
+title: Training Resources
+---
+subtitle: Do you teach your community about using Tor? These resources are for you.
+---
+key: 2
+---
+html: resources.html
+---
+body:
+
+Do you teach your community about using Tor? These training resources are for you.
