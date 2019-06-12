@@ -1,12 +1,10 @@
 <div class="container py-5">
   <div class="row py-5">
-    <div class="col-8">
+    <div class="col-lg-7">
       {{ this.body }}
     </div>
-    <div class="col-4 bg-light">
-      <div class="illo-container">
-        <img src="/static/images/home/png/{{ this.section_id }}.png" class="img-fluid" alt="{{ this.section }}" />
-      </div>
+    <div class="col-lg-5">
+      <img src="/static/images/home/png/{{ this.section_id }}.png" class="img-fluid" alt="{{ _(this.section) }}" />
     </div>
   </div>
   <a href="{{ this.path|url }}overview/"><h2 class="text-primary"><u>{{ _('Learn more about onion services here') }}
