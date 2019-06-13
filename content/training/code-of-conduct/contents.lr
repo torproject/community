@@ -1,0 +1,25 @@
+_model: page
+---
+section: training
+---
+section_id: training
+---
+color: primary
+---
+_template: layout.html
+---
+title: Code of Conduct for Trainers
+---
+subtitle: Don't be a jerk. Be awesome instead.
+---
+cta: Code of Conduct
+---
+key: 3
+---
+html: two-columns-page.html
+---
+body:
+
+##Code of Conduct for Trainers
+
+The Tor Project is committed to fostering an inclusive environment and community. Tor is a place where people should feel safe to engage, share their point of view, and participate. You can find our code of conduct [here](https://gitweb.torproject.org/community/policies.git/tree/code_of_conduct.txt)
