@@ -27,7 +27,7 @@
   <nav class="d-none d-sm-block section-nav bg-white sidetopics sticky" id="sidenav-topics">
 	  <h4 class="text-primary pl-4">{{ _("Topics") }}</h4>
     <ul class="nav nav-pills flex-column">
-    	{% for child in this.parent.children %}
+      {% for child in this.parent.children|sort(attribute='key') %}
         <li{% if this.is_child_of(child.path) %} class="toc-entry toc-h2 active nav-item" {% else %} class="toc-entry toc-h2 nav-item" {% endif %}>
           <a role="button" {% if this.is_child_of(child.path) %} class="nav-link active" {% else %} class="nav-link" {% endif %}
             href="{{ child.path|url(alt=this.alt) }}">{{ _(child.title) }}</a>
