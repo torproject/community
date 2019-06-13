@@ -9,16 +9,28 @@
   </div>
   <div class="row">
     {% for child in this.children|sort(attribute='key') %}
-      <div class="col-sm-4 col-md-4 col-sm-12 col-xl-4 py-4">
-        <div class="card h-100 border-0">
+      <div class="col-sm-6 col-md-6 col-sm-12 col-xl-6 py-3">
+        <div class="card h-100">
           <div class="card-body">
-            <h4 class="card-title text-primary">{{ child.title }}</h4>
-            <p class="card-text">{{ child.subtitle }}</p>
-            <a href="{{ child.path|url }}">{{ child.cta }} <i class="fas fa-arrow-right"></i></a>
+            <div class="card-body">
+              <h4 class="card-title text-primary">
+                <a href="{{ child.path|url(alt=this.alt) }}">{{ _(child.title) }}</a>
+              </h4>
+              <p class="card-text">{{ _(child.subtitle) }}</p>
+            </div>
           </div>
         </div>
       </div>
     {% endfor %}
+  </div>
+  <div class="row py-5 text-center mx-auto">
+      <h2 class="display-4 text-primary text-center mx-auto my-3">{{ _('Tor Speakers Bureau') }}</h2>
+      <p class="text-center">
+      {{ _('We have a dedicated group of Tor core contributors who are ready to speak at your next event. You can request a speaker by contacting speaking@torproject.org with your preferred topic, language requirement, date, and other details.') }}
+      </p>
+      <a class="btn btn-lg btn-outline-primary mx-auto my-3" href="mailto:speaking@torproject.org">
+          {{ _('Request a Speaker') }}<i class="ml-3 pt-2 fas fa-arrow-right"></i>
+    </a>
   </div>
   <div class="row py-5 text-center mx-auto">
     <h2 class="display-4 text-primary text-center mx-auto">{{ _('Upcoming Tor Events') }}</h2>
