@@ -2,5 +2,19 @@
   {% include 'sidenav.html' %}
   <div class="col-sm-12 col-xs-12  ml-sm-auto col-md-9 col-lg-9 {{ bag('alternatives', this.alt, 'order') }}">
     {{ this.body }}
+    <div class="row">
+    {% for child in this.children|sort(attribute='key') %}
+        <div class="col-sm-6 col-md-6 col-sm-12 col-xl-6 py-3">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h4 class="card-title text-primary"><a href="{{ child.path|url }}">{{ child.title }}</a></h4>
+                    <p class="card-text">{{ child.subtitle }}</p>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+    </div>
+    <a href="{{ this.parent|url }}">Back to {{ this.parent.title }}</a>
   </div>
 </div>
+
