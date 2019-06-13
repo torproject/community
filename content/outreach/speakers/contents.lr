@@ -12,6 +12,9 @@ subtitle: We have a dedicated group of Tor core contributors who are ready to sp
 ---
 key: 3
 ---
-html: outreach.html
+html: two-columns-page.html
 ---
 body:
+
+## Tor Speakers Bureau
+We have a dedicated group of Tor core contributors who are ready to speak at your next event. You can request a speaker by contacting speaking@torproject.org with your preferred topic, language requirement, date, and other details.

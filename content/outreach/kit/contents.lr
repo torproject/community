@@ -6,12 +6,15 @@ color: primary
 ---
 _template: layout.html
 ---
-title: Stream team kit
+title: Street team kit
 ---
 subtitle: This kit includes printable flyers, stickers, and other materials to get people excited about using Tor.
 ---
 key: 1
 ---
-html: outreach.html
+html: resources.html
 ---
 body:
+
+## Street Team Kit
+This kit includes printable flyers, stickers, and other materials to get people excited about using Tor.

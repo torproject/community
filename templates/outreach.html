@@ -7,17 +7,14 @@
       <img src="/static/images/home/png/{{ this.section_id }}.png" class="img-fluid" alt="{{ _(this.section) }}" />
     </div>
   </div>
-  <h2 class="text-primary">{{ _('Help us translate') }}</h2>
   <div class="row">
     {% for child in this.children|sort(attribute='key') %}
       <div class="col-sm-4 col-md-4 col-sm-12 col-xl-4 py-4">
         <div class="card h-100 border-0">
           <div class="card-body">
-            <img class="card-img-top" src="{{ 'static/images/gray-image.png'|asseturl }}" alt="Card image cap">
-            <div class="card-body">
-              <h4 class="card-title text-primary">{{ child.title }}</h4>
-              <p class="card-text">{{ child.subtitle }}</p>
-            </div>
+            <h4 class="card-title text-primary">{{ child.title }}</h4>
+            <p class="card-text">{{ child.subtitle }}</p>
+            <a href="{{ child.path|url }}">{{ child.cta }} <i class="fas fa-arrow-right"></i></a>
           </div>
         </div>
       </div>
