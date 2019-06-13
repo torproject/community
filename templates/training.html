@@ -7,22 +7,24 @@
       <img src="/static/images/home/png/{{ this.section_id }}.png" class="img-fluid" alt="{{ _(this.section) }}" />
     </div>
   </div>
-  <div class="row py-5">
-    {% for child in this.children %}
-      <div class="col-sm-6 col-md-6 col-sm-12 col-xl-6 py-4">
-        <div class="card h-100 border-0">
+  <div class="row">
+    {% for child in this.children|sort(attribute='key') %}
+      <div class="col-sm-6 col-md-6 col-sm-12 col-xl-6 py-3">
+        <div class="card h-100">
           <div class="card-body">
-            <h2 class="text-primary display-2"><i class="fas fa-{{ child.image }}"></i></h2>
-            <h4 class="card-title text-primary">{{ child.title }}</h4>
-            <p class="card-text">{{ child.subtitle }}</p>
-            <a href="{{ child.path|url }}">{{ child.cta }} <i class="fas fa-arrow-right"></i></a>
+            <div class="card-body">
+              <h4 class="card-title text-primary">
+                <a href="{{ child.path|url(alt=this.alt) }}">{{ _(child.title) }}</a>
+              </h4>
+              <p class="card-text">{{ _(child.subtitle) }}</p>
+            </div>
           </div>
         </div>
       </div>
     {% endfor %}
   </div>
   <div class="row py-5 text-center mx-auto">
-    <h2 class="display-4 text-primary text-center mx-auto">{{ _('Join the Community') }}</h2>
+    <h2 class="display-4 text-primary text-center mx-auto my-3">{{ _('Join the Community') }}</h2>
     <p class="text-center">
       {{ _('Are you interested in inviting someone from Tor to train your group? While we receive a high volume of training requests and may not be able to offer an in-person training, we may still be able to help. Contact the community team and let\'s talk.')}}
     </p>
