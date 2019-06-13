@@ -4,13 +4,15 @@ section_id: user-research
 ---
 color: primary
 ---
+_hidden: yes
+---
 _template: layout.html
 ---
 title: User Research
 ---
 subtitle: We conduct user research while also respecting user privacy.
 ---
-cta: Learn how you can help
+cta: In progress
 ---
 key: 4
 ---
