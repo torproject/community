@@ -45,4 +45,24 @@
       </h3></a>
     </div>
   </div>
+  <div class="row py-5 text-center mx-auto">
+    <h2 class="display-4 text-primary text-center mx-auto">{{ _('Featured .onion sites') }}</h2>
+  </div>
+  <div class="row mx-auto">
+    {% for id, item in bag('onions').items() %}
+      <div class="col-4">
+        <div class="card h-50 border-0">
+          {% if id=='tor' %}
+            <img class="card-img-top h-100 w-25 mx-auto d-block" src="{{ item.image|asseturl }}">
+          {% else %}
+            <img class="card-img-top mx-auto d-block" src="{{ item.image|asseturl }}">
+          {% endif %}
+          <div class="card-body">
+            <p class="card-text text-primary text-center"><a href="{{ item.link }}">{{ item.link }}</a></p>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+
+  </div>
 </div>
