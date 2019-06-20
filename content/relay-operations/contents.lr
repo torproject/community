@@ -30,4 +30,3 @@ By running a Tor relay you can help make the Tor network:
 * safer for its users (spying on more relays is harder than on a few)
 
 Running a relay requires technical skill and commitment, which is why we've created a wealth of resources to help our relay operators.
-The best resource of all is the active community of relay operators on tor-relays@lists.torproject.org and on IRC in #tor-relays.
