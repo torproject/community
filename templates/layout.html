@@ -1,10 +1,5 @@
 <!doctype html>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="{{ '/static/bootstrap.css'|asseturl }}">
-<link rel="stylesheet" href="{{ '/static/fonts/open-iconic/font/css/open-iconic-bootstrap.css'|asseturl }}">
-<link rel="stylesheet" href="{{ '/static/fonts/fontawesome/css/all.min.css'|asseturl }}" rel="stylesheet">
-<title>{{ _("Tor Project") }} | {% block title %}{{ this.title }}{% endblock %}</title>
+{% include 'meta.html' %}
 <body class="no-gutters">
   <header>
     {% include 'navbar.html' %}
