@@ -96,6 +96,6 @@ key:
 ---
 color: primary
 ---
-subtitle: How to deploy obfs4proxy on CentOS / RHEL
+subtitle: How to deploy obfs4proxy Bridge on CentOS / RHEL / OpenSUSE
 ---
 _template: layout.html

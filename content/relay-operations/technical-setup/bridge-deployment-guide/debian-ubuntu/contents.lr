@@ -77,4 +77,4 @@ key: 1
 ---
 html: two-columns-page.html
 ---
-subtitle: Follow the steps below to deploy obfs4proxy on Debian / Ubuntu
+subtitle: How to deploy an obfs4proxy Bridge on Debian / Ubuntu
