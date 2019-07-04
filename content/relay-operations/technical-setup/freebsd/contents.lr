@@ -70,6 +70,6 @@ FreeBSDlatest: {
 ```
 
 ---
-_template: 
+_template: layout.html
 ---
-color: primary
+color: 
