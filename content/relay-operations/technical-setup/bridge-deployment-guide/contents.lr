@@ -1,0 +1,19 @@
+_model: page
+---
+title:
+
+ Bridge deployment
+---
+body:
+
+This guide will help you run an obfs4 bridge to help censored users connect to the Tor network. The requirements are 1) 24/7 Internet connectivity and 2) the ability to expose TCP ports to the Internet (make sure that NAT doesn't get in the way). 
+---
+html: two-columns-page.html
+---
+key: 1
+---
+section: Bridge operations
+---
+section_id: bridge-operations
+---
+subtitle: Run an obfs4 bridge to help censored users connect to the Tor network
