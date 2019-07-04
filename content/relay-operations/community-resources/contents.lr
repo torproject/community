@@ -6,14 +6,62 @@ color: primary
 ---
 _template: layout.html
 ---
-title: Tor relay community resources
+title: Community and legal resources
 ---
 subtitle: How to get involved with the Tor relay operator community, advice on responding to abuse complaints, and how to start an organization dedicated to relay operation.
 ---
-key: 4
+key: 5
 ---
 html: two-columns-page.html
 ---
 body:
 
-text
+Exit relay operators should understand the potential risks associated with running an exit relay. For the majority of operators in most countries, bridges and guard/middle relays are very low risk. Exits are the ones that present some legal concerns, but operators under most circumstances will be able to handle legal matters by having an abuse response letter, running the exit from a location that isn't their home, and reading through some of the legal resources that Tor-supportive lawyers have put together. 
+
+# Legal resources
+
+The [EFF Tor Legal FAQ](https://www.torproject.org/eff/tor-legal-faq.html.en) answers many common questions about relay operation and the law. We also like Noisebridge's wiki for additional legal resources: https://www.noisebridge.net/wiki/Noisebridge_Tor/FBI.  In general it's a good idea to consult with a lawyer before deciding to operate an exit relay, especially if you live in a place where exit relay operators have been harassed, or if you're the only exit relay operator in your region. Get in touch with your local digital rights organization to see if they have recommendations about legal assistance, and if you're not sure what organizations are working in your region, write to EFF and see if they can help connect you: https://www.eff.org/about/contact. 
+
+Also see the [TorExitGuidelines Tor Exit Guidelines](FIXME).
+
+# Responding to abuse complaints
+
+Operators can put together their own abuse complaint template responses from one of many templates that Tor has created: [TorAbuseTemplates](tor-abuse-templates).
+
+It is important to respond to abuse complaints in a timely manner (usually within 24 hours). If the hoster gets annoyed by the  amount of abuse you can reduce the amount of ports allowed in your exit policy. Please document your experience with new hosters on the following wiki page: [GoodBadISPs](FIXME)
+
+Other docs we like:
+
+* a letter Boing Boing used to respond to a US federal subpoena about their exit relay: https://boingboing.net/2015/08/04/what-happened-when-the-fbi-sub.html
+* abuse response templates from Coldhak, an organization in Canada that runs multiple relays: https://github.com/coldhakca/abuse-templates/blob/master/dmca.template, https://github.com/coldhakca/abuse-templates/blob/master/generic.template
+
+# Running a relay with other people
+
+Running relays is more fun with other people! You can work with your university department, your employer or institution, or an organization like Torservers.net to run a relay.
+
+## Torservers.net 
+
+Torservers is an independent, global network of organizations that help the Tor network by running high bandwidth Tor relays. Becoming a Torservers partner is a good way to become more involved in the Tor relay community, and can help you connect with dedicated relay operators around the world for solidarity and support. To start a Torservers partner, the most important thing is to have a group of people (3-5 suggested to start) interested in helping with the various activities required for running relays. There should be mutual trust between the people in the group, and members should commit to running relays for the long term. If you do not know anyone in your social network interested in running relays, one place to meet people is your local hackerspace: https://wiki.hackerspaces.org/Hackerspaces.
+
+Once you have a trusted group of people, depending on your region, it is often advised to create some type of non-profit corporation. This is useful for having a bank account, shared ownership, grant applications, etc. In many countries operating as a corporation instead of as an individual can also get you certain legal protections.
+
+The next steps are figuring out hardware, transit, and server hosting. Depending on your location and connections within the technical community of the area, the last one may be the hardest step. Small local ISPs often have extra bandwidth, and may be interested in supporting your group with some bandwidth or rackspace. It is extremely important to maintain good relationships with these ISPs.
+
+## At your university 
+
+Many computer science departments, university libraries, and individual students and faculty run relays from university networks. These universities include the Massachusetts Institute of Technology (MIT CSAIL), Boston University, the University of Waterloo, the University of Washington, Northeastern University, Karlstad University, Universitaet Stuttgart, and Friedrich-Alexander University Erlangen-Nuremberg. To learn more about how to get support for a relay on your university's network, check out EFF's resources: https://www.eff.org/torchallenge/tor-on-campus.html.
+
+## At your company or organization
+
+If you work at a Tor-friendly company or organization, that's another ideal place to run a relay. Some companies running relays include Brass Horn Communications, Quintex Alliance Consulting, and OmuraVPN. Some organizations running Tor relays include Digital Courage, Access Now, Derechos Digitales, and Lebanon Libraries in New Hampshire.
+
+# More resources
+
+Congratulations, you're officially a Tor relay operator! What now? 
+
+* You can check out traffic and other statistics for your relay at our [Relay Search](https://metrics.torproject.org/rs.html) (your relay will appear on "Relay Search" about 3 hours after you started it).
+
+* There is also more info about running a relay at the [Tor FAQ](https://www.torproject.org/docs/faq.html.en#HowDoIDecide).
+
+* And, most importantly, make sure to email tshirt@torproject.org and [claim your swag](https://www.torproject.org/getinvolved/tshirt.html). It's our way of saying thanks for defending privacy and free speech online.
+
