@@ -9,3 +9,29 @@ key: 3
 section: relay operations
 ---
 section_id: relay-operations
+---
+_template: layout.html
+---
+body:
+
+# 1.  Install the tor package:
+
+`dnf install tor`
+
+# 2. Put the tor configuration file `/etc/tor/torrc` in place:
+
+```
+#change the nickname "myNiceRelay" to a name that you like
+Nickname myNiceRelay
+ORPort 9001
+ExitRelay 0
+# Change the email address bellow and be aware that it will be published
+ContactInfo tor-operator@your-emailaddress-domain
+```
+
+# 3. Start the tor daemon and make sure it starts at boot:
+
+```
+systemctl enable tor
+systemctl start tor
+```
