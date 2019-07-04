@@ -6,6 +6,70 @@ html: two-columns-page.html
 ---
 section: relay operations
 ---
-key: 7
+key: 2
 ---
 section_id: relay-operations
+---
+body:
+
+## 1. Install the tor package
+
+`pkg install tor ca_root_nss`
+
+or for alpha releases:
+
+`pkg install tor-devel ca_root_nss`
+
+## 2. Put the configuration file `/usr/local/etc/tor/torrc` in place
+
+```
+#change the nickname "myNiceRelay" to a name that you like
+Nickname myNiceRelay
+ORPort 9001
+ExitRelay 0
+SocksPort 0
+# Change the email address bellow and be aware that it will be published
+ContactInfo tor-operator@your-emailaddress-domain
+Log notice syslog
+```
+
+## 3. Ensure that the `random_id` sysctl setting is enabled:
+
+```
+echo "net.inet.ip.random_id=1" >> /etc/sysctl.conf
+sysctl net.inet.ip.random_id=1
+```
+
+## 4. Start the tor daemon and make sure it starts at boot:
+
+```
+sysrc tor_enable=YES
+service tor start
+```
+
+### Optional but recommended
+
+To get package updates faster after they have been build it is best to switch from the "quarterly" with "latest" repository.
+
+Create the following folder: 
+
+`mkdir -p /usr/local/etc/pkg/repos`
+
+and create the file `/usr/local/etc/pkg/repos/FreeBSD.conf` with the following content: 
+
+```
+FreeBSD: { enabled: no }
+
+FreeBSDlatest: {
+  url: "pkg+https://pkg.FreeBSD.org/${ABI}/latest",
+  mirror_type: "srv",
+  signature_type: "fingerprints",
+  fingerprints: "/usr/share/keys/pkg",
+  enabled: yes
+}
+```
+
+---
+_template: 
+---
+color: primary
