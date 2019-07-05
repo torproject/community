@@ -30,13 +30,14 @@ In some cases, you should talk to the network security people before you talk to
 If the authorities contact your university for logs, be pleasant and helpful. Tor's default log level doesn't provide much that's useful, so if they want copies of your logs, that's fine. Be helpful and take the opportunity to explain to them about Tor and why it's useful to the world. (If they contact you directly for logs, you should send them to
 your university's lawyers -- acting on it yourself is [almost always a poor idea](https://2019.www.torproject.org/eff/tor-legal-faq.html#RequestForLogs).
 
-If there are too many complaints coming in, there are several approaches you can take to reduce them. First, you should follow the tips in the [Tor relay documentation](https://community.torproject.org/relay), such
+If there are too many complaints coming in, there are several approaches you can take to reduce them. First, you should follow the tips in the [Tor relay documentation](https://community.torproject.org/relay-operations), such
 as picking a descriptive hostname or getting your own IP address. If that doesn't work, you can scale back the advertised speed of your relay, by using the Max``Advertised``Bandwidth to attract less traffic from the Tor network. Lastly, you can scale back your exit policy.
 
 Some people have found that their university only tolerates their Tor relay if they're involved in a research project around anonymity. So if you're interested, you might want to get that started early in the process -- see our [Research Portal](https://research.torproject.org/). This approach has the added benefit that you can draw in other faculty and students in the process. The downside is that your Tor relay's existence is more fragile, since the terms of its demise are already negotiated. Note that in many cases you don't even need to be researching the exit node itself -- doing research on the Tor network requires that there be a Tor network, after all, and keeping it going is a community effort.
 
+Subscribe to [Tor Relays Universities](https://lists.torproject.org/cgi-bin/mailman/listinfo/tor-relays-universities) mailing list (and other education institutions too).
 ---
-cta: Subscribe to Tor at universities, colleges, and other education institutions: https://lists.torproject.org/cgi-bin/mailman/listinfo/tor-relays-universities
+cta: 
 ---
 html: two-columns-page.html
 ---
