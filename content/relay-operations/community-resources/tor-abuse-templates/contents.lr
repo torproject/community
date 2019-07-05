@@ -6,7 +6,7 @@ body:
 
 # Before You Start
 
-The best way to handle abuse complaints is to set up your exit node so that they are less likely to be sent in the first place. Please see [Tips for Running an Exit Node with Minimal Harassment](https://blog.torproject.org/running-exit-node) and [Tor Exit Guidelines](/tor-exit-guidelines) for more info, before reading this document.
+The best way to handle abuse complaints is to set up your exit node so that they are less likely to be sent in the first place. Please see [Tips for Running an Exit Node with Minimal Harassment](https://blog.torproject.org/running-exit-node) and [Tor Exit Guidelines](tor-exit-guidelines) for more info, before reading this document.
 
 Below are a collection of letters you can use to respond to your ISP about their complaint in regards to your Tor exit server.
 

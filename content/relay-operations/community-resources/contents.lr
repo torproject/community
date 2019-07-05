@@ -33,7 +33,7 @@ It is important to respond to abuse complaints in a timely manner (usually withi
 Other docs we like:
 
 * a letter Boing Boing used to respond to a US federal subpoena about their exit relay: [What happened when we got subpoenaed over our Tor exit node](https://boingboing.net/2015/08/04/what-happened-when-the-fbi-sub.html)
-* abuse response templates from Coldhak, an organization in Canada that runs multiple relays: [DMCA Template](https://github.com/coldhakca/abuse-templates/blob/master/dmca.template), [Genetic Abuse Template](https://github.com/coldhakca/abuse-templates/blob/master/generic.template).
+* abuse response templates from Coldhak, an organization in Canada that runs multiple relays: [DMCA Template](https://github.com/coldhakca/abuse-templates/blob/master/dmca.template), [Generic Abuse Template](https://github.com/coldhakca/abuse-templates/blob/master/generic.template).
 
 # Running a relay with other people
 
@@ -63,5 +63,5 @@ Congratulations, you're officially a Tor relay operator! What now?
 
 * There is also more info about running a relay at the [Tor FAQ](https://2019.www.torproject.org/docs/faq.html.en#HowDoIDecide).
 
-* And, most importantly, make sure to email tshirt@torproject.org and [claim your swag](https://2019.www.torproject.org/getinvolved/tshirt.html). It's our way of saying thanks for defending privacy and free speech online.
+* And, most importantly, make sure to email tshirt@torproject.org and [claim your swag](swags). It's our way of saying thanks for defending privacy and free speech online.
 
