@@ -1,0 +1,46 @@
+_model: page
+---
+title: Debian/Ubuntu
+---
+body:
+
+# 1. Configure Tor Package Repository
+
+Enable the Torproject package repository by following the instructions **[here](https://2019.www.torproject.org/docs/debian.html.en#ubuntu)**.
+
+# 2. Package Installation
+
+Install the `tor` package:
+
+`apt update && apt install tor`
+
+# 3. Configuration File
+
+Put the configuration file `/etc/tor/torrc` in place:
+
+```
+#change the nickname "myNiceRelay" to a name that you like
+Nickname myNiceRelay
+ORPort 443
+ExitRelay 0
+SocksPort 0
+ControlSocket 0
+# Change the email address bellow and be aware that it will be published
+ContactInfo tor-operator@your-emailaddress-domain
+```
+
+# 4. Restart the Service
+
+Restart the tor daemon so your configuration changes take effect:
+
+`systemctl restart tor@default`
+---
+html: two-columns-page.html
+---
+key: 1
+---
+section: relay operations
+---
+section_id: relay-operations
+---
+subtitle: How to deploy a middle/Guard node on Debian/Ubuntu

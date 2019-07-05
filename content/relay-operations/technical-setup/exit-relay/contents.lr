@@ -1,6 +1,6 @@
 _model: page
 ---
-title: Exit Relay Configuration
+title: Exit
 ---
 html: two-columns-page.html
 ---
@@ -8,7 +8,7 @@ section: relay operations
 ---
 section_id: relay-operations
 ---
-key: 5
+key: 3
 ---
 body:
 
@@ -175,3 +175,7 @@ To avoid that the configuration gets changed (for example by the DHCP client):
 chflags schg /etc/resolv.conf
 ```
 
+---
+subtitle: How to deploy an Exit node
+---
+_slug: {{exit}}

@@ -1,0 +1,45 @@
+_model: page
+---
+title: Good Bad ISPs
+---
+body:
+
+This page aims to list community experiences with Tor and various Internet Service Providers (ISPs) around the world. Some ISPs are Tor-friendly, some are not. Some are competent and clueful about Tor or about security in general. Let us know!
+
+Be sure to provide useful information like how much bandwidth you pushed, whether you thought the deal was cheap or expensive, how hard you had to work to make them understand what's going on, how long your server has been running, and whether you'd recommend them to others. Also include dates.
+
+Since non-exits do not attract complaints, it should be fine to run them without contacting the hoster first. Make sure you understand their policies regarding bandwidth, especially on "unlimited" (fair use) contracts. For exit relays, you should read the fine Tor Exit Guidelines first.
+
+For network diversity and stronger anonymity, you should avoid providers and countries that already attract a lot of Tor capacity. [metrics](https://metrics.torproject.org/) is a great tool that allows you to group probabilities by country and AS (autonomous systems), so you can more easily identify networks you want to avoid.
+
+**Note**: This page is currently being revamped. If you would like to help out please see [#31063](https://trac.torproject.org/projects/tor/ticket/31063).
+
+## Proposed ISPs 
+
+The table below contains some community-suggested ISPs which have yet to be contacted and/or evaluated on their policies towards Tor hosting of any kind. If you have seen a host and would like to suggest it to us, but do not have the time or confidence to reach out, please do leave their website information below.
+
+
+| **Company/ISP** | **Website** | **Language** | **Tasked?** | **Comments** |
+|-------------------------|------------------|--------------------|------------------|---------------------|
+| [Evolution Host VPS](https://evolution-host.com/vps-hosting.php) | [Evolution Host](https://evolution-host.com/) | English | https://evolution-host.com/tos.php | "No problem at all! We certainly aren't against the use of Tor on our services. You may host any type of Tor node." | 
+| QuickPacket | quickpacket.com | English | ToS prohibit "any activity" related to Tor as of 2015-03-31. See prohibited use 22 http://quickpacket.com/tos.html |
+| Delimiter | delimiter.com | English | https://www.delimiter.com/terms-conditions/ | 
+| Reliable Hosting | reliablehosting.com | English | 2015-12-31 "Sorry, we don't allow Tor exit node on our servers" |
+| Dacentec | dacentec.com | English | 2015-12-29 Dacentec Support: "Tor Nodes are prohibited by our terms of service and acceptable use policy. 2 sites were given https://billing.dacentec.com/hostbill/aup.php and https://billing.dacentec.com/hostbill/terms.php |
+| Joe's Datacenter | joesdatacenter.com | English | | "For abuse complaints, if we receive them while your account is still fairly new, we automatically terminate services." | 
+| Wholesale Internet | wholesaleinternet.com | English | 2015-12-29 Wholesale Internet sales:"We do not block traffic, but you must respond to all abuse reports within 24 hours." | Core2Duo Dedi 100Mbit connection serves only ~ 35 Mbit (1/5/16)| 
+| Datashack.net \\ ASN: AS33387 | datashack.net | English | 2015-11-21 DataShack Sales: "We do not appose TOR, but require to respond to all abuse reports within 24 hours." |
+| !CrownCloud | crowncloud.net | English | ~~ToS dis-allow bridge, relay, or exit as of 2015-03-31.~~ As of 2015-07-22, only exits are disallowed. Entry, bridge and middle are fine. See item 17 at http://wiki.crowncloud.net/doku.php/vps_tos |
+| Deepnet Solutions | deepnetsolutions.com | English | They specifically allow Tor relays (not exits) on their dedicated IPV4 VPSs  NOT on any NAT or OHM packages. \\ Some of their locations have a lot of consensus weight (AS12876 and AS16276), maybe not so good for diversity. |
+| Andrews & Arnold | aa.net.uk | English | UK. IPv6. Note: Very very pro-privacy, has made public their net freedom and anti-surveillance stance. Zero censorship. |
+
+---
+html: two-columns-page.html
+---
+key: 3
+---
+section: Community Resources
+---
+section_id: community-resources
+---
+subtitle: Some ISPs are Tor-friendly, some are not

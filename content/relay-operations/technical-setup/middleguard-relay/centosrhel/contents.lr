@@ -2,14 +2,6 @@ _model: page
 ---
 title: CentOS/RHEL
 ---
-html: two-columns-page.html
----
-section: relay operations
----
-key: 5
----
-section_id: relay-operations
----
 body:
 
 # 1. Enable the EPEL repository
@@ -53,6 +45,12 @@ service tor start
 ```
 
 ---
-_template: layout.html
+html: two-columns-page.html
 ---
-color: primary
+key: 5
+---
+section: relay operations
+---
+section_id: relay-operations
+---
+subtitle: How to deploy a middle/Guard node on CentOS/RHEL

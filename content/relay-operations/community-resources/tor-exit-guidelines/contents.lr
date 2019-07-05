@@ -1,0 +1,117 @@
+_model: page
+---
+title: Tor Exit Guidelines
+---
+body:
+
+These guidelines are meant to give you a quick introduction into the business of running your own exit relay. 
+
+NOTE: This FAQ is for informational purposes only and does not constitute legal advice. Our aim is to provide a general description of the legal issues surrounding Tor exit relaying. Different factual situations and different legal jurisdictions will result in different answers to a number of questions. Therefore, please do not act on this information alone; if you have any specific legal problems, issues, or questions, seek a complete review of your situation with a lawyer licensed to practice in your jurisdiction.
+
+## Hosting
+
+### Tor at Universities: Find allies.
+
+Find some professors (or deans!) who like the idea of supporting and/or  researching anonymity on the Internet. If possible, use an extra IP range whose abuse contact doesn't go through the main university abuse team. Ideally, use addresses that are not trusted by the IP-based authentication many library-related services use -- if the university's entire IP address space is "trusted" to access these library resources, the university is forced to maintain an iron grip on all its addresses. Also read [How do I make my University / ISP / etc happy with my exit node?](FIXME)
+
+### Find Tor-friendly ISPs.
+
+A good ISP is one that offers cheap bandwidth and is not being used by other members of the Tor community. Before you continue, you may ask the Tor   community if your choice is a good one. We very much need diversity, and  it does not help if we pool too many exits at one friendly ISP.
+
+In any case, add the ISP to the [GoodBadISPs](FIXME) wiki page.
+
+To find an ISP, go through forums and sites where ISPs posts their latest deals, and contact them about Tor hosting. Once you identified your ISP, you can follow the two-step advice of TorServers.net.
+
+1. Ask if the ISP is okay with a Tor exit
+
+2. If they come back positively, ask them if they are OK with an IP range reassignment. If not, you can still explain that you are a non-profit superb large organization filled with security professionals, and that all will be good, and why IP reassignment helps reduce their workload.
+
+The two-step process usually helps in elevating your request to higher levels of support staff without scaring them off too early, even if you  don't end up with your own IP range. Here is template you can use: [Inquiry](https://www.torservers.net/wiki/hoster/inquiry)
+
+
+## Legal
+
+* Make sure you know the relevant legal paragraphs for common-carrier like communication services in your country (and the country of your hosting provider!).
+
+At least most western countries should have regulations that exclude communication service providers from liability.  Please add your country's regulations to this list.
+
+* USA: [DMCA 512](https://www.law.cornell.edu/uscode/text/17/512); see [EFF's Legal FAQ for Tor Operators](https://2019.www.torproject.org/eff/tor-legal-faq)  (a very good and relevant read for other countries as well)
+ * Germany: [TMG 8](http://www.gesetze-im-internet.de/tmg/__8.html)  and [15](http://www.gesetze-im-internet.de/tmg/__15.html).
+ * Netherlands: [Artikel 6:196c BW](http://wetten.overheid.nl/BWBR0005289/Boek6/Titel3/Afdeling4A/Artikel196c/)
+ * Austria: [ECG 13](http://www.ris.bka.gv.at/Dokument.wxe?Abfrage=Bundesnormen&Dokumentnummer=NOR40025809)
+* France: FIXME
+ * Sweden: [16-19 2002:562](https://lagen.nu/2002:562#P16S1)
+
+If you country is missing here and you know a lawyer who can provide a legal opinion, please get in contact with Tor Project.
+
+* If you're part of an organization that will be running the exit relay (ISP, university etc), consider teaching your legal people about Tor.
+
+It's way better for them to hear about Tor from you, in a relaxed environment, than to hear about it from a stranger over the phone. Make them aware of [EFF's Legal FAQ for Tor Operators](https://2019.www.torproject.org/eff/tor-legal-faq). EFF has also offered to talk to other lawyers to explain the legal aspects of Tor; contact us at support@torservers.net and we'll make the connections for you.
+
+* If you're not part of an organization, think about starting one!
+
+Depending on the chosen form, setting up a legal body might help with liability, and in general it helps to appear bigger than you are (and less likely to get raided). The guys from Torservers.net in Germany found a lawyer who would agree to "host" them inside his office. They are now are a non-profit association ("eingetragener Verein, gemeinnutzig") registered inside a lawyer's office. The setup process was easy and cheap. Similar setups probably exist for your country. Another benefit of an association-like structure is that it might still work even when you leave, if you manage to find successors.
+
+* Consider preemptively teaching your local law enforcement about Tor.
+
+"Cybercrime" people actually love it when you offer to [teach them about Tor and the Internet](https://blog.torproject.org/blog/talking-german-police-stuttgart)  -- they're typically overwhelmed by their jobs and don't have enough background to know where to start. Contacting them gives you a chance to teach them why Tor is useful to the world (and why it's [not particularly helpful to criminals](https://2019.www.torproject.org/docs/faq-abuse#WhatAboutCriminals). Also, if they do get a report about your relay, they'll think of you as a helpful expert rather than a potential criminal.
+
+## Handling abuse complaints
+
+### Answering complaints
+
+If you receive an abuse complaint, don't freak out! Here is some advice for you:
+
+* Answer to abuse complaints in a professional manner within a reasonable time span.
+
+TorServers.net is a fairly large Tor exit operator and we receive only a very small number of complaints, especially compared to the amount of traffic we push. Roughly 80% are automated reports, and the rest is usually satisfied with [our default reply](https://www.torservers.net/wiki/abuse/templates). We have not needed the input of a lawyer in many years of operation following the advice on this page.
+
+In addition to the [templates at Torservers.net](https://www.torservers.net/wiki/abuse/templates), you can find many more templates for various scenarios on the [Tor Abuse Templates](FIXME) . It is exceptionally rare to encounter a scenario where none of these templates apply.
+
+* If you receive a threatening letter from a lawyer about abusive use or a DMCA complaint, also don't freak out.
+
+We are not aware of any case that made it near a court, and we will do everything in our power to support you if it does. You can look up if an IP address was listed as an exit relay at a given time at [ExoneraTor](https://exonerator.torproject.org/). Point to that page in your reply to the complaint. If you feel it might be helpful, we can write you a signed letter confirming this information: Contact us at tor-assistants@torproject.org if you need one.
+
+In your reply, state clearly that you are not liable for forwarded content passing through your machine, and include the relevant legal references for your country.
+
+## Things you can do preemptively
+
+* Make the WHOIS info point as close to you as possible.
+
+One of the biggest reasons exit relays disappear is because the people answering the abuse address get nervous and ask you to stop. If you can get your own IP block, great. Even if not, many providers will still reassign subblocks to you if you ask. ARIN uses [SWIP](https://www.arin.net/resources/request/reassignments.html), and RIPE uses something similar. You can also add comments to your range, hinting at your usage as anonymization service ([Example](https://apps.db.ripe.net/search/query.html?searchtext=ZWIEBELFREUNDE)). If you have questions about the process, please write an email to support@torservers.net and we will try to explain the process to you.
+
+* Register a phone number and a fax number as abuse contact.
+
+At least law enforcement in Germany regularly uses the fax and phone numbers present in IP records. Torservers.net uses a free German fax-to-email service, call-manager.de, and a VoIP number from Sipgate.de.
+
+* Consider using the Reduced Exit Policy.
+
+The [Reduced Exit Policy](FIXME)  is an alternative to the default exit policy.  It allows many Internet services while still blocking the  majority of TCP ports. This drastically reduces the odds that a Bittorrent user will select your node and thus reduces or even eliminates the number of [DMCA complaints](https://2019.www.torproject.org/eff/tor-dmca-response) you will receive.
+
+If you have your own experience of abuse handling, just share it on our public mailing list or write us an email to tor-assistants@torproject.org.
+
+## Technical
+
+Please read all the technical details before getting started. If you have any questions or need help, please contact us at [tor-relays](https://lists.torproject.org/cgi-bin/mailman/listinfo/tor-relays).
+
+* [TorRelayGuide](https://community.torproject.org/relay)
+
+* Set up an informative website on the exit IP(s) on port 80.
+
+A disclaimer helps giving people the right idea about what is behind traffic coming from these IPs. A simple notice can be published without a separate webserver using Tor's "DirPortFrontPage " directive.
+
+* Try to use dedicated IPs, and when possible dedicated hardware.
+
+* Disk encryption might be useful to protect your node keys, but on the other hand unencrypted machines are easier to "audit" if required. We feel it's best to be able to easily show that you do Tor exiting, and nothing else (on that IP or server).
+
+* Set reverse DNS to something that signals its use, e.g. 'anonymous-relay', 'proxy', 'tor-proxy'. so when other people see the address in their web logs, they will more quickly understand what's going on. If you do, and if SMTP is allowed in your exit policy, consider configuring [SPF](https://en.wikipedia.org/wiki/Sender_Policy_Framework) on your domain: this will protect you from users using your exit node to forge e-mails which look like they come from you.
+---
+html: two-columns-page.html
+---
+key: 5
+---
+section: Community Resources
+---
+section_id: community-resources
+---
+subtitle: Quick introduction into running your Exit relay

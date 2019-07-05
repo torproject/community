@@ -2,16 +2,6 @@ _model: page
 ---
 title: Fedora
 ---
-html: two-columns-page.html
----
-key: 3
----
-section: relay operations
----
-section_id: relay-operations
----
-_template: layout.html
----
 body:
 
 # 1.  Install the tor package:
@@ -35,3 +25,13 @@ ContactInfo tor-operator@your-emailaddress-domain
 systemctl enable tor
 systemctl start tor
 ```
+---
+html: two-columns-page.html
+---
+key: 3
+---
+section: relay operations
+---
+section_id: relay-operations
+---
+subtitle: How to deploy a middle/Guard node on Fedora
