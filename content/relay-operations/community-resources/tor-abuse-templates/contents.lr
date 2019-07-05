@@ -6,7 +6,7 @@ body:
 
 # Before You Start
 
-The best way to handle abuse complaints is to set up your exit node so that they are less likely to be sent in the first place. Please see [Tips for Running an Exit Node with Minimal Harassment](https://blog.torproject.org/running-exit-node ) and [Tor Exit Guidelines](https://trac.torproject.org/projects/tor/wiki/doc/TorExitGuidelines) for more info, before reading this document.
+The best way to handle abuse complaints is to set up your exit node so that they are less likely to be sent in the first place. Please see [Tips for Running an Exit Node with Minimal Harassment](https://blog.torproject.org/running-exit-node) and [Tor Exit Guidelines](/tor-exit-guidelines) for more info, before reading this document.
 
 Below are a collection of letters you can use to respond to your ISP about their complaint in regards to your Tor exit server.
 
@@ -281,16 +281,16 @@ If a serious abuse complaint not covered by this template set arrives, the best 
   * The ISP is not at fault and not liable for your actions.  This is normally the case, but the poor abuse person dealing with the issues just wants to hear it isn't the ISPs problem.  They will move on after they are comfortable.
  * Discuss options.  Options Phobos has been offered:
   * The ISP/Complaintant may very well demand to see logfiles.  Fortunately, by default, nothing sensitive disclosed.  You may want a new ISP if they demand access to log files ad hoc.
-  * The ISP/Complaintant suggests you convert to middleman. In this case, you may want to counter with a reduced exit policy, such as the one suggested in [https://blog.torproject.org/running-exit-node item #6 of the above blog post].
+  * The ISP/Complaintant suggests you convert to middleman. In this case, you may want to counter with a reduced exit policy, such as the one suggested in [item #6 of the above blog post](https://blog.torproject.org/running-exit-node).
   * The ISP/Complaintant demands you disable Tor.  You may want a new ISP as a result.
   * The ISP/Complaintant states they will firewall off the traffic on the default ports.  You may want a new ISP as a result.
-  * Update the config to disallow traffic to a certain IP range from your exit node. You may want to suggest the complaintant use the [Tor DNS RBL](https://www.torproject.org/projects/tordnsel.html.en ) instead.
+  * Update the config to disallow traffic to a certain IP range from your exit node. You may want to suggest the complaintant use the [Tor DNS RBL](https://2019.www.torproject.org/projects/tordnsel.html.en) instead.
  * After all has been discussed, offer a follow up conversation within a week.  Make sure your agreed upon changes are implemented.  Neither the ISP nor Complaintant may want to do this, but the fact that you offered is in your credit.  This may help them feel "comfortable" with you.
 
 
 ## Other Template Sets
 
- * [DMCA Response template for Tor node maintainer to ISP](FIXME) as written by the [EFF](http://www.eff.org EFF).
+ * [DMCA Response template for Tor node maintainer to ISP](FIXME) as written by the [EFF](http://www.eff.org).
  * Moritz Bartl, the operator of some of our fastest Tor exit nodes, has begun compiling a [set of abuse response template emails](https://www.torservers.net/wiki/abuse/templates) as well.
 ---
 html: two-columns-page.html
