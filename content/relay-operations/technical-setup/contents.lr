@@ -38,14 +38,6 @@ If you are looking to run a relay with minimal effort we recommend you stick to 
 
 The installation commands are shown in code blocks and must be executed with root privileges.
 
-## Configuration Management
-
-If you plan to run more than a single relay, or you want to run a high capacity relay (multiple Tor instances per server) or want to use strong security features like [Offline Master Keys](https://trac.torproject.org/projects/tor/wiki/doc/TorRelaySecurity/OfflineKeys) without performing additional steps manually, you may want to use a configuration management for better maintainability.
-
-There are multiple configuration management solutions for Unix based operating systems (Ansible, Puppet, Salt, ...).
-
-The following Ansible Role has specifically been build for Tor relay operators and supports multiple operating systems: [Ansible Relayor](http://github.com/nusenu/ansible-relayor).
-
-Click below in which type of relay do you want to host.
+Click below in which type of relay do you want to host and don't forget to read [Relay post-install and good practices](relays-post-install-and-good-practices).
 ---
 _slug: {{setup}}

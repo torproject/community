@@ -28,12 +28,12 @@ Also see the [Tor Exit Guidelines](tor-exit-guidelines).
 
 Operators can put together their own abuse complaint template responses from one of many templates that Tor has created: [Tor Abuse Templates](tor-abuse-templates).
 
-It is important to respond to abuse complaints in a timely manner (usually within 24 hours). If the hoster gets annoyed by the  amount of abuse you can reduce the amount of ports allowed in your exit policy. Please document your experience with new hosters on the following wiki page: [GoodBadISPs](/good-bad-isps)
+It is important to respond to abuse complaints in a timely manner (usually within 24 hours). If the hoster gets annoyed by the  amount of abuse you can reduce the amount of ports allowed in your exit policy. Please document your experience with new hosters on the following wiki page: [GoodBadISPs](good-bad-isps)
 
 Other docs we like:
 
 * a letter Boing Boing used to respond to a US federal subpoena about their exit relay: [What happened when we got subpoenaed over our Tor exit node](https://boingboing.net/2015/08/04/what-happened-when-the-fbi-sub.html)
-* abuse response templates from Coldhak, an organization in Canada that runs multiple relays: [DMCA Template](https://github.com/coldhakca/abuse-templates/blob/master/dmca.template), [Genetic Abuse Template](https://github.com/coldhakca/abuse-templates/blob/master/generic.template).
+* abuse response templates from Coldhak, an organization in Canada that runs multiple relays: [DMCA Template](https://github.com/coldhakca/abuse-templates/blob/master/dmca.template), [Generic Abuse Template](https://github.com/coldhakca/abuse-templates/blob/master/generic.template).
 
 # Running a relay with other people
 
@@ -49,11 +49,11 @@ The next steps are figuring out hardware, transit, and server hosting. Depending
 
 ## At your university 
 
-Many computer science departments, university libraries, and individual students and faculty run relays from university networks. These universities include the Massachusetts Institute of Technology (MIT CSAIL), Boston University, the University of Waterloo, the University of Washington, Northeastern University, Karlstad University, Universitaet Stuttgart, and Friedrich-Alexander University Erlangen-Nuremberg. To learn more about how to get support for a relay on your university's network, check out EFF's resources: [Tor no campus](https://www.eff.org/torchallenge/tor-on-campus.html).
+Many computer science departments, university libraries, and individual students and faculty run relays from university networks. These universities include the Massachusetts Institute of Technology (MIT CSAIL), Boston University, the University of Waterloo, the University of Washington, Northeastern University, Karlstad University, Universitaet Stuttgart, and Friedrich-Alexander University Erlangen-Nuremberg. To learn more about how to get support for a relay on your university's network, check out EFF's resources: [Tor on campus](https://www.eff.org/torchallenge/tor-on-campus.html).
 
 ## At your company or organization
 
-If you work at a Tor-friendly company or organization, that's another ideal place to run a relay. Some companies running relays include Brass Horn Communications, Quintex Alliance Consulting, and OmuraVPN. Some organizations running Tor relays include Digital Courage, Access Now, Derechos Digitales, and Lebanon Libraries in New Hampshire.
+If you work at a Tor-friendly company or organization, that's another ideal place to run a relay. Some companies running relays include Brass Horn Communications, Quintex Alliance Consulting, and OmuraVPN. Some organizations running Tor relays include Digital Courage, [Access Now](https://www.accessnow.org/), [Derechos Digitales](https://tor.derechosdigitales.org), [Enjambre Digital](https://tor.enjambre.net/) and Lebanon Libraries in New Hampshire.
 
 # More resources
 
@@ -61,7 +61,7 @@ Congratulations, you're officially a Tor relay operator! What now?
 
 * You can check out traffic and other statistics for your relay at our [Relay Search](https://metrics.torproject.org/rs.html) (your relay will appear on "Relay Search" about 3 hours after you started it).
 
-* There is also more info about running a relay at the [Tor FAQ](https://www.torproject.org/docs/faq.html.en#HowDoIDecide).
+* There is also more info about running a relay at the [Tor FAQ](https://2019.www.torproject.org/docs/faq.html.en#HowDoIDecide).
 
-* And, most importantly, make sure to email tshirt@torproject.org and [claim your swag](https://www.torproject.org/getinvolved/tshirt.html). It's our way of saying thanks for defending privacy and free speech online.
+* And, most importantly, make sure to email tshirt@torproject.org and [claim your swag](swags). It's our way of saying thanks for defending privacy and free speech online.
 

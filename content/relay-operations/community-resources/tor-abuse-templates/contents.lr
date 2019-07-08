@@ -6,7 +6,7 @@ body:
 
 # Before You Start
 
-The best way to handle abuse complaints is to set up your exit node so that they are less likely to be sent in the first place. Please see [Tips for Running an Exit Node with Minimal Harassment](https://blog.torproject.org/running-exit-node) and [Tor Exit Guidelines](/tor-exit-guidelines) for more info, before reading this document.
+The best way to handle abuse complaints is to set up your exit node so that they are less likely to be sent in the first place. Please see [Tips for Running an Exit Node with Minimal Harassment](https://blog.torproject.org/running-exit-node) and [Tor Exit Guidelines](tor-exit-guidelines) for more info, before reading this document.
 
 Below are a collection of letters you can use to respond to your ISP about their complaint in regards to your Tor exit server.
 
@@ -14,7 +14,7 @@ Below are a collection of letters you can use to respond to your ISP about their
 
 The general format of these templates is to inform the complaintant about Tor, to help them to find a solution to their particular issue that works in general for the Internet at large (open wifi, open proxies, botnets, etc), and barring all else, how to block Tor. The philosophy of the Tor Project is that abuse should be handled proactively by the site administrators, rather than wasting effort and resources on seeking vengeance and chasing ghosts.
 
-The difference between the proactive approach and the reactive approach to abuse is the difference between decentralized fault-tolerant Internet freedom, and fragile, corruptible totalitarian control. To further preach to the choir, the identity-based Internet "driver's licenses" of South Korea and China have done nothing to curtail cybercrime and Internet abuse. In fact, all [http://boingboing.net/2011/08/12/south-korea-to-abandon-real-name-internet-policy.html objective evidence] seems to indicate that it has only created new markets for organized crime to preside over. This is the core idea that these abuse complaint templates attempt to instil in the recipient. Feel free to improve them if you feel they fall short of this goal.
+The difference between the proactive approach and the reactive approach to abuse is the difference between decentralized fault-tolerant Internet freedom, and fragile, corruptible totalitarian control. To further preach to the choir, the identity-based Internet "driver's licenses" of South Korea and China have done nothing to curtail cybercrime and Internet abuse. In fact, all [objective evidence](http://boingboing.net/2011/08/12/south-korea-to-abandon-real-name-internet-policy.html) seems to indicate that it has only created new markets for organized crime to preside over. This is the core idea that these abuse complaint templates attempt to instil in the recipient. Feel free to improve them if you feel they fall short of this goal.
 
 All templates should include the Common Boilerplate below, and append some additional paragraphs depending on the specific Scenario.
 
