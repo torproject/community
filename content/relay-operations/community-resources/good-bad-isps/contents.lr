@@ -81,7 +81,7 @@ For network diversity and stronger anonymity, you should avoid providers and cou
 | [UPC Austria GmbH](https://www.upc.at/) | - | - | Yes | Yes | (ISP) does not care what their customers do at all (unless you have a business connection) | 12/2011 |
 | [Silver Server GmbH](http://sil.at/) | - | -| Yes | Yes | Forwards abuse. Hosts already some big exit/entry nodes which seem to have no problems. Very expensive traffic. | 12/2011 |
 | [Tele2 Austria GmbH](https://tele2.at/) | - | - | Yes | Yes | Forwards abuse at business connections, good quality traffic, does not like "proxys" on private lines. Cheap synchronous (SDSL) connections. | 12/2011 |
-| [A1(former Telekom Austria)](http://a1.net) | - | - | Yes | No | Does not like Abuse (in any form) at all. Seems to give out customer data at alleged abuse. Not recommended but cheap. | 12/2011 | 
+| [A1(former Telekom Austria)](http://a1.net) | - | - | Yes | No | Does not like Abuse (in any form) at all. Seems to give out customer data at alleged abuse. Not recommended but cheap. | 12/2011 |
 | [xpirio GmbH](http://xpirio.at) | - | - | Yes | ? | In general rather relaxed at all services, but better get in touch with their (very understanding) support when you expect abuse. | 12/2011 |
 
 
@@ -106,11 +106,11 @@ For network diversity and stronger anonymity, you should avoid providers and cou
 | [myLoc Managed IT](https://myloc.de) | AS31010, AS24961 | Yes | Yes | No | - | 2018-10-25 |
 | [linevast](https://www.linevast.de/) | - | Yes | Yes | Yes | Only allowed on dedicated servers | 13/11/2015 |
 | [Server4You](https://www.server4you.de/)| - | Yes | Yes | No | Part of [Intergenia AG](http://www.intergenia.de/)), I've asked Server4You support and they state servers with complaints about Tor will be canceled immediately (see the quote in the "Bad Experience" section) | - |
-| [Hetzner](http://hetzner.de/) | - | - | Yes | No | Offers good dedicated root servers for a good price. | 
+| [Hetzner](http://hetzner.de/) | - | - | Yes | No | Offers good dedicated root servers for a good price. |
 | [Contabo](https://contabo.de) | - | Yes | Yes | Yes | Has no restriction for relays or exit nodes. However, possible abuse complaints will be forwarded to the owner and need to be addressed. | 2018/06 |
 | [Strato](https://strato.de) | - | - | Yes | No |  Exit-Nodes are prohibited by their general terms and conditions | - |
 | [PraHost](https://www.prahost.com/) | - | - | Yes | Yes | Stated in November 2014 that they allow exit nodes if abuse complaints are handled. Suspends the server if no "valid" action (read: blocking) is taken within 24 hours of an abuse ticket. Their ticket system does not reliably handle email replies, use the web interface instead. | 2017-10-31 |
-| [DomainFactory](https://www.df.eu/de/cloud-hosting/cloud-server/) | - | - | Yes | No | - | - | 
+| [DomainFactory](https://www.df.eu/de/cloud-hosting/cloud-server/) | - | - | Yes | No | - | - |
 | [NetCologne](https://www.netcologne.de/) | - | - | Yes | Yes | - | - |
 
 
@@ -130,8 +130,8 @@ For network diversity and stronger anonymity, you should avoid providers and cou
 
 | **Company/ISP** | **ASN** | **Bridges** | **Relay** | **Exit** | **Comments** | **Last Updated** |
 |-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
-| [Online.net](http://www.online.net/) | AS12876 | Yes | Yes | Yes | The account holder is responsible for all the traffic going through theirs servers.| 01/28/2019 | 
-| [Gandi VPS](https://www.gandi.net/) | - | Yes | Yes | Yes| Gandi send some abuse complaints to Exit relays, but they do not stop the server, and when you tell them your server is a Tor Exit relay, they say it is OK. They ask Exit relays to use the standard Reduced Exit Policy | - | 
+| [Online.net](http://www.online.net/) | AS12876 | Yes | Yes | Yes | The account holder is responsible for all the traffic going through theirs servers.| 01/28/2019 |
+| [Gandi VPS](https://www.gandi.net/) | - | Yes | Yes | Yes| Gandi send some abuse complaints to Exit relays, but they do not stop the server, and when you tell them your server is a Tor Exit relay, they say it is OK. They ask Exit relays to use the standard Reduced Exit Policy | - |
 | [OVH Kimsufi](http://www.kimsufi.com/) | - | Yes | Yes | No | Changed their TOS in July 2013 and allow Tor as long as they don't notice illegal activities. Exit nodes would eventually be shut down, but relays are allowed. Octave Klaba, CEO of OVH said himself that the TOS have been changed to make them clearer about the use of Tor. Many relays are currently running on Kimsufi servers | - |
 | [Digicube](http://www.digicube.fr/) | - | Yes | Yes | Yes | - | - |
 | [Pulse Servers](http://www.pulseservers.com/) | - | Yes | Yes | Yes | VPS uses OVH AS. You can build ANY kind tor relays. | 05/01/2016 |
@@ -179,7 +179,7 @@ For network diversity and stronger anonymity, you should avoid providers and cou
 
 | **Company/ISP** | **ASN** | **Bridges** | **Relay** | **Exit** | **Comments** | **Last Updated** |
 |-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
-| [MivoCloud](https://www.mivocloud.com/) | - | Yes | Yes | No | - | 09/13/16 | 
+| [MivoCloud](https://www.mivocloud.com/) | - | Yes | Yes | No | - | 09/13/16 |
 | [Trabia](https://www.trabia.com/) | - | Yes | Yes | Yes | - | 08/13/17 |
 | [AlexHost](https://alexhost.md/) | - | Yes | Yes | Yes | - | 07/21/2014 |
 
@@ -193,17 +193,17 @@ For network diversity and stronger anonymity, you should avoid providers and cou
 | [verelox](https://verelox.com/) | AS12876 | Yes | Yes | Yes | - | 5/16 |
 | [HostHatch](https://hosthatch.com/) | AS42708 | Yes | Yes | No | - | 05/01/16 |
 | Ziggo | AS9143 | Yes | Yes | Yes | - | 05/24/2016 |
-| [LiteServer](https://www.liteserver.nl/) | AS60404 | Yes | Yes | Yes | Can pay with Bitcoin. While their AUP doesn\'t allow tor exit nodes, see here[here](https://www.liteserver.nl/en/acceptable-usage-policy/). They make an exception if your exit-node has a reduced exit policy. And you must leave a note to them that you are running a exit-node. "We allow tor exit nodes as long you run a limited exit policy (block SMTP) to avoid abuse. | 12/26/2018 | 
+| [LiteServer](https://www.liteserver.nl/) | AS60404 | Yes | Yes | Yes | Can pay with Bitcoin. While their AUP doesn\'t allow tor exit nodes, see here[here](https://www.liteserver.nl/en/acceptable-usage-policy/). They make an exception if your exit-node has a reduced exit policy. And you must leave a note to them that you are running a exit-node. "We allow tor exit nodes as long you run a limited exit policy (block SMTP) to avoid abuse. | 12/26/2018 |
 | [i3D](https://www.i3d.net/) | - | Yes | Yes | Yes | Allows also exits, if abuse is handled properly | 08/13/2017 |
-| [KoDDoS](https://koddos.net) | AS206264 | Yes | Yes | Yes | Bitcoin accepted. | 10/12/2017 | 
+| [KoDDoS](https://koddos.net) | AS206264 | Yes | Yes | Yes | Bitcoin accepted. | 10/12/2017 |
 | [Worldstream](https://www.worldstream.nl) | AS49981 | Yes | Yes | No |  - | 02/06/2019 |
 | [LeaseWeb](https://www.leaseweb.com/) | - | Yes | Yes | Yes | - | - |
 | [Novogara](http://www.novogara.com) | - | Yes | Yes | Yes | Explicitly allows Tor exit nodes and forwards abuse/DCMA, but their network isn't the most stable. You need to email them for a custom offer. They also accept Bitcoin/UKash/CashU | - |
-| [Netrouting`](http://netrouting.nl/) | - | Yes | Yes | No | ISP has confirmed by e-mail that exit nodes are NOT acceptable. | 2014-10-15 | 
+| [Netrouting`](http://netrouting.nl/) | - | Yes | Yes | No | ISP has confirmed by e-mail that exit nodes are NOT acceptable. | 2014-10-15 |
 | [DirectVPS](http://directvps.nl/) | - | Yes | Yes | ? | - | - |
 | [Versio](http://versio.nl/) | - | Yes | Yes | No | - | 2013 |
 | [CyberBunker](http://www.cyberbunker.com/) | - | Yes | Yes | Yes | Customers can remain anonymous. | - |
-| [SnelServer](https://www.snelserver.com/) | - | Yes | Yes | Yes | Abuse complaints must be responded to within 24 hours or the system automatically suspends your account until you do. | 2014 | 
+| [SnelServer](https://www.snelserver.com/) | - | Yes | Yes | Yes | Abuse complaints must be responded to within 24 hours or the system automatically suspends your account until you do. | 2014 |
 | [ChmuraNet](https://www.chmuranet.com/) | - | Yes | Yes | Yes | Allows anonymous users to run tor exits. Abuse issues will be forwarded. Make sure to tell them that you're running an exit | 09/2014 |
 
 
@@ -224,11 +224,11 @@ For network diversity and stronger anonymity, you should avoid providers and cou
 | **Company/ISP** | **ASN** | **Bridges** | **Relay** | **Exit** | **Comments** | **Last Updated** |
 |-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
 | [Dataclub](https://www.dataclub.biz) | - | Yes | Yes | Yes | Your Exit should use Reduced Exit Policy | 2016/06/30 |
-| [HostHatch](https://hosthatch.com) | AS42708 | Yes | Yes | No | - | 2016/05 | 
+| [HostHatch](https://hosthatch.com) | AS42708 | Yes | Yes | No | - | 2016/05 |
 | TeliaSonera | - | Yes | Yes | ? | TeliaSonera is also big in Sweden and deliver where other ISPs can't. | - |
 | [PRQ](http://prq.se/?p=dedicated&intl=1) |  - | Yes | Yes | Yes | - | - |
 | [Portlane](http://www.portlane.com/) | - | Yes | Yes | Yes | Previously provided connectivity for ThePirateBay, OpenBitTorrent tracker et al.  Handles abuse according to "Swedish praxis". |  - |
-| [Yourserver](https://www.yourserver.se/) | - | Yes | Yes | ? | Support team will allow relay/exit but TOR Traffic is throttled to 5Mbps speed. If your Exit relay receive too much complaints, they will ask to you to stop or otherwise they will suspend. | 2015/03/06 | 
+| [Yourserver](https://www.yourserver.se/) | - | Yes | Yes | ? | Support team will allow relay/exit but TOR Traffic is throttled to 5Mbps speed. If your Exit relay receive too much complaints, they will ask to you to stop or otherwise they will suspend. | 2015/03/06 |
 
 
 ### Switzerland
@@ -237,22 +237,22 @@ For network diversity and stronger anonymity, you should avoid providers and cou
 | **Company/ISP** | **ASN** | **Bridges** | **Relay** | **Exit** | **Comments** | **Last Updated** |
 |-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
 | [Solar Communications Gmbh](https://solarcom.ch/) | AS197988 | Yes | Yes | No | "We allow to place Tor routers, but don't allow to place Tor exit nodes." This applies to all their partners, who actually sell Solar's services to the public, namely: [Server & cloud](https://server-cloud.com), [CoinsHost](https://coinshost.com), [Incloudibly](https://incloudibly.net), [Cloudcom](https://cloudc.me), [AtomDrive](https://atomdrive.net). Cryptocurrencies are accepted. | 12/04/2015 |
-| [fsit](http://www.fsit.ch/) | - | Yes | Yes | Yes | - | 11/2015 | 
+| [fsit](http://www.fsit.ch/) | - | Yes | Yes | Yes | - | 11/2015 |
 
 
 ### Latvia
 
 | **Company/ISP** | **ASN** | **Bridges** | **Relay** | **Exit** | **Comments** | **Last Updated** |
 |-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
-| [Yourserver](https://www.yourserver.se/) | - | Yes | Yes | ? | Support team will allow relay/exit but TOR Traffic is throttled to 5Mbps speed. If your Exit relay receive too much complaints, they will ask to you to stop or otherwise they will suspend. | 2015/03/06 | 
+| [Yourserver](https://www.yourserver.se/) | - | Yes | Yes | ? | Support team will allow relay/exit but TOR Traffic is throttled to 5Mbps speed. If your Exit relay receive too much complaints, they will ask to you to stop or otherwise they will suspend. | 2015/03/06 |
 
 
 ### Canada
 
 | **Company/ISP** | **ASN** | **Bridges** | **Relay** | **Exit** | **Comments** | **Last Updated** |
 |-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
-| [TekSavvy](http://www.teksavvy.ca) | - | Yes | Yes | ? | has a server-friendly Internet Use Policy (e.g., running a Tor relay) and has taken a stand in favor of net neutrality | 2008/12 | 
-| [CloudatCost.ca](http://www.cloudatcost.com/) | - | Yes | Yes | ? | operated by Fibernetics, has liberal abuse handling policies [AUP](http://www.cloudatcost.com/terms.php), however Tor is not explicitly allowed. | 2015/02 | 
+| [TekSavvy](http://www.teksavvy.ca) | - | Yes | Yes | ? | has a server-friendly Internet Use Policy (e.g., running a Tor relay) and has taken a stand in favor of net neutrality | 2008/12 |
+| [CloudatCost.ca](http://www.cloudatcost.com/) | - | Yes | Yes | ? | operated by Fibernetics, has liberal abuse handling policies [AUP](http://www.cloudatcost.com/terms.php), however Tor is not explicitly allowed. | 2015/02 |
 | [oneprovider](http://oneprovider.com/) | - | Yes | Yes | Yes |  They are reselling dedicated servers in many locations around the world. Abuse handling differs depending on the provider from which they resell. | 2016/06 |
 
 
@@ -261,7 +261,7 @@ For network diversity and stronger anonymity, you should avoid providers and cou
 
 | **Company/ISP** | **ASN** | **Bridges** | **Relay** | **Exit** | **Comments** | **Last Updated** |
 |-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
-| [Tus Hosting](http://www.tushosting.si/) | - |  Yes | Yes | Yes |  They just simply forward DMCA notices to us to handle (or ignore) them | - | 
+| [Tus Hosting](http://www.tushosting.si/) | - |  Yes | Yes | Yes |  They just simply forward DMCA notices to us to handle (or ignore) them | - |
 
 
 
@@ -269,14 +269,14 @@ For network diversity and stronger anonymity, you should avoid providers and cou
 | **Company/ISP** | **ASN** | **Bridges** | **Relay** | **Exit** | **Comments** | **Last Updated** |
 |-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
 | [UrDN](http://urdn.com.ua) | - | Yes | Yes | Yes | free speech hoster, allows anything but spam/scam. Abuse always forwarded. | 10/08/2015 |
-| [Colocall](http://www.colocall.net/) | - | Yes | Yes | Yes | - | - | 
+| [Colocall](http://www.colocall.net/) | - | Yes | Yes | Yes | - | - |
 
 
 ### Lithuania
 
 | **Company/ISP** | **ASN** | **Bridges** | **Relay** | **Exit** | **Comments** | **Last Updated** |
 |-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
-| [Baltic Servers](http://www.balticservers.com) | - |  Yes | Yes | Yes | All abuse mails they got yielded support tickets | - | 
+| [Baltic Servers](http://www.balticservers.com) | - |  Yes | Yes | Yes | All abuse mails they got yielded support tickets | - |
 
 
 ### New Zealand and Australia
@@ -284,7 +284,7 @@ For network diversity and stronger anonymity, you should avoid providers and cou
 | **Company/ISP** | **ASN** | **Bridges** | **Relay** | **Exit** | **Comments** | **Last Updated** |
 |-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
 | [HostHatch](https://hosthatch.com/) | AS36351 | Yes | Yes | No | Their VPS location is: Sydney, AU - Equinix IBX SY3 Data Center.Their ISP is:SoftLayer network, which includes primary transit from Telstra and peering with Equinix, Pipe-IX, NSW-IX and Megaport. | - |
-| [Rimu hosting](http://rimuhosting.com) | - | Yes | Yes | Yes | Have servers in N.Z.; Sydney; London; and Dallas. Locations may vary, but quite happy with the specific Oz/NZ query. | - | 
+| [Rimu hosting](http://rimuhosting.com) | - | Yes | Yes | Yes | Have servers in N.Z.; Sydney; London; and Dallas. Locations may vary, but quite happy with the specific Oz/NZ query. | - |
 
 
 
@@ -298,20 +298,20 @@ For network diversity and stronger anonymity, you should avoid providers and cou
 
 | **Company/ISP** | **ASN** | **Bridges** | **Relay** | **Exit** | **Comments** | **Last Updated** |
 |-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
-| [T-Systems`](http://www.t-systems.cz/) | - | Yes | Yes | ? | - | 
+| [T-Systems`](http://www.t-systems.cz/) | - | Yes | Yes | ? | - |
 
 
 ### Poland
 
 | **Company/ISP** | **ASN** | **Bridges** | **Relay** | **Exit** | **Comments** | **Last Updated** |
 |-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
-| [Hitme.net.pl](http://hitme.net.pl/) | - | Yes | Yes | Yes | - | 12/06/2017 | 
-| [Hostowisko.pl](http://www.hostowisko.pl/) | - | Yes | Yes | ? | -  | 27/08/2013 | 
-| [Exone](http://www.exone.pl/) | - | Yes | Yes | ? | - | 28/08/2013 | 
+| [Hitme.net.pl](http://hitme.net.pl/) | - | Yes | Yes | Yes | - | 12/06/2017 |
+| [Hostowisko.pl](http://www.hostowisko.pl/) | - | Yes | Yes | ? | -  | 27/08/2013 |
+| [Exone](http://www.exone.pl/) | - | Yes | Yes | ? | - | 28/08/2013 |
 | [e24cloud](http://www.e24cloud.com/en) | - | Yes | Yes | ? | - | 01/10/2013 |
 | [hostinger.pl](http://www.hostinger.pl) | - | Yes | Yes | Yes | 02/10/2013 |
 | [statnet.pl](http://www.statnet.pl/) | - | No | No | No | Used to allow Tor-relays, but now is blocking Tor activity | 12/06/2017 |
-| [IQ PL](http://www.iq.pl/) | - | Yes | Yes | Yes | They allow running exit node on collocated dedicated server |  - | 
+| [IQ PL](http://www.iq.pl/) | - | Yes | Yes | Yes | They allow running exit node on collocated dedicated server |  - |
 | [Slask DataCenter](https://sldc.eu/) | - | Yes | Yes | Yes | - | 21/02/2018 |
 
 
@@ -319,7 +319,7 @@ For network diversity and stronger anonymity, you should avoid providers and cou
 
 | **Company/ISP** | **ASN** | **Bridges** | **Relay** | **Exit** | **Comments** | **Last Updated** |
 |-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
-| Axtel | - | Yes | Yes | ? |  Currently some Guard / Middle nodes are running in Axtel network | 2019 | 
+| Axtel | - | Yes | Yes | ? |  Currently some Guard / Middle nodes are running in Axtel network | 2019 |
 
 
 
