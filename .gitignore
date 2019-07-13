@@ -8,6 +8,8 @@ public
 *.po
 contents+*.lr
 
+.cache 
+
 *.egg-info
 *.pyc
 __pycache__
