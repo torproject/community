@@ -1,0 +1,98 @@
+_model: page
+---
+title: FreeBSD
+---
+html: two-columns-page.html
+---
+key: 3
+---
+body:
+
+# 1. Install packages
+
+```
+pkg install obfs4proxy-tor tor ca_root_nss
+```
+
+# 2. Edit your Tor config file, usually located at `/usr/local/etc/tor` and add the following lines
+
+```
+#Bridge config
+RunAsDaemon 1
+ORPort auto
+BridgeRelay 1
+ServerTransportPlugin obfs4 exec /usr/local/bin/obfs4proxy
+# For a fixed obfs4 port (e.g. 34176), uncomment the following line.
+#ServerTransportListenAddr obfs4 0.0.0.0:34176
+# Local communication port between Tor and obfs4. Always set this to "auto". "Ext" means
+# "extended", not "external". Don't try to set a specific port number, nor listen on 0.0.0.0.
+ExtORPort auto
+
+# Contact information that allows us to get in touch with you in case of
+# critical updates or problems with your bridge.  This is optional, so you
+# don't have to provide an email address if you don't want to.
+ContactInfo <address@email.com>
+# Pick a nickname that you like for your bridge.
+Nickname PickANickname
+
+Log notice file /var/log/tor/notices.log
+```
+
+Don't forget to change the ContactInfo and Nickname options.
+
+* Note that both Tor's OR port **and** its obfs4 port must be reachable. If your bridge is behind a firewall or NAT, make sure to open both ports.
+
+# 3. Ensure that the `random_id` sysctl setting is enabled:
+
+```
+echo "net.inet.ip.random_id=1" >> /etc/sysctl.conf
+sysctl net.inet.ip.random_id=1
+```
+
+# 4. Start the tor daemon and make sure it starts at boot:
+
+```
+sysrc tor_enable=YES
+service tor start
+```
+
+# 5. Monitor your logs 
+
+To confirm your bridge is running with no issues, you should see something like this in `/var/log/tor/notices.log`:
+
+```
+[notice] Your Tor server's identity key fingerprint is '<NICKNAME> <FINGERPRINT>'
+[notice] Your Tor bridge's hashed identity key fingerprint is '<NICKNAME> <HASHED FINGERPRINT>'
+[notice] Registered server transport 'obfs4' at '[::]:46396'
+[notice] Tor has successfully opened a circuit. Looks like client functionality is working.
+[notice] Bootstrapped 100%: Done
+[notice] Now checking whether ORPort <redacted>:9001 is reachable... (this may take up to 20 minutes -- look for log messages indicating success)
+[notice] Self-testing indicates your ORPort is reachable from the outside. Excellent. Publishing server descriptor.
+```
+
+Remember to open the random port associated with your bridge. You can find it in your tor log; in the above example it is 46396. To use a fixed port, uncomment the [ ServerTransportListenAddr](https://www.torproject.org/docs/tor-manual.html.en#ServerTransportListenAddr) option in your torrc. You can use[our reachability test] (https://bridges.torproject.org/scan/) to see if your obfs4 port is reachable from the Internet.
+
+# 6. To get the fastest package updates, switch from the  "quarterly" package repo to the "latest" repo.
+
+Create the following folder:
+
+```
+mkdir -p /usr/local/etc/pkg/repos
+```
+
+Create the file `/usr/local/etc/pkg/repos/FreeBSD.conf` with the following content:
+
+```
+FreeBSD: { enabled: no }
+
+FreeBSDlatest: {
+  url: "pkg+https://pkg.FreeBSD.org/${ABI}/latest",
+  mirror_type: "srv",
+  signature_type: "fingerprints",
+  fingerprints: "/usr/share/keys/pkg",
+  enabled: yes
+}
+```
+
+---
+subtitle: How to deploy obfs4proxy Bridge on FreeBSD

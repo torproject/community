@@ -1,0 +1,56 @@
+_model: page
+---
+title: CentOS/RHEL
+---
+body:
+
+# 1. Enable the EPEL repository
+
+To install `tor` package on CentOS/RHEL, you need to install the [EPEL](https://fedoraproject.org/wiki/EPEL) repository first:
+
+`yum install epel-release`
+
+# 2. Install the tor package and verify the EPEL signing key
+
+`yum install tor`
+
+When you install the first package from the EPEL repository you will be asked about verifying the EPEL GPG signing key. Please ensure the key matches with the one available on the [Fedora Project website](https://getfedora.org/keys/).
+
+# 3. Put the tor configuration file `/etc/tor/torrc` in place
+
+```
+#change the nickname "myNiceRelay" to a name that you like
+Nickname myNiceRelay
+ORPort 9001
+SocksPort 0
+ExitRelay 0
+# Change the email address bellow and be aware that it will be published
+ContactInfo tor-operator@your-emailaddress-domain
+```
+
+# 4. Enable and start your Tor relay
+
+CentOS 7 / RHEL 7:
+
+```
+systemctl enable tor
+systemctl start tor
+```
+
+CentOS 6 / RHEL 6:
+
+```
+service tor enable
+service tor start
+```
+
+---
+html: two-columns-page.html
+---
+key: 5
+---
+section: relay operations
+---
+section_id: relay-operations
+---
+subtitle: How to deploy a middle/Guard node on CentOS/RHEL
