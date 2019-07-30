@@ -4,57 +4,67 @@ title: Debian / Ubuntu
 ---
 body:
 
-# 1. Install Tor
+### 1. Install Tor
 
 Get the latest version of Tor. If you're on Debian stable, `sudo apt-get install tor` should give you the latest stable version of Tor.
 
-* Note:''' Ubuntu users need to get it from Tor repository. Please see [Download instructions for Ubuntu](https://www.torproject.org/docs/debian.html.en#ubuntu).
+* Note: **Ubuntu users need to get it from Tor repository. Please see** [Download instructions for Ubuntu](https://www.torproject.org/docs/debian.html.en#ubuntu).
 
-# 2. Install obfs4proxy
+### 2. Install obfs4proxy
 
-On [Debian](https://packages.debian.org/search?keywords=obfs4proxy), the `obfs4proxy` package is available in sid, buster, and stretch. On [https://packages.ubuntu.com/search?keywords=obfs4proxy Ubuntu], bionic, cosmic, disco, and eoan have the package. If you're running any of them, `sudo apt-get install obfs4proxy` should work.
+On [Debian](https://packages.debian.org/search?keywords=obfs4proxy), the `obfs4proxy` package is available in sid, buster, and stretch. On [Ubuntu](https://packages.ubuntu.com/search?keywords=obfs4proxy), bionic, cosmic, disco, and eoan have the package. If you're running any of them, `sudo apt-get install obfs4proxy` should work.
 
 If not, you can [build it from source](https://gitlab.com/yawning/obfs4#installation).
 
-# 3. Edit your Tor config file, usually located at `/etc/tor/torrc` and add the following lines:
+
+### 3. Edit your Tor config file, usually located at `/etc/tor/torrc` and add the following lines:
 
 ```
-#Bridge config
 RunAsDaemon 1
-ORPort auto
 BridgeRelay 1
+
+# Replace "TODO" with a Tor port of your choice.  This port must be externally
+# reachable.  Avoid port 9001 because it's commonly associated with Tor and
+# censors may be scanning the Internet for this port.
+ORPort TODO
+
 ServerTransportPlugin obfs4 exec /usr/bin/obfs4proxy
-# For a fixed obfs4 port (e.g. 34176), uncomment the following line.
-#ServerTransportListenAddr obfs4 0.0.0.0:34176
-# Local communication port between Tor and obfs4. Always set this to "auto". "Ext" means
-# "extended", not "external". Don't try to set a specific port number, nor listen on 0.0.0.0.
+
+# Replace "TODO" with an obfs4 port of your choice.  This port must be
+# externally reachable.  Avoid port 9001 because it's commonly associated with
+# Tor and censors may be scanning the Internet for this port.
+ServerTransportListenAddr obfs4 0.0.0.0:TODO
+
+# Local communication port between Tor and obfs4.  Always set this to "auto".
+# "Ext" means "extended", not "external".  Don't try to set a specific port
+# number, nor listen on 0.0.0.0.
 ExtORPort auto
 
-# Contact information that allows us to get in touch with you in case of
-# critical updates or problems with your bridge.  This is optional, so you
-# don't have to provide an email address if you don't want to.
+# Replace "<address@email.com>" with your email address so we can contact you if
+# there are problems with your bridge.  This is optional but encouraged.
 ContactInfo <address@email.com>
-# Pick a nickname that you like for your bridge.
+
+# Pick a nickname that you like for your bridge.  This is optional.
 Nickname PickANickname
 ```
 
-Don't forget to change the ContactInfo and Nickname options.
+
+ Don't forget to change the `ORPort`, `ServerTransportListenAddr`, `ContactInfo`, and `Nickname` options. 
 
 * If you decide to use a fixed obfs4 port smaller than 1024 (for example 80 or 443), you will need to give obfs4 `CAP_NET_BIND_SERVICE` capabilities to bind the port with a non-root user: 
 
-```
-sudo setcap cap_net_bind_service=+ep /usr/bin/obfs4proxy
-```
+
+`sudo setcap cap_net_bind_service=+ep /usr/bin/obfs4proxy`
 
 * Under Debian, you will also need to set `NoNewPrivileges=no` in `/lib/systemd/system/tor@default.service` and `/lib/systemd/system/tor@.service` and then run `systemctl daemon-reload`. [bug #18356](https://trac.torproject.org/projects/tor/ticket/18356)
 
-* Note that both Tor's OR port **and** its obfs4 port must be reachable. If your bridge is behind a firewall or NAT, make sure to open both ports.
+* Note that both Tor's OR port and its obfs4 port must be reachable. If your bridge is behind a firewall or NAT, make sure to open both ports. You can use [our reachability test](https://bridges.torproject.org/scan/) to see if your obfs4 port is reachable from the Internet.
 
-# 4. Restart tor
+### 4. Restart tor
 
 `systemctl restart tor`
 
-# 5. Monitor your logs 
+### 5. Monitor your logs 
 
 To confirm your bridge is running with no issues, you should see something like this (usually in `/var/log/tor/log` or `/var/log/syslog`):
 
@@ -68,10 +78,6 @@ To confirm your bridge is running with no issues, you should see something like 
 [notice] Now checking whether ORPort <redacted>:9001 is reachable... (this may take up to 20 minutes -- look for log messages indicating success)
 [notice] Self-testing indicates your ORPort is reachable from the outside. Excellent. Publishing server descriptor.
 ```
-
-Remember to open the random port associated with your bridge. You can find it in your tor log; in the above example it is 46396. To use a fixed port, uncomment the [ServerTransportListenAddr](https://www.torproject.org/docs/tor-manual.html.en#ServerTransportListenAddr) option in your torrc. You can use [our reachability test](https://bridges.torproject.org/scan/) to see if your obfs4 port is reachable from the Internet.
-
-
 ---
 key: 1
 ---
