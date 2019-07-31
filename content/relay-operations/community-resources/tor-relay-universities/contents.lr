@@ -4,36 +4,86 @@ title: Tor Relay Universities
 ---
 body:
 
-To keep your exit node running long-term, you're going to need the support of the people around you. In this sense, Tor provides a lever to help you change your organization's policies. If the administration considers an Internet community that helps other people to be a foreign concept, or if they're used to treating new situations as security risks and telling everybody to quit it, a Tor relay may give you a way to focus the discussion and find allies who want to help change policy. In short, running a Tor exit node may well require you to become an advocate for anonymity and privacy in the world.
+To keep your exit node running long-term, you're going to need the support of the people around you.
+In this sense, Tor provides a lever to help you change your organization's policies.
+If the administration considers an Internet community that helps other people to be a foreign concept, or if they're used to treating new situations as security risks and telling everybody to quit it, a Tor relay may give you a way to focus the discussion and find allies who want to help change policy.
+In short, running a Tor exit node may well require you to become an advocate for anonymity and privacy in the world.
 
-The best strategy depends on your situation, but here are some tips to get you started. (We focus on the university scenario, but hopefully you can adapt it to your own situation.)
+The best strategy depends on your situation, but here are some tips to get you started.
+(We focus on the university scenario, but hopefully you can adapt it to your own situation.)
 
- * First, learn about your university's AUP -- acceptable use policy. Most likely it is ambiguously worded, to let them allow or deny things based on the situation. But it might be extremely restrictive ("no services of any kind"), in which case you're going to have a tough road ahead of you.
+ * First, learn about your university's AUP -- acceptable use policy.
+Most likely it is ambiguously worded, to let them allow or deny things based on the situation.
+But it might be extremely restrictive ("no services of any kind"), in which case you're going to have a tough road ahead of you.
 
- * Second, learn about your local laws with respect to liability of traffic that exits from your Tor relay. In the US, these appear to be mainly the [DMCA](https://2019.www.torproject.org/eff/tor-legal-faq.html#DMCA) and [CDA](https://2019.www.torproject.org/eff/tor-legal-faq.html#Lawsuits),  and the good news is that many lawyers believe that Tor exit node operators are in the same boat as the ISPs themselves. Become familiar with
-[the EFF's template letter regarding DMCA notices for Tor](https://2019.www.torproject.org/eff/tor-dmca-response.html), which is quite clear about not putting liability on service providers. The CDA is less clear, because it was written before the modern Internet emerged, but EFF and ACLU are optimistic. Of course, you need to understand that without actual clear precedent (and even then), it's still possible that a given judge will not interpret things the way the lawyers expect. In any case, the key here is to become familiar with the laws and their implications and uncertainties.
+ * Second, learn about your local laws with respect to liability of traffic that exits from your Tor relay.
+In the US, these appear to be mainly the [DMCA](https://2019.www.torproject.org/eff/tor-legal-faq.html#DMCA) and [CDA](https://2019.www.torproject.org/eff/tor-legal-faq.html#Lawsuits),  and the good news is that many lawyers believe that Tor exit node operators are in the same boat as the ISPs themselves.
+Become familiar with [the EFF's template letter regarding DMCA notices for Tor](https://2019.www.torproject.org/eff/tor-dmca-response.html), which is quite clear about not putting liability on service providers.
+The CDA is less clear, because it was written before the modern Internet emerged, but EFF and ACLU are optimistic.
+Of course, you need to understand that without actual clear precedent (and even then), it's still possible that a given judge will not interpret things the way the lawyers expect.
+In any case, the key here is to become familiar with the laws and their implications and uncertainties.
 
- * Third, learn about Tor's design. Read the [design overview](https://2019.www.torproject.org/overview.html), the [design paper](https://www.torproject.org/svn/trunk/doc/design-paper/tor-design.html), and the FAQ.  Hang out on IRC (irc.oftc.net - #tor-relays) for a while and learn more. If possible, attend a talk by one of the Tor developers. Learn about the types of people and organizations who need secure communications on the Internet. Practice explaining Tor and its benefits and consequences to friends and neighbors -- the [abuse FAQ](https://2019.www.torproject.org/faq-abuse) may provide some helpful starting points.
+ * Third, learn about Tor's design.
+Read the [design overview](https://2019.www.torproject.org/overview.html), the [design paper](https://www.torproject.org/svn/trunk/doc/design-paper/tor-design.html), and the [FAQ](FIXME).
+Hang out on IRC (irc.oftc.net - #tor-relays) for a while and learn more.
+If possible, attend a talk by one of the Tor developers.
+Learn about the types of people and organizations who need secure communications on the Internet.
+Practice explaining Tor and its benefits and consequences to friends and neighbors -- the [abuse FAQ](https://2019.www.torproject.org/faq-abuse) may provide some helpful starting points.
 
- * Fourth, learn a bit about authentication on the Internet. Many library-related services use source IP address to decide whether a subscriber is allowed to see their content. If the university's entire IP address space is "trusted" to access these library resources, the university is forced to maintain an iron grip on all its addresses. Universities like Harvard do the smart thing: their students and faculty have actual methods to authenticate -- say, certificates, or usernames and passwords -- to a central Harvard server and access the library resources from there. So Harvard doesn't need to be as worried about what other services are running on their network, and it also takes care of off-campus students and faculty. On the other hand, universities like Berkeley simply add a "no proxies" line to their network policies, and are stuck in a battle to patrol every address on their network. We should encourage all these networks to move to an end-to-end authentication model rather than conflating network location with who's on the other end.
+ * Fourth, learn a bit about authentication on the Internet.
+Many library-related services use source IP address to decide whether a subscriber is allowed to see their content.
+If the university's entire IP address space is "trusted" to access these library resources, the university is forced to maintain an iron grip on all its addresses.
+Universities like Harvard do the smart thing: their students and faculty have actual methods to authenticate -- say, certificates, or usernames and passwords -- to a central Harvard server and access the library resources from there.
+So Harvard doesn't need to be as worried about what other services are running on their network, and it also takes care of off-campus students and faculty.
+On the other hand, universities like Berkeley simply add a "no proxies" line to their network policies, and are stuck in a battle to patrol every address on their network.
+We should encourage all these networks to move to an end-to-end authentication model rather than conflating network location with who's on the other end.
 
- * Fifth, start finding allies. Find some professors (or deans!) who like the idea of supporting and/or researching anonymity on the Internet. If your school has a botnet research group or studies Internet attacks (like at Georgia Tech and UCSD), meet them and learn more about all the scary things already out there on the Internet. If you have a law school nearby, meet the professors that teach the Internet law classes, and chat with them about Tor and its implications. Ask for advice from everybody you meet who likes the idea, and try to work your way up the chain to get as many good allies as you can in as many areas as you can.
+ * Fifth, start finding allies.
+Find some professors (or deans!) who like the idea of supporting and/or researching anonymity on the Internet.
+If your school has a botnet research group or studies Internet attacks (like at Georgia Tech and UCSD), meet them and learn more about all the scary things already out there on the Internet.
+If you have a law school nearby, meet the professors that teach the Internet law classes, and chat with them about Tor and its implications.
+Ask for advice from everybody you meet who likes the idea, and try to work your way up the chain to get as many good allies as you can in as many areas as you can.
 
- * Sixth, teach your university's lawyers about Tor. This may seem like a risky move, but it's way better for them to hear about Tor from you, in a relaxed environment, than to hear about it from a stranger over the phone. Remember that lawyers don't like being told how to interpret laws by a non-lawyer, but they are often pleased to hear that other lawyers have done a lot of the research and leg-work (this is where [the EFF's legal FAQ](https://2019.www.torproject.org/eff/tor-legal-faq) comes in, along with your law school contacts if you found any). Make sure to keep these discussions informal and small -- invite one of the general counsel out to coffee to discuss "something neat that may come up later on." Feel free to bring along one of the allies you found above, if it makes you more comfortable. Avoid having actual meetings or long email discussions, and make it clear that you don't need their official legal opinion yet. Remember that lawyers are paid to say no unless they have a reason to say yes, so when the time finally comes to ask their opinion on running a Tor exit node, make sure the question is not "are there any liability issues?", but rather "we'd like to do this, can you help us avoid the biggest issues?" Try to predict what they will say, and try to gain allies among the lawyers who like your cause and want to help. If they have concerns, or raise questions that you don't know how to answer, work with them to figure out the answers and make them happy. Becoming friends with the lawyers early in the process will avoid situations where they need to learn about everything and make a decision in one day.
+ * Sixth, teach your university's lawyers about Tor.
+This may seem like a risky move, but it's way better for them to hear about Tor from you, in a relaxed environment, than to hear about it from a stranger over the phone.
+Remember that lawyers don't like being told how to interpret laws by a non-lawyer, but they are often pleased to hear that other lawyers have done a lot of the research and leg-work (this is where [the EFF's legal FAQ](https://2019.www.torproject.org/eff/tor-legal-faq) comes in, along with your law school contacts if you found any).
+Make sure to keep these discussions informal and small -- invite one of the general counsel out to coffee to discuss "something neat that may come up later on." Feel free to bring along one of the allies you found above, if it makes you more comfortable.
+Avoid having actual meetings or long email discussions, and make it clear that you don't need their official legal opinion yet.
+Remember that lawyers are paid to say no unless they have a reason to say yes, so when the time finally comes to ask their opinion on running a Tor exit node, make sure the question is not "are there any liability issues?", but rather "we'd like to do this, can you help us avoid the biggest issues?" Try to predict what they will say, and try to gain allies among the lawyers who like your cause and want to help.
+If they have concerns, or raise questions that you don't know how to answer, work with them to figure out the answers and make them happy.
+Becoming friends with the lawyers early in the process will avoid situations where they need to learn about everything and make a decision in one day.
 
- * Seventh, teach your network security people about Tor. You aren't going to keep your Tor exit node a secret from them for long anyway, and like with the lawyers, hearing it from you is way better than hearing it from a stranger on the phone. Avoid putting them on the spot or formally asking permission: most network security people will like the idea of Tor in theory, but they won't be in a position to "authorize" your Tor relay. Take them out to coffee to explain Tor and let them know that you are planning to run a Tor server. Make it clear that you're willing to work with them to make sure it isn't too much hassle on their part; for example, they can pass complaints directly on to you if they like. These people are already overworked, and anything you can do to keep work off their plate will make everybody happier. You might let them know that there are ways you can dial down the potential for abuse complaints, for example by rate limiting or partially restricting your exit policy -- but don't be too eager to offer or take these steps, since once you give up ground here it's very hard to get it back.
+ * Seventh, teach your network security people about Tor.
+You aren't going to keep your Tor exit node a secret from them for long anyway, and like with the lawyers, hearing it from you is way better than hearing it from a stranger on the phone.
+Avoid putting them on the spot or formally asking permission: most network security people will like the idea of Tor in theory, but they won't be in a position to "authorize" your Tor relay.
+Take them out to coffee to explain Tor and let them know that you are planning to run a Tor server.
+Make it clear that you're willing to work with them to make sure it isn't too much hassle on their part; for example, they can pass complaints directly on to you if they like.
+These people are already overworked, and anything you can do to keep work off their plate will make everybody happier.
+You might let them know that there are ways you can dial down the potential for abuse complaints, for example by rate limiting or partially restricting your exit policy -- but don't be too eager to offer or take these steps, since once you give up ground here it's very hard to get it back.
 
-You'll also want to learn if there are bandwidth limitations at your organization. (Tor can handle a variety of rate limiting approaches, so this isn't the end of the world).
+You'll also want to learn if there are bandwidth limitations at your organization.
+(Tor can handle a variety of rate limiting approaches, so this isn't the end of the world).
 
-In some cases, you should talk to the network security people before you talk to the lawyers; in some cases, there will be yet other groups that will be critical to educate and bring into the discussion. You'll have to make it up as you go.
+In some cases, you should talk to the network security people before you talk to the lawyers; in some cases, there will be yet other groups that will be critical to educate and bring into the discussion.
+You'll have to make it up as you go.
 
-If the authorities contact your university for logs, be pleasant and helpful. Tor's default log level doesn't provide much that's useful, so if they want copies of your logs, that's fine. Be helpful and take the opportunity to explain to them about Tor and why it's useful to the world. (If they contact you directly for logs, you should send them to
+If the authorities contact your university for logs, be pleasant and helpful.
+Tor's default log level doesn't provide much that's useful, so if they want copies of your logs, that's fine.
+Be helpful and take the opportunity to explain to them about Tor and why it's useful to the world.
+(If they contact you directly for logs, you should send them to
 your university's lawyers -- acting on it yourself is [almost always a poor idea](https://2019.www.torproject.org/eff/tor-legal-faq.html#RequestForLogs).
 
-If there are too many complaints coming in, there are several approaches you can take to reduce them. First, you should follow the tips in the [Tor relay documentation](https://community.torproject.org/relay-operations), such
-as picking a descriptive hostname or getting your own IP address. If that doesn't work, you can scale back the advertised speed of your relay, by using the Max``Advertised``Bandwidth to attract less traffic from the Tor network. Lastly, you can scale back your exit policy.
+If there are too many complaints coming in, there are several approaches you can take to reduce them.
+First, you should follow the tips in the [Tor relay documentation](https://community.torproject.org/relay-operations), such
+as picking a descriptive hostname or getting your own IP address.
+If that doesn't work, you can scale back the advertised speed of your relay, by using the Max``Advertised``Bandwidth to attract less traffic from the Tor network.
+Lastly, you can scale back your exit policy.
 
-Some people have found that their university only tolerates their Tor relay if they're involved in a research project around anonymity. So if you're interested, you might want to get that started early in the process -- see our [Research Portal](https://research.torproject.org/). This approach has the added benefit that you can draw in other faculty and students in the process. The downside is that your Tor relay's existence is more fragile, since the terms of its demise are already negotiated. Note that in many cases you don't even need to be researching the exit node itself -- doing research on the Tor network requires that there be a Tor network, after all, and keeping it going is a community effort.
+Some people have found that their university only tolerates their Tor relay if they're involved in a research project around anonymity.
+So if you're interested, you might want to get that started early in the process -- see our [Research Portal](https://research.torproject.org/).
+This approach has the added benefit that you can draw in other faculty and students in the process.
+The downside is that your Tor relay's existence is more fragile, since the terms of its demise are already negotiated.
+Note that in many cases you don't even need to be researching the exit node itself -- doing research on the Tor network requires that there be a Tor network, after all, and keeping it going is a community effort.
 
 Subscribe to [Tor Relays Universities](https://lists.torproject.org/cgi-bin/mailman/listinfo/tor-relays-universities) mailing list (and other education institutions too).
 ---

@@ -63,39 +63,50 @@ As part of this step, Bob gives its introduction point a special "authentication
 
 Now that the introduction points are setup, we need to create a way for clients to be able to find them.
 
-For this reason, Bob assembles an _onion service descriptor_, containing a list of his introduction points (and their "authentication keys"), and signs this descriptor with his _identity private key_. The _identity private key_ used here is the private part of the **public key that is encoded in the onion service address**.
+For this reason, Bob assembles an _onion service descriptor_, containing a list of his introduction points (and their "authentication keys"), and signs this descriptor with his _identity private key_.
+The _identity private key_ used here is the private part of the **public key that is encoded in the onion service address**.
 
-Now, Bob uploads that signed descriptor to a _distributed hash table_ which is part of the Tor network, so that clients can also get it. Bob uses an anonymized Tor circuit to do this upload, so that he does not reveal his location.
+Now, Bob uploads that signed descriptor to a _distributed hash table_ which is part of the Tor network, so that clients can also get it.
+Bob uses an anonymized Tor circuit to do this upload, so that he does not reveal his location.
 
 ### Act 3: Where a client wants to visit the onion service
 
-All the previous steps were just setup for the onion service so that it's reachable by clients. Now let's fast-forward to the point where an actual client wants to visit the service:
+All the previous steps were just setup for the onion service so that it's reachable by clients.
+Now let's fast-forward to the point where an actual client wants to visit the service:
 
 ![Onion Services: Step 3](/static/images/onion-services/overview/tor-onion-services-3.png)
 
-In this case, Alice (the client) has the onion address of Bob and she wants to visit it, so she connects to it with her Tor Browser. Now the next thing that needs to happen is that Alice goes to the _distributed hash table_ from the step above, and ask for the signed descriptor of Bob.
+In this case, Alice (the client) has the onion address of Bob and she wants to visit it, so she connects to it with her Tor Browser.
+Now the next thing that needs to happen is that Alice goes to the _distributed hash table_ from the step above, and ask for the signed descriptor of Bob.
 
-When Alice receives the signed descriptor she verifies the signature of the descriptor using the public key that is encoded in the onion address. This provides the _end-to-end authentication_ security property, since we are now sure that this descriptor could only be produced by Bob and no one else. And inside the descriptor there are the introduction points which allow Alice to introduce herself to Bob.
+When Alice receives the signed descriptor she verifies the signature of the descriptor using the public key that is encoded in the onion address.
+This provides the _end-to-end authentication_ security property, since we are now sure that this descriptor could only be produced by Bob and no one else.
+And inside the descriptor there are the introduction points which allow Alice to introduce herself to Bob.
 
 ### Act 4: Where the client establishes a rendezvous point
 
-Now before the introduction takes place, Alice picks a Tor relay and establishes a circuit to it. Alice asks the relay to become her _rendezvous point_ and gives it an "one-time secret" that will be used as part of the rendezvous procedure.
+Now before the introduction takes place, Alice picks a Tor relay and establishes a circuit to it.
+Alice asks the relay to become her _rendezvous point_ and gives it an "one-time secret" that will be used as part of the rendezvous procedure.
 
 ### Act 5: Where the client introduces itself to the onion service
 
 ![Onion Services: Step 4](/static/images/onion-services/overview/tor-onion-services-4.png)
 
-Now, Alice goes ahead and connects to one of Bob's introduction points and introduces herself to Bob. Through this introduction Bob learns Alice's choice of rendezvous point and the "one-time secret".
+Now, Alice goes ahead and connects to one of Bob's introduction points and introduces herself to Bob.
+Through this introduction Bob learns Alice's choice of rendezvous point and the "one-time secret".
 
 ### Act 6: Where the onion service rendezvous with the client
 
 ![Onion Services: Step 5](/static/images/onion-services/overview/tor-onion-services-5.png)
 
-In this last act, the onion service is now aware of Alice's rendezvous point. The onion service connects to the rendezvous point (through an anonymized circuit) and sends the "one-time secret" to it.
+In this last act, the onion service is now aware of Alice's rendezvous point.
+The onion service connects to the rendezvous point (through an anonymized circuit) and sends the "one-time secret" to it.
 
-Upon the rendezvous point receiving the "one-time secret" from Bob, it informs Alice that the connection has been **successfuly completed**, and now Alice and Bob can use this circuit to communicate with each other. The rendezvous point simply relays (end-to-end encrypted) messages from client to service and vice versa.
+Upon the rendezvous point receiving the "one-time secret" from Bob, it informs Alice that the connection has been **successfuly completed**, and now Alice and Bob can use this circuit to communicate with each other.
+The rendezvous point simply relays (end-to-end encrypted) messages from client to service and vice versa.
 
-In general, the complete connection between client and onion service consists of 6 relays: 3 of them were picked by the client with the third being the rendezvous point and the other 3 were picked by the onion service. This provides _location hiding_ to this connection:
+In general, the complete connection between client and onion service consists of 6 relays: 3 of them were picked by the client with the third being the rendezvous point and the other 3 were picked by the onion service.
+This provides _location hiding_ to this connection:
 
 ![Onion Services: Step 6](/static/images/onion-services/overview/tor-onion-services-6.png)
 
