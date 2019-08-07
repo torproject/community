@@ -74,7 +74,7 @@ To confirm your bridge is running with no issues, you should see something like 
 [notice] Self-testing indicates your ORPort is reachable from the outside. Excellent. Publishing server descriptor.
 ```
 ---
-subtitle: How to deploy obfs4proxy Bridge on OpenBSD
+subtitle: How to deploy an obfs4 bridge on OpenBSD
 ---
 section: Bridge
 ---

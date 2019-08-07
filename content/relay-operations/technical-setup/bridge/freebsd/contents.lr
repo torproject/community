@@ -103,7 +103,7 @@ FreeBSDlatest: {
 ```
 
 ---
-subtitle: How to deploy obfs4proxy Bridge on FreeBSD
+subtitle: How to deploy an obfs4 bridge on FreeBSD
 ---
 section: Bridge
 ---
