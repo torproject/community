@@ -15,7 +15,7 @@ pkg_add tor obfs4proxy
 
 ### 2. Edit your Tor config file
 
-Usually located at `/etc/tor/torrc`, add the following lines:
+Usually located at `/etc/tor/torrc`, and replace its content with:
 
 ```
 RunAsDaemon 1

@@ -17,7 +17,7 @@ On [Debian](https://packages.debian.org/search?keywords=obfs4proxy), the `obfs4p
 If not, you can [build it from source](https://gitlab.com/yawning/obfs4#installation).
 
 
-### 3. Edit your Tor config file, usually located at `/etc/tor/torrc` and add the following lines:
+### 3. Edit your Tor config file, usually located at `/etc/tor/torrc` and replace its content with:
 
 ```
 RunAsDaemon 1

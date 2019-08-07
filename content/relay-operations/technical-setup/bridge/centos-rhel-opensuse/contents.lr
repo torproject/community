@@ -40,7 +40,7 @@ go get gitlab.com/yawning/obfs4.git/obfs4proxy
 sudo cp $GOPATH/bin/obfs4proxy /usr/local/bin/
 ```
 
-### 3. Edit your Tor config file, usually located at `/etc/tor/torrc` and add the following lines:
+### 3. Edit your Tor config file, usually located at `/etc/tor/torrc` and replace its content with:
 
 ```
 RunAsDaemon 1
