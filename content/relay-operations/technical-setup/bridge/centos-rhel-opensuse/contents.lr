@@ -89,7 +89,7 @@ To confirm your bridge is running with no issues, you should see something like 
 [notice] Registered server transport 'obfs4' at '[::]:46396'
 [notice] Tor has successfully opened a circuit. Looks like client functionality is working.
 [notice] Bootstrapped 100%: Done
-[notice] Now checking whether ORPort <redacted>:9001 is reachable... (this may take up to 20 minutes -- look for log messages indicating success)
+[notice] Now checking whether ORPort <redacted>:3818 is reachable... (this may take up to 20 minutes -- look for log messages indicating success)
 [notice] Self-testing indicates your ORPort is reachable from the outside. Excellent. Publishing server descriptor.
 ``` 
 
