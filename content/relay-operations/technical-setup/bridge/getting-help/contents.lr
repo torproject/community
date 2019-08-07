@@ -1,0 +1,16 @@
+_model: page
+---
+title: Getting help
+---
+body:
+
+If you run into problems while setting up your relay, you can ask your questions on the public [tor-relays mailing list](https://lists.torproject.org/cgi-bin/mailman/listinfo/tor-relays).  The list is a great resource for asking (and answering) questions, and for getting to know other relay operators. Make sure to check out the archives!
+
+You can also get help by joining the IRC channel #tor-relays in the network [irc.oftc.net](https://www.oftc.net).
+
+---
+html: two-columns-page.html
+---
+key: 7
+---
+subtitle: How to get help if you run into issues

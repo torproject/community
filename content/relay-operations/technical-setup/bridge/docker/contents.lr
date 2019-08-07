@@ -10,28 +10,28 @@ We are maintaining a docker container that allows you to quickly set up an obfs4
 
 Now, it's time to run the container. You have two options:
 
- * We maintain a script that automatically determines a free OR and obfs4 port for you. The script only requires your email address as argument:
+1. We maintain a script that automatically determines a free OR and obfs4 port for you. The script only requires your email address as argument:
+   ```
+   $ curl https://dip.torproject.org/torproject/anti-censorship/docker-obfs4-bridge/raw/master/deploy-container.sh > deploy-container.sh
+   $ bash deploy-container.sh address@email.com
+   ```
+2. If you would rather provide your own ports, run the following command and replace `XXX` with your OR port, `YYY` with your obfs4 port, and `address@example.com` with your email address. Don't forget the semicolon after the environment variables.
 
-```
-    $ curl https://dip.torproject.org/anti-censorship/docker-obfs4-bridge/raw/master/deploy-container.sh > deploy-container.sh
-    $ bash deploy-container.sh address@email.com
-```
-
- * If you would rather provide your own ports, run the following command and replace XXX with your OR port, YYY with your obfs4 port, and address@email.com with your email address. Don't forget the semicolon after the environment variables.
-
-```
-    OR_PORT=XXX PT_PORT=YYY EMAIL=address@email.com; \
-    docker run -d \
-      -e "OR_PORT=$OR_PORT" -e "PT_PORT=$PT_PORT" -e "EMAIL=$EMAIL" \
-      -p "$OR_PORT":"$OR_PORT" -p "$PT_PORT":"$PT_PORT" \
-      phwinter/obfs4-bridge:0.1
-```
+   ```
+   OR_PORT=XXX PT_PORT=YYY EMAIL=address@example.com; \
+   docker run -d \
+     -e "OR_PORT=$OR_PORT" -e "PT_PORT=$PT_PORT" -e "EMAIL=$EMAIL" \
+     -p "$OR_PORT":"$OR_PORT" -p "$PT_PORT":"$PT_PORT" \
+     phwinter/obfs4-bridge:0.1
+   ```
 
 That's it! Your container should now be bootstrapping your new obfs4 Tor bridge. 
 ---
 html: two-columns-page.html
 ---
 key: 5
+---
+subtitle: How to deploy an obfs4 bridge using a docker container
 ---
 section: Bridge
 ---

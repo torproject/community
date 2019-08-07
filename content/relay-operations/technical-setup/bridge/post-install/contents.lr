@@ -6,7 +6,7 @@ body:
 
 Congrats! 
 
-If you get to this point, it means that your obfs4 bridge is running and is being distributed by BridgeDB to censored users. Note that it can take several days or weeks to see a consistent set of users, so don't get discouraged if you don't see user connections right away.
+If you get to this point, it means that your obfs4 bridge is running and is being distributed by BridgeDB to censored users. Note that it can take several days or weeks until you see a consistent set of users, so don't get discouraged if you don't see user connections right away. BridgeDB uses four buckets for bridge distribution: HTTPS, Moat, Email, and manual. Some buckets are used more than others, which also affects the time until your bridge sees users. Finally, there aren't many bridge users out there, so you cannot expect your bridge to be as popular as a relay.
 
 If you want to connect to your bridge manually, you will need to know the bridge's obfs4 certificate. See the file `/var/lib/tor/pt_state/obfs4_bridgeline.txt` and paste the entire bridge line into Tor Browser: 
 
@@ -23,4 +23,4 @@ html: two-columns-page.html
 ---
 key: 6
 ---
-subtitle: How to find your Bridge in Relay Search and connect manually
+subtitle: How to find your bridge in Relay Search and connect manually

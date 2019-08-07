@@ -12,12 +12,12 @@ Get the latest version of Tor. If you're on Debian stable, `sudo apt-get install
 
 ### 2. Install obfs4proxy
 
-On [Debian](https://packages.debian.org/search?keywords=obfs4proxy), the `obfs4proxy` package is available in sid, buster, and stretch. On [Ubuntu](https://packages.ubuntu.com/search?keywords=obfs4proxy), bionic, cosmic, disco, and eoan have the package. If you're running any of them, `sudo apt-get install obfs4proxy` should work.
+On [Debian](https://packages.debian.org/search?keywords=obfs4proxy), the `obfs4proxy` package is available in unstable, testing, and stable. On [Ubuntu](https://packages.ubuntu.com/search?keywords=obfs4proxy), bionic, cosmic, disco, and eoan have the package. If you're running any of them, `sudo apt-get install obfs4proxy` should work.
 
 If not, you can [build it from source](https://gitlab.com/yawning/obfs4#installation).
 
 
-### 3. Edit your Tor config file, usually located at `/etc/tor/torrc` and add the following lines:
+### 3. Edit your Tor config file, usually located at `/etc/tor/torrc` and replace its content with:
 
 ```
 RunAsDaemon 1
@@ -56,7 +56,7 @@ Nickname PickANickname
 
 `sudo setcap cap_net_bind_service=+ep /usr/bin/obfs4proxy`
 
-* Under Debian, you will also need to set `NoNewPrivileges=no` in `/lib/systemd/system/tor@default.service` and `/lib/systemd/system/tor@.service` and then run `systemctl daemon-reload`. [bug #18356](https://trac.torproject.org/projects/tor/ticket/18356)
+* Under Debian, you will also need to set `NoNewPrivileges=no` in `/lib/systemd/system/tor@default.service` and `/lib/systemd/system/tor@.service` and then run `systemctl daemon-reload`. (see [bug #18356](https://trac.torproject.org/projects/tor/ticket/18356))
 
 * Note that both Tor's OR port and its obfs4 port must be reachable. If your bridge is behind a firewall or NAT, make sure to open both ports. You can use [our reachability test](https://bridges.torproject.org/scan/) to see if your obfs4 port is reachable from the Internet.
 
@@ -75,7 +75,7 @@ To confirm your bridge is running with no issues, you should see something like 
 [notice] Registered server transport 'obfs4' at '[::]:46396'
 [notice] Tor has successfully opened a circuit. Looks like client functionality is working.
 [notice] Bootstrapped 100%: Done
-[notice] Now checking whether ORPort <redacted>:9001 is reachable... (this may take up to 20 minutes -- look for log messages indicating success)
+[notice] Now checking whether ORPort <redacted>:3818 is reachable... (this may take up to 20 minutes -- look for log messages indicating success)
 [notice] Self-testing indicates your ORPort is reachable from the outside. Excellent. Publishing server descriptor.
 ```
 ---
@@ -83,4 +83,4 @@ key: 1
 ---
 html: two-columns-page.html
 ---
-subtitle: How to deploy an obfs4proxy Bridge on Debian / Ubuntu
+subtitle: How to deploy an obfs4 bridge on Debian / Ubuntu
