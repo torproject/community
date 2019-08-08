@@ -20,7 +20,7 @@ Exit relay operators should understand the potential risks associated with runni
 
 # Legal resources
 
-The [EFF Tor Legal FAQ](https://www.torproject.org/eff/tor-legal-faq.html.en) answers many common questions about relay operation and the law. We also like [Noisebridge's wiki](https://www.noisebridge.net/wiki/Noisebridge_Tor/FBI) for additional legal resources. In general it's a good idea to consult with a lawyer before deciding to operate an exit relay, especially if you live in a place where exit relay operators have been harassed, or if you're the only exit relay operator in your region. Get in touch with your local digital rights organization to see if they have recommendations about legal assistance, and if you're not sure what organizations are working in your region, [write to EFF](https://www.eff.org/about/contact) and see if they can help connect you.
+The [EFF Tor Legal FAQ](eff-tor-legal-faq) answers many common questions about relay operation and the law. We also like [Noisebridge's wiki](https://www.noisebridge.net/wiki/Noisebridge_Tor/FBI) for additional legal resources. In general it's a good idea to consult with a lawyer before deciding to operate an exit relay, especially if you live in a place where exit relay operators have been harassed, or if you're the only exit relay operator in your region. Get in touch with your local digital rights organization to see if they have recommendations about legal assistance, and if you're not sure what organizations are working in your region, [write to EFF](https://www.eff.org/about/contact) and see if they can help connect you.
 
 Also see the [Tor Exit Guidelines](tor-exit-guidelines).
 
