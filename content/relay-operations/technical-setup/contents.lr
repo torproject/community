@@ -8,7 +8,7 @@ key: 4
 ---
 _template: layout.html
 ---
-title: Technical setup
+title: Technical Setup
 ---
 subtitle: Installing and configuring your Tor relay: Bridge, Guard / Middle node, Exit.
 ---
