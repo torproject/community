@@ -212,8 +212,8 @@ If a serious abuse complaint not covered by this template set arrives, the best 
 
 ## Other Template Sets
 
- * [DMCA Response template for Tor node maintainer to ISP](FIXME) as written by the [EFF](http://www.eff.org).
- * Moritz Bartl, the operator of some of our fastest Tor exit nodes, has begun compiling a [set of abuse response template emails](https://www.torservers.net/wiki/abuse/templates) as well.
+ * [DMCA Response template for Tor node maintainer to ISP](community-resources/eff-tor-legal-faq/) as written by the [EFF](http://www.eff.org).
+ * Torservers [response template emails](https://www.torservers.net/wiki/abuse/templates).
 ---
 html: two-columns-page.html
 ---
