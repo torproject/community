@@ -1,0 +1,19 @@
+section: localization
+---
+section_id: localization
+---
+color: primary
+---
+_template: layout.html
+---
+title: Translate strings
+---
+subtitle: How to translates
+---
+key: 4
+---
+html: two-columns-page.html
+---
+body:
+
+### How to translates
