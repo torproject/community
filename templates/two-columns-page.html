@@ -14,6 +14,13 @@
         </div>
     {% endfor %}
     </div>
-    <a href="{{ this.parent|url }}">Back to {{ this.parent.title }}</a>
+    <div class="card mt-5">
+      <ul class="list-group list-group-flush">
+        <!--li class="list-group-item"><a><span class="card-text text-muted">{{ _("Contributors to this page:") }} <a href="#" title="#">cypherpunk</a></span></li-->
+        <li class="list-group-item">
+                <a href="{{ this.parent|url }}">{{ _("Back to previous page: ") }}{{ this.parent.title }}</a> - <a href="https://github.com/torproject/community/edit/master/content{{ this.path }}/contents.lr">{{ _("Edit this page") }}</a>
+        </li>
+      </ul>
+    </div>
   </div>
 </div>
