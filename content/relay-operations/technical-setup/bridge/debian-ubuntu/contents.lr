@@ -12,10 +12,11 @@ Get the latest version of Tor. If you're on Debian stable, `sudo apt-get install
 
 ### 2. Install obfs4proxy
 
-On [Debian](https://packages.debian.org/search?keywords=obfs4proxy), the `obfs4proxy` package is available in unstable, testing, and stable. On [Ubuntu](https://packages.ubuntu.com/search?keywords=obfs4proxy), bionic, cosmic, disco, and eoan have the package. If you're running any of them, `sudo apt-get install obfs4proxy` should work.
+On [Debian](https://packages.debian.org/search?keywords=obfs4proxy), the `obfs4proxy` package is available in unstable, testing, and stable.
+On [Ubuntu](https://packages.ubuntu.com/search?keywords=obfs4proxy), bionic, cosmic, disco, and eoan have the package.
+If you're running any of them, `sudo apt-get install obfs4proxy` should work.
 
 If not, you can [build it from source](https://gitlab.com/yawning/obfs4#installation).
-
 
 ### 3. Edit your Tor config file, usually located at `/etc/tor/torrc` and replace its content with:
 
@@ -30,41 +31,39 @@ ORPort TODO
 
 ServerTransportPlugin obfs4 exec /usr/bin/obfs4proxy
 
-# Replace "TODO" with an obfs4 port of your choice.  This port must be
-# externally reachable.  Avoid port 9001 because it's commonly associated with
-# Tor and censors may be scanning the Internet for this port.
+# Replace "TODO" with an obfs4 port of your choice.  This port must be externally reachable.
+# Avoid port 9001 because it's commonly associated with Tor and censors may be scanning the Internet for this port.
 ServerTransportListenAddr obfs4 0.0.0.0:TODO
 
 # Local communication port between Tor and obfs4.  Always set this to "auto".
-# "Ext" means "extended", not "external".  Don't try to set a specific port
-# number, nor listen on 0.0.0.0.
+# "Ext" means "extended", not "external".  Don't try to set a specific port number, nor listen on 0.0.0.0.
 ExtORPort auto
 
-# Replace "<address@email.com>" with your email address so we can contact you if
-# there are problems with your bridge.  This is optional but encouraged.
+# Replace "<address@email.com>" with your email address so we can contact you if there are problems with your bridge.
+# This is optional but encouraged.
 ContactInfo <address@email.com>
 
 # Pick a nickname that you like for your bridge.  This is optional.
 Nickname PickANickname
 ```
 
+Don't forget to change the `ORPort`, `ServerTransportListenAddr`, `ContactInfo`, and `Nickname` options.
 
- Don't forget to change the `ORPort`, `ServerTransportListenAddr`, `ContactInfo`, and `Nickname` options. 
+* If you decide to use a fixed obfs4 port smaller than 1024 (for example 80 or 443), you will need to give obfs4 `CAP_NET_BIND_SERVICE` capabilities to bind the port with a non-root user:
 
-* If you decide to use a fixed obfs4 port smaller than 1024 (for example 80 or 443), you will need to give obfs4 `CAP_NET_BIND_SERVICE` capabilities to bind the port with a non-root user: 
-
-
-`sudo setcap cap_net_bind_service=+ep /usr/bin/obfs4proxy`
+  `sudo setcap cap_net_bind_service=+ep /usr/bin/obfs4proxy`
 
 * Under Debian, you will also need to set `NoNewPrivileges=no` in `/lib/systemd/system/tor@default.service` and `/lib/systemd/system/tor@.service` and then run `systemctl daemon-reload`. (see [bug #18356](https://trac.torproject.org/projects/tor/ticket/18356))
 
-* Note that both Tor's OR port and its obfs4 port must be reachable. If your bridge is behind a firewall or NAT, make sure to open both ports. You can use [our reachability test](https://bridges.torproject.org/scan/) to see if your obfs4 port is reachable from the Internet.
+* Note that both Tor's OR port and its obfs4 port must be reachable.
+  If your bridge is behind a firewall or NAT, make sure to open both ports.
+  You can use [our reachability test](https://bridges.torproject.org/scan/) to see if your obfs4 port is reachable from the Internet.
 
 ### 4. Restart tor
 
 `systemctl restart tor`
 
-### 5. Monitor your logs 
+### 5. Monitor your logs
 
 To confirm your bridge is running with no issues, you should see something like this (usually in `/var/log/tor/log` or `/var/log/syslog`):
 
