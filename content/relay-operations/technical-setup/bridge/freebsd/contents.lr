@@ -103,6 +103,13 @@ FreeBSDlatest: {
 }
 ```
 
+### 7. Final notes
+
+If you are having troubles setting up your bridge, have a look at [our help
+section](https://community.torproject.org/relay/setup/bridge/getting-help/). If
+your bridge is now running, check out the [post-install
+notes](https://community.torproject.org/relay/setup/bridge/post-install/).
+
 ---
 subtitle: How to deploy an obfs4 bridge on FreeBSD
 ---
