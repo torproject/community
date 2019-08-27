@@ -18,7 +18,6 @@ pkg_add tor obfs4proxy
 Usually located at `/etc/tor/torrc`, and replace its content with:
 
 ```
-RunAsDaemon 1
 BridgeRelay 1
 
 # Replace "TODO" with a Tor port of your choice.  This port must be externally
