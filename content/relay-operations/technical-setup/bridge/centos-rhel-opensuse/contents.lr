@@ -43,7 +43,6 @@ sudo cp $GOPATH/bin/obfs4proxy /usr/local/bin/
 ### 3. Edit your Tor config file, usually located at `/etc/tor/torrc` and replace its content with:
 
 ```
-RunAsDaemon 1
 BridgeRelay 1
 
 # Replace "TODO" with a Tor port of your choice.  This port must be externally

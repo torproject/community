@@ -17,7 +17,6 @@ pkg install obfs4proxy-tor tor ca_root_nss
 ### 2. Edit your Tor config file, usually located at `/usr/local/etc/tor` and replace its content with:
 
 ```
-RunAsDaemon 1
 BridgeRelay 1
 
 # Replace "TODO" with a Tor port of your choice.  This port must be externally
