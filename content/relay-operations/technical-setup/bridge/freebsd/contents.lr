@@ -1,5 +1,7 @@
 _model: page
 ---
+color: primary
+---
 title: FreeBSD
 ---
 html: two-columns-page.html
@@ -47,7 +49,7 @@ Nickname PickANickname
 Log notice file /var/log/tor/notices.log
 ```
 
-Don't forget to change the `ORPort`, `ServerTransportListenAddr`, `ContactInfo`, and `Nickname` options. 
+Don't forget to change the `ORPort`, `ServerTransportListenAddr`, `ContactInfo`, and `Nickname` options.
 
 * Note that both Tor's OR port and its obfs4 port must be reachable. If your bridge is behind a firewall or NAT, make sure to open both ports. You can use [our reachability test](https://bridges.torproject.org/scan/) to see if your obfs4 port is reachable from the Internet.
 
@@ -67,7 +69,7 @@ sysrc tor_enable=YES
 service tor start
 ```
 
-### 5. Monitor your logs 
+### 5. Monitor your logs
 
 To confirm your bridge is running with no issues, you should see something like this in `/var/log/tor/notices.log`:
 
