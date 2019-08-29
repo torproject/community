@@ -1,8 +1,8 @@
 _model: page
 ---
-title: Automatic Updates on BSD*
+title: BSD*
 ---
-_hidden: yes
+_discoverable: no
 ---
 _slug: updates
 ---
@@ -38,8 +38,8 @@ env AUTOCLEAN=YES ASSUME_ALWAYS_YES=YES HANDLE_RC_SCRIPTS=YES pkg upgrade
 ---
 html: two-columns-page.html
 ---
-section: relay operations
+section: Automatic Updates
 ---
-section_id: relay-operations
+section_id: automatic-updates
 ---
 key: 1
