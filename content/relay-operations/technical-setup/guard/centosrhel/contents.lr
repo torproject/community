@@ -4,19 +4,23 @@ title: CentOS/RHEL
 ---
 body:
 
-# 1. Enable the EPEL repository
+# 1. Enable Automatic Software Updates
+
+One of the most imported things to keeps your relay secure is to install security updates timely and ideally automatically so you can not forget about it. Follow the instructions to enable [automatic software updates](updates) for your operating system.
+
+# 2. Enable the EPEL repository
 
 To install `tor` package on CentOS/RHEL, you need to install the [EPEL](https://fedoraproject.org/wiki/EPEL) repository first:
 
 `yum install epel-release`
 
-# 2. Install the tor package and verify the EPEL signing key
+# 3. Install the tor package and verify the EPEL signing key
 
 `yum install tor`
 
 When you install the first package from the EPEL repository you will be asked about verifying the EPEL GPG signing key. Please ensure the key matches with the one available on the [Fedora Project website](https://getfedora.org/keys/).
 
-# 3. Put the tor configuration file `/etc/tor/torrc` in place
+# 4. Put the tor configuration file `/etc/tor/torrc` in place
 
 ```
 #change the nickname "myNiceRelay" to a name that you like
@@ -28,7 +32,7 @@ ExitRelay 0
 ContactInfo tor-operator@your-emailaddress-domain
 ```
 
-# 4. Enable and start your Tor relay
+# 5. Enable and start your Tor relay
 
 CentOS 7 / RHEL 7:
 
@@ -43,6 +47,10 @@ CentOS 6 / RHEL 6:
 service tor enable
 service tor start
 ```
+
+# 6. Final notes
+
+If you are having troubles setting up your relay, have a look at our [help section](FIXME). If your relay is now running, check out the [post-install](/relay/setup/post-install/) notes.
 
 ---
 html: two-columns-page.html
