@@ -2,7 +2,7 @@ _model: page
 ---
 title: Automatic Updates on BSD*
 ---
-_hidden: no
+_hidden: yes
 ---
 _slug: updates
 ---
