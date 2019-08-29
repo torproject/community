@@ -77,4 +77,4 @@ section: relay operations
 ---
 section_id: relay-operations
 ---
-subtitle: How to deploy a middle/Guard node on FreeBSD
+subtitle: How to deploy a middle/Guard relay on FreeBSD
