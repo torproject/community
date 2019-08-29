@@ -44,6 +44,6 @@ section_id: relay-operations
 ---
 subtitle: How to deploy a middle/Guard relay on Fedora
 ---
-_discoverable: no
+_discoverable: yes
 ---
-_slug: updates
+_slug: 
