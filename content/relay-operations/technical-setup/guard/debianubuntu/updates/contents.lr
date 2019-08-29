@@ -1,10 +1,8 @@
 _model: page
 ---
-title: Automatic updates on Debian and Ubuntu
+title: Debian and Ubuntu
 ---
 _discoverable: no
----
-_hidden: yes
 ---
 body:
 
@@ -54,8 +52,8 @@ html: two-columns-page.html
 ---
 key: 1
 ---
-section: Relays Operations
+section: Automatic Updates
 ---
-section_id: relays-operations
+section_id: automatic-updates
 ---
 _slug: updates
