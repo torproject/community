@@ -2,6 +2,13 @@ _model: page
 ---
 title: Fedora
 ---
+subtitle: 
+---
+_slug: updates
+---
+_discoverable: no
+---
+
 body:
 
 On Fedora you enable automatic updates via:
@@ -23,9 +30,3 @@ key: 1
 section: Automatic Updates
 ---
 section_id: automatic-updates
----
-subtitle: 
----
-_slug: updates
----
-_discoverable: no
