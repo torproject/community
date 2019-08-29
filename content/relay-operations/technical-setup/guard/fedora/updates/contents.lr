@@ -1,6 +1,6 @@
 _model: page
 ---
-title: Automatic Updates on Fedora
+title: Fedora
 ---
 body:
 
@@ -20,13 +20,11 @@ html: two-columns-page.html
 ---
 key: 1
 ---
-section: Relay operations
+section: Automatic Updates
 ---
-section_id: relay-operations
+section_id: automatic-updates
 ---
 subtitle: 
----
-_hidden: yes
 ---
 _slug: updates
 ---
