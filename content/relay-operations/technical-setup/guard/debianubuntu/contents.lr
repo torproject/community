@@ -52,5 +52,3 @@ section: Middle/Guard relay
 section_id: relay-operations
 ---
 subtitle: How to deploy a middle/Guard relay on Debian/Ubuntu
----
-_discoverable: no
