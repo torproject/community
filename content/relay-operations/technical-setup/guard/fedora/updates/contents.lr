@@ -1,0 +1,33 @@
+_model: page
+---
+title: Automatic Updates on Fedora
+---
+body:
+
+On Fedora you enable automatic updates via:
+
+```
+dnf install dnf-automatic
+```
+
+Now enable and start automatic updates via:
+
+```
+systemctl enable --now dnf-automatic-install.timer
+```
+---
+html: two-columns-page.html
+---
+key: 1
+---
+section: Relay operations
+---
+section_id: relay-operations
+---
+subtitle: 
+---
+_hidden: yes
+---
+_slug: updates
+---
+_discoverable: no
