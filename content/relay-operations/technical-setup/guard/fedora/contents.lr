@@ -1,5 +1,7 @@
 _model: page
 ---
+color: primary
+---
 title: Fedora
 ---
 body:
@@ -46,4 +48,4 @@ subtitle: How to deploy a middle/Guard relay on Fedora
 ---
 _discoverable: yes
 ---
-_slug: 
+_slug:

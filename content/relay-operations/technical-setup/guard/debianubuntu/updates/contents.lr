@@ -1,5 +1,7 @@
 _model: page
 ---
+color: primary
+---
 title: Debian and Ubuntu
 ---
 _discoverable: no
@@ -34,10 +36,10 @@ If you want to automatically reboot add the following at the the end of the file
 
     Create the file /etc/apt/apt.conf.d/20auto-upgrades with the following content
 
-    APT::Periodic::Update-Package-Lists "1"; 	 	
-    APT::Periodic::AutocleanInterval "5"; 	 	
-    APT::Periodic::Unattended-Upgrade "1"; 	 	
-    APT::Periodic::Verbose "1"; 	 	
+    APT::Periodic::Update-Package-Lists "1";
+    APT::Periodic::AutocleanInterval "5";
+    APT::Periodic::Unattended-Upgrade "1";
+    APT::Periodic::Verbose "1";
 ```
 
 # 4. Test

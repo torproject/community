@@ -1,5 +1,7 @@
 _model: page
 ---
+color: primary
+---
 title: RPM Distributions
 ---
 body:
@@ -46,7 +48,7 @@ Enable the following settings:
     Interval: Daily
     Skip Interactive Patches
     Agree with Licenses
-    Use delta rpms 
+    Use delta rpms
 ```
 
 Confirm your configuration with OK.
