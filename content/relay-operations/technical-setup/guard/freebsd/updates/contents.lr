@@ -1,0 +1,45 @@
+_model: page
+---
+title: BSD*
+---
+color: primary
+---
+_slug: updates
+---
+body:
+
+# DragonFlyBSD / FreeBSD / HardenedBSD
+
+**NOTE:** _all steps documented on this page are considering that your machine/server/system only provides Tor relay services. please be aware that other services running might stop/restart during the upgrade._
+
+#1. Create the script to perform the updates.
+
+Let's use `/root/pkg_upgrade.sh`
+
+```
+#!/usr/bin/env sh
+PATH="/bin:/usr/bin:/sbin:/usr/sbin"
+RAND=$(jot -r 1 300)
+sleep ${RAND}
+env AUTOCLEAN=YES ASSUME_ALWAYS_YES=YES HANDLE_RC_SCRIPTS=YES pkg upgrade
+```
+
+#2. Schedule the job to run.
+
+```
+# echo "0 0 * * * root /bin/sh /root/pkg_upgrade.sh >/dev/null" >> /etc/crontab
+```
+
+#3. Restart cron's service.
+
+```
+# service cron restart
+```
+---
+html: two-columns-page.html
+---
+section: Automatic Updates
+---
+section_id: automatic-updates
+---
+key: 1

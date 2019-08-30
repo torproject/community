@@ -1,5 +1,7 @@
 _model: page
 ---
+color: primary
+---
 title: Docker
 ---
 body:

@@ -73,15 +73,6 @@ OS configuration is outside the scope of this guide, but the following points ar
 
 Correct time settings are essential for Tor relays. It is recommended that you use the network time protocol (NTP) for time synchronization and ensure your timezone is set correctly.
 
-## Automatic Software Updates
-
-One of the most important things to keeps your relay secure is to immediately install security updates. We recommend setting updates to install automatically.
-Here's how to enable automatic software updates for different operating systems:
-
-* [RPM-based distributions](FIXME) (RHEL, CentOS, Fedora, openSUSE)
-* [Debian/Ubuntu](FIXME)
-* [FreeBSD/HardenedBSD](FIXME)
-
 ---
 html: two-columns-page.html
 ---

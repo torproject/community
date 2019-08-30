@@ -1,10 +1,16 @@
 _model: page
 ---
+color: primary
+---
 title: FreeBSD
 ---
 body:
 
-## 1. Install the tor package
+# 1. Enable Automatic Software Updates
+
+One of the most imported things to keeps your relay secure is to install security updates timely and ideally automatically so you can not forget about it. Follow the instructions to enable [automatic software updates](updates) for your operating system.
+
+# 2. Install the tor package
 
 `pkg install tor ca_root_nss`
 
@@ -12,7 +18,7 @@ or for alpha releases:
 
 `pkg install tor-devel ca_root_nss`
 
-## 2. Put the configuration file `/usr/local/etc/tor/torrc` in place
+# 3. Put the configuration file `/usr/local/etc/tor/torrc` in place
 
 ```
 #change the nickname "myNiceRelay" to a name that you like
@@ -25,14 +31,14 @@ ContactInfo tor-operator@your-emailaddress-domain
 Log notice syslog
 ```
 
-## 3. Ensure that the `random_id` sysctl setting is enabled:
+# 4. Ensure that the `random_id` sysctl setting is enabled:
 
 ```
 echo "net.inet.ip.random_id=1" >> /etc/sysctl.conf
 sysctl net.inet.ip.random_id=1
 ```
 
-## 4. Start the tor daemon and make sure it starts at boot:
+# 5. Start the tor daemon and make sure it starts at boot:
 
 ```
 sysrc tor_enable=YES
@@ -43,11 +49,11 @@ service tor start
 
 To get package updates faster after they have been build it is best to switch from the "quarterly" with "latest" repository.
 
-Create the following folder: 
+Create the following folder:
 
 `mkdir -p /usr/local/etc/pkg/repos`
 
-and create the file `/usr/local/etc/pkg/repos/FreeBSD.conf` with the following content: 
+and create the file `/usr/local/etc/pkg/repos/FreeBSD.conf` with the following content:
 
 ```
 FreeBSD: { enabled: no }
@@ -61,13 +67,16 @@ FreeBSDlatest: {
 }
 ```
 
+# 6. Final notes
+
+If you are having troubles setting up your relay, have a look at our [help section](FIXME). If your relay is now running, check out the [post-install](/relay/setup/post-install/) notes.
 ---
 html: two-columns-page.html
 ---
 key: 2
 ---
-section: relay operations
+section: Middle/Guard relay
 ---
 section_id: relay-operations
 ---
-subtitle: How to deploy a middle/Guard node on FreeBSD
+subtitle: How to deploy a middle/Guard relay on FreeBSD

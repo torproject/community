@@ -1,10 +1,12 @@
 _model: page
 ---
+color: primary
+---
 title: CentOS / RHEL / OpenSUSE
 ---
 body:
 
-### 1. Install tor and dependencies 
+### 1. Install tor and dependencies
 
 * Redhat / RHEL:
 
@@ -19,7 +21,7 @@ yum install git golang tor
 zypper install tor go git
 ```
 
-### 2. Build obfs4proxy and move it into place. 
+### 2. Build obfs4proxy and move it into place.
 
 Heavily outdated versions of git can make `go get` fail, so try upgrading to a more recent git version if you're running into this problem.
 
@@ -71,7 +73,7 @@ ContactInfo <address@email.com>
 Nickname PickANickname
 ```
 
- Don't forget to change the `ORPort`, `ServerTransportListenAddr`, `ContactInfo`, and `Nickname` options. 
+ Don't forget to change the `ORPort`, `ServerTransportListenAddr`, `ContactInfo`, and `Nickname` options.
 
 * Note that both Tor's OR port and its obfs4 port must be reachable. If your bridge is behind a firewall or NAT, make sure to open both ports. You can use [our reachability test](https://bridges.torproject.org/scan/) to see if your obfs4 port is reachable from the Internet.
 
@@ -83,7 +85,7 @@ Nickname PickANickname
 
 To confirm your bridge is running with no issues, you should see something like this:
 
-``` 
+```
 [notice] Your Tor server's identity key fingerprint is '<NICKNAME> <FINGERPRINT>'
 [notice] Your Tor bridge's hashed identity key fingerprint is '<NICKNAME> <HASHED FINGERPRINT>'
 [notice] Registered server transport 'obfs4' at '[::]:46396'
@@ -91,7 +93,7 @@ To confirm your bridge is running with no issues, you should see something like 
 [notice] Bootstrapped 100%: Done
 [notice] Now checking whether ORPort <redacted>:3818 is reachable... (this may take up to 20 minutes -- look for log messages indicating success)
 [notice] Self-testing indicates your ORPort is reachable from the outside. Excellent. Publishing server descriptor.
-``` 
+```
 
 ### 6. Final notes
 
@@ -105,7 +107,7 @@ html: two-columns-page.html
 ---
 key:
 
-2 
+2
 ---
 color: primary
 ---
