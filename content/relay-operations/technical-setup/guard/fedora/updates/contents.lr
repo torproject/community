@@ -1,7 +1,14 @@
 _model: page
 ---
-title: Automatic Updates on Fedora
+title: Fedora
 ---
+subtitle: 
+---
+_slug: updates
+---
+_discoverable: no
+---
+
 body:
 
 On Fedora you enable automatic updates via:
@@ -20,14 +27,6 @@ html: two-columns-page.html
 ---
 key: 1
 ---
-section: Relay operations
+section: Automatic Updates
 ---
-section_id: relay-operations
----
-subtitle: 
----
-_hidden: yes
----
-_slug: updates
----
-_discoverable: no
+section_id: automatic-updates

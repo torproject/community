@@ -1,8 +1,6 @@
 _model: page
 ---
-title: Automatic Updates on RPM Distributions
----
-_hidden: yes
+title: RPM Distributions
 ---
 body:
 
@@ -59,9 +57,9 @@ html: two-columns-page.html
 ---
 key: 1
 ---
-section: Relay Operations
+section: Automatic Updates
 ---
-section_id: relay-operations
+section_id: automatic-updates
 ---
 _slug: updates
 ---
