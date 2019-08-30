@@ -51,7 +51,7 @@ BridgeRelay 1
 # censors may be scanning the Internet for this port.
 ORPort TODO
 
-ServerTransportPlugin obfs4 exec /usr/bin/obfs4proxy
+ServerTransportPlugin obfs4 exec /usr/local/bin/obfs4proxy
 
 # Replace "TODO" with an obfs4 port of your choice.  This port must be
 # externally reachable.  Avoid port 9001 because it's commonly associated with
