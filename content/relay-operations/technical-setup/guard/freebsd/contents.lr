@@ -1,5 +1,7 @@
 _model: page
 ---
+color: primary
+---
 title: FreeBSD
 ---
 body:
@@ -47,11 +49,11 @@ service tor start
 
 To get package updates faster after they have been build it is best to switch from the "quarterly" with "latest" repository.
 
-Create the following folder: 
+Create the following folder:
 
 `mkdir -p /usr/local/etc/pkg/repos`
 
-and create the file `/usr/local/etc/pkg/repos/FreeBSD.conf` with the following content: 
+and create the file `/usr/local/etc/pkg/repos/FreeBSD.conf` with the following content:
 
 ```
 FreeBSD: { enabled: no }
