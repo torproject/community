@@ -2,11 +2,9 @@ _model: page
 ---
 title: Fedora
 ---
-subtitle: 
+subtitle:
 ---
 _slug: updates
----
-_discoverable: no
 ---
 
 body:
