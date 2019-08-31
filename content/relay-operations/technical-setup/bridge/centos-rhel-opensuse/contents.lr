@@ -12,7 +12,7 @@ body:
 
 ```
 yum install epel-release
-yum install git golang tor
+yum install git golang tor policycoreutils-python-utils
 ```
 
 * OpenSUSE:
@@ -130,7 +130,7 @@ Nickname PickANickname
 
 `systemctl restart tor`
 
-* Fedora:
+* Fedora / RHEL / CentOS:
 
 ```
 sudo semanage port -a -t tor_port_t -p tcp [desired ORPort number set earlier]
