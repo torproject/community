@@ -8,7 +8,7 @@ public
 *.po
 contents+*.lr
 
-.cache 
+.cache
 
 *.egg-info
 *.pyc
