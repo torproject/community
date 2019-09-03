@@ -1,0 +1,102 @@
+_model: page
+---
+color: primary
+---
+title: Fedora
+---
+body:
+
+### 1. Install tor and dependencies
+
+```
+dnf install git golang tor policycoreutils-python-utils
+```
+
+### 2. Build obfs4proxy and move it into place.
+
+```
+export GOPATH=`mktemp -d`
+go get gitlab.com/yawning/obfs4.git/obfs4proxy
+sudo cp $GOPATH/bin/obfs4proxy /usr/bin/
+```
+
+### 3. Edit your Tor config file, usually located at `/etc/tor/torrc` and replace its content with:
+
+```
+RunAsDaemon 1
+BridgeRelay 1
+
+# Replace "TODO" with a Tor port of your choice.  This port must be externally
+# reachable.  Avoid port 9001 because it's commonly associated with Tor and
+# censors may be scanning the Internet for this port.
+ORPort TODO
+
+ServerTransportPlugin obfs4 exec /usr/bin/obfs4proxy
+
+# Replace "TODO" with an obfs4 port of your choice.  This port must be
+# externally reachable.  Avoid port 9001 because it's commonly associated with
+# Tor and censors may be scanning the Internet for this port.
+ServerTransportListenAddr obfs4 0.0.0.0:TODO
+
+# Local communication port between Tor and obfs4.  Always set this to "auto".
+# "Ext" means "extended", not "external".  Don't try to set a specific port
+# number, nor listen on 0.0.0.0.
+ExtORPort auto
+
+# Replace "<address@email.com>" with your email address so we can contact you if
+# there are problems with your bridge.  This is optional but encouraged.
+ContactInfo <address@email.com>
+
+# Pick a nickname that you like for your bridge.  This is optional.
+Nickname PickANickname
+```
+
+ Don't forget to change the `ORPort`, `ServerTransportListenAddr`, `ContactInfo`, and `Nickname` options.
+
+* Note that both Tor's OR port and its obfs4 port must be reachable. If your bridge is behind a firewall or NAT, make sure to open both ports. You can use [our reachability test](https://bridges.torproject.org/scan/) to see if your obfs4 port is reachable from the Internet.
+
+### 4. Restart tor
+
+```
+sudo semanage port -a -t tor_port_t -p tcp [desired ORPort number set earlier]
+sudo semanage port -a -t tor_port_t -p tcp [desired ServerTransportListenAddr port number set earlier]
+systemctl restart tor
+```
+
+### 5. Monitor your logs (usually in your syslog)
+
+To confirm your bridge is running with no issues, you should see something like this:
+
+```
+[notice] Your Tor server's identity key fingerprint is '<NICKNAME> <FINGERPRINT>'
+[notice] Your Tor bridge's hashed identity key fingerprint is '<NICKNAME> <HASHED FINGERPRINT>'
+[notice] Registered server transport 'obfs4' at '[::]:46396'
+[notice] Tor has successfully opened a circuit. Looks like client functionality is working.
+[notice] Bootstrapped 100%: Done
+[notice] Now checking whether ORPort <redacted>:3818 is reachable... (this may take up to 20 minutes -- look for log messages indicating success)
+[notice] Self-testing indicates your ORPort is reachable from the outside. Excellent. Publishing server descriptor.
+```
+
+### 6. Final notes
+
+If you are having troubles setting up your bridge, have a look at [our help
+section](https://community.torproject.org/relay/setup/bridge/getting-help/). If
+your bridge is now running, check out the [post-install
+notes](https://community.torproject.org/relay/setup/bridge/post-install/).
+
+---
+html: two-columns-page.html
+---
+key:
+
+2
+---
+color: primary
+---
+subtitle: How to deploy an obfs4 bridge on CentOS / RHEL / OpenSUSE
+---
+_template: layout.html
+---
+section: bridge
+---
+section_id: bridge
