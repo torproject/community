@@ -4,10 +4,12 @@ title: Tor Training FAQ
 ---
 body:
 
-After running a couple of Tor training, you will find out that first time users have some similar questions about Tor. Here we aggregate the most frequent questions that we listened during our training sessions and you must be aware before running your training. For an extensive resource check [Support portal](https://support.torproject.org). 
+After running a couple of Tor training, you will find out that first time users have some similar questions about Tor.
+Here we aggregate the most frequent questions that we listened during our training sessions and you must be aware before running your training.
+For an extensive resource check [Support portal](https://support.torproject.org).
 
  * [Why is it called Tor?](https://support.torproject.org/about/why-is-it-called-tor/)
- * [Does using Tor Browser protect other applications on my computer?](https://support.torproject.org/tbb/tbb-13/) 
+ * [Does using Tor Browser protect other applications on my computer?](https://support.torproject.org/tbb/tbb-13/)
  * [Using Tor with a VPN is more secure?](https://support.torproject.org/faq/faq-5/)
  * [Can I browse normal HTTPS sites with Tor?](https://support.torproject.org/https/https-2/)
  * [Is it possible to find out the path that a client is taking on the Tor Network?](https://support.torproject.org/misc/misc-1/)
@@ -34,4 +36,4 @@ section_id: training
 ---
 subtitle:
 
-You probably should know these answers before teaching about Tor 
+You probably should know these answers before teaching about Tor

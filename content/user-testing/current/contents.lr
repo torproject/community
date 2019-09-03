@@ -8,9 +8,9 @@ image: clipboard
 ---
 _template: layout.html
 ---
-title: Currently Testing Stuffs
+title: Currently Testing Stuffs[FIXME]
 ---
-subtitle: Link to somewhere we csan update more than this webpage, even banners will be tedious if we do testing all the time. We can even oput some thing puilled from there and have it populated here.
+subtitle: Link to somewhere we can update more than this webpage, even banners will be tedious if we do testing all the time. We can even output some thing pulled from there and have it populated here.[FIXME]
 ---
 key: 1
 ---
