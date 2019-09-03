@@ -17,7 +17,7 @@ Therefore, please do not act on this information alone; if you have any specific
 
 Find some professors (or deans!) who like the idea of supporting and/or researching anonymity on the Internet.
 If possible, use an extra IP range whose abuse contact doesn't go through the main university abuse team. Ideally, use addresses that are not trusted by the IP-based authentication many library-related services use -- if the university's entire IP address space is "trusted" to access these library resources, the university is forced to maintain an iron grip on all its addresses.
-Also read [How do I make my University / ISP / etc happy with my exit node?](tor-relay-universities)
+Also read [How do I make my University / ISP / etc happy with my exit node?](/relay/community-resources/tor-relay-universities/)
 
 ### Find Tor-friendly ISPs.
 
