@@ -69,7 +69,7 @@ FreeBSDlatest: {
 
 # 6. Final notes
 
-If you are having troubles setting up your relay, have a look at our [help section](FIXME). If your relay is now running, check out the [post-install](/relay/setup/post-install/) notes.
+If you are having troubles setting up your relay, have a look at our [help section](/relay/getting-help/). If your relay is now running, check out the [post-install](/relay/setup/post-install/) notes.
 ---
 html: two-columns-page.html
 ---
