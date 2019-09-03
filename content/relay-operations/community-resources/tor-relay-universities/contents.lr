@@ -24,8 +24,8 @@ Of course, you need to understand that without actual clear precedent (and even 
 In any case, the key here is to become familiar with the laws and their implications and uncertainties.
 
  * Third, learn about Tor's design.
-Read the [design overview](https://2019.www.torproject.org/overview.html), the [design paper](https://www.torproject.org/svn/trunk/doc/design-paper/tor-design.html), and the [FAQ](FIXME).
-Hang out on IRC (irc.oftc.net - #tor-relays) for a while and learn more.
+Read the [design overview](https://2019.www.torproject.org/overview.html), the [design paper](https://www.torproject.org/svn/trunk/doc/design-paper/tor-design.html), and the [FAQ](https://2019.www.torproject.org/docs/faq.html.en).
+Hang out on IRC ([irc.oftc.net](https://www.oftc.net) - #tor-relays) for a while and learn more.
 If possible, attend a talk by one of the Tor developers.
 Learn about the types of people and organizations who need secure communications on the Internet.
 Practice explaining Tor and its benefits and consequences to friends and neighbors -- the [abuse FAQ](https://2019.www.torproject.org/faq-abuse) may provide some helpful starting points.
@@ -64,20 +64,13 @@ You might let them know that there are ways you can dial down the potential for 
 You'll also want to learn if there are bandwidth limitations at your organization.
 (Tor can handle a variety of rate limiting approaches, so this isn't the end of the world).
 
-In some cases, you should talk to the network security people before you talk to the lawyers; in some cases, there will be yet other groups that will be critical to educate and bring into the discussion.
-You'll have to make it up as you go.
+In some cases, you should talk to the network security people before you talk to the lawyers; in some cases, there will be yet other groups that will be critical to educate and bring into the discussion. You'll have to make it up as you go.
 
 If the authorities contact your university for logs, be pleasant and helpful.
 Tor's default log level doesn't provide much that's useful, so if they want copies of your logs, that's fine.
-Be helpful and take the opportunity to explain to them about Tor and why it's useful to the world.
-(If they contact you directly for logs, you should send them to
-your university's lawyers -- acting on it yourself is [almost always a poor idea](/relay/community-resources/eff-tor-legal-faq/).
+Be helpful and take the opportunity to explain to them about Tor and why it's useful to the world. (If they contact you directly for logs, you should send them to your university's lawyers -- acting on it yourself is [almost always a poor idea](/relay/community-resources/eff-tor-legal-faq/).
 
-If there are too many complaints coming in, there are several approaches you can take to reduce them.
-First, you should follow the tips in the [Tor relay documentation](https://community.torproject.org/relay), such
-as picking a descriptive hostname or getting your own IP address.
-If that doesn't work, you can scale back the advertised speed of your relay, by using the Max``Advertised``Bandwidth to attract less traffic from the Tor network.
-Lastly, you can scale back your exit policy.
+If there are too many complaints coming in, there are several approaches you can take to reduce them. First, you should follow the tips in the [Tor relay documentation](https://community.torproject.org/relay), such as picking a descriptive hostname or getting your own IP address. If that doesn't work, you can scale back the advertised speed of your relay, by using the `MaxAdvertisedBandwidth` to attract less traffic from the Tor network. Lastly, you can scale back your exit policy.
 
 Some people have found that their university only tolerates their Tor relay if they're involved in a research project around anonymity.
 So if you're interested, you might want to get that started early in the process -- see our [Research Portal](https://research.torproject.org/).
