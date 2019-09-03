@@ -12,12 +12,12 @@ Since non-exits do not attract complaints, it should be fine to run them without
 
 For network diversity and stronger anonymity, you should avoid providers and countries that already attract a lot of Tor capacity. [Metrics](https://metrics.torproject.org/) is a great tool that allows you to group probabilities by country and AS (autonomous systems), so you can more easily identify networks you want to avoid.
 
- **Try to avoid** the following hosters:
+**Try to avoid** the following hosters:
 
-* OVH SAS (AS16276)
-* Online S.a.s. (AS12876)
-* Hetzner Online GmbH (AS24940)
-* DigitalOcean, LLC (AS14061)
+ * OVH SAS (AS16276)
+ * Online S.a.s. (AS12876)
+ * Hetzner Online GmbH (AS24940)
+ * DigitalOcean, LLC (AS14061)
 
 **Note**: This page is currently being revamped. If you would like to help out please see [#31063](https://trac.torproject.org/projects/tor/ticket/31063).
 
@@ -306,10 +306,6 @@ For network diversity and stronger anonymity, you should avoid providers and cou
 | [Xmission](https://www.xmission.com/) | - | Yes | Yes | Yes | - | 01/28/15 |
 | [blackpulsehosting](https://www.blackpulsehosting.com) | - | Yes | Yes | No | - | 10/25/15 |
 | [MonkeyBrains](https://monkeybrains.net) | AS32329 | Yes | Yes | Yes | Only offers colocation, no cheap VPS option. | 1/14/19 |
-
-
-
-
 ---
 html: two-columns-page.html
 ---
