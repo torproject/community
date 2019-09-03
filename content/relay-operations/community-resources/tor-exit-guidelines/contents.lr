@@ -92,7 +92,7 @@ In your reply, state clearly that you are not liable for forwarded content passi
 One of the biggest reasons exit relays disappear is because the people answering the abuse address get nervous and ask you to stop.
 If you can get your own IP block, great. Even if not, many providers will still reassign subblocks to you if you ask.
 ARIN uses [SWIP](https://www.arin.net/resources/request/reassignments.html), and RIPE uses something similar. You can also add comments to your range, hinting at your usage as anonymization service ([Example](https://apps.db.ripe.net/search/query.html?searchtext=ZWIEBELFREUNDE)).
-If you have questions about the process, please write an email to support@torservers.net and we will try to explain the process to you.
+If you have questions about the process, please write an email to [tor-relays mailing list](https://lists.torproject.org/cgi-bin/mailman/listinfo/tor-relays) and we will try to explain the process to you.
 
 ### Register a phone number and a fax number as abuse contact.
 
