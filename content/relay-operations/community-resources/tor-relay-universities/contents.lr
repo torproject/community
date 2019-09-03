@@ -85,6 +85,8 @@ This approach has the added benefit that you can draw in other faculty and stude
 The downside is that your Tor relay's existence is more fragile, since the terms of its demise are already negotiated.
 Note that in many cases you don't even need to be researching the exit node itself -- doing research on the Tor network requires that there be a Tor network, after all, and keeping it going is a community effort.
 
+## Mailing list
+
 Subscribe to [Tor Relays Universities](https://lists.torproject.org/cgi-bin/mailman/listinfo/tor-relays-universities) mailing list (and other education institutions too).
 ---
 cta: 
