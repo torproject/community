@@ -46,7 +46,7 @@ Ask for advice from everybody you meet who likes the idea, and try to work your 
 
  * Sixth, teach your university's lawyers about Tor.
 This may seem like a risky move, but it's way better for them to hear about Tor from you, in a relaxed environment, than to hear about it from a stranger over the phone.
-Remember that lawyers don't like being told how to interpret laws by a non-lawyer, but they are often pleased to hear that other lawyers have done a lot of the research and leg-work (this is where [the EFF's legal FAQ](https://2019.www.torproject.org/eff/tor-legal-faq) comes in, along with your law school contacts if you found any).
+Remember that lawyers don't like being told how to interpret laws by a non-lawyer, but they are often pleased to hear that other lawyers have done a lot of the research and leg-work (this is where [the EFF's legal FAQ](/relay/community-resources/eff-tor-legal-faq/) comes in, along with your law school contacts if you found any).
 Make sure to keep these discussions informal and small -- invite one of the general counsel out to coffee to discuss "something neat that may come up later on." Feel free to bring along one of the allies you found above, if it makes you more comfortable.
 Avoid having actual meetings or long email discussions, and make it clear that you don't need their official legal opinion yet.
 Remember that lawyers are paid to say no unless they have a reason to say yes, so when the time finally comes to ask their opinion on running a Tor exit node, make sure the question is not "are there any liability issues?", but rather "we'd like to do this, can you help us avoid the biggest issues?" Try to predict what they will say, and try to gain allies among the lawyers who like your cause and want to help.
@@ -71,10 +71,10 @@ If the authorities contact your university for logs, be pleasant and helpful.
 Tor's default log level doesn't provide much that's useful, so if they want copies of your logs, that's fine.
 Be helpful and take the opportunity to explain to them about Tor and why it's useful to the world.
 (If they contact you directly for logs, you should send them to
-your university's lawyers -- acting on it yourself is [almost always a poor idea](https://2019.www.torproject.org/eff/tor-legal-faq.html#RequestForLogs).
+your university's lawyers -- acting on it yourself is [almost always a poor idea](/relay/community-resources/eff-tor-legal-faq/).
 
 If there are too many complaints coming in, there are several approaches you can take to reduce them.
-First, you should follow the tips in the [Tor relay documentation](https://community.torproject.org/relay-operations), such
+First, you should follow the tips in the [Tor relay documentation](https://community.torproject.org/relay), such
 as picking a descriptive hostname or getting your own IP address.
 If that doesn't work, you can scale back the advertised speed of your relay, by using the Max``Advertised``Bandwidth to attract less traffic from the Tor network.
 Lastly, you can scale back your exit policy.
