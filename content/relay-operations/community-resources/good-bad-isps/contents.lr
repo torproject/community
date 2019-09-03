@@ -8,7 +8,7 @@ This page aims to list community experiences with Tor and various Internet Servi
 
 Be sure to provide useful information like how much bandwidth you pushed, whether you thought the deal was cheap or expensive, how hard you had to work to make them understand what's going on, how long your server has been running, and whether you'd recommend them to others. Also include dates.
 
-Since non-exits do not attract complaints, it should be fine to run them without contacting the hoster first. Make sure you understand their policies regarding bandwidth, especially on "unlimited" (fair use) contracts. For exit relays, you should read the fine [Tor Exit Guidelines](tor-exit-guidelines) first.
+Since non-exits do not attract complaints, it should be fine to run them without contacting the hoster first. Make sure you understand their policies regarding bandwidth, especially on "unlimited" (fair use) contracts. For exit relays, you should read the fine [Tor Exit Guidelines](/relay/community-resources/tor-exit-guidelines) first.
 
 For network diversity and stronger anonymity, you should avoid providers and countries that already attract a lot of Tor capacity. [Metrics](https://metrics.torproject.org/) is a great tool that allows you to group probabilities by country and AS (autonomous systems), so you can more easily identify networks you want to avoid.
 
