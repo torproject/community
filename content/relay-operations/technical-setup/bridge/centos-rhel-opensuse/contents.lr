@@ -8,7 +8,7 @@ body:
 
 ### 1. Install tor and dependencies
 
-* Redhat / RHEL:
+* CentOS / RHEL:
 
 ```
 yum install epel-release
