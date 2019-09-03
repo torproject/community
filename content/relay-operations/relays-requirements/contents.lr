@@ -36,7 +36,7 @@ It is required that a Tor relay be allowed to use a minimum of 100 GByte of outb
 Note: That is only about 1 day worth of traffic on a 10 Mbit/s (Mbps) connection.
 More (>2 TB/month) is better and recommended.
 **Ideally a relay runs on an unmetered plan** or includes 2 TB/month or more.
-If you have a metered plan you might want to configure tor to only use a given amount of [bandwidth or monthly traffic](FIXME).
+If you have a metered plan you might want to configure tor to only use a given amount of [bandwidth or monthly traffic](/relay/setup/post-install/).
 
 # Public IPv4 Address
 
