@@ -1,6 +1,6 @@
 _model: page
 ---
-title: Swags
+title: Swag
 ---
 body:
 
@@ -10,7 +10,7 @@ You can get one of these fine Tor T-shirts for contributing to the Tor project. 
  
 * Help out in other ways. Maintain a translation. Run Tor trainings. Write a good support program and get a lot of people to use it. Do research on Tor and anonymity, solve some of our bugs, or establish yourself as a Tor advocate.
 
-If you're operating a fast relay or you've done something else cool, email us at tshirt@torproject.org with the details. (We want to make sure our shirts help outreach happen all around the world, so please understand if we can't send you 5 shirts for your 5 excellent relays.)
+If you're operating a fast relay or you've done something else cool, email us at tshirt at torproject.org with the details. (We want to make sure our shirts help outreach happen all around the world, so please understand if we can't send you 5 shirts for your 5 excellent relays.)
 
 There are a variety of colors, shapes, and sizes available in the great roots design that Leiah Jansen made for us, as well as some older designs. 
 ---
@@ -22,4 +22,4 @@ section: Community Resources
 ---
 section_id: community-resources
 ---
-subtitle: If you're operating a fast relay or you've done something else cool,  you're eligible to receive our swags
+subtitle: If you're operating a fast relay or you've done something else cool, you're eligible to receive our swag

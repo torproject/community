@@ -50,7 +50,7 @@ Because of the legal exposure that comes with running an exit relay, you should 
 Ideal exit relay operators are affiliated with some institution, like a university, a library, a hackerspace or a privacy related organization.
 An institution can not only provide greater bandwidth for the exit, but is better positioned to handle abuse complaints or the rare law enforcement inquiry.
 
-If you are considering running an exit relay, please read the [section on legal considerations](community-resources) for exit relay operators.
+If you are considering running an exit relay, please read the [section on legal considerations](/relay/community-resources) for exit relay operators.
 
 # Bridge
 

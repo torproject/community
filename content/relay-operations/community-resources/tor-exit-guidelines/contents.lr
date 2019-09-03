@@ -17,7 +17,7 @@ Therefore, please do not act on this information alone; if you have any specific
 
 Find some professors (or deans!) who like the idea of supporting and/or researching anonymity on the Internet.
 If possible, use an extra IP range whose abuse contact doesn't go through the main university abuse team. Ideally, use addresses that are not trusted by the IP-based authentication many library-related services use -- if the university's entire IP address space is "trusted" to access these library resources, the university is forced to maintain an iron grip on all its addresses.
-Also read [How do I make my University / ISP / etc happy with my exit node?](tor-relay-universities)
+Also read [How do I make my University / ISP / etc happy with my exit node?](/relay/community-resources/tor-relay-universities/)
 
 ### Find Tor-friendly ISPs.
 
@@ -53,7 +53,7 @@ If you country is missing here and you know a lawyer who can provide a legal opi
 
 ### If you're part of an organization that will be running the exit relay (ISP, university etc), consider teaching your legal people about Tor.
 
-It's way better for them to hear about Tor from you, in a relaxed environment, than to hear about it from a stranger over the phone. Make them aware of [EFF's Legal FAQ for Tor Operators](https://2019.www.torproject.org/eff/tor-legal-faq). EFF has also offered to talk to other lawyers to explain the legal aspects of Tor; contact us at support@torservers.net and we'll make the connections for you.
+It's way better for them to hear about Tor from you, in a relaxed environment, than to hear about it from a stranger over the phone. Make them aware of [EFF's Legal FAQ for Tor Operators](/relay/community-resources/eff-tor-legal-faq). EFF has also offered to talk to other lawyers to explain the legal aspects of Tor.
 
 ### If you're not part of an organization, think about starting one!
 
@@ -92,7 +92,7 @@ In your reply, state clearly that you are not liable for forwarded content passi
 One of the biggest reasons exit relays disappear is because the people answering the abuse address get nervous and ask you to stop.
 If you can get your own IP block, great. Even if not, many providers will still reassign subblocks to you if you ask.
 ARIN uses [SWIP](https://www.arin.net/resources/request/reassignments.html), and RIPE uses something similar. You can also add comments to your range, hinting at your usage as anonymization service ([Example](https://apps.db.ripe.net/search/query.html?searchtext=ZWIEBELFREUNDE)).
-If you have questions about the process, please write an email to support@torservers.net and we will try to explain the process to you.
+If you have questions about the process, please write an email to [tor-relays mailing list](https://lists.torproject.org/cgi-bin/mailman/listinfo/tor-relays) and we will try to explain the process to you.
 
 ### Register a phone number and a fax number as abuse contact.
 
@@ -100,10 +100,10 @@ At least law enforcement in Germany regularly uses the fax and phone numbers pre
 
 ### Consider using the Reduced Exit Policy.
 
-The [Reduced Exit Policy](FIXME) is an alternative to the default exit policy. It allows many Internet services while still blocking the majority of TCP ports.
-This drastically reduces the odds that a Bittorrent user will select your node and thus reduces or even eliminates the number of [DMCA complaints](https://2019.www.torproject.org/eff/tor-dmca-response) you will receive.
+The [Reduced Exit Policy](https://trac.torproject.org/projects/tor/wiki/doc/ReducedExitPolicy) is an alternative to the default exit policy. It allows many Internet services while still blocking the majority of TCP ports.
+This drastically reduces the odds that a Bittorrent user will select your node and thus reduces or even eliminates the number of [DMCA complaints](/relay/community-resources/eff-tor-legal-faq/tor-dmca-response/) you will receive.
 
-If you have your own experience of abuse handling, just share it on our public mailing list or write us an email to tor-assistants@torproject.org.
+If you have your own experience of abuse handling, just share it on our public mailing list or write us an email to frontdesk@torproject.org.
 
 ## Technical
 

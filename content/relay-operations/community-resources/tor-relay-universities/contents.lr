@@ -17,15 +17,15 @@ Most likely it is ambiguously worded, to let them allow or deny things based on 
 But it might be extremely restrictive ("no services of any kind"), in which case you're going to have a tough road ahead of you.
 
  * Second, learn about your local laws with respect to liability of traffic that exits from your Tor relay.
-In the US, these appear to be mainly the [DMCA](https://2019.www.torproject.org/eff/tor-legal-faq.html#DMCA) and [CDA](https://2019.www.torproject.org/eff/tor-legal-faq.html#Lawsuits),  and the good news is that many lawyers believe that Tor exit node operators are in the same boat as the ISPs themselves.
-Become familiar with [the EFF's template letter regarding DMCA notices for Tor](https://2019.www.torproject.org/eff/tor-dmca-response.html), which is quite clear about not putting liability on service providers.
+In the US, these appear to be mainly the [DMCA](/relay/community-resources/eff-tor-legal-faq/) and [CDA](/relay/community-resources/eff-tor-legal-faq/),  and the good news is that many lawyers believe that Tor exit node operators are in the same boat as the ISPs themselves.
+Become familiar with [the EFF's template letter regarding DMCA notices for Tor](/relay/community-resources/eff-tor-legal-faq/tor-dmca-response/), which is quite clear about not putting liability on service providers.
 The CDA is less clear, because it was written before the modern Internet emerged, but EFF and ACLU are optimistic.
 Of course, you need to understand that without actual clear precedent (and even then), it's still possible that a given judge will not interpret things the way the lawyers expect.
 In any case, the key here is to become familiar with the laws and their implications and uncertainties.
 
  * Third, learn about Tor's design.
-Read the [design overview](https://2019.www.torproject.org/overview.html), the [design paper](https://www.torproject.org/svn/trunk/doc/design-paper/tor-design.html), and the [FAQ](FIXME).
-Hang out on IRC (irc.oftc.net - #tor-relays) for a while and learn more.
+Read the [design overview](https://2019.www.torproject.org/overview.html), the [design paper](https://www.torproject.org/svn/trunk/doc/design-paper/tor-design.html), and the [FAQ](https://2019.www.torproject.org/docs/faq.html.en).
+Hang out on IRC ([irc.oftc.net](https://www.oftc.net) - #tor-relays) for a while and learn more.
 If possible, attend a talk by one of the Tor developers.
 Learn about the types of people and organizations who need secure communications on the Internet.
 Practice explaining Tor and its benefits and consequences to friends and neighbors -- the [abuse FAQ](https://2019.www.torproject.org/faq-abuse) may provide some helpful starting points.
@@ -46,7 +46,7 @@ Ask for advice from everybody you meet who likes the idea, and try to work your 
 
  * Sixth, teach your university's lawyers about Tor.
 This may seem like a risky move, but it's way better for them to hear about Tor from you, in a relaxed environment, than to hear about it from a stranger over the phone.
-Remember that lawyers don't like being told how to interpret laws by a non-lawyer, but they are often pleased to hear that other lawyers have done a lot of the research and leg-work (this is where [the EFF's legal FAQ](https://2019.www.torproject.org/eff/tor-legal-faq) comes in, along with your law school contacts if you found any).
+Remember that lawyers don't like being told how to interpret laws by a non-lawyer, but they are often pleased to hear that other lawyers have done a lot of the research and leg-work (this is where [the EFF's legal FAQ](/relay/community-resources/eff-tor-legal-faq/) comes in, along with your law school contacts if you found any).
 Make sure to keep these discussions informal and small -- invite one of the general counsel out to coffee to discuss "something neat that may come up later on." Feel free to bring along one of the allies you found above, if it makes you more comfortable.
 Avoid having actual meetings or long email discussions, and make it clear that you don't need their official legal opinion yet.
 Remember that lawyers are paid to say no unless they have a reason to say yes, so when the time finally comes to ask their opinion on running a Tor exit node, make sure the question is not "are there any liability issues?", but rather "we'd like to do this, can you help us avoid the biggest issues?" Try to predict what they will say, and try to gain allies among the lawyers who like your cause and want to help.
@@ -64,26 +64,21 @@ You might let them know that there are ways you can dial down the potential for 
 You'll also want to learn if there are bandwidth limitations at your organization.
 (Tor can handle a variety of rate limiting approaches, so this isn't the end of the world).
 
-In some cases, you should talk to the network security people before you talk to the lawyers; in some cases, there will be yet other groups that will be critical to educate and bring into the discussion.
-You'll have to make it up as you go.
+In some cases, you should talk to the network security people before you talk to the lawyers; in some cases, there will be yet other groups that will be critical to educate and bring into the discussion. You'll have to make it up as you go.
 
 If the authorities contact your university for logs, be pleasant and helpful.
 Tor's default log level doesn't provide much that's useful, so if they want copies of your logs, that's fine.
-Be helpful and take the opportunity to explain to them about Tor and why it's useful to the world.
-(If they contact you directly for logs, you should send them to
-your university's lawyers -- acting on it yourself is [almost always a poor idea](https://2019.www.torproject.org/eff/tor-legal-faq.html#RequestForLogs).
+Be helpful and take the opportunity to explain to them about Tor and why it's useful to the world. (If they contact you directly for logs, you should send them to your university's lawyers -- acting on it yourself is [almost always a poor idea](/relay/community-resources/eff-tor-legal-faq/).
 
-If there are too many complaints coming in, there are several approaches you can take to reduce them.
-First, you should follow the tips in the [Tor relay documentation](https://community.torproject.org/relay-operations), such
-as picking a descriptive hostname or getting your own IP address.
-If that doesn't work, you can scale back the advertised speed of your relay, by using the Max``Advertised``Bandwidth to attract less traffic from the Tor network.
-Lastly, you can scale back your exit policy.
+If there are too many complaints coming in, there are several approaches you can take to reduce them. First, you should follow the tips in the [Tor relay documentation](https://community.torproject.org/relay), such as picking a descriptive hostname or getting your own IP address. If that doesn't work, you can scale back the advertised speed of your relay, by using the `MaxAdvertisedBandwidth` to attract less traffic from the Tor network. Lastly, you can scale back your exit policy.
 
 Some people have found that their university only tolerates their Tor relay if they're involved in a research project around anonymity.
 So if you're interested, you might want to get that started early in the process -- see our [Research Portal](https://research.torproject.org/).
 This approach has the added benefit that you can draw in other faculty and students in the process.
 The downside is that your Tor relay's existence is more fragile, since the terms of its demise are already negotiated.
 Note that in many cases you don't even need to be researching the exit node itself -- doing research on the Tor network requires that there be a Tor network, after all, and keeping it going is a community effort.
+
+## Mailing list
 
 Subscribe to [Tor Relays Universities](https://lists.torproject.org/cgi-bin/mailman/listinfo/tor-relays-universities) mailing list (and other education institutions too).
 ---
