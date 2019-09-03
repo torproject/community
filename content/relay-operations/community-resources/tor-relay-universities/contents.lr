@@ -17,8 +17,8 @@ Most likely it is ambiguously worded, to let them allow or deny things based on 
 But it might be extremely restrictive ("no services of any kind"), in which case you're going to have a tough road ahead of you.
 
  * Second, learn about your local laws with respect to liability of traffic that exits from your Tor relay.
-In the US, these appear to be mainly the [DMCA](https://2019.www.torproject.org/eff/tor-legal-faq.html#DMCA) and [CDA](https://2019.www.torproject.org/eff/tor-legal-faq.html#Lawsuits),  and the good news is that many lawyers believe that Tor exit node operators are in the same boat as the ISPs themselves.
-Become familiar with [the EFF's template letter regarding DMCA notices for Tor](https://2019.www.torproject.org/eff/tor-dmca-response.html), which is quite clear about not putting liability on service providers.
+In the US, these appear to be mainly the [DMCA](/relay/community-resources/eff-tor-legal-faq/) and [CDA](/relay/community-resources/eff-tor-legal-faq/),  and the good news is that many lawyers believe that Tor exit node operators are in the same boat as the ISPs themselves.
+Become familiar with [the EFF's template letter regarding DMCA notices for Tor](/relay/community-resources/eff-tor-legal-faq/tor-dmca-response/), which is quite clear about not putting liability on service providers.
 The CDA is less clear, because it was written before the modern Internet emerged, but EFF and ACLU are optimistic.
 Of course, you need to understand that without actual clear precedent (and even then), it's still possible that a given judge will not interpret things the way the lawyers expect.
 In any case, the key here is to become familiar with the laws and their implications and uncertainties.
