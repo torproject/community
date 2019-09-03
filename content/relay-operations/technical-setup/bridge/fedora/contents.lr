@@ -17,7 +17,11 @@ dnf install git golang tor policycoreutils-python-utils
 ```
 export GOPATH=`mktemp -d`
 go get gitlab.com/yawning/obfs4.git/obfs4proxy
-sudo cp $GOPATH/bin/obfs4proxy /usr/bin/
+sudo cp $GOPATH/bin/obfs4proxy /usr/local/bin/
+```
+And tell selinux to allow Tor to use obfs4proxy:
+```
+/sbin/restorecon -v /usr/local/bin/obfs4proxy
 ```
 
 ### 3. Edit your Tor config file, usually located at `/etc/tor/torrc` and replace its content with:
@@ -31,7 +35,7 @@ BridgeRelay 1
 # censors may be scanning the Internet for this port.
 ORPort TODO
 
-ServerTransportPlugin obfs4 exec /usr/bin/obfs4proxy
+ServerTransportPlugin obfs4 exec /usr/local/bin/obfs4proxy
 
 # Replace "TODO" with an obfs4 port of your choice.  This port must be
 # externally reachable.  Avoid port 9001 because it's commonly associated with
