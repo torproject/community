@@ -103,7 +103,7 @@ At least law enforcement in Germany regularly uses the fax and phone numbers pre
 The [Reduced Exit Policy](https://trac.torproject.org/projects/tor/wiki/doc/ReducedExitPolicy) is an alternative to the default exit policy. It allows many Internet services while still blocking the majority of TCP ports.
 This drastically reduces the odds that a Bittorrent user will select your node and thus reduces or even eliminates the number of [DMCA complaints](/relay/community-resources/eff-tor-legal-faq/tor-dmca-response/) you will receive.
 
-If you have your own experience of abuse handling, just share it on our public mailing list or write us an email to tor-assistants@torproject.org.
+If you have your own experience of abuse handling, just share it on our public mailing list or write us an email to frontdesk@torproject.org.
 
 ## Technical
 
