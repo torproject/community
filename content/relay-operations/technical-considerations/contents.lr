@@ -17,7 +17,7 @@ If you do not own physical hardware, you could run a relay on a rented dedicated
 This can cost anywhere between $3.00/month and thousands per month, depending on your provider, hardware configuration, and bandwidth usage.
 Many VPS providers will not allow you to run exit relays.
 You must follow the VPS provider's terms of service, or risk having your account disabled.
-For more information on hosting providers and their policies on allowing Tor relays, please see this list maintained by the Tor community: [GoodBadISPs](FIXME).
+For more information on hosting providers and their policies on allowing Tor relays, please see this list maintained by the Tor community: [GoodBadISPs](/relay/community-resources/good-bad-isps).
 
 ## Questions to consider when choosing a host
 
