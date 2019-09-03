@@ -48,17 +48,18 @@ sudo cp $GOPATH/bin/obfs4proxy /usr/local/bin/
 RunAsDaemon 1
 BridgeRelay 1
 
-# Replace "TODO" with a Tor port of your choice.  This port must be externally
+# Replace "TODO1" with a Tor port of your choice.  This port must be externally
 # reachable.  Avoid port 9001 because it's commonly associated with Tor and
 # censors may be scanning the Internet for this port.
-ORPort TODO
+ORPort TODO1
 
 ServerTransportPlugin obfs4 exec /usr/local/bin/obfs4proxy
 
-# Replace "TODO" with an obfs4 port of your choice.  This port must be
-# externally reachable.  Avoid port 9001 because it's commonly associated with
+# Replace "TODO2" with an obfs4 port of your choice.  This port must be
+# externally reachable and must be different from the one specified for ORPort.
+# Avoid port 9001 because it's commonly associated with
 # Tor and censors may be scanning the Internet for this port.
-ServerTransportListenAddr obfs4 0.0.0.0:TODO
+ServerTransportListenAddr obfs4 0.0.0.0:TODO2
 
 # Local communication port between Tor and obfs4.  Always set this to "auto".
 # "Ext" means "extended", not "external".  Don't try to set a specific port
