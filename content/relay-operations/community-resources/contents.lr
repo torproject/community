@@ -22,7 +22,7 @@ Exit relay operators should understand the potential risks associated with runni
 For the majority of operators in most countries, bridges and guard/middle relays are very low risk.
 Exits are the ones that present some legal concerns, but operators under most circumstances will be able to handle legal matters by having an abuse response letter, running the exit from a location that isn't their home, and reading through some of the legal resources that Tor-supportive lawyers have put together.
 
-The [EFF Tor Legal FAQ](/eff-tor-legal-faq) answers many common questions about relay operation and the law. We also like [Noisebridge's wiki](https://www.noisebridge.net/wiki/Noisebridge_Tor/FBI) for additional legal resources.
+The [EFF Tor Legal FAQ](/relay/community-resources/eff-tor-legal-faq) answers many common questions about relay operation and the law. We also like [Noisebridge's wiki](https://www.noisebridge.net/wiki/Noisebridge_Tor/FBI) for additional legal resources.
 
 In general it's a good idea to consult with a lawyer before deciding to operate an exit relay, especially if you live in a place where exit relay operators have been harassed, or if you're the only exit relay operator in your region.
 Get in touch with your local digital rights organization to see if they have recommendations about legal assistance, and if you're not sure what organizations are working in your region, [write to EFF](https://www.eff.org/about/contact) and see if they can help connect you.
