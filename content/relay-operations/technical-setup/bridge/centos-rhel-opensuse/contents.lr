@@ -85,8 +85,8 @@ Nickname PickANickname
 * CentOS / RHEL:
 
 ```
-sudo semanage port -a -t tor_port_t -p tcp [desired ORPort number set earlier]
-sudo semanage port -a -t tor_port_t -p tcp [desired ServerTransportListenAddr port number set earlier]
+sudo semanage port -a -t tor_port_t -p tcp [OR port set earlier, in TODO1]
+sudo semanage port -a -t tor_port_t -p tcp [obfs4 port set earlier, in TODO2]
 ```
 
 * CentOS / RHEL / OpenSUSE:
