@@ -30,17 +30,18 @@ And tell selinux to allow Tor to use obfs4proxy:
 RunAsDaemon 1
 BridgeRelay 1
 
-# Replace "TODO" with a Tor port of your choice.  This port must be externally
+# Replace "TODO1" with a Tor port of your choice.  This port must be externally
 # reachable.  Avoid port 9001 because it's commonly associated with Tor and
 # censors may be scanning the Internet for this port.
-ORPort TODO
+ORPort TODO1
 
 ServerTransportPlugin obfs4 exec /usr/local/bin/obfs4proxy
 
-# Replace "TODO" with an obfs4 port of your choice.  This port must be
-# externally reachable.  Avoid port 9001 because it's commonly associated with
+# Replace "TODO2" with an obfs4 port of your choice.  This port must be
+# externally reachable and must be different from the one specified for ORPort.
+# Avoid port 9001 because it's commonly associated with
 # Tor and censors may be scanning the Internet for this port.
-ServerTransportListenAddr obfs4 0.0.0.0:TODO
+ServerTransportListenAddr obfs4 0.0.0.0:TODO2
 
 # Local communication port between Tor and obfs4.  Always set this to "auto".
 # "Ext" means "extended", not "external".  Don't try to set a specific port
@@ -62,8 +63,8 @@ Nickname PickANickname
 ### 4. Restart tor
 
 ```
-sudo semanage port -a -t tor_port_t -p tcp [desired ORPort number set earlier]
-sudo semanage port -a -t tor_port_t -p tcp [desired ServerTransportListenAddr port number set earlier]
+sudo semanage port -a -t tor_port_t -p tcp [OR port set earlier, in TODO1]
+sudo semanage port -a -t tor_port_t -p tcp [obfs4 port set earlier, in TODO2]
 systemctl restart tor
 ```
 
@@ -84,7 +85,7 @@ To confirm your bridge is running with no issues, you should see something like 
 ### 6. Final notes
 
 If you are having troubles setting up your bridge, have a look at [our help
-section](https://community.torproject.org/relay/setup/bridge/getting-help/). If
+section](https://community.torproject.org/relay/getting-help/). If
 your bridge is now running, check out the [post-install
 notes](https://community.torproject.org/relay/setup/bridge/post-install/).
 
@@ -97,7 +98,7 @@ key:
 ---
 color: primary
 ---
-subtitle: How to deploy an obfs4 bridge on CentOS / RHEL / OpenSUSE
+subtitle: How to deploy an obfs4 bridge on Fedora
 ---
 _template: layout.html
 ---
