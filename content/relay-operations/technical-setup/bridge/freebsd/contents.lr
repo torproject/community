@@ -27,7 +27,7 @@ BridgeRelay 1
 # censors may be scanning the Internet for this port.
 ORPort TODO1
 
-ServerTransportPlugin obfs4 exec /usr/bin/obfs4proxy
+ServerTransportPlugin obfs4 exec /usr/local/bin/obfs4proxy
 
 # Replace "TODO2" with an obfs4 port of your choice.  This port must be
 # externally reachable and must be different from the one specified for ORPort.
