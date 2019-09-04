@@ -82,7 +82,7 @@ Nickname PickANickname
 
 ### 4. Restart tor
 
-* RHEL / CentOS:
+* CentOS / RHEL:
 
 ```
 sudo semanage port -a -t tor_port_t -p tcp [desired ORPort number set earlier]
