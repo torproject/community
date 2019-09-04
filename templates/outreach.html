@@ -35,7 +35,7 @@
   <div class="row py-5 text-center mx-auto">
     <h2 class="display-4 text-primary text-center mx-auto">{{ _('Upcoming Tor Events') }}</h2>
     <div class="col-12">
-      {{ render_stream()|safe }}
+      {{ render_stream("https://blog.torproject.org/events.xml")|safe }}
     </div>
   </div>
 </div>
