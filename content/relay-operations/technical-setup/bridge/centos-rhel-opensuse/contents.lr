@@ -12,7 +12,7 @@ body:
 
 ```
 yum install epel-release
-yum install git golang tor
+yum install git golang tor policycoreutils-python-utils
 ```
 
 * OpenSUSE:
@@ -43,6 +43,8 @@ sudo cp $GOPATH/bin/obfs4proxy /usr/local/bin/
 ```
 
 ### 3. Edit your Tor config file, usually located at `/etc/tor/torrc` and replace its content with:
+
+* CentOS / RHEL / OpenSUSE:
 
 ```
 RunAsDaemon 1
@@ -79,6 +81,15 @@ Nickname PickANickname
 * Note that both Tor's OR port and its obfs4 port must be reachable. If your bridge is behind a firewall or NAT, make sure to open both ports. You can use [our reachability test](https://bridges.torproject.org/scan/) to see if your obfs4 port is reachable from the Internet.
 
 ### 4. Restart tor
+
+* RHEL / CentOS:
+
+```
+sudo semanage port -a -t tor_port_t -p tcp [desired ORPort number set earlier]
+sudo semanage port -a -t tor_port_t -p tcp [desired ServerTransportListenAddr port number set earlier]
+```
+
+* CentOS / RHEL / OpenSUSE:
 
 `systemctl restart tor`
 
