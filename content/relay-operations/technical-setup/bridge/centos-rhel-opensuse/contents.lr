@@ -82,17 +82,16 @@ Nickname PickANickname
 
 ### 4. Restart tor
 
-* CentOS / RHEL / OpenSUSE:
-
-`systemctl restart tor`
-
 * RHEL / CentOS:
 
 ```
 sudo semanage port -a -t tor_port_t -p tcp [desired ORPort number set earlier]
 sudo semanage port -a -t tor_port_t -p tcp [desired ServerTransportListenAddr port number set earlier]
-systemctl restart tor
 ```
+
+* CentOS / RHEL / OpenSUSE:
+
+`systemctl restart tor`
 
 ### 5. Monitor your logs (usually in your syslog)
 
