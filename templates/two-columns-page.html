@@ -14,6 +14,11 @@
         </div>
     {% endfor %}
     </div>
+
+    {% if this.path == "/training/code-of-conduct" %}
+      {{ render_text("https://gitweb.torproject.org/community/policies.git/plain/code_of_conduct.txt")|safe }}
+    {% endif %}
+
     <div class="card mt-5">
       <ul class="list-group list-group-flush">
         <!--li class="list-group-item"><a><span class="card-text text-muted">{{ _("Contributors to this page:") }} <a href="#" title="#">cypherpunk</a></span></li-->
