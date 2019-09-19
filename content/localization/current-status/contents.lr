@@ -16,14 +16,14 @@ html: two-columns-page.html
 ---
 body:
 
-We have some languages in very good shape, with a number of active and committed contributors (as French, Spanish, Russian, Portuguese). Even when the translations are finished, we always welcome more contributors to this languages.
+We have some languages in very good shape, with a number of active and committed contributors (as French, Spanish, Russian, Portuguese). Even when the translations are finished, you are still welcome to help us with these languages.
 
-We also have a lot of languages with incomplete translations, maybe spoken by less numbers of people, but still important to improve access to the Tor network for people that does not speak English.
+Our translations are incomplete for a lot of languages. They may be spoken by fewer people around the world, but it is still critical that we improve access to Tor for people who do not speak English.
 
-We are committed to provide translations to more languagues, please consider [helping with translations](/localization/becoming-tor-translator/) to your native language.
+Please consider [helping with translations](/localization/becoming-tor-translator/) in your native language.
 
-The most important languages we need help with at the moment are: Farsi (Persian), Arabic and Korean. But many other languages are being translated, as you can see here:
+Right now, we need the most help with Farsi (Persian), Arabic, and Korean. But many other languages are being translated, as you can see here:
 
 <img class="col-lg-6" src="../../static/images/localization/stats.png">
 
-You can also see the open tickets about translation problems on our [bugtracker](https://trac.torproject.org/projects/tor/query?status=!closed&component=Community%2FTranslations).
+You can see the open tickets about translation problems on our [bugtracker](https://trac.torproject.org/projects/tor/query?status=!closed&component=Community%2FTranslations).
