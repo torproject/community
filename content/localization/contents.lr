@@ -8,9 +8,9 @@ _template: layout.html
 ---
 title: Localization
 ---
-subtitle: We want Tor to work for everyone in the world, which means a lot of languages.
+subtitle: We want Tor to work for everyone in the world, which means our software must be translated into a lot of languages.
 ---
-cta: Help us to translate
+cta: Help us translate
 ---
 key: 2
 ---
@@ -22,4 +22,4 @@ body:
 
 In order for Tor to work for everyone, it needs to speak everyone's languages.
 Our volunteer translation team works hard to make this a reality, and we can always use more help.
-Our current translation priorities are translating the [Tor Browser](https://torpat.ch/locales), its documentation and the [Tor Project website](https://torpat.ch/tpo-locales), and there are always other documents to translate.
+Our current translation priorities are translating [Tor Browser](https://torpat.ch/locales), Tor Browser documentation, and the [Tor Project website](https://torpat.ch/tpo-locales), but there are many other documents that we could use help translating as well. 
