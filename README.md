@@ -68,17 +68,7 @@ If you want to contribute to the Community portal, we will be happy to help you.
 
 This is the workflow that Tor Internal people should use when making changes on the Community Portal:
 
-1. When starting work on an issue or content, please assign the issue to yourself and move into the `Doing` column on the [Community Portal Project Board](https://dip.torproject.org/web/community/-/boards). You can follow the process outlined in ["How to send a merge request or propose a change"](https://dip.torproject.org/web/tpo/wikis/Git-flow-and-merge-requests#how-to-send-a-merge-request-or-propose-a-change) to work on your changes. e.g
-```
-# Start a new feature
-git checkout -b new-feature master
-# Edit some files
-git add <file>
-git commit -m "Start a feature"
-# Edit some files
-git add <file>
-git commit -m "Finish a feature"
-```
+1. When starting work on an issue or content, please assign the issue to yourself and move into the `Doing` column on the [Community Portal Project Board](https://dip.torproject.org/web/community/-/boards). You can follow the process outlined in ["How to send a merge request or propose a change"](https://dip.torproject.org/web/tpo/wikis/Git-flow-and-merge-requests#how-to-send-a-merge-request-or-propose-a-change) to work on your changes.
 2. To view your changes on the website, you can [run lektor locally](https://dip.torproject.org/web/tpo/wikis/Compiling-a-local-version-of-the-website)
 3. Once you are happy with your work, push your changes to `develop` branch and move to `needs-review` column on the [Community Portal Project Board](https://dip.torproject.org/web/community/-/boards)
 4. Add a comment to the issue, tagging the reviewer, e.g `@steph`, with:
@@ -86,7 +76,7 @@ git commit -m "Finish a feature"
     - Contents file, containing your changes where it would be located on the **reviewer's repo** e.g `https://dip.torproject.org/steph/community/blob/develop/content/onion-services/contents.lr`
     - For the review workflow, please see (Reviewer Workflow)
 5. Once the work has been reviewed and any necessary changes and merge request has been made, a repo maintainer or team members with write access to gitweb master will then merge or cherry-pick these changes to master, following the workflow outlined in [How to use our git flow](https://dip.torproject.org/web/tpo/wikis/Git-flow-and-merge-requests#how-to-use-our-git-flow)
-6. Merger should then move the the ticket to the `Closed` column
+6. Merger should then move the the ticket to the `Closed` column.
 
 ### Reviewer Workflow
 
