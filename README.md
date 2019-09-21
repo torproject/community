@@ -1,6 +1,6 @@
 # Community portal
 
-This is the repository of Community portal. The current online version of this portal can be found at [https://community.torproject.org](https://community.torproject.org) or [Community Onion Service](http://3gldbgtv5e4god56.onion/).
+This is the repository of Community portal. The current online version of this portal can be found at https://community.torproject.org or [Community Onion Service](http://3gldbgtv5e4god56.onion/).
 
 To clone the code use either of 
 
@@ -78,7 +78,7 @@ This is the workflow that Tor Internal people should use when making changes on 
 5. Once the work has been reviewed and any necessary changes and merge request has been made, a repo maintainer or team members with write access to gitweb master will then merge or cherry-pick these changes to master, following the workflow outlined in [How to use our git flow](https://dip.torproject.org/web/tpo/wikis/Git-flow-and-merge-requests#how-to-use-our-git-flow)
 6. Merger should then move the the ticket to the `Closed` column.
 
-### Reviewer Workflow
+### Reviewer Workflow
 
 1. Review the page on lektor-staging
 2. Review the content on your repo's develop branch and use the gitlab edit button to make any changes.
