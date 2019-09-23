@@ -8,9 +8,9 @@ image: cloud-upload-alt
 ---
 _template: layout.html
 ---
-title: Set up your .onion Service
+title: Set up your Onion Service
 ---
-subtitle: Learn how to set up a .onion of your very own.
+subtitle: Learn how to set up a .onion site of your very own.
 ---
 key: 1
 ---
