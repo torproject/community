@@ -10,7 +10,7 @@ body:
 
 Get the latest version of Tor. If you're on Debian stable, `sudo apt-get install tor` should give you the latest stable version of Tor.
 
-* Note: **Ubuntu users need to get it from Tor repository. Please see** [Download instructions for Ubuntu](https://www.torproject.org/docs/debian.html.en#ubuntu).
+* Note: **Ubuntu users need to get it from Tor repository. Please see** [Download instructions for Ubuntu](https://support.torproject.org/apt/apt-1/).
 
 ### 2. Install obfs4proxy
 
