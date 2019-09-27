@@ -12,7 +12,7 @@ One of the most imported things to keeps your relay secure is to install securit
 
 # 2. Configure Tor Package Repository
 
-Enable the Torproject package repository by following the instructions **[here](https://support.torproject.org/apt/apt-1/)**.
+Enable the Torproject package repository by following the instructions **[here](https://support.torproject.org/apt/tor-deb-repo/)**.
 
 # 3. Package Installation
 
