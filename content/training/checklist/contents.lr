@@ -1,0 +1,75 @@
+_model: page
+---
+title: Training checklist
+---
+body:
+
+Use this checklist to run a Tor Training.
+
+## Get prepared
+
+  [  ]  I read and agree with the Tor Project [Code of Coduct](https://community.torproject.org/training/code-of-conduct/)
+
+  [  ]  I read the Trainers Guide
+
+  [  ] I have an agenda for the training
+
+  [  ] I reviewed the training slides
+
+## Security protocol
+
+  [  ] I already contacted my organization and told them that I'm organizing this training
+
+  [  ] I shared a contact to whom my organization should call if something happens
+
+## About the venue
+
+  [  ] The venue has enough tables and chairs to everyone
+
+  [  ] The venue has internet connection and I know the wifi password
+
+  [  ] It has a projector available and works on my computer
+
+## Audience & Communication
+
+  [  ]  I sent an e-mail with the address and time to all participants
+
+  [  ]  I asked them to bring the necessary equipment to the training
+
+  [  ] I have confirmed participants for the training
+
+## During the training
+
+Before starting the training, make sure you:
+
+  [  ] Make an agreement about taking or not taking photos
+
+  [  ] Present the agenda
+
+  [  ] Introduce yourself and ask people to introduce themselves
+
+  [  ] "All questions are welcome"
+
+## After the training
+
+  [  ] Collect participants feedback
+
+  [  ] Leave an e-mail for further contact and support
+
+  [  ] Make an evaluation about the training
+
+  [  ] Report privately to Community Team
+---
+color: primary
+---
+html: two-columns-page.html
+---
+key: 1
+---
+section: Training
+---
+section_id: training
+---
+subtitle: Based on our best practices, we have a training checklist to help you
+---
+key: 4
