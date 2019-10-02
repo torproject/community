@@ -1,0 +1,37 @@
+_model: page
+---
+title: Tor Training FAQ
+---
+body:
+
+After running a couple of Tor training, you will find out that first time users have some similar questions about Tor. Here we aggregate the most frequent questions that we listened during our training sessions and you must be aware before running your training. For an extensive resource check [Support portal](https://support.torproject.org). 
+
+ * [Why is it called Tor?](https://support.torproject.org/about/why-is-it-called-tor/)
+ * [Does using Tor Browser protect other applications on my computer?](https://support.torproject.org/tbb/tbb-13/) 
+ * [Using Tor with a VPN is more secure?](https://support.torproject.org/faq/faq-5/)
+ * [Can I browse normal HTTPS sites with Tor?](https://support.torproject.org/https/https-2/)
+ * [Is it possible to find out the path that a client is taking on the Tor Network?](https://support.torproject.org/misc/misc-1/)
+ * [Why don't you prevent bad people from doing bad things when using Tor?](https://support.torproject.org/misc/misc-2/)
+ * [When I use Tor Browser, will anyone be able to tell which websites I visit?](https://support.torproject.org/tbb/tbb-3/)
+ * [Why did my search engine switch to DuckDuckGo? Or what is DuckDuckGo?](https://support.torproject.org/tbb/tbb-41/)
+ * [What is a bridge?](https://support.torproject.org/censorship/censorship-7/)
+ * [Tor Browser won't connect, but it doesn’t seem to be an issue with censorship.](https://support.torproject.org/tbb/tbb-20/)
+ * [What is the difference between using Tor Browser and 'Incognito mode' or private tabs? ](https://support.torproject.org/tbb/tbb-and-incognito-mode/)
+ * [Does running Tor Browser make me a relay?](https://support.torproject.org/tbb/tbb-33/)
+ * [Who funds Tor](https://support.torproject.org/misc/misc-3/)
+ * [Is there a backdoor in Tor?](https://support.torproject.org/about/backdoor/)
+
+---
+color: primary
+---
+html: two-columns-page.html
+---
+key: 5
+---
+section: Training
+---
+section_id: training
+---
+subtitle:
+
+You probably should know these answers before teaching about Tor 
