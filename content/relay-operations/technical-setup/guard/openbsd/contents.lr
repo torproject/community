@@ -1,0 +1,94 @@
+_model: page
+---
+color: primary
+---
+title: OpenBSD
+---
+body:
+
+# 1. Install `tor` OpenBSD's Package
+
+Recent OpenBSD systems, like 6.5/amd64, already have the repository configured on `/etc/installurl` so we do not need to bother changing it.
+
+Should that's not your case, please adjust the `installurl` configuration file like this:
+
+```
+echo "https://cdn.openbsd.org/pub/OpenBSD" > /etc/installurl
+```
+
+Proceed with `pkg_add` to install the package:
+
+```
+pkg_add tor
+```
+
+### 2.1. Recommended Steps to Install `tor` on OpenBSD
+
+If you want to install a newer version of the `tor` OpenBSD's package, you can use M:Tier's binary packages:
+
+```
+ftp https://stable.mtier.org/openup
+```
+
+Right after fetching `openup` you can run it to sync M:Tier's repository and update your packages; it's an alternative to `pkg_add -u`.
+
+Here is how you proceed with these steps:
+
+```
+openup
+```
+
+# 3. Configure `/etc/tor/torrc`
+
+This is a very simple version of the `torrc` configuration file in order to run a Middle/Guard relay on the Tor network:
+
+```
+Nickname    myBSDRelay    # Change your relay's nickname to something you like
+ContactInfo your@email    # Please write your email address and be aware that it will be published
+ORPort      443           # You might want to use/try a different port, should you want to
+ExitRelay   0
+SocksPort   0
+Log notice  syslog
+User        _tor
+```
+
+# 4. Change `openfiles-max` and `maxfiles` Tweaks
+
+By default, OpenBSD maintains a rather low limit on the maximum number of open files for a process. For a daemon such as Tor's, that opens a connection to each and every other relay (currently around 7000 relays), these limits should be raised.
+
+Append the following section to `/etc/login.conf`:
+
+```
+tor:\
+    :openfiles-max=13500:\
+    :tc=daemon:
+```
+
+OpenBSD also stores a kernel-level file descriptor limit in the sysctl variable `kern.maxfiles`.
+
+Increase it from the default of 7030 to 16000:
+
+```
+echo "kern.maxfiles=16000" >> /etc/sysctl.conf
+sysctl kern.maxfiles=16000
+```
+
+# 6. Start `tor`:
+
+Here we set `tor` to start during boot and call it for the first time:
+
+```
+rcctl enable tor
+rcctl start tor
+```
+
+---
+html: two-columns-page.html
+---
+key: 2
+---
+section: Middle/Guard relay
+---
+section_id: relay-operations
+---
+subtitle: How to deploy a Middle/Guard relay on OpenBSD
