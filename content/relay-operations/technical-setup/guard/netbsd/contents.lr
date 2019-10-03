@@ -1,0 +1,51 @@
+_model: page
+---
+color: primary
+---
+title: NetBSD
+---
+body:
+
+# 1. Setup `pkg_add`
+
+```
+echo "PKG_PATH=http://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/$(uname -m)/$(uname -r)/All" > /etc/pkg_install.conf
+```
+
+# 2. Install `tor` NetBSD's package
+
+```
+pkg_add tor
+```
+
+# 3. Configure `/usr/pkg/etc/tor/torrc`
+
+```
+Nickname    myBSDRelay    # Change your relay's nickname to something you like
+ContactInfo your@email    # Please write your email address and be aware that it will be published
+ORPort      443           # You might want to use/try a different port, should you want to
+ExitRelay   0
+SocksPort   0
+Log notice  syslog
+```
+
+# 6. Start `tor`:
+
+Here we set `tor` to start during boot and call it for the first time:
+
+```
+ln -sf /usr/pkg/share/examples/rc.d/tor /etc/rc.d/tor
+echo "tor=YES" >> /etc/rc.conf
+/etc/rc.d/tor start
+```
+
+---
+html: two-columns-page.html
+---
+key: 2
+---
+section: Middle/Guard relay
+---
+section_id: relay-operations
+---
+subtitle: How to deploy a Middle/Guard relay on NetBSD
