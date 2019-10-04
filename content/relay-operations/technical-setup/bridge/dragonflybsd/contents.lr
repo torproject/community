@@ -1,0 +1,140 @@
+_model: page
+---
+color: primary
+---
+title: DragonflyBSD
+---
+html: two-columns-page.html
+---
+key: 3
+---
+body:
+
+### 1. Bootstrap `pkg`
+
+DragonFlyBSD's daily snapshots and releases (starting with 3.4) come with `pkg` already installed. Upgrades from earlier releases, however, will not have it.
+
+If `pkg` is missing on the system for any reason, it can be quickly bootstrapped without having to build it from source or even having **DPorts** installed:
+
+```
+cd /usr
+make pkg-bootstrap
+rehash
+pkg-static install -y pkg
+rehash
+```
+
+##### 1.1. Recommended Steps to Setup `pkg`
+
+Here, it will be similar to what we have on a **FreeBSD** system, and we are going to use HTTPS to fetch our packages, and updates - so here we also need an extra package to help us out (`ca_root_nss`).
+
+Installing the `ca_root_nss` package:
+
+```
+pkg install ca_root_nss
+```
+
+For fresh installations, the file `/usr/local/etc/pkg/repos/df-latest.conf.sample` is copied to `/usr/local/etc/pkg/repos/df-latest`. The files ending in the ".sample" extension are ignored; pkg(8) only reads files that end in ".conf" and it will read as many as it finds.
+
+**DragonflyBSD** has 2 packages repositories:
+
+  - Avalon (mirror-master.dragonflybsd.org);
+  - Wolfpond (pkg.wolfpond.org).
+
+We can simply edit the **URL** used to point out the repositories on `/usr/local/etc/pkg/repos/df-latest` and that's it! Remember to use **pkg+https://** for Avalon.
+
+After applying all these changes, we update the packages list again and try to check if there's already a new update to apply:
+
+```
+pkg update -f
+pkg upgrade -y -f
+```
+
+### 2. Install `tor` DragonflyBSD's Package
+
+Here we can choose to install the latest stable version, like:
+
+```
+pkg install tor
+```
+
+  ... or install an alpha release:
+
+
+```
+pkg install tor-devel
+
+### 3. Configure `/usr/local/etc/tor/torrc` to run **Tor** as a Bridge
+
+```
+RunAsDaemon 1
+BridgeRelay 1
+
+# Replace "TODO1" with a Tor port of your choice.  This port must be externally
+# reachable.  Avoid port 9001 because it's commonly associated with Tor and
+# censors may be scanning the Internet for this port.
+ORPort TODO1
+
+ServerTransportPlugin obfs4 exec /usr/local/bin/obfs4proxy
+
+# Replace "TODO2" with an obfs4 port of your choice.  This port must be
+# externally reachable and must be different from the one specified for ORPort.
+# Avoid port 9001 because it's commonly associated with
+# Tor and censors may be scanning the Internet for this port.
+ServerTransportListenAddr obfs4 0.0.0.0:TODO2
+
+# Local communication port between Tor and obfs4.  Always set this to "auto".
+# "Ext" means "extended", not "external".  Don't try to set a specific port
+# number, nor listen on 0.0.0.0.
+ExtORPort auto
+
+# Replace "<address@email.com>" with your email address so we can contact you if
+# there are problems with your bridge.  This is optional but encouraged.
+ContactInfo <address@email.com>
+
+# Pick a nickname that you like for your bridge.  This is optional.
+Nickname PickANickname
+
+Log notice file /var/log/tor/notices.log
+```
+
+Don't forget to change the `ORPort`, `ServerTransportListenAddr`, `ContactInfo`, and `Nickname` options.
+
+* Please note that both `ORPort` and the port you used as `TODO2` (for obfs4) must be reachable. If your bridge is behind a firewall or NAT, make sure to open/forward both ports. You can use [our reachability test](https://bridges.torproject.org/scan/) to see if your obfs4 port is reachable from the Internet.
+
+* Are you firewalling your DragonflyBSD? If so, make sure that `obfs4proxy` can talk to `tor` over the loopback interface - do not forget to whitelist the **ExtORPort**.
+
+### 4. Start `tor`:
+
+Here we set `tor` to start at boot time and use the setuid feature, in order to bind to lower ports like 443 (the daemon itself will still run as a regular non-privileged user).
+
+```
+echo "tor_setuid=YES" >> /etc/rc.conf
+echo "tor_enable=YES" >> /etc/rc.conf
+service tor start
+```
+
+### 5. Monitor your logs
+
+To confirm your bridge is running with no issues, you should see something like this in `/var/log/tor/notices.log`:
+
+```
+[notice] Your Tor server's identity key fingerprint is '<NICKNAME> <FINGERPRINT>'
+[notice] Your Tor bridge's hashed identity key fingerprint is '<NICKNAME> <HASHED FINGERPRINT>'
+[notice] Registered server transport 'obfs4' at '[::]:46396'
+[notice] Tor has successfully opened a circuit. Looks like client functionality is working.
+[notice] Bootstrapped 100%: Done
+[notice] Now checking whether ORPort <redacted>:3818 is reachable... (this may take up to 20 minutes -- look for log messages indicating success)
+[notice] Self-testing indicates your ORPort is reachable from the outside. Excellent. Publishing server descriptor.
+```
+
+### 6. Final Notes
+
+If you are having troubles setting up your bridge, have a look at [our help section](https://community.torproject.org/relay/getting-help/). If your bridge is now running, check out the [post-install notes](https://community.torproject.org/relay/setup/bridge/post-install/).
+
+---
+subtitle: How to deploy an obfs4 bridge on DragonflyBSD
+---
+section: Bridge
+---
+section_id: bridge
