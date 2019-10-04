@@ -8,25 +8,24 @@ _template: layout.html
 ---
 title: Becoming a Tor translator
 ---
-subtitle: Tor Project localization is hosted in the Localization Lab Hub on Transifex, a third-party translation platform. Read on for details on how to sign up and begin contributing.
+subtitle: Our localization efforts happen in the Localization Lab Hub on Transifex, a third-party translation platform. Learn how to sign up and begin contributing.
 ---
 key: 1
 ---
 html: two-columns-page.html
 ---
 body:
+Thank you for your interest in helping us with translations. 
 
-If you are interested in helping out the project by translating the manual or the Tor Browser to your language, your help would be greatly appreciated!
-Tor Project localization is hosted in the [Localization Lab Hub](https://www.localizationlab.org/) on Transifex, a third-party translation platform.
+Our localization efforts are hosted in the [Localization Lab Hub](https://www.localizationlab.org/) on Transifex, a third-party translation platform.
 
-Before translating, please read through the Tor Project page on the [Localization Lab Wiki](https://wiki.localizationlab.org/index.php/Tor).
-There you will find translation guidelines and resources that will help you contribute to Tor translations, as well as translation priorities.
+Before translating, please read through the Tor Project page on the [Localization Lab Wiki](https://wiki.localizationlab.org/index.php/Tor). The page includes guidelines, resources, and priorities that will help you make the most out of your contribution.
 
 ### Localization mailing list
 
 You are cordially invited to join the [Tor localization mailing list](https://lists.torproject.org/cgi-bin/mailman/listinfo/tor-l10n), to organize translations, participate in our decisions, report errors in source strings, etc.
 
-In order to begin contributing you will have to sign up with Transifex. Below is an outline of how to sign up and begin.
+In order to begin contributing you will have to sign up with Transifex. Here's an outline of what to expect during that process.
 
 # Signing Up On Transifex
 
@@ -45,8 +44,4 @@ In order to begin contributing you will have to sign up with Transifex. Below is
 - A notification will now show up on the top of the page like so:
 ![Request Submitted](/static/images/localization/tr5.png)
 
-After your membership is approved you can begin translating; there is a list of needed translations at [Tor Transifex page](https://www.transifex.com/otf/torproject/) when you are ready to begin.
-
-The [Localization Lab Wiki](https://wiki.localizationlab.org/index.php/Tor) also has information about the translations with bigger priority.
-
-Thanks for your interest in helping the project!
+After your membership is approved, you're ready to begin. 
