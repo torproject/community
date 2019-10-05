@@ -4,15 +4,13 @@ section_id: user-research
 ---
 color: primary
 ---
-_hidden: yes
----
 _template: layout.html
 ---
 title: User Research
 ---
 subtitle: We conduct user research while also respecting user privacy.
 ---
-cta: In progress
+cta: Learn about Tor users
 ---
 key: 4
 ---
@@ -20,6 +18,6 @@ html: user-research.html
 ---
 body:
 
-Protecting privacy is what we do at Tor.
-So how do we collect meaningful user feedback without violating user consent?
-We conduct all of our user research through in-person studies that users explicitly opt into.
+## We conduct user research while also respecting user privacy.
+
+We practice human-centered design on building tools for internet freedom while we build community. Our user research is funded by the premises of consent, respect, and empathy. Make an impact in your local community by listening to our users. Learn how we do it and help Tor with user research.
