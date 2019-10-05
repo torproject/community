@@ -10,7 +10,7 @@ _template: layout.html
 ---
 title: Technical Setup
 ---
-subtitle: Installing and configuring your Tor relay: Bridge, Guard / Middle node, Exit.
+subtitle: How to install and configure each type of relay: bridge, guard, middle, and exit.
 ---
 html: two-columns-page.html
 ---
@@ -20,19 +20,21 @@ This section covers the installation and configuration of the program required t
 
 These steps are intended for the latest stable version of the given OS, on Ubuntu for the latest LTS release.
 
-Note: For some operating systems, there are alpha version packages available (tor versions with new features not deemed to be stable yet).
-
+Note: For some operating systems, there are alpha version packages available (Tor versions with new features not deemed to be stable yet).
 These are only recommended for people eager to test and report bugs in bleeding edge releases/features.
-If you are looking to run a relay with minimal effort we recommend you stick to stable releases.
+If you are looking to run a relay with minimal effort, we recommend you stick to stable releases.
 
 # Questions you should clarify before configuring Tor
 
-* Do you want to run a Tor exit or non-exit (guard/middle) relay?
-* If you want to run an exit relay: Which ports do you want to allow in your exit policy? (more ports usually means potentially more abuse complains)
+* Do you want to run a Tor exit or non-exit (bridge/guard/middle) relay?
+* If you want to run an exit relay: Which ports do you want to allow in your exit policy?
+  (More ports usually means potentially more abuse complaints.)
 * What external TCP port do you want to use for incoming Tor connections?
-  ("ORPort" configuration, we recommend port 443 if that is not used by another daemon on your server already. ORPort 443 is recommended because it is often one of the few open ports on public WIFI networks. Port 9001 is another commonly used ORPort.)
+  ("ORPort" configuration: We recommend port 443 if that is not used by another daemon on your server already.
+  ORPort 443 is recommended because it is often one of the few open ports on public WIFI networks.
+  Port 9001 is another commonly used ORPort.)
 * What email address will you use in the ContactInfo field of your relay(s)?
-  Note: This information will be made public.
+  This information will be made public.
 * How much bandwidth/monthly traffic do you want to allow for Tor traffic?
 * Does the server have an IPv6 address?
 
