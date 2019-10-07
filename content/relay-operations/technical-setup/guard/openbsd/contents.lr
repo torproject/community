@@ -6,7 +6,7 @@ title: OpenBSD
 ---
 body:
 
-# 1. Install `tor` OpenBSD's Package.
+# 1. Install `tor` OpenBSD's Package
 
 Recent OpenBSD systems, like 6.5/amd64, already have the repository configured on `/etc/installurl` so we do not need to bother changing it.
 
@@ -22,7 +22,7 @@ Proceed with `pkg_add` to install the package:
 pkg_add tor
 ```
 
-### 2.1. Recommended Steps to Install `tor` on OpenBSD
+### 2.1. Recommended steps to install `tor` on OpenBSD
 
 If you want to install a newer version of the `tor` OpenBSD's package, you can use M:Tier's binary packages:
 
