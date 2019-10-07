@@ -14,30 +14,26 @@ One of the most imported things to keeps your relay secure is to install securit
 
 Enable the Torproject package repository by following the instructions **[here](https://support.torproject.org/apt/tor-deb-repo/)**.
 
-# 3. Package Installation
-
-Install the `tor` package:
+# 3. Install the `tor` package:
 
 `apt update && apt install tor`
 
-# 4. Configuration File
+# 4. Configure `/etc/tor/torrc`
 
-Put the configuration file `/etc/tor/torrc` in place:
+This is a very simple version of the `torrc` configuration file in order to run a Middle/Guard relay on the Tor network:
 
 ```
-#change the nickname "myNiceRelay" to a name that you like
-Nickname myNiceRelay
-ORPort 443
-ExitRelay 0
-SocksPort 0
+Nickname      myNiceRelay   # Change the nickname "myNiceRelay" to a name that you like
+ORPort        443           # You might want to use/try a different port, should you want to
+ExitRelay     0
+SocksPort     0
 ControlSocket 0
-# Change the email address bellow and be aware that it will be published
-ContactInfo tor-operator@your-emailaddress-domain
+ContactInfo your@email      # Please write your email address and be aware that it will be published
 ```
 
 # 5. Restart the Service
 
-Restart the tor daemon so your configuration changes take effect:
+Restart the `tor` daemon so your configuration changes take effect:
 
 `systemctl restart tor@default`
 
