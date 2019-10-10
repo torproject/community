@@ -24,11 +24,11 @@ Onion services offer various privacy and security benefits to their users.
 
 ### Location hiding
 
-An onion service's IP is hidden. Onion services are an overlay network on top of TCP/IP, so in some sense IP addresses are not even meaningful to onion services: they are not even used in the protocol.
+An onion service's IP is protected. Onion services are an overlay network on top of TCP/IP, so in some sense IP addresses are not even meaningful to onion services: they are not even used in the protocol.
 
 ### End-to-end authentication
 
-When a user visits a particular onion, they know that the content they are seeing can only come from that particular onion and that no impersonation is possible. This is not the case with the normal web, where reaching a website does not mean that a man-in-the-middle did not reroute to some other location (e.g. DNS attacks).
+When a user visits a particular onion, they know that the content they are seeing can only come from that particular onion. No impersonation is possible, which is generally not the case. Usually, reaching a website does not mean that a man-in-the-middle did not reroute to some other location (e.g. DNS attacks).
 
 ### End-to-end encryption
 
@@ -36,18 +36,18 @@ Onion service traffic is encrypted from the client to the onion host. This is li
 
 ### NAT punching
 
-Is your network filtered and you can't open ports on your firewall? This could happen if you are in a university campus, an office, an airport or pretty much anywhere. Onion services don't need open ports because they punch through NAT, since they only establish outgoing connections.
+Is your network filtered and you can't open ports on your firewall? This could happen if you are in a university campus, an office, an airport, or pretty much anywhere. Onion services don't need open ports because they punch through NAT. They only establish outgoing connections.
 
 
 ## The Onion Service Protocol: Overview
 
-Now the question becomes **what kind of protocol do we need to achieve all these properties?** In particular, on the normal web, we connect to an IP address and we are done, but in this case how do we connect to something that does not have an IP address?
+Now the question becomes **what kind of protocol is needed to achieve all these properties?** Usually, people connect to an IP address and are done, but how can you connect to something that does not have an IP address?
 
 In particular, an onion service's address looks like this: `vww6ybal4bd7szmgncyruucpgfkqahzddi37ktceo3ah7ngmcopnpyyd.onion`
 
-This looks weird and random because in reality it's the _identity public key_ of the onion service and that's one of the reasons we can achieve the security properties from above.
+This looks weird and random because it's the _identity public key_ of the onion service. That's one of the reasons we can achieve the security properties above.
 
-The general concept behind the onion service protocol is that we use the Tor network so that the client (Alice) can introduce itself to the service (Bob), and then sets up a rendezvous with the service. Here is a detailed breakdown of how this happens:
+The onion service protocol uses the Tor network so that the client (Alice) can introduce itself to the service (Bob), and then set up a rendezvous point with the service over the Tor network. Here is a detailed breakdown of how this happens:
 
 ### Act 1: Where the onion service sets up its introduction points
 
@@ -79,7 +79,7 @@ Now let's fast-forward to the point where an actual client wants to visit the se
 In this case, Alice (the client) has the onion address of Bob and she wants to visit it, so she connects to it with her Tor Browser.
 Now the next thing that needs to happen is that Alice goes to the _distributed hash table_ from the step above, and ask for the signed descriptor of Bob.
 
-When Alice receives the signed descriptor she verifies the signature of the descriptor using the public key that is encoded in the onion address.
+When Alice receives the signed descriptor, she verifies the signature of the descriptor using the public key that is encoded in the onion address.
 This provides the _end-to-end authentication_ security property, since we are now sure that this descriptor could only be produced by Bob and no one else.
 And inside the descriptor there are the introduction points which allow Alice to introduce herself to Bob.
 
@@ -112,7 +112,7 @@ This provides _location hiding_ to this connection:
 
 ## Further resources
 
-This was just a high-level overview of the Tor onion services protocol. Here are some more resources for the curious who want to learn more:
+This was just a high-level overview of the Tor onion services protocol. Here are some more resources if you want to learn more:
 
 - The original Tor design paper describing the original design:
 https://svn.torproject.org/svn/projects/design-paper/tor-design.pdf
