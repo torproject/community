@@ -7,43 +7,30 @@
       <img src="/static/images/home/png/{{ this.section_id }}.png" class="img-fluid" alt="{{ _(this.section) }}" />
     </div>
   </div>
-  <a href="{{ this.path|url }}overview/"><h2 class="text-primary"><u>{{ _('Learn more about onion services here') }}
-    <i class="fas fa-arrow-right"></i></u>
-  </h2></a>
-  <div class="row py-5">
+  <div class="row">
     {% for child in this.children|sort(attribute='key') %}
-      {% if child.key != '0' %}
-      <div class="col-sm-6 col-md-6 col-sm-12 col-xl-6 py-4">
-        <div class="card h-100 border-0">
+      <div class="col-sm-6 col-md-6 col-sm-12 col-xl-6 py-3">
+        <div class="card h-100">
           <div class="card-body">
-            <h2 class="text-primary display-2"><i class="fas fa-{{ child.image }}"></i></h2>
-            <h4 class="card-title text-primary">{{ child.title }}</h4>
-            <p class="card-text">{{ child.subtitle }}</p>
-            <a href="{{ child.path|url }}">{{ child.cta }} <i class="fas fa-arrow-right"></i></a>
+            <div class="card-body">
+              <h4 class="card-title text-primary">
+                <a href="{{ child.path|url(alt=this.alt) }}">{{ _(child.title) }}</a>
+              </h4>
+              <p class="card-text">{{ _(child.subtitle) }}</p>
+            </div>
           </div>
         </div>
       </div>
-      {% endif %}
     {% endfor %}
   </div>
   <div class="row py-5 text-center mx-auto">
     <h2 class="display-4 text-primary text-center mx-auto">{{ _('Onionize any website') }}</h2>
     <p class="text-center">
-      {{ _('There\'s a toolkit that lets you take any existing website and host it as a .onion site. You would wanna do this because .onion sites are more secure than just regular sites. We show you how to use this toolkit and onionize a site.') }}
+      {{ _('There\'s a toolkit that lets you take any existing website and host it as a .onion site. You would want do this because .onion sites are more secure than just regular sites. We show you how to use this toolkit and onionize a site.') }}
     </p>
-  </div>
-  <div class="row mx-auto">
-    <div class="col-6">
-      <a href="https://github.com/alecmuffett/eotk#i-want-to-create-my-own-project">
-      <h3 class="text-primary text-center mx-auto"><u>{{ _('Learn more') }}
-        <i class="fas fa-arrow-right"></i></u>
-      </h3></a>
-    </div>
-    <div class="col-6">
-      <a href="https://github.com/alecmuffett/eotk"><h3 class="text-primary text-center mx-auto"><u>{{ _('Check out the code') }}
-        <i class="fas fa-arrow-right"></i></u>
-      </h3></a>
-    </div>
+    <a class="btn btn-lg btn-outline-primary mx-auto my-3" href="https://github.com/alecmuffett/eotk">
+          {{ _('Check out the code') }}<i class="ml-3 pt-2 fas fa-arrow-right"></i>
+    </a>
   </div>
   <div class="row py-5 text-center mx-auto">
     <h2 class="display-4 text-primary text-center mx-auto">{{ _('Featured .onion sites') }}</h2>
@@ -63,6 +50,14 @@
         </div>
       </div>
     {% endfor %}
-
+  </div>
+    <div class="row py-5 text-center mx-auto">
+    <h2 class="display-4 text-primary text-center mx-auto my-3">{{ _('Learn More') }}</h2>
+    <p class="text-center">
+      {{ _('Are you interested in learning more about onion services? Join our tor-onions mailing list to speak with other onion service operators.')}}
+    </p>
+    <a class="btn btn-lg btn-outline-primary mx-auto my-3" href="https://lists.torproject.org/cgi-bin/mailman/listinfo/tor-onions">
+          {{ _('Tor Onions mailing list') }}<i class="ml-3 pt-2 fas fa-arrow-right"></i>
+    </a>
   </div>
 </div>
