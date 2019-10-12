@@ -16,7 +16,8 @@ html: two-columns-page.html
 ---
 body:
 
-Onion services are services that can only be accessed over Tor. Running an onion service gives your users all the security of HTTPS with the added privacy benefits of Tor Browser.
+Onion services are services that can only be accessed over Tor.
+Running an onion service gives your users all the security of HTTPS with the added privacy benefits of Tor Browser.
 
 ## Why onion services?
 
@@ -29,32 +30,41 @@ Onion services are an overlay network on top of TCP/IP, so in some sense IP addr
 
 ### End-to-end authentication
 
-When a user visits a particular onion, they know that the content they are seeing can only come from that particular onion. No impersonation is possible, which is generally not the case. Usually, reaching a website does not mean that a man-in-the-middle did not reroute to some other location (e.g. DNS attacks).
+When a user visits a particular onion, they know that the content they are seeing can only come from that particular onion.
+No impersonation is possible, which is generally not the case.
+Usually, reaching a website does not mean that a man-in-the-middle did not reroute to some other location (e.g. DNS attacks).
 
 ### End-to-end encryption
 
-Onion service traffic is encrypted from the client to the onion host. This is like getting strong SSL/HTTPS for free.
+Onion service traffic is encrypted from the client to the onion host.
+This is like getting strong SSL/HTTPS for free.
 
 ### NAT punching
 
-Is your network filtered and you can't open ports on your firewall? This could happen if you are in a university campus, an office, an airport, or pretty much anywhere. Onion services don't need open ports because they punch through NAT. They only establish outgoing connections.
+Is your network filtered and you can't open ports on your firewall?
+This could happen if you are in a university campus, an office, an airport, or pretty much anywhere.
+Onion services don't need open ports because they punch through NAT. They only establish outgoing connections.
 
 
 ## The Onion Service Protocol: Overview
 
-Now the question becomes **what kind of protocol is needed to achieve all these properties?** Usually, people connect to an IP address and are done, but how can you connect to something that does not have an IP address?
+Now the question becomes **what kind of protocol is needed to achieve all these properties?**
+Usually, people connect to an IP address and are done, but how can you connect to something that does not have an IP address?
 
 In particular, an onion service's address looks like this: `vww6ybal4bd7szmgncyruucpgfkqahzddi37ktceo3ah7ngmcopnpyyd.onion`
 
-This looks weird and random because it's the _identity public key_ of the onion service. That's one of the reasons we can achieve the security properties above.
+This looks weird and random because it's the _identity public key_ of the onion service.
+That's one of the reasons we can achieve the security properties above.
 
-The onion service protocol uses the Tor network so that the client (Alice) can introduce itself to the service (Bob), and then set up a rendezvous point with the service over the Tor network. Here is a detailed breakdown of how this happens:
+The onion service protocol uses the Tor network so that the client (Alice) can introduce itself to the service (Bob), and then set up a rendezvous point with the service over the Tor network.
+Here is a detailed breakdown of how this happens:
 
 ### Act 1: Where the onion service sets up its introduction points
 
 ![Onion Services: Step 1](/static/images/onion-services/overview/tor-onion-services-1.png)
 
-As the first step in the protocol, Bob (the onion service) contacts a bunch of Tor relays and asks them to act as his _introduction points_, by establishing long-term circuits to them. These circuits are anonymized circuits, so Bob does not reveal his locations to his introduction points.
+As the first step in the protocol, Bob (the onion service) contacts a bunch of Tor relays and asks them to act as his _introduction points_, by establishing long-term circuits to them.
+These circuits are anonymized circuits, so Bob does not reveal his locations to his introduction points.
 
 As part of this step, Bob gives its introduction point a special "authentication key", so that if any clients come for introductions later the introduction point can use that key to match them to Bob.
 
