@@ -24,7 +24,8 @@ Onion services offer various privacy and security benefits to their users.
 
 ### Location hiding
 
-An onion service's IP is protected. Onion services are an overlay network on top of TCP/IP, so in some sense IP addresses are not even meaningful to onion services: they are not even used in the protocol.
+An onion service's IP address is protected.
+Onion services are an overlay network on top of TCP/IP, so in some sense IP addresses are not even meaningful to onion services: they are not even used in the protocol.
 
 ### End-to-end authentication
 
