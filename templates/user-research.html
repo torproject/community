@@ -7,17 +7,15 @@
       <img src="/static/images/home/png/{{ this.section_id }}.png" class="img-fluid" alt="{{ _(this.section) }}" />
     </div>
   </div>
-  <h2 class="text-primary"><u>{{ _('Want to know more? Take a look at our process') }}
-    <i class="fas fa-arrow-right"></i></u>
-  </h2>
-  <div class="row py-5">
+  <div class="row">
     {% for child in this.children|sort(attribute='key') %}
-      <div class="col-sm-6 col-md-6 col-sm-12 col-xl-6 py-4">
-        <div class="card h-100 border-0">
+      <div class="col-sm-6 col-md-6 col-sm-12 col-xl-6 py-3">
+        <div class="card h-100">
           <div class="card-body">
-            <span class="text-primary h3"><i class="far fa-{{ child.image }}"></i></span>
-            <h4 class="card-title text-primary my-3">{{ child.title }}</h4>
-            <p class="card-text">{{ child.subtitle }}</p>
+            <div class="card-body">
+              <h4 class="card-title text-primary">{{ child.title }}</h4>
+              <p class="card-text">{{ child.subtitle }}</p>
+            </div>
           </div>
         </div>
       </div>
