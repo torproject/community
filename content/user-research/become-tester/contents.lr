@@ -1,0 +1,22 @@
+section: user research
+---
+section_id: user-research
+---
+color: primary
+---
+image: eye
+---
+_template: layout.html
+---
+title: Become a tester
+---
+subtitle: We regularly release Tor Browser Alpha versions to allow users to test software improvements and new ideas.
+---
+key: 1
+---
+html: two-columns-page.html
+---
+body:
+
+We regularly release Tor Browser Alpha versions to allow users to test software improvements and new ideas.
+Sign up to be in our testing pool >
