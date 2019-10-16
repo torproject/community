@@ -14,10 +14,18 @@
             </tr>
           </thead>
           <tbody>
-            {% from "macros/resources.html" import render_resource %}
-            {% for item in this.attachments %}
-              {{ render_resource(item) }}
-            {% endfor %}
+          {% for id, item in bag('training-resources').items() %}
+            <tr>
+              <td>{{ item.label}}</td>
+              <td>{{ item.description }}</td>
+              <td>
+                {% for format in item.formats %}
+                <a href="https://gitweb.torproject.org/community/training.git/plain/{{ item.date }}/{{ item.name }}/{{ item.filename }}.{{format}}">{{ format }}</a> 
+                {% endfor %}
+              </td>
+              <td>{{ item.date }}</td>
+            </tr>
+          {% endfor %}
           </tbody>
         </table>
       </div>
