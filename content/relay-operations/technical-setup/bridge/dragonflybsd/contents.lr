@@ -6,7 +6,7 @@ title: DragonflyBSD
 ---
 html: two-columns-page.html
 ---
-key: 3
+key: 5
 ---
 body:
 
@@ -50,19 +50,20 @@ pkg update -f
 pkg upgrade -y -f
 ```
 
-### 2. Install `tor` DragonflyBSD's Package
+### 2. Install `tor` and `obfs4proxy` DragonflyBSD's Package
 
 Here we can choose to install the latest stable version, like:
 
 ```
-pkg install tor
+pkg install tor obfs4proxy-tor
 ```
 
   ... or install an alpha release:
 
 
 ```
-pkg install tor-devel
+pkg install tor-devel  obfs4proxy-tor
+```
 
 ### 3. Configure `/usr/local/etc/tor/torrc` to run **Tor** as a Bridge
 
@@ -117,6 +118,10 @@ service tor start
 ### 5. Monitor your logs
 
 To confirm your bridge is running with no issues, you should see something like this in `/var/log/tor/notices.log`:
+
+```
+tail /var/log/tor/notices.log
+```
 
 ```
 [notice] Your Tor server's identity key fingerprint is '<NICKNAME> <FINGERPRINT>'
