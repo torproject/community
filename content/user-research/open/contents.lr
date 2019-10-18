@@ -17,7 +17,7 @@ key: 2
 html: two-columns-page.html
 ---
 body:
-These are our current needs for testing Tor products, as well as methodologies and testing scripts. Before running Tor user research, be sure you read our [Guidelines to becoming a user researcher with Tor](#).
+These are our current needs for testing Tor products, as well as methodologies and testing scripts. Before running Tor user research, be sure you read our [Guidelines to becoming a user researcher with Tor](https://community.torproject.org/user-research/guidelines).
 
 ### Tor Browser for Desktop
 * [User Research: Onboarding](https://dip.torproject.org/torproject/ux/research/blob/master/scripts%20and%20activities/2019/4._Tor_Browser_Desktop_-_download__launch__browse.pdf)
