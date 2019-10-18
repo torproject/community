@@ -75,6 +75,10 @@ echo "tor=YES" >> /etc/rc.conf
 To confirm your bridge is running with no issues, you should see something like this:
 
 ```
+tail /var/log/messages
+```
+
+```
 [notice] Your Tor server's identity key fingerprint is '<NICKNAME> <FINGERPRINT>'
 [notice] Your Tor bridge's hashed identity key fingerprint is '<NICKNAME> <HASHED FINGERPRINT>'
 [notice] Registered server transport 'obfs4' at '[::]:46396'
