@@ -58,7 +58,7 @@ Log notice syslog
 
 Don't forget to change the `ORPort`, `ServerTransportListenAddr`, `ContactInfo`, and `Nickname` options.
 
-* Please note that both `ORPort` and the port you used as `TODO2` (for obfs4) must be reachable. If your bridge is behind a firewall or NAT, make sure to open/forward both ports. You can use [our reachability test](https://bridges.torproject.org/scan/) to see if your obfs4 port is reachable from the Internet.
+* Note that both Tor's OR port and its obfs4 port must be reachable. If your bridge is behind a firewall or NAT, make sure to open/forward both ports. You can use [our reachability test](https://bridges.torproject.org/scan/) to see if your obfs4 port is reachable from the Internet.
 
 * Are you firewalling your NetBSD? If so, make sure that `obfs4proxy` can talk to `tor` over the loopback interface - do not forget to whitelist the **ExtORPort**.
 
