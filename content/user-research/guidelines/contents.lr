@@ -2,6 +2,8 @@ section: user research
 ---
 section_id: user-research
 ---
+color: primary
+---
 title: User Research Guidelines
 ---
 subtitle: We collect only necessary data to improve our services.
@@ -17,7 +19,7 @@ body:
 Congrats! You're going to run your first User Research for Tor - and we are delighted to have you on board!
 In this place, you will find helpful guidelines that are designed to make your research easier for you and your audience.
 
-First of all, make sure you read the [Tor Code of Conduct](https://linktocodeofconduct).
+First of all, make sure you read the [Tor Code of Conduct](https://gitweb.torproject.org/community/policies.git/tree/code_of_conduct.txt).
 
 ## Respect privacy
 At Tor, we collect only necessary data to improve our services; we don't collect invasive data about user behaviors - we test our software, not people.
@@ -40,7 +42,7 @@ Send us the result - you don't have to write a report, we can do this data analy
 
 
 ## Coordinate with the trainer and the Tor UX team
-You're not doing all this work alone - we will support you with meetings, guides, and mentorship if you want. You can join us at any time on our IRC channel #tor-ux and our [mailing list]().
+You're not doing all this work alone - we will support you with meetings, guides, and mentorship if you want. You can join us at any time on our IRC channel #tor-ux and our [mailing list](https://lists.torproject.org/cgi-bin/mailman/listinfo/ux).
 
 You must be aligned about the agenda and time to run interviews (if that is the case) during the end of the training. **We strongly recommend that you go through the program of the exercise with the trainer**. Also, we want you two to coordinate feedbacks together — both for you and for your audience.
 
@@ -71,5 +73,5 @@ You can find our document to report [here](https://linkto). But if you think you
 
 There are plenty of documents online about how to run a User Research, here you can find some of them:
 * [Design Kit: The Human-Centered Design Toolkit](https://www.ideo.com/post/design-kit)
-* [A collection of activities, the Exploratorium facilitates a participatory design and development process](https://okthanks.com/exploratorium)
-* [Knowledge Base](https://simplysecure.org/knowledge-base/)
+* [Simply Secure Knowledge Base](https://simplysecure.org/knowledge-base/)
+* [OK Thanks Exploratorium ](https://okthanks.com/exploratorium)
