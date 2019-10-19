@@ -1,0 +1,29 @@
+_model: page
+---
+title: Translation Style Guide
+---
+body:
+
+This guide offers some best practices to follow when [helping us with translations](https://community.torproject.org/localization/becoming-tor-translator/).
+
+### Spanish
+#### Voice and Tone:
+When addressing the user, use the 2nd person informal pronoun "tú".
+#### Naming
+#### Capitalization
+#### Other punctuation marks
+
+### French
+#### Voice and Tone:
+When addressing the user, use the 2nd person formal pronoun "vous".
+
+### German
+#### Voice and Tone:
+When addressing the user, use the 2nd person informal pronoun "du".
+
+## Proofreading
+You may use this checklist to when proofreading your translation:
+- Run a spell check 
+- Check all numbers for accuracy
+- Make sure formatting is consistent, such as header size and bullet points.
+- Ensure that all diacritical marks (such as: à, é, î, ñ, ü) are accurate. 
