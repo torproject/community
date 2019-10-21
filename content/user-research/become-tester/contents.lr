@@ -10,8 +10,4 @@ key: 1
 ---
 _hidden: yes
 ---
-_template: layout.html
----
-html: two-columns-page.html
----
 body:
