@@ -14,7 +14,7 @@
           <div class="card-body">
             <div class="card-body">
               <h4 class="card-title text-primary">
-                {% if child.title == "Become a Tester" %}
+                {% if child._id == "become-tester" %}
                   <a href="https://lists.torproject.org/cgi-bin/mailman/listinfo/tor-qa">{{ _(child.title) }}</a>
                 {% else %}
                   <a href="{{ child.path|url(alt=this.alt) }}">{{ _(child.title) }}</a>
