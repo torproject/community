@@ -12,9 +12,9 @@ title: Open User Research
 ---
 subtitle: We put our users in the center of our development process. That is how we bring privacy-enhancing technology to the ones who more need it. Explore what we are working on and start to run user research with your local community.
 ---
-key: 2
+_hidden: yes
 ---
-html: two-columns-page.html
+key: 2
 ---
 body:
 These are our current needs for testing Tor products, as well as methodologies and testing scripts. Before running Tor user research, be sure you read our [Guidelines to becoming a user researcher with Tor](https://community.torproject.org/user-research/guidelines).

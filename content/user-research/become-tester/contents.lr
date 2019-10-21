@@ -8,8 +8,6 @@ subtitle: We regularly release Tor Browser Alpha versions to allow users to test
 ---
 key: 1
 ---
-_template: layout.html
----
-html: two-columns-page.html
+_hidden: yes
 ---
 body:
