@@ -8,13 +8,17 @@
     </div>
   </div>
   <div class="row">
-    {% for child in this.children|sort(attribute='key') %}
+    {% for child in site.query(this.path).include_undiscoverable(true)|sort(attribute='key') %}
       <div class="col-sm-6 col-md-6 col-sm-12 col-xl-6 py-3">
         <div class="card h-100">
           <div class="card-body">
             <div class="card-body">
               <h4 class="card-title text-primary">
-                <a href="{{ child.path|url(alt=this.alt) }}">{{ _(child.title) }}</a>
+                {% if child.title == "Become a Tester" %}
+                  <a href="https://lists.torproject.org/cgi-bin/mailman/listinfo/tor-qa">{{ _(child.title) }}</a>
+                {% else %}
+                  <a href="{{ child.path|url(alt=this.alt) }}">{{ _(child.title) }}</a>
+                {% endif %}
               </h4>
               <p class="card-text">{{ _(child.subtitle) }}</p>
             </div>
