@@ -116,7 +116,7 @@ The onion service connects to the rendezvous point (through an anonymized circui
 Upon the rendezvous point receiving the "one-time secret" from Bob, it informs Alice that the connection has been **successfuly completed**, and now Alice and Bob can use this circuit to communicate with each other.
 The rendezvous point simply relays (end-to-end encrypted) messages from client to service and vice versa.
 
-In general, the complete connection between client and onion service consists of 6 relays: 3 of them were picked by the client with the third being the rendezvous point and the other 3 were picked by the onion service.
+In general, the complete connection between client and onion service consists of 6 relays: 3 of them were picked by the client, with the third being the rendezvous point, and the other 3 were picked by the onion service.
 This provides _location hiding_ to this connection:
 
 ![Onion Services: Step 6](/static/images/onion-services/overview/tor-onion-services-6.png)
