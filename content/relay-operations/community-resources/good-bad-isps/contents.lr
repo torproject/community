@@ -8,7 +8,7 @@ This page aims to list community experiences with Tor and various Internet Servi
 
 Be sure to provide useful information like how much bandwidth you pushed, whether you thought the deal was cheap or expensive, how hard you had to work to make them understand what's going on, how long your server has been running, and whether you'd recommend them to others. Also include dates.
 
-Since non-exits do not attract complaints, it should be fine to run them without contacting the hoster first. Make sure you understand their policies regarding bandwidth, especially on "unlimited" (fair use) contracts. For exit relays, you should read the fine [Tor Exit Guidelines](/relay/community-resources/tor-exit-guidelines) first.
+Since non-exits do not attract complaints, it should be fine to run them without contacting the hoster first. Make sure you understand their policies regarding bandwidth, especially on "unlimited" (fair use) contracts. For exit relays, you should read the fine print of [Tor Exit Guidelines](/relay/community-resources/tor-exit-guidelines) first.
 
 For network diversity and stronger anonymity, you should avoid providers and countries that already attract a lot of Tor capacity. [Metrics](https://metrics.torproject.org/) is a great tool that allows you to group probabilities by country and AS (autonomous systems), so you can more easily identify networks you want to avoid.
 
@@ -63,11 +63,11 @@ For network diversity and stronger anonymity, you should avoid providers and cou
 
 | **Company/ISP** | **ASN** | **Bridges** | **Relay** | **Exit** | **Comments** | **Last Updated** |
 |-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
-| [Online.net](http://www.online.net/) | AS12876 | Yes | Yes | Yes | The account holder is responsible for all the traffic going through theirs servers.| 01/28/2019 |
-| [Gandi VPS](https://www.gandi.net/) | - | Yes | Yes | Yes| Gandi send some abuse complaints to Exit relays, but they do not stop the server, and when you tell them your server is a Tor Exit relay, they say it is OK. They ask Exit relays to use the standard Reduced Exit Policy | - |
+| [Online.net](http://www.online.net/) | AS12876 | Yes | Yes | Yes | The account holder is responsible for all the traffic going through their servers.| 01/28/2019 |
+| [Gandi VPS](https://www.gandi.net/) | - | Yes | Yes | Yes| Gandi sends some abuse complaints to Exit relays, but they do not stop the server, and when you tell them your server is a Tor Exit relay, they say it is OK. They ask Exit relays to use the standard Reduced Exit Policy | - |
 | [OVH Kimsufi](http://www.kimsufi.com/) | - | Yes | Yes | No | Changed their TOS in July 2013 and allow Tor as long as they don't notice illegal activities. Exit nodes would eventually be shut down, but relays are allowed. Octave Klaba, CEO of OVH said himself that the TOS have been changed to make them clearer about the use of Tor. Many relays are currently running on Kimsufi servers | - |
 | [Digicube](http://www.digicube.fr/) | - | Yes | Yes | Yes | - | - |
-| [Pulse Servers](http://www.pulseservers.com/) | - | Yes | Yes | Yes | VPS uses OVH AS. You can build ANY kind tor relays. | 05/01/2016 |
+| [Pulse Servers](http://www.pulseservers.com/) | - | Yes | Yes | Yes | VPS uses OVH AS. You can build ANY kind of tor relays. | 05/01/2016 |
 
 
 
@@ -84,7 +84,7 @@ For network diversity and stronger anonymity, you should avoid providers and cou
 | **Company/ISP** | **ASN** | **Bridges** | **Relay** | **Exit** | **Comments** | **Last Updated** |
 |-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
 | [Weesly](http://weesly.de) | - | Yes | Yes | Yes | Note that you should let them know about your intention when ordering a server or in advance. | 06/2013 |
-| [EUServ](http://euserv.de) | - | - | Yes | No | They have a bad support, but if you know how to maintain your server, this ISP is a good choice. | - |
+| [EUServ](http://euserv.de) | - | - | Yes | No | They have bad support, but if you know how to maintain your server, this ISP is a good choice. | - |
 | [IPX-Server](https://www.ipx-server.de/) | - | Yes | Yes |  - | - | - |
 | [Keyweb](https://www.keyweb.de/) | - | - | Yes | Yes | - | - |
 | [Afterburst](http://afterburst.com) | - | - | Yes | No | - | - |
@@ -102,7 +102,7 @@ For network diversity and stronger anonymity, you should avoid providers and cou
 ### Hong Kong
 | **Company/ISP** | **ASN** | **Bridges** | **Relay** | **Exit** | **Comments** | **Last Updated** |
 |-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
-| [hosthatch](https://hosthatch.com/) | AS36351 | Yes | Yes | No | Their Hong Kong VPS type is OpenVZ,and ISP is SoftLayer. VPS locate in Pacnet's data centers, Hong Kong. | - | 05/01/16 |
+| [hosthatch](https://hosthatch.com/) | AS36351 | Yes | Yes | No | Their Hong Kong VPS type is OpenVZ, and ISP is SoftLayer. VPS is located in Pacnet's data centers, Hong Kong. | - | 05/01/16 |
 
 
 ### Hungary
@@ -135,7 +135,7 @@ For network diversity and stronger anonymity, you should avoid providers and cou
 
 | **Company/ISP** | **ASN** | **Bridges** | **Relay** | **Exit** | **Comments** | **Last Updated** |
 |-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
-| [Yourserver](https://www.yourserver.se/) | - | Yes | Yes | ? | Support team will allow relay/exit but TOR Traffic is throttled to 5Mbps speed. If your Exit relay receive too much complaints, they will ask to you to stop or otherwise they will suspend. | 2015/03/06 |
+| [Yourserver](https://www.yourserver.se/) | - | Yes | Yes | ? | Support team will allow relay/exit but TOR Traffic is throttled to 5Mbps speed. If your Exit relay receives too many complaints, they will ask to you to stop or otherwise they will suspend. | 2015/03/06 |
 
 
 ### Lithuania
@@ -165,11 +165,11 @@ For network diversity and stronger anonymity, you should avoid providers and cou
 
 | **Company/ISP** | **ASN** | **Bridges** | **Relay** | **Exit** | **Comments** | **Last Updated** |
 |-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
-| [XS4ALL](https://www.xs4all.nl/en/) | AS3265 | Yes | Yes | Yes | Abuse can result in temporary blocks, therefore they recommend to use an dedicated IP address for exit nodes | 06/16/15 |
+| [XS4ALL](https://www.xs4all.nl/en/) | AS3265 | Yes | Yes | Yes | Abuse can result in temporary blocks, therefore they recommend to use a dedicated IP address for exit nodes | 06/16/15 |
 | [verelox](https://verelox.com/) | AS12876 | Yes | Yes | Yes | - | 5/16 |
 | [HostHatch](https://hosthatch.com/) | AS42708 | Yes | Yes | No | - | 05/01/16 |
 | Ziggo | AS9143 | Yes | Yes | Yes | - | 05/24/2016 |
-| [LiteServer](https://www.liteserver.nl/) | AS60404 | Yes | Yes | Yes | Can pay with Bitcoin. While their AUP doesn't allow tor exit nodes (see [here](https://www.liteserver.nl/en/acceptable-usage-policy/)), they make an exception if your exit-node has a reduced exit policy. And you must leave a note to them that you are running a exit-node. "We allow tor exit nodes as long you run a limited exit policy (block SMTP) to avoid abuse. | 12/26/2018 |
+| [LiteServer](https://www.liteserver.nl/) | AS60404 | Yes | Yes | Yes | Can pay with Bitcoin. While their AUP doesn't allow tor exit nodes (see [here](https://www.liteserver.nl/en/acceptable-usage-policy/)), they make an exception if your exit-node has a reduced exit policy. And you must leave a note to them that you are running an exit-node. "We allow tor exit nodes as long you run a limited exit policy (block SMTP) to avoid abuse. | 12/26/2018 |
 | [i3D](https://www.i3d.net/) | - | Yes | Yes | Yes | Allows also exits, if abuse is handled properly | 08/13/2017 |
 | [KoDDoS](https://koddos.net) | AS206264 | Yes | Yes | Yes | Bitcoin accepted. | 10/12/2017 |
 | [Worldstream](https://www.worldstream.nl) | AS49981 | Yes | Yes | No |  - | 02/06/2019 |
@@ -224,7 +224,7 @@ For network diversity and stronger anonymity, you should avoid providers and cou
 | TeliaSonera | - | Yes | Yes | ? | TeliaSonera is also big in Sweden and deliver where other ISPs can't. | - |
 | [PRQ](http://prq.se/?p=dedicated&intl=1) |  - | Yes | Yes | Yes | - | - |
 | [Portlane](http://www.portlane.com/) | - | Yes | Yes | Yes | Previously provided connectivity for ThePirateBay, OpenBitTorrent tracker et al.  Handles abuse according to "Swedish praxis". |  - |
-| [Yourserver](https://www.yourserver.se/) | - | Yes | Yes | ? | Support team will allow relay/exit but TOR Traffic is throttled to 5Mbps speed. If your Exit relay receive too much complaints, they will ask to you to stop or otherwise they will suspend. | 2015/03/06 |
+| [Yourserver](https://www.yourserver.se/) | - | Yes | Yes | ? | Support team will allow relay/exit but TOR Traffic is throttled to 5Mbps speed. If your Exit relay receives too many complaints, they will ask to you to stop or otherwise they will suspend. | 2015/03/06 |
 
 
 ### Switzerland
