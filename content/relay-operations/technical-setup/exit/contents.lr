@@ -65,7 +65,7 @@ DNS resolution on exit relays is crucial for Tor clients, it should be reliable 
 * DNS resolution can have a significant impact on the performance and reliability your exit relay provides.
   Poor DNS performance will result in less traffic going through your exit relay.
 * Don't use any of the big DNS resolvers as your primary or fallback DNS resolver to avoid centralization (Google, OpenDNS, Quad9, Cloudflare, 4.2.2.1-6)
-* We recommend running a local caching and DNSSEC-validating resolver without using any forwarders (specific instructions follow bellow for each operating systems)
+* We recommend running a local caching and DNSSEC-validating resolver without using any forwarders (specific instructions follow below for each operating systems)
     * If you want to add a second DNS resolver as a fallback to your /etc/resolv.conf configuration, try to choose a resolver within your autonomous system and make sure it is not your first entry in that file (the first entry should be your local resolver)
     * If a local resolver like unbound is not an option for you try to use a resolver that your provider runs in the same autonomous system (to find out if an IP address is in the same AS as your relay, you can look it up, using for example https://bgp.he.net).
 * Try to avoid adding too many resolvers to your /etc/resolv.conf file to limit exposure on an AS-level (try to not use more than two entries)

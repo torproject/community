@@ -31,7 +31,7 @@ ORPort 443
 ExitRelay 0
 SocksPort 0
 ControlSocket 0
-# Change the email address bellow and be aware that it will be published
+# Change the email address below and be aware that it will be published
 ContactInfo tor-operator@your-emailaddress-domain
 ```
 

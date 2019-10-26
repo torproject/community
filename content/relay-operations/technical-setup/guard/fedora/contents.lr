@@ -21,7 +21,7 @@ One of the most important things to keeps your relay secure is to install securi
 Nickname myNiceRelay
 ORPort 9001
 ExitRelay 0
-# Change the email address bellow and be aware that it will be published
+# Change the email address below and be aware that it will be published
 ContactInfo tor-operator@your-emailaddress-domain
 ```
 
