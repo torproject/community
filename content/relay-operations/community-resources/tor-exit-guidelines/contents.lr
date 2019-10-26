@@ -25,10 +25,10 @@ A good ISP is one that offers cheap bandwidth and is not being used by other mem
 Before you continue, you may ask the Tor community if your choice is a good one.
 We very much need diversity, and it does not help if we pool too many exits at one friendly ISP.
 
-In any case, add the ISP to the [GoodBadISPs](good-bad-isps) page.
+In any case, add the ISP to the [GoodBadISPs](/relay/community-resources/good-bad-isps) page.
 
 To find an ISP, go through forums and sites where ISPs posts their latest deals, and contact them about Tor hosting.
-Once you identified your ISP, you can follow the two-step advice of TorServers.net.
+Once you identify your ISP, you can follow the two-step advice of TorServers.net.
 
 1. Ask if the ISP is okay with a Tor exit
 
@@ -57,7 +57,7 @@ It's way better for them to hear about Tor from you, in a relaxed environment, t
 
 ### If you're not part of an organization, think about starting one!
 
-Depending on the chosen form, setting up a legal body might help with liability, and in general it helps to appear bigger than you are (and less likely to get raided). The guys from Torservers.net in Germany found a lawyer who would agree to "host" them inside his office. They are now are a non-profit association ("eingetragener Verein, gemeinnutzig") registered inside a lawyer's office. The setup process was easy and cheap. Similar setups probably exist for your country. Another benefit of an association-like structure is that it might still work even when you leave, if you manage to find successors.
+Depending on the chosen form, setting up a legal body might help with liability, and in general it helps to appear bigger than you are (and less likely to get raided). The people from Torservers.net in Germany found a lawyer who would agree to "host" them inside his office. They are now are a non-profit association ("eingetragener Verein, gemeinnutzig") registered inside a lawyer's office. The setup process was easy and cheap. Similar setups probably exist for your country. Another benefit of an association-like structure is that it might still work even when you leave, if you manage to find successors.
 
 ### Consider preemptively teaching your local law enforcement about Tor.
 
@@ -73,7 +73,7 @@ If you receive an abuse complaint, don't freak out! Here is some advice for you:
 
 ### Answer to abuse complaints in a professional manner within a reasonable time span.
 
-TorServers.net is a fairly large Tor exit operator and we receive only a very small number of complaints, especially compared to the amount of traffic we push. Roughly 80% are automated reports, and the rest is usually satisfied with [our default reply](https://www.torservers.net/wiki/abuse/templates). We have not needed the input of a lawyer in many years of operation following the advice on this page.
+TorServers.net is a fairly large Tor exit operator and we receive only a very small number of complaints, especially compared to the amount of traffic we push. Roughly 80% are automated reports, and the rest are usually satisfied with [our default reply](https://www.torservers.net/wiki/abuse/templates). We have not needed the input of a lawyer in many years of operation following the advice on this page.
 
 In addition to the [templates at Torservers.net](https://www.torservers.net/wiki/abuse/templates), you can find many more templates for various scenarios on the [Tor Abuse Templates](tor-abuse-templates) . It is exceptionally rare to encounter a scenario where none of these templates apply.
 
@@ -109,7 +109,7 @@ If you have your own experience of abuse handling, just share it on our public m
 
 Please read all the technical details before getting started. If you have any questions or need help, please contact us at [tor-relays](https://lists.torproject.org/cgi-bin/mailman/listinfo/tor-relays).
 
-* [TorRelayGuide](https://community.torproject.org/relay-operations)
+* [TorRelayGuide](https://community.torproject.org/relay)
 
 * Set up an informative website on the exit IP(s) on port 80.
 
