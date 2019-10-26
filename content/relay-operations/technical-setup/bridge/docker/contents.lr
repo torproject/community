@@ -19,7 +19,7 @@ Now, it's time to run the container.  We maintain a script that automatically de
 That's it! Your container should now be bootstrapping your new obfs4 Tor bridge.
 Make sure to check out the [post-install
 notes](https://community.torproject.org/relay/setup/bridge/post-install/).  If
-you are having troubles setting up your bridge, have a look at [our help
+you are having trouble setting up your bridge, have a look at [our help
 section](https://community.torproject.org/relay/getting-help/).
 
 ---
