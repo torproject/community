@@ -37,7 +37,7 @@ However, if you need help with anything Tor-related, please contact the [help de
 
 ### What happens to bad relays?
 
-After a relay is reported and we've verified the behavior we'll attempt to contact the relay operator. Often we can sort things out but if not (or the relay lacks contact information) we'll flag it to prevent it from continuing to be used.
+After a relay is reported and we've verified the behavior we'll attempt to contact the relay operator. Often, we can sort things out, but if not (or the relay lacks contact information) we'll flag it to prevent it from continuing to be used.
 
 We have thee types of flags we can apply:
 
