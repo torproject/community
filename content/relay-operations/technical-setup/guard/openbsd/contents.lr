@@ -6,7 +6,7 @@ title: OpenBSD
 ---
 body:
 
-# 1. Install `tor` OpenBSD's Package
+# 1. Install `tor`'s OpenBSD Package
 
 Recent OpenBSD systems, like 6.5/amd64, already have the repository configured on `/etc/installurl` so we do not need to bother changing it.
 

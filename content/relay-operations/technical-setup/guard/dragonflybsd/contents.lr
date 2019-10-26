@@ -46,7 +46,7 @@ pkg update -f
 pkg upgrade -y -f
 ```
 
-# 2. Install `tor` DragonflyBSD's Package
+# 2. Install `tor`'s DragonflyBSD Package
 
 Here we can choose to install the latest stable version, like:
 

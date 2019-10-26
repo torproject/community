@@ -12,7 +12,7 @@ One of the most important things to keeps your relay secure is to install securi
 
 # 2. Bootstrap `pkg`
 
-This article considers we have already a base installation of FreeBSD running, and only the base system (here, we are running 12.0-RELEASE). That means we do not have any packages installed neither the `pkg` packages manager itself (there's no `sudo` available - we are running commands as root).
+This article assumes we have already a base installation of FreeBSD running, and only the base system (here, we are running 12.0-RELEASE). That means we do not have any packages installed, or even the `pkg` packages manager itself (there's no `sudo` available - we are running commands as root).
 
 To bootstrap and install `pkg` we should run the following command:
 
@@ -33,7 +33,7 @@ Installing the `ca_root_nss` package:
 pkg install ca_root_nss
 ```
 
-We are keeping the original setting used by `pkg` but setting a new one that will override it, so we set up a new directory and than create a configuration file to override what we need. This configuration file will be `/usr/local/etc/pkg/repos/FreeBSD.conf`.
+We are keeping the original setting used by `pkg` but setting a new one that will override it. So we set up a new directory, and then create a configuration file to override what we need. This configuration file will be `/usr/local/etc/pkg/repos/FreeBSD.conf`.
 
 Creating the new directory:
 
