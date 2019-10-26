@@ -27,8 +27,8 @@ If your provider offers it, make sure your WHOIS record contains clear indicatio
 ## Exit Notice HTML page
 
 To make it even more obvious that this is a Tor exit relay you should serve a Tor exit notice HTML page.
-Tor can do that for you if your DirPort is on TCP port 80, you can make use of tor's DirPortFrontPage feature to display a HTML file on that port.
-This file will be shown to anyone directing his browser to your Tor exit relay IP address.
+Tor can do that for you: if your DirPort is on TCP port 80, you can make use of tor's DirPortFrontPage feature to display an HTML file on that port.
+This file will be shown to anyone directing their browser to your Tor exit relay IP address.
 
 ```
 DirPort 80
@@ -70,15 +70,15 @@ DNS resolution on exit relays is crucial for Tor clients, it should be reliable 
     * If a local resolver like unbound is not an option for you try to use a resolver that your provider runs in the same autonomous system (to find out if an IP address is in the same AS as your relay, you can look it up, using for example https://bgp.he.net).
 * Try to avoid adding too many resolvers to your /etc/resolv.conf file to limit exposure on an AS-level (try to not use more than two entries)
 
-There are multiple options for DNS server software, unbound has become a popular one but **feel free to use any other you are comfortable with**.
+There are multiple options for DNS server software; unbound has become a popular one but **feel free to use any other option you are comfortable with**.
 When choosing your DNS resolver software try to ensure it supports DNSSEC validation and QNAME minimisation (RFC7816).
 In every case the software should be installed using the OS package manager to ensure it is updated with the rest of the system.
 
 By using your own DNS resolver you are less vulnerable to DNS-based censorship that your upstream resolver might impose.
 
-Here follow specific instructions on how to install and configure unbound on your exit - a DNSSEC-validating and caching resolver. unbound has many configuration and tuning nobs but we try to keep these instructions as simple and short as possible and the basic setup will do just fine for most operators.
+Here follow specific instructions on how to install and configure unbound on your exit - a DNSSEC-validating and caching resolver. unbound has many configuration and tuning knobs, but we try to keep these instructions as simple and short as possible--the basic setup will do just fine for most operators.
 
-After switching to unbound verify it works as expected by resolving a valid hostname, if it does not work, you can restore the old resolv.conf file.
+After switching to unbound, verify that it works as expected by resolving a valid hostname. If it does not work, you can restore the old resolv.conf file.
 
 ### Debian/Ubuntu
 
@@ -90,7 +90,7 @@ cp /etc/resolv.conf /etc/resolv.conf.backup
 echo nameserver 127.0.0.1 > /etc/resolv.conf
 ```
 
-To avoid that the configuration gets changed (for example by the DHCP client):
+To avoid unwanted configuration changes (for example by the DHCP client):
 
 ```
 chattr +i /etc/resolv.conf
@@ -133,7 +133,7 @@ cp /etc/resolv.conf /etc/resolv.conf.backup
 echo nameserver 127.0.0.1 > /etc/resolv.conf
 ```
 
-To avoid that the configuration gets changed (for example by the DHCP client):
+To avoid unwanted configuration changes (for example by the DHCP client):
 
 ```
 chattr +i /etc/resolv.conf
@@ -169,7 +169,7 @@ cp /etc/resolv.conf /etc/resolv.conf.backup
 echo nameserver 127.0.0.1 > /etc/resolv.conf
 ```
 
-To avoid that the configuration gets changed (for example by the DHCP client):
+To avoid unwanted changes to the configuration (for example by the DHCP client):
 
 ```
 chflags schg /etc/resolv.conf
