@@ -1,0 +1,47 @@
+section: user research
+---
+section_id: user-research
+---
+color: primary
+---
+image: eye
+---
+_template: layout.html
+---
+title: Open User Research
+---
+subtitle: We put our users in the center of our development process. That is how we bring privacy-enhancing technology to the ones who more need it. Explore what we are working on and start to run user research with your local community.
+---
+key: 2
+---
+html: two-columns-page.html
+---
+body:
+These are our current needs for testing Tor products, as well as methodologies and testing scripts. Before running Tor user research, be sure you read our [Guidelines to becoming a user researcher with Tor](https://community.torproject.org/user-research/guidelines).
+
+### Tor Browser for Desktop
+* [User Research: Onboarding](https://dip.torproject.org/torproject/ux/research/blob/master/scripts%20and%20activities/2019/4._Tor_Browser_Desktop_-_download__launch__browse.pdf)
+* [User Research: Security Settings](https://dip.torproject.org/torproject/ux/research/blob/master/scripts%20and%20activities/2019/2.Tor_Browser_Desktop_-_Security_Settings.pdf)
+* User Research: New Identity
+* [User Needs Discovery](https://dip.torproject.org/torproject/ux/research/blob/master/scripts%20and%20activities/2019/1._User_Needs_Discovery_-_Tor_Browser_Desktop.pdf)
+
+### Tor Browser for Android
+* [User Research: Onboarding](https://dip.torproject.org/torproject/ux/research/blob/master/scripts%20and%20activities/2019/3._Tor_Browser_Android_-_download__launch__browse.pdf)
+* User Research: Security Settings
+* User Research: New Identity
+* [User Needs Discovery](https://dip.torproject.org/torproject/ux/research/blob/master/scripts%20and%20activities/2019/1._User_Needs_Discovery_-_Tor_Browser_Desktop.pdf)
+
+### Onion Services
+* User Research: Onion Security Indicator
+
+## Past User Research
+We’re committed to open design, so you can see the user research we’ve conducted in the global-south. If you want to run user research with us, please [get in touch.](https://lists.torproject.org/cgi-bin/mailman/listinfo/ux)
+
+| Project  | Methodology | Locations | Dates | Reporting |
+| -------- | ----------- | --------- | --------- | ----- |
+| Tor Launcher | Usability testing ([.pdf](https://dip.torproject.org/torproject/ux/research/blob/master/scripts%20and%20activities/2018/1.India_User_testing_Tor_Launcher_Test.pdf)) | Mumbai(IN) | Q118 | .pdf |
+| Onion Security Indicator | Usability testing ([.pdf](https://dip.torproject.org/torproject/ux/research/blob/master/scripts%20and%20activities/2018/2.User_testing_.onion_states_Test.pdf)) | Mumbai(IN), Kampala(UG), Valencia(ES), Mombasa(KE)| Q118, Q218 | [.pdf](https://dip.torproject.org/torproject/ux/research/blob/master/reports/2018/ur_kenya_2018_Feature_report__Onions_and_Circuit_Display.pdf) |
+| TB Circuit Display | Usability testing ([.pdf](https://dip.torproject.org/torproject/ux/research/blob/master/scripts%20and%20activities/2018/3.User_testing_circuit_display_Test.pdf)) | Kampala(UG), Nairobi(KE), Mombasa(KE) | Q118, Q218 | [.pdf](https://dip.torproject.org/torproject/ux/research/blob/master/reports/2018/ur_kenya_2018_Feature_report__Onions_and_Circuit_Display.pdf) |
+| Tor Browser for Desktop | User needs discovery ([.pdf](https://dip.torproject.org/torproject/ux/research/blob/master/scripts%20and%20activities/2018/4.00_user_needs_discovery.pdf)) | Bogotá(CL), Cali(CL), Valle del Cauca(CL), Kampala(UG), Hoima(UG), Nairobi(KE)  | 2018 | [.pdf](https://dip.torproject.org/torproject/ux/research/blob/master/reports/2018/ur_colombia_2018_report_tbb-tba.pdf) |
+| Tor Browser for Android | User needs discovery ([.pdf](https://dip.torproject.org/torproject/ux/research/blob/master/scripts%20and%20activities/2018/4.00_user_needs_discovery.pdf)) | Bogotá(CL), Cali(CL), Valle del Cauca(CL), Kampala(UG), Hoima(UG), Nairobi(KE)  | 2018 | [.pdf](https://dip.torproject.org/torproject/ux/research/blob/master/reports/2018/ur_colombia_2018_report_tbb-tba.pdf) |
+| Tor Users Demographics | Survey ([.pdf](https://dip.torproject.org/torproject/ux/research/blob/master/scripts%20and%20activities/2018/6.Spanish_-_Tor_Project_Survey_-_Tor_Users_Demographics.pdf)) | Online  | 2018 | .pdf |
