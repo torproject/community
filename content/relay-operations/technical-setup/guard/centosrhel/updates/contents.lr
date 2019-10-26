@@ -29,7 +29,7 @@ systemctl start yum-cron.service
 
 # openSUSE
 
-First, you need to install the automatic update package
+First, you need to install the automatic update package:
 
 ```
 zypper install  yast2-online-update-configuration
