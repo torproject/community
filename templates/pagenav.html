@@ -2,7 +2,7 @@
   <div class="row flex-xl-nowrap {{ bag('alternatives', this.alt, 'order') }}">
     <div class="row col-12 justify-content-center">
       <ul class="nav">
-        {% set menubag = 'pagenav' + '+' + this.alt %}
+        {% set menubag = 'pagenav' %}
         {% for id, item in bag(menubag).items() %}
         {% set abs_path = item.path %}
         <li{% if this.is_child_of(abs_path) %} class="nav-item active border-active" {% else %} class="nav-item" {% endif %}>
