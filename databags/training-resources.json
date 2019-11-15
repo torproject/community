@@ -7,5 +7,15 @@
         "formats" : ["odp","md"],
         "description" : "Full set of slides for Tor Trainings",
         "date" : "2019"
+    },
+
+    "tor-network" :
+    {
+        "label" : "The Tor Network",
+        "name" :  "tor-network",
+        "filename" : "tor-network",
+        "formats" : ["odp","pdf"],
+        "description" : "Introduction about relays and the Tor network",
+        "date" : "2019"
     }
 }
