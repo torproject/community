@@ -8,16 +8,19 @@ _template: layout.html
 ---
 title: User Research
 ---
-subtitle: We conduct user research while also respecting user privacy.
+subtitle: We respect our users' privacy when we conduct research.
 ---
 cta: Learn about Tor users
 ---
-key: 4
+key: 5
 ---
 html: user-research.html
 ---
 body:
 
-## We conduct user research while also respecting user privacy.
+## We respect our users' privacy when we conduct research.
 
-We practice human-centered design on building tools for internet freedom while we build community. Our user research is funded by the premises of consent, respect, and empathy. Make an impact in your local community by listening to our users. Learn how we do it and help Tor with user research.
+We practice human-centered design when we build tools for internet freedom.
+The way we build tools also builds community.
+Our user research is founded on the premises of consent, respect, and empathy.
+You can make an impact in your community by learning from our methods and helping us with user research.

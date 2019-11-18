@@ -20,7 +20,7 @@
               <td>{{ item.description }}</td>
               <td>
                 {% for format in item.formats %}
-                <a href="https://gitweb.torproject.org/community/training.git/plain/{{ item.date }}/{{ item.name }}/{{ item.filename }}.{{format}}">{{ format }}</a> 
+                <a href="https://gitweb.torproject.org/community/training.git/plain/{{ item.date }}/{{ item.name }}/{{ item.filename }}.{{format}}">{{ format }}</a>
                 {% endfor %}
               </td>
               <td>{{ item.date }}</td>
@@ -32,6 +32,3 @@
     </div>
   </div>
 </div>
-
-
-

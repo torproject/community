@@ -1,0 +1,27 @@
+section: user research
+---
+section_id: user-research
+---
+color: primary
+---
+_template: layout.html
+---
+title: Tor Personas
+---
+subtitle: Personas help us to drive ​human-centered design processes across teams. Meet our archetypes of Tor users.
+---
+key: 4
+---
+html: two-columns-page.html
+---
+body:
+Persona is a tool that represents the needs, thoughts, and goals of the target user. We created personas because they help us to drive ​human-centered design processes.
+As part of our global south travels during 2018 and 2019, we got the lucky chance to meet a lot of different Tor users: from activists to journalists, all of them with different motivations, but demanding a usable private and secure tool to access the Internet.
+With the Community Team, we have been working collecting and mapping real user stories and finding patterns across them. It is how our Personas emerged from our in field research.
+
+### Tor Personas
+* [Jelani, the human rights defender](https://dip.torproject.org/torproject/ux/research/tree/master/persona/jelani.pdf)
+* [Aleisha, the privacy looker](https://dip.torproject.org/torproject/ux/research/tree/master/persona/aleisha.pdf)
+* [Fernanda, the feminist activist](https://dip.torproject.org/torproject/ux/research/tree/master/persona/fernanda.pdf)
+* [Fatima, the censored user](https://dip.torproject.org/torproject/ux/research/tree/master/persona/fatima.pdf)
+* [Alex, the fearless journalist](https://dip.torproject.org/torproject/ux/research/tree/master/persona/alex.pdf)

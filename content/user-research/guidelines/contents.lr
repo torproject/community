@@ -1,0 +1,76 @@
+section: user research
+---
+section_id: user-research
+---
+color: primary
+---
+title: User Research Guidelines
+---
+subtitle: We collect only necessary data to improve our services.
+---
+>>>>>>> parent of 1e624ba... update content status
+key: 3
+---
+html: two-columns-page.html
+---
+body:
+
+Congrats! You're going to run your first User Research for Tor - and we are delighted to have you on board!
+In this place, you will find helpful guidelines that are designed to make your research easier for you and your audience.
+
+First of all, make sure you read the [Tor Code of Conduct](https://gitweb.torproject.org/community/policies.git/tree/code_of_conduct.txt).
+
+## Respect privacy
+At Tor, we collect only necessary data to improve our services; we don't collect invasive data about user behaviors - we test our software, not people.
+
+## Be a good listener and open-minded
+Listening is a skill to build bridges. In Tor, we want people to build bridges, not walls - and we believe this is not just for our services, but as well for our communities. Get in here to read some suggestions about being a better listener and make a great research experience. <link>
+
+## Learn
+When we are in Tor training, we listen to the stories people tell us about their context, about the laws of the Internet, and the difficulties they are going through. This is how we learn how we can help and create new mechanisms to facilitate access to information through Tor products. When we listen, we do research, we learn.
+
+## Describe and Ask for consent
+We don't collect names or contact details of interview participants, and any time you're going to receive impressions, surveys, or records, you should ask for their consent to participate - this should be recorded or registered in the form.
+
+You'd love to read about your experiences during the training, product testing, and interviews. There are a few ways to do this:
+
+* Scenario: describe the process of the test you ran.
+* Demographics: While we are not interested in specific characteristics of our audience, or binary attributes, we must know the total reach of your Tor training. You should take [this material]() with you on the day of your research, distribute it among participants, and answer their questions about how to fill it in if they have any.
+* Interview Process: Thank the participant for their willingness to participate in this process and explain that we are testing the product, not them. The interview should not last longer than 20 minutes, you can record if you wish, but you can also take notes on the printed material you will carry with you (or on your computer). Thank the participant again and end the interview.
+Send us the result - you don't have to write a report, we can do this data analysis with the material you collected.
+
+
+## Coordinate with the trainer and the Tor UX team
+You're not doing all this work alone - we will support you with meetings, guides, and mentorship if you want. You can join us at any time on our IRC channel #tor-ux and our [mailing list](https://lists.torproject.org/cgi-bin/mailman/listinfo/ux).
+
+You must be aligned about the agenda and time to run interviews (if that is the case) during the end of the training. **We strongly recommend that you go through the program of the exercise with the trainer**. Also, we want you two to coordinate feedbacks together — both for you and for your audience.
+
+By the beginning of the training, be sure to let everyone know whats your role there and why you're taking notes of the practice.
+
+## Get prepared!
+Print and bring with you the material that you will need to run the research - that will probably be something like:
+
+* Demographics
+* Usability test
+* Usability methodology
+
+It is easier to have this material printed and in hands, but if you prefer, you can also type it on your computer.
+
+Keep in mind that you might not have a useful Internet in the venue, so if you're going to install a Tor feature with someone during the interview, you may need to have it downloaded before the training.
+
+## Report to Tor UX team
+Before ending the training, coordinate with the trainer the feedbacks, you two should work together to hand out post-its for the audience; you can give one post-it on each color and ask them to fill it with what they think about: 1. the service they just learned; 2. Tor project; and 3. Tor, in general. It can also be questions - keep in mind that every feedback is proper feedback.
+
+We must hear back from you. We want to know how the training and the research were for you, how we can improve our support, and also if you're going to keep running Tor User Research. Please, fill out [this form](https://limesurvey), by the end of it, we will also ask your address to send to you a researcher kit (t-shirts and stickers).
+We hope to hear back from you very soon!
+
+You can find our document to report [here](https://linkto). But if you think you won't have time to gather and report in this format, we would love to have another way to get the material you collected. You can take pictures or send your 'raw' notes for us.
+
+## Additional links
+
+* [Strength in Numbers: Usable Tools Don't Need to Be Invasive](https://blog.torproject.org/strength-numbers-usable-tools-dont-need-be-invasive)
+
+There are plenty of documents online about how to run a User Research, here you can find some of them:
+* [Design Kit: The Human-Centered Design Toolkit](https://www.ideo.com/post/design-kit)
+* [Simply Secure Knowledge Base](https://simplysecure.org/knowledge-base/)
+* [OK Thanks Exploratorium ](https://okthanks.com/exploratorium)
