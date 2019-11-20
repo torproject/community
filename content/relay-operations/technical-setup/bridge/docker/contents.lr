@@ -6,37 +6,42 @@ title: Docker
 ---
 body:
 
-We are maintaining a docker container that runs an obfs4 bridge.  This guide
-walks you through setting up this container.  First, download the container:
+### 1. Install the container
+
+We are maintaining a docker container that runs an obfs4 bridge.  First,
+download the container:
 
 ```
 docker pull phwinter/obfs4-bridge:latest
 ```
 
-Now, it's time to run the container.  You can choose between two options:
+### 2. Deploy the container
 
-1. We maintain a script that determines a free OR and obfs4 port for you, and
-   then runs the docker container.
-   [Download the script here](https://dip.torproject.org/torproject/anti-censorship/docker-obfs4-bridge/raw/master/deploy-container.sh).
-   When running this script, provide your email address as argument:
-   ```
-   bash deploy-container.sh address@email.com
-   ```
-   The script will tell you what ports it chose, and your container ID.  Make
-   sure that **both** ports are forwarded in your firewall.
+We provide a Makefile that makes it easy to deploy the container.  First,
+[download the
+Makefile](https://dip.torproject.org/torproject/anti-censorship/docker-obfs4-bridge/raw/master/Makefile),
+and then run:
 
-2. If you would rather provide your own ports, run the following command and
-   replace `XXX` with your OR port, `YYY` with your obfs4 port, and
-   `admin@example.com` with your email address.
+```
+make deploy OR_PORT=X PT_PORT=Y EMAIL=Z
+```
 
-   ```
-    OR_PORT=XXX PT_PORT=YYY EMAIL=admin@example.com; docker run -d -e OR_PORT=$OR_PORT -e PT_PORT=$PT_PORT -e EMAIL=$EMAIL -p $OR_PORT:$OR_PORT -p $PT_PORT:$PT_PORT phwinter/obfs4-bridge:latest
-    ```
+Replace `X` with your desired OR port, `Y` with your obfs4 port (make sure that
+**both** ports are forwarded in your firewall), and `Z` with your email address,
+which allows us to get in touch with you if there are problems with your bridge.
+If everything worked fine, you should see output similar to the following:
 
-    Again, make sure that **both** ports are forwarded by your firewall.
+```
+201fbd2b4d28e6f226978f27547edd79272871c5949bf8aab3872c983156a108
+Make sure that port X and Y are forwarded in your firewall.
+```
 
-That's it! Your container should now be bootstrapping your new obfs4 bridge.
-You can inspect its logs by running:
+That's it! Your container (identified by the first line of output) is now
+bootstrapping your new obfs4 bridge.
+
+### 3. Monitor your logs
+
+You can inspect your bridge's logs by running:
 
 ```
 docker logs CONTAINER_ID
