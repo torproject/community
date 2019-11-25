@@ -37,7 +37,8 @@ Make sure that port X and Y are forwarded in your firewall.
 ```
 
 That's it! Your container (identified by the first line of output) is now
-bootstrapping your new obfs4 bridge.
+bootstrapping your new obfs4 bridge.  If you want to run more than one bridge on
+a single machine, run `make deploy` again, but with a different set of ports.
 
 ### 3. Monitor your logs
 
