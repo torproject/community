@@ -40,7 +40,19 @@ That's it! Your container (identified by the first line of output) is now
 bootstrapping your new obfs4 bridge.  If you want to run more than one bridge on
 a single machine, run `make deploy` again, but with a different set of ports.
 
-### 3. Monitor your logs
+### 3. Upgrade a container
+
+To upgrade to the latest version of our image, you need to stop your existing
+container, delete it, pull the latest image, and finally deploy it:
+
+```
+docker stop CONTAINER_ID
+docker rm CONTAINER_ID
+docker pull phwinter/obfs4-bridge:latest
+make deploy OR_PORT=X PT_PORT=Y EMAIL=Z
+```
+
+### 4. Monitor your logs
 
 You can inspect your bridge's logs by running:
 
