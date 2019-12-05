@@ -1,5 +1,7 @@
 _model: page
 ---
+color: primary
+---
 title: The Legal FAQ for Tor Relay Operators
 ---
 body:
@@ -62,7 +64,7 @@ Of course, you should avoid keeping any sensitive or personal information on the
 
 The Tor Project [suggests](https://blog.torproject.org/blog/tips-running-exit-node) the following ways to let others know that you're running an exit relay:
 
- *  Set up a reverse DNS name for the IP address that makes clear that the computer is an exit relay. 
+ *  Set up a reverse DNS name for the IP address that makes clear that the computer is an exit relay.
  *  Set up a notice like [this](https://blog.torproject.org/blog/tips-running-exit-node) to explain that you're running an exit relay that's part of the Tor network.
  * If possible, get an [ARIN](https://www.arin.net/) registration for your exit relay that displays contact information for you, not your ISP. This way, you'll receive any abuse complaints and can respond to them directly. Otherwise, try to ensure that your ISP forwards abuse complaints that it receives to you.
 

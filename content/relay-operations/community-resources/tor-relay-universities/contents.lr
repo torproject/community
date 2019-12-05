@@ -1,5 +1,7 @@
 _model: page
 ---
+color: primary
+---
 title: Tor Relay Universities
 ---
 body:
@@ -82,7 +84,7 @@ Note that in many cases you don't even need to be researching the exit node itse
 
 Subscribe to [Tor Relays Universities](https://lists.torproject.org/cgi-bin/mailman/listinfo/tor-relays-universities) mailing list (and other education institutions too).
 ---
-cta: 
+cta:
 ---
 html: two-columns-page.html
 ---

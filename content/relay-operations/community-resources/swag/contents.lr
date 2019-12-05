@@ -1,5 +1,7 @@
 _model: page
 ---
+color: primary
+---
 title: Swag
 ---
 body:
@@ -7,12 +9,12 @@ body:
 You can get one of these fine Tor T-shirts for contributing to the Tor project. There are two primary ways of contributing:
 
 *  Operate a fast Tor relay that's been running for the past two months: you are eligible if you allow exits to port 80 and you average 250 KBytes/s traffic, or if you're not an exit but you average 500 KBytes/s traffic.
- 
+
 * Help out in other ways. Maintain a translation. Run Tor trainings. Write a good support program and get a lot of people to use it. Do research on Tor and anonymity, solve some of our bugs, or establish yourself as a Tor advocate.
 
 If you're operating a fast relay or you've done something else cool, email us at tshirt at torproject.org with the details. (We want to make sure our shirts help outreach happen all around the world, so please understand if we can't send you 5 shirts for your 5 excellent relays.)
 
-There are a variety of colors, shapes, and sizes available in the great roots design that Leiah Jansen made for us, as well as some older designs. 
+There are a variety of colors, shapes, and sizes available in the great roots design that Leiah Jansen made for us, as well as some older designs.
 ---
 html: two-columns-page.html
 ---

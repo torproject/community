@@ -1,10 +1,12 @@
 _model: page
 ---
+color: primary
+---
 title: Bad relays
 ---
 body:
 
-Ran into a misconfigured, malicious, or suspicious relay while using Tor? Please let us know by sending email to bad-relays AT lists DOT torproject DOT org! Many bad relays are caught thanks to our wider community, so many thanks for all your help and vigilance! 
+Ran into a misconfigured, malicious, or suspicious relay while using Tor? Please let us know by sending email to bad-relays AT lists DOT torproject DOT org! Many bad relays are caught thanks to our wider community, so many thanks for all your help and vigilance!
 
 ### What is a bad relay?
 
@@ -12,16 +14,16 @@ A bad relay is one that either doesn't work properly or tampers with our users' 
 
  * Tampering with exit traffic in any way (including dropping accepted connections). This might be accidental (such as an anti-virus filter) or malicious (commonly SSLStrip, which replaces https:// links with http:// to snoop on traffic) or even intentional (such as layer 7 inspection for P2P traffic detection/mitigation).
  * Running HSDirs that harvest and probe .onion addresses
- * Manipulating the DHT that is used for onion services, e.g., by positioning itself in the DHT. 
+ * Manipulating the DHT that is used for onion services, e.g., by positioning itself in the DHT.
  * Using a DNS provider that censors its results (such as some [OpenDNS](http://www.opendns.com) or Quad (9 9.9.9.9) configurations).
  * Performing a [Sybil attack](https://en.wikipedia.org/wiki/Sybil_attack), which means flooding the network with new relays in an effort to deanonymize users. If you want to run multiple relays then that's great! But please be sure to set the [MyFamily parameter](https://www.torproject.org/docs/tor-manual.html.en#MyFamily).
- * Exit relays routing their exit traffic back into the tor network (not actually exiting any traffic) 
- 
+ * Exit relays routing their exit traffic back into the tor network (not actually exiting any traffic)
+
 Also, if your relay is stolen or goes missing, please report it as well, so we can blacklist it in case whoever took it puts it back online.
 
-The following are currently permitted yet do have some discussion for prohibition (as such, they should not be reported at this time)... 
+The following are currently permitted yet do have some discussion for prohibition (as such, they should not be reported at this time)...
 
- * Only allowing plain-text traffic (for instance, just port 80). There's no good reason to disallow its encrypted counterpart (like port 443), making these relays highly suspect for sniffing traffic. See [context](https://www.google.com/search?site:torproject.org+80+443+6667) and [spec](https://gitweb.torproject.org/torspec.git/tree/dir-spec.txt#n1969). 
+ * Only allowing plain-text traffic (for instance, just port 80). There's no good reason to disallow its encrypted counterpart (like port 443), making these relays highly suspect for sniffing traffic. See [context](https://www.google.com/search?site:torproject.org+80+443+6667) and [spec](https://gitweb.torproject.org/torspec.git/tree/dir-spec.txt#n1969).
 
 ### How do I report a bad relay?
 
@@ -31,9 +33,9 @@ You can check which exit you are using at any time by visiting [tor check](https
 
  1. The relay's IP address or fingerprint. The fingerprint is a forty-character hex string such as `203933ED4E55EF8A3C3518427D1A1ED6A4CC285E`.
  2. What kind of behavior did you see?
- 3. Any additional information we'll need to reproduce the issue. 
+ 3. Any additional information we'll need to reproduce the issue.
 
-However, if you need help with anything Tor-related, please contact the [help desk](https://www.torproject.org/about/contact) instead. 
+However, if you need help with anything Tor-related, please contact the [help desk](https://www.torproject.org/about/contact) instead.
 
 ### What happens to bad relays?
 
@@ -43,19 +45,19 @@ We have thee types of flags we can apply:
 
  * BadExit - Never used as an exit relay (for relays that appear to mess with exit traffic)
  * Invalid - Never used unless AllowInvalidNodes is set (by default this only allows for middle and rendezvous usage)
- * Reject - Dropped from the consensus entirely 
+ * Reject - Dropped from the consensus entirely
 
-Which we use depends on the severity of the issue, and if it can still be safely used in certain situations. 
+Which we use depends on the severity of the issue, and if it can still be safely used in certain situations.
 
 ### My relays was given the BadExit flag. What's up?
 
-In just about all cases we're unable to contact the operator to resolve the issue, so if your relay has been flagged as a BadExit then please let us know (see above for contact info) so we can work together to fix the issue. 
+In just about all cases we're unable to contact the operator to resolve the issue, so if your relay has been flagged as a BadExit then please let us know (see above for contact info) so we can work together to fix the issue.
 
 ### Do you actively look for bad relays?
 
 Yes. For our automated issue detection see [exitmap](http://www.cs.kau.se/philwint/spoiled_onions/) and [sybilhunter](https://gitweb.torproject.org/user/phw/sybilhunter.git/).
 
-Other monitors include [tortunnel](http://www.thoughtcrime.org/software/tortunnel/), [SoaT](https://gitweb.torproject.org/torflow.git/blob/HEAD:/NetworkScanners/ExitAuthority/README.ExitScanning), [torscanner](https://code.google.com/p/torscanner/), and [DetecTor](http://detector.io/DetecTor.html). 
+Other monitors include [tortunnel](http://www.thoughtcrime.org/software/tortunnel/), [SoaT](https://gitweb.torproject.org/torflow.git/blob/HEAD:/NetworkScanners/ExitAuthority/README.ExitScanning), [torscanner](https://code.google.com/p/torscanner/), and [DetecTor](http://detector.io/DetecTor.html).
 
 
 ---
