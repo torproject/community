@@ -9,3 +9,33 @@ name = English (en)
 primary = yes
 url_prefix = /
 locale = en
+
+[alternatives.de]
+name = Deutsch (de)
+url_prefix = /de/
+locale = de
+
+[alternatives.es]
+name = Español
+url_prefix = /es/
+locale = es
+
+[alternatives.fr]
+name = Français
+url_prefix = /fr/
+locale = fr
+
+[alternatives.it]
+name = Italia (it)
+url_prefix = /it/
+locale = it
+
+[alternatives.pt-BR]
+name = Português Br. (pr-BR)
+url_prefix = /pt-BR/
+locale = pt-BR
+
+[alternatives.ru]
+name = Русский (ru)
+url_prefix = /ru/
+locale = ru
