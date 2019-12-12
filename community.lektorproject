@@ -39,3 +39,8 @@ locale = pt-BR
 name = Русский (ru)
 url_prefix = /ru/
 locale = ru
+
+[alternatives.tr]
+name = Türkçe (tr)
+url_prefix = /tr/
+locale = tr
