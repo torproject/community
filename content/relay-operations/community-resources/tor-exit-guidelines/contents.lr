@@ -1,10 +1,12 @@
 _model: page
 ---
+color: primary
+---
 title: Tor Exit Guidelines
 ---
 body:
 
-These guidelines are meant to give you a quick introduction into the business of running your own exit relay. 
+These guidelines are meant to give you a quick introduction into the business of running your own exit relay.
 
 NOTE:
 This FAQ is for informational purposes only and does not constitute legal advice.

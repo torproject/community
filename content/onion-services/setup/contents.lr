@@ -8,7 +8,7 @@ image: cloud-upload-alt
 ---
 _template: layout.html
 ---
-title: Set up your Onion Service
+title: Set up Your Onion Service
 ---
 subtitle: Learn how to set up a .onion site of your very own.
 ---
@@ -20,11 +20,11 @@ html: two-columns-page.html
 ---
 body:
 
-This guide will go over setting up an onion service for your website:
+This guide shows you how to set up an onion service for your website. 
 
 ## Step 0: Get a working Tor
 
-As part of this guide we will assume you have a functional Tor in your machine. Tor should be up and running correctly for this guide to work. You should also know where Tor's configuration files are.
+As part of this guide, we will assume you have a functional Tor in your machine. Tor should be up and running correctly for this guide to work. You should also know where Tor's configuration files are.
 
 To setup Tor, Windows users can follow the [Windows howto](https://2019.www.torproject.org/docs/tor-doc-windows.html.en), OS X users should follow the [OS X howto](https://2019.www.torproject.org/docs/tor-doc-osx.html.en), and Linux/BSD/Unix users should follow the [Unix howto](https://2019.www.torproject.org/docs/tor-doc-unix.html.en).
 
@@ -68,11 +68,11 @@ When Tor starts, it will automatically create the `HiddenServiceDir` that you sp
 ## Step 4: Test that your onion service works
 
 Now to get your onion service address, go to your `HiddenServiceDir` directory, and find a file named `hostname`.
-The `hostname` file in your hidden service configuration directory contains the hostname for your new Onion v3 hidden service.
+The `hostname` file in your hidden service configuration directory contains the hostname for your new onion v3 hidden service.
 The other files are your hidden service keys, so it is imperative that these are kept private.
-If your keys leak, other people can impersonate your hidden service, deeming it compromised, useless and dangerous to visit.
+If your keys leak, other people can impersonate your onion service, deeming it compromised, useless, and dangerous to visit.
 
-Now you can connect to your onion service using the Tor Browser and you should get the html page you setup back in step 1.
+Now you can connect to your onion service using Tor Browser, and you should get the html page you setup back in step 1.
 If it doesn't work, look in your logs for some hints, and keep playing with it until it works.
 
 ## Step 5: More advanced tips

@@ -1,0 +1,11 @@
+{
+    "all-about-tor" : 
+    {
+        "label" : "All About Tor",
+        "name" : "all-about-tor",
+        "filename" : "all-about-tor-full-pack",
+        "formats" : ["odp","md"],
+        "description" : "Full set of slides for Tor Trainings",
+        "date" : "2019"
+    }
+}

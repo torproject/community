@@ -60,29 +60,29 @@ ExitRelay 1
 ## DNS on Exit Relays
 
 Unlike other types of relays, exit relays also do DNS resolution for Tor clients.
-DNS resolution on exit relays is crucial for Tor clients, it should be reliable and fast by using caching.
+DNS resolution on exit relays is crucial for Tor clients and it should be reliable and fast by using caching.
 
-* DNS resolution can have a significant impact on the performance and reliability your exit relay provides.
-  Poor DNS performance will result in less traffic going through your exit relay.
-* Don't use any of the big DNS resolvers as your primary or fallback DNS resolver to avoid centralization (Google, OpenDNS, Quad9, Cloudflare, 4.2.2.1-6)
-* We recommend running a local caching and DNSSEC-validating resolver without using any forwarders (specific instructions follow bellow for each operating systems)
-    * If you want to add a second DNS resolver as a fallback to your /etc/resolv.conf configuration, try to choose a resolver within your autonomous system and make sure it is not your first entry in that file (the first entry should be your local resolver)
-    * If a local resolver like unbound is not an option for you try to use a resolver that your provider runs in the same autonomous system (to find out if an IP address is in the same AS as your relay, you can look it up, using for example https://bgp.he.net).
-* Try to avoid adding too many resolvers to your /etc/resolv.conf file to limit exposure on an AS-level (try to not use more than two entries)
+* DNS resolution can have a significant impact on the performance and reliability that your exit relay provides.
+* Don't use any of the big DNS resolvers (Google, OpenDNS, Quad9, Cloudflare, 4.2.2.1-6) as your primary or fallback DNS resolver to avoid centralization.
+* We recommend running a local caching and DNSSEC-validating resolver without using any forwarders (specific instructions follow below, for various operating systems).
+    * If you want to add a second DNS resolver as a fallback to your /etc/resolv.conf configuration, choose a resolver within your autonomous system and make sure that it is not your first entry in that file (the first entry should be your local resolver).
+    * If a local resolver like unbound is not an option for you, use a resolver that your provider runs in the same autonomous system (to find out if an IP address is in the same AS as your relay, you can look it up using [bgp.he.net](https://bgp.he.net)).
+* Avoid adding more than two resolvers to your /etc/resolv.conf file to limit AS-level exposure of DNS queries.
 
-There are multiple options for DNS server software, unbound has become a popular one but **feel free to use any other you are comfortable with**.
-When choosing your DNS resolver software try to ensure it supports DNSSEC validation and QNAME minimisation (RFC7816).
-In every case the software should be installed using the OS package manager to ensure it is updated with the rest of the system.
+There are multiple options for DNS server software. [Unbound](https://nlnetlabs.nl/projects/unbound/about/) has become
+a popular one but feel free to use any other software that you are comfortable with.
+When choosing your DNS resolver software, make sure that it supports DNSSEC validation and QNAME minimization (RFC7816).
+Install the resolver software over your operating system's package manager, to ensure that it is updated automatically.
 
-By using your own DNS resolver you are less vulnerable to DNS-based censorship that your upstream resolver might impose.
+By using your own DNS resolver, you are less vulnerable to DNS-based censorship that your upstream resolver might impose.
 
-Here follow specific instructions on how to install and configure unbound on your exit - a DNSSEC-validating and caching resolver. unbound has many configuration and tuning nobs but we try to keep these instructions as simple and short as possible and the basic setup will do just fine for most operators.
+Below are instructions on how to install and configure unbound – a DNSSEC-validating and caching resolver – on your exit relay. Unbound has many configuration and tuning knobs but we keep these instructions simple and short; the basic setup will do just fine for most operators.
 
-After switching to unbound verify it works as expected by resolving a valid hostname, if it does not work, you can restore the old resolv.conf file.
+After switching to unbound, verify it works as expected by resolving a valid hostname. If it does not work, you can restore your old resolv.conf file.
 
 ### Debian/Ubuntu
 
-The following 3 commands install unbound, backup your DNS configuration and tell the system to use the local unbound:
+The following three commands install unbound, backup your DNS configuration, and tell the system to use the local unbound:
 
 ```
 apt install unbound
@@ -96,8 +96,8 @@ To avoid that the configuration gets changed (for example by the DHCP client):
 chattr +i /etc/resolv.conf
 ```
 
-The Debian configuration ships with QNAME minimisation (RFC7816) enabled by default so you don't need to enable it explicitly.
-The unbound resolver you just installed does also DNSSEC validation.
+The Debian configuration ships with QNAME minimization (RFC7816) enabled by default, so you don't need to enable it explicitly.
+The unbound resolver you just installed also does DNSSEC validation.
 
 ### CentOS/RHEL
 
@@ -141,7 +141,7 @@ chattr +i /etc/resolv.conf
 
 ### FreeBSD
 
-FreeBSD ships unbound in the base system but the one in ports is usually following upstream more closely so we install the unbound package:
+FreeBSD ships unbound in the base system but the one in ports is usually following upstream more closely, so we install the unbound package:
 
 ```
 pkg install unbound

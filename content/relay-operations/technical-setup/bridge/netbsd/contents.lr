@@ -1,0 +1,100 @@
+_model: page
+---
+color: primary
+---
+title: NetBSD
+---
+html: two-columns-page.html
+---
+key: 6
+---
+body:
+
+### 1. Setup `pkg_add`
+
+```
+echo "PKG_PATH=http://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/$(uname -m)/$(uname -r)/All" > /etc/pkg_install.conf
+```
+
+2. Install `obfs4proxy` and `tor` NetBSD's package
+
+```
+pkg_add obfs4proxy tor
+```
+
+### 2. Configure `/usr/pkg/etc/tor/torrc` to run **Tor** as a Bridge
+
+```
+RunAsDaemon 1
+BridgeRelay 1
+
+# Replace "TODO1" with a Tor port of your choice.  This port must be externally
+# reachable.  Avoid port 9001 because it's commonly associated with Tor and
+# censors may be scanning the Internet for this port.
+ORPort TODO1
+
+ServerTransportPlugin obfs4 exec /usr/pkg/bin/obfs4proxy
+
+# Replace "TODO2" with an obfs4 port of your choice.  This port must be
+# externally reachable and must be different from the one specified for ORPort.
+# Avoid port 9001 because it's commonly associated with
+# Tor and censors may be scanning the Internet for this port.
+ServerTransportListenAddr obfs4 0.0.0.0:TODO2
+
+# Local communication port between Tor and obfs4.  Always set this to "auto".
+# "Ext" means "extended", not "external".  Don't try to set a specific port
+# number, nor listen on 0.0.0.0.
+ExtORPort auto
+
+# Replace "<address@email.com>" with your email address so we can contact you if
+# there are problems with your bridge.  This is optional but encouraged.
+ContactInfo <address@email.com>
+
+# Pick a nickname that you like for your bridge.  This is optional.
+Nickname PickANickname
+
+Log notice syslog
+```
+
+Don't forget to change the `ORPort`, `ServerTransportListenAddr`, `ContactInfo`, and `Nickname` options.
+
+* Note that both Tor's OR port and its obfs4 port must be reachable. If your bridge is behind a firewall or NAT, make sure to open/forward both ports. You can use [our reachability test](https://bridges.torproject.org/scan/) to see if your obfs4 port is reachable from the Internet.
+
+* Are you firewalling your NetBSD? If so, make sure that `obfs4proxy` can talk to `tor` over the loopback interface - do not forget to whitelist the **ExtORPort**.
+
+### 3. Start `tor`:
+
+```
+ln -sf /usr/pkg/share/examples/rc.d/tor /etc/rc.d/tor
+echo "tor=YES" >> /etc/rc.conf
+/etc/rc.d/tor start
+```
+
+### 4. Monitor your logs
+
+To confirm your bridge is running with no issues, you should see something like this:
+
+```
+tail /var/log/messages
+```
+
+```
+[notice] Your Tor server's identity key fingerprint is '<NICKNAME> <FINGERPRINT>'
+[notice] Your Tor bridge's hashed identity key fingerprint is '<NICKNAME> <HASHED FINGERPRINT>'
+[notice] Registered server transport 'obfs4' at '[::]:46396'
+[notice] Tor has successfully opened a circuit. Looks like client functionality is working.
+[notice] Bootstrapped 100%: Done
+[notice] Now checking whether ORPort <redacted>:3818 is reachable... (this may take up to 20 minutes -- look for log messages indicating success)
+[notice] Self-testing indicates your ORPort is reachable from the outside. Excellent. Publishing server descriptor.
+```
+
+### 5. Final Notes
+
+If you are having troubles setting up your bridge, have a look at [our help section](https://community.torproject.org/relay/getting-help/). If your bridge is now running, check out the [post-install notes](https://community.torproject.org/relay/setup/bridge/post-install/).
+
+---
+subtitle: How to deploy an obfs4 bridge on NetBSD
+---
+section: Bridge
+---
+section_id: bridge

@@ -1,28 +1,28 @@
 _model: page
 ---
-title: Training checklist
+title: Training Checklist
 ---
 body:
 
-Use this checklist to run a Tor Training.
+Complete this checklist before running a Tor training.
 
-## Get prepared
+## Prepare
 
-  [  ]  I read and agree with the Tor Project [Code of Coduct](https://community.torproject.org/training/code-of-conduct/)
+  [  ] I read and agree with the Tor Project [Code of Coduct](https://community.torproject.org/training/code-of-conduct/)
 
-  [  ]  I read the Trainers Guide
+  [  ] I read the Trainers Guide
 
   [  ] I have an agenda for the training
 
   [  ] I reviewed the training slides
 
-## Security protocol
+## Security Protocol
 
   [  ] I already contacted my organization and told them that I'm organizing this training
 
   [  ] I shared a contact to whom my organization should call if something happens
 
-## About the venue
+## About the Venue
 
   [  ] The venue has enough tables and chairs to everyone
 
@@ -38,7 +38,7 @@ Use this checklist to run a Tor Training.
 
   [  ] I have confirmed participants for the training
 
-## During the training
+## During the Training
 
 Before starting the training, make sure you:
 
@@ -50,7 +50,7 @@ Before starting the training, make sure you:
 
   [  ] "All questions are welcome"
 
-## After the training
+## After the Training
 
   [  ] Collect participants feedback
 
@@ -70,6 +70,6 @@ section: Training
 ---
 section_id: training
 ---
-subtitle: Based on our best practices, we have a training checklist to help you
+subtitle: Based on our best practices, we have a checklist to help you prepare to conduct your training.
 ---
 key: 4

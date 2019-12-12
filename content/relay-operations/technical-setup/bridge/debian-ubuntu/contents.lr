@@ -25,17 +25,16 @@ If not, you can [build it from source](https://gitlab.com/yawning/obfs4#installa
 ```
 BridgeRelay 1
 
-# Replace "TODO1" with a Tor port of your choice.  This port must be externally
-# reachable.  Avoid port 9001 because it's commonly associated with Tor and
-# censors may be scanning the Internet for this port.
+# Replace "TODO1" with a Tor port of your choice.
+# This port must be externally reachable.
+# Avoid port 9001 because it's commonly associated with Tor and censors may be scanning the Internet for this port.
 ORPort TODO1
 
 ServerTransportPlugin obfs4 exec /usr/bin/obfs4proxy
 
-# Replace "TODO2" with an obfs4 port of your choice.  This port must be
-# externally reachable and must be different from the one specified for ORPort.
-# Avoid port 9001 because it's commonly associated with
-# Tor and censors may be scanning the Internet for this port.
+# Replace "TODO2" with an obfs4 port of your choice.
+# This port must be externally reachable and must be different from the one specified for ORPort.
+# Avoid port 9001 because it's commonly associated with Tor and censors may be scanning the Internet for this port.
 ServerTransportListenAddr obfs4 0.0.0.0:TODO2
 
 # Local communication port between Tor and obfs4.  Always set this to "auto".
@@ -60,7 +59,7 @@ Don't forget to change the `ORPort`, `ServerTransportListenAddr`, `ContactInfo`,
   If your bridge is behind a firewall or NAT, make sure to open both ports.
   You can use [our reachability test](https://bridges.torproject.org/scan/) to see if your obfs4 port is reachable from the Internet.
 
-Under Debian, you will also need to set `NoNewPrivileges=no` in `/lib/systemd/system/tor@default.service` and `/lib/systemd/system/tor@.service` and then run `systemctl daemon-reload`. (see [bug #18356](https://trac.torproject.org/projects/tor/ticket/18356))
+You will also need to set `NoNewPrivileges=no` in `/lib/systemd/system/tor@default.service` and `/lib/systemd/system/tor@.service` and then run `systemctl daemon-reload`. (see [bug #18356](https://trac.torproject.org/projects/tor/ticket/18356))
 
 ### 4. Restart tor
 
