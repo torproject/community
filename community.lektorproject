@@ -30,10 +30,20 @@ name = Italia (it)
 url_prefix = /it/
 locale = it
 
+[alternatives.ka]
+name = ქართული ენა (ka)
+url_prefix = /ka/
+locale = ka
+
 [alternatives.pt-BR]
 name = Português Br. (pr-BR)
 url_prefix = /pt-BR/
 locale = pt-BR
+
+[alternatives.ro]
+name = Română (ro)
+url_prefix = /ro/
+locale = ro
 
 [alternatives.ru]
 name = Русский (ru)
@@ -44,3 +54,9 @@ locale = ru
 name = Türkçe (tr)
 url_prefix = /tr/
 locale = tr
+
+[zh-CN]
+direction = text-left
+order = order-last
+url = /zh-CN/
+language = 简体中文 (zh-CN)
