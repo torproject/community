@@ -6,9 +6,9 @@ color: primary
 ---
 _template: layout.html
 ---
-title: Current Status of Translations
+title: Current status of translations
 ---
-subtitle: Not sure where to start? Here you can find an overview of the current localization status for all of the different Tor Project projects.
+subtitle: Here you can find an overview of the current localization status for the different Tor Project translations.
 ---
 key: 2
 ---
@@ -20,10 +20,18 @@ We have some languages in very good shape, with a number of active and committed
 
 Our translations are incomplete for a lot of languages. They may be spoken by fewer people around the world, but it is still critical that we improve access to Tor for people who do not speak English.
 
-Please consider [helping with translations](/localization/becoming-tor-translator/) in your native language.
+Please consider [helping with translations](../becoming-tor-translator/) in your native language.
 
 Right now, we need the most help with Farsi (Persian), Arabic, and Korean. But many other languages are being translated, as you can see here:
 
 <img class="col-lg-6" src="../../static/images/localization/stats.png">
 
+
+### Translation statistics
+
+There are some statistics for the [Tor Browser](https://torpat.ch/locales), its [Manual](https://torpat.ch/manual-locales), the [Support Portal](https://torpat.ch/support-locales), and the [Tor Project website](https://torpat.ch/tpo-locales) maintained by Arthur Edelstein.
+
+### Translation problems
+
 You can see the open tickets about translation problems on our [bugtracker](https://trac.torproject.org/projects/tor/query?status=!closed&component=Community%2FTranslations).
+See [how to report a problem with translations](../translation-problem) if you have found problems in translations.

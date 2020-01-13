@@ -23,4 +23,6 @@ Although we would value your contribution to any of the projects above, the most
 
 * Tor Browser is translated in many different Transifex resources, but you can see the [Tor Browser total strings translated per language](https://torpat.ch/locales) to see where help is needed.
 * The Tor Browser User Manual is a very useful resource for new users that do not speak English, see [Tor Browser User Manual translation statistics](https://torpat.ch/manual-locales) or [translate](https://www.transifex.com/otf/tor-project-support-community-portal/tbmanual-contentspot/).
-* The Support Portal is also a valuable resource for all Tor users, see [Tor Support Portal translation statistics](https://torpat.ch/support-locales) or [translate](https://www.transifex.com/otf/tor-project-support-community-portal/support-portal/)
+* The [Support Portal](https://support.torproject.org/) is also a valuable resource for all Tor users, see [Tor Support Portal translation statistics](https://torpat.ch/support-locales) or [translate](https://www.transifex.com/otf/tor-project-support-community-portal/support-portal/)
+* The [Community Portal](https://community.torproject.org/) is this website, where you can find ways to contribute to Tor.
+  [Translate](https://www.transifex.com/otf/tor-project-support-community-portal/support-portal/)
