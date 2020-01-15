@@ -15,19 +15,20 @@ key: 1
 html: two-columns-page.html
 ---
 body:
-Thank you for your interest in helping us with translations. 
+Thank you for your interest in helping us with translations.
 
-Our localization efforts are hosted in the [Localization Lab Hub](https://www.localizationlab.org/) on Transifex, a third-party translation platform.
+# Localization mailing list
+<a name="tor-l10n" />
 
-Before translating, please read through the Tor Project page on the [Localization Lab Wiki](https://wiki.localizationlab.org/index.php/Tor). The page includes guidelines, resources, and priorities that will help you make the most out of your contribution.
+To communicate with other translators, please join the [Tor localization mailing list](https://lists.torproject.org/cgi-bin/mailman/listinfo/tor-l10n), where we organize translations, report errors in source strings, make final copy decisions, and address issues that arise. Please introduce yourself and ask any questions you may have after following up this instructions.
 
-### Localization mailing list
+# Translation platform
 
-You are cordially invited to join the [Tor localization mailing list](https://lists.torproject.org/cgi-bin/mailman/listinfo/tor-l10n), to organize translations, participate in our decisions, report errors in source strings, etc.
+Most of our localization efforts are hosted in the [Localization Lab Hub](https://www.localizationlab.org/) on Transifex, a third-party translation platform.
 
 In order to begin contributing you will have to sign up with Transifex. Here's an outline of what to expect during that process.
 
-# Signing Up On Transifex
+## Signing Up On Transifex
 
 1. Head over to the [Transifex signup page](https://transifex.com/signup/).
   Enter your information into the fields and click the 'Sign Up' button:
@@ -44,4 +45,10 @@ In order to begin contributing you will have to sign up with Transifex. Here's a
 1. A notification will now show up on the top of the page like so:
 ![Request Submitted](/static/images/localization/tr5.png)
 
-After your membership is approved, you're ready to begin. 
+Before translating, please read through the Tor Project page on the [Localization Lab Wiki](https://wiki.localizationlab.org/index.php/Tor). The page includes guidelines, resources, and priorities that will help you make the most out of your contribution.
+After your membership is approved, you're ready to begin.
+
+#IRC channel
+
+We hang out in the #tor-l10n channel on the oftc IRC network.
+Please [join us to talk about localization](https://support.torproject.org/get-in-touch/#irc-help) (l10n)!

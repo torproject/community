@@ -44,7 +44,7 @@ The two-step process usually helps in elevating your request to higher levels of
 
 At least most western countries should have regulations that exclude communication service providers from liability.  Please add your country's regulations to this list.
 
-* USA: [DMCA 512](https://www.law.cornell.edu/uscode/text/17/512); see [EFF's Legal FAQ for Tor Operators](https://2019.www.torproject.org/eff/tor-legal-faq)  (a very good and relevant read for other countries as well)
+* USA: [DMCA 512](https://www.law.cornell.edu/uscode/text/17/512); see [EFF's Legal FAQ for Tor Operators](/relay/community-resources/eff-tor-legal-faq)  (a very good and relevant read for other countries as well)
 * Germany: [TMG 8](http://www.gesetze-im-internet.de/tmg/__8.html)  and [15](http://www.gesetze-im-internet.de/tmg/__15.html).
 * Netherlands: [Artikel 6:196c BW](http://wetten.overheid.nl/BWBR0005289/Boek6/Titel3/Afdeling4A/Artikel196c/)
 * Austria: [ECG 13](http://www.ris.bka.gv.at/Dokument.wxe?Abfrage=Bundesnormen&Dokumentnummer=NOR40025809)
@@ -111,7 +111,7 @@ If you have your own experience of abuse handling, just share it on our public m
 
 Please read all the technical details before getting started. If you have any questions or need help, please contact us at [tor-relays](https://lists.torproject.org/cgi-bin/mailman/listinfo/tor-relays).
 
-* [TorRelayGuide](https://community.torproject.org/relay-operations)
+* [Tor Relay Guide](https://community.torproject.org/relay)
 
 * Set up an informative website on the exit IP(s) on port 80.
 

@@ -61,7 +61,7 @@ Now save your `torrc` and restart Tor.
 
 If Tor starts up again, great. Otherwise, something is wrong. First look at your logfiles for hints.
 It will print some warnings or error messages. That should give you an idea what went wrong.
-Typically, there are typos in the torrc or wrong directory permissions (See the logging FAQ [FIXME add link] entry if you don't know how to enable or find your log file.)
+Typically, there are typos in the torrc or wrong directory permissions (See the [logging FAQ](https://www.torproject.org/docs/faq#Logs) entry if you don't know how to enable or find your log file.)
 
 When Tor starts, it will automatically create the `HiddenServiceDir` that you specified (if necessary). Make sure this is the case.
 

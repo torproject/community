@@ -95,6 +95,6 @@ Congratulations, you're officially a Tor relay operator! What now?
 
 * You can check out traffic and other statistics for your relay at our [Relay Search](https://metrics.torproject.org/rs.html) (your relay will appear on "Relay Search" about 3 hours after you started it).
 
-* There is also more info about running a relay at the [Tor FAQ](https://2019.www.torproject.org/docs/faq.html.en#HowDoIDecide).
+* There is also more info about running a relay at the [Tor FAQ](https://support.torproject.org/operators/).
 
 * And, most importantly, make sure to email tshirt@torproject.org and [claim your swag](swag). It's our way of saying thanks for defending privacy and free speech online.
