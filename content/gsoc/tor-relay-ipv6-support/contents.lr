@@ -1,0 +1,56 @@
+_model: project
+---
+_template: project.html
+---
+active: True
+---
+section: GSoC
+---
+section_id: gsoc
+---
+color: primary
+---
+key: 1
+---
+languages: C
+---
+mentors: teor, ahf, dgoulet, catalyst
+---
+difficulty: Medium
+---
+title: Improve Tor Relay IPv6 Support
+---
+summary:
+
+Tor helps people stay safe on the internet, by keeping their internet use secure and anonymous. More Tor clients are running on IPv6-only or dual-stack networks. But only 20% of Tor’s available relay bandwidth supports IPv6. We want to automate relay IPv6 address discovery and reachability checks, so that it is easier for relay operators to run IPv6 relays.
+
+---
+description: 
+
+Students may choose to focus on designing and implementing core features, tor relay testing, reporting statistics, or diagnosing and fixing bugs.
+
+
+## Prerequisites
+
+* Network configuration skills
+* Basic understanding of Internet Protocol (IP) versions
+
+Recommended:
+
+* Experience testing network software
+* Experience running Internet-connected servers
+
+## Links/Resources
+
+https://trac.torproject.org/projects/tor/wiki/TorRelayGuide#IPv6
+
+https://trac.torproject.org/projects/tor/wiki/org/roadmaps/Tor/IPv6Features#ReachabilityChecks
+
+## Programming skills needed:
+
+* C coding
+* Building Unix-based software
+
+Recommended:
+
+* Experience with network programming

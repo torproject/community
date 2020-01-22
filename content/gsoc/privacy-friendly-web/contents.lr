@@ -1,0 +1,44 @@
+_model: project
+---
+_template: project.html
+---
+active: True
+---
+section: GSoC
+---
+section_id: gsoc
+---
+color: primary
+---
+key: 1
+---
+languages: javascript
+---
+mentors: hiro
+---
+difficulty: medium
+---
+title: Privacy Friendly Web
+---
+summary:
+
+The scope of this project is creating a open-source community-driven browsable list of patterns and release a css/js framework that web developers can extend and use in their work.
+---
+description: 
+
+Security concerned web users take conscious steps to limit the amount of data they share with the websites visited and third party services.
+
+There are a number of security enhancing tools available. Some come in the form of browser extensions and javascript blockers, others are full fledged web browsers designed with providing extra security to their users.
+
+One of this is the Tor Browser. The Tor Browser was designed to provide privacy while surfing the web and defend users against both network and local forensic adversaries. There are two main categories of requirements that have been considered: Security Requirements, and Privacy Requirements. 
+
+Security Requirements are the minimum properties in order for a browser to be able to support Tor and similar privacy proxies safely. Privacy requirements are primarily concerned with reducing linkability: the ability for a user's activity on one site to be linked with their activity on another site without their knowledge or explicit consent. 
+
+Websites can work seamsly with the Tor Browser and other privacy enhancing browsers and tools if they adopt a series of respectful and ethical patterns.
+
+The Tor Browser is in fact, based on Mozilla's Extended Support Release (ESR) Firefox branch. We have a series of patches against this browser to enhance privacy and security. Browser behavior is additionally augmented through the Torbutton extension, and we also change a number of Firefox preferences from their defaults. 
+
+The Tor Project has developed over the years a set of web development guidelines that allow websites to work with security enhanced browsers without causing any or minimal functionality destruption to their users. These guidelines have been shaped in an internal styleguide that has been adopted across all torproject.org websites.
+
+We are now formalizing these web development patterns and some security concerns that need to be considered when developing websites for users surfing the web with security enhanced browsers and tools.
+

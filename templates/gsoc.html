@@ -1,0 +1,41 @@
+      {% include 'breadcrumb.html' %}
+      <div class="row flex-xl-nowrap">
+        <main role="main" class="mx-auto col-12 {{ bag('alternatives', this.alt, 'order') }}">
+            <div class="container py-3">
+            <div class="row">
+              <p>{{ this.body }}</p>
+            </div>
+          </div>
+          <div class="container py-3">
+            <h3 class="text-primary display-5">{{ _('Project Ideas') }}</h3>
+          </div>
+          <div class="container py-3">
+            <div class="accordion" id="accordionJobs">
+              {% from "macros/projects.html" import render_active %}
+              {% set items = this.children.filter(F.active == True).all() %}
+              {% for item in items %}
+              {{ render_active(item, this.alt) }}
+              {% endfor %}
+            </div>
+          </div>
+          <div class="container py-3">
+            <h3 class="text-primary display-5">{{ _('Previous Projects') }}</h3>
+          </div>
+          <div class="container py-3">
+            <div class="row">
+              <div class="col-85">
+                <ul class="jobs-ul">
+                  {% set items = this.children %}
+                  {% for item in items.filter(F.active == False) %}
+                  <li>{{ item.title }}</li>
+                  {% endfor %}
+                </ul>
+              </div>
+            </div>
+            <div class="row">
+              <p>{{ _('None of these ideas seem appealing? You may also want to propose your own project idea — which often results in the best projects.') }} <a href="mailto:gso@torproject.org">{{ _('We invite you to contact us to discuss your own project idea.') }}</a></p>
+            </div>
+          </div>
+        </main>
+      </div>
+    

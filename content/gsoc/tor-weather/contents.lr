@@ -1,0 +1,90 @@
+_model: project
+---
+_template: project.html
+---
+active: True
+---
+section: GSoC
+---
+section_id: gsoc
+---
+color: primary
+---
+key: 2
+---
+languages: TBD
+---
+mentors: karsten
+---
+difficulty: medium
+---
+title: Tor Weather
+---
+summary:
+
+Tor Weather is the most efficient way to achieve and maintain a healthy Tor network on the long run.
+
+---
+description: 
+
+Tor Weather was [discontinued on 2016-04-04](https://lists.torproject.org/pipermail/tor-relays/2016-April/009009.html), however "Tor Weather is still a good idea, it just needs somebody to implement it."
+
+How Tor Weather looked like:
+​https://web.archive.org/web/20141004055709/https://weather.torproject.org/subscribe/
+
+## Motivation
+
+If a relay disappears today, it is unlikely that anyone will notice or even send an email to the operator unless it is a big one.
+
+Relay operators and the entire tor network would benefit from a Tor Weather service because it notifies relay operators when the state of their relays changed (and more). This will increase the likelihood that relay operators notice problems and actually mitigate the problem otherwise there is no "user feedback" since tor can cope with disappearing relays quite well.
+
+It also:
+- shows the relay operator that someone actually cares if their relays go down or become outdated or have another problem
+- gives the operator relay best-practices information. 
+
+## Expected Effects
+
+If enough operators subscribe to such a service:
+- relays might become more long lived / the churn rate might decrease
+- the fraction of relays running outdated tor versions might decrease
+- the fraction of exits with broken DNS might decrease 
+
+It also has the benefit of being able to contact relay operators:
+- completely automatically
+- even if they choose to not set a public ContactInfo string in their torrc files. 
+
+## Ideas for Notification Types
+
+_(sorted by importance)_
+
+Support subscribing via single relay FP or MyFamily groups (should not need any subscription change if a relay gets added to the family).
+
+- [ ] Email me when my node is down
+_How long before we send a notification?_
+- [ ] email me when my relay is affected by a security vulnerability
+- [ ] email me when my relay runs an end-of-life version of tor
+- [ ] email me when my relay runs an outdated tor version (note: this should depend on the related onionoo bugs to avoid emailing alpha relay people)
+- [ ] email me when my exit relay fails to resolve hostnames (DNS failure)
+- [ ] email me when my relay looses the [ ] stable, [ ] guard, [ ] exit flag
+- [ ] email me when my MyFamily configuration is broken (meaning: non-mutual config detected or relay with same contactInfo but no MyFamily)
+- [ ] email me when you detect issues with my relay
+- [ ] email me with suggestions for configuration improvements for my relay (only once per improvement)
+- [ ] email me when my relay is on the top [ ] 20 [ ] 50 [ ] 100 relays list
+- [ ] email me with monthly/quarterly status information that includes information like what my position in the overall relay list is (sorted by CW), how much traffic my relay did during the last month and what fraction of the months time your relay was included in consensus as running (this shows information on how many % of the months' consensuses this relay has been included and running)
+- [ ] aggregate emails for all my relays into a single digest email
+- [ ] email me about new relay requirements
+- [ ] email me about tor relay operator events
+
+
+*Task:* Write a specification describing the meaning of each checkbox 
+
+## Security and Privacy Implications
+
+The service stores email addresses of potential tor relay operators, they should be kept private and safeguarded, but a passive observer can collect them by watching outbound email traffic if no TLS is used. Suggest to use a dedicated email address for this service.
+
+## Additional Ideas
+
+- easy: integration into tor: show the URL pointing to the new Tor Weather service like the current link to the lifecycle blogpost when tor starts and detects to be a new relay
+- Provide an uptimerobot-style status page for relay operators using onionoo data 
+
+

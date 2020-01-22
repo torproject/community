@@ -1,0 +1,58 @@
+_model: project
+---
+_template: project.html
+---
+active: True
+---
+section: GSoC
+---
+section_id: gsoc
+---
+color: primary
+---
+key: 1
+---
+languages: javascript
+---
+mentors: hiro, asn
+---
+difficulty: medium
+---
+title: Onion Tool Box
+---
+summary:
+
+Myonion is a developer tool box, providing a command line interface and a GUI to configure and deploy existing services via .onion. A minimal prototype for myonion already [exists](https://github.com/hiromipaw/myonion).
+
+Someone that may want to run an onion service can use the myonion wrapper app to start a .onion from their computer and sharea static website or a web application.
+
+Myonion can also be used to deploy the resulting configured app to a defined set of cloud providers.
+
+---
+description: 
+
+## Problem definition
+
+It is not necessarily difficult to use onion services, but it might be tricky to configure a web service to be offered via .onion so that it doesn’t leak sensitive information.
+
+There are detailed [guides](https://riseup.net/en/security/network-security/tor/onionservices-best-practices) available for users that would like to offer a web application via .onion and some tools have been developed to help service operators: discover known misconfiguration or [vulnerabilities](https://onionscan.org/) or deploy an [onion site](https://github.com/alecmuffett/eotk).
+
+## Scope
+
+Myonion provides a way to build and deploy onion ready applications, allowing developers to build and test web applications and easily share them with others, bundling the code and configuration in a lightweight, portable Docker container application that runs thesame everywhere.
+
+The experience for developers will be similar to using other industry solutions, like the [Docker desktop app](https://www.docker.com/products/docker-desktop).
+
+Developers using myonion are provided with pre-defined and customizable application templates, with corresponding configuration and a test set, eliminating  error-prone manual setup and known onion service configuration mistakes.
+
+The resulting application is therefore deployable via a set of endpoint management tools to known providers. Providing a way to deploy onion services at scale.
+
+## Impact
+
+The idea behind myonion is to make onion services accessible to developers that might be interested to innovate in the privacy space, building applications that are designed for privacy and security.
+
+Involving a wider developer community can help creating a better image of Tor and onion services, replacing the “dark net” narrative with the secure and private web one.
+
+Onion services can also be relevant to all those people interested in the “zero-trust” strategy. The concept behind zero-trust is to adopt strategies and tools to help prevent data breaches by eliminating the concept of trust from an organization’s network architecture, with the principle of never trust, always verify.
+
+Ultimately myonion is about creating a better experience for onion services developers and operators and therefore fostering a more legitimate onion service ecosystem.

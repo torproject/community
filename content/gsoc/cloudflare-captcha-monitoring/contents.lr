@@ -1,0 +1,47 @@
+_model: project
+---
+_template: project.html
+---
+active: True
+---
+section: GSoC
+---
+section_id: gsoc
+---
+color: primary
+---
+key: 1
+---
+languages: javascript
+---
+mentors: arma, gk
+---
+difficulty: medium
+---
+title: Cloudflare Captcha Monitoring
+---
+summary:
+
+We should track the rate that cloudflare gives captchas to Tor users over time.
+
+---
+description: 
+
+My suggested way of doing that tracking is to sign up a very simple static webpage to be fronted by cloudflare, and then fetch it via Tor over time, and record and graph the rates of getting a captcha vs getting the real page.
+
+The reason for the "simple static page" is to make it really easy to distinguish whether we're getting hit with a captcha. The "distinguishing one dynamic web page from another" challenge makes exitmap tricky in the general case, but we can remove that variable here.
+
+One catch is that Cloudflare currently gives alt-svc headers in response to fetches from Tor addresses. So that means we need a web client that can follow alt-srv headers -- maybe we need a full Selenium like client?
+
+Once we get the infrastructure set up, we would be smart to run a second one which is just wget or curl or lynx or something, i.e. which doesn't behave like Tor Browser, in order to be able to track the difference between how Cloudflare responds to Tor Browser vs other browsers.
+
+I imagine that Cloudflare should be internally tracking how they're handling Tor requests, but having a public tracker (a) gives the data to everybody, and (b) helps Cloudflare have a second opinion in case their internal data diverges from the public version.
+
+The Berkeley ICSI group did research that included this sort of check:
+​https://www.freehaven.net/anonbib/#differential-ndss2016
+​https://www.freehaven.net/anonbib/#exit-blocking2017
+but what I have in mind here is essentially a simpler subset of this research, skipping the complicated part of "how do you tell what kind of response you got" and with an emphasis on automation and consistency.
+
+There are two interesting metrics to track over time: one is the fraction of exit relays that are getting hit with captchas, and the other is the chance that a Tor client, choosing an exit relay in the normal weighted faction, will get hit by a captcha.
+
+Then there are other interesting patterns to look for, e.g. "are certain IP addresses punished consistently and others never punished, or is whether you get a captcha much more probabilistic and transient?" And does that pattern change over time?

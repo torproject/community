@@ -1,0 +1,17 @@
+_template: layout.html
+---
+section: GSoC
+---
+section_id: gsoc
+---
+html: gsoc.html
+---
+color: primary
+---
+key: 0
+---
+title: Project Ideas
+---
+body:
+
+You may find some of these projects to be good ideas for Google Summer of Code. We have labelled each idea with which of our core developers would be good mentors. If one or more of these ideas looks promising to you, please contact us to discuss your plans rather than sending blind applications.
