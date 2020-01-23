@@ -6,44 +6,79 @@ title: Docker
 ---
 body:
 
-We are maintaining a docker container that runs an obfs4 bridge.  This guide
-walks you through setting up this container.  First, download the container:
+### 1. Pull the image
+
+We are maintaining a docker image that runs an obfs4 bridge.
+First, download the image:
 
 ```
 docker pull phwinter/obfs4-bridge:latest
 ```
 
-Now, it's time to run the container.  You can choose between two options:
+### 2. Deploy a container
 
-1. We maintain a script that determines a free OR and obfs4 port for you, and
-   then runs the docker container.
-   [Download the script here](https://dip.torproject.org/torproject/anti-censorship/docker-obfs4-bridge/raw/master/deploy-container.sh).
-   When running this script, provide your email address as argument:
-   ```
-   bash deploy-container.sh address@email.com
-   ```
-   The script will tell you what ports it chose, and your container ID.  Make
-   sure that **both** ports are forwarded in your firewall.
+We provide a Makefile that helps you deploy the container.
+First, [download the Makefile](https://dip.torproject.org/torproject/anti-censorship/docker-obfs4-bridge/raw/master/Makefile), and then write your bridge configuration to a new file, bridge.sh.
+Here's a template:
 
-2. If you would rather provide your own ports, run the following command and
-   replace `XXX` with your OR port, `YYY` with your obfs4 port, and
-   `admin@example.com` with your email address.
+```
+# Your bridge's Tor port.
+export OR_PORT=X
+# Your bridge's obfs4 port.
+export PT_PORT=Y
+# Your email address.
+export EMAIL=Z
+```
 
-   ```
-    OR_PORT=XXX PT_PORT=YYY EMAIL=admin@example.com; docker run -d -e OR_PORT=$OR_PORT -e PT_PORT=$PT_PORT -e EMAIL=$EMAIL -p $OR_PORT:$OR_PORT -p $PT_PORT:$PT_PORT phwinter/obfs4-bridge:latest
-    ```
+Replace `X` with your desired OR port, `Y` with your obfs4 port (make sure that **both** ports are forwarded in your firewall), and `Z` with your email address, which allows us to get in touch with you if there are problems with your bridge.
+With your bridge configuration in place, you can now deploy the container:
 
-    Again, make sure that **both** ports are forwarded by your firewall.
+```
+source bridge.sh && make deploy
+```
 
-That's it! Your container should now be bootstrapping your new obfs4 bridge.
-You can inspect its logs by running:
+You should now see output similar to the following:
+
+```
+201fbd2b4d28e6f226978f27547edd79272871c5949bf8aab3872c983156a108
+Make sure that port X and Y are forwarded in your firewall.
+```
+
+That's it! Your container (identified by the first line of output) is now bootstrapping your new obfs4 bridge.
+
+If you want to run multiple bridges on your machine, you need to create more bridge configuration files with different sets of ports, and run `make deploy` again, like so:
+
+```
+source bridge-1.sh && make deploy
+source bridge-2.sh && make deploy
+...
+```
+
+### 3. Upgrade your container
+
+To upgrade to the latest version of our image, you need to stop your existing container, delete it, pull the latest image, and finally deploy it again:
+
+```
+docker stop CONTAINER_ID
+docker rm CONTAINER_ID
+docker pull phwinter/obfs4-bridge:latest
+source bridge.sh && make deploy
+```
+
+Note that your bridge's data directory (which includes its key material) is stored in a docker volume, so you won't lose your bridge's identity when upgrading to the latest docker image.
+If you are running multiple bridges on your computer, you need to repeat this step for each bridge.
+We will announce new image versions on the [tor-dev](https://lists.torproject.org/cgi-bin/mailman/listinfo/tor-dev) mailing list.
+
+### 4. Monitor your logs
+
+You can inspect your bridge's logs by running:
 
 ```
 docker logs CONTAINER_ID
 ```
 
-To use your new bridge in Tor Browser, you need its "bridge line".  Here's how
-you can get your bridge line:
+To use your new bridge in Tor Browser, you need its "bridge line".
+Here's how you can get your bridge line:
 
 ```
 docker exec CONTAINER_ID get-bridge-line
@@ -55,10 +90,8 @@ This will return a string similar to the following:
 obfs4 1.2.3.4:1234 B0E566C9031657EA7ED3FC9D248E8AC4F37635A4 cert=OYWq67L7MDApdJCctUAF7rX8LHvMxvIBPHOoAp0+YXzlQdsxhw6EapaMNwbbGICkpY8CPQ iat-mode=0
 ```
 
-Make sure to check out the [post-install
-notes](https://community.torproject.org/relay/setup/bridge/post-install/).  If
-you are having troubles setting up your bridge, have a look at [our help
-section](https://community.torproject.org/relay/getting-help/).
+Make sure to check out the [post-install notes](https://community.torproject.org/relay/setup/bridge/post-install/).
+If you are having troubles setting up your bridge, have a look at [our help section](https://community.torproject.org/relay/getting-help/).
 
 ---
 html: two-columns-page.html

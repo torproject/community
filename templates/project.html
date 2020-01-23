@@ -1,0 +1,49 @@
+<!doctype html>
+{% include 'meta.html' %}
+<body class="no-gutters">
+  <header>
+    {% include 'navbar.html' %}
+  </header>
+  <div class="page">
+    {% include 'header.html' %}
+    {% include 'pagenav.html' %}
+    <div class="container-fluid">
+      <div class="row flex-xl-nowrap">
+        <main role="main" class="mx-auto col-12 {{ bag('alternatives', this.alt, 'order') }}">
+         <div class="container py-3 mt-5">
+          <h4>Project Title: {{ this.title }}</h4>
+          <span class="badge badge-primary">{{ this.languages }}</span> <span class="badge badge-secondary">{{ this.difficulty }}</span>
+        </div>
+         <div class="container py-3 mt-5">
+          <h4>Project Summary:</h4>
+          <p>
+          {{ this.summary }}
+        </p>
+        </div>
+        <div class="container py-3">
+          <h4>Project Description:</h4>
+          <p>
+          {{ this.description }}
+        </p>
+        </div>
+        <div class="container py-3">
+          <h4>Mentors:</h4>
+          <p>
+          {{ this.mentors }}
+        </p>
+        </div>
+      </main>
+    </div>
+    <div class="card mt-5">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+          <a href="{{ this.parent|url }}">{{ _("Back to ") }}{{ this.parent.title }}</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<footer>
+  {% include 'footer.html' %}
+</footer>
+</body>

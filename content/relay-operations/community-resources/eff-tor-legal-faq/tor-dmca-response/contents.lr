@@ -1,5 +1,7 @@
 _model: page
 ---
+color: primary
+---
 title: Response template for Tor relay operator to ISP
 ---
 body:

@@ -1,0 +1,16 @@
+{% macro render_active(item, alternative) %}
+<div class="card border-0">
+  <div class="card-header bg-white border-0" id="headingOne">
+    <h5 class="mb-0">
+      <a href="{{ item.path|url }}">{{ item.title }}</a>
+    </h5>
+    <span class="badge badge-primary">{{ item.languages }}</span>
+  </div>
+  <div>
+    <div class="card-body">
+      {{ item.summary }}
+      <a href="{{ item.path|url }}">{{ _('Read more.') }}</a>
+    </div>
+  </div>
+</div>
+{% endmacro %}

@@ -6,7 +6,7 @@ color: primary
 ---
 _template: layout.html
 ---
-title: Relay operations
+title: Relay Operations
 ---
 subtitle: Relays are the backbone of the Tor network. Help make Tor stronger and faster by running a relay today.
 ---

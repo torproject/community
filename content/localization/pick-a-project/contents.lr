@@ -15,11 +15,11 @@ key: 3
 html: two-columns-page.html
 ---
 body:
-We want our tools to be available and localized for anyone who wants to use them and appreciate your help. To find out where your knowledge may be most helpful, take a look at the translation progress for the Tor ecosystem of tools so far:
+We want our tools to be available and localized for anyone who wants to use them, and we appreciate your help doing so. To find out where your knowledge may be most helpful, take a look at the translation progress for the Tor ecosystem of tools so far:
 
 <img class="col-lg-6" src="../../static/images/localization/stats.png">
 
-Although we would value your contribution to any of the projects above, the most critical are Tor Browser, the Tor Browser User Manual, and our Support Portal:
+Although we would value your contribution to any of the projects above, our most critical needs are Tor Browser, the Tor Browser User Manual, and our Support Portal:
 
 * Tor Browser is translated in many different Transifex resources, but you can see the [Tor Browser total strings translated per language](https://torpat.ch/locales) to see where help is needed.
 * The Tor Browser User Manual is a very useful resource for new users that do not speak English, see [Tor Browser User Manual translation statistics](https://torpat.ch/manual-locales) or [translate](https://www.transifex.com/otf/tor-project-support-community-portal/tbmanual-contentspot/).
