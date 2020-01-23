@@ -1,6 +1,8 @@
 _model: project
 ---
-_template: project.html
+_template: layout.html
+---
+html: two-columns-page.html
 ---
 active: True
 ---
@@ -20,7 +22,7 @@ difficulty: medium
 ---
 title: Onion Tool Box
 ---
-summary:
+subtitle:
 
 Myonion is a developer tool box, providing a command line interface and a GUI to configure and deploy existing services via .onion. A minimal prototype for myonion already [exists](https://github.com/hiromipaw/myonion).
 
@@ -29,7 +31,7 @@ Someone that may want to run an onion service can use the myonion wrapper app to
 Myonion can also be used to deploy the resulting configured app to a defined set of cloud providers.
 
 ---
-description: 
+body:
 
 ## Problem definition
 

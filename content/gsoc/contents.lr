@@ -8,6 +8,10 @@ html: gsoc.html
 ---
 color: primary
 ---
+subtitle: Some projects ideas for GSoC.
+---
+cta: Get coding
+---
 key: 0
 ---
 title: Project Ideas

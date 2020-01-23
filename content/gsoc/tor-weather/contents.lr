@@ -1,6 +1,8 @@
 _model: project
 ---
-_template: project.html
+_template: layout.html
+---
+html: two-columns-page.html
 ---
 active: True
 ---
@@ -20,12 +22,12 @@ difficulty: medium
 ---
 title: Tor Weather
 ---
-summary:
+subtitle:
 
 Tor Weather is the most efficient way to achieve and maintain a healthy Tor network on the long run.
 
 ---
-description: 
+body:
 
 Tor Weather was [discontinued on 2016-04-04](https://lists.torproject.org/pipermail/tor-relays/2016-April/009009.html), however "Tor Weather is still a good idea, it just needs somebody to implement it."
 
@@ -40,18 +42,18 @@ Relay operators and the entire tor network would benefit from a Tor Weather serv
 
 It also:
 - shows the relay operator that someone actually cares if their relays go down or become outdated or have another problem
-- gives the operator relay best-practices information. 
+- gives the operator relay best-practices information.
 
 ## Expected Effects
 
 If enough operators subscribe to such a service:
 - relays might become more long lived / the churn rate might decrease
 - the fraction of relays running outdated tor versions might decrease
-- the fraction of exits with broken DNS might decrease 
+- the fraction of exits with broken DNS might decrease
 
 It also has the benefit of being able to contact relay operators:
 - completely automatically
-- even if they choose to not set a public ContactInfo string in their torrc files. 
+- even if they choose to not set a public ContactInfo string in their torrc files.
 
 ## Ideas for Notification Types
 
@@ -76,7 +78,7 @@ _How long before we send a notification?_
 - [ ] email me about tor relay operator events
 
 
-*Task:* Write a specification describing the meaning of each checkbox 
+*Task:* Write a specification describing the meaning of each checkbox
 
 ## Security and Privacy Implications
 
@@ -85,6 +87,4 @@ The service stores email addresses of potential tor relay operators, they should
 ## Additional Ideas
 
 - easy: integration into tor: show the URL pointing to the new Tor Weather service like the current link to the lifecycle blogpost when tor starts and detects to be a new relay
-- Provide an uptimerobot-style status page for relay operators using onionoo data 
-
-
+- Provide an uptimerobot-style status page for relay operators using onionoo data

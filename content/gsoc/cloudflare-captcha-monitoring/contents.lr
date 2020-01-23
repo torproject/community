@@ -1,6 +1,8 @@
 _model: project
 ---
-_template: project.html
+_template: layout.html
+---
+html: two-columns-page.html
 ---
 active: True
 ---
@@ -20,12 +22,12 @@ difficulty: medium
 ---
 title: Cloudflare Captcha Monitoring
 ---
-summary:
+subtitle:
 
 We should track the rate that cloudflare gives captchas to Tor users over time.
 
 ---
-description: 
+body:
 
 My suggested way of doing that tracking is to sign up a very simple static webpage to be fronted by cloudflare, and then fetch it via Tor over time, and record and graph the rates of getting a captcha vs getting the real page.
 
