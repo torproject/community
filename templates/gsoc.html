@@ -4,15 +4,16 @@
       {{ this.body }}
     </div>
   </div>
-  <div class="row">
+  <div class="col-12">
     {% from "macros/projects.html" import render_active %}
     {% for child in this.children.filter(F.active == True).all() %}
-      {{ render_active(child, this.alt) }}
+      <div class="row">
+        {{ render_active(child, this.alt) }}
+      </div>
     {% endfor %}
   </div>
   <div class="row">
     <ul>
-    {% from "macros/projects.html" import render_active %}
     {% for child in this.children.filter(F.active == False).all() %}
       <li>{{ item.title }}</li>
     {% endfor %}
