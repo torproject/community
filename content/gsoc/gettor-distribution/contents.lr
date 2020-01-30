@@ -1,0 +1,35 @@
+_model: project
+---
+_template: layout.html
+---
+html: two-columns-page.html
+---
+active: True
+---
+section: GSoC
+---
+section_id: gsoc
+---
+color: primary
+---
+key: 1
+---
+languages: python
+---
+org: Tor
+---
+mentors: cohos, hiro
+---
+difficulty: 
+---
+title: Implement a new distribution methods for GetTor
+---
+subtitle:
+
+This project would implement a feature to distribute Tor Browser downloads through Telegram or Facebook messenger.
+
+---
+body:
+
+
+Tor Browser ships with a few different anti-censorship tools to allow people free and open access to Internet content. However, some places censor Tor Browser downloads, making it difficult for users to install it in the first place. GetTor is a system for distributing Tor Browser using alternative methods such as email or Twitter to send users authenticated links to Tor Browser binaries. We are looking to expand the ways in which GetTor distributes these binaries. This project would implement a feature to distribute Tor Browser downloads through Telegram or Facebook messenger.

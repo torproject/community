@@ -1,0 +1,51 @@
+_model: project
+---
+_template: layout.html
+---
+html: two-columns-page.html
+---
+active: True
+---
+section: GSoC
+---
+section_id: gsoc
+---
+color: primary
+---
+key: 1
+---
+languages: React
+---
+org: OONI
+---
+mentors: Federico Ceratto, Arturo Filastò
+---
+difficulty: Medium
+---
+title: OONI Explorer Advanced Search
+---
+subtitle:
+
+This project is about enriching the OONI Explorer search functionality with the ability to visualize an analysis of metadata pertaining to filtered measurements.
+
+---
+body:
+
+This would involve adding the ability to filter on multiple axis: country, ASN, time range, anomaly, confirmed, failure, domain or input, citizenlab category code.
+
+The results would then be presented in an aggregate form, such as showing:
+
+- The total measurement count
+- The anomaly vs total ratio
+- Confirmed vs total
+- Failure vs total
+
+These results could then be presented as a table or some other charts, such as a heatmat.
+
+Some other more detailed, drill-down views could also be implemented.
+
+A potential applicant should also have some prior design 
+
+- *Prerequisites:* API call to be implemented by Federico
+- *Links/Resource:* https://github.com/ooni/explorer
+

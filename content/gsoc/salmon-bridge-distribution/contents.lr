@@ -1,0 +1,37 @@
+_model: project
+---
+_template: layout.html
+---
+html: two-columns-page.html
+---
+active: True
+---
+section: GSoC
+---
+section_id: gsoc
+---
+color: primary
+---
+key: 1
+---
+languages: 
+---
+org: Tor
+---
+mentors: 
+---
+difficulty: 
+---
+title: 
+---
+subtitle:
+
+This project entails implementing Salmon, a bridge distribution mechanism that partitions and distributes bridges using reputation to give well-behaved users access to "better" bridges and add a penalty when their bridges get censored. 
+
+---
+body:
+
+Short description: Many users rely on bridges, or anti-censorship proxies, to connect to the Tor network. We need a way of distributing bridge information to users so that they are able to connect. However, when censors learn this information the bridges quickly become blocked and can no longer be used. Our goal is to distribute bridges to users in censored regions when they need them, while also limiting the amount of bridge information that is leaked to censors.
+
+For more information on Salmon, see the related paper and source code.
+
