@@ -7,7 +7,7 @@
   <section>
     <div class="container">
       <div class="row">
-        {% for child in this.children|sort(attribute='key') %}
+        {% for child in site.query('/').filter(F.section_id != 'gsoc')|sort(attribute='key') %}
           <div class="col-sm-6 col-md-4 col-sm-12 col-xl-4 py-4">
             <div class="card h-100 p-2">
               <div class="card-body">

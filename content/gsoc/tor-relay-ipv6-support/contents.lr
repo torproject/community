@@ -14,7 +14,8 @@ color: primary
 ---
 key: 1
 ---
-languages: C
+languages:
+C
 ---
 mentors: teor, ahf, dgoulet, catalyst
 ---

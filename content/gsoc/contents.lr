@@ -1,5 +1,7 @@
 _template: layout.html
 ---
+_undiscoverable: true
+---
 section: GSoC
 ---
 section_id: gsoc

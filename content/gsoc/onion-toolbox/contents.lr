@@ -14,7 +14,10 @@ color: primary
 ---
 key: 1
 ---
-languages: Python, Docker, PythonQt5
+languages:
+Python
+Docker
+PythonQt5
 ---
 mentors: hiro, asn
 ---

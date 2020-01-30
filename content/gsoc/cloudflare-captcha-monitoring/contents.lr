@@ -14,7 +14,8 @@ color: primary
 ---
 key: 1
 ---
-languages: javascript
+languages:
+javascript
 ---
 mentors: arma, gk
 ---

@@ -14,7 +14,11 @@ color: primary
 ---
 key: 1
 ---
-languages: javascript, CSS, HTML, Python
+languages:
+javascript
+CSS
+HTML
+Python
 ---
 mentors: hiro
 ---

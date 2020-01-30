@@ -4,7 +4,9 @@
     <h5 class="mb-0">
       <a href="{{ item.path|url }}">{{ item.title }}</a>
     </h5>
-    <span class="badge badge-primary">{{ item.languages }}</span>
+    {% for lang in item.languages %}
+      <span class="badge badge-primary">{{ lang }}</span>
+    {% endfor %}
   </div>
   <div>
     <div class="card-body">
