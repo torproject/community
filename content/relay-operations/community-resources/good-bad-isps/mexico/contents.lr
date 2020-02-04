@@ -1,0 +1,10 @@
+_model: table
+---
+_hidden: yes
+---
+title: Mexico
+---
+body:
+| **Company/ISP** | **ASN** | **Bridges** | **Relay** | **Exit** | **Comments** | **Last Updated** |
+|-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
+| Axtel | - | Yes | Yes | ? |  Currently some Guard / Middle nodes are running in Axtel network | 2019 |

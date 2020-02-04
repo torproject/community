@@ -1,0 +1,11 @@
+_model: table
+---
+_hidden: yes
+---
+title: Switzerland
+---
+body:
+| **Company/ISP** | **ASN** | **Bridges** | **Relay** | **Exit** | **Comments** | **Last Updated** |
+|-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
+| [Solar Communications Gmbh](https://solarcom.ch/) | AS197988 | Yes | Yes | No | "We allow to place Tor routers, but don't allow to place Tor exit nodes." This applies to all their partners, who actually sell Solar's services to the public, namely: [Server & cloud](https://server-cloud.com), [CoinsHost](https://coinshost.com), [Incloudibly](https://incloudibly.net), [Cloudcom](https://cloudc.me), [AtomDrive](https://atomdrive.net). Cryptocurrencies are accepted. | 12/04/2015 |
+| [fsit](http://www.fsit.ch/) | - | Yes | Yes | Yes | - | 11/2015 |

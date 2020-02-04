@@ -1,0 +1,13 @@
+_model: table
+---
+_hidden: yes
+---
+title: Italy
+---
+body:
+| **Company/ISP** | **ASN** | **Bridges** | **Relay** | **Exit** | **Comments** | **Last Updated** |
+|-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
+| [Fastweb](https://fastweb.it/) |  - | Yes | Yes | Yes | - | - |
+| [Prometeus](https://www.prometeus.net/sito/) | - | Yes | Yes | No | - | - |
+| [ArubaCloud /Aruba](https://cloud.it/) | - | Yes | Yes | Yes |  TOS generically indicate that the operator is responsible for all the activities on the machine. [Read more](https://balist.es/blog/2016/04/18/running-a-tor-exit-node-on-aruba-arubacloud-a-detailed-account/) | - |
+| [SelfServer by Enter](https://selfserver.it/) | - | Yes | Yes | Yes | Uncomfortable due to old CentOS 6.10, NATed IPv4-only networking, ports other than the well-known are filtered. Abuse complaints need to go through their support service | 11/2018 |

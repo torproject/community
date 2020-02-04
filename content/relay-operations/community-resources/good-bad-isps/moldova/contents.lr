@@ -1,0 +1,12 @@
+_model: table
+---
+_hidden: yes
+---
+title: Moldova
+---
+body:
+| **Company/ISP** | **ASN** | **Bridges** | **Relay** | **Exit** | **Comments** | **Last Updated** |
+|-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
+| [MivoCloud](https://www.mivocloud.com/) | - | Yes | Yes | No | - | 09/13/16 |
+| [Trabia](https://www.trabia.com/) | - | Yes | Yes | Yes | - | 08/13/17 |
+| [AlexHost](https://alexhost.md/) | - | Yes | Yes | Yes | - | 07/21/2014 |

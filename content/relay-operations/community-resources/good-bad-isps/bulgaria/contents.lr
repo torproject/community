@@ -1,0 +1,10 @@
+_model: table
+---
+_hidden: yes
+---
+title: Bulgaria
+---
+body:
+| **Company/ISP** | **ASN** | **Bridges** | **Relay** | **Exit** | **Comments** | **Last Updated** |
+|-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
+| [VPS.BG](https://www.vpsbg.eu/en/) | - | Yes | Yes | Yes |  They don't collect any personal info and you can pay in bitcoin. | 01/11/2016 |

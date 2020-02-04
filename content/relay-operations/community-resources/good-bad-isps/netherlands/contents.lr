@@ -1,0 +1,25 @@
+_model: table
+---
+_hidden: yes
+---
+title: Netherlands
+---
+body:
+| **Company/ISP** | **ASN** | **Bridges** | **Relay** | **Exit** | **Comments** | **Last Updated** |
+|-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
+| [XS4ALL](https://www.xs4all.nl/en/) | AS3265 | Yes | Yes | Yes | Abuse can result in temporary blocks, therefore they recommend to use an dedicated IP address for exit nodes | 06/16/15 |
+| [verelox](https://verelox.com/) | AS12876 | Yes | Yes | Yes | - | 5/16 |
+| [HostHatch](https://hosthatch.com/) | AS42708 | Yes | Yes | No | - | 05/01/16 |
+| Ziggo | AS9143 | Yes | Yes | Yes | - | 05/24/2016 |
+| [LiteServer](https://www.liteserver.nl/) | AS60404 | Yes | Yes | Yes | Can pay with Bitcoin. While their AUP doesn't allow tor exit nodes (see [here](https://www.liteserver.nl/en/acceptable-usage-policy/)), they make an exception if your exit-node has a reduced exit policy. And you must leave a note to them that you are running a exit-node. "We allow tor exit nodes as long you run a limited exit policy (block SMTP) to avoid abuse. | 12/26/2018 |
+| [i3D](https://www.i3d.net/) | - | Yes | Yes | Yes | Allows also exits, if abuse is handled properly | 08/13/2017 |
+| [KoDDoS](https://koddos.net) | AS206264 | Yes | Yes | Yes | Bitcoin accepted. | 10/12/2017 |
+| [Worldstream](https://www.worldstream.nl) | AS49981 | Yes | Yes | No |  - | 02/06/2019 |
+| [LeaseWeb](https://www.leaseweb.com/) | - | Yes | Yes | Yes | - | - |
+| [Novogara](http://www.novogara.com) | - | Yes | Yes | Yes | Explicitly allows Tor exit nodes and forwards abuse/DCMA, but their network isn't the most stable. You need to email them for a custom offer. They also accept Bitcoin/UKash/CashU | - |
+| [Netrouting`](http://netrouting.nl/) | - | Yes | Yes | No | ISP has confirmed by e-mail that exit nodes are NOT acceptable. | 2014-10-15 |
+| [DirectVPS](http://directvps.nl/) | - | Yes | Yes | ? | - | - |
+| [Versio](http://versio.nl/) | - | Yes | Yes | No | - | 2013 |
+| [CyberBunker](http://www.cyberbunker.com/) | - | Yes | Yes | Yes | Customers can remain anonymous. | - |
+| [SnelServer](https://www.snelserver.com/) | - | Yes | Yes | Yes | Abuse complaints must be responded to within 24 hours or the system automatically suspends your account until you do. | 2014 |
+| [ChmuraNet](https://www.chmuranet.com/) | - | Yes | Yes | Yes | Allows anonymous users to run tor exits. Abuse issues will be forwarded. Make sure to tell them that you're running an exit | 09/2014 |

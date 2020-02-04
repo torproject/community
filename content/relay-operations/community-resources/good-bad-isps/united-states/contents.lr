@@ -1,0 +1,52 @@
+_model: table
+---
+_hidden: yes
+---
+title: United States
+---
+body:
+| **Company/ISP** | **ASN** | **Bridges** | **Relay** | **Exit** | **Comments** | **Last Updated** |
+|-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
+| [2HOST](https://2host.com/) | - | Yes | Yes | Yes(?) | Vague AUP/Abuse handling | 10/15/14 |
+| [Amazon Web Services (AWS)](https://aws.amazon.com) | - | Yes | Yes | No | - | - |
+| [AmeriNOC](https://www.amerinoc.com/) | - | Yes | Yes | Yes | - | - |
+| [Arvixe](https://www.arvixe.com/vps_virtual_private_servers_hosting/) | - | Yes | Yes | Yes | - | 06/19/13 |
+| [Axigy](http://www.axigy.com) | - | Yes | Yes | Yes | - |  - |
+| [Blacklotus](http://www.blacklotus.net) | - | Yes | Yes | Yes | Liberal abuse handling policies | - |
+| [BuyVM.net](https://buyvm.net) | AS53667 | Yes | Yes | Yes | New Tor rules [here](https://buyvm.net/acceptable-use-policy/#3). All relays are fine if you follow the steps. | - |
+| [Catalyst Host](https://catalysthost.com/) | - | ? | No | No | "If you are interested in hosting either, you can ask us about a dedicated server." | 10/01/14 |
+| [ChunkHost](http://chunkhost.com) | - | Yes | Yes | ? | Questionable DMCA handling | 01/01/12 |
+| [Cyberonic](http://www.cyberonic.com) | - | Yes | Yes | ? | - | - |
+| [Datawagon](https://datawagon.net) | AS27176 | Yes | Yes | Yes | Customers are forwarded abuse complaints to handle themselves | 03/06/19 |
+| [DreamHost](https://www.dreamhost.com/) | - | Yes | Yes | ? | - | 11/29/17 |
+| [Ethr.net](http://ethr.net/) | - | Yes | Yes | Yes | - | - |
+| [Evolucix](http://www.evolucix.com) | -  | Yes | Yes | No(?) | - | - |
+| [Future Hosting](http://www.futurehosting.com/) | - | Yes | Yes | No | - | 09/01/14 |
+| [HostGator](http://www.hostgator.com/) | - | No | No | No | - | - |
+| [HostHatch](https://hosthatch.com) | AS46562 | Yes | Yes | No | Their vps isp are mixed include: QuadraNet, nLayer, AboveNet, Inteliquent, Atrato Networks and open peering with the entire Any2LA and Atlanta TIE networks. | 05/01/16 |
+| [HostUS](http://hostus.us/) | AS25926 | Yes | Yes | No | - | 10/16/14 |
+| [IPXcore](https://ipxcore.com/) | - | Yes | Yes | No | - | - |
+| [Luna Node](https://www.lunanode.com/index.php) | - | Yes | Yes | No | - | 05/01/14 |
+| [OVH](https://www.ovh.com/us/index.xml ) | AS16276 | Yes | Yes | ? | - | 12/31/14 |
+| [Oplink.net](https://www.oplink.net) | - | Yes | Yes | No | - | 09/03/15 |
+| [Psychz.net](https://www.psychz.net/) | - | Yes | Yes | Yes | Very Exit friendly. Standard Tor response will resolve abuse issues. | 10/07/15 |
+| [PulseServers](https://www.pulseservers.com) | AS16276 | Yes | Yes | Yes | Exit-friendly. | 05/01/16 |
+| [RamNode](http://ramnode.com/) | AS3842 | Yes | Yes | No | - | 11/03/14 |
+| [Server Complete](https://servercomplete.com/) | - | ? | ? | No | - | 11/03/14 |
+| [Softlayer](http://www.softlayer.com) | - | Yes | Yes | ? | - | - |
+| [Slicehost/Rackspace](http://www.slicehost.com/) | - | Yes | Yes | No | Host, not an ISP | - |
+| [Sh3lls](http://www.sh3lls.net/dedicated.htm) | - | Yes | Yes | No | - | - |
+| [SolarVPS](https://solarvps.com) | - | Yes | Yes | Yes | - | - |
+| [SeedVPS](https://www.seedvps.com) | - | Yes | Yes | No | - | - |
+| [Tailored VPS](http://tailoredvps.com/) | - | Yes | Yes | Yes(?) | -  | - |
+| [VPS6.NET](https://vps6.net/) | - | Yes | Yes | No | - | - |
+| [VPSWebServer.com](http://www.vpswebserver.com) | - | Yes || No | ? | - | - |
+| [Inerail](http://inerail.net/) | - | Yes | Yes | Yes | Tor only allowed on dedicated/colocation | - |
+| [CondoInternet ISP](http://www.condointernet.net/) | - | Yes | Yes | Yes | - | - |
+| [DigitalOcean](http://digitalocean.com/) | - | Yes | Yes | No | - | - |
+| [PhoenixNap / Secured Servers](http://www.phoenixnap.com/) | - | Yes | Yes | No | - | 08/01/14 |
+| [Vultr](http://vultr.com) | AS20473 | Yes | Yes | No | When asked directly they will claim they do support Tor exits but will pull the rug out from under you later on. This has happened to at least two exit operators. | - |
+| [ChicagoVPS](http://chicagovps.net/) | - | Yes | Yes | No | Tor bridge/relay is allowed on the whole VPS range. Any VPS running Exit nodes will be suspended without prior notice. | 15/01/15 |
+| [Xmission](https://www.xmission.com/) | - | Yes | Yes | Yes | - | 01/28/15 |
+| [blackpulsehosting](https://www.blackpulsehosting.com) | - | Yes | Yes | No | - | 10/25/15 |
+| [MonkeyBrains](https://monkeybrains.net) | AS32329 | Yes | Yes | Yes | Only offers colocation, no cheap VPS option. | 1/14/19 |

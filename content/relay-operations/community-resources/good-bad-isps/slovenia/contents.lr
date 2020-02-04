@@ -1,0 +1,10 @@
+_model: table
+---
+_hidden: yes
+---
+title: Slovenia
+---
+body:
+| **Company/ISP** | **ASN** | **Bridges** | **Relay** | **Exit** | **Comments** | **Last Updated** |
+|-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
+| [Tus Hosting](http://www.tushosting.si/) | - |  Yes | Yes | Yes |  They just simply forward DMCA notices to us to handle (or ignore) them | - |

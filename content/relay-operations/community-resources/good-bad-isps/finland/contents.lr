@@ -1,0 +1,11 @@
+_model: table
+---
+_hidden: yes
+---
+title: Finland
+---
+body:
+| **Company/ISP** | **ASN** | **Bridges** | **Relay** | **Exit** | **Comments** | **Last Updated** |
+|-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
+| [Creanova](http://creanova.org) | AS51765 | Yes | Yes | No | - | 12/19/2018 |
+| [TeliaSonera Finland](https://www.sonera.fi/) | AS1759 | Yes | Yes | No | - | 03/26/2016 |

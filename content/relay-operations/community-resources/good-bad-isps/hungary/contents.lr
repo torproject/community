@@ -1,0 +1,10 @@
+_model: table
+---
+_hidden: yes
+---
+title: Hungary
+---
+body:
+| **Company/ISP** | **ASN** | **Bridges** | **Relay** | **Exit** | **Comments** | **Last Updated** |
+|-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
+| [ServerAstra](https://serverastra.com/) | AS56322 | Yes | Yes | Yes | They only say you should answer abuse requests in 24h. ISP has re-confirmed by e-mail that exit nodes are acceptable, with "strict" exit node policies. | 2014-10-15 |
