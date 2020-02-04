@@ -1,0 +1,11 @@
+{% from "macros/table.html" import render_table %}
+{% macro render_isp_tables(tables) %}
+  <ul>
+    {% for t in tables %}
+        <li><a href="#{{ t._id }}">{{ t.title }}</a></li>
+    {% endfor %}
+  </ul>
+  {% for t in tables %}
+    {{ render_table(t) }}
+  {% endfor %}
+{% endmacro %}

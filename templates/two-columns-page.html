@@ -5,6 +5,11 @@
   {% include 'sidenav.html' %}
   <div class="col-sm-12 col-xs-12 col-md-8 col-lg-8 pt-3 mr-auto {{ bag('alternatives', this.alt, 'order') }}">
     {{ this.body }}
+    {% if this.path == "/relay-operations/community-resources/good-bad-isps" %}
+      {% from "macros/isp-tables.html" import render_isp_tables %}
+      {% set tables = site.query(this.path).include_undiscoverable(true).all()|sort(attribute="title") %}
+      {{ render_isp_tables(tables) }}
+    {% endif %}
     <div class="row">
     {% for child in this.children|sort(attribute='key') %}
         <div class="col-sm-6 col-md-6 col-sm-12 col-xl-6 py-3">
