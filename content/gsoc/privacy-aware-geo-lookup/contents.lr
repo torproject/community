@@ -12,9 +12,11 @@ section_id: gsoc
 ---
 color: primary
 ---
-key: 1
+key: 6
 ---
-languages: Golang, Java
+languages: 
+Golang
+Java
 ---
 org: OONI
 ---
