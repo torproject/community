@@ -20,7 +20,7 @@ ansible
 ---
 org: Tor
 ---
-mentors: 
+mentors:
 cohosh
 hiro
 ---

@@ -18,7 +18,9 @@ languages: React
 ---
 org: OONI
 ---
-mentors: Federico Ceratto, Arturo Filastò
+mentors:
+Federico Ceratto
+Arturo Filastò
 ---
 difficulty: Medium
 ---

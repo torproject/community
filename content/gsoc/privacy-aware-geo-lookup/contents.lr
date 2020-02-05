@@ -20,7 +20,9 @@ Java
 ---
 org: OONI
 ---
-mentors: Simone Basso, Arturo Filastò
+mentors:
+Simone Basso
+Arturo Filastò
 ---
 difficulty: Medium
 ---

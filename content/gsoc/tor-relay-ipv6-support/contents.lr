@@ -17,7 +17,9 @@ key: 10
 languages:
 C
 ---
-mentors: teor, ahf, dgoulet, catalyst
+mentors:
+teor
+ahf
 ---
 difficulty: Medium
 ---

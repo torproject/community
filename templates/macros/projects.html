@@ -4,8 +4,14 @@
     <h5 class="mb-0">
       <a href="{{ item.path|url }}">{{ item.title }}</a>
     </h5>
+    Languages:
     {% for lang in item.languages %}
       <span class="badge badge-primary">{{ lang }}</span>
+    {% endfor %}
+    <br>
+    Mentors:
+    {% for person in item.mentors %}
+      <span class="badge badge-secondary">{{ person }}</span>
     {% endfor %}
   </div>
   <div>

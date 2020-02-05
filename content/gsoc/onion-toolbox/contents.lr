@@ -19,7 +19,9 @@ Python
 Docker
 PythonQt5
 ---
-mentors: hiro, asn
+mentors:
+hiro
+asn
 ---
 difficulty: medium
 ---

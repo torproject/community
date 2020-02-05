@@ -18,7 +18,9 @@ languages:
 python
 javascript
 ---
-mentors: GeKo, arma
+mentors:
+GeKo
+arma
 ---
 difficulty: medium
 ---
