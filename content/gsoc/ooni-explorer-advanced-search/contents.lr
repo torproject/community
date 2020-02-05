@@ -28,10 +28,17 @@ title: OONI Explorer Advanced Search
 ---
 subtitle:
 
-This project is about enriching the OONI Explorer search functionality with the ability to visualize an analysis of metadata pertaining to filtered measurements.
-
+OONI Explorer is an open data resource on internet censorship around the world. This project is about enriching the OONI Explorer search functionality with the ability to visualize an analysis of metadata pertaining to filtered measurements.
 ---
 body:
+
+# Problem
+
+
+
+# Proposal
+
+This project is about enriching the OONI Explorer search functionality with the ability to visualize an analysis of metadata pertaining to filtered measurements.
 
 This would involve adding the ability to filter on multiple axis: country, ASN, time range, anomaly, confirmed, failure, domain or input, citizenlab category code.
 
@@ -46,8 +53,9 @@ These results could then be presented as a table or some other charts, such as a
 
 Some other more detailed, drill-down views could also be implemented.
 
-A potential applicant should also have some prior design 
+A potential applicant should also have some prior design experience
 
-- *Prerequisites:* API call to be implemented by Federico
-- *Links/Resource:* https://github.com/ooni/explorer
+# Resources
+
+- OONI Explorer repo on github: https://github.com/ooni/explorer
 
