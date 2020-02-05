@@ -20,6 +20,7 @@ C
 mentors:
 teor
 ahf
+nickm
 ---
 difficulty: Medium
 ---
@@ -32,30 +33,50 @@ Tor helps people stay safe on the internet, by keeping their internet use secure
 ---
 body:
 
-Students may choose to focus on designing and implementing core features, tor relay testing, reporting statistics, or diagnosing and fixing bugs.
+The Tor Project will be improving tor relay IPv6 support in 2020.
 
+Students may choose to focus on:
+ * designing and implementing tor relay IPv6 features,
+ * tor relay IPv6 testing, or
+ * diagnosing and fixing bugs in tor's IPv6 code.
 
 ## Prerequisites
 
 * Network configuration skills
-* Basic understanding of Internet Protocol (IP) versions
+* Basic understanding of IPv4 and IPv6
 
 Recommended:
 
 * Experience testing network software
 * Experience running Internet-connected servers
 
-## Links/Resources
-
-https://trac.torproject.org/projects/tor/wiki/TorRelayGuide#IPv6
-
-https://trac.torproject.org/projects/tor/wiki/org/roadmaps/Tor/IPv6Features#ReachabilityChecks
-
 ## Programming skills needed:
 
 * C coding
-* Building Unix-based software
+* Building Unix-based (Linux, *BSD, macOS) software
 
 Recommended:
 
-* Experience with network programming
+* Experience with Unix network programming
+* Python coding (for testing)
+* Access to a server with public IPv4 and IPv6 addresses (to run a test relay)
+
+## Links/Resources
+
+### Technical Proposals
+
+Tor Relay IPv6 Reachability
+https://gitweb.torproject.org/torspec.git/tree/proposals/311-relay-ipv6-reachability.txt
+
+Tor Relay Automatic IPv6 Address Discovery
+https://gitweb.torproject.org/torspec.git/tree/proposals/312-relay-auto-ipv6-addr.txt
+
+### Relay Operator Guides
+
+Tor Relay Guide: IPv6
+https://trac.torproject.org/projects/tor/wiki/TorRelayGuide#IPv6
+
+### Roadmaps
+
+Tor IPv6 Roadmap
+https://trac.torproject.org/projects/tor/wiki/org/roadmaps/Tor/IPv6Features
