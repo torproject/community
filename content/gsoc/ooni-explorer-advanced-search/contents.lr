@@ -32,9 +32,9 @@ OONI Explorer is an open data resource on internet censorship around the world. 
 ---
 body:
 
-# Problem
+# Background
 
-
+OONI Explorer is an open data resource on internet censorship around the world. This project is about enriching the OONI Explorer search functionality with the ability to visualize an analysis of metadata pertaining to filtered measurements.
 
 # Proposal
 
