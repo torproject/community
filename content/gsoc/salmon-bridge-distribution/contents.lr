@@ -33,7 +33,16 @@ This project entails implementing Salmon, a bridge distribution mechanism that p
 ---
 body:
 
-Short description: Many users rely on bridges, or anti-censorship proxies, to connect to the Tor network. We need a way of distributing bridge information to users so that they are able to connect. However, when censors learn this information the bridges quickly become blocked and can no longer be used. Our goal is to distribute bridges to users in censored regions when they need them, while also limiting the amount of bridge information that is leaked to censors.
+# Problem
 
-For more information on Salmon, see the related paper and source code.
+Bridges are Tor relays that are not publicly listed and therefore allow access to the Tor network in places where access to the public Tor relays, and therefore access to the Tor network, is blocked. Many users rely on bridges, or anti-censorship proxies, to connect to the Tor network. However, when censors learn this information, the bridges quickly become blocked and can no longer be used. We need a way of distributing bridge information to users so that they are able to connect without these bridges being discovered by the censors.
 
+# Proposal
+
+Our goal is to distribute bridges to users in censored regions when they need them, while also limiting the amount of bridge information that is leaked to censors. This project entails implementing Salmon, a bridge distribution mechanism that partitions and distributes bridges using reputation to give well-behaved users access to "better" bridges and add a penalty when their bridges get censored.
+
+# Resources
+
+- Original Paper: [Salmon: Robust Proxy Distribution for
+Censorship Circumvention](https://petsymposium.org/2016/files/papers/Salmon__Robust_Proxy_Distribution_for_Censorship_Circumvention.pdf)
+- Salmon Project on github: https://github.com/SalmonProject

@@ -33,8 +33,15 @@ This project entails implementing a Snowflake proxy app that will run on Android
 ---
 body:
 
-Snowflake is a circumvention system in which volunteers can run proxies to help users connect to the Tor network. Users make WebRTC connections to the proxies, who then relay this data to a Snowflake bridge and then on to the Tor network. The advantage of using WebRTC is that Snowflake proxies can frequently change IP address or operate behind a NAT. At the moment, we have implemented the Snowflake proxy code as a web extension or a web badge, but we have not yet implemented a proxy that will run smoothly on Android.
+# Background
+
+[Snowflake](https://snowflake.torproject.org/) is a circumvention system in which volunteers can run proxies to help users connect to the Tor network. Users make WebRTC connections to the proxies, who then relay this data to a Snowflake bridge and then on to the Tor network. The advantage of using WebRTC is that Snowflake proxies can frequently change IP address or operate behind a NAT. At the moment, we have implemented the Snowflake proxy code as a web extension or a web badge, but we have not yet implemented a proxy that will run smoothly on Android.
+
+# Proposal
 
 This project entails implementing a Snowflake proxy app that will run on Android and relay a user's Tor traffic to the Tor network in the background. There is an implementation component as well as an exploration and testing component while we figure out how to achieve good performance from a background application without using too much of the volunteer proxy's data or resources.
 
-Skills Needed: Development experience on Android.
+# Resources
+
+- [Snowflake](https://snowflake.torproject.org/)
+- Snowflake repo: https://gitweb.torproject.org/pluggable-transports/snowflake.git/
