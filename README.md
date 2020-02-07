@@ -39,7 +39,7 @@ You can click ```Edit this page``` and submit your content changes in a [Pull Re
 
 4. Init the building blocks submodule: 
 
-```$ cd lego && git submodule update --init --recursive```
+```$ cd community/lego && git submodule update --init --recursive```
 
 5. Translations for the website are imported by Jenkins when bulding the page, but if you want to test them, download the correct branch of the translations repo to the ./i18n/ folder.
 
