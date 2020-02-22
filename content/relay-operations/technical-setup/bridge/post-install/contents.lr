@@ -15,8 +15,11 @@ Bridge obfs4 <IP ADDRESS>:<PORT> <FINGERPRINT> cert=<CERTIFICATE> iat-mode=0
 ```
 
 You'll need to replace `<IP ADDRESS>`, `<PORT>`, and `<FINGERPRINT>` with the actual values, which you can find in the tor log. Make sure to use `<FINGERPRINT>`, not `<HASHED FINGERPRINT>`; and that `<PORT>` is the obfs4 port you chose - and not the OR port. 
-
-Finally, you can monitor your obfs4 bridge's usage on [Relay Search](https://metrics.torproject.org/rs.html#search).  Just enter your bridge's `<HASHED FINGERPRINT>` in the form and click "Search". After having set up the bridge, it takes approximately three hours for the bridge to show up in Relay Search.
+ 
+108.174.50.206:443 C123A38F1EFCEA6F00C061637B0A016774466BCD
+46.22.208.39:443 4146E1DF19573517DA4304D35DBA511DF0B71F18
+Finally, you can monitor your obfs4 bridge's usage on [Relay Search](https://metrics.torproject.org/rs.html#search).  Just enter your bridge's `<HASHED FINGERPRIFinally, you can monitor your obfs4 bridge's usage on [Relay Search](https://metrics.torproject.org/rs.html#search).  Just enter your bridge's `<HASHED FINGERPRINT>` in the form and click "Search". After having set up the bridge, it takes approximately three hours for the bridge to show up in Relay Search.
+NT>` in the form and click "Search". After having set up the bridge, it takes approximately three hours for the bridge to show up in Relay Search.
 
 ---
 html: two-columns-page.html
