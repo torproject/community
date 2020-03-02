@@ -39,9 +39,30 @@ body:
 
 # Proposal
 
-This project entails implementing a Snowflake proxy app that will run on Android and relay a user's Tor traffic to the Tor network in the background. There is an implementation component as well as an exploration and testing component while we figure out how to achieve good performance from a background application without using too much of the volunteer proxy's data or resources.
+This project entails implementing a Snowflake proxy app that will run on Android and relay a user's Tor traffic to the Tor network in the background. This application does not use Tor itself, it will relay Tor traffic from censored users to the Snowflake bridge. It will do this by copying Tor traffic between a WebRTC connection to the user and a WebSocket connection to the Snowflake bridge.
+
+There is an implementation component as well as an exploration and testing component while we figure out how to achieve good performance from a background application without using too much of the volunteer proxy's data or resources. We'd like to build in the ability for multiple users to connect through
+a proxy, but we'll start with just one user at first. This project is experimental in the sense that we don't yet know how many resources it will take and whether the proxies will be reliable enough for clients to use.
+
+# Getting Started
+
+A good way to get started is to read the resources provided below and familiarize yourself with how Snowflake works. You can then:
+
+1. Take a look at the existing WebExtension proxy code, and
+2. Install the WebExtension to try it out for yourself: https://snowflake.torproject.org/
+
+Once you feel ready to get started on some tickets, you can search for webextension (proxy) based tickets on our bug tracking system by looking for the keyword ["webextension"](https://trac.torproject.org/projects/tor/query?status=accepted&status=assigned&status=needs_information&status=needs_revision&status=new&status=reopened&keywords=~webextension&component=%5ECircumvention%2FSnowflake&group=type&col=id&col=summary&col=component&col=status&col=type&col=priority&col=milestone&order=priority) in the Snowflake component.
 
 # Resources
+
+We already have the proxy implemented as a WebExtension in javascript. You can take a look at that implementation for a more detailed idea of what exactly we're trying to do:
+
+- https://gitweb.torproject.org/pluggable-transports/snowflake.git/tree/proxy
+
+Some other links that will be useful are:
+
+- the technical writeup: https://keroserene.net/snowflake/technical/
+- deployment details and open tickets: https://trac.torproject.org/projects/tor/wiki/doc/Snowflake
 
 - [Snowflake](https://snowflake.torproject.org/)
 - Snowflake repo: https://gitweb.torproject.org/pluggable-transports/snowflake.git/
