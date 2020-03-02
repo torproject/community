@@ -60,6 +60,14 @@ Then there are other interesting patterns to look for:
 - Is whether you get a CAPTCHA much more probabilistic and transient?
 - Does that pattern change over time?
 
+# Getting Started
+
+As this is a new project, in order to demonstrate your skills and familiarise yourself with this project you may want to:
+
+1. Set up the required infrastructure for this project e.g by setting up a very simple static webpage to be fronted by Cloudflare.
+2. Familiarise yourself and start experimenting with various web clients to fetch pages via Tor, bearing in mind you may need to adapt them to your needs if they are lacking the required functionality.
+3. Read the comments in ticket [#33010](https://trac.torproject.org/projects/tor/ticket/33010) for more ideas.
+
 # Resources
 
 There is pre-existing research by the Berkeley ICSI group which includes these sorts of checks:
