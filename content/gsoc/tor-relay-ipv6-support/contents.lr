@@ -61,6 +61,17 @@ Recommended:
 * Python coding (for testing)
 * Access to a server with public IPv4 and IPv6 addresses (to run a test relay)
 
+## Getting Started
+
+1. Clone tor using [git](https://github.com/torproject/tor)
+2. Build tor from source
+3. Run the tor unit tests using "make check". Let us know if they fail, and we'll help fix them.
+4. Clone [chutney]( https://github.com/torproject/chutney) using git. Chutney is a tor integration test tool.
+5. Run the tor integration tests using "make test-network". Let us know if they fail, and we'll help fix them.
+6. Make sure you have a GitHub account, so you can submit pull requests to tor's [GitHub repository](https://github.com/torproject/tor)
+
+See our [Getting Started](https://gitweb.torproject.org/tor.git/tree/doc/HACKING/GettingStarted.md) document for more information.
+
 ## Links/Resources
 
 ### Technical Proposals
