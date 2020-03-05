@@ -1,0 +1,41 @@
+section: client auth
+---
+section_id: client-auth
+---
+color: primary
+---
+_template: layout.html
+---
+title: Client Authorization
+---
+subtitle: Learn how to set up client authorization.
+---
+key: 3
+---
+html: two-columns-page.html
+---
+body:
+
+To set up Cookie Authentication for v2 services see the entries for the [HidServAuth](https://2019.www.torproject.org/docs/tor-manual.html.en#HidServAuth) and [HiddenServiceAuthorizeClient](https://2019.www.torproject.org/docs/tor-manual.html.en#HiddenServiceAuthorizeClient) options in the manual. First add following line to the [torrc](https://support.torproject.org/#tbb-editing-torrc) file of your onion service:
+
+    HiddenServiceAuthorizeClient [auth-type] [service-name]
+    
+
+Restart/reload tor and read the cookie from the hostname file of your onion service, for example in
+/var/lib/tor/hidden_service_path/hostname.
+To access it with a tor client add following line to torrc and (re)start/reload it:
+
+    HidServAuth [onion-address] [auth-cookie] [service-name]
+    
+
+You are now able to browse to the onion service address.
+
+To set up Client Authorization for v3 (["next-gen"](https://2019.www.torproject.org/docs/tor-onion-service.html.en#four)) services as specified in [rend-spec-v3.txt](https://gitweb.torproject.org/torspec.git/tree/rend-spec-v3.txt#n615) for the tor service running the onion follow the instructions in [Client Authorization](https://2019.www.torproject.org/docs/tor-manual-dev.html.en#_client_authorization). Note that to revoke clients you need to restart the tor service (see [#28275](https://trac.torproject.org/projects/tor/ticket/28275)). At the moment you need to create the keys yourself with a script (like these written in [bash](https://gist.github.com/mtigas/9c2386adf65345be34045dace134140b) or [rust](https://github.com/haxxpop/torkeygen)).
+
+To access it with a tor client make sure you have [ClientOnionAuthDir](https://2019.www.torproject.org/docs/tor-manual-dev.html.en#ClientOnionAuthDir) set in torrc. In the <ClientOnionAuthDir> directory, create an .auth_private file for the onion service corresponding to this key (i.e. 'bob_onion.auth_private').
+The contents of the <ClientOnionAuthDir>/<user>.auth_private file should look like:
+
+    <56-char-onion-addr-without-.onion-part>:descriptor:x25519:BBBEAUAO3PIFAH7SBGBI6A2QFAZBXG2NVN7HMBXFCZENJVF6C5AQ
+    
+
+Then (re)start/reload it and you should be able to browse to the onion service address. 
