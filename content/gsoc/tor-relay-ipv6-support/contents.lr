@@ -72,6 +72,31 @@ Recommended:
 
 See our [Getting Started](https://gitweb.torproject.org/tor.git/tree/doc/HACKING/GettingStarted.md) document for more information.
 
+Once you have completed the above tasks, you may wish to move on to the following initial tasks for the project.
+
+### Initial Tasks
+
+* [Use Authority Addresses for Socket-Based Address Detection](https://gitweb.torproject.org/torspec.git/tree/proposals/312-relay-auto-ipv6-addr.txt#n1397).
+* [Add IPv6 Support to is_local_addr()](https://gitweb.torproject.org/torspec.git/tree/proposals/312-relay-auto-ipv6-addr.txt#n1099).
+* [Add a BandwidthStatistics option](https://gitweb.torproject.org/torspec.git/tree/proposals/313-relay-ipv6-stats.txt#n298).
+* [Close Existing Connections Before Testing Reachability](https://gitweb.torproject.org/torspec.git/tree/proposals/311-relay-ipv6-reachability.txt#n465).
+* [Add unit tests or chutney tests for IPv6Traffic](https://trac.torproject.org/projects/tor/ticket/31543).
+
+### Main Tasks
+
+* [Add IPv6 Support to AuthDirMaxServersPerAddr](https://gitweb.torproject.org/torspec.git/tree/proposals/312-relay-auto-ipv6-addr.txt#n1125).
+* [Use Authenticated NETINFO Cells to Discover Relay IP Addresses](https://gitweb.torproject.org/torspec.git/tree/proposals/312-relay-auto-ipv6-addr.txt#n785).
+* [Chutney tests for IPv6-only bridge clients](https://trac.torproject.org/projects/tor/ticket/20068).
+* [IPv6 Exits succeed on Travis Linux, but Travis Linux doesn't support IPv6](https://trac.torproject.org/projects/tor/ticket/30182).
+
+### Stretch Goals
+
+* [Close Existing Connections Before Testing Reachability](https://gitweb.torproject.org/torspec.git/tree/proposals/311-relay-ipv6-reachability.txt#n465).
+* [Use Add IPv6 DNS Support via the Libevent DNS API](https://gitweb.torproject.org/torspec.git/tree/proposals/312-relay-auto-ipv6-addr.txt#n1189). 
+* [Discovered Addresses as the Default OutboundBindAddress](https://gitweb.torproject.org/torspec.git/tree/proposals/312-relay-auto-ipv6-addr.txt#n1256).
+* [Make chutney check for relay microdescriptors before verifying](https://trac.torproject.org/projects/tor/ticket/33428).
+* [chutney doesn't verify using IPv6 addresses](https://trac.torproject.org/projects/tor/ticket/17011).
+
 ## Links/Resources
 
 ### Technical Proposals
