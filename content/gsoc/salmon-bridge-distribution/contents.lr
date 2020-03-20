@@ -56,7 +56,9 @@ Our goal is to distribute bridges to users in censored regions when they need th
 
 - Original Paper: [Salmon: Robust Proxy Distribution for Censorship Circumvention](https://petsymposium.org/2016/files/papers/Salmon__Robust_Proxy_Distribution_for_Censorship_Circumvention.pdf)
 - [Design of a blocking-resistant anonymity system](https://svn-archive.torproject.org/svn/projects/design-paper/blocking.html)
-- [Nymble: Blocking Misbehaving Users in Anonymizing Networks](https://www.freehaven.net/anonbib/#proximax11)
+- [Enemy At the Gateways: Censorship-Resilient Proxy Distribution Using Game Theory](https://people.cs.umass.edu/~amir/papers/TorGame.pdf)
+- [rBridge: User Reputation based Tor Bridge Distribution with Privacy Preservation](https://www-users.cs.umn.edu/~hoppernj/rbridge_ndss13.pdf)
+- [HYPHAE: Social Secret Sharing](https://patternsinthevoid.net/hyphae/hyphae.pdf)
 
 ## Blog posts
 - [Strategies for getting more bridge addresses](https://blog.torproject.org/strategies-getting-more-bridge-addresses)
