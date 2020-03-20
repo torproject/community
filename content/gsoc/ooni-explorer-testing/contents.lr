@@ -1,0 +1,53 @@
+_model: project
+---
+_template: layout.html
+---
+html: two-columns-page.html
+---
+active: True
+---
+section: GSoC
+---
+section_id: gsoc
+---
+color: primary
+---
+key: 4
+---
+languages: React
+---
+org: OONI
+---
+mentors:
+Sarath
+Arturo Filastò
+---
+difficulty: Medium
+---
+title: OONI Explorer: Improvements to testing
+---
+subtitle:
+
+OONI Explorer is an open data resource on internet censorship around the world. This project is about making improvements to the end to end tests of OONI Explorer.
+---
+body:
+
+# Background
+
+OONI Explorer is an open data resource on internet censorship around the world. This project is about making improvements to the end to end tests of OONI Explorer.
+
+# Proposal
+
+Currently, we only have a very basic set of end-to-end tests inside of OONI Explorer, which have been developed using the Cypress end-to-end testing tool. See: https://github.com/ooni/explorer/tree/master/cypress
+
+As part of this project, the student will work together with the OONI team to define a list of actions and operations that we would like to automate and test. Based on this, they will write end-to-end integration tests using Cypress.
+
+Currently, OONI Explorer does not have any unit tests. The student is therefore encouraged to explore and look into adding unit testing to the Explorer components.
+
+Moreover, the student is encouraged to research other ways to improve the quality and testing coverage of the OONI Explorer application, such as visual testing tools like percy: https://percy.io/
+
+# Resources
+
+- OONI Explorer repo on github: https://github.com/ooni/explorer
+- OONI Explorer issues github: https://github.com/ooni/explorer/issues
+

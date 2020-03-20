@@ -1,0 +1,78 @@
+_model: project
+---
+_template: layout.html
+---
+html: two-columns-page.html
+---
+active: True
+---
+section: GSoC
+---
+section_id: gsoc
+---
+color: primary
+---
+key: 4
+---
+languages: React
+---
+org: OONI
+---
+mentors:
+Sarath
+Federico Ceratto
+Arturo Filastò
+---
+difficulty: Medium
+---
+title: OONI Explorer findings: Improvements related to social media sharing
+---
+subtitle:
+
+OONI Explorer is an open data resource on internet censorship around the world.
+OONI Probe is the software used to collect network measurements which are then
+shown on OONI Explorer.  This project is about making improvements to how
+findings from OONI Probe tests are displayed on OONI Explorer when shared on
+social media.
+
+---
+body:
+
+# Background
+
+OONI Explorer is an open data resource on internet censorship around the world.
+OONI Probe is the software used to collect network measurements which are then
+shown on OONI Explorer.  This project is about making improvements to how
+findings from OONI Probe tests are displayed on OONI Explorer when shared on
+social media.
+
+# Proposal
+
+Currently, when an OONI Probe user wants to share their network measurement findings from their mobile app, the only option they have is to take screenshots and to share them on social media.
+
+As part of this activity, the student is asked to improve how OONI measurements are displayed when they are shared on social media.
+
+This includes:
+* Setting the appropriate meta tags to measurement page headers: https://github.com/ooni/explorer/issues/202
+* Generating a screenshot preview to display on the various social media platforms
+* Validating that the measurements are displayed well
+* Improving the indexing of OONI Explorer by search engines: https://github.com/ooni/ooni.org/issues/328
+* Adding some Call to Action functionality to encourage users to install OONI Probe
+
+Moreover, the student is encouraged to explore other ways through which OONI
+Probe users may be interested in sharing findings (such as a measurement result
+set) and how these can be presented in OONI Explorer and embedded in social
+media.
+
+Other relevant github issues include:
+
+Add support for native sharing capability in OONI Probe
+https://github.com/ooni/probe/issues/1070
+
+Easier exploration of reports by a specific probe
+https://github.com/ooni/explorer/issues/344
+
+# Resources
+
+- OONI Explorer repo on github: https://github.com/ooni/explorer
+- OONI Explorer issues github: https://github.com/ooni/explorer/issues
