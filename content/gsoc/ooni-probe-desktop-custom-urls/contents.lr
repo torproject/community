@@ -1,0 +1,72 @@
+_model: project
+---
+_template: layout.html
+---
+html: two-columns-page.html
+---
+active: True
+---
+section: GSoC
+---
+section_id: gsoc
+---
+color: primary
+---
+key: 4
+---
+languages: React
+---
+org: OONI
+---
+mentors:
+Sarath
+Arturo Filastò
+---
+difficulty: Medium
+---
+title: OONI Probe Desktop support for OONI Run and custom URLs
+---
+subtitle:
+
+OONI Probe Desktop is the next generation electron desktop client for running
+OONI tests on windows, macOS and Linux. This project is about adding
+capabilities related to custom URL testing.
+
+---
+body:
+
+# Background
+
+OONI Probe Desktop is the next generation electron desktop client for running
+OONI tests on windows, macOS and Linux. This project is about adding
+capabilities related to custom URL testing.
+
+# Proposal
+
+Currently the OONI Probe Desktop app does not support specifying a custom URL
+for testing.
+
+As part of this project, the student will add UI support for specifying a
+custom URL inside of the OONI Probe desktop app. See:
+https://github.com/ooni/probe/issues/936
+
+The student will also look into adding support for the handling of OONI Run
+links on desktop as well. This will involve creating a deep link handler on
+desktop to trigger OONI Run links in OONI Probe desktop too. See:
+https://github.com/ooni/probe/issues/1071
+
+The OONI Probe Desktop app is an electron based desktop app, and the source
+code is available here: https://github.com/ooni/probe-desktop
+
+Issues for OONI Probe Desktop are tracked here:
+https://github.com/ooni/probe/issues?q=is%3Aopen+is%3Aissue+label%3Aooni%2Fprobe-desktop
+
+Under the hood, the OONI Probe desktop app is controlling a golang-based
+command line interface, called probe-cli: https://github.com/ooni/probe-cli
+
+# Resources
+
+- OONI Probe Desktop repo on github: https://github.com/ooni/probe-desktop
+- OONI Probe CLI repo on github: https://github.com/ooni/probe-cli
+- OONI Probe Desktop issues on github: https://github.com/ooni/probe/issues?q=is%3Aopen+is%3Aissue+label%3Aooni%2Fprobe-desktop
+
