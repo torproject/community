@@ -15,6 +15,7 @@ color: primary
 key: 8
 ---
 languages: 
+Python
 ---
 org: Tor
 ---
@@ -41,8 +42,29 @@ Bridges are Tor relays that are not publicly listed and therefore allow access t
 
 Our goal is to distribute bridges to users in censored regions when they need them, while also limiting the amount of bridge information that is leaked to censors. This project entails implementing Salmon, a bridge distribution mechanism that partitions and distributes bridges using reputation to give well-behaved users access to "better" bridges and add a penalty when their bridges get censored.
 
+# Getting started
+
+1. Read the blog posts to get an introduction to the problem space.
+1. Play around with [bridgedb](https://bridges.torproject.org/) to request a bridge and try understand how it works.
+1. Checkout the existing [code](#Code-repos).
+1. Read the [papers](#academic-papers) listed under [Resources](#Resources).
+1. Join the [next anti-censorship team meeting](https://trac.torproject.org/projects/tor/wiki/org/teams/AntiCensorshipTeam#IRCmeetingsschedule) to discuss your findings and ask any questions.
+
 # Resources
 
-- Original Paper: [Salmon: Robust Proxy Distribution for
-Censorship Circumvention](https://petsymposium.org/2016/files/papers/Salmon__Robust_Proxy_Distribution_for_Censorship_Circumvention.pdf)
+## Academic papers
+
+- Original Paper: [Salmon: Robust Proxy Distribution for Censorship Circumvention](https://petsymposium.org/2016/files/papers/Salmon__Robust_Proxy_Distribution_for_Censorship_Circumvention.pdf)
+- [Design of a blocking-resistant anonymity system](https://svn-archive.torproject.org/svn/projects/design-paper/blocking.html)
+- [Nymble: Blocking Misbehaving Users in Anonymizing Networks](https://www.freehaven.net/anonbib/#proximax11)
+
+## Blog posts
+- [Strategies for getting more bridge addresses](https://blog.torproject.org/strategies-getting-more-bridge-addresses)
+- [Ten ways to discover Tor bridges](https://blog.torproject.org/research-problems-ten-ways-discover-tor-bridges)
+- [Five ways to test bridge reachability](https://blog.torproject.org/research-problem-five-ways-test-bridge-reachability)
+- [The Next Chapter in Anti-Censorship](https://blog.torproject.org/next-chapter-anti-censorship)
+
+## Code repos
+
 - Salmon Project on github: https://github.com/SalmonProject
+- BridgeDB Source code: https://gitweb.torproject.org/bridgedb.git
