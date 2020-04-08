@@ -1,0 +1,17 @@
+_model: table
+---
+_hidden: yes
+---
+title: Poland
+---
+body:
+| **Company/ISP** | **ASN** | **Bridges** | **Relay** | **Exit** | **Comments** | **Last Updated** |
+|-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
+| [Hitme.net.pl](http://hitme.net.pl/) | - | Yes | Yes | Yes | - | 12/06/2017 |
+| [Hostowisko.pl](http://www.hostowisko.pl/) | - | Yes | Yes | ? | -  | 27/08/2013 |
+| [Exone](http://www.exone.pl/) | - | Yes | Yes | ? | - | 28/08/2013 |
+| [e24cloud](http://www.e24cloud.com/en) | - | Yes | Yes | ? | - | 01/10/2013 |
+| [hostinger.pl](http://www.hostinger.pl) | - | Yes | Yes | Yes | | 02/10/2013 |
+| [statnet.pl](http://www.statnet.pl/) | - | No | No | No | Used to allow Tor-relays, but now is blocking Tor activity | 12/06/2017 |
+| [IQ PL](http://www.iq.pl/) | - | Yes | Yes | Yes | They allow running exit node on collocated dedicated server |  - |
+| [Slask DataCenter](https://sldc.eu/) | - | Yes | Yes | Yes | - | 21/02/2018 |

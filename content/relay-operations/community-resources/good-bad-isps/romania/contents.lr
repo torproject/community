@@ -1,0 +1,13 @@
+_model: table
+---
+_hidden: yes
+---
+title: Romania
+---
+body:
+| **Company/ISP** | **ASN** | **Bridges** | **Relay** | **Exit** | **Comments** | **Last Updated** |
+|-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
+| [m247.ro](https://www.m247.ro/) | - | Yes | Yes | Yes | -  | 12/14/15 |
+| [Voxility](http://www.voxility.com/) | - | Yes | Yes | ? | Read more [2015 tor-talk thread](https://lists.torproject.org/pipermail/tor-relays/2015-April/006867.html%7CApril)  | 04/2015 |
+| [JavaPipe](https://javapipe.com/) | - | Yes | Yes | ? | - | 04/2016 |
+| [MilesWeb](https://www.milesweb.com/) | - | Yes | Yes | No | Plans in Romania and also have data centers in USA and UK with 24x7 free support. | 03/2017 |

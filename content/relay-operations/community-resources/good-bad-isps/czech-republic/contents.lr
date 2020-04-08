@@ -1,0 +1,10 @@
+_model: table
+---
+_hidden: yes
+---
+title: Czech Republic
+---
+body:
+| **Company/ISP** | **ASN** | **Bridges** | **Relay** | **Exit** | **Comments** | **Last Updated** |
+|-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
+| [T-Systems`](http://www.t-systems.cz/) | - | Yes | Yes | ? | - | - |

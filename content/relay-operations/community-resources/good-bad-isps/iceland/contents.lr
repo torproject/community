@@ -1,0 +1,12 @@
+_model: table
+---
+_hidden: yes
+---
+title: Iceland
+---
+body:
+| **Company/ISP** | **ASN** | **Bridges** | **Relay** | **Exit** | **Comments** | **Last Updated** |
+|-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
+| [1984Hosting](https://1984hosting.com/) | - | Yes | Yes | Yes | - | - |
+| [FlokiNET](https://flokinet.is/) | (AS200651) | Yes | Yes | Yes | Sponsor enn.lu and saveyourprivacy exit nodes | - |
+| [orangewebsite](https://www.orangewebsite.com/vps.php) | - | Yes | Yes | Yes? | - | - |

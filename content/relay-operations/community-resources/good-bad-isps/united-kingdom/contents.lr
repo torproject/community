@@ -1,0 +1,13 @@
+_model: table
+---
+_hidden: yes
+---
+title: United Kingdom
+---
+body:
+| **Company/ISP** | **ASN** | **Bridges** | **Relay** | **Exit** | **Comments** | **Last Updated** |
+|-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
+| [Gigatux](https://www.gigatux.com) | - | Yes | Yes | Yes |  They actually run their own relay named Gigatux.  They also offer servers in the US, Germany, and Israel. | - |
+| [Clustered.net](http://www.clustered.net) | - | Yes | Yes | Yes | - | - |
+| [Bitfolk](http://bitfolk.com/) | - | Yes | Yes | Yes | They are very knowledgable and understand Tor and its uses. They are hot on spam and abuse so advise changing the default exit (good idea in the UK anyhow). Any DMCA notices received were simply forwarded on without agro | - |
+| [RapidSwitch](http://rapidswitch.com/) | - | Yes | Yes | ? | - | 07/2014 |

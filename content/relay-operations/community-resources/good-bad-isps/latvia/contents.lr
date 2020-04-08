@@ -1,0 +1,10 @@
+_model: table
+---
+_hidden: yes
+---
+title: Latvia
+---
+body:
+| **Company/ISP** | **ASN** | **Bridges** | **Relay** | **Exit** | **Comments** | **Last Updated** |
+|-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
+| [Yourserver](https://www.yourserver.se/) | - | Yes | Yes | ? | Support team will allow relay/exit but TOR Traffic is throttled to 5Mbps speed. If your Exit relay receive too much complaints, they will ask to you to stop or otherwise they will suspend. | 2015/03/06 |

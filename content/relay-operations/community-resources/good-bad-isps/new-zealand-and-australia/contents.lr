@@ -1,0 +1,11 @@
+_model: table
+---
+_hidden: yes
+---
+title: New Zealand and Australia
+---
+body:
+| **Company/ISP** | **ASN** | **Bridges** | **Relay** | **Exit** | **Comments** | **Last Updated** |
+|-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
+| [HostHatch](https://hosthatch.com/) | AS36351 | Yes | Yes | No | Their VPS location is: Sydney, AU - Equinix IBX SY3 Data Center.Their ISP is:SoftLayer network, which includes primary transit from Telstra and peering with Equinix, Pipe-IX, NSW-IX and Megaport. | - |
+| [Rimu hosting](http://rimuhosting.com) | - | Yes | Yes | Yes | Have servers in N.Z.; Sydney; London; and Dallas. Locations may vary, but quite happy with the specific Oz/NZ query. | - |

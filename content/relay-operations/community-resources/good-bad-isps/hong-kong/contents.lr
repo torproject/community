@@ -1,0 +1,10 @@
+_model: table
+---
+_hidden: yes
+---
+title: Hong Kong
+---
+body:
+| **Company/ISP** | **ASN** | **Bridges** | **Relay** | **Exit** | **Comments** | **Last Updated** |
+|-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
+| [hosthatch](https://hosthatch.com/) | AS36351 | Yes | Yes | No | Their Hong Kong VPS type is OpenVZ,and ISP is SoftLayer. VPS locate in Pacnet's data centers, Hong Kong. | - | 05/01/16 |

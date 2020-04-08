@@ -1,0 +1,11 @@
+_model: table
+---
+_hidden: yes
+---
+title: Ukraine
+---
+body:
+| **Company/ISP** | **ASN** | **Bridges** | **Relay** | **Exit** | **Comments** | **Last Updated** |
+|-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
+| [UrDN](http://urdn.com.ua) | - | Yes | Yes | Yes | free speech hoster, allows anything but spam/scam. Abuse always forwarded. | 10/08/2015 |
+| [Colocall](http://www.colocall.net/) | - | Yes | Yes | Yes | - | - |

@@ -1,0 +1,6 @@
+{% macro render_table(item) %}
+  <h3 id="{{ item._id }}">
+    <a href="#{{ item._id }}">{{ item.title }}</a>
+  </h3>
+  {{ item.body }}
+{% endmacro %}

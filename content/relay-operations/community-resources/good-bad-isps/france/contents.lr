@@ -1,0 +1,14 @@
+_model: table
+---
+_hidden: yes
+---
+title: France
+---
+body:
+| **Company/ISP** | **ASN** | **Bridges** | **Relay** | **Exit** | **Comments** | **Last Updated** |
+|-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
+| [Online.net](http://www.online.net/) | AS12876 | Yes | Yes | Yes | The account holder is responsible for all the traffic going through theirs servers.| 01/28/2019 |
+| [Gandi VPS](https://www.gandi.net/) | - | Yes | Yes | Yes| Gandi send some abuse complaints to Exit relays, but they do not stop the server, and when you tell them your server is a Tor Exit relay, they say it is OK. They ask Exit relays to use the standard Reduced Exit Policy | - |
+| [OVH Kimsufi](http://www.kimsufi.com/) | - | Yes | Yes | No | Changed their TOS in July 2013 and allow Tor as long as they don't notice illegal activities. Exit nodes would eventually be shut down, but relays are allowed. Octave Klaba, CEO of OVH said himself that the TOS have been changed to make them clearer about the use of Tor. Many relays are currently running on Kimsufi servers | - |
+| [Digicube](http://www.digicube.fr/) | - | Yes | Yes | Yes | - | - |
+| [Pulse Servers](http://www.pulseservers.com/) | - | Yes | Yes | Yes | VPS uses OVH AS. You can build ANY kind tor relays. | 05/01/2016 |
