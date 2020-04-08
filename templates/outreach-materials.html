@@ -10,6 +10,7 @@
               <th scope="col">Title</th>
               <th scope="col">Type</th>
               <th scope="col">Links</th>
+              <th scope="col">Last Updated</th>
             </tr>
           </thead>
           <tbody>
@@ -24,6 +25,7 @@
                   <a href="{{item.location}}{{item.filename}}">File</a>
                 {% endif %}
               </td>
+              <td>{{ item.year }}</td>
             </tr>
           {% endfor %}
           </tbody>
