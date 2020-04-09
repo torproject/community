@@ -26,7 +26,7 @@ Of course, you need to understand that without actual clear precedent (and even 
 In any case, the key here is to become familiar with the laws and their implications and uncertainties.
 
  * Third, learn about Tor's design.
-Read the [design overview](https://2019.www.torproject.org/overview.html), the [design paper](https://www.torproject.org/svn/trunk/doc/design-paper/tor-design.html), and the [FAQ](https://2019.www.torproject.org/docs/faq.html.en).
+Read the [design overview](https://2019.www.torproject.org/overview.html), the [design paper](https://svn-archive.torproject.org/svn/projects/design-paper/tor-design.pdf), and the [FAQ](https://2019.www.torproject.org/docs/faq.html.en).
 Hang out on IRC ([irc.oftc.net](https://www.oftc.net) - #tor-relays) for a while and learn more.
 If possible, attend a talk by one of the Tor developers.
 Learn about the types of people and organizations who need secure communications on the Internet.

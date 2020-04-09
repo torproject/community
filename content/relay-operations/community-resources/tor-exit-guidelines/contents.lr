@@ -27,7 +27,7 @@ A good ISP is one that offers cheap bandwidth and is not being used by other mem
 Before you continue, you may ask the Tor community if your choice is a good one.
 We very much need diversity, and it does not help if we pool too many exits at one friendly ISP.
 
-In any case, add the ISP to the [GoodBadISPs](good-bad-isps) page.
+In any case, add the ISP to the [GoodBadISPs](/relay/community-resources/good-bad-isps/) page.
 
 To find an ISP, go through forums and sites where ISPs posts their latest deals, and contact them about Tor hosting.
 Once you identified your ISP, you can follow the two-step advice of TorServers.net.
@@ -77,7 +77,7 @@ If you receive an abuse complaint, don't freak out! Here is some advice for you:
 
 TorServers.net is a fairly large Tor exit operator and we receive only a very small number of complaints, especially compared to the amount of traffic we push. Roughly 80% are automated reports, and the rest is usually satisfied with [our default reply](https://www.torservers.net/wiki/abuse/templates). We have not needed the input of a lawyer in many years of operation following the advice on this page.
 
-In addition to the [templates at Torservers.net](https://www.torservers.net/wiki/abuse/templates), you can find many more templates for various scenarios on the [Tor Abuse Templates](tor-abuse-templates) . It is exceptionally rare to encounter a scenario where none of these templates apply.
+In addition to the [templates at Torservers.net](https://www.torservers.net/wiki/abuse/templates), you can find many more templates for various scenarios on the [Tor Abuse Templates](/relay/community-resources/tor-abuse-templates/) . It is exceptionally rare to encounter a scenario where none of these templates apply.
 
 ### If you receive a threatening letter from a lawyer about abusive use or a DMCA complaint, also don't freak out.
 
