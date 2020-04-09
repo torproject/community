@@ -16,22 +16,22 @@ To install `tor` package on CentOS/RHEL, you need to install the [EPEL](https://
 
 `yum install epel-release`
 
-# 3. Install the tor package and verify the EPEL signing key
+# 3. Install the `tor` package and verify the EPEL signing key
 
 `yum install tor`
 
 When you install the first package from the EPEL repository you will be asked about verifying the EPEL GPG signing key. Please ensure the key matches with the one available on the [Fedora Project website](https://getfedora.org/keys/).
 
-# 4. Put the tor configuration file `/etc/tor/torrc` in place
+# 4. Configure `/etc/tor/torrc`
+
+This is a very simple version of the `torrc` configuration file in order to run a Middle/Guard relay on the Tor network:
 
 ```
-#change the nickname "myNiceRelay" to a name that you like
-Nickname myNiceRelay
-ORPort 9001
-SocksPort 0
-ExitRelay 0
-# Change the email address bellow and be aware that it will be published
-ContactInfo tor-operator@your-emailaddress-domain
+Nickname    myNiceRelay   # Change the nickname "myNiceRelay" to a name that you like
+ORPort      9001
+SocksPort   0
+ExitRelay   0
+ContactInfo your@email    # Please write your email address and be aware that it will be published
 ```
 
 # 5. Enable and start your Tor relay

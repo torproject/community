@@ -10,22 +10,22 @@ body:
 
 One of the most imported things to keeps your relay secure is to install security updates timely and ideally automatically so you can not forget about it. Follow the instructions to enable [automatic software updates](updates) for your operating system.
 
-# 2.  Install the tor package
+# 2.  Install the `tor` package
 
 `dnf install tor`
 
-# 3. Put the tor configuration file `/etc/tor/torrc` in place
+# 3. Configure `/etc/tor/torrc` 
+
+This is a very simple version of the `torrc` configuration file in order to run a Middle/Guard relay on the Tor network:
 
 ```
-#change the nickname "myNiceRelay" to a name that you like
-Nickname myNiceRelay
-ORPort 9001
-ExitRelay 0
-# Change the email address bellow and be aware that it will be published
-ContactInfo tor-operator@your-emailaddress-domain
+Nickname    myNiceRelay   # Change the nickname "myNiceRelay" to a name that you like
+ORPort      9001
+ExitRelay   0
+ContactInfo your@email    # Please write your email address and be aware that it will be published
 ```
 
-# 4. Start the tor daemon and make sure it starts at boot
+# 4. Start the `tor` daemon and make sure it starts at boot
 
 ```
 systemctl enable tor
