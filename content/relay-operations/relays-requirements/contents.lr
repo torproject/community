@@ -27,7 +27,7 @@ Fast exit relays (>=100 Mbit/s) usually have to handle a lot more concurrent con
 
 It is recommended that a relay have at least 16 Mbit/s (Mbps) upload bandwidth and 16 Mbit/s (Mbps) download bandwidth available for Tor. More is better.
 The minimum requirements for a relay are 10 Mbit/s (Mbps).
-If you have less than 10 Mbit/s but at least 1 Mbit/s we recommend you run a [bridge with obfs4 support](relay/setup/bridge).
+If you have less than 10 Mbit/s but at least 1 Mbit/s we recommend you run a [bridge with obfs4 support](/relay/setup/bridge/).
 If you do not know your bandwidth you can use http://beta.speedtest.net to measure it.
 
 # Monthly Outbound Traffic
