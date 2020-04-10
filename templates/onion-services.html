@@ -51,6 +51,23 @@
       </div>
     {% endfor %}
   </div>
+  <div class="row py-5 text-center mx-auto">
+    <h2 class="display-4 text-primary text-center mx-auto">{{ _('Tools') }}</h2>
+  </div>
+  <div class="row mx-auto d-flex flex-wrap align-items-center">
+    {% for id, item in bag('onion-tools').items() %}
+    {% if item.active == "True" %}
+      <div class="col-4">
+        <div class="card h-50 border-0">
+          <a href="{{ item.link }}"><img class="card-img-top h-100 w-50 mx-auto d-block" src="{{ item.image|asseturl }}"></a>
+          <div class="card-body">
+            <p class="card-text text-primary text-center"><a href="{{ item.link }}">{{ item.label }}</a></p>
+          </div>
+        </div>
+      </div>
+      {% endif %}
+    {% endfor %}
+  </div>
     <div class="row py-5 text-center mx-auto">
     <h2 class="display-4 text-primary text-center mx-auto my-3">{{ _('Learn More') }}</h2>
     <p class="text-center">
