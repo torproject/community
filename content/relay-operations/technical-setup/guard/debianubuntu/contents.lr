@@ -8,7 +8,7 @@ body:
 
 # 1. Enable Automatic Software Updates
 
-One of the most imported things to keeps your relay secure is to install security updates timely and ideally automatically so you can not forget about it. Follow the instructions to enable [automatic software updates](updates) for your operating system.
+One of the most important things to keeps your relay secure is to install security updates timely and ideally automatically so you can not forget about it. Follow the instructions to enable [automatic software updates](updates) for your operating system.
 
 # 2. Configure Tor Package Repository
 
@@ -31,7 +31,7 @@ ORPort 443
 ExitRelay 0
 SocksPort 0
 ControlSocket 0
-# Change the email address bellow and be aware that it will be published
+# Change the email address below and be aware that it will be published
 ContactInfo tor-operator@your-emailaddress-domain
 ```
 
