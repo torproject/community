@@ -41,7 +41,7 @@ However, if you need help with anything Tor-related, please contact the [help de
 
 After a relay is reported and we've verified the behavior we'll attempt to contact the relay operator. Often we can sort things out but if not (or the relay lacks contact information) we'll flag it to prevent it from continuing to be used.
 
-We have thee types of flags we can apply:
+We have three types of flags we can apply:
 
  * BadExit - Never used as an exit relay (for relays that appear to mess with exit traffic)
  * Invalid - Never used unless AllowInvalidNodes is set (by default this only allows for middle and rendezvous usage)
