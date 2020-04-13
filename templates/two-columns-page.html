@@ -4,7 +4,9 @@
 <div class="row">
   {% include 'sidenav.html' %}
   <div class="col-sm-12 col-xs-12 col-md-8 col-lg-8 pt-3 mr-auto {{ bag('alternatives', this.alt, 'order') }}">
-    {{ this.body }}
+    <div class="col-10">
+      {{ this.body }}
+    </div>
     <div class="row">
     {% for child in this.children|sort(attribute='key') %}
         <div class="col-sm-6 col-md-6 col-sm-12 col-xl-6 py-3">
@@ -26,7 +28,7 @@
       <ul class="list-group list-group-flush">
         <!--li class="list-group-item"><a><span class="card-text text-muted">{{ _("Contributors to this page:") }} <a href="#" title="#">cypherpunk</a></span></li-->
         <li class="list-group-item">
-                <a href="{{ this.parent|url }}">{{ _("Back to previous page: ") }}{{ this.parent.title }}</a> - <a href="https://github.com/torproject/community/edit/master/content{{ this.path }}/contents.lr">{{ _("Edit this page") }}</a>
+          <a href="{{ this.parent|url }}">{{ _("Back to previous page: ") }}{{ this.parent.title }}</a> - <a href="https://github.com/torproject/community/edit/master/content{{ this.path }}/contents.lr">{{ _("Edit this page") }}</a>
         </li>
       </ul>
     </div>
