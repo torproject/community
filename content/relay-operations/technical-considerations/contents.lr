@@ -2,6 +2,8 @@ _model: page
 ---
 title: Technical considerations
 ---
+color: primary
+---
 _template: layout.html
 ---
 body:
