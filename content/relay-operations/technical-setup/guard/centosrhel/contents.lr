@@ -16,7 +16,17 @@ To install `tor` package on CentOS/RHEL, you need to install the [EPEL](https://
 
 `yum install epel-release`
 
-# 3. Install the tor package and verify the EPEL signing key
+# 3. Add the following to /etc/yum.repos.d/tor.repo and then install the tor package.
+
+```
+[tor]
+name=Tor for Enterprise Linux $releasever - $basearch
+baseurl=https://rpm.torproject.org/centos/$releasever/$basearch
+enabled=1
+gpgcheck=1
+gpgkey=https://rpm.torproject.org/centos/public_gpg.key
+cost=100
+```
 
 `yum install tor`
 

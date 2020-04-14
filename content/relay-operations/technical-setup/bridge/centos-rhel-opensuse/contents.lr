@@ -11,7 +11,23 @@ body:
 * CentOS / RHEL:
 
 ```
-yum install epel-release
+yum install epel-release -y
+```
+
+Then add the following to the `/etc/yum.repos.d/tor.repo` file.
+
+```
+[tor]
+name=Tor for Enterprise Linux $releasever - $basearch
+baseurl=https://rpm.torproject.org/centos/$releasever/$basearch
+enabled=1
+gpgcheck=1
+gpgkey=https://rpm.torproject.org/centos/public_gpg.key
+cost=100
+```
+And then install the following packages.
+
+```
 yum install git golang tor policycoreutils-python-utils
 ```
 
