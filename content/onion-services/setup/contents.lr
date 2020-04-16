@@ -81,7 +81,7 @@ The above guide is just a baseline to setup an onion service.
 In this section we will offer more resources to better configure and protect your onion service:
 
 - Best practices for onion services
-https://riseup.net/el/security/network-security/tor/onionservices-best-practices
+https://riseup.net/en/security/network-security/tor/onionservices-best-practices
 - More advanced tips for onion services
 https://2019.www.torproject.org/docs/tor-onion-service.html.en#three
 - Advanced onion service security
