@@ -19,7 +19,11 @@ Got a DMCA notice? Check out our [sample response letter](/relay/community-resou
 
 ### Has anyone ever been sued or prosecuted for running Tor?
 
-**No**, we aren't aware of anyone being sued or prosecuted in the United States just for running a Tor relay. Further, we believe that running a Tor relay  including an exit relay that allows people to anonymously send and receive traffic - is legal under U.S. law.
+**Although we are not aware of an individual being sued, prosecuted, or convicted for running a Tor relay**, law enforcement in the United States and other countries has occasionally mistakenly investigated individuals running a Tor relay.
+We believe that running a Tor relay, including an exit relay that allows people to anonymously send and receive traffic, is legal under U.S. law. Law enforcement, however, [often misunderstands](https://www.eff.org/wp/unreliable-informants-ip-addresses-digital-tips-and-police-raids) how Tor works and has occasionally attributed illegal traffic on the network as originating from a Tor exit relay.
+This has resulted in police suspecting Tor relay operators of crimes and sometimes [seizing computer](https://www.eff.org/deeplinks/2011/08/why-ip-addresses-alone-dont-identify-criminals) equipment, including Tor relays.
+For example, in 2016 Seattle police [mistakenly raided](https://web.archive.org/web/20191210114929/https://www.thestranger.com/slog/2016/04/08/23914735/judge-who-authorized-police-search-of-seattle-privacy-activists-wasnt-told-they-operate-tor-network/) the home of a privacy activist operating a Tor exit relay.
+And Russian authorities wrongfully arrested math instructor and Tor relay operator [Dmitry Bogatov](https://www.eff.org/deeplinks/2017/04/access-now-and-eff-condemn-arrest-tor-node-operator-dmitry-bogatov-russia), though they later cleared him of [charges](https://web.archive.org/web/20190617062802/https://tass.com/society/986636).
 
 ### Should I use Tor or encourage the use of Tor for illegal purposes?
 
@@ -33,10 +37,24 @@ However, EFF believes so strongly that those running Tor relays shouldn't be lia
 
 ### Will EFF represent me if I get in trouble for running a Tor relay?
 
-**Maybe**. While EFF cannot promise legal representation for all Tor relay operators, it will assist relay operators in assessing the situation and will try to locate qualified legal counsel when necessary.
+**Maybe**. While EFF cannot promise legal representation for all Tor relay operators, it [will assist relay operators](https://www.eff.org/pages/legal-assistance) in assessing the situation and will try to locate qualified legal counsel when necessary.
 Inquiries to EFF for the purpose of securing legal representation or referrals should be directed to our intake coordinator by sending an email to info at eff.org.
 Such inquiries will be kept confidential subject to the limits of the attorney/client privilege.
 Note that although EFF cannot practice law outside of the United States, it will still try to assist non-U.S. relay operators in finding local representation.
+
+### How should I deal with a police visit/raid/interrogation?
+
+If you are detained and questioned by police, you have a right to request to speak with an attorney before and during any questioning.
+It is best to say "I want my attorney and I choose to remain silent" and then refuse questioning until you have a chance to talk to a lawyer.
+
+However, if you do decide to waive your right to the assistance of counsel and answer questions without an attorney present, be sure to tell the truth.
+Lying to law enforcement may lead to more trouble than for whatever it was they wanted to talk to you about in the first place.
+
+### Does U.S. law provide any protections for the Tor network against civil lawsuits?
+
+**Yes.** A federal law, 47 U.S.C. § 230 (often called Section 230), provides legal immunity for online intermediaries that host or republish speech.
+Though there are important exceptions for certain criminal and intellectual property-based claims, Section 230’s immunity protects online services, such as the Tor network, against a range of laws that might otherwise be used to hold them legally responsible for what others say and do.
+Another federal law, 17 U.S.C. § 512(a), part of the Digital Millennium Copyright Act, provides a legal safe harbor against copyright infringement claims based on material that is simply transmitted without modification, as a Tor relay does.
 
 ### Should I contact the Tor developers when I have legal questions about Tor or to inform them if I suspect Tor is being used for illegal purposes?
 
@@ -53,8 +71,10 @@ Tor's core developers further reserve the right to refuse a Tor relay operator's
 ## Exit Relays
 
 Exit relays raise special concerns because the traffic that exits from them can be traced back to the relay's IP address.
-While we believe that running an exit relay is legal, it is statistically likely that an exit relay will at some point be used for illegal purposes, which may attract the attention of private litigants or law enforcement.
+While we believe that running an exit relay is legal, it is practically impossible to stop the use of an exit relay for illegal activity.
+That may attract the attention of private litigants or law enforcement.
 An exit relay may forward traffic that is considered unlawful, and that traffic may be attributed to the operator of a relay.
+Indeed, police have mistakenly attributed traffic from an exit relay as coming from the relay’s operator.
 If you are not willing to deal with that risk, a bridge or middle relay may be a better fit for you.
 These relays do not directly forward traffic to the Internet and so can't be easily mistaken for the origin of allegedly unlawful content.
 
@@ -62,11 +82,15 @@ The Tor Project's blog has some excellent [recommendations](https://blog.torproj
 
 ### Should I run an exit relay from my home?
 
-**No**. If law enforcement becomes interested in traffic from your exit relay, it's possible that officers will seize your computer. For that reason, it's best not to run your exit relay in your home or using your home Internet connection.
+**No**, this is risky and not recommended. 
+If law enforcement becomes interested in traffic from your exit relay, it's possible that officers will mistakenly attribute that traffic as originating from your home.
+This could result in law enforcement raiding your home, seizing your computer, and suspecting you of criminal activity. 
+For that reason, it's best not to run your exit relay in your home or using your home Internet connection.
 
-Instead, consider running your exit relay in a commercial facility that is supportive of Tor. Have a separate IP address for your exit relay, and don't route your own traffic through it.
+Given those risks, you should instead consider running your exit relay in a commercial facility that is supportive of Tor. Have a separate IP address for your exit relay, and don't route your own traffic through it.
 
 Of course, you should avoid keeping any sensitive or personal information on the computer hosting your exit relay, and you never should use that machine for any illegal purpose.
+If you do decide to run an exit relay from your home despite these risks, please review Tor’s recommendations, including telling your ISP and obtaining a separate IP address for the exit relay.
 
 ### Should I tell my ISP that I'm running an exit relay?
 
@@ -97,13 +121,13 @@ Do not examine anyone's communications without first talking to a lawyer.
 
 **Educate them about Tor**. In most instances, properly configured Tor relays will have no useful data for inquiring parties, and you should feel free to educate them on this point.
 To the extent you do maintain logs, however, you should not disclose them to any third party without first consulting a lawyer.
-In the United States, such a disclosure may violate the Electronic Communications Privacy Act, and relay operators outside of the United States may be subject to similar data protection laws.
+In the United States, the data may be protected by the Electronic Communications Privacy Act, and relay operators outside of the United States may be subject to similar data protection laws.
 
 You may receive legal inquiries where you are prohibited by law from telling anyone about the request. We believe that, at least in the United States, such gag orders do not prevent you from talking to a lawyer, including calling a lawyer to find representation.
 Inquiries to EFF for the purpose of securing legal representation should be directed to our intake coordinator (info at eff.org).
 Such inquiries will be kept confidential subject to the limits of the attorney/client privilege.
 
-For more information about responding to abuse complaints and other inquiries, check out the [Tor Abuse FAQ](https://2019.www.torproject.org/docs/faq-abuse.html.en) and the collection of [abuse response templates](/relay/community-resources/tor-abuse-templates/) on the Tor Project's website.
+For more information about responding to abuse complaints and other inquiries, check out the [Tor Abuse FAQ](https://support.torproject.org/abuse) and the collection of [abuse response templates](/relay/community-resources/tor-abuse-templates/) on the Tor Project's website.
 
 For information on what to do if law enforcement seeks access to your digital devices, check out EFF's [Know Your Rights](https://www.eff.org/wp/know-your-rights) guide.
 
@@ -112,16 +136,15 @@ For information on what to do if law enforcement seeks access to your digital de
 EFF has written a [short template](tor-dmca-response) to help you write a response to your ISP, university, etc., to let them know about the details of the Digital Millennium Copyright Act's safe harbor, and how Tor fits in.
 Note that template only refers to U.S. jurisdictions, and is intended only to address copyright complaints that are based on a relay of allegedly infringing material through the Tor node.
 
-If you like, you should consider submitting a copy of your notice to [Chilling Effects](https://www.chillingeffects.org/).
-This will help us recognize trends and issues that the lawyers might want to focus on. Chilling Effects encourages submissions from people outside the United States too.
+If you like, you should consider submitting a copy of your notice to the Lumen DatabaseThe email address for submissions is team@lumendatabase.org.
+This will help us recognize trends and issues that the lawyers might want to focus on.
+Lumen encourages submissions from people outside the United States too.
 
-EFF believes that Tor relays should be protected from copyright liability for the acts of their users because a Tor relay operator can raise an immunity defense under the DMCA as well as defenses under copyright's secondary liability doctrines.
+EFF believes that Tor relays should be protected from copyright liability for the acts of their users because a Tor relay operator can raise an immunity defense under Section 512 of DMCA as well as defenses under copyright's secondary liability doctrines.
 However, no court has yet addressed these issues in the context of Tor itself.
 If you are uncomfortable with this uncertainty, you may consider using a reduced exit policy (such as the default policy suggested by the Tor Project) to try to minimize traffic types that are often targeted in copyright complaints.
 
 If you are a Tor relay operator willing to stand up and help set a clear legal precedent establishing that merely running a relay does not create copyright liability for either operators or their bandwidth providers, EFF is interested in hearing from you.
-Read more [here](https://lists.torproject.org/pipermail/tor-talk/2005-October/016301.html) about being EFF's test case.
-
 ---
 html: two-columns-page.html
 ---
@@ -131,4 +154,4 @@ section: Community and legal resources
 ---
 section_id: community-resources
 ---
-subtitle: FAQ written by the Electronic Frontier Foundation (EFF). Last updated April 21, 2014.
+subtitle: FAQ written by the Electronic Frontier Foundation (EFF). Last updated March 27, 2020.
