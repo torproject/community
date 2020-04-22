@@ -1,0 +1,35 @@
+<div class="row pt-5">
+  {% include 'sidenav.html' %}
+  <div class="col-sm-12 col-xs-12  ml-sm-auto col-md-9 col-lg-9 {{ bag('alternatives', this.alt, 'order') }}">
+    {{ this.body }}
+    <div class="container py-3">
+      <div class="row">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Organization Name</th>
+              <th scope="col">Country</th>
+            </tr>
+          </thead>
+          <tbody>
+          {% for id, item in bag('relay-associations').items() %}
+            {% if item.active == 'True' %}
+                <tr>
+                    <td>
+                        {% if item.link|length %}
+                            <a href="{{ item.link }}">{{ item.label }}</a>
+                        {% else %}
+                            {{ item.label }}
+                        {% endif %}
+                    </td>
+
+                    <td>{{ item.country }}</td>
+                </tr>
+            {% endif %}
+          {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
