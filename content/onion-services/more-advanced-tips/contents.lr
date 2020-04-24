@@ -1,0 +1,69 @@
+_section: onion services
+---
+section_id: onion-services
+---
+color: primary
+---
+_template: layout.html
+---
+title: More Advanced Tips
+---
+subtitle: Learn more tips to help secure your onion services.
+---
+key: 2
+---
+html: two-columns-page.html
+---
+body: 
+
+## More Advanced Tips
+
+If you plan to keep your service available for a long time, you might want to make a backup copy of the `private_key` file somewhere.
+
+If you want to forward multiple virtual ports for a single onion service, just add more `HiddenServicePort` lines. If you want to run multiple onion services from the same Tor client, just add another `HiddenServiceDir` line. All the following HiddenServicePort lines refer to this HiddenServiceDir line, until you add another HiddenServiceDir line:
+
+     HiddenServiceDir /usr/local/etc/tor/hidden_service/
+     HiddenServicePort 80 127.0.0.1:8080
+
+     HiddenServiceDir /usr/local/etc/tor/other_hidden_service/
+     HiddenServicePort 6667 127.0.0.1:6667
+     HiddenServicePort 22 127.0.0.1:22
+    
+To set up an onion service on Raspbian have a look at Alec Muffett's [Enterprise Onion Toolkit](https://github.com/alecmuffett/eotk).
+
+**Client Authorization**
+
+To set up Cookie Authentication for **v2** services see the entries for the [HidServAuth](https://2019.www.torproject.org/docs/tor-manual.html.en#HidServAuth) and [HiddenServiceAuthorizeClient](https://2019.www.torproject.org/docs/tor-manual.html.en#HiddenServiceAuthorizeClient) options in the manual. First add following line to the [torrc](https://2019.www.torproject.org/docs/faq.html.en#torrc) file of your onion service:
+
+     HiddenServiceAuthorizeClient [auth-type] [service-name]
+    
+Restart/reload tor and read the cookie from the hostname file of your onion service, for example in
+/var/lib/tor/hidden_service_path/hostname.
+To access it with a tor client add following line to torrc and (re)start/reload it:
+
+     HidServAuth [onion-address] [auth-cookie] [service-name]
+    
+You are now able to browse the onion service address.
+
+To set up Client Authorization for **v3** (["next-gen"](https://2019.www.torproject.org/docs/tor-onion-service.html.en#four)) services as specified in [rend-spec-v3.txt](https://gitweb.torproject.org/torspec.git/tree/rend-spec-v3.txt#n615) for the tor service running the onion follow the instructions in [Client Authorization](https://2019.www.torproject.org/docs/tor-manual-dev.html.en#_client_authorization). Note that to revoke clients you need to restart the tor service (see [#28275](https://trac.torproject.org/projects/tor/ticket/28275)). At the moment you need to create the keys yourself with a script (like these written in [bash](https://gist.github.com/mtigas/9c2386adf65345be34045dace134140b) or [rust](https://github.com/haxxpop/torkeygen)).
+
+To access it with a tor client make sure you have [ClientOnionAuthDir](https://2019.www.torproject.org/docs/tor-manual-dev.html.en#ClientOnionAuthDir) set in torrc. In the <ClientOnionAuthDir> directory, create an .auth_private file for the onion service corresponding to this key (i.e. 'bob_onion.auth_private').
+The contents of the <ClientOnionAuthDir>/<user>.auth_private file should look like:
+
+     <56-char-onion-addr-without-.onion-part>:descriptor:x25519:BBBEAUAO3PIFAH7SBGBI6A2QFAZBXG2NVN7HMBXFCZENJVF6C5AQ
+    
+Then (re)start/reload it and you should be able to browse the onion service address.
+
+**Operational security**
+
+Onion services operators need to practice proper [operational security](https://trac.torproject.org/projects/tor/wiki/doc/OperationalSecurity) and system administration to maintain security. For some security suggestions please make sure you read over Riseup's ["Tor Hidden (Onion) Services Best Practices" document](https://riseup.net/en/security/network-security/tor/onionservices-best-practices). Also, here are some more anonymity issues you should keep in mind:
+
+ - As mentioned above, be careful of letting your web server reveal identifying information about you, your computer, or your location. For example, readers can probably determine whether it's thttpd or Apache, and learn something about your operating system.
+ - If your computer isn't online all the time, your onion service won't be either. This leaks information to an observant adversary.
+ - It is generally a better idea to host onion services on a Tor client rather than a Tor relay, since relay uptime and other properties are publicly visible.
+ - The longer an onion service is online, the higher the risk that its location is discovered. The most prominent attacks are building a profile of the onion service's availability and matching induced traffic patterns.
+Another common issue is whether to use HTTPS on your relay or not. Have a look at this post on the Tor Blog to learn more about these issues.
+
+You can use [stem](https://stem.torproject.org/) to [automate the management of your onion services](https://stem.torproject.org/tutorials/over_the_river.html).
+
+Finally, feel free to use the [[tor-onions] mailing list](https://lists.torproject.org/pipermail/tor-onions/) to discuss the secure administration and operation of Tor onion services.
