@@ -2,6 +2,8 @@ _model: page
 ---
 title: Exit
 ---
+color: primary
+---
 html: two-columns-page.html
 ---
 section: relay operations

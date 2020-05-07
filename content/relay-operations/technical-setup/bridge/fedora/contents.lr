@@ -109,8 +109,6 @@ key:
 
 2
 ---
-color: primary
----
 subtitle: How to deploy an obfs4 bridge on Fedora
 ---
 _template: layout.html

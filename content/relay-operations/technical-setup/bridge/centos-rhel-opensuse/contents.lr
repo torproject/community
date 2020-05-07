@@ -137,8 +137,6 @@ key:
 
 2
 ---
-color: primary
----
 subtitle: How to deploy an obfs4 bridge on CentOS / RHEL / OpenSUSE
 ---
 _template: layout.html
