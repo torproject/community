@@ -1,0 +1,49 @@
+section: outreach
+---
+section_id: outreach
+---
+color: primary
+---
+_template: layout.html
+---
+title: Organize a Tor meetup
+---
+subtitle: Learn how to organize a Tor meetup with your friends.
+---
+key: 4
+---
+html: two-columns-page.html
+---
+body:
+
+Organized by the community, meetups are a great way to find and strengthen the privacy supporters community in your local area.
+
+### Step 1
+
+Connect with a local space that will allow you to meet for an hour or two.
+A public library, a social center, a hackerspace or a room in a university are some spaces that you can usually host your event.
+
+### Step 2
+
+Choose a date and time that is convenient for your group and the local space.
+On weekends or during week days, after working hours (7 pm) might be better.
+After confirming a local and date, create a poster and an online invitation to spread the event.
+
+### Step 3
+
+Find a meetup facilitator and draft an agenda, for example, question & answer about Tor, how to setup relays. 
+Read and follow our [best practices](https://community.torproject.org/training/best-practices/).
+
+### Step 4
+
+Before the meetup, organize the space. Buy some chips and snacks, hang some [posters](https://community.torproject.org/outreach/kit/) nearby the local, so people can find easily.
+If you have some printed materials and/or Tor swag, put it on a table.
+
+### Step 5
+
+Load your presentation and wait a few minutes to people arrive. 
+During the activity take notes about questions, how many knew about Tor before, how many are relay operators, etc
+
+### Step 6
+
+After the meetup, clean up the space, remove the posters and upload your notes to [Tor Community Team](https://lists.torproject.org/cgi-bin/mailman/listinfo/tor-community-team) mailing list.
