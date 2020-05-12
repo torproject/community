@@ -17,36 +17,45 @@ docker pull phwinter/obfs4-bridge:latest
 
 ### 2. Deploy a container
 
-We provide a Makefile that helps you deploy the container.
-First, [download the Makefile](https://dip.torproject.org/torproject/anti-censorship/docker-obfs4-bridge/raw/master/Makefile), and then write your bridge configuration to a new file, bridge.sh.
-Here's a template:
+We provide a docker-compose.yml file that helps you deploy the container.
+First,
+[download docker-compose.yml](https://dip.torproject.org/torproject/anti-censorship/docker-obfs4-bridge/raw/master/docker-compose.yml),
+and then write your bridge configuration to a new file, `.env`, which is in the
+same directory as `docker-compose.yml`. Here's a
+template:
 
 ```
 # Your bridge's Tor port.
-export OR_PORT=X
+OR_PORT=X
 # Your bridge's obfs4 port.
-export PT_PORT=Y
+PT_PORT=Y
 # Your email address.
-export EMAIL=Z
+EMAIL=Z
 ```
 
-Replace `X` with your desired OR port, `Y` with your obfs4 port (make sure that **both** ports are forwarded in your firewall), and `Z` with your email address, which allows us to get in touch with you if there are problems with your bridge.
+Replace `X` with your desired OR port, `Y` with your obfs4 port (make sure that
+**both** ports are forwarded in your firewall), and `Z` with your email address,
+which allows us to get in touch with you if there are problems with your bridge.
 With your bridge configuration in place, you can now deploy the container:
 
 ```
-source bridge.sh && make deploy
+docker-compose up -d obfs4-bridge
 ```
+
+This command will automatically load your `docker-compose.yml` file while
+considering the environment variables in `.env`.
 
 You should now see output similar to the following:
 
 ```
-201fbd2b4d28e6f226978f27547edd79272871c5949bf8aab3872c983156a108
-Make sure that port X and Y are forwarded in your firewall.
+Starting docker-obfs4-bridge_obfs4-bridge_1 ... done
 ```
 
-That's it! Your container (identified by the first line of output) is now bootstrapping your new obfs4 bridge.
+That's it! Your container is now bootstrapping your new obfs4 bridge.
 
-If you want to run multiple bridges on your machine, you need to create more bridge configuration files with different sets of ports, and run `make deploy` again, like so:
+If you want to run multiple bridges on your machine, you need to create more
+bridge configuration files with different sets of ports, and run `make deploy`
+again, like so:
 
 ```
 source bridge-1.sh && make deploy
@@ -56,13 +65,10 @@ source bridge-2.sh && make deploy
 
 ### 3. Upgrade your container
 
-To upgrade to the latest version of our image, you need to stop your existing container, delete it, pull the latest image, and finally deploy it again:
+Upgrading to the latest version of our image is as simple as running:
 
 ```
-docker stop CONTAINER_ID
-docker rm CONTAINER_ID
-docker pull phwinter/obfs4-bridge:latest
-source bridge.sh && make deploy
+docker-compose up -d obfs4-bridge
 ```
 
 Note that your bridge's data directory (which includes its key material) is stored in a docker volume, so you won't lose your bridge's identity when upgrading to the latest docker image.
