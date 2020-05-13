@@ -6,18 +6,9 @@ title: Docker
 ---
 body:
 
-### 1. Pull the image
+### 1. Deploy a container
 
-We are maintaining a docker image that runs an obfs4 bridge.
-First, download the image:
-
-```
-docker pull phwinter/obfs4-bridge:latest
-```
-
-### 2. Deploy a container
-
-We provide a docker-compose.yml file that helps you deploy the container.
+We provide a docker-compose file that helps you deploy the container.
 First,
 [download docker-compose.yml](https://dip.torproject.org/torproject/anti-censorship/docker-obfs4-bridge/raw/master/docker-compose.yml),
 and then write your bridge configuration to a new file, `.env`, which is in the
@@ -36,7 +27,8 @@ EMAIL=Z
 Replace `X` with your desired OR port, `Y` with your obfs4 port (make sure that
 **both** ports are forwarded in your firewall), and `Z` with your email address,
 which allows us to get in touch with you if there are problems with your bridge.
-With your bridge configuration in place, you can now deploy the container:
+With your bridge configuration in place, you can now deploy the container by
+running:
 
 ```
 docker-compose up -d obfs4-bridge
@@ -53,17 +45,7 @@ Starting docker-obfs4-bridge_obfs4-bridge_1 ... done
 
 That's it! Your container is now bootstrapping your new obfs4 bridge.
 
-If you want to run multiple bridges on your machine, you need to create more
-bridge configuration files with different sets of ports, and run `make deploy`
-again, like so:
-
-```
-source bridge-1.sh && make deploy
-source bridge-2.sh && make deploy
-...
-```
-
-### 3. Upgrade your container
+### 2. Upgrade your container
 
 Upgrading to the latest version of our image is as simple as running:
 
@@ -75,7 +57,7 @@ Note that your bridge's data directory (which includes its key material) is stor
 If you are running multiple bridges on your computer, you need to repeat this step for each bridge.
 We will announce new image versions on the [tor-dev](https://lists.torproject.org/cgi-bin/mailman/listinfo/tor-dev) mailing list.
 
-### 4. Monitor your logs
+### 3. Monitor your logs
 
 You can inspect your bridge's logs by running:
 
