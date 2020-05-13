@@ -17,5 +17,15 @@
         "formats" : ["odp"],
         "description" : "Un conjunto completo de diapositivas para los entrenamientos de Tor",
         "date" : "2019"
+    },
+
+    "tor network" :
+    {
+        "label" : "The Tor network",
+        "name" : "tor-network",
+        "filename" : "tor-network",
+        "formats" : ["odp","pdf"],
+        "description" : "Learn about the Tor network and how to run a relay",
+        "date" : "2019"
     }
 }
