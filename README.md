@@ -90,7 +90,7 @@ This is the workflow that Tor Internal people should use when making changes on 
     - Update "Title" with a short title to explain your changes.
     - Update "Description", you can use the commit message you entered before additionally referencing the original issue you have reviewed, e.g. `https://dip.torproject.org/web/community/issues/3`, and tagging one of the repo maintainers, e.g. `@pili`, so they know the change can be merged.
     - Make sure that both "Delete source branch when merge request is accepted" and "Squash commits when merge request is accepted" are checked.
-    - Click "Submit merge request.
+    - Click "Submit merge request".
 5. Reviewer should comment on the original issue with a link to the merge request created, e.g. `https://dip.torproject.org/steph/community/merge_requests/2`.
 
 ### Volunteer Workflow
