@@ -75,14 +75,21 @@ If your keys leak, other people can impersonate your onion service, deeming it c
 Now you can connect to your onion service using Tor Browser, and you should get the html page you setup back in step 1.
 If it doesn't work, look in your logs for some hints, and keep playing with it until it works.
 
-## Step 5: More advanced tips
+## Step 5: More tips
 
-The above guide is just a baseline to setup an onion service.
-In this section we will offer more resources to better configure and protect your onion service:
+If you plan to keep your service available for a long time, you might want to make a backup copy of the `private_key` file somewhere.
 
-- Best practices for onion services
-https://riseup.net/en/security/network-security/tor/onionservices-best-practices
-- More advanced tips for onion services
-https://2019.www.torproject.org/docs/tor-onion-service.html.en#three
-- Advanced onion service security
-https://blog.torproject.org/announcing-vanguards-add-onion-services
+If you want to forward multiple virtual ports for a single onion service, just add more `HiddenServicePort` lines. If you want to run multiple onion services from the same Tor client, just add another `HiddenServiceDir` line. All the following `HiddenServicePort` lines refer to this `HiddenServiceDir` line, until you add another `HiddenServiceDir` line:
+
+     HiddenServiceDir /usr/local/etc/tor/hidden_service/
+     HiddenServicePort 80 127.0.0.1:8080
+
+     HiddenServiceDir /usr/local/etc/tor/other_hidden_service/
+     HiddenServicePort 6667 127.0.0.1:6667
+     HiddenServicePort 22 127.0.0.1:22
+    
+
+You can use [stem](https://stem.torproject.org/) to [automate the management of your onion services](https://stem.torproject.org/tutorials/over_the_river.html).
+
+ * To set up an Onion Service on Raspbian have a look at Alec Muffett's [Enterprise Onion Toolkit](https://github.com/alecmuffett/eotk).
+ * [Onion services best practices](https://riseup.net/en/security/network-security/tor/onionservices-best-practices) by Riseup Collective.

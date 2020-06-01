@@ -1,0 +1,19 @@
+_section: onion services
+---
+section_id: onion-services
+---
+color: primary
+---
+_template: layout.html
+---
+title: Advanced settings
+---
+subtitle: Learn more about how to configure client authentication, Onion-Location and more tips to secure your onion service.
+---
+key: 3
+---
+html: two-columns-page.html
+---
+body: 
+
+In this section you will find how to configure your onion service to enable client authorization, Onion-Location and tips to make your onion service more secure.
