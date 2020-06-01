@@ -25,18 +25,18 @@ For the header to be valid the following conditions need to be fulfilled:
  * The webpage defining the Onion-Location header must be served over HTTPS.
  * The webpage defining the Onion-Location header must not be an onionsite.
 
-In this page, the commands to restart the web server are based on Debian-like operating systems and may differ on other systems.
+In this page, the commands to manage the web server are based on Debian-like operating systems and may differ on other systems.
 Check your web server and operating system documentation.
 
 ### Apache
 
-To configure this header in Apache 2.2 or above, you will need to enable a few modules and edit the website Virtual Host file.
+To configure this header in Apache 2.2 or above, you will need to enable a `headers` and `rewrite` modules and edit the website Virtual Host file.
 
-**Step 1.** Enable headers and rewrite modules and restart Apache2
+**Step 1.** Enable headers and rewrite modules and reload Apache2
 
      $ sudo a2enmod headers rewrite
 
-     $ sudo systemctl restart apache2
+     $ sudo systemctl reload apache2
 
 If you get an error message, something has gone wrong and you cannot continue until you've figured out why this didn't work. 
 
@@ -52,9 +52,14 @@ Virtual Host example:
 
 ```
      <VirtualHost *:443>
-       ServerName your-website.tld
-       DocumentRoot /var/www/html
-       Header set Onion-Location "http://rh5d6reakhpvuxe2t3next6um6iiq4jf43m7gmdrphfhopfpnoglzcyd%{REQUEST_URI}s"
+       ServerName <your-website.tld>
+       DocumentRoot /path/to/htdocs
+
+       Header set Onion-Location "http://your-onion-address.onion%{REQUEST_URI}s"
+
+       SSLEngine on
+       SSLCertificateFile "/path/to/www.example.com.cert"
+       SSLCertificateKeyFile "/path/to/www.example.com.key"
      </VirtualHost>
 ```
 
@@ -72,40 +77,66 @@ To test if Onion-Location is working, fetch the website HTTP headers, for exampl
 
      $ wget --server-response --spider your-website.tld
 
-Look for the `onion-location` entry and the onion service address.
-
+Look for `onion-location` entry and the onion service address.
 Or open the website in Tor Browser and a purple pill will appear in the address bar.
 
 ### Nginx
 
-To configure Onion-Location header, you will need to edit Nginx website configuration file.
+To configure Onion-Location header, you will need to edit nginx website configuration file.
 
 **Step 1.** Edit website configuration file
 
-In `/etc/nginx/conf.d/<your-website.conf` add the new Onion-Location header and the onion service address.
+In `/etc/nginx/conf.d/<your-website>.conf` add the Onion-Location header and the onion service address.
 For example:
 
 ```
-     location / {
-             add_header Onion-Location http://rh5d6reakhpvuxe2t3next6um6iiq4jf43m7gmdrphfhopfpnoglzcyd.onion$request_uri;
-     }
+    add_header Onion-Location http://<your-onion-address>.onion$request_uri;
 ```
+
 
 The configuration file with Onion-Location should look like:
 
 ```
 server {
-        listen 443;
+    listen 80;
+    listen [::]:80;
 
-        root /var/www/your-website/html;
-        index index.html index.htm;
+    server_name <your-website.tld>;
 
-        server_name your-website.tld;
+    location / {
+       return 301 https://$host$request_uri;
+    }
 
-        location / {
-                try_files $uri $uri/ =404;
-                add_header Onion-Location http://rh5d6reakhpvuxe2t3next6um6iiq4jf43m7gmdrphfhopfpnoglzcyd.onion$request_uri;
-        }
+}
+
+server {
+    listen 443 ssl http2;
+    listen [::]:443 ssl http2;
+
+    server_name <your-website.tld> <your-onion-address.onion>;
+
+    # managed by Certbot - https://certbot.eff.org/
+    ssl_certificate /etc/letsencrypt/live/<hostname>/fullchain.pem; 
+    ssl_certificate_key /etc/letsencrypt/live/<hostname>/privkey.pem;
+
+    add_header Strict-Transport-Security "max-age=63072000; includeSubdomains";
+    add_header X-Frame-Options DENY;
+    add_header X-Content-Type-Options nosniff;
+    add_header Onion-Location http://<your-onion-address>.onion$request_uri;
+
+    # managed by Certbot
+
+    include /etc/letsencrypt/options-ssl-nginx.conf;
+    ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem;
+
+    access_log /var/log/nginx/<hostname>-access.log;
+
+    index index.html;
+    root /path/to/htdocs;
+
+    location / {
+            try_files $uri $uri/ =404;
+    }
 }
 ```
 
@@ -132,8 +163,7 @@ To test if Onion-Location is working, fetch the website HTTP headers, for exampl
 
      $ wget --server-response --spider your-website.tld
 
-Look for the `onion-location` entry and the onion service address.
-
+Look for `onion-location` entry and the onion service address.
 Or open the website in Tor Browser and a purple pill will appear in the address bar.
 
 ### Using an HTML `<meta>` attribute
