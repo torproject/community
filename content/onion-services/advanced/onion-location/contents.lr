@@ -82,9 +82,17 @@ Or open the website in Tor Browser and a purple pill will appear in the address 
 
 ### Nginx
 
-To configure Onion-Location header, you will need to edit nginx website configuration file.
+To configure an Onion-Location header, the service operator should first configure an Onion service.
 
-**Step 1.** Edit website configuration file
+**Step 1.** Create an Onion service by setting the following in `torrc`:
+
+```
+HiddenServiceDir /var/lib/tor/hs-my-website/
+HiddenServiceVersion 3
+HiddenServicePort 80 unix:/var/run/tor-hs-my-website.sock
+```
+
+**Step 2.** Edit website configuration file
 
 In `/etc/nginx/conf.d/<your-website>.conf` add the Onion-Location header and the onion service address.
 For example:
@@ -113,7 +121,7 @@ server {
     listen 443 ssl http2;
     listen [::]:443 ssl http2;
 
-    server_name <your-website.tld> <your-onion-address.onion>;
+    server_name <your-website.tld>;
 
     # managed by Certbot - https://certbot.eff.org/
     ssl_certificate /etc/letsencrypt/live/<hostname>/fullchain.pem; 
@@ -125,7 +133,6 @@ server {
     add_header Onion-Location http://<your-onion-address>.onion$request_uri;
 
     # managed by Certbot
-
     include /etc/letsencrypt/options-ssl-nginx.conf;
     ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem;
 
@@ -138,9 +145,20 @@ server {
             try_files $uri $uri/ =404;
     }
 }
+
+server {
+        listen unix:/var/run/tor-hs-my-website.sock;
+
+        server_name <your-onion-address>.onion;
+
+        access_log /var/log/nginx/hs-my-website.log;
+
+        index index.html;
+        root /path/to/htdocs;
+}
 ```
 
-**Step 2.** Test website configuration
+**Step 3.** Test website configuration
 
      $ sudo nginx -t
 
@@ -151,13 +169,13 @@ nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
 nginx: configuration file /etc/nginx/nginx.conf test is successful
 ```
 
-**Step 3.** Restart nginx
+**Step 4.** Restart nginx
 
      $ sudo nginx -s reload
 
 If you get an error message, something has gone wrong and you cannot continue until you've figured out why this didn't work. 
 
-**Step 4.** Testing your Onion-Location
+**Step 5.** Testing your Onion-Location
 
 To test if the Onion-Location is working, fetch the web site HTTP headers, for example:
 
