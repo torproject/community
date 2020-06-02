@@ -8,7 +8,7 @@ _template: layout.html
 ---
 title: Onion-Location
 ---
-subtitle: Learn how to set up Onion-Location for your onionsite.
+subtitle: Learn how to set up an Onion-Location for your onion site.
 ---
 key: 1
 ---
@@ -16,16 +16,16 @@ html: two-columns-page.html
 ---
 body:
 
-Onion-Location is an easy way to advertise an onionsite to the users.
+Onion-Location is an easy way to advertise an onion site to the users.
 You can either configure a web server to show an Onion-Location Header or add an HTML meta attibute in the website.
 
 For the header to be valid the following conditions need to be fulfilled:
 
  * The Onion-Location value must be a valid URL with http: or https: protocol and a .onion hostname.
  * The webpage defining the Onion-Location header must be served over HTTPS.
- * The webpage defining the Onion-Location header must not be an onionsite.
+ * The webpage defining the Onion-Location header must not be an onion site.
 
-In this page, the commands to manage the web server are based on Debian-like operating systems and may differ on other systems.
+In this page, the commands to manage the web server are based Debian-like operating systems and may differ from other systems.
 Check your web server and operating system documentation.
 
 ### Apache
@@ -65,7 +65,7 @@ Virtual Host example:
 
 **Step 3.** Reload Apache
 
-Reload the apache2 service so your configuration changes take effect:
+Reload the apache2 service, so your configuration changes take effect:
 
      $ sudo systemctl reload apache2 
 
@@ -94,7 +94,7 @@ For example:
 ```
 
 
-The configuration file with Onion-Location should look like:
+The configuration file with the Onion-Location should look like this:
 
 ```
 server {
@@ -159,17 +159,17 @@ If you get an error message, something has gone wrong and you cannot continue un
 
 **Step 4.** Testing your Onion-Location
 
-To test if Onion-Location is working, fetch the website HTTP headers, for example:
+To test if the Onion-Location is working, fetch the web site HTTP headers, for example:
 
      $ wget --server-response --spider your-website.tld
 
 Look for `onion-location` entry and the onion service address.
-Or open the website in Tor Browser and a purple pill will appear in the address bar.
+Or, open the web site in Tor Browser and a purple pill will appear in the address bar.
 
 ### Using an HTML `<meta>` attribute
 
-The identical behaviour of Onion-Location and a Refresh header (with 0 seconds timeout) includes the option of defining it as a HTML `<meta>` http-equiv attribute.
-This may be used by websites that prefer (or need) to define Onion-Location by modifying the served HTML content instead of adding a new HTTP header.
+The identical behaviour of Onion-Location includes the option of defining it as a HTML `<meta>` http-equiv attribute.
+This may be used by websites that prefer (or need) to define an Onion-Location by modifying the served HTML content instead of adding a new HTTP header.
 The Onion-Location header would be equivalent to a `<meta http-equiv="onion-location" content="http://<your-onion-service-address>.onion" />` added in the HTML head element of the webpage. Replace `<your-onion-service-address.onion>` with the onion service that you want to redirect.
 
 ### More information
