@@ -17,7 +17,7 @@ html: two-columns-page.html
 body:
 
 Onion-Location is an easy way to advertise an onion site to the users.
-You can either configure a web server to show an Onion-Location Header or add an HTML meta attibute in the website.
+You can either configure a web server to show an Onion-Location Header or add an HTML meta attribute in the website.
 
 For the header to be valid the following conditions need to be fulfilled:
 
