@@ -119,6 +119,7 @@ Default locations of the keys folder:
 
 * Debian/Ubuntu: `/var/lib/tor/keys`
 * FreeBSD: `/var/db/tor/keys`
+* Fedora: `/var/lib/tor/keys`
 
 ## Subscribe to the tor-announce mailing list
 
