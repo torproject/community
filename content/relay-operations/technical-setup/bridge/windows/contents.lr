@@ -12,11 +12,11 @@ body:
 
 **Note: You should only run a Windows bridge if you can run it 24/7. If the operator is unable to guarantee that, a [Snowflake](https://snowflake.torproject.org/) is a better way to contribute resources.**
 
-### 1. Download the Windows Expert Bundle and the Tor Browser
+### 1. Download the Windows Expert Bundle and 32-bit Version of Tor Browser
 
 * [Windows Expert Bundle](https://www.torproject.org/download/tor/). Unzip the contents on the desktop.
 
-* [Tor Browser](https://www.torproject.org/download/#windows). Run the `.exe` and install with default settings.
+* [32-bit Version of Tor Browser](https://www.torproject.org/download/languages/). Run the `.exe` and install with default settings.
 
 You will need to show hidden items and file name extensions. In your Explorer window, in the top-left, click on the View tab. In the Show/hide section furthest to the right, check the checkbox for Hidden items; check the checkbox for File name extensions.
 
