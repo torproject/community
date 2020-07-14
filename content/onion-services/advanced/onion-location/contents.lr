@@ -209,7 +209,7 @@ file_server
 **Testing it out:** Test it out with:
 
 ```
-curl -I https://your-website.tld
+curl --head https://your-website.tld
 ```
 
 and look for the `onion-location` line.
