@@ -16,7 +16,7 @@ body:
 
 * [Windows Expert Bundle](https://www.torproject.org/download/tor/). Unzip the contents on the desktop.
 
-* [Tor Browser](https://www.torproject.org/download/#windows). Run the `.exe` and install with default settings.
+* [Tor Browser (version depends on your computer)](https://www.torproject.org/download/languages/). Run the `.exe` and install with default settings.
 
 You will need to show hidden items and file name extensions. In your Explorer window, in the top-left, click on the View tab. In the Show/hide section furthest to the right, check the checkbox for Hidden items; check the checkbox for File name extensions.
 
