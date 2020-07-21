@@ -103,7 +103,7 @@ Don't forget to change the `ORPort`, `ServerTransportListenAddr`, `ContactInfo`,
 
 * Note that both Tor's OR port and its obfs4 port must be reachable. If your bridge is behind a firewall or NAT, make sure to open/forward both ports. You can use [our reachability test](https://bridges.torproject.org/scan/) to see if your obfs4 port is reachable from the Internet.
 
-* Are you firewalling your DragonflyBSD? If so, make sure that `obfs4proxy` can talk to `tor` over the loopback interface - do not forget to whitelist the **ExtORPort**.
+* Are you firewalling your DragonflyBSD? If so, make sure that `obfs4proxy` can talk to `tor` over the loopback interface - do not forget to allow the **ExtORPort**.
 
 ### 4. Start `tor`:
 

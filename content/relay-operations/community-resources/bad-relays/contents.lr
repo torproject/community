@@ -19,7 +19,7 @@ A bad relay is one that either doesn't work properly or tampers with our users' 
  * Performing a [Sybil attack](https://en.wikipedia.org/wiki/Sybil_attack), which means flooding the network with new relays in an effort to deanonymize users. If you want to run multiple relays then that's great! But please be sure to set the [MyFamily parameter](https://www.torproject.org/docs/tor-manual.html.en#MyFamily).
  * Exit relays routing their exit traffic back into the tor network (not actually exiting any traffic)
 
-Also, if your relay is stolen or goes missing, please report it as well, so we can blacklist it in case whoever took it puts it back online.
+Also, if your relay is stolen or goes missing, please report it as well, so we can blocklist it in case whoever took it puts it back online.
 
 The following are currently permitted yet do have some discussion for prohibition (as such, they should not be reported at this time)...
 
