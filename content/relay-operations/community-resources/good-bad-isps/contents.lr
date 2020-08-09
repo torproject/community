@@ -151,7 +151,7 @@ For network diversity and stronger anonymity, you should avoid providers and cou
 
 | **Company/ISP** | **ASN** | **Bridges** | **Relay** | **Exit** | **Comments** | **Last Updated** |
 |-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
-| Axtel | - | Yes | Yes | Yes |  Currently some Guard / Middle and exit nodes are running in Axtel network | 2019 |
+| Axtel | AS6503 | Yes | Yes | Yes |  Currently some Guard / Middle and exit nodes are running in Axtel network | 2019 |
 
 
 ### Moldova
