@@ -72,8 +72,8 @@ A typical Tor relay needs less than 200 MB for Tor related data (in addition to 
 
 Tor has no hard uptime requirement but if your relay is not running for more than 2 hours a day its usefulness is limited.
 Ideally the relay runs on a server which runs 24/7.
-Reboots and tor daemon restarts are fine.
+Reboots and Tor daemon restarts are fine.
 
 # Tor Version
 
-For security reasons, Tor relays should not downgrade their tor version from a supported to an unsupported version of tor. Some unsupported versions are insecure. Relays that attempt to downgrade to an insecure version will be rejected from the network automatically.
+For security reasons, Tor relays should not downgrade their tor version from a supported to an unsupported version of Tor. Some unsupported versions are insecure. Relays that attempt to downgrade to an insecure version will be rejected from the network automatically.
