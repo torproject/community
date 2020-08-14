@@ -35,7 +35,7 @@ You can check which exit you are using at any time by visiting [tor check](https
  2. What kind of behavior did you see?
  3. Any additional information we'll need to reproduce the issue.
 
-However, if you need help with anything Tor-related, please contact the [help desk](https://www.torproject.org/about/contact) instead.
+However, if you need help with anything Tor-related, please contact the [front desk](https://www.torproject.org/about/contact) instead.
 
 ### What happens to bad relays?
 
@@ -57,7 +57,7 @@ In just about all cases we're unable to contact the operator to resolve the issu
 
 Yes. For our automated issue detection see [exitmap](http://www.cs.kau.se/philwint/spoiled_onions/) and [sybilhunter](https://gitweb.torproject.org/user/phw/sybilhunter.git/).
 
-Other monitors include [tortunnel](http://www.thoughtcrime.org/software/tortunnel/), [SoaT](https://gitweb.torproject.org/torflow.git/blob/HEAD:/NetworkScanners/ExitAuthority/README.ExitScanning), [torscanner](https://code.google.com/p/torscanner/), and [DetecTor](http://detector.io/DetecTor.html).
+Other monitors include [tortunnel](https://github.com/moxie0/tortunnel), [SoaT](https://gitweb.torproject.org/torflow.git/tree/NetworkScanners/ExitAuthority/README.ExitScanning), [torscanner](https://code.google.com/p/torscanner/), and DetecTor.
 
 
 ---
