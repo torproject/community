@@ -153,7 +153,7 @@ For network diversity and stronger anonymity, you should avoid providers and cou
 |-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
 | Axtel | AS6503 | Yes | Yes | Yes |  Currently some Guard / Middle and exit nodes are running in Axtel network | 2020 |
 | Telmex | AS8151 | No | Yes | No |  Currently some Guard / Middle nodes are running in Telmex network | 2020 |
-
+| Mega Cable | AS13999 | No | Yes | No |  Currently some Guard / Middle nodes are running in Mega Cable network | 2020 |
 
 
 ### Moldova
