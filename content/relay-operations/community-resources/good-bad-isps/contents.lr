@@ -162,7 +162,7 @@ For network diversity and stronger anonymity, you should avoid providers and cou
 |-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
 | [MivoCloud](https://www.mivocloud.com/) | - | Yes | Yes | No | - | 09/13/16 |
 | [Trabia](https://www.trabia.com/) | - | Yes | Yes | Yes | - | 08/13/17 |
-| [AlexHost](https://alexhost.md/) | - | Yes | Yes | Yes | - | 07/21/2014 |
+| [AlexHost](https://alexhost.md/) | - | Yes | Yes | No | "Tor exit relay is strictly forbidden on our company's servers" | 2020 |
 
 
 ### Netherlands
@@ -182,7 +182,6 @@ For network diversity and stronger anonymity, you should avoid providers and cou
 | [Netrouting`](http://netrouting.nl/) | - | Yes | Yes | No | ISP has confirmed by e-mail that exit nodes are NOT acceptable. | 2014-10-15 |
 | [DirectVPS](http://directvps.nl/) | - | Yes | Yes | ? | - | - |
 | [Versio](http://versio.nl/) | - | Yes | Yes | No | - | 2013 |
-| [CyberBunker](http://www.cyberbunker.com/) | - | Yes | Yes | Yes | Customers can remain anonymous. | - |
 | [SnelServer](https://www.snelserver.com/) | - | Yes | Yes | Yes | Abuse complaints must be responded to within 24 hours or the system automatically suspends your account until you do. | 2014 |
 | [ChmuraNet](https://www.chmuranet.com/) | - | Yes | Yes | Yes | Allows anonymous users to run tor exits. Abuse issues will be forwarded. Make sure to tell them that you're running an exit | 09/2014 |
 
