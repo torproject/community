@@ -82,7 +82,7 @@ ping6 -c2 2001:858:2:2:aabb:0:563b:1526 && ping6 -c2 2620:13:4000:6000::1000:118
 ```
 
 At the end of the output you should see "OK." if that is not the case do not enable IPv6 in your torrc configuration file before IPv6 is indeed working.
-If you enable IPv6 without working IPv6 connectivity your entire relay will not be used, regardless if IPv4 is working.
+**If you enable IPv6 without working IPv6 connectivity your entire relay will not be used, regardless if IPv4 is working.**
 
 If it worked fine, make your Tor relay reachable via IPv6 by adding an additional ORPort line to your configuration (example for ORPort 9001):
 
@@ -105,7 +105,7 @@ If you are an exit relay with IPv6 connectivity, tell your tor daemon to allow e
 IPv6Exit 1
 ```
 
-Note: Tor requires IPv4 connectivity, you can not run a Tor relay on IPv6-only.
+**Note: Tor requires IPv4 connectivity, you can not run a Tor relay on IPv6-only.**
 
 # 8. Maintaining a relay
 
