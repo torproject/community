@@ -52,6 +52,7 @@ For network diversity and stronger anonymity, you should avoid providers and cou
 | [TekSavvy](http://www.teksavvy.ca) | - | Yes | Yes | ? | has a server-friendly Internet Use Policy (e.g., running a Tor relay) and has taken a stand in favor of net neutrality | 2008/12 |
 | [CloudatCost.ca](http://www.cloudatcost.com/) | - | Yes | Yes | ? | operated by Fibernetics, has liberal abuse handling policies [AUP](http://www.cloudatcost.com/terms.php), however Tor is not explicitly allowed. | 2015/02 |
 | [oneprovider](http://oneprovider.com/) | - | Yes | Yes | Yes |  They are reselling dedicated servers in many locations around the world. Abuse handling differs depending on the provider from which they resell. | 2016/06 |
+| [Vidéotron Ltee](http://videotron.com/) | AS5769 | Yes | Yes | ? |  No mention of Tor in ToS, relays and bridges seem allowed. | - |
 
 
 ### Czech Republic
