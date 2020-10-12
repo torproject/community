@@ -237,6 +237,7 @@ For network diversity and stronger anonymity, you should avoid providers and cou
 |-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
 | [Solar Communications Gmbh](https://solarcom.ch/) | AS197988 | Yes | Yes | No | "We allow to place Tor routers, but don't allow to place Tor exit nodes." This applies to all their partners, who actually sell Solar's services to the public, namely: [Server & cloud](https://server-cloud.com), [CoinsHost](https://coinshost.com), [Incloudibly](https://incloudibly.net), [Cloudcom](https://cloudc.me), [AtomDrive](https://atomdrive.net). Cryptocurrencies are accepted. | 12/04/2015 |
 | [fsit](http://www.fsit.ch/) | - | Yes | Yes | Yes | - | 11/2015 |
+| [Swiss Made Host](https://swissmade.host/en/) | - | No | No | No | "Tor is not welcome on our network." | 10/2020 |
 
 
 ### Slovenia
@@ -275,6 +276,7 @@ For network diversity and stronger anonymity, you should avoid providers and cou
 | [Blacklotus](http://www.blacklotus.net) | - | Yes | Yes | Yes | Liberal abuse handling policies | - |
 | [BuyVM.net](https://buyvm.net) | AS53667 | Yes | Yes | Yes | New Tor rules [here](https://buyvm.net/acceptable-use-policy/#3). All relays are fine if you follow the steps. | - |
 | [Catalyst Host](https://catalysthost.com/) | - | ? | No | No | "If you are interested in hosting either, you can ask us about a dedicated server." | 10/01/14 |
+| [Cloudvider](https://www.clouvider.co.uk/) | - | No | No | No | This is for their US Operations arm. They will cancel your account and claim it is a ToS violation, which requires you to pay out a 60-day notice. | 10/2020 |
 | [ChunkHost](http://chunkhost.com) | - | Yes | Yes | ? | Questionable DMCA handling | 01/01/12 |
 | [Cyberonic](http://www.cyberonic.com) | - | Yes | Yes | ? | - | - |
 | [Datawagon](https://datawagon.net) | AS27176 | Yes | Yes | Yes | Customers are forwarded abuse complaints to handle themselves | 03/06/19 |
@@ -282,6 +284,7 @@ For network diversity and stronger anonymity, you should avoid providers and cou
 | [Ethr.net](http://ethr.net/) | - | Yes | Yes | Yes | - | - |
 | [Evolucix](http://www.evolucix.com) | -  | Yes | Yes | No(?) | - | - |
 | [Future Hosting](http://www.futurehosting.com/) | - | Yes | Yes | No | - | 09/01/14 |
+| [Hivelocity](https://www.hivelocity.net/) | - | No | No | No | They are symphathetic, but do not want their IP space "polluted" by Tor abuse requests. | 10/2020
 | [HostGator](http://www.hostgator.com/) | - | No | No | No | - | - |
 | [HostHatch](https://hosthatch.com) | AS46562 | Yes | Yes | No | Their vps isp are mixed include: QuadraNet, nLayer, AboveNet, Inteliquent, Atrato Networks and open peering with the entire Any2LA and Atlanta TIE networks. | 05/01/16 |
 | [HostUS](http://hostus.us/) | AS25926 | Yes | Yes | No | - | 10/16/14 |
