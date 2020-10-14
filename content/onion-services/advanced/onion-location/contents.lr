@@ -8,7 +8,7 @@ _template: layout.html
 ---
 title: Onion-Location
 ---
-subtitle: Learn how to set up an Onion-Location for your onion site.
+subtitle: Learn how to set up an Onion-Location for your .onion site.
 ---
 key: 1
 ---
@@ -16,14 +16,14 @@ html: two-columns-page.html
 ---
 body:
 
-Onion-Location is an easy way to advertise an onion site to the users.
+Onion-Location is an easy way to advertise a .onion site to the users.
 You can either configure a web server to show an Onion-Location Header or add an HTML meta attribute in the website.
 
 For the header to be valid the following conditions need to be fulfilled:
 
  * The Onion-Location value must be a valid URL with http: or https: protocol and a .onion hostname.
  * The webpage defining the Onion-Location header must be served over HTTPS.
- * The webpage defining the Onion-Location header must not be an onion site.
+ * The webpage defining the Onion-Location header must not be a .onion site.
 
 In this page, the commands to manage the web server are based Debian-like operating systems and may differ from other systems.
 Check your web server and operating system documentation.
