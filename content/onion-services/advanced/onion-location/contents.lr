@@ -186,17 +186,14 @@ Or, open the web site in Tor Browser and a purple pill will appear in the addres
 
 ### Caddy
 
-Caddy features [automatic HTTPS](https://caddyserver.com/docs/automatic-https)
-by default, so it provisions your TLS certificate and takes care of
-HTTP-to-HTTPS redirection for you. If you're using Caddy 2, to include an
-Onion-Location header, add the following declaration in your Caddyfile:
+Caddy features [automatic HTTPS](https://caddyserver.com/docs/automatic-https) by default, so it provisions your TLS certificate and takes care of HTTP-to-HTTPS redirection for you.
+If you're using Caddy 2, to include an Onion-Location header, add the following declaration in your Caddyfile:
 
 ```
 header Onion-Location http://<your-onion-address>.onion{path}
 ```
 
-If you're running a static site and have the onion address in a `$TOR_HOSTNAME`
-environment variable, your Caddyfile will look like this:
+If you're running a static site and have the onion address in a `$TOR_HOSTNAME` environment variable, your Caddyfile will look like this:
 
 ```
 your-website.tld
@@ -208,11 +205,10 @@ file_server
 
 **Testing it out:** Test it out with:
 
-```
-curl --head https://your-website.tld
-```
+     $ wget --server-response --spider your-website.tld
 
-and look for the `onion-location` line.
+Look for `onion-location` entry and the onion service address.
+Or, open the web site in Tor Browser and a purple pill will appear in the address bar.
 
 ### Using an HTML `<meta>` attribute
 
