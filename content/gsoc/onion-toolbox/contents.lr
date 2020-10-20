@@ -4,7 +4,7 @@ _template: layout.html
 ---
 html: two-columns-page.html
 ---
-active: True
+active: False
 ---
 section: GSoC
 ---
@@ -49,7 +49,7 @@ Ultimately myonion is about creating a better experience for onion services deve
 
 Myonion is a developer tool box, providing a command line interface and a GUI to configure and deploy existing services via .onion. A minimal prototype for myonion already [exists](https://github.com/hiromipaw/myonion).
 
-Someone that may want to run an onion service can use the myonion wrapper app to start a .onion from their computer and sharea static website or a web application.
+Someone that may want to run an onion service can use the myonion wrapper app to start a .onion from their computer and share a static website or a web application.
 
 Myonion can also be used to deploy the resulting configured app to a defined set of cloud providers.
 
@@ -57,7 +57,7 @@ Myonion provides a way to build and deploy onion ready applications, allowing de
 
 The experience for developers will be similar to using other industry solutions, like the [Docker desktop app](https://www.docker.com/products/docker-desktop).
 
-Developers using myonion are provided with pre-defined and customizable application templates, with corresponding configuration and a test set, eliminating  error-prone manual setup and known onion service configuration mistakes.
+Developers using myonion are provided with pre-defined and customizable application templates, with corresponding configuration and a test set, eliminating error-prone manual setup and known onion service configuration mistakes.
 
 The resulting application is therefore deployable via a set of endpoint management tools to known providers. Providing a way to deploy onion services at scale.
 

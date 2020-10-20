@@ -9,3 +9,9 @@ name = English (en)
 primary = yes
 url_prefix = /
 locale = en
+
+[alternatives.es-AR]
+name = Español Arg (es-AR)
+primary = yes
+url_prefix = /es-AR/
+locale = es-AR

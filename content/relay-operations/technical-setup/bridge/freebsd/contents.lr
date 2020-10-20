@@ -12,9 +12,9 @@ body:
 
 ### 1. Install packages
 
-```
-pkg install obfs4proxy-tor tor ca_root_nss
-```
+
+`# pkg install obfs4proxy-tor tor ca_root_nss`
+
 
 ### 2. Edit your Tor config file, usually located at `/usr/local/etc/tor` and replace its content with:
 
@@ -58,17 +58,18 @@ Don't forget to change the `ORPort`, `ServerTransportListenAddr`, `ContactInfo`,
 
 ### 3. Ensure that the `random_id` sysctl setting is enabled:
 
-```
-echo "net.inet.ip.random_id=1" >> /etc/sysctl.conf
-sysctl net.inet.ip.random_id=1
-```
+`# echo "net.inet.ip.random_id=1" >> /etc/sysctl.conf`
 
-### 4. Start the tor daemon and make sure it starts at boot:
+`# sysctl net.inet.ip.random_id=1`
 
-```
-sysrc tor_enable=YES
-service tor start
-```
+
+### 4. Start the Tor daemon and make sure it starts at boot:
+
+
+`# sysrc tor_enable=YES`
+
+`# service tor start`
+
 
 ### 5. Monitor your logs
 
@@ -85,13 +86,13 @@ To confirm your bridge is running with no issues, you should see something like 
 ```
 
 
-### 6. To get the fastest package updates, switch from the  "quarterly" package repo to the "latest" repo.
+### 6. To get the fastest package updates, switch from the "quarterly" package repo to the "latest" repo.
 
 Create the following folder:
 
-```
-mkdir -p /usr/local/etc/pkg/repos
-```
+
+`mkdir -p /usr/local/etc/pkg/repos`
+
 
 Create the file `/usr/local/etc/pkg/repos/FreeBSD.conf` with the following content:
 
@@ -109,7 +110,7 @@ FreeBSDlatest: {
 
 ### 7. Final notes
 
-If you are having troubles setting up your bridge, have a look at [our help
+If you are having trouble setting up your bridge, have a look at [our help
 section](https://community.torproject.org/relay/getting-help/). If
 your bridge is now running, check out the [post-install
 notes](https://community.torproject.org/relay/setup/bridge/post-install/).

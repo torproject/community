@@ -1,0 +1,142 @@
+section: onion services
+---
+section_id: onion-services
+---
+color: primary
+---
+_template: layout.html
+---
+title: Talk about onions
+---
+subtitle: Become an onion advocate and explain the importance of onion services.
+---
+key: 1
+---
+html: two-columns-page.html
+---
+body:
+
+Beyond myths and misperceptions, advocating for onion services and privacy enhancing technologies sometimes is challenging.
+There are different use cases, and approaching potential adopters with a specific use case instead of another, can engage them and lead to new onions services being setup.
+
+These talking points will help to explain how onion services offer multiple privacy and security benefits in different contexts.
+
+ * How Onion Services Work
+ * Freedom of Press and Censorship Circumvention
+ * Network sustainability
+ * Level up your service privacy
+ * Protect sources, whistleblowers, and journalists
+ * Decentralization
+ * Educate users about privacy by design
+ * Metadata obfuscation or elimination
+
+### How Onion Services Work
+
+A potential adopter has probably already heard about the Tor Project, the network and even Tor relays, and that's great!
+[Tor relays](https://community.torproject.org/relay/types-of-relays/) are part of a [public infrastructure](https://metrics.torproject.org/rs.html#toprelays), where Tor users encrypted traffic is routed around to reach out the open internet.
+Onion services aren't like a Tor relay in the network.
+
+An onion service on the Tor network behaves like any other Tor clients.
+The Onion Service to become available on the network connects to rendezvous nodes.
+A client that wants to access the onion service does the same. 
+
+This means that connections from the client to the server never leave the Tor network.
+In contrast to running a [Tor relay](https://community.torproject.org/relay), running a Tor Onion Service does not result in your IP address being publicly listed anywhere, nor does your service relay other Tor traffic.
+
+For a broader understanding, read [Onion Services overview](https://community.torproject.org/onion-services/overview/) and watch this talk: [DEF CON 25 - Next Generation Tor Onion Services](https://www.youtube.com/watch?v=Di7qAVidy1Y).
+
+### Freedom of Press and Censorship Circumvention
+
+Regular Tor connections already provide censorship circumvention, but only onion services can anonymize both parts of communication - users and provider -, creating a metadata free communication between the user of the service and the service itself.
+
+Censorship technologies are being deployed by different actors, like governments and Internet providers, worldwide to block access to free press and privacy tools.
+
+To protect freedom of speech and freedom of opinion in censored spaces, major media organizations have made their websites available over onion services in the last few years.
+
+That's the case of NY Times, ProPublica, Deutsche Welle, BBC, The Markup and other newsrooms.
+
+The project [Secure The News](https://securethe.news/), developed by [Freedom of the Press Foundation](https://freedom.press/news/onions-side-tracking-tor-availability-reader-privacy-major-news-sites/), tracks how secure news organizations’s websites are. One of its metrics is the adoption of onion services .
+
+Read the news organizations announcement about their onion site:
+
+ * "We launched this in part because we do a lot of reporting, writing, and coding about issues like media censorship, digital privacy and surveillance, and breaches of private medical information. Readers use our interactive databases to see data that reveals a lot about themselves, such as whether their doctor receives payments from drug companies. Our readers should never need to worry that somebody else is watching what they’re doing on our site. So we made our site available as a Tor hidden service (onion service) to give readers a way to browse our site while leaving behind less of a digital trail." [ProPublica](https://www.propublica.org/nerds/a-more-secure-and-anonymous-propublica-using-tor-hidden-services)
+
+ * "Some readers choose to use Tor to access our journalism because they're technically blocked from accessing our website; or because they worry about local network monitoring; or because they care about online privacy; or simply because that is the method that they prefer." [New York Times](https://open.nytimes.com/https-open-nytimes-com-the-new-york-times-as-a-tor-onion-service-e0d0b67b7482)
+
+ * "DW is a global advocate for freedom of opinion and freedom of speech. […] It is therefore a logical step for us to also use Tor to reach people in censored markets who previously had limited or no access to free media." [Deutsche Welle](https://www.dw.com/en/dw-websites-accessible-via-tor-protocol/a-51338328)
+
+ * "The browser can obscure who is using it and what data is being accessed, which can help people avoid government surveillance and censorship. Countries including China, Iran and Vietnam are among those who have tried to block access to the BBC News website or programmes." [BBC](https://www.bbc.com/news/technology-50150981)
+
+### Network sustainability
+
+The traffic generated by onion services doesn't leave the Tor network, and therefore, these onion circuits free up exit relay bandwidth for others.
+This is important because exit relays are a limited resource, making up 20% of the [7000 relays](https://metrics.torproject.org/networksize.html).
+As they're a small fraction of the network, in general, exit relays are overloaded and represent a bottleneck for Tor users' browsing experience.
+
+Onion services don't use the same circuit path as regular Tor connections.
+When a service is available over onion services, it adds diversity to the Tor network since it uses a different set of circuits on the network, avoiding exit relays completely.
+As a result of this design, onion services and its users are immune to attacks related to [bad exit relays](https://blog.torproject.org/bad-exit-relays-may-june-2020).
+
+### Level up your service privacy
+
+Beyond websites and onion sites, it's possible to do many things with onion services, for example, email.
+Even though privacy aware users can adopt tools to protect their communications like OpenPGP, there is plenty of metadata on encrypted emails: for example who is communicating with whom, when, how frequently, where, when it was sent and received, what type of computer it was generated, etc.
+
+As Edward Snowden points out in his book, **"Permanent Record"** (2019),
+
+    "You know what you're saying during a phone call, or what you're writing in an email. But you have hardly any control over the metadata you produce, because it is generated automatically. [...] In sum, metadata can tell your surveillant virtually everything they'd ever want or need to know about you, except what's actually going on inside your head."
+
+[Onionmx](https://github.com/ehloonion/onionmx) is a software that allows the delivery of emails entirely over onion services, obfuscating the metadata of who is talking with whom.
+E-mail providers like [Riseup](https://riseup.net/en/security/network-security/tor#riseups-tor-onion-services), [Systemli](https://www.systemli.org/service/onion.html) and [many others](https://github.com/ehloonion/onionmx/blob/master/sources/map.yml) protect their users privacy using onionmx.
+
+Other providers like [ProtonMail](https://protonmail.com/blog/protonmail-tor-censorship/) allow users to read and send their e-mail securely and anonymously over their webclient that serves an onion site.
+
+### Protect sources, whistleblowers, and journalists
+
+Many journalists and media organizations use tools based on onion services to protect their sources.
+They share and accept documents from anonymous sources using tools like SecureDrop, GlobaLeaks or OnionShare.
+
+Originally developed by Aaron Swartz, [SecureDrop](https://securedrop.org/) is an open source whistleblower submission system maintained by [Freedom of the Press Foundation](https://freedom.press) and deployed by many news organizations around the world.
+With SecureDrop, sources can only submit documents in a secure and anonymous way, using Tor Browser.
+Thus, a journalist won't know who the author is and can't put the source at risk.
+
+[GlobaLeaks](https://globaleaks.org) is an open source whistleblowing framework focused on portability and accessibility.
+It is a web application running as an onion service that whistleblowers and journalists can anonymously exchange information and files.
+Started in 2011 by a group of Italians, the project is now developed by the [Hermes Center for Transparency and Digital Human Rights](https://www.hermescenter.org/).
+
+[OnionShare](https://onionshare.org) is another tool based on onion services used to provide strong anonymity to transmit sensitive files between journalists safely.
+It makes it possible to host files on your own computer and share (send and receive) using onion services.
+All the recipients of this communication need to have Tor Browser installed on their computer to open the onion address.
+OnionShare was developed after a human rights violation during the Snowden revelations in 2013,
+
+    "I first saw the need for this tool when I learned about how David Miranda, the partner of my colleague Glenn Greenwald, got detained for nine hours at a London airport while he was trying to fly home to Brazil.
+    Working on a journalism assignment for the Guardian, Miranda was carrying a USB stick with sensitive documents.
+    I knew that he could have securely sent the documents over the internet using a Tor onion service, one of the most underappreciated technologies on the internet, and avoided the risk of physically traveling with them.
+    I developed OnionShare to make this file sharing process over the Tor network more accessible to everyone." [OnionShare 2 release](https://blog.torproject.org/new-release-onionshare-2)
+
+### Decentralization
+
+As explained in [Overview](https://community.torproject.org/onion-services/overview/), there's no central authority that approves or rejects onion services.
+The address of an onion service is automatically generated.
+Operators don't use the regular DNS infrastructure and do not need to purchase or register a domain name.
+
+A great example of this use case is the chat program [Ricochet Refresh](https://ricochetrefresh.net/).
+Ricochet uses onion services to build secure communication with these features: metadata resistant, anonymous, and decentralized.
+In Ricochet Refresh, each user is an onion service.
+And because of that, there isn't a central server that can be compromised by an attacker.
+
+### Educate users about privacy by design
+
+Onion services are an excellent example of privacy by design technology, where one is secure and anonymous by default.
+Making your service available over onion services is an opportunity to educate the general public about Tor and how a more secure way to access the internet looks like: easy as browsing a web page.
+Get inspired by our campaign [#MoreOnionsPorFavor](https://blog.torproject.org/more-onions-porfavor) and teach others about the importance of anonymity.
+
+### Metadata obfuscation or elimination
+
+When you use the Tor network to browse the web you are not sending any information by default of who you are or where you are connecting from.
+The Onion Services use the Tor network to eliminate information about where they are situated.
+Using them eliminates all metadata that may be associated with the service otherwise.
+
+### One onion a day keeps the surveillance away
+
+Now that you know all the benefits of onion services, you may want to set up an [onion site](https://community.torproject.org/onion-services/setup/) and read about the [protocol overview](https://community.torproject.org/onion-services/overview/).

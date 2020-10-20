@@ -4,7 +4,11 @@ _template: layout.html
 ---
 html: two-columns-page.html
 ---
-active: True
+active: False
+---
+completed: True
+---
+url: https://gitlab.torproject.org/woswos/CAPTCHA-Monitor
 ---
 section: GSoC
 ---
@@ -24,40 +28,40 @@ arma
 ---
 difficulty: medium
 ---
-title: Cloudflare CAPTCHA Monitoring
+title: Cloudflare Captcha Monitoring
 ---
 subtitle:
 
-This project should implement a mechanism to track the rate that Cloudflare fronted webpages return CAPTCHAs to Tor users over time.
+This project should implement a mechanism to track the rate that Cloudflare fronted webpages return Captchas to Tor users over time.
 
 ---
 body:
 
 # Problem
 
-A large number of Tor users report getting hit by infinite CAPTCHA loops when visiting webpages fronted by Cloudflare. This makes them feel punished for using Tor to protect their privacy and prevents them from legitimately accessing websites.
+A large number of Tor users report getting hit by infinite Captcha loops when visiting webpages fronted by Cloudflare. This makes them feel punished for using Tor to protect their privacy and prevents them from legitimately accessing websites.
 
 # Proposal
 
-For this project we would like to track in practice how often Cloudflare fronted webpages return CAPTCHAs to Tor clients.
+For this project we would like to track in practice how often Cloudflare fronted webpages return Captchas to Tor clients.
 
 Our proposed approach consists of:
 
 1. Setting up a very simple static webpage to be fronted by Cloudflare
-2. Write a web client to periodically fetch this static webpage via Tor and record how often a CAPTCHA is returned
-3. Record and graph CAPTCHA vs real page rates
+2. Write a web client to periodically fetch this static webpage via Tor and record how often a Captcha is returned
+3. Record and graph Captcha vs real page rates
 4. Using the pre-existing architecture, run a second client that does not fetch this webpage via Tor. This will allow us to contrast and compare how Cloudflare responds to Tor Browser vs other browsers.
 5. Track and publish these details publicly
 
 There are two interesting metrics to track over time: 
 
-- the fraction of exit relays that are getting hit with CAPTCHAs, and
-- the chance that a Tor client, choosing an exit relay in the normal weighted faction, will get hit by a CAPTCHA.
+- the fraction of exit relays that are getting hit with Captchas, and
+- the chance that a Tor client, choosing an exit relay in the normal weighted faction, will get hit by a Captcha.
 
 Then there are other interesting patterns to look for:
 
 - Are certain IP addresses punished consistently and others never punished?
-- Is whether you get a CAPTCHA much more probabilistic and transient?
+- Is whether you get a Captcha much more probabilistic and transient?
 - Does that pattern change over time?
 
 # Getting Started

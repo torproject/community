@@ -12,15 +12,11 @@ body:
 
 ### 1. Setup `pkg_add`
 
-```
-echo "PKG_PATH=http://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/$(uname -m)/$(uname -r)/All" > /etc/pkg_install.conf
-```
+`echo "PKG_PATH=http://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/$(uname -m)/$(uname -r)/All" > /etc/pkg_install.conf`
 
 2. Install `obfs4proxy` and `tor` NetBSD's package
 
-```
-pkg_add obfs4proxy tor
-```
+`# pkg_add obfs4proxy tor`
 
 ### 2. Configure `/usr/pkg/etc/tor/torrc` to run **Tor** as a Bridge
 
@@ -64,19 +60,17 @@ Don't forget to change the `ORPort`, `ServerTransportListenAddr`, `ContactInfo`,
 
 ### 3. Start `tor`:
 
-```
-ln -sf /usr/pkg/share/examples/rc.d/tor /etc/rc.d/tor
-echo "tor=YES" >> /etc/rc.conf
-/etc/rc.d/tor start
-```
+`# ln -sf /usr/pkg/share/examples/rc.d/tor /etc/rc.d/tor`
+
+`# echo "tor=YES" >> /etc/rc.conf`
+
+`# /etc/rc.d/tor start`
 
 ### 4. Monitor your logs
 
 To confirm your bridge is running with no issues, you should see something like this:
 
-```
-tail /var/log/messages
-```
+`tail /var/log/messages`
 
 ```
 [notice] Your Tor server's identity key fingerprint is '<NICKNAME> <FINGERPRINT>'

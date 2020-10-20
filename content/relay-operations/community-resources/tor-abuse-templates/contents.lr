@@ -15,7 +15,7 @@ Below are a collection of letters you can use to respond to your ISP about their
 
 ## Format and Philosophy of Templates
 
-The general format of these templates is to inform the complaintant about Tor, to help them to find a solution to their particular issue that works in general for the Internet at large (open wifi, open proxies, botnets, etc), and barring all else, how to block Tor.
+The general format of these templates is to inform the complainant about Tor, to help them to find a solution to their particular issue that works in general for the Internet at large (open wifi, open proxies, botnets, etc), and barring all else, how to block Tor.
 The philosophy of the Tor Project is that abuse should be handled proactively by the site administrators, rather than wasting effort and resources on seeking vengeance and chasing ghosts.
 
 The difference between the proactive approach and the reactive approach to abuse is the difference between decentralized fault-tolerant Internet freedom, and fragile, corruptible totalitarian control.
@@ -45,7 +45,7 @@ Unfortunately, some people misuse the network. However, compared to the rate of 
 ## Abuse Scenarios
 
 The following scenario-specific paragraphs should be appended to the Common Boilerplate paragraphs above.
-The common boilerplate should be abridged or be omitted if the abuse complaintant is already familiar with Tor.
+The common boilerplate should be abridged or be omitted if the abuse complainant is already familiar with Tor.
 
 ## Comment/Forum Spam
 
@@ -59,8 +59,8 @@ However, be aware that this may be just one jerk amongst many legitimate Tor use
 You might have luck getting rid of this jerk by temporarily limiting account creation to require Gmail accounts before posting, or by requiring account creation be done over non-Tor before posting.
 
 In general, we believe that problems like this are best solved by improving your service to defend against the attack from the Internet at large.
-Brute force login attempts can be reduced/slowed by captchas, which is the approach taken by Gmail for this same problem.
-In fact, Google provides a free captcha service, complete with code for easy inclusion in a number of systems to help other sites deal
+Brute force login attempts can be reduced/slowed by Captchas, which is the approach taken by Gmail for this same problem.
+In fact, Google provides a free Captcha service, complete with code for easy inclusion in a number of systems to help other sites deal
 with this issue: https://code.google.com/apis/recaptcha/intro.html
 
 ```
@@ -92,7 +92,7 @@ We're sorry your site is experiencing this heavy load from Tor.
 However, it is possible that your rate limiting alarms simply experienced a false positive due to the amount of traffic that flows through the router.
 We provide service to almost a gigabit of traffic per second, 98% of which is web traffic.
 
-If the attack is real and ongoing, however,  the Tor project provides an automated DNSRBL for you to query to block login attempts coming
+If the attack is real and ongoing, however, the Tor project provides an automated DNSRBL for you to query to block login attempts coming
 from Tor nodes: https://www.torproject.org/projects/tordnsel.html.en
 
 It is also possible to download a list of all Tor exit IPs that will connect to your server port:
@@ -100,10 +100,10 @@ https://check.torproject.org/cgi-bin/TorBulkExitList.py?ip=YOUR_IP&port=80
 
 In general however, we believe that problems like this are best solved by improving the service to defend against the attack from the Internet at large.
 
-Scraping and robot activity can be reduced/slowed by captchas, which is the approach taken by Gmail for this same problem.
-In fact, Google provides a free captcha service, complete with code for easy inclusion in a number of systems to help other sites deal with this issue: https://code.google.com/apis/recaptcha/intro.html
+Scraping and robot activity can be reduced/slowed by Captchas, which is the approach taken by Gmail for this same problem.
+In fact, Google provides a free Captcha service, complete with code for easy inclusion in a number of systems to help other sites deal with this issue: https://code.google.com/apis/recaptcha/intro.html
 
-Slow DoS attacks [aimed to consume the Apache MaxClients limit](http://www.guerilla-ciso.com/archives/2049) can be alleviated by reducing the httpd.conf TimeOut and KeepAliveTimeout config values to 15-30 and raising the ServerLimit and MaxClients values to omething like 3000.
+Slow DoS attacks [aimed to consume the Apache MaxClients limit](http://www.guerilla-ciso.com/archives/2049) can be alleviated by reducing the httpd.conf TimeOut and KeepAliveTimeout config values to 15-30 and raising the ServerLimit and MaxClients values to something like 3000.
 
 If this fails, DoS attempts can also be solved with iptables-based rate limiting solutions, load balancers such as nginx, and also IPS devices, but be aware that Internet traffic is not always uniform in quantity by IP, due to large corporate and even national outproxies, NATs, and services like Tor.
 http://kevin.vanzonneveld.net/techblog/article/block_brute_force_attacks_with_iptables/
@@ -121,8 +121,8 @@ The attacker would probably just chain an open proxy after Tor, or just use open
 The Tor project does provide an automated DNSRBL for you to query to flag requests from Tor nodes as requiring special treatment: https://www.torproject.org/projects/tordnsel.html.en
 
 In general, we believe that problems like this are best solved by improving the service to defend against the attack from the Internet at large rather than specifically tailoring behavior for Tor.
-Brute force login attempts can be reduced/slowed by captchas, which is the approach taken by Gmail for this same problem.
-In fact, Google provides a free captcha service, complete with code for easy inclusion in a number of systems to help other sites deal with this issue: https://code.google.com/apis/recaptcha/intro.html
+Brute force login attempts can be reduced/slowed by Captchas, which is the approach taken by Gmail for this same problem.
+In fact, Google provides a free Captcha service, complete with code for easy inclusion in a number of systems to help other sites deal with this issue: https://code.google.com/apis/recaptcha/intro.html
 ```
 
 ## SSH Bruteforce Attempts
@@ -185,29 +185,33 @@ So it is even possible this is a legitimate order, but was flagged as fraud sole
 
 ## Threats of Violence (Advice for Real-Time Discussion)
 
-If a serious abuse complaint not covered by this template set arrives, the best answer is to follow a pattern with the complaining party.  This is not legal advice.  This was not written or reviewed by a lawyer.  It was written by someone with experience in working with various ISPs who had issues with a Tor exit node on their network.  It has also been reviewed by someone who works in Abuse at a major ISP.
+If a serious abuse complaint not covered by this template set arrives, the best answer is to follow a pattern with the complaining party.
+This is not legal advice.
+This was not written or reviewed by a lawyer.
+It was written by someone with experience working with various ISPs who had issues with a Tor exit node on their network.
+It has also been reviewed by someone who works in Abuse at a major ISP.
 
- * Read the [Tor Overview](https://2019.www.torproject.org/about/overview.html.en).  Be prepared to summarize and answer basic questions.  Assume the person with which you're going to converse knows nothing about Tor.  Assume this same person isn't going to trust anything you say.
+ * Read the [Tor Overview](https://2019.www.torproject.org/about/overview.html.en). Be prepared to summarize and answer basic questions. Assume the person with whom you're going to converse knows nothing about Tor. Assume this same person isn't going to trust anything you say.
   * In serious cases, such as harassment email or death threats, it is often helpful to draw an analogy to situations in the physical world where an action is perpetrated by an anonymous individual (such as delivering the notice via postal mail).
   * Remind them that traditional policework can still be used to determine who had the means, motive, and opportunity to commit the crime.
- * Arrange to talk with or directly email the complaintant.
+ * Arrange to talk with or directly email the complainant.
  * During the conversation make sure you explain a few points:
   * You are not the perpetrator of the issue.
-  * You are a responsible server operator and concerned about the complaintant's problem.
-  * You are not insane.  You may be insane, but we don't want the complaintant to guess this is true.
- * In many cases, your ISP will be involved as a conduit for the 3rd party complaintant.  Your ISP wants to know:
+  * You are a responsible server operator and concerned about the complainant's problem.
+  * You are not insane.  You may be insane, but we don't want the complainant to guess this is true.
+ * In many cases, your ISP will be involved as a conduit for the 3rd party complainant. Your ISP wants to know:
   * Your server is not compromised.
   * Your server is not a spam relay.
   * Your server is not a trojan/zombie.
-  * You are a competent server administrator and can address the issue.  Minimally, you can at least discuss and respond to the issue intelligently.
-  * The ISP is not at fault and not liable for your actions.  This is normally the case, but the poor abuse person dealing with the issues just wants to hear it isn't the ISPs problem.  They will move on after they are comfortable.
- * Discuss options.  Options Phobos has been offered:
-  * The ISP/Complaintant may very well demand to see logfiles.  Fortunately, by default, nothing sensitive disclosed.  You may want a new ISP if they demand access to log files ad hoc.
-  * The ISP/Complaintant suggests you convert to middleman. In this case, you may want to counter with a reduced exit policy, such as the one suggested in [item #6 of the above blog post](https://blog.torproject.org/running-exit-node).
-  * The ISP/Complaintant demands you disable Tor.  You may want a new ISP as a result.
-  * The ISP/Complaintant states they will firewall off the traffic on the default ports.  You may want a new ISP as a result.
-  * Update the config to disallow traffic to a certain IP range from your exit node. You may want to suggest the complaintant use the [Tor DNS RBL](https://2019.www.torproject.org/projects/tordnsel.html.en) instead.
- * After all has been discussed, offer a follow up conversation within a week.  Make sure your agreed upon changes are implemented.  Neither the ISP nor Complaintant may want to do this, but the fact that you offered is in your credit.  This may help them feel "comfortable" with you.
+  * You are a competent server administrator and can address the issue. Minimally, you can at least discuss and respond to the issue intelligently.
+  * The ISP is not at fault and not liable for your actions. This is normally the case, but the poor abuse person dealing with the issues just wants to hear it isn't the ISPs problem. They will move on after they are comfortable.
+ * Discuss options. Options Phobos has been offered:
+  * The ISP/Complainant may very well demand to see logfiles. Fortunately, by default, nothing sensitive disclosed. You may want a new ISP if they demand access to log files ad hoc.
+  * The ISP/Complainant suggests you convert to middleman. In this case, you may want to counter with a reduced exit policy, such as the one suggested in [item #6 of the above blog post](https://blog.torproject.org/running-exit-node).
+  * The ISP/Complainant demands you disable Tor. You may want a new ISP as a result.
+  * The ISP/Complainant states they will firewall off the traffic on the default ports. You may want a new ISP as a result.
+  * Update the config to disallow traffic to a certain IP range from your exit node. You may want to suggest the complainant use the [Tor DNS RBL](https://2019.www.torproject.org/projects/tordnsel.html.en) instead.
+ * After all has been discussed, offer a follow up conversation within a week. Make sure your agreed upon changes are implemented. Neither the ISP nor Complainant may want to do this, but the fact that you offered is in your credit. This may help them feel "comfortable" with you.
 
 
 ## Other Template Sets

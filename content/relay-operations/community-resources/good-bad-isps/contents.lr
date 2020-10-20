@@ -32,7 +32,7 @@ For network diversity and stronger anonymity, you should avoid providers and cou
 |-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
 | [UPC Austria GmbH](https://www.upc.at/) | - | - | Yes | Yes | (ISP) does not care what their customers do at all (unless you have a business connection) | 12/2011 |
 | [Silver Server GmbH](http://sil.at/) | - | -| Yes | Yes | Forwards abuse. Hosts already some big exit/entry nodes which seem to have no problems. Very expensive traffic. | 12/2011 |
-| [Tele2 Austria GmbH](https://tele2.at/) | - | - | Yes | Yes | Forwards abuse at business connections, good quality traffic, does not like "proxys" on private lines. Cheap synchronous (SDSL) connections. | 12/2011 |
+| [Tele2 Austria GmbH](https://tele2.at/) | - | - | Yes | Yes | Forwards abuse at business connections, good quality traffic, does not like "proxies" on private lines. Cheap synchronous (SDSL) connections. | 12/2011 |
 | [A1(former Telekom Austria)](http://a1.net) | - | - | Yes | No | Does not like Abuse (in any form) at all. Seems to give out customer data at alleged abuse. Not recommended but cheap. | 12/2011 |
 | [xpirio GmbH](http://xpirio.at) | - | - | Yes | ? | In general rather relaxed at all services, but better get in touch with their (very understanding) support when you expect abuse. | 12/2011 |
 
@@ -132,6 +132,9 @@ For network diversity and stronger anonymity, you should avoid providers and cou
 | [Prometeus](https://www.prometeus.net/sito/) | - | Yes | Yes | No | - | - |
 | [ArubaCloud /Aruba](https://cloud.it/) | - | Yes | Yes | Yes |  TOS generically indicate that the operator is responsible for all the activities on the machine. [Read more](https://balist.es/blog/2016/04/18/running-a-tor-exit-node-on-aruba-arubacloud-a-detailed-account/) | - |
 | [SelfServer by Enter](https://selfserver.it/) | - | Yes | Yes | Yes | Uncomfortable due to old CentOS 6.10, NATed IPv4-only networking, ports other than the well-known are filtered. Abuse complaints need to go through their support service | 11/2018 |
+| [Revolution Hosting](https://rhosting.it/) | AS60798 | Yes | Yes | No | Exit nodes are allowed but they will be immediately terminated if any abuse complaint is issued. KVM VPS. IPv4+IPv6 native support. * Gnu/Linux, FreeBSD and Windows server supported. Coingate supported. | 12/2020 |
+| [G-Core Labs](https://gcorelabs.com) | AS199524 | Yes | Yes | Yes | Comments: No restrictions but legality is mandatory. Exits are welcome. Abuse complaints are forwarded to the customer and discussed with the abuse team. KVM VPS. IPv4+IPv6 native support. * Gnu/Linux, FreeBSD and Windows server supported. Unmetered traffic. | 12/2020 |
+
 
 
 ### Latvia

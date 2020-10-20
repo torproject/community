@@ -10,7 +10,7 @@ body:
 
 Recent OpenBSD systems, like 6.5/amd64, already have the repository configured on `/etc/installurl` so we do not need to bother changing it.
 
-Should that's not your case, please adjust the `installurl` configuration file like this:
+If that's not your case, please adjust the `installurl` configuration file like this:
 
 ```
 echo "https://cdn.openbsd.org/pub/OpenBSD" > /etc/installurl

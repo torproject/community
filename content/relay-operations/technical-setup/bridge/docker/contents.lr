@@ -30,9 +30,7 @@ which allows us to get in touch with you if there are problems with your bridge.
 With your bridge configuration in place, you can now deploy the container by
 running:
 
-```
-docker-compose up -d obfs4-bridge
-```
+`docker-compose up -d obfs4-bridge`
 
 This command will automatically load your `docker-compose.yml` file while
 considering the environment variables in `.env`.
@@ -49,9 +47,8 @@ That's it! Your container is now bootstrapping your new obfs4 bridge.
 
 Upgrading to the latest version of our image is as simple as running:
 
-```
-docker-compose up -d obfs4-bridge
-```
+`docker-compose up -d obfs4-bridge`
+
 
 Note that your bridge's data directory (which includes its key material) is stored in a docker volume, so you won't lose your bridge's identity when upgrading to the latest docker image.
 If you are running multiple bridges on your computer, you need to repeat this step for each bridge.
@@ -61,16 +58,13 @@ We will announce new image versions on the [tor-dev](https://lists.torproject.or
 
 You can inspect your bridge's logs by running:
 
-```
-docker logs CONTAINER_ID
-```
+`docker logs CONTAINER_ID`
+
 
 To use your new bridge in Tor Browser, you need its "bridge line".
 Here's how you can get your bridge line:
 
-```
-docker exec CONTAINER_ID get-bridge-line
-```
+`docker exec CONTAINER_ID get-bridge-line`
 
 This will return a string similar to the following:
 
@@ -79,7 +73,7 @@ obfs4 1.2.3.4:1234 B0E566C9031657EA7ED3FC9D248E8AC4F37635A4 cert=OYWq67L7MDApdJC
 ```
 
 Make sure to check out the [post-install notes](https://community.torproject.org/relay/setup/bridge/post-install/).
-If you are having troubles setting up your bridge, have a look at [our help section](https://community.torproject.org/relay/getting-help/).
+If you are having trouble setting up your bridge, have a look at [our help section](https://community.torproject.org/relay/getting-help/).
 
 ---
 html: two-columns-page.html

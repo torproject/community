@@ -40,6 +40,6 @@ If you are looking to run a relay with minimal effort, we recommend you stick to
 
 The installation commands are shown in code blocks and must be executed with root privileges.
 
-Click below in which type of relay do you want to host and don't forget to read [Relay post-install and good practices](/relay/setup/post-install/).
+Click below on type of relay do you want to host and don't forget to read [Relay post-install and good practices](/relay/setup/post-install/).
 ---
 _slug: {{setup}}

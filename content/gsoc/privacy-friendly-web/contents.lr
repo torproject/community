@@ -4,7 +4,7 @@ _template: layout.html
 ---
 html: two-columns-page.html
 ---
-active: True
+active: False
 ---
 section: GSoC
 ---
@@ -49,7 +49,7 @@ Websites can work seamlessly with the Tor Browser and other privacy enhancing br
 
 The Tor Browser is in fact, based on Mozilla's Extended Support Release (ESR) Firefox branch. We have a series of patches against this browser to enhance privacy and security. Browser behavior is additionally augmented through the Torbutton extension, and we also change a number of Firefox preferences from their defaults.
 
-The Tor Project has developed over the years a set of web development guidelines that allow websites to work with security enhanced browsers without causing any or minimal functionality destruption to their users. These guidelines have been shaped in an internal styleguide that has been adopted across all torproject.org websites.
+The Tor Project has developed over the years a set of web development guidelines that allow websites to work with security enhanced browsers without causing any or minimal functionality disruption to their users. These guidelines have been shaped in an internal styleguide that has been adopted across all torproject.org websites.
 
 We are now formalizing these web development patterns and some security concerns that need to be considered when developing websites for users surfing the web with security enhanced browsers and tools. The scope of this project is creating a open-source community-driven browsable list of patterns and release a css/js framework that web developers can extend and use in their work.
 

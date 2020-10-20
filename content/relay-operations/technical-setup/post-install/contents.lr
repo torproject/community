@@ -10,7 +10,7 @@ If you are using a firewall, open a hole in your firewall so incoming connection
 
 Also, make sure you allow all outgoing connections too, so your relay can reach the other Tor relays, clients and destinations.
 
-You can find the specific ORPort TCP port number in the torrc configuration samples bellow (in the OS specific sections).
+You can find the specific ORPort TCP port number in the torrc configuration samples below (in the OS specific sections).
 
 # 2. Verify that your relay works
 
@@ -21,7 +21,7 @@ Self-testing indicates your ORPort is reachable from the outside. Excellent.
 Publishing server descriptor.
 ```
 
-About 3 hours after you started your relay it should appear on [Relay Search](https://metrics.torproject.org/rs.html).
+About 3 hours after you start your relay it should appear on [Relay Search](https://metrics.torproject.org/rs.html).
 You can search for your relay using your nickname or IP address.
 
 # 3. Read about Tor relay lifecycle
@@ -30,15 +30,15 @@ It takes some time for relay traffic to ramp up, this is especially true for gua
 
 # 4. Configuration Management
 
-If you plan to run more than a single relay, or you want to run a high capacity relay (multiple Tor instances per server) or want to use strong security features like [Offline Master Keys](https://trac.torproject.org/projects/tor/wiki/doc/TorRelaySecurity/OfflineKeys) without performing additional steps manually, you may want to use a configuration management for better maintainability.
+If you plan to run more than a single relay, or you want to run a high capacity relay (multiple Tor instances per server) or want to use strong security features like [Offline Master Keys](https://trac.torproject.org/projects/tor/wiki/doc/TorRelaySecurity/OfflineKeys) without performing additional steps manually, you may want to use configuration management for better maintainability.
 
-There are multiple configuration management solutions for Unix based operating systems (Ansible, Puppet, Salt, ...).
+There are multiple configuration management solutions for Unix-based operating systems (Ansible, Puppet, Salt, ...).
 
-The following Ansible Role has specifically been build for Tor relay operators and supports multiple operating systems: [Ansible Relayor](http://github.com/nusenu/ansible-relayor).
+The following Ansible Role has specifically been built for Tor relay operators and supports multiple operating systems: [Ansible Relayor](http://github.com/nusenu/ansible-relayor).
 
 # 5. Important: if you run more than one Tor instance
 
-To avoid putting Tor clients at risk when operating multiple relays you must set a proper [MyFamily](https://2019.www.torproject.org/docs/tor-manual.html.en#MyFamily) value and have a valid [ContactInfo](https://2019.www.torproject.org/docs/tor-manual.html.en#ContactInfo) in your torrc configuration.
+To avoid putting Tor clients at risk, when operating multiple relays you must set a proper [MyFamily](https://2019.www.torproject.org/docs/tor-manual.html.en#MyFamily) value and have a valid [ContactInfo](https://2019.www.torproject.org/docs/tor-manual.html.en#ContactInfo) in your torrc configuration.
 The MyFamily setting is simply telling Tor clients what Tor relays are controlled by a single entity/operator/organization, so they are not used in multiple positions in a single circuit.
 
 If you run two relays and they have fingerprints AAAAAAAAAA and BBBBBBBB, you would add the following configuration to set MyFamily:
@@ -47,10 +47,10 @@ If you run two relays and they have fingerprints AAAAAAAAAA and BBBBBBBB, you wo
 MyFamily AAAAAAAAAA,BBBBBBBB
 ```
 
-to both relays. To find your relays fingerprint you can look into the log files when tor starts up or find the file named "fingerprint" in your tor DataDirectory.
+to both relays. To find your relay's fingerprint you can look into the log files when tor starts up or find the file named "fingerprint" in your tor DataDirectory.
 
-Instead of doing so manually for big operators we recommend to automate the MyFamily setting via a configuration management solution.
-Manually managing MyFamily for big relay groups is error prone and can put Tor clients at risk.
+Instead of doing so manually, for big operators we recommend to automate the MyFamily setting via a configuration management solution.
+Manually managing MyFamily for big relay groups is error-prone and can put Tor clients at risk.
 
 # 6. Optional: Limiting bandwidth usage (and traffic)
 
@@ -81,8 +81,8 @@ The following command line will ping the IPv6 addresses of Tor directory authori
 ping6 -c2 2001:858:2:2:aabb:0:563b:1526 && ping6 -c2 2620:13:4000:6000::1000:118 && ping6 -c2 2001:67c:289c::9 && ping6 -c2 2001:678:558:1000::244 && ping6 -c2 2607:8500:154::3 && ping6 -c2 2001:638:a000:4140::ffff:189 && echo OK.
 ```
 
-At the end of the output you should see "OK." if that is not the case do not enable IPv6 in your torrc configuration file before IPv6 is indeed working.
-**If you enable IPv6 without working IPv6 connectivity your entire relay will not be used, regardless if IPv4 is working.**
+At the end of the output you should see "OK." if that is not the case, do not enable IPv6 in your torrc configuration file before IPv6 is indeed working.
+**If you enable IPv6 without working IPv6 connectivity, your entire relay will remain unused, regardless of whether IPv4 is working.**
 
 If it worked fine, make your Tor relay reachable via IPv6 by adding an additional ORPort line to your configuration (example for ORPort 9001):
 
@@ -90,7 +90,8 @@ If it worked fine, make your Tor relay reachable via IPv6 by adding an additiona
 ORPort [IPv6-address]:9001
 ```
 
-The location of that line in the configuration file does not matter you can simply add it next to the first ORPort lins in your torrc file.
+The location of that line in the configuration file does not matter.
+You can simply add it next to the first ORPort lines in your torrc file.
 
 Note: You have to explicitly specify your IPv6 address in square brackets, you can not tell tor to bind to any IPv6 (like you do for IPv4).
 If you have a global IPv6 address you should be able to find it in the output of the following command:
@@ -113,7 +114,7 @@ IPv6Exit 1
 
 After your initial installation and start of the tor daemon it is a good idea to make a backup of your relay's long term identity keys.
 They are located in the "keys" subfolder of your DataDirectory (simply make a copy of the entire folder and store it in a secure location).
-Since relays have a ramp-up time it makes sense to backup the identity key to be able to restore your relay's reputation after a disk failure - otherwise you would have to go through the ramp-up phase again.
+Since relays have a ramp-up time it makes sense to back up the identity key to be able to restore your relay's reputation after a disk failure - otherwise you would have to go through the ramp-up phase again.
 
 Default locations of the keys folder:
 
@@ -127,9 +128,9 @@ This is a very low traffic mailing list and you will get information about new s
 
 ## Setting up outage notifications
 
-Once you setup your relay it will likely run without much work from your side.
+Once you set up your relay it will likely run without much work from your side.
 If something goes wrong it is good to get notified automatically.
-We recommend you use one of the free services that allow you to check your relay's ORPorts for reachability and send you an email should they become unreachable for what ever reason.
+We recommend you use one of the free services that allow you to check your relay's ORPorts for reachability and send you an email should they become unreachable for whatever reason.
 
 [UptimeRobot](https://uptimerobot.com/) is one of these services that allow you to monitor TCP listeners on arbitrary ports.
 This service can check your configured ports once every 5 minutes and send you an email should your tor process die or become unreachable.

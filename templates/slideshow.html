@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>{{ _("Tor Project") }} | {% block title %}{{ this.title }}{% endblock %}</title>
+		<meta name="description" content="{{ _('Tor Project') }} | {{ this.description }}">
+		<meta name="author" content="{{ this.author }}">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="{{ '/static/revealjs/dist/reset.css'|asseturl }}">
+		<link rel="stylesheet" href="{{ '/static/revealjs/dist/reveal.css'|asseturl }}">
+		<link rel="stylesheet" href="{{ '/static/revealjs/dist/theme/tor.css'|asseturl }}" id="theme">
+		<link rel="stylesheet" href="{{ '/static/revealjs/plugin/highlight/monokai.css'|asseturl }}" id="highlight-theme">
+	</head>
+	<body>
+    <div class="reveal">
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section data-background-color="{{ this.background }}" data-background-image="{{ this.image|asseturl }}" data-background-position="bottom right" data-background-size="3em">
+				  <h1>{{ this.title }}</h1>
+				  <h2>{{ this.subtitle }}</h2>
+					<p>{{ this.author }}</p>
+				</section>
+
+        {{ this.slides }}
+
+				<div class="footer">
+					<div class="left">
+						<a href="https://torproject.org">torproject.org</a>
+					</div>
+					<div class="right">
+						<img src="{{ '/static/images/tor-logo/White.png'|asseturl }}">
+					</div>
+				</div>
+      </div>
+
+    </div>
+
+    <script src="{{ '/static/revealjs/dist/reveal.js'|asseturl }}"></script>
+    <script src="{{ '/static/revealjs/plugin/zoom/zoom.js'|asseturl }}"></script>
+    <script src="{{ '/static/revealjs/plugin/notes/notes.js'|asseturl }}"></script>
+    <script src="{{ '/static/revealjs/plugin/search/search.js'|asseturl }}"></script>
+    <script src="{{ '/static/revealjs/plugin/markdown/markdown.js'|asseturl }}"></script>
+    <script src="{{ '/static/revealjs/plugin/highlight/highlight.js'|asseturl }}"></script>
+
+		<script>
+			// Also available as an ES module, see:
+			// https://revealjs.com/initialization/
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+			});
+
+		</script>
+
+	</body>
+</html>
