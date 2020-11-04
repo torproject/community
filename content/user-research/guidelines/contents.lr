@@ -24,7 +24,7 @@ First of all, make sure you read the [Tor Code of Conduct](https://gitweb.torpro
 At Tor, we collect only necessary data to improve our services; we don't collect invasive data about user behaviors - we test our software, not people.
 
 ## Be a good listener and open-minded
-Listening is a skill to build bridges. In Tor, we want people to build bridges, not walls - and we believe this is not just for our services, but as well for our communities. Get in here to read some suggestions about being a better listener and make a great research experience. <link>
+Listening is a skill to build bridges. In Tor, we want people to build bridges, not walls - and we believe this is not just for our services, but also for our communities. Get in here to read some suggestions about being a better listener and make a great research experience. <link>
 
 ## Learn
 When we are in Tor training, we listen to the stories people tell us about their context, about the laws of the Internet, and the difficulties they are going through. This is how we learn how we can help and create new mechanisms to facilitate access to information through Tor products. When we listen, we do research, we learn.
@@ -43,9 +43,9 @@ Send us the result - you don't have to write a report, we can do this data analy
 ## Coordinate with the trainer and the Tor UX team
 You're not doing all this work alone - we will support you with meetings, guides, and mentorship if you want. You can join us at any time on our IRC channel #tor-ux and our [mailing list](https://lists.torproject.org/cgi-bin/mailman/listinfo/ux).
 
-You must be aligned about the agenda and time to run interviews (if that is the case) during the end of the training. **We strongly recommend that you go through the program of the exercise with the trainer**. Also, we want you two to coordinate feedbacks together — both for you and for your audience.
+You must be aligned about the agenda and time to run interviews (if that is the case) during the end of the training. **We strongly recommend that you go through the program of the exercise with the trainer**. Also, we want you two to coordinate feedback together — both for you and for your audience.
 
-By the beginning of the training, be sure to let everyone know whats your role there and why you're taking notes of the practice.
+At the beginning of the training, be sure to let everyone know what is your role there and why you're taking notes on the practice.
 
 ## Get prepared!
 Print and bring with you the material that you will need to run the research - that will probably be something like:
@@ -54,22 +54,24 @@ Print and bring with you the material that you will need to run the research - t
 * Usability test
 * Usability methodology
 
-It is easier to have this material printed and in hands, but if you prefer, you can also type it on your computer.
+It is easier to have this material printed and in hand, but if you prefer, you can also type it on your computer.
 
-Keep in mind that you might not have a useful Internet in the venue, so if you're going to install a Tor feature with someone during the interview, you may need to have it downloaded before the training.
+Keep in mind that you might not have Internet access at the venue, so if you're going to install a Tor feature with someone during the interview, you may need to have it downloaded before the training.
 
 ## Report to Tor UX team
-Before ending the training, coordinate with the trainer the feedbacks, you two should work together to hand out post-its for the audience, you can give one post-it on each color and ask them to fill it with what they think about: 1. the service they just learned; 2. Tor project; and 3. Tor in general. It can also be questions - keep in mind that every feedback is a good feedback.
+Before ending the training, coordinate the feedback with the trainer. The two of you should work together to hand out post-its for the audience, you can give each participant post-it of a different color per question and ask them to fill it with what they think about: 1. the service they just learned; 2. Tor project; and 3. Tor in general. It can also be questions - keep in mind that any feedback is a good feedback.
 
-It is very important for us to hear back from you. We want to know how the training and the research was for you, how we can improve our support and also, if you want to keep running Tor User Research. We will ask you to fill a form by the end of the research, so we can get your address to send to you a researcher kit (t-shirts and stickers). We hope to hear back from you very soon!
+It is very important for us to hear back from you. We want to know how the training and the research was for you, how we can improve our support and also, if you want to keep running Tor User Research. We will ask you to fill a form at the end of the research, so we can get your address to send to you a researcher kit (t-shirt and stickers).
+We hope to hear back from you very soon!
 
-We will send you our document on **how to report** to the UX team, so please [get in touch](https://lists.torproject.org/cgi-bin/mailman/listinfo/ux) with us to get it. If you think you won't have time to gather and report in this format, we would love to have another way to get the material you collected. You can take pictures or send your ´raw´ notes for us.
+We will send you our document on **how to report** to the UX team, so please [get in touch](https://lists.torproject.org/cgi-bin/mailman/listinfo/ux) with us to get it.
+If you think you won't have time to gather and report in this format, we would love to have another way to get the material you collected. You can take pictures or send your ´raw´ notes for us.
 
 ## Additional links
 
 * [Strength in Numbers: Usable Tools Don't Need to Be Invasive](https://blog.torproject.org/strength-numbers-usable-tools-dont-need-be-invasive)
 
-There are plenty of documents online about how to run a User Research, here you can find some of them:
+There are plenty of documents online about how to run User Research, here you can find some of them:
 * [Design Kit: The Human-Centered Design Toolkit](https://www.ideo.com/post/design-kit)
 * [Simply Secure Knowledge Base](https://simplysecure.org/knowledge-base/)
 * [OK Thanks Exploratorium ](https://okthanks.com/exploratorium)

@@ -79,7 +79,7 @@ obfs4 1.2.3.4:1234 B0E566C9031657EA7ED3FC9D248E8AC4F37635A4 cert=OYWq67L7MDApdJC
 ```
 
 Make sure to check out the [post-install notes](https://community.torproject.org/relay/setup/bridge/post-install/).
-If you are having troubles setting up your bridge, have a look at [our help section](https://community.torproject.org/relay/getting-help/).
+If you are having trouble setting up your bridge, have a look at [our help section](https://community.torproject.org/relay/getting-help/).
 
 ---
 html: two-columns-page.html

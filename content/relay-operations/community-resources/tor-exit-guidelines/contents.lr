@@ -10,7 +10,8 @@ These guidelines are meant to give you a quick introduction into the business of
 
 NOTE:
 This FAQ is for informational purposes only and does not constitute legal advice.
-Our aim is to provide a general description of the legal issues surrounding Tor exit relaying. Different factual situations and different legal jurisdictions will result in different answers to a number of questions.
+Our aim is to provide a general description of the legal issues surrounding Tor exit relaying.
+Different factual situations and different legal jurisdictions will result in different answers to a number of questions.
 Therefore, please do not act on this information alone; if you have any specific legal problems, issues, or questions, seek a complete review of your situation with a lawyer licensed to practice in your jurisdiction.
 
 ## Hosting
@@ -18,7 +19,8 @@ Therefore, please do not act on this information alone; if you have any specific
 ### Tor at Universities: Find allies.
 
 Find some professors (or deans!) who like the idea of supporting and/or researching anonymity on the Internet.
-If possible, use an extra IP range whose abuse contact doesn't go through the main university abuse team. Ideally, use addresses that are not trusted by the IP-based authentication many library-related services use -- if the university's entire IP address space is "trusted" to access these library resources, the university is forced to maintain an iron grip on all its addresses.
+If possible, use an extra IP range whose abuse contact doesn't go through the main university abuse team.
+Ideally, use addresses that are not trusted by the IP-based authentication many library-related services use -- if the university's entire IP address space is "trusted" to access these library resources, the university is forced to maintain an iron grip on all its addresses.
 Also read [How do I make my University / ISP / etc happy with my exit node?](/relay/community-resources/tor-relay-universities/)
 
 ### Find Tor-friendly ISPs.
@@ -34,7 +36,8 @@ Once you identified your ISP, you can follow the two-step advice of TorServers.n
 
 1. Ask if the ISP is okay with a Tor exit
 
-2. If they come back positively, ask them if they are OK with an IP range reassignment. If not, you can still explain that you are a non-profit superb large organization filled with security professionals, and that all will be good, and why IP reassignment helps reduce their workload.
+2. If they come back positively, ask them if they are OK with an IP range reassignment.
+If not, you can still explain that you are a non-profit superb large organization filled with security professionals, and that all will be good, and why IP reassignment helps reduce their workload.
 
 The two-step process usually helps in elevating your request to higher levels of support staff without scaring them off too early, even if you  don't end up with your own IP range. Here is template you can use: [Inquiry](https://www.torservers.net/wiki/hoster/inquiry)
 
@@ -42,14 +45,14 @@ The two-step process usually helps in elevating your request to higher levels of
 
 ### Make sure you know the relevant legal paragraphs for common-carrier like communication services in your country (and the country of your hosting provider!).
 
-At least most western countries should have regulations that exclude communication service providers from liability.  Please add your country's regulations to this list.
+At least most western countries should have regulations that exclude communication service providers from liability.
+Please add your country's regulations to this list.
 
-* USA: [DMCA 512](https://www.law.cornell.edu/uscode/text/17/512); see [EFF's Legal FAQ for Tor Operators](/relay/community-resources/eff-tor-legal-faq)  (a very good and relevant read for other countries as well)
-* Germany: [TMG 8](http://www.gesetze-im-internet.de/tmg/__8.html)  and [15](http://www.gesetze-im-internet.de/tmg/__15.html).
-* Netherlands: [Artikel 6:196c BW](http://wetten.overheid.nl/BWBR0005289/Boek6/Titel3/Afdeling4A/Artikel196c/)
-* Austria: [ECG 13](http://www.ris.bka.gv.at/Dokument.wxe?Abfrage=Bundesnormen&Dokumentnummer=NOR40025809)
-* France: FIXME
-* Sweden: [16-19 2002:562](https://lagen.nu/2002:562#P16S1)
+ * USA: [DMCA 512](https://www.law.cornell.edu/uscode/text/17/512); see [EFF's Legal FAQ for Tor Operators](/relay/community-resources/eff-tor-legal-faq)  (a very good and relevant read for other countries as well)
+ * Germany: [TMG 8](http://www.gesetze-im-internet.de/tmg/__8.html)  and [15](http://www.gesetze-im-internet.de/tmg/__15.html).
+ * Netherlands: [Artikel 6:196c BW](http://wetten.overheid.nl/BWBR0005289/Boek6/Titel3/Afdeling4A/Artikel196c/)
+ * Austria: [ECG 13](http://www.ris.bka.gv.at/Dokument.wxe?Abfrage=Bundesnormen&Dokumentnummer=NOR40025809)
+ * Sweden: [16-19 2002:562](https://lagen.nu/2002:562#P16S1)
 
 If you country is missing here and you know a lawyer who can provide a legal opinion, please get in contact with Tor Project.
 
@@ -59,11 +62,15 @@ It's way better for them to hear about Tor from you, in a relaxed environment, t
 
 ### If you're not part of an organization, think about starting one!
 
-Depending on the chosen form, setting up a legal body might help with liability, and in general it helps to appear bigger than you are (and less likely to get raided). The guys from Torservers.net in Germany found a lawyer who would agree to "host" them inside his office. They are now are a non-profit association ("eingetragener Verein, gemeinnutzig") registered inside a lawyer's office. The setup process was easy and cheap. Similar setups probably exist for your country. Another benefit of an association-like structure is that it might still work even when you leave, if you manage to find successors.
+Depending on the chosen form, setting up a legal body might help with liability, and in general it helps to appear bigger than you are (and less likely to get raided).
+The people from Torservers.net in Germany found a lawyer who would agree to "host" them inside his office.
+They are now are a non-profit association ("eingetragener Verein, gemeinnutzig") registered inside a lawyer's office.
+The setup process was easy and cheap. Similar setups probably exist for your country.
+Another benefit of an association-like structure is that it might still work even when you leave, if you manage to find successors.
 
 ### Consider preemptively teaching your local law enforcement about Tor.
 
-"Cybercrime" people actually love it when you offer to [teach them about Tor and the Internet](https://blog.torproject.org/blog/talking-german-police-stuttgart)  -- they're typically overwhelmed by their jobs and don't have enough background to know where to start.
+"Cybercrime" people actually love it when you offer to [teach them about Tor and the Internet](https://blog.torproject.org/blog/talking-german-police-stuttgart) -- they're typically overwhelmed by their jobs and don't have enough background to know where to start.
 Contacting them gives you a chance to teach them why Tor is useful to the world (and why it's [not particularly helpful to criminals](https://2019.www.torproject.org/docs/faq-abuse#WhatAboutCriminals).
 Also, if they do get a report about your relay, they'll think of you as a helpful expert rather than a potential criminal.
 
@@ -75,15 +82,18 @@ If you receive an abuse complaint, don't freak out! Here is some advice for you:
 
 ### Answer to abuse complaints in a professional manner within a reasonable time span.
 
-TorServers.net is a fairly large Tor exit operator and we receive only a very small number of complaints, especially compared to the amount of traffic we push. Roughly 80% are automated reports, and the rest is usually satisfied with [our default reply](https://www.torservers.net/wiki/abuse/templates). We have not needed the input of a lawyer in many years of operation following the advice on this page.
+TorServers.net is a fairly large Tor exit operator and we receive only a very small number of complaints, especially compared to the amount of traffic we push.
+Roughly 80% are automated reports, and the rest is usually satisfied with [our default reply](https://www.torservers.net/wiki/abuse/templates).
+We have not needed the input of a lawyer in many years of operation following the advice on this page.
 
-In addition to the [templates at Torservers.net](https://www.torservers.net/wiki/abuse/templates), you can find many more templates for various scenarios on the [Tor Abuse Templates](/relay/community-resources/tor-abuse-templates/) . It is exceptionally rare to encounter a scenario where none of these templates apply.
+In addition to the [templates at Torservers.net](https://www.torservers.net/wiki/abuse/templates), you can find many more templates for various scenarios on the [Tor Abuse Templates](/relay/community-resources/tor-abuse-templates/).
+It is exceptionally rare to encounter a scenario where none of these templates apply.
 
 ### If you receive a threatening letter from a lawyer about abusive use or a DMCA complaint, also don't freak out.
 
 We are not aware of any case that made it near a court, and we will do everything in our power to support you if it does.
 You can look up if an IP address was listed as an exit relay at a given time at [ExoneraTor](https://exonerator.torproject.org/). Point to that website in your reply to the complaint.
-If you feel it might be helpful, we can write you a signed letter confirming this information: Contact us at tor-assistants@torproject.org if you need one.
+If you feel it might be helpful, we can write you a signed letter confirming this information: Contact us at frontdesk@torproject.org if you need one.
 
 In your reply, state clearly that you are not liable for forwarded content passing through your machine, and include the relevant legal references for your country.
 
@@ -93,12 +103,14 @@ In your reply, state clearly that you are not liable for forwarded content passi
 
 One of the biggest reasons exit relays disappear is because the people answering the abuse address get nervous and ask you to stop.
 If you can get your own IP block, great. Even if not, many providers will still reassign subblocks to you if you ask.
-ARIN uses [SWIP](https://www.arin.net/resources/request/reassignments.html), and RIPE uses something similar. You can also add comments to your range, hinting at your usage as anonymization service ([Example](https://apps.db.ripe.net/search/query.html?searchtext=ZWIEBELFREUNDE)).
+ARIN uses [SWIP](https://www.arin.net/resources/request/reassignments.html), and RIPE uses something similar.
+You can also add comments to your range, hinting at your usage as anonymization service ([Example](https://apps.db.ripe.net/search/query.html?searchtext=ZWIEBELFREUNDE)).
 If you have questions about the process, please write an email to [tor-relays mailing list](https://lists.torproject.org/cgi-bin/mailman/listinfo/tor-relays) and we will try to explain the process to you.
 
 ### Register a phone number and a fax number as abuse contact.
 
-At least law enforcement in Germany regularly uses the fax and phone numbers present in IP records. Torservers.net uses a free German fax-to-email service, call-manager.de, and a VoIP number from Sipgate.de.
+At least law enforcement in Germany regularly uses the fax and phone numbers present in IP records.
+Torservers.net uses a free German fax-to-email service, call-manager.de, and a VoIP number from Sipgate.de.
 
 ### Consider using the Reduced Exit Policy.
 
@@ -115,7 +127,8 @@ Please read all the technical details before getting started. If you have any qu
 
 * Set up an informative website on the exit IP(s) on port 80.
 
-A disclaimer helps giving people the right idea about what is behind traffic coming from these IPs. A simple notice can be published without a separate webserver using Tor's "DirPortFrontPage " directive.
+A disclaimer helps giving people the right idea about what is behind traffic coming from these IPs.
+A simple notice can be published without a separate webserver using Tor's "DirPortFrontPage " directive.
 
 * Try to use dedicated IPs, and when possible dedicated hardware.
 
