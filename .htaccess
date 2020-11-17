@@ -19,4 +19,4 @@ RewriteRule ^ga-IE/(.*) /ga$1 [R=302,L]
 # but don't have a community page
 # You can see them at https://dist.torproject.org/torbrowser/, pick the last alpha for the most languages
 # this languages are the translation priority for the community portal!
-RewriteRule ^(ar|ca|cs|da|de|el|es|fa|fr|ga|he|hu|id|is|ja|ka|ko|lt|mk|ms|nb-NO|nl|pl|pt-BR|pt-PT|ro|ru|sv-SE|th|tr|vi|zh-CN|zh-TW)/(.*) /$2 [R=302,L]
+RewriteRule ^(ar|ca|cs|da|de|el|fa|fr|ga|he|hu|id|is|ja|ka|ko|lt|mk|ms|nb-NO|nl|pl|pt-BR|pt-PT|ro|ru|sv-SE|th|tr|vi|zh-CN|zh-TW)(.*) /$2 [R=302,L]
