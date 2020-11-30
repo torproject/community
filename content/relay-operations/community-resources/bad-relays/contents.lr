@@ -15,7 +15,7 @@ A bad relay is one that either doesn't work properly or tampers with our users' 
  * Tampering with exit traffic in any way (including dropping accepted connections). This might be accidental (such as an anti-virus filter) or malicious (commonly SSLStrip, which replaces https:// links with http:// to snoop on traffic) or even intentional (such as layer 7 inspection for P2P traffic detection/mitigation).
  * Running HSDirs that harvest and probe .onion addresses
  * Manipulating the DHT that is used for onion services, e.g., by positioning itself in the DHT.
- * Using a DNS provider that censors its results (such as some [OpenDNS](http://www.opendns.com) or Quad (9 9.9.9.9) configurations).
+ * Using a DNS provider that censors its results (such as some [OpenDNS](http://www.opendns.com) or Quad (9.9.9.9) configurations).
  * Performing a [Sybil attack](https://en.wikipedia.org/wiki/Sybil_attack), which means flooding the network with new relays in an effort to deanonymize users. If you want to run multiple relays then that's great! But please be sure to set the [MyFamily parameter](https://www.torproject.org/docs/tor-manual.html.en#MyFamily).
  * Exit relays routing their exit traffic back into the tor network (not actually exiting any traffic)
 
