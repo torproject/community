@@ -33,10 +33,10 @@ You should also know where Tor's configuration files are.
 
 As a first step, you should set up a web server locally, like Nginx, Apache, or your favorite web server.
 Setting up a web server can be complex.
-If you get stuck or want to do more, find a friend who can help you or connect with any of the forums online that offer help.
+If you get stuck or want to do more, find a friend who can help you or join our [tor-onions](https://lists.torproject.org/cgi-bin/mailman/listinfo/tor-onions) mailing list to speak with other operators.
 
 As an example, we will cover how to set up an onion site with Nginx and Apache on Debian.
-We recommend you install a new separate web server for your onion service.
+We recommend you install a new separate web server for your onion service, since even if you already have one installed, you may be using it (or want to use it later) for a regular website.
 
 On this page, the commands to manage the web server are based on Debian-like operating systems and may differ from other systems.
 Check your web server and operating system documentation.
