@@ -1,0 +1,105 @@
+section: onion services
+---
+section_id: onion-services
+---
+color: primary
+---
+_template: layout.html
+---
+title: How to install Tor
+---
+subtitle: 
+---
+key: 1
+---
+cta: Get Started
+---
+html: two-columns-page.html
+---
+body:
+
+**Admin access:** To install Tor you need root privileges.
+Below all commands that need to be run as root user like apt and dpkg are prepended with '#', while commands to be run as user with '$' resembling the standard prompt in a terminal. 
+To open a root terminal you have several options: sudo su, or sudo -i, or su -i. Note that sudo asks for your user password, while su expects the root password of your system. 
+
+### macOS
+
+1. Install a package manager
+
+There are two package manager on OS X: Homebrew and Macports.
+You can use the package manager of your choice.
+
+To install Homebrew follow the instructions on [brew.sh](https://brew.sh/).
+
+To install Macports follow the instructions on [macports.org/install.php](https://www.macports.org/install.php). 
+
+2. Package installation
+
+If you are using Homebrew in a Terminal window, run:
+
+    # brew install tor
+
+If you are using Macports in a Terminal window, run:
+
+    $ sudo port install tor
+
+### Debian / Ubuntu
+
+**Do not use the packages in Ubuntu's universe**. 
+In the past they have not reliably been updated. That means you could be missing stability and security fixes.
+
+1. Configure Tor package repository
+
+Enable the Torproject package repository by following the [instructions](https://support.torproject.org/apt/tor-deb-repo/).
+
+2. Package installation
+
+    # apt install tor
+
+### Fedora
+
+1. Configure Tor Package repository
+
+Add the following to /etc/yum.repos.d/tor.repo and then install the tor package.
+
+```
+[tor]
+name=Tor for Fedora $releasever - $basearch
+baseurl=https://rpm.torproject.org/fedora/$releasever/$basearch
+enabled=1
+gpgcheck=1
+gpgkey=https://rpm.torproject.org/fedora/public_gpg.key
+cost=100
+```
+
+2. Package installation
+
+   # dnf install tor
+
+### FreeBSD
+
+1. Package installation
+
+   # pkg install tor
+
+### OpenBSD
+
+1. Package Installation
+
+   # pkg_add tor
+
+### Installing Tor from source
+
+1. Download latest release and dependecies
+
+The latest release of Tor can be found on the [download](https://www.torproject.org/download/tor/) page. 
+
+If you're building from source, first install [libevent](http://www.monkey.org/~provos/libevent/), and make sure you have openssl and zlib (including the -devel packages if applicable). 
+
+2. Install Tor
+
+    tar xzf tor-0.4.3.6.tar.gz; cd tor-0.4.3.6
+
+    ./configure && make
+
+Now you can run tor as src/app/tor (0.4.3.x and later), or you can run `make install` (as root if necessary) to install it into /usr/local/, and then you can start it just by running tor.
