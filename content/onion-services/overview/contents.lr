@@ -93,7 +93,7 @@ All the previous steps were just set up for the onion service so that it's reach
 Now let's fast-forward to the point where an actual client wants to visit the service.
 
 In this case, the client has the onion address of SecureDrop and want to visit it, so they connect to the service with Tor Browser.
-Now the next thing that needs to happen is that the client goes to the _distributed hash table_ from **Step 2** and ask for the signed descriptor of SecureDrop.
+Now the next thing that needs to happen is that the client goes to the _distributed hash table_ from **Step 2** and ask for the signed descriptor of SecureDrop's onion service.
 
 <img class="col-lg-8" src="../../static/images/onion-services/overview/onion-service-04.png" alt="Onion Services: Step 4">
 
@@ -102,7 +102,7 @@ Now the next thing that needs to happen is that the client goes to the _distribu
 When the client receives the signed descriptor, they verify the signature of the descriptor using the public key that is encoded in the onion address.
 This provides the _end-to-end authentication_ security property, since we are now sure that this descriptor could only be produced by that onion service and no one else.
 
-And inside the descriptor, there are the introduction points that allow the client to introduce themselves to SecureDrop.
+And inside the descriptor, there are the introduction points that allow the client to introduce themselves to SecureDrop's onion service.
 
 <img class="col-lg-8" src="../../static/images/onion-services/overview/onion-service-05.png" alt="Onion Services: Step 5">
 
@@ -115,7 +115,7 @@ The client asks the relay to become their rendezvous point and give it an "one-t
 
 ### Act 7: Where the onion service rendezvous with the client
 
-The introduction point passes your details on to the onion service, which runs multiple verification processes to decide whether you're trustworthy or not.
+The introduction point passes your details (secret string and rendezvous address) on to the onion service, which runs multiple verification processes to decide whether you're trustworthy or not.
 
 <img class="col-lg-8" src="../../static/images/onion-services/overview/onion-service-07.png" alt="Onion Services: Step 7">
 
