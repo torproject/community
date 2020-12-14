@@ -91,7 +91,7 @@ ORPort [IPv6-address]:9001
 ```
 
 The location of that line in the configuration file does not matter.
-You can simply add it next to the first ORPort lins in your torrc file.
+You can simply add it next to the first ORPort lines in your torrc file.
 
 Note: You have to explicitly specify your IPv6 address in square brackets, you can not tell tor to bind to any IPv6 (like you do for IPv4).
 If you have a global IPv6 address you should be able to find it in the output of the following command:
