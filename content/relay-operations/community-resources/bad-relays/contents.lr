@@ -49,7 +49,7 @@ We have three types of flags we can apply:
 
 Which we use depends on the severity of the issue, and if it can still be safely used in certain situations.
 
-### My relays was given the BadExit flag. What's up?
+### My relay was given the BadExit flag. What's up?
 
 In just about all cases we're unable to contact the operator to resolve the issue, so if your relay has been flagged as a BadExit then please let us know (see above for contact info) so we can work together to fix the issue.
 

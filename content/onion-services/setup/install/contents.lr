@@ -90,7 +90,7 @@ cost=100
 
 ### Installing Tor from source
 
-1. Download latest release and dependecies
+1. Download latest release and dependencies
 
 The latest release of Tor can be found on the [download](https://www.torproject.org/download/tor/) page. 
 

@@ -85,7 +85,7 @@ To confirm your bridge is running with no issues, you should see something like 
 ```
 
 
-### 6. To get the fastest package updates, switch from the  "quarterly" package repo to the "latest" repo.
+### 6. To get the fastest package updates, switch from the "quarterly" package repo to the "latest" repo.
 
 Create the following folder:
 

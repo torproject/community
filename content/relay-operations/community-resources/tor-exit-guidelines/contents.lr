@@ -39,7 +39,7 @@ Once you identified your ISP, you can follow the two-step advice of TorServers.n
 2. If they come back positively, ask them if they are OK with an IP range reassignment.
 If not, you can still explain that you are a non-profit superb large organization filled with security professionals, and that all will be good, and why IP reassignment helps reduce their workload.
 
-The two-step process usually helps in elevating your request to higher levels of support staff without scaring them off too early, even if you  don't end up with your own IP range. Here is template you can use: [Inquiry](https://www.torservers.net/wiki/hoster/inquiry)
+The two-step process usually helps in elevating your request to higher levels of support staff without scaring them off too early, even if you don't end up with your own IP range. Here is template you can use: [Inquiry](https://www.torservers.net/wiki/hoster/inquiry)
 
 ## Legal
 
@@ -134,7 +134,7 @@ A simple notice can be published without a separate webserver using Tor's "DirPo
 
 * Disk encryption might be useful to protect your node keys, but on the other hand unencrypted machines are easier to "audit" if required. We feel it's best to be able to easily show that you do Tor exiting, and nothing else (on that IP or server).
 
-* Set reverse DNS to something that signals its use, e.g. 'anonymous-relay', 'proxy', 'tor-proxy'. so when other people see the address in their web logs, they will more quickly understand what's going on.
+* Set reverse DNS to something that signals its use, e.g. 'anonymous-relay', 'proxy', 'tor-proxy'. So when other people see the address in their web logs, they will more quickly understand what's going on.
 If you do, and if SMTP is allowed in your exit policy, consider configuring [SPF](https://en.wikipedia.org/wiki/Sender_Policy_Framework) on your domain: this will protect you from users using your exit node to forge e-mails which look like they come from you.
 ---
 html: two-columns-page.html

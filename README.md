@@ -41,7 +41,7 @@ You can click ```Edit this page``` and submit your content changes in a [Pull Re
 
 ```$ cd community/lego && git submodule update --init --recursive```
 
-5. Translations for the website are imported by Jenkins when bulding the page, but if you want to test them, download the correct branch of the translations repo to the ./i18n/ folder.
+5. Translations for the website are imported by Jenkins when building the page, but if you want to test them, download the correct branch of the translations repo to the ./i18n/ folder.
 
 6. Finally:
 
@@ -75,7 +75,7 @@ This is the workflow that Tor Internal people should use when making changes on 
     - Contents file, containing your changes where it would be located on the **reviewer's repo**, e.g. `https://gitlab.torproject.org/steph/community/blob/develop/content/onion-services/contents.lr`.
     - For the review workflow, please see (Reviewer Workflow).
 5. Once the work has been reviewed and any necessary changes and merge request has been made, a repo maintainer or team members with write access to gitweb master will then merge or cherry-pick these changes to master, following the workflow outlined in [How to use our git flow](https://gitlab.torproject.org/web/tpo/wikis/Git-flow-and-merge-requests#how-to-use-our-git-flow).
-6. Merger should then move the the ticket to the `Closed` column.
+6. Merger should then move the ticket to the `Closed` column.
 
 ### Reviewer Workflow
 

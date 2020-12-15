@@ -33,7 +33,7 @@ Also see the [Tor Exit Guidelines](tor-exit-guidelines).
 
 Operators can put together their own abuse complaint template responses from one of many templates that Tor has created: [Tor Abuse Templates](tor-abuse-templates).
 
-It is important to respond to abuse complaints in a timely manner (usually within 24 hours). If the hoster gets annoyed by the  amount of abuse you can reduce the amount of ports allowed in your exit policy.
+It is important to respond to abuse complaints in a timely manner (usually within 24 hours). If the hoster gets annoyed by the amount of abuse you can reduce the amount of ports allowed in your exit policy.
 Please document your experience with new hosters on the following page: [GoodBadISPs](good-bad-isps)
 
 Other docs we like:

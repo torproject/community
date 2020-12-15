@@ -32,7 +32,7 @@ For network diversity and stronger anonymity, you should avoid providers and cou
 |-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
 | [UPC Austria GmbH](https://www.upc.at/) | - | - | Yes | Yes | (ISP) does not care what their customers do at all (unless you have a business connection) | 12/2011 |
 | [Silver Server GmbH](http://sil.at/) | - | -| Yes | Yes | Forwards abuse. Hosts already some big exit/entry nodes which seem to have no problems. Very expensive traffic. | 12/2011 |
-| [Tele2 Austria GmbH](https://tele2.at/) | - | - | Yes | Yes | Forwards abuse at business connections, good quality traffic, does not like "proxys" on private lines. Cheap synchronous (SDSL) connections. | 12/2011 |
+| [Tele2 Austria GmbH](https://tele2.at/) | - | - | Yes | Yes | Forwards abuse at business connections, good quality traffic, does not like "proxies" on private lines. Cheap synchronous (SDSL) connections. | 12/2011 |
 | [A1(former Telekom Austria)](http://a1.net) | - | - | Yes | No | Does not like Abuse (in any form) at all. Seems to give out customer data at alleged abuse. Not recommended but cheap. | 12/2011 |
 | [xpirio GmbH](http://xpirio.at) | - | - | Yes | ? | In general rather relaxed at all services, but better get in touch with their (very understanding) support when you expect abuse. | 12/2011 |
 
