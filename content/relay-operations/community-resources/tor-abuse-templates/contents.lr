@@ -59,8 +59,8 @@ However, be aware that this may be just one jerk amongst many legitimate Tor use
 You might have luck getting rid of this jerk by temporarily limiting account creation to require Gmail accounts before posting, or by requiring account creation be done over non-Tor before posting.
 
 In general, we believe that problems like this are best solved by improving your service to defend against the attack from the Internet at large.
-Brute force login attempts can be reduced/slowed by captchas, which is the approach taken by Gmail for this same problem.
-In fact, Google provides a free captcha service, complete with code for easy inclusion in a number of systems to help other sites deal
+Brute force login attempts can be reduced/slowed by Captchas, which is the approach taken by Gmail for this same problem.
+In fact, Google provides a free Captcha service, complete with code for easy inclusion in a number of systems to help other sites deal
 with this issue: https://code.google.com/apis/recaptcha/intro.html
 
 ```
@@ -100,8 +100,8 @@ https://check.torproject.org/cgi-bin/TorBulkExitList.py?ip=YOUR_IP&port=80
 
 In general however, we believe that problems like this are best solved by improving the service to defend against the attack from the Internet at large.
 
-Scraping and robot activity can be reduced/slowed by captchas, which is the approach taken by Gmail for this same problem.
-In fact, Google provides a free captcha service, complete with code for easy inclusion in a number of systems to help other sites deal with this issue: https://code.google.com/apis/recaptcha/intro.html
+Scraping and robot activity can be reduced/slowed by Captchas, which is the approach taken by Gmail for this same problem.
+In fact, Google provides a free Captcha service, complete with code for easy inclusion in a number of systems to help other sites deal with this issue: https://code.google.com/apis/recaptcha/intro.html
 
 Slow DoS attacks [aimed to consume the Apache MaxClients limit](http://www.guerilla-ciso.com/archives/2049) can be alleviated by reducing the httpd.conf TimeOut and KeepAliveTimeout config values to 15-30 and raising the ServerLimit and MaxClients values to something like 3000.
 
@@ -121,8 +121,8 @@ The attacker would probably just chain an open proxy after Tor, or just use open
 The Tor project does provide an automated DNSRBL for you to query to flag requests from Tor nodes as requiring special treatment: https://www.torproject.org/projects/tordnsel.html.en
 
 In general, we believe that problems like this are best solved by improving the service to defend against the attack from the Internet at large rather than specifically tailoring behavior for Tor.
-Brute force login attempts can be reduced/slowed by captchas, which is the approach taken by Gmail for this same problem.
-In fact, Google provides a free captcha service, complete with code for easy inclusion in a number of systems to help other sites deal with this issue: https://code.google.com/apis/recaptcha/intro.html
+Brute force login attempts can be reduced/slowed by Captchas, which is the approach taken by Gmail for this same problem.
+In fact, Google provides a free Captcha service, complete with code for easy inclusion in a number of systems to help other sites deal with this issue: https://code.google.com/apis/recaptcha/intro.html
 ```
 
 ## SSH Bruteforce Attempts
