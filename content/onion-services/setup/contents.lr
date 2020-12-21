@@ -163,5 +163,5 @@ That is not an easy task, and these resources will help on how to make this poss
 
 Finally, if you plan to keep your service available for a long time, you might want to make a backup copy of the `private_key` file somewhere.
 
-Now that you have an onion site working, you may want to deploy [Onion-Location](https://community.torproject.org/onion-services/advanced/onion-location/), or use tools like Docker, [Ansible](https://galaxy.ansible.com/systemli/onion) or [stem](https://stem.torproject.org/tutorials/over_the_river.html) to automate the management of your onion services.
+Now that you have an onion site working, you may want to deploy [Onion-Location](https://community.torproject.org/onion-services/advanced/onion-location/), or use tools like Docker, [Heroku](https://gitlab.torproject.org/hiro/onions-on-heroku), [Terraform](https://gitlab.torproject.org/hiro/terraform-onions), [Ansible](https://galaxy.ansible.com/systemli/onion) or [stem](https://stem.torproject.org/tutorials/over_the_river.html) to automate the management of your onion services.
 If you have a static website, but never installed Nginx or Apache, another project to try is [OnionShare](https://onionshare.org), where running an onion site will be easier: guided with a graphic interface and with minimal configuration.
