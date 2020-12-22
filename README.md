@@ -12,7 +12,7 @@ or browse it [online](http://gitweb.torproject.org/project/web/community.git).
 
 ## How to report bugs or feedback 
 
-First check if your issue wasn't already opened in [gitlab.torproject.org](https://gitlab.torproject.org/web/community/issues), then file a [trac ticket](https://trac.torproject.org/projects/tor/newticket) and choose the component: Webpages/Community. 
+First check if your issue wasn't already opened in [gitlab.torproject.org](https://gitlab.torproject.org/web/community/issues), then file a [ticket](https://gitlab.torproject.org/tpo/web/community/-/issues/new) and choose the component: Webpages/Community. 
 
 
 ## What is Lektor
