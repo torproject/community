@@ -64,7 +64,7 @@ Let's imagine that your local newspaper decides to set up an onion service (usin
 As the first step in the protocol, the onion service will contact a bunch of Tor relays and ask them to act as its _introduction points_ by establishing long-term circuits to them.
 These circuits are anonymized circuits, so the server does not reveal the service location to the introduction points.
 
-The onion service will hide and protect itself behind the Tor network by only allowing access through three introduction points that it connects to through a three-hop Tor circuit.
+The onion service will hide and protect itself behind the Tor network by only allowing access through three introduction points that it connects to through a two-hop Tor circuit.
 
 <img class="col-lg-8" src="../../static/images/onion-services/overview/onion-service-01.png" alt="Onion Services: Step 1">
 
@@ -122,9 +122,9 @@ The introduction point passes your details (secret string and rendezvous address
 ### Act 8: Where the rendezvous point verifies the client's secret
 
 The onion service connects to the rendezvous point (through an anonymized circuit) and sends the "one-time secret" to it.
-The rendezvous point simply relays (end-to-end encrypted) messages from client to service and vice versa.
-
 The rendezvous point makes one final verification to match the secret strings from you and service (the latter also comes from you but has been relayed through the service).
+
+The rendezvous point simply relays (end-to-end encrypted) messages from client to service and vice versa.
 
 <img class="col-lg-8" src="../../static/images/onion-services/overview/onion-service-08.png" alt="Onion Services: Step 8">
 
