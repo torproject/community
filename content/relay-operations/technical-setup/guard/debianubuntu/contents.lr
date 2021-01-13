@@ -29,9 +29,8 @@ Put the configuration file `/etc/tor/torrc` in place:
 #change the nickname "myNiceRelay" to a name that you like
 Nickname myNiceRelay
 ORPort 443
-ExitRelay 0
 SocksPort 0
-ControlSocket 0
+ControlPort 0
 # Change the email address below and be aware that it will be published
 ContactInfo tor-operator@your-emailaddress-domain
 ```
