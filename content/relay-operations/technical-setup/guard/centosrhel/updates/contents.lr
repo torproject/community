@@ -6,9 +6,35 @@ title: RPM Distributions
 ---
 body:
 
-# CentOS and RHEL
+# CentOS and RHEL 8 or later versions
 
-For CentOS and RHEL the yum-cron package is the preferred approach:
+For CentOS and RHEL 8 or earlier versions, the dnf-automatic package is the preferred approach:
+
+```
+dnf install dnf-automatic
+```
+
+In /etc/dnf/automatic.conf set:
+
+```
+download_updates = yes
+apply_updates = yes
+```
+
+Enable and start automatic updates via:
+
+```
+systemctl enable --now dnf-automatic.timer
+```
+
+Check status of dnf-automatic:
+```
+systemctl list-timers *dnf-*
+```
+
+# CentOS and RHEL 7 or earlier versions
+
+For CentOS and RHEL 7 or earlier versions, the yum-cron package is the preferred approach:
 
 ```
 yum install yum-cron
