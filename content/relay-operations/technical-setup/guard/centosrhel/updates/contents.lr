@@ -8,7 +8,7 @@ body:
 
 # CentOS and RHEL 8 or later versions
 
-For CentOS and RHEL 8 or earlier versions, the dnf-automatic package is the preferred approach:
+For CentOS and RHEL 8 or later versions, the dnf-automatic package is the preferred approach:
 
 ```
 dnf install dnf-automatic
