@@ -4,7 +4,11 @@ _template: layout.html
 ---
 html: two-columns-page.html
 ---
-active: True
+active: False
+---
+completed: True
+---
+url: https://gist.github.com/kronaemmanuel/ae1ebafa039a3361fb422462109ae035
 ---
 section: GSoC
 ---

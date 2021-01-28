@@ -4,7 +4,11 @@ _template: layout.html
 ---
 html: two-columns-page.html
 ---
-active: True
+active: False
+---
+completed: True
+---
+url: https://gitlab.torproject.org/woswos/CAPTCHA-Monitor
 ---
 section: GSoC
 ---
