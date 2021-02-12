@@ -88,7 +88,7 @@ HiddenServicePort 80 unix:/var/run/tor-my-website.sock
 
 Now save your `torrc` and restart Tor.
 
-`$ sudo systemctl tor restart`
+`$ sudo systemctl restart tor`
 
 If Tor starts up again, great. Otherwise, something is wrong. First look at your logfiles for hints.
 It will print some warnings or error messages. That should give you an idea of what went wrong.
