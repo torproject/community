@@ -4,7 +4,9 @@ _template: layout.html
 ---
 html: two-columns-page.html
 ---
-active: True
+active: False
+---
+completed: True
 ---
 section: GSoC
 ---
