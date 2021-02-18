@@ -63,7 +63,8 @@ title: Why run a Tor relay?
 ----
 description:
 By running a Tor relay you can help make the Tor network:
-- faster (and therefore more usable)●more robust against attacks
+- faster (and therefore more usable
+- more robust against attacks
 - more stable in case of outages
 - safer for its users (spying on more relays is harder than on a few)
 ----
@@ -74,7 +75,8 @@ title: Why run a Tor relay?
 ----
 description:
 By running a Tor relay you can help make the Tor network:
-- faster (and therefore more usable)●more robust against attacks
+- faster (and therefore more usable)
+- more robust against attacks
 - more stable in case of outages
 - safer for its users (spying on more relays is harder than on a few)
 ----
