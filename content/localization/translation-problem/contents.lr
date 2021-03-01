@@ -19,7 +19,7 @@ body:
 ### Reporting an error with a translation
 
 * If you are already a [Tor translator](../becoming-tor-translator), you can simply find the string and fix it in [transifex](https://www.transifex.com/otf/torproject/).
-* If you don't know how to find the string to fix, you can [open a ticket on our Bugtracker](https://support.torproject.org/misc/bug-or-feedback/), under the **Community/Translations** component.
-  Before opening a ticket, see the currently [open tickets for Translations](https://trac.torproject.org/projects/tor/query?status=accepted&status=assigned&status=merge_ready&status=needs_information&status=needs_review&status=needs_revision&status=new&status=reopened&component=Community%2FTranslations&order=priority) because maybe it is already reported.
+* If you don't know how to find the string to fix, you can [open a ticket on our Bugtracker](https://gitlab.torproject.org/tpo/community/l10n/-/issues), under the **Community/Localization** repository.
+  Before opening a ticket, see the currently [open tickets for Translations](https://gitlab.torproject.org/groups/tpo/-/issues?scope=all&utf8=%E2%9C%93&state=opened&label_name%5B%5D=Localization) because maybe it is already reported.
 * You can send an email to the [tor localization mailing list](https://lists.torproject.org/cgi-bin/mailman/listinfo/tor-l10n).
 * You can report such issues on [irc](https://support.torproject.org/get-in-touch/#irc-help), on the #tor-l10n channel on the oftc network (you may need to be registered to log in).
