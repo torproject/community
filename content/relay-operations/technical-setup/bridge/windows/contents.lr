@@ -22,24 +22,24 @@ You will need to show hidden items and file name extensions. In your Explorer wi
 
 ### 2. Build files and relocate 
 
-Open up the Tor folder on your desktop. Double click `tor.exe`. Once the command prompt reads: `[notice] Bootstrapped 100% (done): Done`, close the window. This creates the folder `C:\Users\<user>\AppData\Roaming\tor\` (where `<user>` is your user name).
+Open up the Tor folder on your desktop. Double click `tor.exe`. Once the command prompt reads: `[notice] Bootstrapped 100% (done): Done`, close the window. This creates the folder `C:&#x0005C;Users&#x0005C;<user>&#x0005C;AppData&#x0005C;Roaming&#x0005C;tor&#x0005C;` (where `<user>` is your user name).
 
-From the Tor folder on your desktop, select all `.dll`'s and `.exe`'s and cut/paste them into the `C:\Users\<user>\AppData\Roaming\tor\` folder.
+From the Tor folder on your desktop, select all `.dll`'s and `.exe`'s and cut/paste them into the `C:&#x0005C;Users&#x0005C;<user>&#x0005C;AppData&#x0005C;Roaming&#x0005C;tor&#x0005C;` folder.
 
-Open up the Data folder on your desktop. Inside that Tor folder, select both `geoip` and `geoip6` and cut/paste them into the `C:\Users\<user>\AppData\Roaming\tor\` folder.
+Open up the Data folder on your desktop. Inside that Tor folder, select both `geoip` and `geoip6` and cut/paste them into the `C:&#x0005C;Users&#x0005C;<user>&#x0005C;AppData&#x0005C;Roaming&#x0005C;tor&#x0005C;` folder.
 
-Navigate to `C:\Users\<user>\Desktop\Tor Browser\Browser\TorBrowser\Tor\PluggableTransports`. Select `obfs4proxy.exe` and cut/paste it into the `C:\Users\<user>\AppData\Roaming\tor\` folder.
+Navigate to `C:&#x0005C;Users&#x0005C;<user>&#x0005C;Desktop&#x0005C;Tor Browser&#x0005C;Browser&#x0005C;TorBrowser&#x0005C;Tor&#x0005C;PluggableTransports`. Select `obfs4proxy.exe` and cut/paste it into the `C:&#x0005C;Users&#x0005C;<user>&#x0005C;AppData&#x0005C;Roaming&#x0005C;tor&#x0005C;` folder.
 
 ### 3. Create and edit your Tor config file
 
-In the `C:\Users\<user>\AppData\Roaming\tor\` folder, right-click on white space and select `New > Text Document`. Name the file `torrc`; there is no extension.
+In the `C:&#x0005C;Users&#x0005C;<user>&#x0005C;AppData&#x0005C;Roaming&#x0005C;tor&#x0005C;` folder, right-click on white space and select `New > Text Document`. Name the file `torrc`; there is no extension.
 
 Double-click on the `torrc` file. When prompted *How do you want to open this file?*, select `Notepad`. Add the following:
 
 ```
-Log notice file C:\Users\<user>\AppData\Roaming\tor\notice.log
-GeoIPFile C:\Users\<user>\AppData\Roaming\tor\geoip
-GeoIPv6File C:\Users\<user>\AppData\Roaming\tor\geoip6
+Log notice file C:&#x0005C;Users&#x0005C;<user>&#x0005C;AppData&#x0005C;Roaming&#x0005C;tor&#x0005C;notice.log
+GeoIPFile C:&#x0005C;Users&#x0005C;<user>&#x0005C;AppData&#x0005C;Roaming&#x0005C;tor&#x0005C;geoip
+GeoIPv6File C:&#x0005C;Users&#x0005C;<user>&#x0005C;AppData&#x0005C;Roaming&#x0005C;tor&#x0005C;geoip6
 
 BridgeRelay 1
 
@@ -48,7 +48,7 @@ BridgeRelay 1
 # Avoid port 9001 because it's commonly associated with Tor and censors may be scanning the Internet for this port.
 ORPort TODO1
 
-ServerTransportPlugin obfs4 exec C:\Users\<user>\AppData\Roaming\tor\obfs4proxy.exe
+ServerTransportPlugin obfs4 exec C:&#x0005C;Users&#x0005C;<user>&#x0005C;AppData&#x0005C;Roaming&#x0005C;tor&#x0005C;obfs4proxy.exe
 
 # Replace "TODO2" with an obfs4 port of your choice.
 # This port must be externally reachable and must be different from the one specified for ORPort.
@@ -77,11 +77,11 @@ Don't forget to change the `ORPort`, `ServerTransportListenAddr`, `ContactInfo`,
 
 ### 4. Start tor
 
-Open up the Command Prompt App. Change your directory with: `cd C:\Users\<user>\AppData\Roaming\tor\`. Type: `tor.exe -f torrc`.
+Open up the Command Prompt App. Change your directory with: `cd C:&#x0005C;Users&#x0005C;<user>&#x0005C;AppData&#x0005C;Roaming&#x0005C;tor&#x0005C;`. Type: `tor.exe -f torrc`.
 
 ### 5. Monitor your logs
 
-To confirm your bridge is running with no issues, you should see something like this in `C:\Users\<user>\AppData\Roaming\tor\notice.log`.
+To confirm your bridge is running with no issues, you should see something like this in `C:&#x0005C;Users&#x0005C;<user>&#x0005C;AppData&#x0005C;Roaming&#x0005C;tor&#x0005C;notice.log`.
 
 ```
 [notice] Your Tor server's identity key fingerprint is '<NICKNAME> <FINGERPRINT>'
