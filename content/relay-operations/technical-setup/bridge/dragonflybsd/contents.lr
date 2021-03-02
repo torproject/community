@@ -135,7 +135,8 @@ tail /var/log/tor/notices.log
 
 ### 6. Final Notes
 
-If you are having troubles setting up your bridge, have a look at [our help section](https://community.torproject.org/relay/getting-help/). If your bridge is now running, check out the [post-install notes](https://community.torproject.org/relay/setup/bridge/post-install/).
+If you are having troubles setting up your bridge, have a look at [our help section](https://community.torproject.org/relay/getting-help/).
+If your bridge is now running, check out the [post-install notes](https://community.torproject.org/relay/setup/bridge/post-install/).
 
 ---
 subtitle: How to deploy an obfs4 bridge on DragonflyBSD
