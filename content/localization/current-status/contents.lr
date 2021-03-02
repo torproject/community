@@ -16,14 +16,11 @@ html: two-columns-page.html
 ---
 body:
 
-We have some languages in very good shape, with a number of active and committed contributors (as French, Spanish, Russian, Portuguese). Even when the translations are finished, you are still welcome to help us with these languages.
+We have some languages more active, with a number of active and committed contributors (as French, Russian, Portuguese). Even when the translations are finished, you are still welcome to help us with these languages.
 
 Our translations are incomplete for a lot of languages. They may be spoken by fewer people around the world, but it is still critical that we improve access to Tor for people who do not speak English.
 
-Please consider [helping with translations](/localization/becoming-tor-translator/) in your native language.
+You can see the open tickets about translation problems on our [bugtracker](https://gitlab.torproject.org/tpo/community/l10n/-/issues).
 
-Right now, we need the most help with Farsi (Persian), Arabic, and Korean. But many other languages are being translated, as you can see here:
-
-<img class="col-lg-6" src="../../static/images/localization/stats.png">
-
-You can see the open tickets about translation problems on our [bugtracker](https://trac.torproject.org/projects/tor/query?status=!closed&component=Community%2FTranslations).
+Our documentation is very important for users around the world to be able to use Tor and Tor Browser:
+This includes the Tor Browser User Manual, the Support Portal, the Tor Project Website and this website, the Community Portal.
