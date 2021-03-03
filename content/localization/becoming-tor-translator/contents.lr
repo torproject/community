@@ -20,7 +20,7 @@ Thank you for your interest in helping us with translations.
 # Localization mailing list
 <a name="tor-l10n" />
 
-To communicate with other translators, please join the [Tor localization mailing list](https://lists.torproject.org/cgi-bin/mailman/listinfo/tor-l10n), where we organize translations, report errors in source strings, make final copy decisions, and address issues that arise. Please introduce yourself and ask any questions you may have after following up this instructions.
+To communicate with other translators, please join the [Tor localization mailing list](https://lists.torproject.org/cgi-bin/mailman/listinfo/tor-l10n), where we organize translations, take decisions, report errors in source strings, etc. Please introduce yourself and ask any questions you may have after following up these instructions.
 
 # Translation platform
 
@@ -39,12 +39,11 @@ In order to begin contributing you will have to sign up with Transifex. Here's a
 1. On the next page, select the languages you speak from the drop-down menu and continue.
 1. You are now signed up! Go to the [Tor Transifex page](https://www.transifex.com/otf/torproject/).
 1. Click the blue 'Join Team' button on the far right:
-![Join Team](/static/images/localization/tr3.png)
+<img style="display:block" src="/static/images/localization/tr3.png" alt="Join Team">
 1. Select the language you would like to translate from the dropdown menu:
-![Choose Language](/static/images/localization/tr4.png)
+<img style="display:block" src="/static/images/localization/tr4.png" alt="Choose Language">
 1. A notification will now show up on the top of the page like so:
-![Request Submitted](/static/images/localization/tr5.png)
-
+<img style="display:block" src="/static/images/localization/tr5.png" alt="Request Submitted">
 Before translating, please read through the Tor Project page on the [Localization Lab Wiki](https://wiki.localizationlab.org/index.php/Tor). The page includes guidelines, resources, and priorities that will help you make the most out of your contribution.
 After your membership is approved, you're ready to begin.
 

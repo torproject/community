@@ -8,7 +8,8 @@ body:
 
 # 1. Bootstrap `pkg`
 
-DragonFlyBSD's daily snapshots and releases (starting with 3.4) come with `pkg` already installed. Upgrades from earlier releases, however, will not have it.
+DragonFlyBSD's daily snapshots and releases (starting with 3.4) come with `pkg` already installed.
+Upgrades from earlier releases, however, will not have it.
 
 If `pkg` is missing on the system for any reason, it can be quickly bootstrapped without having to build it from source or even having **DPorts** installed:
 
@@ -46,9 +47,9 @@ pkg update -f
 pkg upgrade -y -f
 ```
 
-# 2. Install `tor` DragonflyBSD's Package
+# 2. Package Installation
 
-Here we can choose to install the latest stable version, like:
+Install the `tor` package:
 
 ```
 pkg install tor
@@ -61,20 +62,24 @@ pkg install tor
 pkg install tor-devel
 ```
 
-# 3. Configure `/usr/local/etc/tor/torrc`
+# 3. Configuration File
 
-This is a very simple version of the `torrc` configuration file in order to run a Middle/Guard relay on the Tor network:
+Put the configuration file `/usr/local/etc/tor/torrc` in place:
+
 
 ```
-Nickname    myBSDRelay    # Change your relay's nickname to something you like
-ContactInfo your@email    # Please write your email address and be aware that it will be published
-ORPort      443           # You might want to use/try a different port, should you want to
+#change the nickname "myBSDrelay" to a name that you like
+Nickname    myBSDRelay
+# You might want to use/try a different port, should you want to
+ORPort      443    
 ExitRelay   0
 SocksPort   0
 Log notice  syslog
+# Change the email address below and be aware that it will be published
+ContactInfo tor-operator@your-emailaddress-domain
 ```
 
-# 4. Start `tor`:
+# 4. Start the service
 
 Here we set `tor` to start at boot time and use the setuid feature, in order to bind to lower ports like 443 (the daemon itself will still run as a regular non-privileged user).
 
@@ -86,7 +91,8 @@ service tor start
 
 # 5. Final Notes
 
-If you are having troubles setting up your relay, have a look at our [help section](/relay/getting-help/). If your relay is now running, check out the [post-install](/relay/setup/post-install/) notes.
+If you are having trouble setting up your relay, have a look at our [help section](/relay/getting-help/).
+If your relay is now running, check out the [post-install](/relay/setup/post-install/) notes.
 ---
 html: two-columns-page.html
 ---

@@ -1,0 +1,65 @@
+section: advanced configuration
+---
+section_id: onion-services
+---
+color: primary
+---
+_template: layout.html
+---
+title: Onion service DoS guidelines
+---
+subtitle: Tips to help you keep afloat in turbulent times.
+---
+key: 5
+---
+html: two-columns-page.html
+---
+body:
+
+In this page we present a few ways to mitigate DoS attacks currently.
+However there is no single one-size-fits-all solution for this problem at the moment.
+Defending a site under attack requires creativity and a custom-tailored approach.
+Here are a few tips:
+
+### Onionbalance
+
+[Onionbalance](https://onionbalance-v3.readthedocs.io/en/latest/v3/tutorial-v3.html) allows onion service operators to achieve the property of high availability by allowing multiple machines to handle requests for an onion service.
+You can use Onionbalance to scale horizontally.
+The more you scale, the harder it is for attackers to overwhelm you.
+Onionbalance is available for [v3 onion services](https://blog.torproject.org/cooking-onions-reclaiming-onionbalance).
+
+### Client authorization or multiple onion addresses to compartmentalize your users
+
+If you have users you trust, give them dedicated onion service and client authorization credentials so that it can always be available.
+For users you don't trust, split them into multiple addresses.
+That said, having too many onion addresses is actually bad for your security (because of the use of many guard nodes), so try to use [client authorization](https://community.torproject.org/onion-services/advanced/client-auth) when possible.
+
+### Captchas and cookies
+
+If you need to further rate-limit users, split your infrastructure into layers and put Captchas near the frontend.
+This way attackers will have to solve Captchas before they are able to attack deeper into your infrastructure.
+
+Captchas are a way to mitigate DDoS attacks.
+When a request comes from a client checks if the client contains the correct secure cookie otherwise redirects to the recaptcha page.
+The client inputs the captcha letters.
+Nginx sends this input letters to recaptcha server for verification.
+
+The correct answer from recaptcha server with beginning of "true...", else it's beginning with "false...".
+Add the secure cookie for the correct verified client, redirect the client to the page which he wants to view.
+
+It is possible to implement Captchas directly at your webserver with Nginx and OpenResty using [Lua to generate and verify the captcha images](https://github.com/openresty/lua-nginx-module).
+This implementation isn't easy to configure.
+
+An alternative might be to just implement a test-cookie challenge.
+At your webserver check that clients can set valid cookies, malicious clients often do not have this feature.
+In Nginx, Cloudflare provide a [library](https://github.com/cloudflare/lua-resty-cookie) to interact with cookies.
+
+Other methods include making sure that clients connecting to your .onion have valid User-Agent header and the Referer header is not set to a value you can associate with the attack.
+
+### Webserver rate limiting
+
+If attackers are overwhelming you with aggressive circuits that perform too many queries, try to detect that overuse and kill them using the `HiddenServiceExportCircuitID` torrc option. 
+You can use your own heuristics or use your web server's [rate limiting module](https://www.nginx.com/blog/rate-limiting-nginx/).
+
+The above tips should help you keep afloat in turbulent times.
+At the same time [we are working on more advanced defenses](https://blog.torproject.org/stop-the-onion-denial), so that less manual configuration and tinkering is needed by onion operators.

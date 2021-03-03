@@ -55,11 +55,11 @@ Don't forget to change the `ORPort`, `ServerTransportListenAddr`, `ContactInfo`,
 
   `sudo setcap cap_net_bind_service=+ep /usr/bin/obfs4proxy`
 
+  To work around systemd hardening, you will also need to set `NoNewPrivileges=no` in `/lib/systemd/system/tor@default.service` and `/lib/systemd/system/tor@.service` and then run `systemctl daemon-reload`. For more details, see [ticket 18356](https://gitlab.torproject.org/tpo/core/tor/-/issues/18356).
+
 * Note that both Tor's OR port and its obfs4 port must be reachable.
   If your bridge is behind a firewall or NAT, make sure to open both ports.
   You can use [our reachability test](https://bridges.torproject.org/scan/) to see if your obfs4 port is reachable from the Internet.
-
-You will also need to set `NoNewPrivileges=no` in `/lib/systemd/system/tor@default.service` and `/lib/systemd/system/tor@.service` and then run `systemctl daemon-reload`. (see [bug #18356](https://trac.torproject.org/projects/tor/ticket/18356))
 
 ### 4. Restart tor
 
@@ -82,10 +82,8 @@ To confirm your bridge is running with no issues, you should see something like 
 
 ### 6. Final notes
 
-If you are having troubles setting up your bridge, have a look at [our help
-section](https://community.torproject.org/relay/getting-help/). If
-your bridge is now running, check out the [post-install
-notes](https://community.torproject.org/relay/setup/bridge/post-install/).
+If you are having trouble setting up your bridge, have a look at [our help section](https://community.torproject.org/relay/getting-help/).
+If your bridge is now running, check out the [post-install notes](https://community.torproject.org/relay/setup/bridge/post-install/).
 
 ---
 key: 1

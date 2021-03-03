@@ -1,0 +1,22 @@
+_model: page
+---
+color: primary
+---
+title: Relay Associations
+---
+html: relay-associations.html
+---
+key: 6
+---
+section: Community Resources
+---
+section_id: community-resources
+---
+subtitle: Relay associations are independent organizations that runs relays in the Tor network.
+---
+body:
+
+There are several organizations around the world that run Tor relays.
+Some organizations are dedicated to this purpose only and they are called Relay Associations.
+Below, you can find a list of organizations that run relays.
+Please let us know if you would like your organization to be listed on this page.

@@ -1,0 +1,107 @@
+_model: page
+---
+color: primary
+---
+title: Windows
+---
+html: two-columns-page.html
+---
+key: 10
+---
+body:
+
+**Note: You should only run a Windows bridge if you can run it 24/7. If the operator is unable to guarantee that, a [Snowflake](https://snowflake.torproject.org/) is a better way to contribute resources.**
+
+### 1. Download the Windows Expert Bundle and the Tor Browser
+
+* [Windows Expert Bundle](https://www.torproject.org/download/tor/). Unzip the contents on the desktop.
+
+* [Tor Browser (version depends on your computer)](https://www.torproject.org/download/languages/). Run the `.exe` and install with default settings.
+
+You will need to show hidden items and file name extensions. In your Explorer window, in the top-left, click on the View tab. In the Show/hide section furthest to the right, check the checkbox for Hidden items; check the checkbox for File name extensions.
+
+### 2. Build files and relocate 
+
+Open up the Tor folder on your desktop. Double click `tor.exe`. Once the command prompt reads: `[notice] Bootstrapped 100% (done): Done`, close the window. This creates the folder `C:&#x0005C;Users&#x0005C;<user>&#x0005C;AppData&#x0005C;Roaming&#x0005C;tor&#x0005C;` (where `<user>` is your user name).
+
+From the Tor folder on your desktop, select all `.dll`'s and `.exe`'s and cut/paste them into the `C:&#x0005C;Users&#x0005C;<user>&#x0005C;AppData&#x0005C;Roaming&#x0005C;tor&#x0005C;` folder.
+
+Open up the Data folder on your desktop. Inside that Tor folder, select both `geoip` and `geoip6` and cut/paste them into the `C:&#x0005C;Users&#x0005C;<user>&#x0005C;AppData&#x0005C;Roaming&#x0005C;tor&#x0005C;` folder.
+
+Navigate to `C:&#x0005C;Users&#x0005C;<user>&#x0005C;Desktop&#x0005C;Tor Browser&#x0005C;Browser&#x0005C;TorBrowser&#x0005C;Tor&#x0005C;PluggableTransports`. Select `obfs4proxy.exe` and cut/paste it into the `C:&#x0005C;Users&#x0005C;<user>&#x0005C;AppData&#x0005C;Roaming&#x0005C;tor&#x0005C;` folder.
+
+### 3. Create and edit your Tor config file
+
+In the `C:&#x0005C;Users&#x0005C;<user>&#x0005C;AppData&#x0005C;Roaming&#x0005C;tor&#x0005C;` folder, right-click on white space and select `New > Text Document`. Name the file `torrc`; there is no extension.
+
+Double-click on the `torrc` file. When prompted *How do you want to open this file?*, select `Notepad`. Add the following:
+
+```
+Log notice file C:&#x0005C;Users&#x0005C;<user>&#x0005C;AppData&#x0005C;Roaming&#x0005C;tor&#x0005C;notice.log
+GeoIPFile C:&#x0005C;Users&#x0005C;<user>&#x0005C;AppData&#x0005C;Roaming&#x0005C;tor&#x0005C;geoip
+GeoIPv6File C:&#x0005C;Users&#x0005C;<user>&#x0005C;AppData&#x0005C;Roaming&#x0005C;tor&#x0005C;geoip6
+
+BridgeRelay 1
+
+# Replace "TODO1" with a Tor port of your choice.
+# This port must be externally reachable.
+# Avoid port 9001 because it's commonly associated with Tor and censors may be scanning the Internet for this port.
+ORPort TODO1
+
+ServerTransportPlugin obfs4 exec C:&#x0005C;Users&#x0005C;<user>&#x0005C;AppData&#x0005C;Roaming&#x0005C;tor&#x0005C;obfs4proxy.exe
+
+# Replace "TODO2" with an obfs4 port of your choice.
+# This port must be externally reachable and must be different from the one specified for ORPort.
+# Avoid port 9001 because it's commonly associated with Tor and censors may be scanning the Internet for this port.
+ServerTransportListenAddr obfs4 0.0.0.0:TODO2
+
+# Local communication port between Tor and obfs4.  Always set this to "auto".
+# "Ext" means "extended", not "external".  Don't try to set a specific port number, nor listen on 0.0.0.0.
+ExtORPort auto
+
+# Replace "<address@email.com>" with your email address so we can contact you if there are problems with your bridge.
+# This is optional but encouraged.
+ContactInfo <address@email.com>
+
+# Pick a nickname that you like for your bridge.  This is optional.
+Nickname PickANickname
+```
+
+Don't forget to change the `ORPort`, `ServerTransportListenAddr`, `ContactInfo`, `<user>`, and `Nickname` options.
+
+* Use a fixed obfs4 port larger than 1024, still avoiding 9001.
+
+* Note that both Tor's OR port and its obfs4 port must be reachable.
+  If your bridge is behind a firewall or NAT, make sure to open both ports.
+  You can use [our reachability test](https://bridges.torproject.org/scan/) to see if your obfs4 port is reachable from the Internet.
+
+### 4. Start tor
+
+Open up the Command Prompt App. Change your directory with: `cd C:&#x0005C;Users&#x0005C;<user>&#x0005C;AppData&#x0005C;Roaming&#x0005C;tor&#x0005C;`. Type: `tor.exe -f torrc`.
+
+### 5. Monitor your logs
+
+To confirm your bridge is running with no issues, you should see something like this in `C:&#x0005C;Users&#x0005C;<user>&#x0005C;AppData&#x0005C;Roaming&#x0005C;tor&#x0005C;notice.log`.
+
+```
+[notice] Your Tor server's identity key fingerprint is '<NICKNAME> <FINGERPRINT>'
+[notice] Your Tor bridge's hashed identity key fingerprint is '<NICKNAME> <HASHED FINGERPRINT>'
+[notice] Registered server transport 'obfs4' at '[::]:46396'
+[notice] Tor has successfully opened a circuit. Looks like client functionality is working.
+[notice] Bootstrapped 100%: Done
+[notice] Now checking whether ORPort <redacted>:3818 is reachable... (this may take up to 20 minutes -- look for log messages indicating success)
+[notice] Self-testing indicates your ORPort is reachable from the outside. Excellent. Publishing server descriptor.
+```
+
+### 6. Final notes
+
+If you are having troubles setting up your bridge, have a look at [our help section](https://community.torproject.org/relay/getting-help/). If your bridge is now running, check out the [post-install notes](https://community.torproject.org/relay/setup/bridge/post-install/).
+
+---
+subtitle: How to deploy an obfs4 bridge on Windows
+---
+_template: layout.html
+---
+section: Bridge
+---
+section_id: bridge

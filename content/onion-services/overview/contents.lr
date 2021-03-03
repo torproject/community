@@ -45,7 +45,6 @@ Is your network filtered and you can't open ports on your firewall?
 This could happen if you are in a university campus, an office, an airport, or pretty much anywhere.
 Onion services don't need open ports because they punch through NAT. They only establish outgoing connections.
 
-
 ## The Onion Service Protocol: Overview
 
 Now the question becomes **what kind of protocol is needed to achieve all these properties?**
@@ -56,79 +55,93 @@ In particular, an onion service's address looks like this: `vww6ybal4bd7szmgncyr
 This looks weird and random because it's the _identity public key_ of the onion service.
 That's one of the reasons we can achieve the security properties above.
 
-The onion service protocol uses the Tor network so that the client (Alice) can introduce itself to the service (Bob), and then set up a rendezvous point with the service over the Tor network.
+The onion service protocol uses the Tor network so that the client can introduce itself to the service, and then set up a rendezvous point with the service over the Tor network.
 Here is a detailed breakdown of how this happens:
 
 ### Act 1: Where the onion service sets up its introduction points
 
-![Onion Services: Step 1](/static/images/onion-services/overview/tor-onion-services-1.png)
+Let's imagine that your local newspaper decides to set up an onion service (using [SecureDrop](https://securedrop.org/)) to receive anonymous tips.
+As the first step in the protocol, the onion service will contact a bunch of Tor relays and ask them to act as its _introduction points_ by establishing long-term circuits to them.
+These circuits are anonymized circuits, so the server does not reveal the service location to the introduction points.
 
-As the first step in the protocol, Bob (the onion service) contacts a bunch of Tor relays and asks them to act as his _introduction points_, by establishing long-term circuits to them.
-These circuits are anonymized circuits, so Bob does not reveal his locations to his introduction points.
+The onion service will hide and protect itself behind the Tor network by only allowing access through three introduction points that it connects to through a two-hop Tor circuit.
 
-As part of this step, Bob gives its introduction point a special "authentication key", so that if any clients come for introductions later the introduction point can use that key to match them to Bob.
+<img class="col-lg-8" src="../../static/images/onion-services/overview/onion-service-01.png" alt="Onion Services: Step 1">
 
 ### Act 2: Where the onion service publishes its descriptors
 
-![Onion Services: Step 2](/static/images/onion-services/overview/tor-onion-services-2.png)
+Now that the introduction points are set up, we need to create a way for clients to be able to find them.
 
-Now that the introduction points are setup, we need to create a way for clients to be able to find them.
-
-For this reason, Bob assembles an _onion service descriptor_, containing a list of his introduction points (and their "authentication keys"), and signs this descriptor with his _identity private key_.
+For this reason, the onion service assembles an _onion service descriptor_, containing a list of its introduction points (and "authentication keys"), and signs this descriptor with the onion service's _identity private key_.
 The _identity private key_ used here is the private part of the **public key that is encoded in the onion service address**.
 
-Now, Bob uploads that signed descriptor to a _distributed hash table_ which is part of the Tor network, so that clients can also get it.
-Bob uses an anonymized Tor circuit to do this upload, so that he does not reveal his location.
+The onion service upload that signed descriptor to a _distributed hash table_, which is part of the Tor network, so that clients can also get it.
+It uses an anonymized Tor circuit to do this upload so that it does not reveal its location.
 
-### Act 3: Where a client wants to visit the onion service
+<img class="col-lg-8" src="../../static/images/onion-services/overview/onion-service-02.png" alt="Onion Services: Step 2">
 
-All the previous steps were just setup for the onion service so that it's reachable by clients.
-Now let's fast-forward to the point where an actual client wants to visit the service:
+### Act 3:  Where a client wants to visit the onion service
 
-![Onion Services: Step 3](/static/images/onion-services/overview/tor-onion-services-3.png)
+Say you want to anonymously send some tax fraud data to your local newspaper through its SecureDrop.
+You find the onion address for the newspaper's SecureDrop from a public website or friend.
 
-In this case, Alice (the client) has the onion address of Bob and she wants to visit it, so she connects to it with her Tor Browser.
-Now the next thing that needs to happen is that Alice goes to the _distributed hash table_ from the step above, and ask for the signed descriptor of Bob.
+<img class="col-lg-8" src="../../static/images/onion-services/overview/onion-service-03.png" alt="Onion Services: Step 3">
 
-When Alice receives the signed descriptor, she verifies the signature of the descriptor using the public key that is encoded in the onion address.
-This provides the _end-to-end authentication_ security property, since we are now sure that this descriptor could only be produced by Bob and no one else.
-And inside the descriptor there are the introduction points which allow Alice to introduce herself to Bob.
+### Act 4: Where the client introduces itself to the onion service
 
-### Act 4: Where the client establishes a rendezvous point
+All the previous steps were just set up for the onion service so that it's reachable by clients.
+Now let's fast-forward to the point where an actual client wants to visit the service.
 
-Now before the introduction takes place, Alice picks a Tor relay and establishes a circuit to it.
-Alice asks the relay to become her _rendezvous point_ and gives it an "one-time secret" that will be used as part of the rendezvous procedure.
+In this case, the client has the onion address of SecureDrop and want to visit it, so they connect to the service with Tor Browser.
+Now the next thing that needs to happen is that the client goes to the _distributed hash table_ from **Step 2** and ask for the signed descriptor of SecureDrop's onion service.
 
-### Act 5: Where the client introduces itself to the onion service
+<img class="col-lg-8" src="../../static/images/onion-services/overview/onion-service-04.png" alt="Onion Services: Step 4">
 
-![Onion Services: Step 4](/static/images/onion-services/overview/tor-onion-services-4.png)
+### Act 5:  Where the client verify onion address signature
 
-Now, Alice goes ahead and connects to one of Bob's introduction points and introduces herself to Bob.
-Through this introduction Bob learns Alice's choice of rendezvous point and the "one-time secret".
+When the client receives the signed descriptor, they verify the signature of the descriptor using the public key that is encoded in the onion address.
+This provides the _end-to-end authentication_ security property, since we are now sure that this descriptor could only be produced by that onion service and no one else.
 
-### Act 6: Where the onion service rendezvous with the client
+And inside the descriptor, there are the introduction points that allow the client to introduce themselves to SecureDrop's onion service.
 
-![Onion Services: Step 5](/static/images/onion-services/overview/tor-onion-services-5.png)
+<img class="col-lg-8" src="../../static/images/onion-services/overview/onion-service-05.png" alt="Onion Services: Step 5">
 
-In this last act, the onion service is now aware of Alice's rendezvous point.
+### Act 6: Where the client establishes a rendezvous point
+
+Before the introduction takes place, the client (in this case, you) picks a Tor relay and establishes a circuit to it. 
+The client asks the relay to become their rendezvous point and give it an "one-time secret" that will be used as part of the rendezvous procedure.
+
+<img class="col-lg-8" src="../../static/images/onion-services/overview/onion-service-06.png" alt="Onion Services: Step 6">
+
+### Act 7: Where the onion service rendezvous with the client
+
+The introduction point passes your details (secret string and rendezvous address) on to the onion service, which runs multiple verification processes to decide whether you're trustworthy or not.
+
+<img class="col-lg-8" src="../../static/images/onion-services/overview/onion-service-07.png" alt="Onion Services: Step 7">
+
+### Act 8: Where the rendezvous point verifies the client's secret
+
 The onion service connects to the rendezvous point (through an anonymized circuit) and sends the "one-time secret" to it.
+The rendezvous point makes one final verification to match the secret strings from you and service (the latter also comes from you but has been relayed through the service).
 
-Upon the rendezvous point receiving the "one-time secret" from Bob, it informs Alice that the connection has been **successfuly completed**, and now Alice and Bob can use this circuit to communicate with each other.
 The rendezvous point simply relays (end-to-end encrypted) messages from client to service and vice versa.
 
-In general, the complete connection between client and onion service consists of 6 relays: 3 of them were picked by the client with the third being the rendezvous point and the other 3 were picked by the onion service.
-This provides _location hiding_ to this connection:
+<img class="col-lg-8" src="../../static/images/onion-services/overview/onion-service-08.png" alt="Onion Services: Step 8">
 
-![Onion Services: Step 6](/static/images/onion-services/overview/tor-onion-services-6.png)
+### Act 9: Where the onion service rendezvous with the client
+
+In general, the complete connection between client and onion service consists of 6 relays: 3 of them were picked by the client, with the third being the rendezvous point, and the other 3 were picked by the onion service.
+This provides _location hiding_ to this connection.
+
+Finally, using the rendezvous point, a Tor circuit is formed between you and your newspaper's SecureDrop onion service.
+
+<img class="col-lg-8" src="../../static/images/onion-services/overview/onion-service-09.png" alt="Onion Services: Step 9">
 
 ## Further resources
 
-This was just a high-level overview of the Tor onion services protocol. Here are some more resources if you want to learn more:
+This was just a high-level overview of the Tor onion services protocol.
+Here are some more resources if you want to learn more:
 
-- The original Tor design paper describing the original design:
-https://svn.torproject.org/svn/projects/design-paper/tor-design.pdf
-- The Tor v3 onion services protocol specification.
-https://gitweb.torproject.org/torspec.git/tree/rend-spec-v3.txt
-- Presentations about onion services
-https://www.youtube.com/watch?v=VmsFxBEN3fc
-https://www.youtube.com/watch?v=Di7qAVidy1Y
+- The [Tor design paper](https://svn.torproject.org/svn/projects/design-paper/tor-design.pdf) describing the original design.
+- The [Tor v3 onion services](https://gitweb.torproject.org/torspec.git/tree/rend-spec-v3.txt) protocol specification.
+- Presentations about onion services: [Understanding Tor Onion Services and Their Use Cases - HOPE XI 2016](https://www.youtube.com/watch?v=VmsFxBEN3fc), [DEF CON 25 - Roger Dingledine - Next Generation Tor Onion Services](https://www.youtube.com/watch?v=Di7qAVidy1Y).

@@ -1,16 +1,17 @@
 _model: page
 ---
-title:
-
- Bridge
+title: Bridge
 ---
 body:
 
 This guide will help you set up an obfs4 bridge to help censored users connect to the Tor network. The requirements are:
 1. 24/7 Internet connectivity
-2. The ability to expose TCP ports to the Internet (make sure that NAT doesn't get in the way) 
+2. The ability to expose TCP ports to the Internet (make sure that NAT doesn't get in the way)
 
-Note: If you're running a platform that is not listed on this page, you can [compile obfs4 from source](https://gitlab.com/yawning/obfs4#installation).
+Note 1: If you're running a platform that is not listed on this page, you can [compile obfs4 from source](https://gitlab.com/yawning/obfs4#installation).
+
+Note 2: If you're planning to turn an existing but non-bridge relay into a bridge relay, changing IP address, name and fingerprint is advised to avoid easy discovery and blocklisting by ISP or governments.
+
 ---
 html: two-columns-page.html
 ---
@@ -23,3 +24,6 @@ section_id: bridge-operations
 subtitle: Run an obfs4 bridge to help censored users connect to the Tor network
 ---
 _slug: {{bridge}}
+---
+color: primary
+---

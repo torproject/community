@@ -32,7 +32,7 @@ For network diversity and stronger anonymity, you should avoid providers and cou
 |-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
 | [UPC Austria GmbH](https://www.upc.at/) | - | - | Yes | Yes | (ISP) does not care what their customers do at all (unless you have a business connection) | 12/2011 |
 | [Silver Server GmbH](http://sil.at/) | - | -| Yes | Yes | Forwards abuse. Hosts already some big exit/entry nodes which seem to have no problems. Very expensive traffic. | 12/2011 |
-| [Tele2 Austria GmbH](https://tele2.at/) | - | - | Yes | Yes | Forwards abuse at business connections, good quality traffic, does not like "proxys" on private lines. Cheap synchronous (SDSL) connections. | 12/2011 |
+| [Tele2 Austria GmbH](https://tele2.at/) | - | - | Yes | Yes | Forwards abuse at business connections, good quality traffic, does not like "proxies" on private lines. Cheap synchronous (SDSL) connections. | 12/2011 |
 | [A1(former Telekom Austria)](http://a1.net) | - | - | Yes | No | Does not like Abuse (in any form) at all. Seems to give out customer data at alleged abuse. Not recommended but cheap. | 12/2011 |
 | [xpirio GmbH](http://xpirio.at) | - | - | Yes | ? | In general rather relaxed at all services, but better get in touch with their (very understanding) support when you expect abuse. | 12/2011 |
 
@@ -52,6 +52,7 @@ For network diversity and stronger anonymity, you should avoid providers and cou
 | [TekSavvy](http://www.teksavvy.ca) | - | Yes | Yes | ? | has a server-friendly Internet Use Policy (e.g., running a Tor relay) and has taken a stand in favor of net neutrality | 2008/12 |
 | [CloudatCost.ca](http://www.cloudatcost.com/) | - | Yes | Yes | ? | operated by Fibernetics, has liberal abuse handling policies [AUP](http://www.cloudatcost.com/terms.php), however Tor is not explicitly allowed. | 2015/02 |
 | [oneprovider](http://oneprovider.com/) | - | Yes | Yes | Yes |  They are reselling dedicated servers in many locations around the world. Abuse handling differs depending on the provider from which they resell. | 2016/06 |
+| [Vidéotron Ltee](http://videotron.com/) | AS5769 | Yes | Yes | ? |  No mention of Tor in ToS, relays and bridges seem allowed. | - |
 
 
 ### Czech Republic
@@ -88,7 +89,7 @@ For network diversity and stronger anonymity, you should avoid providers and cou
 | [Weesly](http://weesly.de) | - | Yes | Yes | Yes | Note that you should let them know about your intention when ordering a server or in advance. | 06/2013 |
 | [EUServ](http://euserv.de) | - | - | Yes | No | They have a bad support, but if you know how to maintain your server, this ISP is a good choice. | - |
 | [IPX-Server](https://www.ipx-server.de/) | - | Yes | Yes |  - | - | - |
-| [Keyweb](https://www.keyweb.de/) | - | - | Yes | Yes | - | - |
+| [Keyweb](https://www.keyweb.de/) | - | - | No | No | "Unfortunately this is not possible with us." | 2020 |
 | [Afterburst](http://afterburst.com) | - | - | Yes | No | - | - |
 | [myLoc Managed IT](https://myloc.de) | AS31010, AS24961 | Yes | Yes | No | - | 2018-10-25 |
 | [linevast](https://www.linevast.de/) | - | Yes | Yes | Yes | Only allowed on dedicated servers | 13/11/2015 |
@@ -131,6 +132,9 @@ For network diversity and stronger anonymity, you should avoid providers and cou
 | [Prometeus](https://www.prometeus.net/sito/) | - | Yes | Yes | No | - | - |
 | [ArubaCloud /Aruba](https://cloud.it/) | - | Yes | Yes | Yes |  TOS generically indicate that the operator is responsible for all the activities on the machine. [Read more](https://balist.es/blog/2016/04/18/running-a-tor-exit-node-on-aruba-arubacloud-a-detailed-account/) | - |
 | [SelfServer by Enter](https://selfserver.it/) | - | Yes | Yes | Yes | Uncomfortable due to old CentOS 6.10, NATed IPv4-only networking, ports other than the well-known are filtered. Abuse complaints need to go through their support service | 11/2018 |
+| [Revolution Hosting](https://rhosting.it/) | AS60798 | Yes | Yes | No | Exit nodes are allowed but they will be immediately terminated if any abuse complaint is issued. KVM VPS. IPv4+IPv6 native support. * Gnu/Linux, FreeBSD and Windows server supported. Coingate supported. | 12/2020 |
+| [G-Core Labs](https://gcorelabs.com) | AS199524 | Yes | Yes | Yes | Comments: No restrictions but legality is mandatory. Exits are welcome. Abuse complaints are forwarded to the customer and discussed with the abuse team. KVM VPS. IPv4+IPv6 native support. * Gnu/Linux, FreeBSD and Windows server supported. Unmetered traffic. | 12/2020 |
+
 
 
 ### Latvia
@@ -151,7 +155,9 @@ For network diversity and stronger anonymity, you should avoid providers and cou
 
 | **Company/ISP** | **ASN** | **Bridges** | **Relay** | **Exit** | **Comments** | **Last Updated** |
 |-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
-| Axtel | - | Yes | Yes | ? |  Currently some Guard / Middle nodes are running in Axtel network | 2019 |
+| Axtel | AS6503 | Yes | Yes | Yes |  Currently some Guard / Middle and exit nodes are running in Axtel network | 2020 |
+| Telmex | AS8151 | No | Yes | No |  Currently some Guard / Middle nodes are running in Telmex network | 2020 |
+| Mega Cable | AS13999 | No | Yes | No |  Currently some Guard / Middle nodes are running in Mega Cable network | 2020 |
 
 
 ### Moldova
@@ -160,7 +166,7 @@ For network diversity and stronger anonymity, you should avoid providers and cou
 |-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
 | [MivoCloud](https://www.mivocloud.com/) | - | Yes | Yes | No | - | 09/13/16 |
 | [Trabia](https://www.trabia.com/) | - | Yes | Yes | Yes | - | 08/13/17 |
-| [AlexHost](https://alexhost.md/) | - | Yes | Yes | Yes | - | 07/21/2014 |
+| [AlexHost](https://alexhost.md/) | - | Yes | Yes | No | "Tor exit relay is strictly forbidden on our company's servers" | 2020 |
 
 
 ### Netherlands
@@ -180,7 +186,6 @@ For network diversity and stronger anonymity, you should avoid providers and cou
 | [Netrouting`](http://netrouting.nl/) | - | Yes | Yes | No | ISP has confirmed by e-mail that exit nodes are NOT acceptable. | 2014-10-15 |
 | [DirectVPS](http://directvps.nl/) | - | Yes | Yes | ? | - | - |
 | [Versio](http://versio.nl/) | - | Yes | Yes | No | - | 2013 |
-| [CyberBunker](http://www.cyberbunker.com/) | - | Yes | Yes | Yes | Customers can remain anonymous. | - |
 | [SnelServer](https://www.snelserver.com/) | - | Yes | Yes | Yes | Abuse complaints must be responded to within 24 hours or the system automatically suspends your account until you do. | 2014 |
 | [ChmuraNet](https://www.chmuranet.com/) | - | Yes | Yes | Yes | Allows anonymous users to run tor exits. Abuse issues will be forwarded. Make sure to tell them that you're running an exit | 09/2014 |
 
@@ -235,6 +240,7 @@ For network diversity and stronger anonymity, you should avoid providers and cou
 |-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
 | [Solar Communications Gmbh](https://solarcom.ch/) | AS197988 | Yes | Yes | No | "We allow to place Tor routers, but don't allow to place Tor exit nodes." This applies to all their partners, who actually sell Solar's services to the public, namely: [Server & cloud](https://server-cloud.com), [CoinsHost](https://coinshost.com), [Incloudibly](https://incloudibly.net), [Cloudcom](https://cloudc.me), [AtomDrive](https://atomdrive.net). Cryptocurrencies are accepted. | 12/04/2015 |
 | [fsit](http://www.fsit.ch/) | - | Yes | Yes | Yes | - | 11/2015 |
+| [Swiss Made Host](https://swissmade.host/en/) | - | No | No | No | "Tor is not welcome on our network." | 10/2020 |
 
 
 ### Slovenia
@@ -273,6 +279,7 @@ For network diversity and stronger anonymity, you should avoid providers and cou
 | [Blacklotus](http://www.blacklotus.net) | - | Yes | Yes | Yes | Liberal abuse handling policies | - |
 | [BuyVM.net](https://buyvm.net) | AS53667 | Yes | Yes | Yes | New Tor rules [here](https://buyvm.net/acceptable-use-policy/#3). All relays are fine if you follow the steps. | - |
 | [Catalyst Host](https://catalysthost.com/) | - | ? | No | No | "If you are interested in hosting either, you can ask us about a dedicated server." | 10/01/14 |
+| [Cloudvider](https://www.clouvider.co.uk/) | - | No | No | No | This is for their US Operations arm. They will cancel your account and claim it is a ToS violation, which requires you to pay out a 60-day notice. | 10/2020 |
 | [ChunkHost](http://chunkhost.com) | - | Yes | Yes | ? | Questionable DMCA handling | 01/01/12 |
 | [Cyberonic](http://www.cyberonic.com) | - | Yes | Yes | ? | - | - |
 | [Datawagon](https://datawagon.net) | AS27176 | Yes | Yes | Yes | Customers are forwarded abuse complaints to handle themselves | 03/06/19 |
@@ -280,6 +287,7 @@ For network diversity and stronger anonymity, you should avoid providers and cou
 | [Ethr.net](http://ethr.net/) | - | Yes | Yes | Yes | - | - |
 | [Evolucix](http://www.evolucix.com) | -  | Yes | Yes | No(?) | - | - |
 | [Future Hosting](http://www.futurehosting.com/) | - | Yes | Yes | No | - | 09/01/14 |
+| [Hivelocity](https://www.hivelocity.net/) | - | No | No | No | They are symphathetic, but do not want their IP space "polluted" by Tor abuse requests. | 10/2020 | 
 | [HostGator](http://www.hostgator.com/) | - | No | No | No | - | - |
 | [HostHatch](https://hosthatch.com) | AS46562 | Yes | Yes | No | Their vps isp are mixed include: QuadraNet, nLayer, AboveNet, Inteliquent, Atrato Networks and open peering with the entire Any2LA and Atlanta TIE networks. | 05/01/16 |
 | [HostUS](http://hostus.us/) | AS25926 | Yes | Yes | No | - | 10/16/14 |

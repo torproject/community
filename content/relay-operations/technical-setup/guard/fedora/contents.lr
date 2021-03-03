@@ -8,11 +8,19 @@ body:
 
 # 1. Enable Automatic Software Updates
 
-One of the most imported things to keeps your relay secure is to install security updates timely and ideally automatically so you can not forget about it. Follow the instructions to enable [automatic software updates](updates) for your operating system.
+One of the most important things to keeps your relay secure is to install security updates timely and ideally automatically so you can not forget about it. Follow the instructions to enable [automatic software updates](updates) for your operating system.
 
-# 2.  Install the tor package
+# 2.  # 3. Add the following to /etc/yum.repos.d/tor.repo and then install the tor package.
 
-`dnf install tor`
+```
+[tor]
+name=Tor for Fedora $releasever - $basearch
+baseurl=https://rpm.torproject.org/fedora/$releasever/$basearch
+enabled=1
+gpgcheck=1
+gpgkey=https://rpm.torproject.org/fedora/public_gpg.key
+cost=100
+```
 
 # 3. Put the tor configuration file `/etc/tor/torrc` in place
 
@@ -21,7 +29,7 @@ One of the most imported things to keeps your relay secure is to install securit
 Nickname myNiceRelay
 ORPort 9001
 ExitRelay 0
-# Change the email address bellow and be aware that it will be published
+# Change the email address below and be aware that it will be published
 ContactInfo tor-operator@your-emailaddress-domain
 ```
 
@@ -34,7 +42,7 @@ systemctl start tor
 
 # 5. Final notes
 
-If you are having troubles setting up your relay, have a look at our [help section](/relay/getting-help/). If your relay is now running, check out the [post-install](/relay/setup/post-install/) notes.
+If you are having trouble setting up your relay, have a look at our [help section](/relay/getting-help/). If your relay is now running, check out the [post-install](/relay/setup/post-install/) notes.
 ---
 html: two-columns-page.html
 ---

@@ -1,0 +1,61 @@
+_model: project
+---
+_template: layout.html
+---
+html: two-columns-page.html
+---
+active: True
+---
+section: GSoC
+---
+section_id: gsoc
+---
+color: primary
+---
+key: 5
+---
+languages: Golang
+---
+org: OONI
+---
+mentors:
+Simone Basso
+Arturo Filastò
+---
+difficulty: low-high
+---
+title: OONI Probe network experiments
+---
+subtitle:
+
+OONI Probe is a free software project that aims to uncover internet censorship around the world. As part of this project you would be working on researching and developing new OONI Probe network experiments.
+
+---
+body:
+
+# Background
+
+The Open Observatory of Network Interference (OONI) is a free software project which aims to empower decentralized efforts in increasing transparency of internet censorship around the world.
+
+We develop free and open source software, called OONI Probe, that users can run to measure:
+
+- Blocking of websites;
+- Blocking of instant messaging apps (WhatsApp, Facebook Messenger and Telegram);
+- Blocking of censorship circumvention tools (such as Tor);
+- Presence of systems (middleboxes) in your network that might be responsible for censorship and/or surveillance;
+- Speed and performance of your network.
+
+By running OONI Probe, users can collect data that can potentially serve as evidence of internet censorship since it shows how, when, where, and by whom it is implemented.
+
+# Proposal
+
+*Prerequisites:* Knowledge of network programming
+
+As part of this project you would be working on researching and developing new OONI Probe network experiments. These experiments would be integrated inside of probe-engine and could eventually make their way into the OONI Probe desktop client.
+
+The GSoC project is only about researching and implementing a working test in probe-engine, not the UI and client integration of the test.
+
+# Resources
+
+- OONI Probe repo on github: https://github.com/ooni/probe-engine
+- [Ideas for new experiments](https://github.com/ooni/probe-engine/issues?q=is%3Aopen+is%3Aissue+label%3A%22new+experiment%22)

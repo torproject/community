@@ -2,6 +2,8 @@ _model: page
 ---
 title: Exit
 ---
+color: primary
+---
 html: two-columns-page.html
 ---
 section: relay operations
@@ -27,8 +29,8 @@ If your provider offers it, make sure your WHOIS record contains clear indicatio
 ## Exit Notice HTML page
 
 To make it even more obvious that this is a Tor exit relay you should serve a Tor exit notice HTML page.
-Tor can do that for you if your DirPort is on TCP port 80, you can make use of tor's DirPortFrontPage feature to display a HTML file on that port.
-This file will be shown to anyone directing his browser to your Tor exit relay IP address.
+Tor can do that for you: if your DirPort is on TCP port 80, you can make use of tor's DirPortFrontPage feature to display an HTML file on that port.
+This file will be shown to anyone directing their browser to your Tor exit relay IP address.
 
 ```
 DirPort 80
@@ -78,7 +80,7 @@ By using your own DNS resolver, you are less vulnerable to DNS-based censorship 
 
 Below are instructions on how to install and configure unbound – a DNSSEC-validating and caching resolver – on your exit relay. Unbound has many configuration and tuning knobs but we keep these instructions simple and short; the basic setup will do just fine for most operators.
 
-After switching to unbound, verify it works as expected by resolving a valid hostname. If it does not work, you can restore your old resolv.conf file.
+After switching to unbound, verify that it works as expected by resolving a valid hostname. If it does not work, you can restore your old resolv.conf file.
 
 ### Debian/Ubuntu
 
@@ -90,7 +92,7 @@ cp /etc/resolv.conf /etc/resolv.conf.backup
 echo nameserver 127.0.0.1 > /etc/resolv.conf
 ```
 
-To avoid that the configuration gets changed (for example by the DHCP client):
+To avoid unwanted configuration changed (for example by the DHCP client):
 
 ```
 chattr +i /etc/resolv.conf
@@ -133,7 +135,7 @@ cp /etc/resolv.conf /etc/resolv.conf.backup
 echo nameserver 127.0.0.1 > /etc/resolv.conf
 ```
 
-To avoid that the configuration gets changed (for example by the DHCP client):
+To avoid unwanted configuration changes (for example by the DHCP client):
 
 ```
 chattr +i /etc/resolv.conf
@@ -169,7 +171,7 @@ cp /etc/resolv.conf /etc/resolv.conf.backup
 echo nameserver 127.0.0.1 > /etc/resolv.conf
 ```
 
-To avoid that the configuration gets changed (for example by the DHCP client):
+To avoid unwanted configuration changes (for example by the DHCP client):
 
 ```
 chflags schg /etc/resolv.conf

@@ -8,6 +8,19 @@ body:
 
 ### 1. Install tor and dependencies
 
+Add the following to /etc/yum.repos.d/tor.repo
+
+```
+[tor]
+name=Tor for Fedora $releasever - $basearch
+baseurl=https://rpm.torproject.org/fedora/$releasever/$basearch
+enabled=1
+gpgcheck=1
+gpgkey=https://rpm.torproject.org/fedora/public_gpg.key
+cost=100
+```
+Then install tor and the dependencies.
+
 ```
 dnf install git golang tor policycoreutils-python-utils
 ```
@@ -84,10 +97,8 @@ To confirm your bridge is running with no issues, you should see something like 
 
 ### 6. Final notes
 
-If you are having troubles setting up your bridge, have a look at [our help
-section](https://community.torproject.org/relay/getting-help/). If
-your bridge is now running, check out the [post-install
-notes](https://community.torproject.org/relay/setup/bridge/post-install/).
+If you are having trouble setting up your bridge, have a look at [our help section](https://community.torproject.org/relay/getting-help/).
+If your bridge is now running, check out the [post-install notes](https://community.torproject.org/relay/setup/bridge/post-install/).
 
 ---
 html: two-columns-page.html
@@ -95,8 +106,6 @@ html: two-columns-page.html
 key:
 
 2
----
-color: primary
 ---
 subtitle: How to deploy an obfs4 bridge on Fedora
 ---

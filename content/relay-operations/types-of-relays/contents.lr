@@ -38,13 +38,13 @@ A non-exit relay does not allow exiting in its exit policy.
 
 # Exit relay
 
-The exit relay is the final relay in a Tor circuit, the one that sends traffic out its destination.
-The services Tor clients are connecting to (website, chat service, email provider, etc) will see the IP address of the exit relay instead of their real IP address of the Tor user.
+The exit relay is the final relay in a Tor circuit, the one that sends traffic out to its destination.
+The services Tor clients are connecting to (website, chat service, email provider, etc) will see the IP address of the exit relay instead of the real IP address of the Tor user.
 
 Exit relays have the greatest legal exposure and liability of all the relays.
-For example, if a user downloads copyrighted material while using your exit relay, you the operator may receive a [DMCA notice](https://www.dmca.com/Solutions/view.aspx?ID=712f28a5-93f2-467b-ba92-3d58c8345a32&?ref=sol08a2).
+For example, if a user downloads copyrighted material while using your exit relay, you, the operator may receive a [DMCA notice](https://www.dmca.com/Solutions/view.aspx?ID=712f28a5-93f2-467b-ba92-3d58c8345a32&?ref=sol08a2).
 Any abuse complaints about the exit will go directly to you (via your hoster, depending on the WHOIS records).
-Generally, most complaints can be handled pretty easily through template letters, which we'll discuss more in legal considerations section.
+Generally, most complaints can be handled pretty easily through template letters, which we'll discuss further in the legal considerations section.
 
 Because of the legal exposure that comes with running an exit relay, you should not run a Tor exit relay from your home.
 Ideal exit relay operators are affiliated with some institution, like a university, a library, a hackerspace or a privacy related organization.
@@ -55,12 +55,12 @@ If you are considering running an exit relay, please read the [section on legal 
 # Bridge
 
 The design of the Tor network means that the IP address of Tor relays is public.
-However, one of the ways Tor can be blocked by governments or ISPs is by blacklisting the IP addresses of these public Tor nodes.
-Tor bridges are nodes in the network that are not listed in the public Tor directory, which make it harder for ISPs and governments to block them.
+However, one of the ways Tor can be blocked by governments or ISPs is by blocklisting the IP addresses of these public Tor nodes.
+Tor bridges are nodes in the network that are not listed in the public Tor directory, which makes it harder for ISPs and governments to block them.
 
 Bridges are useful for Tor users under oppressive regimes or for people who want an extra layer of security because they're worried somebody will recognize that they are contacting a public Tor relay IP address.
 Several countries, including China and Iran, have found ways to detect and block connections to Tor bridges.
-[Pluggable transports](https://2019.www.torproject.org/docs/pluggable-transports.html.en), a special kind of bridge, address this by adding an additional layer of obfuscation.
+[Pluggable transports](https://tb-manual.torproject.org/circumvention/), a special kind of bridge, address this by adding an additional layer of obfuscation.
 
 Bridges are relatively easy, low-risk and low bandwidth Tor nodes to operate, but they have a big impact on users.
 A bridge isn't likely to receive any abuse complaints, and since bridges are not listed in the public consensus, they are unlikely to be blocked by popular services.
