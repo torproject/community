@@ -95,20 +95,20 @@ For network diversity and stronger anonymity, you should avoid providers and cou
 | [linevast](https://www.linevast.de) | AS201206 | No | No | No |  | 03/2021 |
 | [Server4You](https://www.server4you.de)| AS131914 | No | No | No | - | 03/2021 |
 | [Hetzner](http://hetzner.de) | AS24940 | Yes | Yes | Yes | Offers good dedicated root servers for a good price. "It is not a Problem, however, abuse reports can lead to a server lock" | 03/2021 |
-| [Contabo](https://contabo.de) | AS51167  | No | No | No | TOR prohibited due to terms of service | 03/2021 |
+| [Contabo](https://contabo.de) | AS51167  | No | No | No | Tor prohibited due to terms of service | 03/2021 |
 | [Strato](https://strato.de) | AS6724 | No | No | No | - | 03/2021 |
 | [PraHost](https://www.prahost.com) | - | Yes | Yes | Yes | "If there is any abuse notice received, you need to solve it in given time, else your IP will be blocked until you take any action" | 03/2021 |
 | [DomainFactory](https://www.df.eu/de/cloud-hosting/cloud-server) | AS34011 | Yes | Yes | Yes | Only allowed on jiffybox | 03/2021 |
 | [NetCologne](https://www.netcologne.de) | - | - | Yes | Yes | - | - |
 | [Signaltransmitter](https://signaltransmitter.de) | AS24961 | Yes | Yes | Yes | "In principle, we do not limit our services apart from mining bitcoins" | 03/2021 |
-| [Netcup](https://www.netcup.de) | AS197540 | Yes | Yes | Yes | TOR allowed on VPS and rootservers | 03/2021 |
+| [Netcup](https://www.netcup.de) | AS197540 | Yes | Yes | Yes | Tor allowed on VPS and rootservers | 03/2021 |
 | [Onyxhosting](https://onyxhosting.de) | - | No | No | No | - | 03/2021 |
 | [IP-Projects](https://www.ip-projects.de) | AS48314 | No | No | No | - | 03/2021 |
 | [Lansol](https://www.lansol.de) | - | No | No | No | - | 03/2021 |
 | [delta.networks](https://www.delta-networks.de) | AS9937 | No | No | No | - | 03/2021 |
 | [VPS2Day](https://www.vps2day.com) | AS58329 | Yes | Yes | No | Exit nodes prohibited due to terms of service | 03/2021 |
 | [Serverprofis](https://www.serverprofis.de) | AS5539 | No | No | No | - | 03/2021 |
-| [manitu](https://www.manitu.de) | AS34240 | No | No | No | "I´m sorry - even if the network has great added value for specific purposes, we have decided to prohibit TOR services on our network" | 03/2021 |
+| [manitu](https://www.manitu.de) | AS34240 | No | No | No | "I'm sorry - even if the network has great added value for specific purposes, we have decided to prohibit Tor services on our network" | 03/2021 |
 | [active-servers](https://www.active-servers.com) | AS197071 | Yes | Yes | Yes | "Usually this leads to abuse mails, which only cause trouble – but basically we have nothing against it" | 03/2021 |
 | [UltraVPS](https://www.ultravps.eu) | - | No | No | No | "We are not the right host for your project" | 03/2021 |
 
