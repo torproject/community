@@ -16,11 +16,11 @@ html: two-columns-page.html
 ---
 body:
 
-We have some languages more active, with a number of active and committed contributors (as French, Russian, Portuguese). Even when the translations are finished, you are still welcome to help us with these languages.
+Some languages are more active than others with a higher number of active and committed contributors (such as French, Russian, Portuguese). However you are still welcome to help us with these languages, even after the translations are complete.
 
 Our translations are incomplete for a lot of languages. They may be spoken by fewer people around the world, but it is still critical that we improve access to Tor for people who do not speak English.
 
-You can see the open tickets about translation problems on our [bugtracker](https://gitlab.torproject.org/tpo/community/l10n/-/issues).
+You can see the open tickets about translation issues on our [bugtracker](https://gitlab.torproject.org/tpo/community/l10n/-/issues).
 
 Our documentation is very important for users around the world to be able to use Tor and Tor Browser:
-This includes the Tor Browser User Manual, the Support Portal, the Tor Project Website and this website, the Community Portal.
+This includes the Tor Browser User Manual, the Support portal, the Tor Project website and the Community portal.

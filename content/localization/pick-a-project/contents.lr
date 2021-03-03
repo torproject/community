@@ -19,7 +19,7 @@ We want our tools to be available and localized for anyone who wants to use them
 
 <img class="col-lg-6" src="../../static/images/localization/stats.png">
 
-Please consider [helping with translations](/localization/becoming-tor-translator/) in your native language, but don't start a regional variant of your language if there is a more general language available (for example: contribute to the French translation, instead of French-Canada).
+Please consider [helping with translations](/localization/becoming-tor-translator/) in your native language, however don't start a new regional variant of your language if there is a more general language available (for example: contribute to the French translation, instead of starting Canadian French).
 
 The reason is that every language needs resources, a set of committed translators, makes compilations take longer, and takes more space in servers.
 There are many files to translate and keep up to date to maintain a language for the Tor Project. Moreover, once translated, there are always updates and more pages to translate.
