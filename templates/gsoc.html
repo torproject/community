@@ -1,0 +1,27 @@
+<div class="container py-5">
+  <div class="row py-5">
+    <div class="col-lg-12">
+      {{ this.body }}
+    </div>
+  </div>
+  <div class="col-12">
+    {% from "macros/projects.html" import render_active %}
+    {% for child in this.children.filter(F.active == True).all() %}
+    <div class="row">
+      {{ render_active(child, this.alt) }}
+    </div>
+    {% endfor %}
+  </div>
+  <div class="row py-5 text-center mx-auto">
+    <p class="text-center">{{ _('None of these ideas seem appealing? You may also want to propose your own project idea — which often results in the best projects.') }} <a href="mailto:gso@torproject.org">{{ _('We invite you to contact us to discuss your own project idea.') }}</a></p>
+  </div>
+  <div class="row">
+    <h2>Past Projects</h2>
+    <p class="text-center">{{ _('Here are some successful projects which have been implemented in the past by Google Summer of Code and Outreachy participants') }}</p>
+    <ul>
+      {% for child in this.children.filter(F.active == False).filter(F.completed == True).all() %}
+      <li><a href={{ child.url }}>{{ child.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>

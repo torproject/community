@@ -26,7 +26,7 @@
   <div class="row py-5 text-center mx-auto">
     <h2 class="display-4 text-primary text-center mx-auto">{{ _('Onionize any website') }}</h2>
     <p class="text-center">
-      {{ _('There\'s a toolkit that lets you take any existing website and host it as a .onion site. You would want do this because .onion sites are more secure than just regular sites. We show you how to use this toolkit and onionize a site.') }}
+      {{ _('There\'s a toolkit that lets you take any existing website and host it as a .onion site too. You would do this because .onion sites are more secure than just regular sites. There is an installation guide for how to use this toolkit to onionize your site.') }}
     </p>
     <a class="btn btn-lg btn-outline-primary mx-auto my-3" href="https://github.com/alecmuffett/eotk">
           {{ _('Check out the code') }}<i class="ml-3 pt-2 fas fa-arrow-right"></i>
@@ -49,6 +49,23 @@
           </div>
         </div>
       </div>
+    {% endfor %}
+  </div>
+  <div class="row py-5 text-center mx-auto">
+    <h2 class="display-4 text-primary text-center mx-auto">{{ _('Tools') }}</h2>
+  </div>
+  <div class="row mx-auto d-flex flex-wrap align-items-center">
+    {% for id, item in bag('onion-tools').items() %}
+    {% if item.active == "True" %}
+      <div class="col-4">
+        <div class="card h-50 border-0">
+          <a href="{{ item.link }}"><img class="card-img-top h-100 w-50 mx-auto d-block" src="{{ item.image|asseturl }}"></a>
+          <div class="card-body">
+            <p class="card-text text-primary text-center"><a href="{{ item.link }}">{{ item.label }}</a></p>
+          </div>
+        </div>
+      </div>
+      {% endif %}
     {% endfor %}
   </div>
     <div class="row py-5 text-center mx-auto">

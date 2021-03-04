@@ -1,0 +1,24 @@
+{% macro render_active(item, alternative) %}
+<div class="card border-0">
+  <div class="card-header bg-white border-0" id="headingOne">
+    <h5 class="mb-0">
+      <a href="{{ item.path|url }}">{{ item.title }}</a>
+    </h5>
+    Languages:
+    {% for lang in item.languages %}
+      <span class="badge badge-primary">{{ lang }}</span>
+    {% endfor %}
+    <br>
+    Mentors:
+    {% for person in item.mentors %}
+      <span class="badge badge-secondary">{{ person }}</span>
+    {% endfor %}
+  </div>
+  <div>
+    <div class="card-body">
+      {{ item.subtitle }}
+      <a href="{{ item.path|url }}">{{ _('Read more.') }}</a>
+    </div>
+  </div>
+</div>
+{% endmacro %}

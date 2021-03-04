@@ -1,0 +1,81 @@
+<div class="row">
+  <div class="container">
+    <h3 class="py-5">{{ _('Word of mouth is critical to reaching new people and helping them protect themselves online. Here\'s how you can help: ') }}</h3>
+    <div class="row">
+      <div class="col-md-6 col-sm-12 col-xl-4 py-4">
+        <div class="card h-100 p-2">
+          <div class="card-body">
+            <span class="display-4 text-primary">
+              <i class="fas fa-users pb-4"></i>
+            </span>
+            <h2 class="card-title ">{{ _('Privacy and freedom are human rights.') }}</h2>
+            <p class="card-text">{{ _('These rights are denied online around the world, but Tor gives them back.') }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12 col-xl-4 py-4">
+        <div class="card h-100 p-2">
+          <div class="card-body">
+            <span class="display-4 text-primary">
+              <i class="fas fa-cookie-bite pb-4"></i>
+            </span>
+            <h2 class="card-title">{{ _('Tracking and surveillance are widespread.') }}</h2>
+            <p class="card-text">{{ _('We think privacy should be the default online, and that\'s what our software provides.') }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12 col-xl-4 py-4">
+        <div class="card h-100 p-2">
+          <div class="card-body">
+            <span class="display-4 text-primary">
+              <i class="fas fa-person-booth pb-4"></i>
+            </span>
+            <h2 class="card-title">{{ _('Privacy isn\'t about having something to hide.') }}</h2>
+            <p class="card-text">{{ _('Privacy is about protecting who we are as human beings: our fears, our relationships, and our vulnerabilities.') }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12 col-xl-4 py-4">
+        <div class="card h-100 p-2">
+          <div class="card-body">
+            <span class="display-4 text-primary">
+              <i class="fas fa-eye-slash pb-4"></i>
+            </span>
+            <h2 class="card-title">{{ _('People shouldn\'t be exploited for using the internet.') }}</h2>
+            <p class="card-text">{{ _('Trackers are harvesting our every move, but a safer internet is possible.') }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12 col-xl-4 py-4">
+        <div class="card h-100 p-2">
+          <div class="card-body">
+            <span class="display-4 text-primary">
+              <i class="fas fa-hand-holding-heart pb-4"></i>
+            </span>
+            <h2 class="card-title">{{ _('Tor software is developed by the Tor Project, a 501(c)3 nonprofit organization.') }}</h2>
+            <p class="card-text">{{ _('We build free and open source software anyone can use.') }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12 col-xl-4 py-4">
+        <div class="card h-100 p-2">
+          <div class="card-body">
+            <span class="display-4 text-primary">
+              <i class="fas fa-globe-africa pb-4"></i>
+            </span>
+            <h2 class="card-title">{{ _('Tor software is used by millions of people around the world.') }}</h2>
+            <p class="card-text">{{ _('Journalists, activists, and everyday internet users rely on Tor.') }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card mt-5">
+      <ul class="list-group list-group-flush">
+        <!--li class="list-group-item"><a><span class="card-text text-muted">{{ _("Contributors to this page:") }} <a href="#" title="#">cypherpunk</a></span></li-->
+        <li class="list-group-item">
+                <a href="{{ this.parent|url }}">{{ _("Back to previous page: ") }}{{ this.parent.title }}</a> - <a href="https://github.com/torproject/community/edit/master/content{{ this.path }}/contents.lr">{{ _("Edit this page") }}</a>
+        </li>
+      </ul>
+    </div>
+</div>
