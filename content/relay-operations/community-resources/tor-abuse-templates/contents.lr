@@ -92,8 +92,7 @@ We're sorry your site is experiencing this heavy load from Tor.
 However, it is possible that your rate limiting alarms simply experienced a false positive due to the amount of traffic that flows through the router.
 We provide service to almost a gigabit of traffic per second, 98% of which is web traffic.
 
-If the attack is real and ongoing, however, the Tor project provides an automated DNSRBL for you to query to block login attempts coming
-from Tor nodes: https://www.torproject.org/projects/tordnsel.html.en
+If the attack is real and ongoing, however, the Tor project provides an automated DNSRBL for you to query to block login attempts coming from Tor nodes: https://www.torproject.org/projects/tordnsel.html.en
 
 It is also possible to download a list of all Tor exit IPs that will connect to your server port:
 https://check.torproject.org/cgi-bin/TorBulkExitList.py?ip=YOUR_IP&port=80
@@ -175,11 +174,9 @@ Additionally, the Tor project provides an automated DNSRBL for you to query to f
 
 It also provides a Bulk Exit List service for retrieving the entire list: https://check.torproject.org/cgi-bin/TorBulkExitList.py
 
-You can use this list to help you take a closer look at Tor orders, or to hold them temporarily for additional verification, without losing
-legitimate customers.
+You can use this list to help you take a closer look at Tor orders, or to hold them temporarily for additional verification, without losing legitimate customers.
 
-In fact, in my experience, the fraud processing teams contracted by many ISPs simply mark all requests from Tor nodes as fraud using that
-very list.
+In fact, in my experience, the fraud processing teams contracted by many ISPs simply mark all requests from Tor nodes as fraud using that very list.
 So it is even possible this is a legitimate order, but was flagged as fraud solely based on IP, especially if you contract out fraud detection to a third party.
 ```
 
