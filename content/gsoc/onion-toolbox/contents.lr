@@ -37,7 +37,7 @@ body:
 
 It is not necessarily difficult to use onion services, but it might be tricky to configure a web service to be offered via .onion so that it doesn’t leak sensitive information.
 
-There are detailed [guides](https://riseup.net/en/security/network-security/tor/onionservices-best-practices) available for users that would like to offer a web application via .onion and some tools have been developed to help service operators: discover known misconfiguration or [vulnerabilities](https://onionscan.org/) or deploy an [onion site](https://github.com/alecmuffett/eotk).
+There are detailed [guides](https://riseup.net/en/security/network-security/tor/onionservices-best-practices) available for users that would like to offer a web application via .onion and some tools have been developed to help service operators: discover known misconfiguration or [vulnerabilities](https://onionscan.org/) or deploy a [.onion site](https://github.com/alecmuffett/eotk).
 
 Involving a wider developer community can help creating a better image of Tor and onion services, replacing the “dark net” narrative with the secure and private web one.
 
