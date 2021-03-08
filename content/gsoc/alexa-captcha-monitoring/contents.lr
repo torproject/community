@@ -1,0 +1,83 @@
+_model: project
+---
+_template: layout.html
+---
+html: two-columns-page.html
+---
+active: True
+---
+completed: False
+---
+url: /alexa-captcha-monitoring
+---
+section: GSoC
+---
+section_id: gsoc
+---
+color: primary
+---
+key: 1
+---
+languages:
+python
+javascript
+---
+mentors:
+GeKo
+arma
+---
+difficulty: medium
+---
+title: Alexa Top Sites Captcha and Tor Block Monitoring
+---
+subtitle:
+
+This project should implement a mechanism to track the rate that Alexa Top 500 webpages return Captchas to or directly block Tor users over time.
+
+---
+body:
+
+# Problem
+
+A large number of Tor users report getting hit by infinite Captcha loops when visiting some of the most popular websites, such as Reddit, Twitter or YouTube. This makes them feel punished for using Tor to protect their privacy and prevents them from legitimately accessing websites.
+
+# Proposal
+
+For this project we would like to track in practice how often [Alexa Top 500 websites](https://www.alexa.com/topsites) return Captchas to Tor clients.
+
+During GSoC 2020, we had a project to track captchas from Cloudflare fronted websites. This project would build upon this work to further test other popular websites.
+
+The project should consist of an automated way to systematically test a selection of [these websites](https://www.alexa.com/topsites) and record whether there is a difference in behaviour when a connection comes from various Tor exit IPs versus non-Tor exit IPs. For example, in the case where it seems like connections from Tor users are being discriminated against, we should record whether the user is presented with a captcha or some other error, e.g Forbidden or Service Temporarily Unavailable. Some discussion regarding this issue can be found [here](https://gitlab.torproject.org/tpo/community/support/-/issues/40013).
+
+Our proposed approach consists of:
+
+1. Writing a web client to periodically fetch a selection of the [Alexa Top Sites](https://www.alexa.com/topsites) via Tor and record how often a Captcha or failure is returned.
+1. Record and graph the various types of failure (including Captchas) vs real page rates
+1. Using the pre-existing architecture, run a second client that does not fetch this webpage via Tor. This will allow us to contrast and compare how these sites respond to Tor Browser vs other browsers.
+1. Track and publish these details publicly
+
+There are two interesting metrics to track over time:
+
+- the fraction of exit relays that are getting hit with Captchas and failures, and
+- the chance that a Tor client, choosing an exit relay in the normal weighted faction, will get hit by a Captcha or a failure.
+
+Then there are other interesting patterns to look for:
+
+- Are certain IP addresses punished consistently and others never punished?
+- Is whether you get a failure much more probabilistic and transient?
+- Does that pattern change over time?
+
+# Getting Started
+
+As this project builds upon an existing project, in order to demonstrate your skills and familiarise yourself with this project you may want to:
+
+1. Familiarise yourself and start experimenting with various web clients to fetch pages via Tor, bearing in mind you may need to adapt them to your needs if they are lacking the required functionality.
+1. Check out the existing [Captcha Scanner](https://dashboard.captcha.wtf/) and [code](https://gitlab.torproject.org/woswos/CAPTCHA-Monitor)
+1. Read the comments in ticket [40013](https://gitlab.torproject.org/tpo/community/support/-/issues/40013) and the [original project ticket](https://gitlab.torproject.org/legacy/trac/-/issues/33010) for more ideas.
+
+# Resources
+
+There is pre-existing research by the Berkeley ICSI group which includes these sorts of checks:
+
+- https://www.freehaven.net/anonbib/#differential-ndss2016
+- https://www.freehaven.net/anonbib/#exit-blocking2017
