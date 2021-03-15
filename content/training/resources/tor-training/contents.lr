@@ -1,32 +1,21 @@
 _model: slideshow
 ---
-title: Tor Presentation
+title: The Tor Network
 ---
 _template: slideshow.html
 ---
-subtitle: Teach your community about using Tor
----
-author: Community Team
----
 background: white
 ---
-image: /static/images/onion-bg.png
+image: /static/images/onion.png
 ---
 slides:
-
-#### slide ####
-title: Hello Slideshow
-----
-description: Test slides
-----
-background: white
 
 #### slide ####
 title: Topics
 ----
 description:
 
-- What’s Tor?
+- What' s Tor?
 - Types of relays
 - Technical setup
 - More about relays
@@ -43,7 +32,7 @@ description:
 - Tor is a free software and an open network
 - Mitigates against tracking, surveillance and censorship
 - Run by a US non-profit and volunteers from all over the world
-- It’s Tor, not TOR
+- It' s Tor, not TOR
 
 ----
 background: white
@@ -71,13 +60,108 @@ By running a Tor relay you can help make the Tor network:
 background: white
 
 #### slide ####
-title: Why run a Tor relay?
+title: Types of Relays
+----
+layout: title
+----
+background-image: /static/images/onion-white.png
+
+#### slide ####
+title: Guard/middle (aka non-exit) relay
 ----
 description:
-By running a Tor relay you can help make the Tor network:
-- faster (and therefore more usable)
-- more robust against attacks
-- more stable in case of outages
-- safer for its users (spying on more relays is harder than on a few)
+- A guard is the first relay in the chain of 3 relays building a Tor circuit.
+- A middle relay is neither a guard nor an exit, but acts as the second hop between the two.
+- To become a guard, a relay has to be stable and fast (at least 2MByte/s) otherwise it will remain a middle relay.
+----
+background: white
+
+#### slide ####
+title: Exit relay
+----
+description:
+- The exit relay is the final relay in a Tor circuit, the one that sends traffic out its destination.
+- That's why exit relays have the greatest legal exposure and liability of all the relays.
+- Before running an exit relay, check it with your local digital rights organization.
+- **You should not run a Tor exit relay from your home**
+----
+background: white
+
+#### slide ####
+title: Bridge
+----
+description:
+- A bridge is a node in the network that isn't listed in the public Tor directory, which make it harder for ISPs and governments to block it.
+- Bridges are relatively easy, low-risk and low bandwidth Tor nodes to operate.
+- And there's another special kind of bridge: Pluggable transports. It hides your tor traffic by adding an additional layer of obfuscation.
+----
+background: white
+
+#### slide ####
+title: The lifecycle of a new relay
+----
+description:
+Non-exit relays pass by a lifecycle of four phases (defined by days):
+- Days 0-3: the unmeasured phase
+- Days 3-8: network authorities start the remote measurement phase (the ramp-up guard phase)
+- Days 8-68: guard phase (where load counter intuitively drops and then rises higher)
+----
+background: white
+
+#### slide ####
+title: The lifecycle of a new relay
+----
+description:
+- And after 68 days, if the relay is stable and fast enough, it receives a Guard flag (steady-state guard phase).
+- Exit relays also have a lifecycle more or less similar.
+- Read about all the phases in: [https://blog.torproject.org/lifecycle-new-relay](https://blog.torproject.org/lifecycle-new-relay)
+----
+background: white
+
+#### slide ####
+title: Relay requirements
+----
+layout: title
+----
+background-image: /static/images/onion-white.png
+
+#### slide ####
+title: Before we start
+----
+description:
+- Never run a relay without the consent of network administrator or machine owner. Read the Terms of Service (ToS) first, so you don’t lose money.
+- Choose which type of relay you will host. Non-exit relay is a easy way to start helping the network.
+- Read the documentation: [https://torproject.org/tor-relays](https://torproject.org/tor-relays)
+----
+background: white
+
+#### slide ####
+title: Bandwidth requirements
+----
+description:
+- At least 16 Mbit/s (Mbps) upload and download bandwidth available for Tor. More is better.
+- The minimum requirements for a relay are 10 Mbit/s (Mbps).
+- If you have less than 10 Mbit/s but at least 1 Mbit/s we recommend you run a bridge with obfs4 support.
+----
+background: white
+
+#### slide ####
+title: Monthly outbound traffic
+----
+description:
+- It is required to use a minimum of 100 GByte of outbound/incoming traffic per month.
+- If you have a metered plan you might want to configure tor to only use a given amount of bandwidth or monthly traffic.
+- More (>2 TB/month) is better and recommended
+----
+background: white
+
+#### slide ####
+title: Public IPv4 address
+----
+description:
+- Every relay needs a public IPv4 address - either directly on the host (preferred) or via NAT and port forwarding.
+- The IPv4 address is not required to be static but static IP addresses are preferred.
+- Your IPv4 address should remain unchanged for at least 3 hours (network consensus).
+- You can only run two Tor relays per public IPv4.
 ----
 background: white

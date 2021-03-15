@@ -1,5 +1,13 @@
+{% if this.layout == "title" %}
+<section class="title" data-background-color="white" data-background-image="{{ this.image|asseturl }}" data-background-position="right bottom" data-background-size="3em">
+  <h3>{{ this.title }}</h3>
+  <hr class="dark" />
+  <h4>{{ this.subtitle }}</h4>
+</section>
+{% else %}
 <section data-background-color="{{ this.background }}">
   <h2>{{ this.title }}</h2>
   {{ this.description }}
 
 </section>
+{% endif %}
