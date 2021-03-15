@@ -26,6 +26,8 @@ Before turning your non-exit relay into an exit relay, ensure that you have set 
 
 If your provider offers it, make sure your WHOIS record contains clear indications that this is a Tor exit relay.
 
+Do use a domain name that you own. Definitely do not use `torproject.org` as a domain name for your reverse DNS.
+
 ## Exit Notice HTML page
 
 To make it even more obvious that this is a Tor exit relay you should serve a Tor exit notice HTML page.
