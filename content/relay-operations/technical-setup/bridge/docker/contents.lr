@@ -9,11 +9,7 @@ body:
 ### 1. Deploy a container
 
 We provide a docker-compose file that helps you deploy the container.
-First,
-[download docker-compose.yml](https://dip.torproject.org/torproject/anti-censorship/docker-obfs4-bridge/raw/master/docker-compose.yml),
-and then write your bridge configuration to a new file, `.env`, which is in the
-same directory as `docker-compose.yml`. Here's a
-template:
+First, [download docker-compose.yml](https://dip.torproject.org/torproject/anti-censorship/docker-obfs4-bridge/raw/master/docker-compose.yml), and then write your bridge configuration to a new file, `.env`, which is in the same directory as `docker-compose.yml`. Here's a template:
 
 ```
 # Your bridge's Tor port.
@@ -24,18 +20,14 @@ PT_PORT=Y
 EMAIL=Z
 ```
 
-Replace `X` with your desired OR port, `Y` with your obfs4 port (make sure that
-**both** ports are forwarded in your firewall), and `Z` with your email address,
-which allows us to get in touch with you if there are problems with your bridge.
-With your bridge configuration in place, you can now deploy the container by
-running:
+Replace `X` with your desired OR port, `Y` with your obfs4 port (make sure that **both** ports are forwarded in your firewall), and `Z` with your email address, which allows us to get in touch with you if there are problems with your bridge.
+With your bridge configuration in place, you can now deploy the container by running:
 
 ```
 docker-compose up -d obfs4-bridge
 ```
 
-This command will automatically load your `docker-compose.yml` file while
-considering the environment variables in `.env`.
+This command will automatically load your `docker-compose.yml` file while considering the environment variables in `.env`.
 
 You should now see output similar to the following:
 

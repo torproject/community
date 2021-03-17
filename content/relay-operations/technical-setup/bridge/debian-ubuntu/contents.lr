@@ -15,7 +15,7 @@ Get the latest version of Tor. If you're on Debian stable, `sudo apt-get install
 ### 2. Install obfs4proxy
 
 On [Debian](https://packages.debian.org/search?keywords=obfs4proxy), the `obfs4proxy` package is available in unstable, testing, and stable.
-On [Ubuntu](https://packages.ubuntu.com/search?keywords=obfs4proxy), bionic, cosmic, disco, and eoan have the package.
+On [Ubuntu](https://packages.ubuntu.com/search?keywords=obfs4proxy), bionic, cosmic, disco, eoan, and focal have the package.
 If you're running any of them, `sudo apt-get install obfs4proxy` should work.
 
 If not, you can [build it from source](https://gitlab.com/yawning/obfs4#installation).

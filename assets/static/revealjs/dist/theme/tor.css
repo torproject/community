@@ -20,7 +20,7 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   --block-margin: 20px;
   --heading-margin: 0 0 20px 0;
   --heading-font: Source Sans Pro, Helvetica, sans-serif;
-  --heading-color: #59316B;
+  --heading-color: #683086;
   --heading-line-height: 1.2;
   --heading-letter-spacing: normal;
   --heading-text-transform: uppercase;
@@ -32,7 +32,7 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   --heading3-size: 1.3em;
   --heading4-size: 1em;
   --code-font: monospace;
-  --link-color: #59316B;
+  --link-color: #683086;
   --link-color-hover: #9400ff;
   --selection-background-color: #98bdef;
   --selection-color: #fff; }
@@ -72,7 +72,7 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
 .reveal h5,
 .reveal h6 {
   margin: 0 0 20px 0;
-  color: #59316B;
+  color: #683086;
   font-family: "Source Sans Pro", Helvetica, sans-serif;
   font-weight: 600;
   line-height: 1.2;
@@ -244,6 +244,10 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
 .reveal img {
   margin: 20px 0; }
 
+.reveal hr {
+  border: 5px solid #fff;
+}
+
 /*********************************************
  * LINKS
  *********************************************/
@@ -275,6 +279,10 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   border-color: #2a76dd;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.55); }
 
+
+.title div {
+  background-position: 85% 85% !important;
+}
 /*********************************************
  * NAVIGATION CONTROLS
  *********************************************/
@@ -294,3 +302,26 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
 @media print {
   .backgrounds {
     background-color: #fff; } }
+
+/*********************************************
+ * FOOTER
+ *********************************************/
+
+.footer {
+  background-color: #683086;
+}
+
+/*********************************************
+ * OVERRIDES
+ *********************************************/
+
+.slides {
+  text-align: left !important;
+}
+.title {
+  text-align: center;
+}
+
+hr.dark {
+  border: 5px solid #683086;
+}

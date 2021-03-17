@@ -19,7 +19,7 @@ body:
 When visiting a site over HTTPS (HTTP over TLS), the TLS protocol prevents data in transit from being read or manipulated by man in the middle attacks, and an x.509 certificate obtained from a Certificate Authority (CA) is validates that the user is actually connecting to a server representing the domain name in the browser address bar.
 Modern browsers indicate that a connection is insecure if not using TLS, and require that a TLS connection is authenticated by a CA-issued x.509 certificate.
 
-When visiting a site over the onion services protocol, the Tor protocol prevents data in transite from being read or manipulated by man in the middle attacks, and the onion service protocol validates that the user is connected to the domain name in the browser address bar.
+When visiting a site over the onion services protocol, the Tor protocol prevents data in transit from being read or manipulated by man in the middle attacks, and the onion service protocol validates that the user is connected to the domain name in the browser address bar.
 No certificate authority is required for this proof, because that name is the actual public key used to authenticate the underlying connection.
 
 As ".onion" is a [special top level domain name](https://tools.ietf.org/html/rfc7686), most Certificate Authorities don't have support for issuing X.509 certificates for onion sites.

@@ -87,19 +87,30 @@ For network diversity and stronger anonymity, you should avoid providers and cou
 | **Company/ISP** | **ASN** | **Bridges** | **Relay** | **Exit** | **Comments** | **Last Updated** |
 |-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
 | [Weesly](http://weesly.de) | - | Yes | Yes | Yes | Note that you should let them know about your intention when ordering a server or in advance. | 06/2013 |
-| [EUServ](http://euserv.de) | - | - | Yes | No | They have a bad support, but if you know how to maintain your server, this ISP is a good choice. | - |
-| [IPX-Server](https://www.ipx-server.de/) | - | Yes | Yes |  - | - | - |
-| [Keyweb](https://www.keyweb.de/) | - | - | No | No | "Unfortunately this is not possible with us." | 2020 |
-| [Afterburst](http://afterburst.com) | - | - | Yes | No | - | - |
+| [EUServ](http://euserv.de) | AS35366 | Yes | Yes | Yes | "Relays only allowed on dedicated Servers Prime64 and Pro64, Exit nodes only allowed on Prime64 and Pro64 with Pro-Option, own subnet, RIPE entry along with publicly visible abuse and police contact." | 03/2021 |
+| [IPX-Server](https://www.ipx-server.de) | - | Yes | Yes |  - | - | - |
+| [Keyweb](https://www.keyweb.de) | AS31103 | Yes | Yes | Yes | "Everything that is in accordance with current jurisprudence is permitted on our servers." | 03/2021 |
+| [Afterburst](http://afterburst.com) |  AS29761, AS8100  | - | Yes | No | - | - |
 | [myLoc Managed IT](https://myloc.de) | AS31010, AS24961 | Yes | Yes | No | - | 2018-10-25 |
-| [linevast](https://www.linevast.de/) | - | Yes | Yes | Yes | Only allowed on dedicated servers | 13/11/2015 |
-| [Server4You](https://www.server4you.de/)| - | Yes | Yes | No | Part of [Intergenia AG](http://www.intergenia.de/)), I've asked Server4You support and they state servers with complaints about Tor will be canceled immediately (see the quote in the "Bad Experience" section) | - |
-| [Hetzner](http://hetzner.de/) | - | - | Yes | No | Offers good dedicated root servers for a good price. | - |
-| [Contabo](https://contabo.de) | - | Yes | Yes | Yes | Has no restriction for relays or exit nodes. However, possible abuse complaints will be forwarded to the owner and need to be addressed. | 2018/06 |
-| [Strato](https://strato.de) | - | - | Yes | No |  Exit-Nodes are prohibited by their general terms and conditions | - |
-| [PraHost](https://www.prahost.com/) | - | - | Yes | Yes | Stated in November 2014 that they allow exit nodes if abuse complaints are handled. Suspends the server if no "valid" action (read: blocking) is taken within 24 hours of an abuse ticket. Their ticket system does not reliably handle email replies, use the web interface instead. | 2017-10-31 |
-| [DomainFactory](https://www.df.eu/de/cloud-hosting/cloud-server/) | - | - | Yes | No | - | - |
-| [NetCologne](https://www.netcologne.de/) | - | - | Yes | Yes | - | - |
+| [linevast](https://www.linevast.de) | AS201206 | No | No | No |  | 03/2021 |
+| [Server4You](https://www.server4you.de)| AS131914 | No | No | No | - | 03/2021 |
+| [Hetzner](http://hetzner.de) | AS24940 | Yes | Yes | Yes | Offers good dedicated root servers for a good price. "It is not a Problem, however, abuse reports can lead to a server lock" | 03/2021 |
+| [Contabo](https://contabo.de) | AS51167  | No | No | No | Tor prohibited due to terms of service | 03/2021 |
+| [Strato](https://strato.de) | AS6724 | No | No | No | - | 03/2021 |
+| [PraHost](https://www.prahost.com) | - | Yes | Yes | Yes | "If there is any abuse notice received, you need to solve it in given time, else your IP will be blocked until you take any action" | 03/2021 |
+| [DomainFactory](https://www.df.eu/de/cloud-hosting/cloud-server) | AS34011 | Yes | Yes | Yes | Only allowed on jiffybox | 03/2021 |
+| [NetCologne](https://www.netcologne.de) | - | - | Yes | Yes | - | - |
+| [Signaltransmitter](https://signaltransmitter.de) | AS24961 | Yes | Yes | Yes | "In principle, we do not limit our services apart from mining bitcoins" | 03/2021 |
+| [Netcup](https://www.netcup.de) | AS197540 | Yes | Yes | Yes | Tor allowed on VPS and rootservers | 03/2021 |
+| [Onyxhosting](https://onyxhosting.de) | - | No | No | No | - | 03/2021 |
+| [IP-Projects](https://www.ip-projects.de) | AS48314 | No | No | No | - | 03/2021 |
+| [Lansol](https://www.lansol.de) | - | No | No | No | - | 03/2021 |
+| [delta.networks](https://www.delta-networks.de) | AS9937 | No | No | No | - | 03/2021 |
+| [VPS2Day](https://www.vps2day.com) | AS58329 | Yes | Yes | No | Exit nodes prohibited due to terms of service | 03/2021 |
+| [Serverprofis](https://www.serverprofis.de) | AS5539 | No | No | No | - | 03/2021 |
+| [manitu](https://www.manitu.de) | AS34240 | No | No | No | "I'm sorry - even if the network has great added value for specific purposes, we have decided to prohibit Tor services on our network" | 03/2021 |
+| [active-servers](https://www.active-servers.com) | AS197071 | Yes | Yes | Yes | "Usually this leads to abuse mails, which only cause trouble – but basically we have nothing against it" | 03/2021 |
+| [UltraVPS](https://www.ultravps.eu) | - | No | No | No | "We are not the right host for your project" | 03/2021 |
 
 
 ### Hong Kong
