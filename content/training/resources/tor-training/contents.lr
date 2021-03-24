@@ -62,6 +62,8 @@ slide_layout: title-slide
 ----
 background_image: '/static/images/onion-white.png'
 ----
+description:
+-
 ---
 
 #### slide ####
@@ -118,6 +120,8 @@ slide_layout: title-slide
 ----
 background_image: '/static/images/onion-white.png'
 ----
+description:
+-
 
 
 #### slide ####
@@ -195,6 +199,8 @@ slide_layout: title-slide
 ----
 background_image: '/static/images/onion-white.png'
 ----
+description:
+-
 
 
 #### slide ####
@@ -319,6 +325,8 @@ slide_layout: title-slide
 ----
 background_image: '/static/images/onion-white.png'
 ----
+description:
+-
 
 
 #### slide ####
@@ -358,6 +366,8 @@ slide_layout: title-slide
 ----
 background_image: '/static/images/onion-white.png'
 ----
+description:
+-
 
 
 #### slide ####
@@ -382,6 +392,8 @@ slide_layout: title-slide
 ----
 background_image: '/static/images/onion-white.png'
 ----
+description:
+-
 
 
 #### slide ####
@@ -411,6 +423,8 @@ slide_layout: title-slide
 ----
 background_image: '/static/images/onion-white.png'
 ----
+description:
+-
 
 
 #### slide ####
@@ -462,6 +476,8 @@ slide_layout: title-slide
 ----
 background_image: '/static/images/onion-white.png'
 ----
+description:
+-
 
 
 #### slide ####
@@ -502,6 +518,8 @@ slide_layout: title-slide
 ----
 background_image: '/static/images/onion-white.png'
 ----
+description:
+-
 
 
 #### slide ####
@@ -527,3 +545,5 @@ slide_layout: title-slide
 ----
 background_image: '/static/images/onion-white.png'
 ----
+description:
+-
