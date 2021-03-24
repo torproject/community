@@ -1,10 +1,14 @@
 {% if this.layout == "title" %}
-<section class="title" data-background-color="white" data-background-image="{{ this.image|asseturl }}" data-background-position="right bottom" data-background-size="3em">
-  <h3>{{ this.title }}</h3>
-  <hr class="dark" />
-  <h4>{{ this.subtitle }}</h4>
-  <h5>{{ this.author }}</h5>
-</section>
+  <section class="title" data-background-color="white" data-background-image="{{ this.image|asseturl }}" data-background-position="right bottom" data-background-size="3em">
+    <h3>{{ this.title }}</h3>
+    <hr class="dark" />
+    {% if this.subtitle %}
+      <h4>{{ this.subtitle }}</h4>
+    {% endif %}
+    {% if this.author %}
+      <h5>{{ this.author }}</h5>
+    {% endif %}
+  </section>
 {% else %}
 <section {% if this.background != "white" %} data-background-color="{{ this.background }}" {% else %} data-background-color="white" {% endif %} >
   <h2>{{ this.title }}</h2>
