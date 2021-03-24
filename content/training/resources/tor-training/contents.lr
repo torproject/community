@@ -58,9 +58,9 @@ By running a Tor relay you can help make the Tor network:
 #### slide ####
 title: Types of Relays
 ----
-slide-layout: title-slide
+slide_layout: title-slide
 ----
-
+background_image: '/static/images/onion-white.png'
 ---
 
 #### slide ####
@@ -113,9 +113,9 @@ description:
 #### slide ####
 title: Relay requirements
 ----
-slide-layout: title-slide
+slide_layout: title-slide
 ----
-
+background_image: '/static/images/onion-white.png'
 
 
 #### slide ####
@@ -189,9 +189,9 @@ description:
 #### slide ####
 title: Technical setup
 ----
-slide-layout: title-slide
+slide_layout: title-slide
 ----
-
+background_image: '/static/images/onion-white.png'
 
 
 #### slide ####
@@ -312,9 +312,9 @@ About 3 hours after you started your relay it should appear on Metrics portal in
 #### slide ####
 title: More about relays
 ----
-slide-layout: title-slide
+slide_layout: title-slide
 ----
-
+background_image: '/static/images/onion-white.png'
 
 
 #### slide ####
@@ -350,9 +350,9 @@ description:
 #### slide ####
 title: Network diversity
 ----
-slide-layout: title-slide
+slide_layout: title-slide
 ----
-
+background_image: '/static/images/onion-white.png'
 
 
 #### slide ####
@@ -373,9 +373,9 @@ description:
 #### slide ####
 title: More about exit relays
 ----
-slide-layout: title-slide
+slide_layout: title-slide
 ----
-
+background_image: '/static/images/onion-white.png'
 
 
 #### slide ####
@@ -401,9 +401,9 @@ description:
 #### slide ####
 title: Running relays with others
 ----
-slide-layout: title-slide
+slide_layout: title-slide
 ----
-
+background_image: '/static/images/onion-white.png'
 
 
 #### slide ####
@@ -451,9 +451,9 @@ description:
 #### slide ####
 title: Bad relays
 ----
-slide-layout: title-slide
+slide_layout: title-slide
 ----
-
+background_image: '/static/images/onion-white.png'
 
 
 #### slide ####
@@ -490,9 +490,9 @@ description:
 #### slide ####
 title: How do I get help running a Tor relay?
 ----
-slide-layout: title-slide
+slide_layout: title-slide
 ----
-
+background_image: '/static/images/onion-white.png'
 
 
 #### slide ####
@@ -514,5 +514,6 @@ name - email@example.com
 subtitle:
 PGP FINGERPRINT
 ----
-slide-layout: title-slide
+slide_layout: title-slide
 ----
+background_image: '/static/images/onion-white.png'
