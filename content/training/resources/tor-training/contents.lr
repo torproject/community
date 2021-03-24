@@ -53,3 +53,30 @@ By running a Tor relay you can help make the Tor network:
 - more robust against attacks
 - more stable in case of outages
 - safer for its users (spying on more relays is harder than on a few)
+
+
+#### slide ####
+title: Types of Relays
+----
+layout: title
+----
+background-image: /static/images/onion-white.png
+
+
+#### slide ####
+title: Guard/middle (aka non-exit) relay
+----
+description:
+- A guard is the first relay in the chain of 3 relays building a Tor circuit.
+- A middle relay is neither a guard nor an exit, but acts as the second hop between the two.
+- To become a guard, a relay has to be stable and fast (at least 2MByte/s) otherwise it will remain a middle relay.
+
+
+#### slide ####
+title: Exit relay
+----
+description:
+- The exit relay is the final relay in a Tor circuit, the one that sends traffic out its destination.
+- That's why exit relays have the greatest legal exposure and liability of all the relays.
+- Before running an exit relay, check it with your local digital rights organization.
+- **You should not run a Tor exit relay from your home**
