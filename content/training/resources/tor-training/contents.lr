@@ -58,5 +58,6 @@ By running a Tor relay you can help make the Tor network:
 #### slide ####
 title: Types of Relays
 ----
-slide-layout: title
+slide-layout: title-slide
 ----
+background-image: /static/images/onion-white.png
