@@ -63,12 +63,3 @@ layout: title
 background-image: /static/images/onion-white.png
 ---
 description:
-
-
-#### slide ####
-title: Guard/middle (aka non-exit) relay
-----
-description:
-- A guard is the first relay in the chain of 3 relays building a Tor circuit.
-- A middle relay is neither a guard nor an exit, but acts as the second hop between the two.
-- To become a guard, a relay has to be stable and fast (at least 2MByte/s) otherwise it will remain a middle relay.
