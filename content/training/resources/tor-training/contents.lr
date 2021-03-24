@@ -60,7 +60,8 @@ title: Types of Relays
 ----
 slide-layout: title-slide
 ----
-background-image: /static/images/onion-white.png
+background-image: '/static/images/onion-white.png'
+
 
 #### slide ####
 title: Guard/middle (aka non-exit) relay
@@ -114,7 +115,7 @@ title: Relay requirements
 ----
 slide-layout: title-slide
 ----
-background-image: /static/images/onion-white.png
+background-image: '/static/images/onion-white.png'
 
 
 #### slide ####
@@ -190,7 +191,7 @@ title: Technical setup
 ----
 slide-layout: title-slide
 ----
-background-image: /static/images/onion-white.png
+background-image: '/static/images/onion-white.png'
 
 
 #### slide ####
@@ -313,7 +314,7 @@ title: More about relays
 ----
 slide-layout: title-slide
 ----
-background-image: /static/images/onion-white.png
+background-image: '/static/images/onion-white.png'
 
 
 #### slide ####
@@ -351,7 +352,7 @@ title: Network diversity
 ----
 slide-layout: title-slide
 ----
-background-image: /static/images/onion-white.png
+background-image: '/static/images/onion-white.png'
 
 
 #### slide ####
@@ -374,7 +375,7 @@ title: More about exit relays
 ----
 slide-layout: title-slide
 ----
-background-image: /static/images/onion-white.png
+background-image: '/static/images/onion-white.png'
 
 
 #### slide ####
@@ -402,7 +403,7 @@ title: Running relays with others
 ----
 slide-layout: title-slide
 ----
-background-image: /static/images/onion-white.png
+background-image: '/static/images/onion-white.png'
 
 
 #### slide ####
@@ -452,7 +453,7 @@ title: Bad relays
 ----
 slide-layout: title-slide
 ----
-background-image: /static/images/onion-white.png
+background-image: '/static/images/onion-white.png'
 
 
 #### slide ####
@@ -491,7 +492,7 @@ title: How do I get help running a Tor relay?
 ----
 slide-layout: title-slide
 ----
-background-image: /static/images/onion-white.png
+background-image: '/static/images/onion-white.png'
 
 
 #### slide ####
@@ -515,4 +516,4 @@ PGP FINGERPRINT
 ----
 slide-layout: title-slide
 ----
-background-image: /static/images/onion-white.png
+background-image: '/static/images/onion-white.png'
