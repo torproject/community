@@ -10,8 +10,8 @@ primary = yes
 url_prefix = /
 locale = en
 
-[alternatives.es-AR]
-name = Español Arg (es-AR)
+[alternatives.es]
+name = Español (es)
 primary = yes
-url_prefix = /es-AR/
-locale = es-AR
+url_prefix = /es/
+locale = es
