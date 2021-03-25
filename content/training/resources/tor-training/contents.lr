@@ -60,7 +60,7 @@ title: Types of Relays
 ----
 slide_layout: title-slide
 ----
-background_image: '/static/images/onion-white.png'
+background_image: /static/images/onion-white.png
 ----
 description:
 -
@@ -119,7 +119,7 @@ title: Relay requirements
 ----
 slide_layout: title-slide
 ----
-background_image: '/static/images/onion-white.png'
+background_image: /static/images/onion-white.png
 ----
 description:
 -
@@ -198,7 +198,7 @@ title: Technical setup
 ----
 slide_layout: title-slide
 ----
-background_image: '/static/images/onion-white.png'
+background_image: /static/images/onion-white.png
 ----
 description:
 -
@@ -324,7 +324,7 @@ title: More about relays
 ----
 slide_layout: title-slide
 ----
-background_image: '/static/images/onion-white.png'
+background_image: /static/images/onion-white.png
 ----
 description:
 -
@@ -365,7 +365,7 @@ title: Network diversity
 ----
 slide_layout: title-slide
 ----
-background_image: '/static/images/onion-white.png'
+background_image: /static/images/onion-white.png
 ----
 description:
 -
@@ -391,7 +391,7 @@ title: More about exit relays
 ----
 slide_layout: title-slide
 ----
-background_image: '/static/images/onion-white.png'
+background_image: /static/images/onion-white.png
 ----
 description:
 -
@@ -422,7 +422,7 @@ title: Running relays with others
 ----
 slide_layout: title-slide
 ----
-background_image: '/static/images/onion-white.png'
+background_image: /static/images/onion-white.png
 ----
 description:
 -
@@ -475,7 +475,7 @@ title: Bad relays
 ----
 slide_layout: title-slide
 ----
-background_image: '/static/images/onion-white.png'
+background_image: /static/images/onion-white.png
 ----
 description:
 -
@@ -517,7 +517,7 @@ title: How do I get help running a Tor relay?
 ----
 slide_layout: title-slide
 ----
-background_image: '/static/images/onion-white.png'
+background_image: /static/images/onion-white.png
 ----
 description:
 -
@@ -544,7 +544,7 @@ PGP FINGERPRINT
 ----
 slide_layout: title-slide
 ----
-background_image: '/static/images/onion-white.png'
+background_image: /static/images/onion-white.png
 ----
 description:
 -
