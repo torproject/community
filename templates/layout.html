@@ -1,4 +1,5 @@
 <!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="{{ this.alt }}" {% if bag('alternatives', this.alt, 'direction') == 'text-right' %}dir="rtl"{% endif %}>
 {% include 'meta.html' %}
 <body class="no-gutters">
   <header>
@@ -9,7 +10,7 @@
     {% include 'pagenav.html' %}
     <div class="container-fluid">
       <div class="row flex-xl-nowrap">
-        <main role="main" class="mx-auto col-12 {{ bag('alternatives', this.alt, 'order') }}">
+        <main role="main" class="mx-auto col-12 {{ bag('alternatives', this.alt, 'direction') }}">
           {% include this.html %}
         </main>
       </div>
