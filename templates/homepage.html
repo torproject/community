@@ -1,4 +1,5 @@
-<!doctype html>
+<!doctype html>{% set locale = bag('alternatives', this.alt) %}
+<html xmlns="http://www.w3.org/1999/xhtml" lang="{{ this.alt }}" {% if locale.direction == 'text-right' %}dir="rtl"{% endif %}>
 {% include 'meta.html' %}
 
 <title>{{ _("Tor Project") }} | {% block title %}{{ this.title }}{% endblock %}</title>
@@ -8,19 +9,19 @@
   </header>
   <div class="page">
     <div class="container-fluid bg-{{ this.color }}">
-      <div class="row flex-xl-nowrap {{ bag('alternatives', this.alt, 'order') }}">
+            <div class="row flex-xl-nowrap {{ locale.direction }}">
         {% include 'hero.html' %}
       </div>
     </div>
     <div class="container-fluid">
       <div class="row flex-xl-nowrap">
-        <main role="main" class="mx-auto col-12 {{ bag('alternatives', this.alt, 'order') }}">
+        <main role="main" class="mx-auto col-12 {{ locale.direction }}">
           {% include this.html %}
         </main>
       </div>
     </div>
     <div class="container">
-      <div class="row p-5 m-3 border">
+      <div class="row p-5 m-3 border {{ locale.direction }}">
         <p>
           {{ _('The Tor Project is committed to fostering an inclusive environment and community. Tor is a place where people should feel safe to engage, share their point of view, and participate.') }} Read our <a href="https://gitweb.torproject.org/community/policies.git/tree/code_of_conduct.txt" title="Code of Conduct" target="_blank">Code of Conduct</a>, <a href="https://gitweb.torproject.org/community/policies.git/tree/social_contract.txt" title="Social Contract" target="_blank">Social Contract</a>, <a href="https://gitweb.torproject.org/community/policies.git/tree/statement_of_values.txt" title="Statement of Values" target="_blank">Statement of Values</a> and learn about the <a href="https://gitweb.torproject.org/community/policies.git/tree/community_council.txt" title="Tor Commmunity Council" target="_blank">Tor Community Council</a>.
         </p>
