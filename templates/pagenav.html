@@ -8,7 +8,7 @@
         <li{% if this.is_child_of(abs_path) %} class="nav-item active border-active" {% else %} class="nav-item" {% endif %}>
           {% set elm = site.get(item.path) %}
           {% if elm %}
-            <a class="nav-link" href="{{ elm.path|url }}">{{ item.label }}
+            <a class="nav-link" href="{{ elm.path|url }}">{{ _(item.label) }}
           {% endif %}
           {% if this.is_child_of(abs_path) %}
             <span class="sr-only">(current)</span>
