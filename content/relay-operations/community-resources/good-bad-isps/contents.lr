@@ -213,7 +213,7 @@ For network diversity and stronger anonymity, you should avoid providers and cou
 
 | **Company/ISP** | **ASN** | **Bridges** | **Relay** | **Exit** | **Comments** | **Last Updated** |
 |-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
-| [Hitme.net.pl](http://hitme.net.pl/) | - | Yes | Yes | Yes | - | 12/06/2017 |
+| [Hitme.pl](http://hitme.pl/) | - | Yes | Yes | No | They block accounts if you receive an abuse report | 29/03/2021 |
 | [Hostowisko.pl](http://www.hostowisko.pl/) | - | Yes | Yes | ? | -  | 27/08/2013 |
 | [Exone](http://www.exone.pl/) | - | Yes | Yes | ? | - | 28/08/2013 |
 | [e24cloud](http://www.e24cloud.com/en) | - | Yes | Yes | ? | - | 01/10/2013 |
