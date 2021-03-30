@@ -11,7 +11,7 @@ body:
 # 1. Install the required packages
 
 ```
-apt-get install unattended-upgrades apt-listchanges
+apt install unattended-upgrades apt-listchanges
 ```
 
 # 2.  Edit the configuration file
