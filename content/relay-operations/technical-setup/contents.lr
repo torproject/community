@@ -24,6 +24,73 @@ Note: For some operating systems, there are alpha version packages available (To
 These are only recommended for people eager to test and report bugs in bleeding edge releases/features.
 If you are looking to run a relay with minimal effort, we recommend you stick to stable releases.
 
+# Windows
+
+# Relay setup guide for Windows 10
+
+Setting up a Windows system as a relay requires performing a few simple steps to set up a user account, download the expert bundle, implement a torrc configuration file and start up Tor from the command line. Below are detailed instructions on how to perform these steps - please ensure you follow them very carefully, and make any of the necessary modifications outlined along the way.
+
+
+## Creating a user account for Tor
+
+First you will need to create a new account to allow Tor to run isolated from your personal configuration as well as have manageable system permissions.
+
+1. To begin, open your Control Panel and select 'Accounts'.
+2. On the left-side menu, select 'Family & other people'.
+3. Beside the 'Add another user to this PC' subheader, click the large `+` sign.
+4. A panel will now appear asking for the Windows account information. On the bottom, select the small text that states "I do not have this users sign-in information".
+5. On the next panel, select the similar text on the bottom stating "Set up user without using a Microsoft account".
+6. Enter a username for the user. Anything you like is fine, though within this guide the username `torrelay` will  be used. Then enter a strong password and continue.
+
+## Downloading and configuring the Tor Expert bundle
+
+The next step is to download and install the Expert bundle as well as set up your torrc file.
+
+1. Head over to the official [Tor download page](https://www.torproject.org/download/) and select the 'Windows' drop-down menu. The second option should be the expert bundle - download it, and verify the checksum if desired.
+2. Head to your `C:\Users\torrelay\` directory. Create a folder called `tor`.
+*(Optional. A custom path can be used, though you will have to make necessary modifications in the following steps.)
+
+3. Unpack the zipped Expert bundle into your newly created Tor directory. Two files will be placed there; one called `Tor`, and the other `Data`.
+4. You will now need to create a torrc file to define the ruleset of your relay. The default directory path for this file is `C:\Users\torrelay\AppData\Roaming\tor\torrc`, though you can specify a custom location at commandline startup with the `-f` flag. (More below)
+5. Open up your newly created `torrc` file in your text editor and populate it with the following contents:
+
+```#Change the nickname "myNiceRelay" to a name that you like
+Nickname myNiceRelay
+ 
+ORPort 9001
+ExitRelay 0
+SocksPort 0
+
+#Paths assume you extracted to C:\Users\torrelay\tor - if you 
+#extracted elsewhere or used a different username, adjust the 
+#paths accordingly
+
+DataDirectory C:Users\torrelay\tor\Data
+Log notice file C:Users\torrelay\tor\log\notices.log
+GeoIPFile C:Users\torrelay\tor\Data\Tor\geoip
+GeoIPv6File C:Users\torrelay\tor\Data\Tor\geoip6
+
+#Put your email below - Note that it will be published on the metrics page
+ContactInfo tor-operator@your-emailaddress-domain
+```
+Make sure everything is filled in correctly, then save and exit.
+
+## Starting up your relay
+
+There are two methods for starting up your relay for the first time depending on your preferences and needs.
+
+### Method 1: User interface
+1. Navigate to the directory you extracted Tors files.
+2. Simply right-click on the `tor.exe` file and select 'Run as other user' from the drop-down menu, and enter the password for your Tor account when prompted.
+* **Note:** Be sure **not** to click the 'Run as administrator' button - this is dangerous! 
+
+### Method 2: Command line
+1. Open your command prompt. Navigate to `C:Users\user\torrelay\tor\Tor` with the command `cd C:Users\user\torrelay\tor\Tor`.
+2. Type `RUNAS /user:torrelay tor.exe` and press enter. If you have your `torrc` file somewhere other than the default location (Like the `home` folder), specify the path with the `-f` flag.
+* Example: `RUNAS /user:torrelay tor.exe -f C:\Users\user\torrelay\tor\Tor\torrc`
+3. You should now see Tor starting up in your terminal. Wait until its finished bootstrapping. After a short period it should publish its OrPort, and you will be successfully relaying traffic for the Tor Network.
+ * **Notice:** Depending on your systems settings, Tor may fail to start and produce an error indicating it is unable to create files. If this occurs, simply open the Windows Defender Security Center and select "App & browser control". Add the tor.exe file to the permissions list, then rerun `tor.exe` from the command line. Tor should now start up normally.
+
 # Questions you should clarify before configuring Tor
 
 * Do you want to run a Tor exit or non-exit (bridge/guard/middle) relay?
@@ -39,6 +106,7 @@ If you are looking to run a relay with minimal effort, we recommend you stick to
 * Does the server have an IPv6 address?
 
 The installation commands are shown in code blocks and must be executed with root privileges.
+
 
 Click below on type of relay do you want to host and don't forget to read [Relay post-install and good practices](/relay/setup/post-install/).
 ---
