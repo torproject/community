@@ -2,13 +2,24 @@ _model: page
 ---
 color: primary
 ---
-title: Windows
+title: Windows 10
+---
+html: two-columns-page.html
+---
+key: 8
+---
+section: Middle/Guard relay
+---
+section_id: relay-operations
+---
+subtitle: How to deploy a middle/Guard relay on Windows
 ---
 body:
-# Relay setup guide for Windows 10
 
-Setting up a Windows system as a relay requires performing a few simple steps to set up a user account, download the expert bundle, implement a torrc configuration file and start up Tor from the command line. Below are detailed instructions on how to perform these steps - please ensure you follow them very carefully, and make any of the necessary modifications outlined along the way.
+**Note: You should only run a Windows relay if you can run it 24/7. If the operator is unable to guarantee that, a [Snowflake](https://snowflake.torproject.org/) is a better way to contribute resources.**
 
+Setting up a Windows system as a relay requires performing a few simple steps to set up a user account, download the expert bundle, implement a torrc configuration file and start up Tor from the command line.
+Below are detailed instructions on how to perform these steps - please ensure you follow them very carefully, and make any of the necessary modifications outlined along the way.
 
 # 1. Creating a user account for Tor
 First you will need to create a new account to allow Tor to run isolated from your personal configuration as well as have manageable system permissions.
@@ -41,7 +52,6 @@ The next step is to download and install Windows Expert bundle as well as set up
 ```
 #Change the nickname "myNiceRelay" to a name that you like
 Nickname myNiceRelay
- 
 ORPort 9001
 ExitRelay 0
 SocksPort 0
@@ -76,14 +86,8 @@ There are two methods for starting up your relay for the first time depending on
 3. You should now see Tor starting up in your terminal. Wait until its finished bootstrapping. 
 4. After a short period it should publish its OrPort, and you will be successfully relaying traffic for the Tor Network.
  * **Notice:** Depending on your systems settings, Tor may fail to start and produce an error indicating it is unable to create files. If this occurs, simply open the Windows Defender Security Center and select "App & browser control". Add the tor.exe file to the permissions list, then rerun `tor.exe` from the command line. Tor should now start up normally.
----
-html: two-columns-page.html
----
-key: 8
----
-section: Middle/Guard relay
----
-section_id: relay-operations
----
-subtitle: How to deploy a middle/Guard relay on Windows
----
+
+## 4. Final notes
+
+If you are having trouble setting up your relay, have a look at our [help section](/relay/getting-help/).
+If your relay is now running, check out the [post-install](/relay/setup/post-install/) notes.
