@@ -111,3 +111,4 @@ At this point, one of us on the website team will aim to review your PR within 2
 
 Once it all looks good and behaves correctly, we will merge your request to the master branch of the community portal [canonical repo](https://gitweb.torproject.org/project/web/community.git/) on [gitweb](https://gitweb.torproject.org/) master. 
 
+-Updated by Anand
