@@ -76,7 +76,7 @@ If you are having trouble setting up your bridge, have a look at [our help secti
 ---
 html: two-columns-page.html
 ---
-key: 5
+key: 3
 ---
 subtitle: How to deploy an obfs4 bridge using a docker container
 ---
