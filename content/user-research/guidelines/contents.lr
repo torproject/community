@@ -8,7 +8,6 @@ title: User Research Guidelines
 ---
 subtitle: We collect only necessary data to improve our services.
 ---
->>>>>>> parent of 1e624ba... update content status
 key: 3
 ---
 html: two-columns-page.html
@@ -64,8 +63,14 @@ Before ending the training, coordinate the feedback with the trainer. The two of
 It is very important for us to hear back from you. We want to know how the training and the research was for you, how we can improve our support and also, if you want to keep running Tor User Research. We will ask you to fill a form at the end of the research, so we can get your address to send to you a researcher kit (t-shirt and stickers).
 We hope to hear back from you very soon!
 
-We will send you our document on **how to report** to the UX team, so please [get in touch](https://lists.torproject.org/cgi-bin/mailman/listinfo/ux) with us to get it.
-If you think you won't have time to gather and report in this format, we would love to have another way to get the material you collected. You can take pictures or send your ´raw´ notes for us.
+Before your session, read and print this material on [User Research Reporting](https://gitlab.torproject.org/tpo/ux/research/-/blob/master/community/user_research_reporting.md). If you don't think you'll have time to report in this format, we will happily accept your findings another way – for example, you can take pictures or send your 'raw' notes to us.
+
+### How to submit your findings
+
+1. Write your [report](https://gitlab.torproject.org/tpo/ux/research/-/blob/master/community/user_research_reporting.md) (keep it simple).
+2. Upload it to our [Gitlab repository](https://gitlab.torproject.org/tpo/ux/research/-/blob/master/README.md).
+3. Create issues in the [Research repository](https://gitlab.torproject.org/tpo/ux/research/-/blob/master/README.md).
+4. UX team will discuss each issue and forward it to developers when necessary.
 
 ## Additional links
 
