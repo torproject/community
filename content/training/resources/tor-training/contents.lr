@@ -15,7 +15,7 @@ title: Topics
 ----
 description:
 
-- What' s Tor?
+- What's Tor?
 - Types of relays
 - Technical setup
 - More about relays
@@ -28,10 +28,10 @@ description:
 title: What's Tor?
 ----
 description:
-- Tor is a free software and an open network
-- Mitigates against tracking, surveillance and censorship
-- Run by a US non-profit and volunteers from all over the world
-- It' s Tor, not TOR
+- Tor is a free software and an open network.
+- Mitigates against tracking, surveillance and censorship.
+- Run by a US non-profit and volunteers from all over the world.
+- It's Tor, not TOR.
 
 
 
@@ -39,17 +39,17 @@ description:
 title: The Tor network
 ----
 description:
-- An open network, everyone can be part of it. Basically, your server will relay the tor traffic to another server in the Internet.
-- The network is composed by different types of servers run by volunteers around the world.
-- To ingress in the network, the new server will pass automatically to a new relay lifecycle.
+- An open network, everyone can be part of it. Your server will relay the Tor traffic to another server on the Internet.
+- The network is composed of different types of servers run by volunteers around the world.
+- Before ingressing the network, the server will pass automatically to the relay lifecycle.
 
 
 #### slide ####
 title: Why run a Tor relay?
 ----
 description:
-By running a Tor relay you can help make the Tor network:
-- faster (and therefore more usable
+By running a Tor relay, you can help make the Tor network:
+- faster (and therefore more usable)
 - more robust against attacks
 - more stable in case of outages
 - safer for its users (spying on more relays is harder than on a few)
@@ -72,27 +72,27 @@ title: Guard/middle (aka non-exit) relay
 ----
 description:
 - A guard is the first relay in the chain of 3 relays building a Tor circuit.
-- A middle relay is neither a guard nor an exit, but acts as the second hop between the two.
-- To become a guard, a relay has to be stable and fast (at least 2MByte/s) otherwise it will remain a middle relay.
+- A middle relay is neither a guard nor an exit but acts as the second hop between them.
+- To become a guard, a middle relay has to be stable and fast (at least 2MByte/s); otherwise, it will remain a middle relay.
 
 
 #### slide ####
 title: Exit relay
 ----
 description:
-- The exit relay is the final relay in a Tor circuit, the one that sends traffic out its destination.
-- That's why exit relays have the greatest legal exposure and liability of all the relays.
-- Before running an exit relay, check it with your local digital rights organization.
-- **You should not run a Tor exit relay from your home**
+- The exit relay is the final relay in a Tor circuit that sends traffic out its destination.
+- That's why exit relays have the most significant legal exposure and liability of all the relays.
+- Before running an exit relay, talk with your local digital rights organization.
+- **You should not run a Tor exit relay from your home.**
 
 
 #### slide ####
 title: Bridge
 ----
 description:
-- A bridge is a node in the network that isn't listed in the public Tor directory, which make it harder for ISPs and governments to block it.
-- Bridges are relatively easy, low-risk and low bandwidth Tor nodes to operate.
-- And there's another special kind of bridge: Pluggable transports. It hides your tor traffic by adding an additional layer of obfuscation.
+- A bridge is a node in the network that isn't listed in the public Tor directory, making it harder for ISPs and governments to block it.
+- Bridges are relatively easy, low-risk, and low bandwidth Tor relays to operate.
+- And there's another special kind of bridge: Pluggable transports. It hides your Tor traffic by adding a layer of obfuscation.
 
 
 #### slide ####
@@ -100,9 +100,9 @@ title: The lifecycle of a new relay
 ----
 description:
 Non-exit relays pass by a lifecycle of four phases (defined by days):
-- Days 0-3: the unmeasured phase
-- Days 3-8: network authorities start the remote measurement phase (the ramp-up guard phase)
-- Days 8-68: guard phase (where load counter intuitively drops and then rises higher)
+- Days 0-3: the unmeasured phase.
+- Days 3-8: network authorities start the remote measurement phase (the ramp-up guard phase).
+- Days 8-68: guard phase (where load counter intuitively drops and then rises higher).
 
 
 #### slide ####
@@ -110,7 +110,6 @@ title: The lifecycle of a new relay
 ----
 description:
 - And after 68 days, if the relay is stable and fast enough, it receives a Guard flag (steady-state guard phase).
-- Exit relays also have a lifecycle more or less similar.
 - Read about all the phases in: [https://blog.torproject.org/lifecycle-new-relay](https://blog.torproject.org/lifecycle-new-relay)
 
 
@@ -129,18 +128,18 @@ description:
 title: Before we start
 ----
 description:
-- Never run a relay without the consent of network administrator or machine owner. Read the Terms of Service (ToS) first, so you don’t lose money.
+- Never run a relay without the consent of the network administrator or machine owner. Read the Terms of Service (ToS) first, so you don’t risk losing money.
 - Choose which type of relay you will host. Non-exit relay is a easy way to start helping the network.
-- Read the documentation: [https://torproject.org/tor-relays](https://torproject.org/tor-relays)
+- Read the documentation: [https://community.torproject.org/relay](https://community.torproject.org/relay)
 
 
 #### slide ####
 title: Bandwidth requirements
 ----
 description:
-- At least 16 Mbit/s (Mbps) upload and download bandwidth available for Tor. More is better.
+- It’s recommended at least 16 Mbit/s (Mbps) upload and download bandwidth available for Tor. More is better.
 - The minimum requirements for a relay are 10 Mbit/s (Mbps).
-- If you have less than 10 Mbit/s but at least 1 Mbit/s we recommend you run a bridge with obfs4 support.
+- If you have less than 10 Mbit/s but at least 1 Mbit/s, we recommend running a bridge with obfs4 support.
 
 
 #### slide ####
@@ -148,8 +147,8 @@ title: Monthly outbound traffic
 ----
 description:
 - It is required to use a minimum of 100 GByte of outbound/incoming traffic per month.
-- If you have a metered plan you might want to configure tor to only use a given amount of bandwidth or monthly traffic.
-- More (>2 TB/month) is better and recommended
+- If you have a metered plan, you might want to configure Tor only to use a given amount of bandwidth or monthly traffic.
+- More (>2 TB/month) is better and recommended.
 
 
 #### slide ####
@@ -157,7 +156,7 @@ title: Public IPv4 address
 ----
 description:
 - Every relay needs a public IPv4 address - either directly on the host (preferred) or via NAT and port forwarding.
-- The IPv4 address is not required to be static but static IP addresses are preferred.
+- The IPv4 address is not required to be static, but static IP addresses are preferred.
 - Your IPv4 address should remain unchanged for at least 3 hours (network consensus).
 - You can only run two Tor relays per public IPv4.
 
@@ -175,14 +174,14 @@ title: Other requirements
 ----
 description:
 - Any modern CPU should be fine.
-- Uptime: Ideally the relay runs on a server which runs 24/7.
+- Uptime: Ideally, the relay runs on a server which runs 24/7.
 
 
 #### slide ####
 title: Choosing your relay hosting
 ----
 description:
-- Tor community maintain the list GoodBadISPs, about the experience of running relays: https://trac.torproject.org/projects/tor/wiki/doc/GoodBadISPs
+- Tor community maintain the list GoodBadISPs, about the experience of running relays: https://community.torproject.org/relay/community-resources/good-bad-isps/
 - Some providers only allow non-exit relays, so before buying a service, check the GoodBadISPs.
 
 
@@ -190,7 +189,7 @@ description:
 title: Choosing your relay hosting
 ----
 description:
-- This can cost anywhere between $3.00/mo and thousands per month.
+- Runnin a relay can cost anywhere between a few bucks and hundreds per month.
 
 
 #### slide ####
@@ -208,7 +207,7 @@ description:
 title: Non-exit relay - Debian/Ubuntu
 ----
 description:
-- Enable the Torproject package repository
+- Enable the Tor Project package repository
 - Install the tor package
 
 ```
@@ -299,8 +298,8 @@ description:
 title: Non-exit relay - FreeBSD
 ----
 description:
-Optional, but recommended to get package updates faster:
-[https://trac.torproject.org/projects/tor/wiki/TorRelayGuide/FreeBSD](https://trac.torproject.org/projects/tor/wiki/TorRelayGuide/FreeBSD)
+
+- Optional, but recommended to get package updates faster: [https://community.torproject.org/relay/setup/guard/freebsd/](https://community.torproject.org/relay/setup/guard/freebsd/)
 
 
 #### slide ####
@@ -316,7 +315,7 @@ After restarting the service, verify in the log file if it contains the followin
   Publishing server descriptor.
 ```
 
-About 3 hours after you started your relay it should appear on Metrics portal in Relay Search.
+About 3 hours after you started your relay, it should appear on Metrics portal in Relay Search.
 
 
 #### slide ####
@@ -336,8 +335,8 @@ title: Technical tips
 description:
 - Enable automatic software updates.
 - Backup your Tor Identity Keys.
-- It’s possible to limit bandwidth usage (and traffic). Check the parameters, for example: AccountingMax, AccountingRule, AccountingStart.
-- If run more than one Tor relay, you need to set MyFamily parameter.
+- It's possible to limit bandwidth usage (and traffic). Check the parameters, for example, AccountingMax, AccountingRule, AccountingStart.
+- If run more than one Tor relay, you need to set the MyFamily parameter.
 
 
 #### slide ####
@@ -347,7 +346,6 @@ description:
 - Running multiple relays by hand can be challenging.
 - Configuration management tools can make the relay operator life easier:
 - Ansible-relayor: [http://github.com/nusenu/ansible-relayor](http://github.com/nusenu/ansible-relayor)
-- Bash script: [https://github.com/coldhakca/tor-relay-bootstrap](https://github.com/coldhakca/tor-relay-bootstrap)
 
 
 #### slide ####
@@ -355,9 +353,9 @@ title: Metrics
 ----
 description:
 - Metrics portal - [https://metrics.torproject.org](https://metrics.torproject.org)
-- It’s possible to search: how many relays are in the network, how many are exit, etc
-- In 2019 there are ~6,600 relays and ~1,500 bridges.
-- Check: how many relays are in your country? Who run these relays? How diverse it is?
+- It's possible to search: how many relays are in the network, how many are exits, etc.
+- In 2021 there are ~6,600 public relays and ~1,500 bridges.
+- Check: how many relays are in your country? Who runs these relays? How diverse is it?
 
 
 #### slide ####
@@ -383,7 +381,16 @@ description:
 title: Monoculture
 ----
 description:
-- Diversity of Autonomous System (AS). Try to avoid the following hosters: OVH SAS (AS16276), Online S.a.s. (AS12876), Hetzner Online GmbH (AS24940), DigitalOcean, LLC (AS14061).
+- Diversity of Autonomous System (AS).
+- Try to avoid the following hosters: OVH SAS (AS16276), Online S.a.s. (AS12876), Hetzner Online GmbH (AS24940), DigitalOcean, LLC (AS14061).
+
+
+#### slide ####
+title: The TorBSD Diversity Project
+----
+description:
+- The Tor BSD Diversity Project (TDP) is an initiative seeking the BSD Unix operating systems’ use in the network.
+- Goals: increase the number of Tor relays running BSDs; Engage the BSD community about Tor anonymity; Port Tor related programs to BSD operating systems.
 
 
 #### slide ####
@@ -401,9 +408,9 @@ description:
 title: Legal information
 ----
 description:
-- In many countries there are regulations that exclude communication service providers from liability.
+- In many countries, some regulations exclude internet service providers from liability.
 - It's a good idea to consult with a lawyer or your local digital rights organization.
-- Under most circumstances you will be able to handle legal matters by having an abuse response letter.
+- Under most circumstances, you will be able to handle legal matters by having an abuse response letter.
 
 
 #### slide ####
@@ -412,9 +419,19 @@ title: Legal resources
 description:
 - The EFF Tor Legal FAQ:
 [https://community.torproject.org/relay/community-resources/eff-tor-legal-faq/](https://community.torproject.org/relay/community-resources/eff-tor-legal-faq/)
-- It’s important to respond to abuse complaints in a timely manner (usually within 24 hours).
+- It's important to respond to abuse complaints in a timely manner (usually within 24 hours).
 - Abuse templates letters:
 [https://community.torproject.org/relay/community-resources/tor-abuse-templates](https://community.torproject.org/relay/community-resources/tor-abuse-templates)
+
+
+#### slide ####
+title: Tips for running an exit relay
+----
+description:
+- Get a separate IP for the relay, and don’t use it for other services.
+- Set up a Tor Exit Notice, so if someone checks your exit IP, they will quickly know that it’s a Tor Exit.
+- If you receive excessive complaints, consider running a Reduced Exit Policy.
+- For more tips: [https://blog.torproject.org/tips-running-exit-node](https://blog.torproject.org/tips-running-exit-node)
 
 
 #### slide ####
@@ -432,18 +449,16 @@ description:
 title: Running a relay with others
 ----
 description:
-- You can work with your university department, employer or institution, or an organization like [Torservers.org](Torservers.org)
-- [Torservers.org](Torservers.org) is an independent, global network of organizations that helps the Tor network by running high bandwidth Tor relays.
-- In many countries operating as a corporation instead of as an individual can also get you certain legal protections.
+- You can work with your university department, employer or institution, or an organization like Torservers.org, Nos oignons, etc.
+- Some organizations are dedicated to this purpose only, and they are called Relay Associations: [https://community.torproject.org/relay/community-resources/relay-associations/](https://community.torproject.org/relay/community-resources/relay-associations/) 
 
 
 #### slide ####
 title: Relays associations
 ----
 description:
-- It’s often advised to create some type of non-profit corporation. This is useful for having a bank account and shared ownership.
-- To start a relay association, the most important thing is to have a group of people (3-5 suggested to start) interested in helping.
-- For example: Torservers.org, Cold Hak, enn.lu, nos-oignons.
+- It's often advised to create some type of non-profit corporation. This is useful for having a bank account and shared ownership.
+- The most important thing is to have a group of people (3-5 suggested to start) interested in helping.
 
 
 #### slide ####
@@ -451,14 +466,14 @@ title: Running a relay with universities
 ----
 description:
 - Universities are typically home to a reliable, robust, and well-equipped network.
-- Many computer science departments and university libraries run relays, i.e., Massachussetts Institute of Technology (MIT CSAIL), Universitaet Stuttgart, the University of Waterloo.
-
+- Many computer science departments and university libraries run relays: Massachusetts Institute of Technology, Universität Stuttgart, the University of Waterloo.
 
 #### slide ####
 title: Running a relay with universities
 ----
 description:
-- Start running a relay campaign in your university: [https://www.eff.org/torchallenge/tor-on-campus.html](https://www.eff.org/torchallenge/tor-on-campus.html)
+- Read more: [https://community.torproject.org/relay/community-resources/tor-relay-universities/](https://community.torproject.org/relay/community-resources/tor-relay-universities/)
+
 
 
 #### slide ####
@@ -466,8 +481,8 @@ title: At your company or organization
 ----
 description:
 - If you work at a Tor-friendly company or organization, that's another ideal place to run a relay.
-- Companies like Brass Horn Communications, Quintex Alliance Consulting, and OmuraVPN
-- And organizations like Digital Courage, Access Now, Derechos Digitales, and Lebanon Libraries in New Hampshire.
+- Companies like Brass Horn Communications, Quintex Alliance Consulting, and many others.
+- And organizations like Digital Courage, Access Now, Derechos Digitales, Calyx Institute, and Lebanon Libraries in New Hampshire.
 
 
 #### slide ####
@@ -485,7 +500,7 @@ description:
 title: What is a bad relay?
 ----
 description:
-- A bad relay is one that either doesn't work properly or tampers with our users' connections. This can be either through maliciousness or misconfiguration.
+- A bad relay is one that either doesn't work properly or tampers with our users' connections. That can be either through maliciousness or misconfiguration. 
 
 
 #### slide ####
@@ -499,17 +514,17 @@ description:
 title: Reporting a bad relay
 ----
 description:
-- Bad relays is also a private working group in Tor Project to detect misconfigured, malicious, or suspicious relay.
-- Users can report bad relays sending an email to bad-relays@lists.torproject.org with the relay's IP address or fingerprint, what kind of behavior did you see, and any additional information it’s needed to reproduce the issue.
+- Bad relays is also a private working group in the Tor Project to detect misconfigured, malicious, or suspicious relay.
+- Users can report bad relays by sending an email to bad-relays@lists.torproject.org with the relay’s IP address or fingerprint, what kind of behavior you see, and any additional information’s needed to reproduce the issue.
 
 
 #### slide ####
 title: What happens to bad relays?
 ----
 description:
-- After a relay is reported and we've verified the behavior we'll attempt to contact the relay operator.
-- We'll flag it to prevent it from continuing to be used (BadExit, Invalid, Reject).
-- The working group actively look for bad relays using open source tools like: exitmap, sysbilhunter.
+- After a relay is reported and verified the behavior, the Tor Project will attempt to contact the relay operator.
+- The relay will be flagged to prevent it from being used (BadExit, Invalid, Reject).
+- The working group actively looks for bad relays using open source tools like exitmap, sysbilhunter.
 
 
 #### slide ####
@@ -527,10 +542,10 @@ description:
 title: Getting help
 ----
 description:
-- Read the Tor Relay Guide documentation before:
-- [https://torproject.org/relay-guide](https://torproject.org/relay-guide)
-- Search the mailing list archive: tor-relays in [https://lists.torproject.org](https://lists.torproject.org)
-- Join the IRC channel: #tor-relays in irc.oftc.net
+- Read the Tor Relay documentation:
+- [https://community.torproject.org/relay](https://community.torproject.org/relay)
+- Subscribe to tor-relays mailing list: [https://lists.torproject.org](https://lists.torproject.org)
+- Join our IRC channel: #tor-relays in irc.oftc.net
 
 
 #### slide ####
