@@ -8,8 +8,8 @@ body:
 
 If this is your first time running a User Research session for the Tor Project, we recommend starting with one of these studies. Both can be conducted on a rolling basis and ran remotely.
 
--   [Usability Testing Tor Browser Desktop](https://gitlab.torproject.org/tpo/ux/research/-/blob/master/scripts%20and%20activities/2019/4._Tor_Browser_Desktop_-_download__launch__browse.pdf)
--   [Discovery Bridges](https://gitlab.torproject.org/tpo/ux/research/-/blob/master/scripts%20and%20activities/2020/discovery-bridges.md)
+- [Usability Testing Tor Browser Desktop](https://gitlab.torproject.org/tpo/ux/research/-/blob/master/scripts%20and%20activities/2019/4._Tor_Browser_Desktop_-_download__launch__browse.pdf)
+- [Discovery Bridges](https://gitlab.torproject.org/tpo/ux/research/-/blob/master/scripts%20and%20activities/2020/discovery-bridges.md)
 
 After choosing which study to run, open an issue in our [GitLab page](https://gitlab.torproject.org/tpo/ux/research).
 Add the title of your research, then select the Usability Testing template option and fill it in.
