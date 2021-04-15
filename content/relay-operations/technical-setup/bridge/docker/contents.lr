@@ -9,7 +9,7 @@ body:
 ### 1. Deploy a container
 
 We provide a docker-compose file that helps you deploy the container.
-First, [download docker-compose.yml](https://dip.torproject.org/torproject/anti-censorship/docker-obfs4-bridge/raw/master/docker-compose.yml), and then write your bridge configuration to a new file, `.env`, which is in the same directory as `docker-compose.yml`. Here's a template:
+First, [download docker-compose.yml](https://gitlab.torproject.org/torproject/anti-censorship/docker-obfs4-bridge/raw/master/docker-compose.yml), and then write your bridge configuration to a new file, `.env`, which is in the same directory as `docker-compose.yml`. Here's a template:
 
 ```
 # Your bridge's Tor port.
@@ -73,10 +73,20 @@ obfs4 1.2.3.4:1234 B0E566C9031657EA7ED3FC9D248E8AC4F37635A4 cert=OYWq67L7MDApdJC
 Make sure to check out the [post-install notes](https://community.torproject.org/relay/setup/bridge/post-install/).
 If you are having trouble setting up your bridge, have a look at [our help section](https://community.torproject.org/relay/getting-help/).
 
+### 4. Advanced usage
+
+You may set additional torrc variables in your `.env` file by setting `OBFS4_ENABLE_ADDITIONAL_VARIABLES` to 1 and prefixing the desired torrc options with `OBFS4V_`. For example, to set the `AddressDisableIPv6` option, include the following lines in your `.env`:
+
+```
+OBFS4_ENABLE_ADDITIONAL_VARIABLES=1
+OBFS4V_AddressDisableIPv6=1
+```
+
+You may [download our template .env](https://gitlab.torproject.org/torproject/anti-censorship/docker-obfs4-bridge/raw/master/.env) to get started.
 ---
 html: two-columns-page.html
 ---
-key: 5
+key: 3
 ---
 subtitle: How to deploy an obfs4 bridge using a docker container
 ---
