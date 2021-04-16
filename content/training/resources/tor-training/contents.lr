@@ -490,7 +490,7 @@ description:
 title: What is a bad relay?
 ----
 description:
-- A bad relay is one that either doesn't work properly or tampers with our users' connections. That can be either through maliciousness or misconfiguration. 
+- A bad relay is one that either doesn't work properly or tampers with our users' connections. That can be either through maliciousness or misconfiguration.
 
 
 #### slide ####
