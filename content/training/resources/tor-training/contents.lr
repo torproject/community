@@ -44,14 +44,14 @@ description:
 
 
 #### slide ####
-title: Why run a Tor relay?
+title: Why running a Tor relay?
 ----
 description:
 By running a Tor relay, you can help make the Tor network:
 - faster (and therefore more usable)
 - more robust against attacks
 - more stable in case of outages
-- safer for its users (spying on more relays is harder than on a few)
+- safer for users (spying on more relays is harder than on a few)
 
 
 #### slide ####
@@ -71,7 +71,7 @@ title: Guard/middle (aka non-exit) relay
 ----
 description:
 - A guard is the first relay in the chain of 3 relays building a Tor circuit.
-- A middle relay is neither a guard nor an exit but acts as the second hop between them.
+- A middle relay is neither a guard nor an exit, but acts as the second hop between them.
 - To become a guard, a middle relay has to be stable and fast (at least 2MByte/s); otherwise, it will remain a middle relay.
 
 
@@ -91,7 +91,7 @@ title: Bridge
 description:
 - A bridge is a node in the network that is not listed in the public Tor directory, making it harder for ISPs and governments to block it.
 - Bridges are relatively easy, low-risk, and low bandwidth Tor relays to operate.
-- And there's another special kind of bridge: Pluggable transports. It hides your Tor traffic by adding a layer of obfuscation.
+- And there's another special kind of bridge: Pluggable transport. Hides your Tor traffic by adding a layer of obfuscation.
 
 
 #### slide ####
@@ -127,8 +127,9 @@ description:
 title: Before we start
 ----
 description:
-- Never run a relay without the consent of the network administrator or machine owner. Read the Terms of Service (ToS) first, so you don’t risk losing money.
-- Choose which type of relay you will host. Non-exit relay is a easy way to start helping the network.
+- Never run a relay without the consent of the network administrator or machine owner.
+  Read the Terms of Service (ToS) first, so you don’t risk losing money.
+- Choose which type of relay you will host. A non-exit relay is an easy way to start helping the network.
 - Read the documentation: [https://community.torproject.org/relay](https://community.torproject.org/relay)
 
 
@@ -146,7 +147,7 @@ title: Monthly outbound traffic
 ----
 description:
 - It is required to use a minimum of 100 GByte of outbound/incoming traffic per month.
-- If you have a metered plan, you might want to configure Tor only to use a given amount of bandwidth or monthly traffic.
+- If you have a metered plan, you might want to configure Tor to use only a given amount of bandwidth or monthly traffic.
 - More (>2 TB/month) is better and recommended.
 
 
@@ -180,15 +181,9 @@ description:
 title: Choosing your relay hosting
 ----
 description:
-- Tor community maintain the list GoodBadISPs, about the experience of running relays: https://community.torproject.org/relay/community-resources/good-bad-isps/
-- Some providers only allow non-exit relays, so before buying a service, check the GoodBadISPs.
-
-
-#### slide ####
-title: Choosing your relay hosting
-----
-description:
-- Runnin a relay can cost anywhere between a few bucks and hundreds per month.
+- The Tor community team maintains the list GoodBadISPs, about the experience of running relays: <https://community.torproject.org/relay/community-resources/good-bad-isps/>
+- Some providers only allow non-exit relays, so check the GoodBadISPs list before buying a service.
+- Running a relay can cost anywhere between a few bucks to hundreds per month.
 
 
 #### slide ####
@@ -218,7 +213,7 @@ description:
 title: Non-exit relay - Debian/Ubuntu
 ----
 description:
-- Put the configuration file `/etc/tor/torrc` in place:
+- Add relay configuration to the `/etc/tor/torrc` file:
 ```
   Nickname myNiceRelay
   ExitRelay 0
@@ -256,7 +251,7 @@ description:
 title: Non-exit relay - FreeBSD
 ----
 description:
-  - Edit the configuration `file/usr/local/etc/tor/torrc`
+  - Edit the configuration file `/usr/local/etc/tor/torrc`
 
 ```
   Nickname myNiceRelay
@@ -335,7 +330,7 @@ description:
 - Enable automatic software updates.
 - Backup your Tor Identity Keys.
 - It's possible to limit bandwidth usage (and traffic). Check the parameters, for example, AccountingMax, AccountingRule, AccountingStart.
-- If run more than one Tor relay, you need to set the MyFamily parameter.
+- If you run more than one Tor relay, you need to set the MyFamily parameter.
 
 
 #### slide ####
@@ -354,7 +349,7 @@ description:
 - Metrics portal - [https://metrics.torproject.org](https://metrics.torproject.org)
 - Is possible to search: how many relays are in the network, how many are exits, etc.
 - In 2021 there are ~6,600 public relays and ~1,500 bridges.
-- Check: how many relays are in your country? Who runs these relays? How diverse is it?
+- Check: how many relays are in your country? Who runs these relays? How diverse are they?
 
 
 #### slide ####
@@ -372,7 +367,7 @@ description:
 title: Monoculture
 ----
 description:
-- A single kernel vulnerability in GNU/Linux impacting Tor relays could be devastating.
+- A single kernel vulnerability in GNU/Linux impacting all Tor relays could be devastating.
 - Diversity of Operating System (OS): ~90% of relays are Linux.
 
 
@@ -380,7 +375,7 @@ description:
 title: Monoculture
 ----
 description:
-- Diversity of Autonomous System (AS).
+- Diversity of Autonomous Systems (AS).
 - Try to avoid the following hosters: OVH SAS (AS16276), Online S.a.s. (AS12876), Hetzner Online GmbH (AS24940), DigitalOcean, LLC (AS14061).
 
 
