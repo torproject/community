@@ -37,9 +37,10 @@ description:
 title: The Tor network
 ----
 description:
-- An open network, everyone can be part of it. Your server will relay the Tor traffic to another server on the Internet.
+- An open network, everyone can be part of it.
 - The network is composed of different types of servers run by volunteers around the world.
-- Before ingressing the network, the server will pass automatically to the relay lifecycle.
+- Your server will relay the Tor traffic to another server on the Internet.
+- Before entering the network, your server will automatically go through the relay lifecycle.
 
 
 #### slide ####
