@@ -14,8 +14,7 @@ slides:
 title: Topics
 ----
 description:
-
-- What's Tor?
+- What is Tor?
 - Types of relays
 - Technical setup
 - More about relays
@@ -23,9 +22,8 @@ description:
 - Getting help
 
 
-
 #### slide ####
-title: What's Tor?
+title: What is Tor?
 ----
 description:
 - Tor is a free software and an open network.
@@ -80,8 +78,8 @@ description:
 title: Exit relay
 ----
 description:
-- The exit relay is the final relay in a Tor circuit that sends traffic out its destination.
-- That's why exit relays have the most significant legal exposure and liability of all the relays.
+- The exit relay is the final relay in a Tor circuit, sends the traffic to its destination.
+- That is why exit relays have the most significant legal exposure and liability of all the relays.
 - Before running an exit relay, talk with your local digital rights organization.
 - **You should not run a Tor exit relay from your home.**
 
@@ -90,7 +88,7 @@ description:
 title: Bridge
 ----
 description:
-- A bridge is a node in the network that isn't listed in the public Tor directory, making it harder for ISPs and governments to block it.
+- A bridge is a node in the network that is not listed in the public Tor directory, making it harder for ISPs and governments to block it.
 - Bridges are relatively easy, low-risk, and low bandwidth Tor relays to operate.
 - And there's another special kind of bridge: Pluggable transports. It hides your Tor traffic by adding a layer of obfuscation.
 
@@ -353,7 +351,7 @@ title: Metrics
 ----
 description:
 - Metrics portal - [https://metrics.torproject.org](https://metrics.torproject.org)
-- It's possible to search: how many relays are in the network, how many are exits, etc.
+- Is possible to search: how many relays are in the network, how many are exits, etc.
 - In 2021 there are ~6,600 public relays and ~1,500 bridges.
 - Check: how many relays are in your country? Who runs these relays? How diverse is it?
 
@@ -450,14 +448,14 @@ title: Running a relay with others
 ----
 description:
 - You can work with your university department, employer or institution, or an organization like Torservers.org, Nos oignons, etc.
-- Some organizations are dedicated to this purpose only, and they are called Relay Associations: [https://community.torproject.org/relay/community-resources/relay-associations/](https://community.torproject.org/relay/community-resources/relay-associations/) 
+- Some organizations are dedicated to this purpose only, and they are called Relay Associations: <https://community.torproject.org/relay/community-resources/relay-associations/>.
 
 
 #### slide ####
 title: Relays associations
 ----
 description:
-- It's often advised to create some type of non-profit corporation. This is useful for having a bank account and shared ownership.
+- It's often advised to create some type of non-profit organization. This is useful for having a bank account and shared ownership.
 - The most important thing is to have a group of people (3-5 suggested to start) interested in helping.
 
 
