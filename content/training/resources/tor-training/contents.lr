@@ -106,8 +106,8 @@ Non-exit relays pass by a lifecycle of four phases (defined by days):
 title: The lifecycle of a new relay
 ----
 description:
-- And after 68 days, if the relay is stable and fast enough, it receives a Guard flag (steady-state guard phase).
-- Read about all the phases in: [https://blog.torproject.org/lifecycle-new-relay](https://blog.torproject.org/lifecycle-new-relay)
+- After 68 days, if stable and fast enough, the relay will receive a **Guard flag** (steady-state guard phase).
+- Read about all the phases in: <https://blog.torproject.org/lifecycle-new-relay>
 
 
 #### slide ####
@@ -128,7 +128,7 @@ description:
 - Never run a relay without the consent of the network administrator or machine owner.
   Read the Terms of Service (ToS) first, so you don’t risk losing money.
 - Choose which type of relay you will host. A non-exit relay is an easy way to start helping the network.
-- Read the documentation: [https://community.torproject.org/relay](https://community.torproject.org/relay)
+- Read the documentation: <https://community.torproject.org/relay>
 
 
 #### slide ####
@@ -291,7 +291,7 @@ title: Non-exit relay - FreeBSD
 ----
 description:
 
-- Optional, but recommended to get package updates faster: [https://community.torproject.org/relay/setup/guard/freebsd/](https://community.torproject.org/relay/setup/guard/freebsd/)
+- Optional, but recommended to get package updates faster: <https://community.torproject.org/relay/setup/guard/freebsd/>
 
 
 #### slide ####
@@ -337,14 +337,14 @@ title: Orchestrating
 description:
 - Running multiple relays by hand can be challenging.
 - Configuration management tools can make the relay operator life easier:
-- Ansible-relayor: [http://github.com/nusenu/ansible-relayor](http://github.com/nusenu/ansible-relayor)
+- Ansible-relayor: <http://github.com/nusenu/ansible-relayor>
 
 
 #### slide ####
 title: Metrics
 ----
 description:
-- Metrics portal - [https://metrics.torproject.org](https://metrics.torproject.org)
+- Metrics portal: <https://metrics.torproject.org>
 - Is possible to search: how many relays are in the network, how many are exits, etc.
 - In 2021 there are ~6,600 public relays and ~1,500 bridges.
 - Check: how many relays are in your country? Who runs these relays? How diverse are they?
@@ -409,11 +409,9 @@ description:
 title: Legal resources
 ----
 description:
-- The EFF Tor Legal FAQ:
-[https://community.torproject.org/relay/community-resources/eff-tor-legal-faq/](https://community.torproject.org/relay/community-resources/eff-tor-legal-faq/)
+- The EFF Tor Legal FAQ: <https://community.torproject.org/relay/community-resources/eff-tor-legal-faq/>
 - It's important to respond to abuse complaints in a timely manner (usually within 24 hours).
-- Abuse templates letters:
-[https://community.torproject.org/relay/community-resources/tor-abuse-templates](https://community.torproject.org/relay/community-resources/tor-abuse-templates)
+- Abuse templates letters: <https://community.torproject.org/relay/community-resources/tor-abuse-templates>
 
 
 #### slide ####
@@ -423,7 +421,7 @@ description:
 - Get a separate IP for the relay, and don’t use it for other services.
 - Set up a Tor Exit Notice, so if someone checks your exit IP, they will quickly know that it’s a Tor Exit.
 - If you receive excessive complaints, consider running a Reduced Exit Policy.
-- For more tips: [https://blog.torproject.org/tips-running-exit-node](https://blog.torproject.org/tips-running-exit-node)
+- For more tips: <https://blog.torproject.org/tips-running-exit-node>
 
 
 #### slide ####
@@ -464,7 +462,7 @@ description:
 title: Running a relay with universities
 ----
 description:
-- Read more: [https://community.torproject.org/relay/community-resources/tor-relay-universities/](https://community.torproject.org/relay/community-resources/tor-relay-universities/)
+- Read more: <https://community.torproject.org/relay/community-resources/tor-relay-universities/>
 
 
 
