@@ -533,19 +533,13 @@ title: Getting help
 ----
 description:
 - Read the Tor Relay documentation:
-- [https://community.torproject.org/relay](https://community.torproject.org/relay)
-- Subscribe to tor-relays mailing list: [https://lists.torproject.org](https://lists.torproject.org)
+  <https://community.torproject.org/relay>
+- Subscribe to tor-relays mailing list: <https://lists.torproject.org/cgi-bin/mailman/listinfo/tor-relays>
 - Join our IRC channel: #tor-relays in irc.oftc.net
 
 
 #### slide ####
 title: Thank you!
-----
-author:
-name - email@example.com
-----
-subtitle:
-PGP FINGERPRINT
 ----
 slide_layout: title-slide
 ----
