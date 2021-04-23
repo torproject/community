@@ -6,9 +6,9 @@ title: Fedora
 ---
 body:
 
-### 1. Install tor and dependencies
+### 1. Install Tor and dependencies
 
-Add the following to /etc/yum.repos.d/tor.repo
+Add the following to `/etc/yum.repos.d/tor.repo`
 
 ```
 [tor]
@@ -63,13 +63,13 @@ Nickname PickANickname
   If your bridge is behind a firewall or NAT, make sure to open both ports.
   You can use [our reachability test](https://bridges.torproject.org/scan/) to see if your obfs4 port is reachable from the Internet.
 
-### 3. Restart tor
+### 4. Restart Tor
 
-```
-sudo semanage port -a -t tor_port_t -p tcp [OR port set earlier, in TODO1]
-sudo semanage port -a -t tor_port_t -p tcp [obfs4 port set earlier, in TODO2]
-systemctl restart tor
-```
+`sudo semanage port -a -t tor_port_t -p tcp [OR port set earlier, in TODO1]`
+
+`sudo semanage port -a -t tor_port_t -p tcp [obfs4 port set earlier, in TODO2]`
+
+`sudo systemctl restart tor`
 
 ### 4. Monitor your logs (usually in your syslog)
 

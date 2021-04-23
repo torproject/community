@@ -12,9 +12,7 @@ body:
 
 ### 1. Install packages
 
-```
-pkg install obfs4proxy-tor tor ca_root_nss
-```
+`# pkg install obfs4proxy-tor tor ca_root_nss`
 
 ### 2. Edit your Tor config file, usually located at `/usr/local/etc/tor` and replace its content with:
 
@@ -58,17 +56,15 @@ Don't forget to change the `ORPort`, `ServerTransportListenAddr`, `ContactInfo`,
 
 ### 3. Ensure that the `random_id` sysctl setting is enabled:
 
-```
-echo "net.inet.ip.random_id=1" >> /etc/sysctl.conf
-sysctl net.inet.ip.random_id=1
-```
+`# echo "net.inet.ip.random_id=1" >> /etc/sysctl.conf`
+
+`# sysctl net.inet.ip.random_id=1`
 
 ### 4. Start the tor daemon and make sure it starts at boot:
 
-```
-sysrc tor_enable=YES
-service tor start
-```
+`# sysrc tor_enable=YES`
+
+`# service tor start`
 
 ### 5. Monitor your logs
 
@@ -89,9 +85,7 @@ To confirm your bridge is running with no issues, you should see something like 
 
 Create the following folder:
 
-```
-mkdir -p /usr/local/etc/pkg/repos
-```
+`# mkdir -p /usr/local/etc/pkg/repos`
 
 Create the file `/usr/local/etc/pkg/repos/FreeBSD.conf` with the following content:
 

@@ -16,13 +16,15 @@ DragonFlyBSD's daily snapshots and releases (starting with 3.4) come with `pkg` 
 
 If `pkg` is missing on the system for any reason, it can be quickly bootstrapped without having to build it from source or even having **DPorts** installed:
 
-```
-cd /usr
-make pkg-bootstrap
-rehash
-pkg-static install -y pkg
-rehash
-```
+`# cd /usr`
+
+`# make pkg-bootstrap`
+
+`# rehash`
+
+`# pkg-static install -y pkg`
+
+`# rehash`
 
 ##### 1.1. Recommended Steps to Setup `pkg`
 
@@ -30,9 +32,7 @@ Here, it will be similar to what we have on a **FreeBSD** system, and we are goi
 
 Installing the `ca_root_nss` package:
 
-```
-pkg install ca_root_nss
-```
+`# pkg install ca_root_nss`
 
 For fresh installations, the file `/usr/local/etc/pkg/repos/df-latest.conf.sample` is copied to `/usr/local/etc/pkg/repos/df-latest`. The files ending in the ".sample" extension are ignored; pkg(8) only reads files that end in ".conf" and it will read as many as it finds.
 
@@ -45,25 +45,20 @@ We can simply edit the **URL** used to point to the repositories on `/usr/local/
 
 After applying all these changes, we update the packages list again and try to check if there's already a new update to apply:
 
-```
-pkg update -f
-pkg upgrade -y -f
-```
+`# pkg update -f`
+
+`# pkg upgrade -y -f`
 
 ### 2. Install `tor` and `obfs4proxy` DragonflyBSD's Package
 
 Here we can choose to install the latest stable version, like:
 
-```
-pkg install tor obfs4proxy-tor
-```
+`# pkg install tor obfs4proxy-tor`
 
   ... or install an alpha release:
 
 
-```
-pkg install tor-devel  obfs4proxy-tor
-```
+`# pkg install tor-devel  obfs4proxy-tor`
 
 ### 3. Configure `/usr/local/etc/tor/torrc` to run **Tor** as a Bridge
 
@@ -109,19 +104,17 @@ Don't forget to change the `ORPort`, `ServerTransportListenAddr`, `ContactInfo`,
 
 Here we set `tor` to start at boot time and use the setuid feature, in order to bind to lower ports like 443 (the daemon itself will still run as a regular non-privileged user).
 
-```
-echo "tor_setuid=YES" >> /etc/rc.conf
-echo "tor_enable=YES" >> /etc/rc.conf
-service tor start
-```
+`# echo "tor_setuid=YES" >> /etc/rc.conf`
+
+`# echo "tor_enable=YES" >> /etc/rc.conf`
+
+`# service tor start`
 
 ### 5. Monitor your logs
 
 To confirm your bridge is running with no issues, you should see something like this in `/var/log/tor/notices.log`:
 
-```
-tail /var/log/tor/notices.log
-```
+`# tail /var/log/tor/notices.log`
 
 ```
 [notice] Your Tor server's identity key fingerprint is '<NICKNAME> <FINGERPRINT>'
