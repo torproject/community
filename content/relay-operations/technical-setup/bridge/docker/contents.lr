@@ -9,7 +9,7 @@ body:
 ### 1. Deploy a container
 
 We provide a docker-compose file that helps you deploy the container.
-First, [download docker-compose.yml](https://gitlab.torproject.org/torproject/anti-censorship/docker-obfs4-bridge/raw/master/docker-compose.yml), and then write your bridge configuration to a new file, `.env`, which is in the same directory as `docker-compose.yml`. Here's a template:
+First, [download docker-compose.yml](https://gitlab.torproject.org/torproject/anti-censorship/docker-obfs4-bridge/raw/main/docker-compose.yml), and then write your bridge configuration to a new file, `.env`, which is in the same directory as `docker-compose.yml`. Here's a template:
 
 ```
 # Your bridge's Tor port.
