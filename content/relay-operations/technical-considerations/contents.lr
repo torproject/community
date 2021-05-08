@@ -27,7 +27,8 @@ For more information on hosting providers and their policies on allowing Tor rel
 * Does the hoster provide IPv6 connectivity? It is recommended, but not required.
 * What virtualization / hypervisor (if any) does the provider use? Anything but OpenVZ should be fine.
 * Does the hoster start to throttle bandwidth after a certain amount of traffic?
-* How well connected is the autonomous system of the hoster? To answer this question you can use the AS rank of the autonomous systems if you want to compare: (a lower value is better) http://as-rank.caida.org/
+* How well connected is the autonomous system of the hoster?
+  To answer this question you can use the AS rank of the autonomous systems if you want to compare: (a lower value is better) <http://as-rank.caida.org/>
 
 ## If you plan to run exit relays
 
@@ -35,7 +36,7 @@ For more information on hosting providers and their policies on allowing Tor rel
 * Does the hoster allow custom WHOIS records for your IP addresses? This helps reduce the amount of abuse sent to the hoster instead of you.
 * Does the hoster allow you to set a custom DNS reverse entry? (DNS PTR record)
 
-  You can usually ask these questions in a Pre-Sales ticket.
+You can usually ask these questions in a Pre-Sales ticket.
 
 # AS/location diversity
 
