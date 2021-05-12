@@ -1,0 +1,36 @@
+section: user research
+---
+section_id: user-research
+---
+color: primary
+---
+image: eye
+---
+_template: layout.html
+---
+title: Reports
+---
+subtitle: We are committed to open design, so you can see the user research we have conducted within our community.
+---
+key: 5
+---
+html: two-columns-page.html
+---
+body:
+
+We are committed to open design, so you can see the user research we have conducted in the global-south. If you want to run user research with us, please [get in touch.](https://lists.torproject.org/cgi-bin/mailman/listinfo/ux)
+
+
+| Project  | Methodology | Locations | Dates | Reporting |
+| -------- | ----------- | --------- | --------- | ----- |
+| Discovery: Get Bridges | User Discovery ([.md](https://gitlab.torproject.org/tpo/ux/research/-/blob/master/scripts%20and%20activities/2020/discovery-bridges.md)) | Online | Q420, Q121 | [.pdf](https://gitlab.torproject.org/tpo/ux/research/-/blob/master/reports/2021/User_Research_-_Bridges.pdf) |
+| Tor Users Demographics | Survey ([.md](https://gitlab.torproject.org/tpo/ux/research/-/blob/master/scripts%20and%20activities/2020/user_demographics-en.md)) | Online  | 2020 | n/a |
+| User Research: Security Settings | Usability testing ([.pdf](https://gitlab.torproject.org/tpo/ux/research/-/blob/master/scripts%20and%20activities/2019/2.Tor_Browser_Desktop_-_Security_Settings.pdf)) | Multiple locations | 2019 | n/a |
+| Tor Launcher | Usability testing ([.pdf](https://gitlab.torproject.org/tpo/ux/research/-/blob/master/scripts%20and%20activities/2018/1.India_User_testing_Tor_Launcher_Test.pdf)) | Mumbai(IN) | Q118 | .pdf |
+| Onion Security Indicator | Usability testing ([.pdf](https://gitlab.torproject.org/tpo/ux/research/-/blob/master/scripts%20and%20activities/2018/2.User_testing_.onion_states_Test.pdf)) | Mumbai(IN), Kampala(UG), Valencia(ES), Mombasa(KE)| Q118, Q218 | [.pdf](https://gitlab.torproject.org/tpo/ux/research/-/blob/master/reports/2018/ur_kenya_2018_Feature_report__Onions_and_Circuit_Display.pdf) |
+| TB Circuit Display | Usability testing ([.pdf](https://gitlab.torproject.org/tpo/ux/research/-/blob/master/scripts%20and%20activities/2018/3.User_testing_circuit_display_Test.pdf)) | Kampala(UG), Nairobi(KE), Mombasa(KE) | Q118, Q218 | [.pdf](https://gitlab.torproject.org/tpo/ux/research/-/blob/master/reports/2018/ur_kenya_2018_Feature_report__Onions_and_Circuit_Display.pdf) |
+| Tor Browser for Desktop | User needs discovery ([.pdf](https://gitlab.torproject.org/tpo/ux/research/-/blob/master/scripts%20and%20activities/2018/4.00_user_needs_discovery.pdf)) | Bogotá(CL), Cali(CL), Valle del Cauca(CL), Kampala(UG), Hoima(UG), Nairobi(KE)  | 2018 | [.pdf](https://gitlab.torproject.org/tpo/ux/research/-/blob/master/reports/2018/ur_colombia_2018_report_tbb-tba.pdf) |
+| Tor Browser for Android | User needs discovery ([.pdf](https://gitlab.torproject.org/tpo/ux/research/-/blob/master/scripts%20and%20activities/2018/4.00_user_needs_discovery.pdf)) | Bogotá(CL), Cali(CL), Valle del Cauca(CL), Kampala(UG), Hoima(UG), Nairobi(KE)  | 2018 | [.pdf](https://gitlab.torproject.org/tpo/ux/research/-/blob/master/reports/2018/ur_colombia_2018_report_tbb-tba.pdf) |
+
+### Community Research
+* [Censored Continent - Understanding the use of tools during Internet censorship in Africa](https://research.torproject.org/techreports/icfp-censored-continent-2020-07-31.pdf): Cameroon, Nigeria, Uganda and Zimbabwe as case studies.

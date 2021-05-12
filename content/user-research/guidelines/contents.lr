@@ -8,7 +8,6 @@ title: User Research Guidelines
 ---
 subtitle: We collect only necessary data to improve our services.
 ---
->>>>>>> parent of 1e624ba... update content status
 key: 3
 ---
 html: two-columns-page.html
@@ -36,18 +35,21 @@ You'd love to read about your experiences during the training, product testing, 
 
 * Scenario: describe the process of the test you ran.
 * Demographics: While we are not interested in specific characteristics of our audience, or binary attributes, we must know the total reach of your Tor training. You should take [this material]() with you on the day of your research, distribute it among participants, and answer their questions about how to fill it in if they have any.
-* Interview Process: Thank the participant for their willingness to participate in this process and explain that we are testing the product, not them. The interview should not last longer than 20 minutes, you can record if you wish, but you can also take notes on the printed material you will carry with you (or on your computer). Thank the participant again and end the interview.
+* Interview Process: Thank the participant for their willingness to participate in this process and explain that we are testing the product, not them.
+The interview should not last longer than 20 minutes, you can record if you wish, but you can also take notes on the printed material you will carry with you (or on your computer).
+Thank the participant again and end the interview.
 Send us the result - you don't have to write a report, we can do this data analysis with the material you collected.
-
 
 ## Coordinate with the trainer and the Tor UX team
 You're not doing all this work alone - we will support you with meetings, guides, and mentorship if you want. You can join us at any time on our IRC channel #tor-ux and our [mailing list](https://lists.torproject.org/cgi-bin/mailman/listinfo/ux).
 
-You must be aligned about the agenda and time to run interviews (if that is the case) during the end of the training. **We strongly recommend that you go through the program of the exercise with the trainer**. Also, we want you two to coordinate feedback together — both for you and for your audience.
+You must be aligned about the agenda and time to run interviews (if that is the case) during the end of the training. **We strongly recommend that you go through the program of the exercise with the trainer**.
+Also, we want you two to coordinate feedback together - both for you and for your audience.
 
 At the beginning of the training, be sure to let everyone know what is your role there and why you're taking notes on the practice.
 
 ## Get prepared!
+
 Print and bring with you the material that you will need to run the research - that will probably be something like:
 
 * Demographics
@@ -59,13 +61,25 @@ It is easier to have this material printed and in hand, but if you prefer, you c
 Keep in mind that you might not have Internet access at the venue, so if you're going to install a Tor feature with someone during the interview, you may need to have it downloaded before the training.
 
 ## Report to Tor UX team
-Before ending the training, coordinate the feedback with the trainer. The two of you should work together to hand out post-its for the audience, you can give each participant post-it of a different color per question and ask them to fill it with what they think about: 1. the service they just learned; 2. Tor project; and 3. Tor in general. It can also be questions - keep in mind that any feedback is a good feedback.
 
-It is very important for us to hear back from you. We want to know how the training and the research was for you, how we can improve our support and also, if you want to keep running Tor User Research. We will ask you to fill a form at the end of the research, so we can get your address to send to you a researcher kit (t-shirt and stickers).
+Before ending the training, coordinate the feedback with the trainer.
+The two of you should work together to hand out post-its for the audience, you can give each participant post-it of a different color per question and ask them to fill it with what they think about: 1. the service they just learned; 2. Tor project; and 3. Tor in general.
+It can also be questions - keep in mind that any feedback is a good feedback.
+
+It is very important for us to hear back from you.
+We want to know how the training and the research was for you, how we can improve our support and also, if you want to keep running Tor User Research.
+We will ask you to fill a form at the end of the research, so we can get your address to send to you a researcher kit (t-shirt and stickers).
 We hope to hear back from you very soon!
 
-We will send you our document on **how to report** to the UX team, so please [get in touch](https://lists.torproject.org/cgi-bin/mailman/listinfo/ux) with us to get it.
-If you think you won't have time to gather and report in this format, we would love to have another way to get the material you collected. You can take pictures or send your ´raw´ notes for us.
+Before your session, read and print this material on [User Research Reporting](https://gitlab.torproject.org/tpo/ux/research/-/blob/master/community/user_research_reporting.md).
+If you don't think you'll have time to report in this format, we will happily accept your findings another way - for example, you can take pictures or send your 'raw' notes to us.
+
+### How to submit your findings
+
+1. Write your [report](https://gitlab.torproject.org/tpo/ux/research/-/blob/master/community/user_research_reporting.md) (keep it simple).
+2. Upload it to our [Gitlab repository](https://gitlab.torproject.org/tpo/ux/research/-/blob/master/README.md).
+3. Create issues in the [Research repository](https://gitlab.torproject.org/tpo/ux/research/-/blob/master/README.md).
+4. UX team will discuss each issue and forward it to developers when necessary.
 
 ## Additional links
 

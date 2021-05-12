@@ -15,13 +15,14 @@ key: 4
 html: two-columns-page.html
 ---
 body:
+
 Persona is a tool that represents the needs, thoughts, and goals of the target user. We created personas because they help us to drive ​human-centered design processes.
 As part of our global south travels during 2018 and 2019, we got the lucky chance to meet a lot of different Tor users: from activists to journalists, all of them with different motivations, but demanding a usable private and secure tool to access the Internet.
 With the Community Team, we have been working collecting and mapping real user stories and finding patterns across them. It is how our Personas emerged from our in field research.
 
 ### Tor Personas
-* [Jelani, the human rights defender](https://dip.torproject.org/torproject/ux/research/tree/master/persona/jelani.pdf)
-* [Aleisha, the privacy looker](https://dip.torproject.org/torproject/ux/research/tree/master/persona/aleisha.pdf)
-* [Fernanda, the feminist activist](https://dip.torproject.org/torproject/ux/research/tree/master/persona/fernanda.pdf)
-* [Fatima, the censored user](https://dip.torproject.org/torproject/ux/research/tree/master/persona/fatima.pdf)
-* [Alex, the fearless journalist](https://dip.torproject.org/torproject/ux/research/tree/master/persona/alex.pdf)
+* Jelani, the human rights defender: [View on Gitlab](https://gitlab.torproject.org/tpo/ux/research/-/blob/master/persona/jelani.pdf) · [Download PDF](https://gitlab.torproject.org/tpo/ux/research/-/raw/master/persona/jelani.pdf)
+* Aleisha, the privacy looker: [View on Gitlab](https://gitlab.torproject.org/tpo/ux/research/-/blob/master/persona/aleisha.pdf) · [Download PDF](https://gitlab.torproject.org/tpo/ux/research/-/raw/master/persona/aleisha.pdf)
+* Fernanda, the feminist activist: [View on Gitlab](https://gitlab.torproject.org/tpo/ux/research/-/blob/master/persona/fernanda.pdf) · [Download PDF](https://gitlab.torproject.org/tpo/ux/research/-/raw/master/persona/fernanda.pdf)
+* Fatima, the censored user: [View on Gitlab](https://gitlab.torproject.org/tpo/ux/research/-/blob/master/persona/fatima.pdf) · [Download PDF](https://gitlab.torproject.org/tpo/ux/research/-/raw/master/persona/fatima.pdf)
+* Alex, the fearless journalist: [View on Gitlab](https://gitlab.torproject.org/tpo/ux/research/-/blob/master/persona/alex.pdf) · [Download PDF](https://gitlab.torproject.org/tpo/ux/research/-/raw/master/persona/alex.pdf)

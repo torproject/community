@@ -10,7 +10,7 @@ body:
 
 One of the most important things to keeps your relay secure is to install security updates timely and ideally automatically so you can not forget about it. Follow the instructions to enable [automatic software updates](updates) for your operating system.
 
-# 2.  # 3. Add the following to /etc/yum.repos.d/tor.repo and then install the tor package.
+# 2. Add the following to `/etc/yum.repos.d/tor.repo` and then install the tor package.
 
 ```
 [tor]
@@ -22,7 +22,12 @@ gpgkey=https://rpm.torproject.org/fedora/public_gpg.key
 cost=100
 ```
 
-# 3. Put the tor configuration file `/etc/tor/torrc` in place
+`sudo dnf install tor`
+
+
+# 3. Configuration File
+
+Put the configuration file `/etc/tor/torrc` in place:
 
 ```
 #change the nickname "myNiceRelay" to a name that you like
@@ -42,7 +47,8 @@ systemctl start tor
 
 # 5. Final notes
 
-If you are having trouble setting up your relay, have a look at our [help section](/relay/getting-help/). If your relay is now running, check out the [post-install](/relay/setup/post-install/) notes.
+If you are having trouble setting up your relay, have a look at our [help section](/relay/getting-help/).
+If your relay is now running, check out the [post-install](/relay/setup/post-install/) notes.
 ---
 html: two-columns-page.html
 ---
