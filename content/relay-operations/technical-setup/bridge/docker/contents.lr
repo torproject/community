@@ -82,7 +82,7 @@ OBFS4_ENABLE_ADDITIONAL_VARIABLES=1
 OBFS4V_AddressDisableIPv6=1
 ```
 
-You may [download our template .env](https://gitlab.torproject.org/torproject/anti-censorship/docker-obfs4-bridge/raw/master/.env) to get started.
+You may [download our template .env](https://gitlab.torproject.org/torproject/anti-censorship/docker-obfs4-bridge/raw/main/.env) to get started.
 ---
 html: two-columns-page.html
 ---
