@@ -23,7 +23,7 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   --heading-color: #683086;
   --heading-line-height: 1.2;
   --heading-letter-spacing: normal;
-  --heading-text-transform: uppercase;
+  --heading-text-transform: none;
   --heading-text-shadow: none;
   --heading-font-weight: 600;
   --heading1-text-shadow: none;
@@ -77,7 +77,7 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   font-weight: 600;
   line-height: 1.2;
   letter-spacing: normal;
-  text-transform: uppercase;
+  text-transform: none;
   text-shadow: none;
   word-wrap: break-word; }
 
@@ -301,14 +301,31 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
  *********************************************/
 @media print {
   .backgrounds {
-    background-color: #fff; } }
+    background-color: #fff; }
+}
 
+.print-pdf .footer {
+  display: none;
+}
 /*********************************************
  * FOOTER
  *********************************************/
 
 .footer {
   background-color: #683086;
+  min-height: 10%;
+}
+
+.footer img {
+  position:relative;
+  min-height: 1.5em;
+  padding: 5px;
+}
+
+.footer a {
+  font-size: 1.5em !important;
+  padding: 5px;
+  top: 10px;
 }
 
 /*********************************************
@@ -324,4 +341,12 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
 
 hr.dark {
   border: 5px solid #683086;
+}
+
+.order-last {
+  text-align: left !important;
+}
+
+.order-first {
+  text-align: right !important;
 }
