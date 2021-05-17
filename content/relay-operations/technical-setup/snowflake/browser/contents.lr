@@ -14,7 +14,7 @@ There are very few requirements to running a browser-based proxy:
 ### 1. Install the Snowflake addon to your browser
 
 If you are running Firefox, you can install our [Firefox addon](https://addons.mozilla.org/en-US/firefox/addon/torproject-snowflake/).
-Chome users can install our addon from the [Google webstore](https://chrome.google.com/webstore/detail/snowflake/mafpmfcccpbjnhfhjnllmmalhifmlcie).
+Chrome users can install our addon from the [Google webstore](https://chrome.google.com/webstore/detail/snowflake/mafpmfcccpbjnhfhjnllmmalhifmlcie).
 
 Once it is installed, you can toggle the `Enabled` switch to turn it off and on.
 It's easiest to leave it running while you browse and it should not interfere with your regular browsing experience.
