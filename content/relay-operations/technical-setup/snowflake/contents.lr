@@ -4,13 +4,13 @@ title: Snowflake
 ---
 body:
 
-This guide will help you set up a Snowflake proxy to help censored users connect to the Tor network. The requirements are:
+This guide will help you set up a Snowflake proxy to help censored users connect to the Tor network.
+The requirements are:
 1. Internet connectivity
 
 If you don't meet the requirements to run a Tor relay or obfs4 bridge, running a Snowflake proxy is a great way to donate your bandwidth to help users circumvent censorship.
 
 There are a few different options for running a Snowflake proxy.
-
 ---
 html: two-columns-page.html
 ---

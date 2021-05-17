@@ -6,9 +6,12 @@ title: Standalone Snowflake proxy
 ---
 body:
 
-This guide will help you set up a standalone Snowflake proxy on a server to help censored users connect to the Tor network. The only requirements are internet connectivity, however one of the main advantages of standalone Snowflake proxies is that they can be installed on servers and offer a higher bandwidth and more reliable option for users behind restrictive NATs and firewalls. Therefore, we especially recommend:
+This guide will help you set up a standalone Snowflake proxy on a server to help censored users connect to the Tor network.
+The only requirements are internet connectivity, however one of the main advantages of standalone Snowflake proxies is that they can be installed on servers and offer a higher bandwidth and more reliable option for users behind restrictive NATs and firewalls.
+Therefore, we especially recommend:
 1. 24/7 Internet connectivity
-2. A full-cone NAT (you can use this [NAT behaviour tool](https://github.com/pion/stun/tree/master/cmd/stun-nat-behaviour) to test what type of NAT you have. The properties you are looking for are address-independent mapping and either address-independent or address-dependent filtering)
+2. A full-cone NAT (you can use this [NAT behaviour tool](https://github.com/pion/stun/tree/master/cmd/stun-nat-behaviour) to test what type of NAT you have.
+The properties you are looking for are address-independent mapping and either address-independent or address-dependent filtering)
 
 There are several ways to setup and run a standalone snowflake proxy.
 
@@ -16,7 +19,9 @@ There are several ways to setup and run a standalone snowflake proxy.
 
 You must first have [Docker](https://docs.docker.com/engine/install/) and [docker-compose](https://docs.docker.com/compose/install/) installed.
 
-We have a [Docker image](https://hub.docker.com/repository/docker/thetorproject/snowflake-proxy) to ease the setup of a snowflake proxy. First [download docker-compose.yml](https://gitlab.torproject.org/tpo/anti-censorship/docker-snowflake-proxy/raw/main/docker-compose.yml). Then, deploy the proxy by running
+We have a [Docker image](https://hub.docker.com/repository/docker/thetorproject/snowflake-proxy) to ease the setup of a snowflake proxy.
+First [download docker-compose.yml](https://gitlab.torproject.org/tpo/anti-censorship/docker-snowflake-proxy/raw/main/docker-compose.yml).
+Then, deploy the proxy by running:
 ```
 docker-compose up -d snowflake-proxy
 ```
@@ -33,7 +38,10 @@ There is now an ansible role to install a Snowflake proxy on Debian [created by 
 
 ### Compiling and running from source
 
-1. First you will need to install and configure Go to build the standalone proxy-go code. If you are running Ubuntu or Debian, you can install Go by executing `apt install golang`. Otherwise visit https://golang.org/dl/. You will need Go 1.13+ to run the Snowflake proxy.
+1. First you will need to install and configure Go to build the standalone proxy-go code.
+If you are running Ubuntu or Debian, you can install Go by executing `apt install golang`.
+Otherwise visit https://golang.org/dl/.
+You will need Go 1.13+ to run the Snowflake proxy.
 
 2. Clone the [source code](#source-code).
    ```
@@ -45,11 +53,11 @@ There is now an ansible role to install a Snowflake proxy on Debian [created by 
    ```
 4. Run the Snowflake proxy.
 
-   For our fallback proxy-go instances on snowflake-broker, [we manage proxy-go instances using runit](https://gitlab.torproject.org/tpo/anti-censorship/team/-/wikis/Survival-Guides/Snowflake-Bridge-Survival-Guide#standalone-proxy-go-instances). However, a simpler nohup command will also allow you to run an instance in the background.
+For our fallback proxy-go instances on snowflake-broker, [we manage proxy-go instances using runit](https://gitlab.torproject.org/tpo/anti-censorship/team/-/wikis/Survival-Guides/Snowflake-Bridge-Survival-Guide#standalone-proxy-go-instances).
+However, a simpler nohup command will also allow you to run an instance in the background.
    ```
    nohup ./proxy &
    ```
-
 ---
 key: 1
 ---
