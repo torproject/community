@@ -71,7 +71,7 @@ Another benefit of an association-like structure is that it might still work eve
 ### Consider preemptively teaching your local law enforcement about Tor.
 
 "Cybercrime" people actually love it when you offer to [teach them about Tor and the Internet](https://blog.torproject.org/blog/talking-german-police-stuttgart) -- they're typically overwhelmed by their jobs and don't have enough background to know where to start.
-Contacting them gives you a chance to teach them why Tor is useful to the world (and why it's [not particularly helpful to criminals](https://2019.www.torproject.org/docs/faq-abuse#WhatAboutCriminals).
+Contacting them gives you a chance to teach them why Tor is useful to the world (and why it's [not particularly helpful to criminals](https://2019.www.torproject.org/docs/faq-abuse#WhatAboutCriminals)).
 Also, if they do get a report about your relay, they'll think of you as a helpful expert rather than a potential criminal.
 
 ## Handling abuse complaints
