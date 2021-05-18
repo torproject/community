@@ -63,6 +63,6 @@ Several countries, including China and Iran, have found ways to detect and block
 [Pluggable transports](https://tb-manual.torproject.org/circumvention/), a special kind of bridge, address this by adding an additional layer of obfuscation.
 
 Bridges are relatively easy, low-risk and low bandwidth Tor nodes to operate, but they have a big impact on users.
-A bridge isn't likely to receive any abuse complaints, and since bridges are not listed in the public consensus, they are unlikely to be blocked by popular services.
+A bridge isn't likely to receive any abuse complaints, and since bridges are not listed as public relays, they are unlikely to be blocked by popular services.
 
 Bridges are a great option if you can only run a Tor node from your home network, have only one static IP, and don't have a huge amount of bandwidth to donate -- we recommend giving your bridge at least 1 Mbit/sec.
