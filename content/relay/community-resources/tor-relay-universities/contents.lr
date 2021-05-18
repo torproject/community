@@ -70,7 +70,7 @@ In some cases, you should talk to the network security people before you talk to
 
 If the authorities contact your university for logs, be pleasant and helpful.
 Tor's default log level doesn't provide much that's useful, so if they want copies of your logs, that's fine.
-Be helpful and take the opportunity to explain to them about Tor and why it's useful to the world. (If they contact you directly for logs, you should send them to your university's lawyers -- acting on it yourself is [almost always a poor idea](/relay/community-resources/eff-tor-legal-faq/).
+Be helpful and take the opportunity to explain to them about Tor and why it's useful to the world. (If they contact you directly for logs, you should send them to your university's lawyers -- acting on it yourself is [almost always a poor idea](/relay/community-resources/eff-tor-legal-faq/)).
 
 If there are too many complaints coming in, there are several approaches you can take to reduce them. First, you should follow the tips in the [Tor relay documentation](https://community.torproject.org/relay), such as picking a descriptive hostname or getting your own IP address. If that doesn't work, you can scale back the advertised speed of your relay, by using the `MaxAdvertisedBandwidth` to attract less traffic from the Tor network. Lastly, you can scale back your exit policy.
 

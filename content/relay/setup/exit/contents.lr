@@ -22,7 +22,7 @@ Do not mix your own traffic with your exit relay traffic.
 
 ## Reverse DNS and WHOIS record
 
-Before turning your non-exit relay into an exit relay, ensure that you have set a reverse DNS record (PTR) to make it more obvious that this is a tor exit relay. Something like "tor-exit" it its name is a good start.
+Before turning your non-exit relay into an exit relay, ensure that you have set a reverse DNS record (PTR) to make it more obvious that this is a tor exit relay. Something like "tor-exit" in its name is a good start.
 
 If your provider offers it, make sure your WHOIS record contains clear indications that this is a Tor exit relay.
 
