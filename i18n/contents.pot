@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-18 19:56+CET\n"
+"POT-Creation-Date: 2021-05-19 15:45+CET\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -43,44 +43,21 @@ msgstr ""
 
 #: https://community.torproject.org/ (content/contents+en.lr:page.body)
 msgid ""
-"Below you'll find some different ways to volunteer with the Tor community as "
-"well as resources to help you help Tor."
+"Below, you'll find some different ways to volunteer with the Tor community "
+"as well as resources to better help you help Tor."
 msgstr ""
 
-#: (dynamic)
-msgid ""
-"Defend yourself against tracking and surveillance. Circumvent censorship."
+#: https://community.torproject.org/user-research/
+#: (content/user-research/contents+en.lr:page.title)
+msgid "User Research"
 msgstr ""
 
-#: (dynamic)
-msgid "Tor Project"
+#: https://community.torproject.org/user-research/
+#: (content/user-research/contents+en.lr:page.subtitle)
+msgid "We respect our users' privacy when we conduct research."
 msgstr ""
 
-#: (dynamic)
-msgid "Donate"
-msgstr ""
-
-#: (dynamic)
-msgid "Donate Now"
-msgstr ""
-
-#: (dynamic)
-msgid "Menu"
-msgstr ""
-
-#: (dynamic)
-msgid "About"
-msgstr ""
-
-#: (dynamic)
-msgid "Documentation"
-msgstr ""
-
-#: (dynamic)
-msgid "Support"
-msgstr ""
-
-#: (dynamic) https://community.torproject.org/user-research/
+#: https://community.torproject.org/user-research/
 #: (content/user-research/contents+en.lr:page.section)
 #: https://community.torproject.org/training/
 #: (content/training/contents+en.lr:page.section)
@@ -91,181 +68,6 @@ msgstr ""
 #: https://community.torproject.org/relay/
 #: (content/relay/contents+en.lr:page.section)
 msgid "Community"
-msgstr ""
-
-#: (dynamic)
-msgid "Blog"
-msgstr ""
-
-#: (dynamic)
-msgid "Download Tor Browser"
-msgstr ""
-
-#: (dynamic) https://community.torproject.org/training/
-#: (content/training/contents+en.lr:page.title)
-#: https://community.torproject.org/training/checklist/
-#: (content/training/checklist/contents+en.lr:page.section)
-#: https://community.torproject.org/training/faq/
-#: (content/training/faq/contents+en.lr:page.section)
-msgid "Training"
-msgstr ""
-
-#: (dynamic) https://community.torproject.org/localization/
-#: (content/localization/contents+en.lr:page.title)
-msgid "Localization"
-msgstr ""
-
-#: (dynamic) https://community.torproject.org/outreach/
-#: (content/outreach/contents+en.lr:page.title)
-msgid "Outreach"
-msgstr ""
-
-#: (dynamic) https://community.torproject.org/user-research/
-#: (content/user-research/contents+en.lr:page.title)
-msgid "User Research"
-msgstr ""
-
-#: (dynamic) https://community.torproject.org/onion-services/
-#: (content/onion-services/contents+en.lr:page.title)
-msgid "Onion Services"
-msgstr ""
-
-#: (dynamic)
-msgid "Become a Tester"
-msgstr ""
-
-#: (dynamic)
-msgid ""
-"We regularly release Tor Browser early versions to allow users to test "
-"software improvements and new ideas. Sign up to be in our testing pool."
-msgstr ""
-
-#: (dynamic) https://community.torproject.org/user-research/open/
-#: (content/user-research/open/contents+en.lr:page.title)
-msgid "Open User Research"
-msgstr ""
-
-#: (dynamic) https://community.torproject.org/user-research/open/
-#: (content/user-research/open/contents+en.lr:page.subtitle)
-msgid ""
-"We put our users in the center of our development process. That is how we "
-"bring privacy-enhancing technology to the ones who more need it. Explore "
-"what we are working on and start to run user research with your local "
-"community."
-msgstr ""
-
-#: (dynamic) https://community.torproject.org/user-research/guidelines/
-#: (content/user-research/guidelines/contents+en.lr:page.title)
-msgid "User Research Guidelines"
-msgstr ""
-
-#: (dynamic) https://community.torproject.org/user-research/guidelines/
-#: (content/user-research/guidelines/contents+en.lr:page.subtitle)
-msgid "We collect only necessary data to improve our services."
-msgstr ""
-
-#: (dynamic) https://community.torproject.org/user-research/persona/
-#: (content/user-research/persona/contents+en.lr:page.title)
-msgid "Tor Personas"
-msgstr ""
-
-#: (dynamic) https://community.torproject.org/user-research/persona/
-#: (content/user-research/persona/contents+en.lr:page.subtitle)
-msgid ""
-"Personas help us to drive human-centered design processes across teams. Meet "
-"our archetypes of Tor users."
-msgstr ""
-
-#: (dynamic) https://community.torproject.org/user-research/how-to-volunteer/
-#: (content/user-research/how-to-volunteer/contents+en.lr:page.title)
-msgid "How to Volunteer"
-msgstr ""
-
-#: (dynamic) https://community.torproject.org/user-research/how-to-volunteer/
-#: (content/user-research/how-to-volunteer/contents+en.lr:page.subtitle)
-msgid "We care about privacy and security."
-msgstr ""
-
-#: (dynamic) https://community.torproject.org/user-research/reports/
-#: (content/user-research/reports/contents+en.lr:page.title)
-msgid "Reports"
-msgstr ""
-
-#: (dynamic) https://community.torproject.org/user-research/reports/
-#: (content/user-research/reports/contents+en.lr:page.subtitle)
-msgid ""
-"We are committed to open design, so you can see the user research we have "
-"conducted within our community."
-msgstr ""
-
-#: (dynamic)
-msgid "Become a Community User Researcher"
-msgstr ""
-
-#: (dynamic)
-msgid ""
-"Are you a design researcher, user researcher, student, or someone interested "
-"in learning more about Tor users? Do you have new ideas, suggestions, or "
-"research that can help improve Tor applications? Help us by coordinating "
-"user research with your local community, and learn more about best practices "
-"for working with users at-risk."
-msgstr ""
-
-#: (dynamic)
-msgid "UX team mailing list"
-msgstr ""
-
-#: (dynamic)
-msgid ""
-"Download Tor Browser to experience real private browsing without tracking, "
-"surveillance, or censorship."
-msgstr ""
-
-#: (dynamic)
-msgid "Our mission:"
-msgstr ""
-
-#: (dynamic)
-msgid ""
-"To advance human rights and freedoms by creating and deploying free and open "
-"source anonymity and privacy technologies, supporting their unrestricted "
-"availability and use, and furthering their scientific and popular "
-"understanding."
-msgstr ""
-
-#: (dynamic)
-msgid "Jobs"
-msgstr ""
-
-#: (dynamic)
-msgid "Contact"
-msgstr ""
-
-#: (dynamic)
-msgid "Press"
-msgstr ""
-
-#: (dynamic)
-msgid "Subscribe to our Newsletter"
-msgstr ""
-
-#: (dynamic)
-msgid "Get monthly updates and opportunities from the Tor Project:"
-msgstr ""
-
-#: (dynamic)
-msgid "Sign up"
-msgstr ""
-
-#: (dynamic)
-msgid ""
-"Trademark, copyright notices, and rules for use by third parties can be "
-"found in our %(link_to_faq)s"
-msgstr ""
-
-#: https://community.torproject.org/user-research/
-#: (content/user-research/contents+en.lr:page.subtitle)
-msgid "We respect our users' privacy when we conduct research."
 msgstr ""
 
 #: https://community.torproject.org/user-research/
@@ -334,6 +136,15 @@ msgid ""
 msgstr ""
 
 #: https://community.torproject.org/training/
+#: (content/training/contents+en.lr:page.title)
+#: https://community.torproject.org/training/checklist/
+#: (content/training/checklist/contents+en.lr:page.section)
+#: https://community.torproject.org/training/faq/
+#: (content/training/faq/contents+en.lr:page.section)
+msgid "Training"
+msgstr ""
+
+#: https://community.torproject.org/training/
 #: (content/training/contents+en.lr:page.subtitle)
 #: https://community.torproject.org/training/resources/
 #: (content/training/resources/contents+en.lr:page.subtitle)
@@ -374,6 +185,11 @@ msgid ""
 msgstr ""
 
 #: https://community.torproject.org/onion-services/
+#: (content/onion-services/contents+en.lr:page.title)
+msgid "Onion Services"
+msgstr ""
+
+#: https://community.torproject.org/onion-services/
 #: (content/onion-services/contents+en.lr:page.subtitle)
 msgid ""
 "Onion services help you and your users defeat surveillance and censorship. "
@@ -396,6 +212,11 @@ msgid ""
 "Onion services are services that can only be accessed over Tor. Running an "
 "onion service gives your users all the security of HTTPS with the added "
 "privacy benefits of Tor Browser."
+msgstr ""
+
+#: https://community.torproject.org/localization/
+#: (content/localization/contents+en.lr:page.title)
+msgid "Localization"
 msgstr ""
 
 #: https://community.torproject.org/localization/
@@ -506,6 +327,11 @@ msgid ""
 msgstr ""
 
 #: https://community.torproject.org/outreach/
+#: (content/outreach/contents+en.lr:page.title)
+msgid "Outreach"
+msgstr ""
+
+#: https://community.torproject.org/outreach/
 #: (content/outreach/contents+en.lr:page.subtitle)
 msgid "Bring Tor materials to your next community event."
 msgstr ""
@@ -534,16 +360,18 @@ msgid ""
 "media we welcome you to use."
 msgstr ""
 
-#: (dynamic)
-msgid "Contributors to this page:"
+#: https://community.torproject.org/user-research/open/
+#: (content/user-research/open/contents+en.lr:page.title)
+msgid "Open User Research"
 msgstr ""
 
-#: (dynamic)
-msgid "Back to previous page:"
-msgstr ""
-
-#: (dynamic)
-msgid "Edit this page"
+#: https://community.torproject.org/user-research/open/
+#: (content/user-research/open/contents+en.lr:page.subtitle)
+msgid ""
+"We put our users in the center of our development process. That is how we "
+"bring privacy-enhancing technology to the ones who more need it. Explore "
+"what we are working on and start to run user research with your local "
+"community."
 msgstr ""
 
 #: https://community.torproject.org/user-research/open/
@@ -632,6 +460,16 @@ msgstr ""
 msgid ""
 "* [Run Emma Network Test](https://gitlab.torproject.org/tpo/ux/research/-/"
 "blob/master/scripts%20and%20activities/2020/run-emma.md)"
+msgstr ""
+
+#: https://community.torproject.org/user-research/guidelines/
+#: (content/user-research/guidelines/contents+en.lr:page.title)
+msgid "User Research Guidelines"
+msgstr ""
+
+#: https://community.torproject.org/user-research/guidelines/
+#: (content/user-research/guidelines/contents+en.lr:page.subtitle)
+msgid "We collect only necessary data to improve our services."
 msgstr ""
 
 #: https://community.torproject.org/user-research/guidelines/
@@ -975,6 +813,16 @@ msgid "* [OK Thanks Exploratorium ](https://okthanks.com/exploratorium)"
 msgstr ""
 
 #: https://community.torproject.org/user-research/how-to-volunteer/
+#: (content/user-research/how-to-volunteer/contents+en.lr:page.title)
+msgid "How to Volunteer"
+msgstr ""
+
+#: https://community.torproject.org/user-research/how-to-volunteer/
+#: (content/user-research/how-to-volunteer/contents+en.lr:page.subtitle)
+msgid "We care about privacy and security."
+msgstr ""
+
+#: https://community.torproject.org/user-research/how-to-volunteer/
 #: (content/user-research/how-to-volunteer/contents+en.lr:page.body)
 msgid "## Where to start"
 msgstr ""
@@ -1229,6 +1077,18 @@ msgid ""
 msgstr ""
 
 #: https://community.torproject.org/user-research/reports/
+#: (content/user-research/reports/contents+en.lr:page.title)
+msgid "Reports"
+msgstr ""
+
+#: https://community.torproject.org/user-research/reports/
+#: (content/user-research/reports/contents+en.lr:page.subtitle)
+msgid ""
+"We are committed to open design, so you can see the user research we have "
+"conducted within our community."
+msgstr ""
+
+#: https://community.torproject.org/user-research/reports/
 #: (content/user-research/reports/contents+en.lr:page.body)
 msgid ""
 "We are committed to open design, so you can see the user research we have "
@@ -1337,6 +1197,18 @@ msgid ""
 "censorship in Africa](https://research.torproject.org/techreports/icfp-"
 "censored-continent-2020-07-31.pdf): Cameroon, Nigeria, Uganda and Zimbabwe "
 "as case studies."
+msgstr ""
+
+#: https://community.torproject.org/user-research/persona/
+#: (content/user-research/persona/contents+en.lr:page.title)
+msgid "Tor Personas"
+msgstr ""
+
+#: https://community.torproject.org/user-research/persona/
+#: (content/user-research/persona/contents+en.lr:page.subtitle)
+msgid ""
+"Personas help us to drive human-centered design processes across teams. Meet "
+"our archetypes of Tor users."
 msgstr ""
 
 #: https://community.torproject.org/user-research/persona/
@@ -2092,8 +1964,8 @@ msgstr ""
 #: https://community.torproject.org/training/faq/
 #: (content/training/faq/contents+en.lr:page.subtitle)
 msgid ""
-"People new to Tor often ask similar questions, and we can help you prepare "
-"for answering them."
+"People who are new to the Tor project, quite often, ask similar questions, "
+"and we can help you prepare for these questions."
 msgstr ""
 
 #: https://community.torproject.org/training/faq/
@@ -2106,8 +1978,9 @@ msgstr ""
 #: https://community.torproject.org/training/faq/
 #: (content/training/faq/contents+en.lr:page.body)
 msgid ""
-"These are the most frequent questions we hear during our training sessions. "
-"Be prepared for them before running your training."
+"Outlined below are some of the most frequent questions we get during our "
+"training sessions. Be prepared for these questions before running your "
+"training."
 msgstr ""
 
 #: https://community.torproject.org/training/faq/
@@ -15516,8 +15389,6 @@ msgstr ""
 #: (content/relay/setup/bridge/debian-ubuntu/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/bridge/centos-rhel-opensuse/
 #: (content/relay/setup/bridge/centos-rhel-opensuse/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/bridge/fedora/
-#: (content/relay/setup/bridge/fedora/contents+en.lr:page.body)
 msgid ""
 "### 3. Edit your Tor config file, usually located at `/etc/tor/torrc` and "
 "replace its content with:"
@@ -15548,6 +15419,8 @@ msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/debian-ubuntu/
 #: (content/relay/setup/bridge/debian-ubuntu/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/bridge/fedora/
+#: (content/relay/setup/bridge/fedora/contents+en.lr:page.body)
 msgid "ServerTransportPlugin obfs4 exec /usr/bin/obfs4proxy"
 msgstr ""
 
@@ -15619,6 +15492,8 @@ msgstr ""
 #: (content/relay/setup/bridge/debian-ubuntu/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/bridge/windows/
 #: (content/relay/setup/bridge/windows/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/bridge/fedora/
+#: (content/relay/setup/bridge/fedora/contents+en.lr:page.body)
 msgid "* Note that both Tor's OR port and its obfs4 port must be reachable."
 msgstr ""
 
@@ -15626,6 +15501,8 @@ msgstr ""
 #: (content/relay/setup/bridge/debian-ubuntu/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/bridge/windows/
 #: (content/relay/setup/bridge/windows/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/bridge/fedora/
+#: (content/relay/setup/bridge/fedora/contents+en.lr:page.body)
 msgid ""
 "If your bridge is behind a firewall or NAT, make sure to open both ports."
 msgstr ""
@@ -15634,6 +15511,8 @@ msgstr ""
 #: (content/relay/setup/bridge/debian-ubuntu/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/bridge/windows/
 #: (content/relay/setup/bridge/windows/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/bridge/fedora/
+#: (content/relay/setup/bridge/fedora/contents+en.lr:page.body)
 msgid ""
 "You can use [our reachability test](https://bridges.torproject.org/scan/) to "
 "see if your obfs4 port is reachable from the Internet."
@@ -15643,8 +15522,6 @@ msgstr ""
 #: (content/relay/setup/bridge/debian-ubuntu/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/bridge/centos-rhel-opensuse/
 #: (content/relay/setup/bridge/centos-rhel-opensuse/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/bridge/fedora/
-#: (content/relay/setup/bridge/fedora/contents+en.lr:page.body)
 msgid "### 4. Restart tor"
 msgstr ""
 
@@ -15681,8 +15558,6 @@ msgstr ""
 #: (content/relay/setup/bridge/windows/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/bridge/centos-rhel-opensuse/
 #: (content/relay/setup/bridge/centos-rhel-opensuse/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/bridge/fedora/
-#: (content/relay/setup/bridge/fedora/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/bridge/openbsd/
 #: (content/relay/setup/bridge/openbsd/contents+en.lr:page.body)
 msgid "### 6. Final notes"
@@ -16079,8 +15954,6 @@ msgstr ""
 #: (content/relay/setup/bridge/dragonflybsd/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/bridge/centos-rhel-opensuse/
 #: (content/relay/setup/bridge/centos-rhel-opensuse/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/bridge/fedora/
-#: (content/relay/setup/bridge/fedora/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/bridge/freebsd/
 #: (content/relay/setup/bridge/freebsd/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/bridge/openbsd/
@@ -16459,8 +16332,6 @@ msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/centos-rhel-opensuse/
 #: (content/relay/setup/bridge/centos-rhel-opensuse/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/bridge/fedora/
-#: (content/relay/setup/bridge/fedora/contents+en.lr:page.body)
 msgid "### 2. Build obfs4proxy and move it into place."
 msgstr ""
 
@@ -16473,22 +16344,16 @@ msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/centos-rhel-opensuse/
 #: (content/relay/setup/bridge/centos-rhel-opensuse/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/bridge/fedora/
-#: (content/relay/setup/bridge/fedora/contents+en.lr:page.body)
 msgid "export GOPATH=`mktemp -d`"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/centos-rhel-opensuse/
 #: (content/relay/setup/bridge/centos-rhel-opensuse/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/bridge/fedora/
-#: (content/relay/setup/bridge/fedora/contents+en.lr:page.body)
 msgid "go get gitlab.com/yawning/obfs4.git/obfs4proxy"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/centos-rhel-opensuse/
 #: (content/relay/setup/bridge/centos-rhel-opensuse/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/bridge/fedora/
-#: (content/relay/setup/bridge/fedora/contents+en.lr:page.body)
 msgid "sudo cp $GOPATH/bin/obfs4proxy /usr/local/bin/"
 msgstr ""
 
@@ -16504,8 +16369,6 @@ msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/centos-rhel-opensuse/
 #: (content/relay/setup/bridge/centos-rhel-opensuse/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/bridge/fedora/
-#: (content/relay/setup/bridge/fedora/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/bridge/freebsd/
 #: (content/relay/setup/bridge/freebsd/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/bridge/openbsd/
@@ -16535,8 +16398,6 @@ msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/centos-rhel-opensuse/
 #: (content/relay/setup/bridge/centos-rhel-opensuse/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/bridge/fedora/
-#: (content/relay/setup/bridge/fedora/contents+en.lr:page.body)
 msgid "### 5. Monitor your logs (usually in your syslog)"
 msgstr ""
 
@@ -16566,22 +16427,34 @@ msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/fedora/
 #: (content/relay/setup/bridge/fedora/contents+en.lr:page.body)
-msgid "dnf install git golang tor policycoreutils-python-utils"
+msgid "dnf install tor obfs4 policycoreutils-python-utils"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/fedora/
 #: (content/relay/setup/bridge/fedora/contents+en.lr:page.body)
-msgid "And tell selinux to allow Tor to use obfs4proxy:"
+msgid ""
+"### 2. Edit your Tor config file, usually located at `/etc/tor/torrc` and "
+"replace its content with:"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/fedora/
 #: (content/relay/setup/bridge/fedora/contents+en.lr:page.body)
-msgid "/sbin/restorecon -v /usr/local/bin/obfs4proxy"
+msgid "### 3. Restart tor"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/fedora/
 #: (content/relay/setup/bridge/fedora/contents+en.lr:page.body)
 msgid "systemctl restart tor"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/bridge/fedora/
+#: (content/relay/setup/bridge/fedora/contents+en.lr:page.body)
+msgid "### 4. Monitor your logs (usually in your syslog)"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/bridge/fedora/
+#: (content/relay/setup/bridge/fedora/contents+en.lr:page.body)
+msgid "### 5. Final notes"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/freebsd/
@@ -18241,8 +18114,70 @@ msgstr ""
 msgid "Your donation will be matched by Friends of Tor, up to $100,000."
 msgstr ""
 
+#: lego/templates/banner.html:38 lego/templates/footer.html:64
+#: lego/templates/footer.html:66 lego/templates/navbar.html:18
+#: lego/templates/navbar.html:20 templates/banner.html:38
+#: templates/footer.html:64 templates/footer.html:66 templates/navbar.html:18
+#: templates/navbar.html:20
+msgid "Donate Now"
+msgstr ""
+
 #: lego/templates/banner.html:40 templates/banner.html:40
 msgid "DONATE NOW"
+msgstr ""
+
+#: lego/templates/footer.html:13 lego/templates/footer.html:22
+#: lego/templates/navbar.html:83 templates/footer.html:13
+#: templates/footer.html:22 templates/navbar.html:83
+msgid "Download Tor Browser"
+msgstr ""
+
+#: lego/templates/footer.html:14 templates/footer.html:14
+msgid ""
+"Download Tor Browser to experience real private browsing without tracking, "
+"surveillance, or censorship."
+msgstr ""
+
+#: lego/templates/footer.html:35 templates/footer.html:35
+msgid "Our mission:"
+msgstr ""
+
+#: lego/templates/footer.html:36 templates/footer.html:36
+msgid ""
+"To advance human rights and freedoms by creating and deploying free and open "
+"source anonymity and privacy technologies, supporting their unrestricted "
+"availability and use, and furthering their scientific and popular "
+"understanding."
+msgstr ""
+
+#: lego/templates/footer.html:64 lego/templates/footer.html:66
+#: lego/templates/navbar.html:18 lego/templates/navbar.html:20
+#: templates/footer.html:64 templates/footer.html:66 templates/navbar.html:18
+#: templates/navbar.html:20
+msgid "Donate"
+msgstr ""
+
+#: lego/templates/footer.html:75 templates/footer.html:75
+msgid "Subscribe to our Newsletter"
+msgstr ""
+
+#: lego/templates/footer.html:76 templates/footer.html:76
+msgid "Get monthly updates and opportunities from the Tor Project:"
+msgstr ""
+
+#: lego/templates/footer.html:77 templates/footer.html:77
+msgid "Sign up"
+msgstr ""
+
+#: lego/templates/footer.html:98 templates/footer.html:98
+#, python-format
+msgid ""
+"Trademark, copyright notices, and rules for use by third parties can be "
+"found in our %(link_to_faq)s"
+msgstr ""
+
+#: lego/templates/navbar.html:25 templates/navbar.html:25
+msgid "Menu"
 msgstr ""
 
 #: lego/templates/search.html:5
@@ -18346,6 +18281,11 @@ msgid ""
 "Google Summer of Code and Outreachy participants"
 msgstr ""
 
+#: templates/homepage.html:5 templates/meta.html:10 templates/slideshow.html:5
+#: templates/slideshow.html:6
+msgid "Tor Project"
+msgstr ""
+
 #: templates/localization.html:27
 msgid "Can you help us improve our translations?"
 msgstr ""
@@ -18359,6 +18299,11 @@ msgstr ""
 
 #: templates/localization.html:32
 msgid "Translators mailing list"
+msgstr ""
+
+#: templates/meta.html:3
+msgid ""
+"Defend yourself against tracking and surveillance. Circumvent censorship."
 msgstr ""
 
 #: templates/onion-services.html:27
@@ -18461,8 +18406,16 @@ msgstr ""
 msgid "Journalists, activists, and everyday internet users rely on Tor."
 msgstr ""
 
+#: templates/outreach-talk.html:75 templates/two-columns-page.html:28
+msgid "Contributors to this page:"
+msgstr ""
+
 #: templates/outreach-talk.html:77 templates/two-columns-page.html:30
 msgid "Back to previous page: "
+msgstr ""
+
+#: templates/outreach-talk.html:77 templates/two-columns-page.html:30
+msgid "Edit this page"
 msgstr ""
 
 #: templates/outreach.html:27
@@ -18524,6 +18477,23 @@ msgstr ""
 
 #: templates/training.html:32
 msgid "Community mailing list"
+msgstr ""
+
+#: templates/user-research.html:31
+msgid "Become a Community User Researcher"
+msgstr ""
+
+#: templates/user-research.html:33
+msgid ""
+"Are you a design researcher, user researcher, student, or someone interested "
+"in learning more about Tor users? Do you have new ideas, suggestions, or "
+"research that can help improve Tor applications? Help us by coordinating "
+"user research with your local community, and learn more about best practices "
+"for working with users at-risk."
+msgstr ""
+
+#: templates/user-research.html:35
+msgid "UX team mailing list"
 msgstr ""
 
 #: templates/macros/projects.html:20
