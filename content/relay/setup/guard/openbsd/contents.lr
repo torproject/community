@@ -85,7 +85,7 @@ rcctl start tor
 ---
 html: two-columns-page.html
 ---
-key: 2
+key: 7
 ---
 section: Middle/Guard relay
 ---
