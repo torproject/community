@@ -42,7 +42,7 @@ echo "tor=YES" >> /etc/rc.conf
 ---
 html: two-columns-page.html
 ---
-key: 2
+key: 6
 ---
 section: Middle/Guard relay
 ---
