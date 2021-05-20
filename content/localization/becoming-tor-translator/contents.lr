@@ -44,10 +44,17 @@ In order to begin contributing you will have to sign up with Transifex. Here's a
 <img style="display:block" src="/static/images/localization/tr4.png" alt="Choose Language">
 1. A notification will now show up on the top of the page like so:
 <img style="display:block" src="/static/images/localization/tr5.png" alt="Request Submitted">
-Before translating, please read through the Tor Project page on the [Localization Lab Wiki](https://wiki.localizationlab.org/index.php/Tor). The page includes guidelines, resources, and priorities that will help you make the most out of your contribution.
+1. Before translating, please read through the Tor Project page on the [Localization Lab Wiki](https://wiki.localizationlab.org/index.php/Tor).
+1. Please consult the Tor L10n wikipages for [translators](https://gitlab.torproject.org/tpo/community/l10n/-/wikis/Localization-for-translators) and [reviewers](https://gitlab.torproject.org/tpo/community/l10n/-/wikis/Localization-for-reviewers).
+   The page includes guidelines, resources, and priorities that will help you make the most out of your contribution.
+
 After your membership is approved, you're ready to begin.
 
 #IRC channel
 
 We hang out in the #tor-l10n channel on the oftc IRC network.
 Please [join us to talk about localization](https://support.torproject.org/get-in-touch/#irc-help) (l10n)!
+
+# [Tor Monthly Localization Hangouts](https://gitlab.torproject.org/tpo/community/l10n/-/wikis/Monthly-Tor-Localization-Hangouts)
+
+We meet on our irc channel every 3rd Friday of the month. Come over to hang out with other translators, ask questions, or simply translate together.
