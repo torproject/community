@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-19 15:45+CET\n"
+"POT-Creation-Date: 2021-05-20 18:03+CET\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -3978,22 +3978,23 @@ msgstr ""
 #: https://community.torproject.org/localization/current-status/
 #: (content/localization/current-status/contents+en.lr:page.body)
 msgid ""
+"We have statistics about some of our translations available in [tor patches "
+"website](https://torpat.ch/)"
+msgstr ""
+
+#: https://community.torproject.org/localization/current-status/
+#: (content/localization/current-status/contents+en.lr:page.body)
+msgid ""
+"To learn more about the different files in translation, please consult [our "
+"wiki section for translators](https://gitlab.torproject.org/tpo/community/"
+"l10n/-/wikis/Localization-for-translators)"
+msgstr ""
+
+#: https://community.torproject.org/localization/current-status/
+#: (content/localization/current-status/contents+en.lr:page.body)
+msgid ""
 "You can see the open tickets about translation issues on our [bugtracker]"
 "(https://gitlab.torproject.org/tpo/community/l10n/-/issues)."
-msgstr ""
-
-#: https://community.torproject.org/localization/current-status/
-#: (content/localization/current-status/contents+en.lr:page.body)
-msgid ""
-"Our documentation is very important for users around the world to be able to "
-"use Tor and Tor Browser:"
-msgstr ""
-
-#: https://community.torproject.org/localization/current-status/
-#: (content/localization/current-status/contents+en.lr:page.body)
-msgid ""
-"This includes the Tor Browser User Manual, the Support portal, the Tor "
-"Project website and the Community portal."
 msgstr ""
 
 #: https://community.torproject.org/localization/becoming-tor-translator/
@@ -4143,10 +4144,24 @@ msgstr ""
 #: https://community.torproject.org/localization/becoming-tor-translator/
 #: (content/localization/becoming-tor-translator/contents+en.lr:page.body)
 msgid ""
-"Before translating, please read through the Tor Project page on the "
-"[Localization Lab Wiki](https://wiki.localizationlab.org/index.php/Tor). The "
-"page includes guidelines, resources, and priorities that will help you make "
-"the most out of your contribution."
+"1. Before translating, please read through the Tor Project page on the "
+"[Localization Lab Wiki](https://wiki.localizationlab.org/index.php/Tor)."
+msgstr ""
+
+#: https://community.torproject.org/localization/becoming-tor-translator/
+#: (content/localization/becoming-tor-translator/contents+en.lr:page.body)
+msgid ""
+"1. Please consult the Tor L10n wikipages for [translators](https://gitlab."
+"torproject.org/tpo/community/l10n/-/wikis/Localization-for-translators) and "
+"[reviewers](https://gitlab.torproject.org/tpo/community/l10n/-/wikis/"
+"Localization-for-reviewers)."
+msgstr ""
+
+#: https://community.torproject.org/localization/becoming-tor-translator/
+#: (content/localization/becoming-tor-translator/contents+en.lr:page.body)
+msgid ""
+"The page includes guidelines, resources, and priorities that will help you "
+"make the most out of your contribution."
 msgstr ""
 
 #: https://community.torproject.org/localization/becoming-tor-translator/
@@ -4169,6 +4184,20 @@ msgstr ""
 msgid ""
 "Please [join us to talk about localization](https://support.torproject.org/"
 "get-in-touch/#irc-help) (l10n)!"
+msgstr ""
+
+#: https://community.torproject.org/localization/becoming-tor-translator/
+#: (content/localization/becoming-tor-translator/contents+en.lr:page.body)
+msgid ""
+"# [Tor Monthly Localization Hangouts](https://gitlab.torproject.org/tpo/"
+"community/l10n/-/wikis/Monthly-Tor-Localization-Hangouts)"
+msgstr ""
+
+#: https://community.torproject.org/localization/becoming-tor-translator/
+#: (content/localization/becoming-tor-translator/contents+en.lr:page.body)
+msgid ""
+"We meet on our irc channel every 3rd Friday of the month. Come over to hang "
+"out with other translators, ask questions, or simply translate together."
 msgstr ""
 
 #: https://community.torproject.org/localization/pick-a-project/
