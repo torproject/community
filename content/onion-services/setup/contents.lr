@@ -25,7 +25,7 @@ For the technical details of how the onion service protocol works, see our onion
 ## Step 0: Get a working Tor
 
 As part of this guide, we will assume you have a functional Tor in your machine.
-To set up Tor, please follow the [Tor installation guide](https://community.torproject.org/onion-services/setup/install/).
+To set up Tor, please follow the [Tor installation guide](./install/).
 Tor should be up and running correctly for this guide to work.
 You should also know where Tor's configuration files are.
 
@@ -109,7 +109,7 @@ If it doesn't work, look in your logs for some hints, and keep playing with it u
 
 It is important to note that an onion service configured like this will be readable by anybody who knows or discovers the address.
 You can make onion services require authentication, and only users with a private key will access the service.
-Read more about [Client authorization](https://community.torproject.org/onion-services/advanced/client-auth/) documentation.
+Read more about [Client authorization](../advanced/client-auth/) documentation.
 
 ## (Optional) Step 5: Running multiple onion services
 
@@ -157,11 +157,11 @@ Some onion site operators may not want to disclose their onion service location.
 Therefore, you need to configure your web server so it doesn't give away any information about you, your computer, or your location.
 That is not an easy task, and these resources will help on how to make this possible:
 
- * [Operational Security](https://community.torproject.org/onion-services/advanced/opsec/).
+ * [Operational Security](../advanced/opsec/).
  * [Onion services best practices](https://riseup.net/en/security/network-security/tor/onionservices-best-practices) by Riseup Collective.
  * [OnionScan](https://onionscan.org/) is a tool to check if your onion site is leaking information that could compromise your anonymity like your server IP address.
 
 Finally, if you plan to keep your service available for a long time, you might want to make a backup copy of the `private_key` file somewhere.
 
-Now that you have an onion site working, you may want to deploy [Onion-Location](https://community.torproject.org/onion-services/advanced/onion-location/), or use tools like Docker, [Heroku](https://gitlab.torproject.org/hiro/onions-on-heroku), [Terraform](https://gitlab.torproject.org/hiro/terraform-onions), [Ansible](https://galaxy.ansible.com/systemli/onion) or [stem](https://stem.torproject.org/tutorials/over_the_river.html) to automate the management of your onion services.
+Now that you have an onion site working, you may want to deploy [Onion-Location](../advanced/onion-location/), or use tools like Docker, [Heroku](https://gitlab.torproject.org/hiro/onions-on-heroku), [Terraform](https://gitlab.torproject.org/hiro/terraform-onions), [Ansible](https://galaxy.ansible.com/systemli/onion) or [stem](https://stem.torproject.org/tutorials/over_the_river.html) to automate the management of your onion services.
 If you have a static website, but never installed Nginx or Apache, another project to try is [OnionShare](https://onionshare.org), where running an onion site will be easier: guided with a graphic interface and with minimal configuration.

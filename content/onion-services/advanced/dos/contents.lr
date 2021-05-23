@@ -32,7 +32,7 @@ Onionbalance is available for [v3 onion services](https://blog.torproject.org/co
 
 If you have users you trust, give them dedicated onion service and client authorization credentials so that it can always be available.
 For users you don't trust, split them into multiple addresses.
-That said, having too many onion addresses is actually bad for your security (because of the use of many guard nodes), so try to use [client authorization](https://community.torproject.org/onion-services/advanced/client-auth) when possible.
+That said, having too many onion addresses is actually bad for your security (because of the use of many guard nodes), so try to use [client authorization](../client-auth) when possible.
 
 ### Captchas and cookies
 

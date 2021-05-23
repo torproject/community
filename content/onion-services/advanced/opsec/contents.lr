@@ -20,7 +20,7 @@ Onion services operators need to practice proper [operational security](https://
 For some security suggestions please make sure you read over Riseup's ["Tor Hidden (Onion) Services Best Practices" document](https://riseup.net/en/security/network-security/tor/onionservices-best-practices).
 Also, here are some more anonymity issues you should keep in mind:
 
- - As mentioned [here](https://community.torproject.org/onion-services/setup/), be careful of letting your web server reveal identifying information about you, your computer, or your location.
+ - As mentioned [here](../../setup/), be careful of letting your web server reveal identifying information about you, your computer, or your location.
 For example, readers can probably determine whether it's thttpd or Apache, and learn something about your operating system.
  - If your computer isn't online all the time, your onion service won't be either.
 This leaks information to an observant adversary.
