@@ -1,0 +1,24 @@
+_model: page
+---
+section: training
+---
+section_id: training
+---
+color: primary
+---
+_template: layout.html
+---
+title: Community Resources
+---
+subtitle: We rely on our community for sharing the impact of our technology to the real frontliners.
+
+cta: Check out the community resources
+---
+key: 4
+---
+html: community-resources.html
+---
+body:
+
+##Community Resources
+Do you teach your community about using Tor? These training resources are for you.

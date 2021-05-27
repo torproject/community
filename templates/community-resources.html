@@ -1,0 +1,28 @@
+<div class="row pt-5">
+  {% include 'sidenav.html' %}
+  <div class="col-sm-12 col-xs-12  ml-sm-auto col-md-9 col-lg-9 {{ bag('alternatives', this.alt, 'order') }}">
+    {{ this.body }}
+    <div class="row">
+
+        {% for id, item in bag('community-resources').items() %}
+        <div class="col-md-3 col-sm-12 col-xl-3 my-3">
+
+          <div class="card h-100">
+            <div class="card-header bg-white border-0">
+                <picture>
+                  <img src="{{ item.cover }}" class="" alt="{{ item.name }}">
+                </picture>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title human-name">{{ item.name }}</h5>
+              <p>{{ item.description }}</p>
+              <a href="{{ item.link }}" title="{{ item.name }}">Label</a>
+              <p><i>{{ item.languages }}</i></p>
+            </div>
+          </div>
+      </div>
+      {% endfor %}
+
+    </div>
+  </div>
+</div>
