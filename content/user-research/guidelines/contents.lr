@@ -20,45 +20,58 @@ Here you will find helpful guidelines that are designed to make your research ea
 First of all, make sure you read the [Tor Code of Conduct](https://gitweb.torproject.org/community/policies.git/tree/code_of_conduct.txt).
 
 ## Respect privacy
+
 At Tor, we don't collect invasive data about user behavior, only the data necessary to improve our services. We test our software, not people.
 
 ## Be a good listener and open-minded
+
 Listening is a skill that helps build bridges. We believe this doesn't just apply to our services, but our communities too.
 
 ## Learn
-During the training session we listen to the stories people tell us about their lives, the laws of the jurisdictions they live in, and the difficulties they are going through. This way, we can learn how to facilitate better access to information through Tor. By listening, we learn.
+
+During the training session we listen to the stories people tell us about their lives, the laws of the jurisdictions they live in, and the difficulties they are going through.
+This way, we can learn how to facilitate better access to information through Tor. By listening, we learn.
 
 ## Describe and Ask for consent
-We don't keep or publish the names or contact details of research participants, and any time you're going to handle participant data (be it via impressions, survey submissions, or other records) you should ask for their consent beforehand - either on the record or in writing using the consent form.
+
+We don't keep or publish the names or contact details of research participants, and any time you're going to handle participant data (be it via impressions, survey submissions, or other records) you should ask for their consent in writing using the [consent form](https://gitlab.torproject.org/tpo/ux/research/-/blob/master/scripts%20and%20activities/2021/consent_form.md) beforehand.
 
 ## Coordinate with the trainer and the Tor UX team
 
-You don't have to do this alone - we can support you with meetings, guides, and mentorship too if you wish. Join us at any time on our IRC channel #tor-ux or our [mailing list](https://lists.torproject.org/cgi-bin/mailman/listinfo/ux).
+You don't have to do this alone - we can support you with meetings, guides, and mentorship too if you wish.
+Join us at any time on our IRC channel #tor-ux or our [mailing list](https://lists.torproject.org/cgi-bin/mailman/listinfo/ux).
 
-**We strongly recommend that you run through the plan for your session with the trainer**. Your agenda must be aligned and leave sufficient time to run your interviews or exercise at the end of the training session.
+**We strongly recommend that you run through the plan for your session with the trainer**.
+Your agenda must be aligned and leave sufficient time to run your interviews or exercise at the end of the training session.
 
 When the training commences, be sure to let everyone know your role and why you're taking notes during the session.
 
 ## Get prepared!
 
-Before your session, read and print the [Demographics questionnaire](https://gitlab.torproject.org/tpo/ux/research/-/blob/master/scripts%20and%20activities/2020/user_demographics-en.md) and [User Research Reporting](https://gitlab.torproject.org/tpo/ux/research/-/blob/master/community/user_research_reporting.md) templates. You'll also need to bring your chosen usability test and its accompanying methodology, if applicable.
+Before your session, read and print the [Demographics questionnaire](https://gitlab.torproject.org/tpo/ux/research/-/blob/master/scripts%20and%20activities/2020/user_demographics-en.md) and [User Research Reporting](https://gitlab.torproject.org/tpo/ux/research/-/blob/master/community/user_research_reporting.md) templates.
+You'll also need to bring your chosen usability test and its accompanying methodology, if applicable.
 
 It's easier to have this material printed and in hand, however if you prefer you can use digital copies instead.
 
-Keep in mind that you might not have Internet access at the venue. If you're planning to install any Tor software during your exercise or interviews you may need to download it before the session.
+Keep in mind that you might not have Internet access at the venue.
+If you're planning to install any Tor software during your exercise or interviews you may need to download it before the session.
 
 ## The interview process
 
-Thank the participant for their willingness to participate and explain that we are testing the product, not them. The interview should not last longer than 20 minutes. You can record if you wish, but you can also take notes on the printed material you will carry with you (or on your computer).
+Thank the participant for their willingness to participate and explain that we are testing the product, not them.
+The interview should not last longer than 20 minutes.
+You can take notes on the printed material you will carry with you, or on your computer.
 
-While we're not interested in the specific charactersitics of individual participants, it's important for us to be able to determine the reach of our training sessions, usability workshops and interviews. Distribute the demographics questionnaire among the participants, and help answer their questions about how to fill it in if they have any.
+While we're not interested in the specific charactersitics of individual participants, it's important for us to be able to determine the reach of our training sessions, usability workshops and interviews.
+Distribute the demographics questionnaire among the participants, and help answer their questions about how to fill it in if they have any.
 
 Don't forget to thank the participant again at the end of the interview.
 
 ## Report to Tor UX team
 
 Before ending the session, coordinate with the trainer to solicit feedback from the participants.
-The two of you should work together to hand out post-its to the audience. Give each participant a different color of post-it per question and ask them to fill it in with what they think about: 1. the software, service or skill they just learned; 2. the Tor Project; and 3. Tor in general.
+The two of you should work together to hand out post-its to the audience.
+Give each participant a different color of post-it per question and ask them to fill it in with what they think about: 1. the software, service or skill they just learned; 2. the Tor Project; and 3. Tor in general.
 Their feedback can also take the form of questions - keep in mind that any feedback is a good feedback.
 
 It's very important for us to hear back from you too.
