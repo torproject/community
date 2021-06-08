@@ -16,9 +16,24 @@ cta: Check out our resources
 ---
 key: 2
 ---
-html: resources.html
+html: community-resources.html
 ---
 body:
 
-##Resources
+## Resources
 Do you teach your community about using Tor? These training resources are for you.
+
+### How to contribute
+
+Do you know of or have any Tor training materials (slides, guides, fanzines, videos, and other formats) that should be part of this training section?
+
+If you know or have training materials about Tor, please send an email to training at torproject.org with:
+ - Title and description
+ - Author and author contact information
+ - Link to the resource.
+ - Creative commons or similar license.
+
+Please note that we will evaluate if:
+ - The material is being updated and maintained.
+ - Do no harm: demystifies the "dark/deep web" and training materials that will not put people at risk.
+ - Follow the Tor Project's [Code of Conduct](https://gitweb.torproject.org/community/policies.git/tree/code_of_conduct.txt), [Statement of Values](https://gitweb.torproject.org/community/policies.git/tree/statement_of_values.txt), and [Social Contract](https://gitweb.torproject.org/community/policies.git/tree/social_contract.txt).
