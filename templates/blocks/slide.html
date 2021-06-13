@@ -9,6 +9,22 @@
       <h5>{{ this.author }}</h5>
     {% endif %}
   </section>
+{% elif this.slide_layout == "image_left" %}
+  <section class="slide-image-left" {% if this.background != "white" %} data-background-color="{{ this.background }}" {% else %} data-background-color="white" {% endif %} >
+    <h2>{{ this.title }}</h2>
+    {% if this.image %}
+        <div style="display: inline-block; vertical-align: top; width: 46%; text-align: center;"><img data-src="{{ this.image }}"></div>
+    {% endif %}
+    {{ this.description }}
+  </section>
+{% elif this.slide_layout == "image_right" %}
+  <section class="slide-image-right" {% if this.background != "white" %} data-background-color="{{ this.background }}" {% else %} data-background-color="white" {% endif %} >
+    <h2>{{ this.title }}</h2>
+    {{ this.description }}
+    {% if this.image %}
+        <div style="display: inline-block; vertical-align: top; width: 46%; text-align: center;"><img data-src="{{ this.image }}"></div>
+    {% endif %}
+  </section>
 {% else %}
   <section {% if this.background != "white" %} data-background-color="{{ this.background }}" {% else %} data-background-color="white" {% endif %} >
     <h2>{{ this.title }}</h2>
