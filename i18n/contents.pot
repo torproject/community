@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-20 18:03+CET\n"
+"POT-Creation-Date: 2021-06-16 15:58+CET\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -475,15 +475,15 @@ msgstr ""
 #: https://community.torproject.org/user-research/guidelines/
 #: (content/user-research/guidelines/contents+en.lr:page.body)
 msgid ""
-"Congrats! You're going to run your first User Research for Tor - and we are "
-"delighted to have you on board!"
+"Congrats! You're going to run your first User Research session for Tor – and "
+"we're delighted to have you on board!"
 msgstr ""
 
 #: https://community.torproject.org/user-research/guidelines/
 #: (content/user-research/guidelines/contents+en.lr:page.body)
 msgid ""
-"In this place, you will find helpful guidelines that are designed to make "
-"your research easier for you and your audience."
+"Here you will find helpful guidelines that are designed to make your "
+"research easier for both you and your audience."
 msgstr ""
 
 #: https://community.torproject.org/user-research/guidelines/
@@ -501,9 +501,8 @@ msgstr ""
 #: https://community.torproject.org/user-research/guidelines/
 #: (content/user-research/guidelines/contents+en.lr:page.body)
 msgid ""
-"At Tor, we collect only necessary data to improve our services; we don't "
-"collect invasive data about user behaviors - we test our software, not "
-"people."
+"At Tor, we don't collect invasive data about user behavior, only the data "
+"necessary to improve our services. We test our software, not people."
 msgstr ""
 
 #: https://community.torproject.org/user-research/guidelines/
@@ -514,10 +513,8 @@ msgstr ""
 #: https://community.torproject.org/user-research/guidelines/
 #: (content/user-research/guidelines/contents+en.lr:page.body)
 msgid ""
-"Listening is a skill to build bridges. In Tor, we want people to build "
-"bridges, not walls - and we believe this is not just for our services, but "
-"also for our communities. Get in here to read some suggestions about being a "
-"better listener and make a great research experience. <link>"
+"Listening is a skill that helps build bridges. We believe this doesn't just "
+"apply to our services, but our communities too."
 msgstr ""
 
 #: https://community.torproject.org/user-research/guidelines/
@@ -528,11 +525,16 @@ msgstr ""
 #: https://community.torproject.org/user-research/guidelines/
 #: (content/user-research/guidelines/contents+en.lr:page.body)
 msgid ""
-"When we are in Tor training, we listen to the stories people tell us about "
-"their context, about the laws of the Internet, and the difficulties they are "
-"going through. This is how we learn how we can help and create new "
-"mechanisms to facilitate access to information through Tor products. When we "
-"listen, we do research, we learn."
+"During the training session we listen to the stories people tell us about "
+"their lives, the laws of the jurisdictions they live in, and the "
+"difficulties they are going through."
+msgstr ""
+
+#: https://community.torproject.org/user-research/guidelines/
+#: (content/user-research/guidelines/contents+en.lr:page.body)
+msgid ""
+"This way, we can learn how to facilitate better access to information "
+"through Tor. By listening, we learn."
 msgstr ""
 
 #: https://community.torproject.org/user-research/guidelines/
@@ -543,60 +545,12 @@ msgstr ""
 #: https://community.torproject.org/user-research/guidelines/
 #: (content/user-research/guidelines/contents+en.lr:page.body)
 msgid ""
-"We don't collect names or contact details of interview participants, and any "
-"time you're going to receive impressions, surveys, or records, you should "
-"ask for their consent to participate - this should be recorded or registered "
-"in the form."
-msgstr ""
-
-#: https://community.torproject.org/user-research/guidelines/
-#: (content/user-research/guidelines/contents+en.lr:page.body)
-msgid ""
-"We'd love to read about your experiences during the training, product "
-"testing, and interviews. There are a few ways to do this:"
-msgstr ""
-
-#: https://community.torproject.org/user-research/guidelines/
-#: (content/user-research/guidelines/contents+en.lr:page.body)
-msgid "* Scenario: describe the process of the test you ran."
-msgstr ""
-
-#: https://community.torproject.org/user-research/guidelines/
-#: (content/user-research/guidelines/contents+en.lr:page.body)
-msgid ""
-"* Demographics: While we are not interested in specific characteristics of "
-"our audience, or binary attributes, we must know the total reach of your Tor "
-"training. You should take [this material]() with you on the day of your "
-"research, distribute it among participants, and answer their questions about "
-"how to fill it in if they have any."
-msgstr ""
-
-#: https://community.torproject.org/user-research/guidelines/
-#: (content/user-research/guidelines/contents+en.lr:page.body)
-msgid ""
-"* Interview Process: Thank the participant for their willingness to "
-"participate in this process and explain that we are testing the product, not "
-"them."
-msgstr ""
-
-#: https://community.torproject.org/user-research/guidelines/
-#: (content/user-research/guidelines/contents+en.lr:page.body)
-msgid ""
-"The interview should not last longer than 20 minutes, you can record if you "
-"wish, but you can also take notes on the printed material you will carry "
-"with you (or on your computer)."
-msgstr ""
-
-#: https://community.torproject.org/user-research/guidelines/
-#: (content/user-research/guidelines/contents+en.lr:page.body)
-msgid "Thank the participant again and end the interview."
-msgstr ""
-
-#: https://community.torproject.org/user-research/guidelines/
-#: (content/user-research/guidelines/contents+en.lr:page.body)
-msgid ""
-"Send us the result - you don't have to write a report, we can do this data "
-"analysis with the material you collected."
+"We don't keep or publish the names or contact details of research "
+"participants, and any time you're going to handle participant data (be it "
+"via impressions, survey submissions, or other records) you should ask for "
+"their consent in writing using the [consent form](https://gitlab.torproject."
+"org/tpo/ux/research/-/blob/master/scripts%20and%20activities/2021/"
+"consent_form.md) beforehand."
 msgstr ""
 
 #: https://community.torproject.org/user-research/guidelines/
@@ -607,32 +561,36 @@ msgstr ""
 #: https://community.torproject.org/user-research/guidelines/
 #: (content/user-research/guidelines/contents+en.lr:page.body)
 msgid ""
-"You're not doing all this work alone - we will support you with meetings, "
-"guides, and mentorship if you want. You can join us at any time on our IRC "
-"channel #tor-ux and our [mailing list](https://lists.torproject.org/cgi-bin/"
-"mailman/listinfo/ux)."
+"You don't have to do this alone - we can support you with meetings, guides, "
+"and mentorship too if you wish."
 msgstr ""
 
 #: https://community.torproject.org/user-research/guidelines/
 #: (content/user-research/guidelines/contents+en.lr:page.body)
 msgid ""
-"You must be aligned about the agenda and time to run interviews (if that is "
-"the case) during the end of the training. **We strongly recommend that you "
-"go through the program of the exercise with the trainer**."
+"Join us at any time on our IRC channel #tor-ux or our [mailing list](https://"
+"lists.torproject.org/cgi-bin/mailman/listinfo/ux)."
 msgstr ""
 
 #: https://community.torproject.org/user-research/guidelines/
 #: (content/user-research/guidelines/contents+en.lr:page.body)
 msgid ""
-"Also, we want you two to coordinate feedback together - both for you and for "
-"your audience."
+"**We strongly recommend that you run through the plan for your session with "
+"the trainer**."
 msgstr ""
 
 #: https://community.torproject.org/user-research/guidelines/
 #: (content/user-research/guidelines/contents+en.lr:page.body)
 msgid ""
-"At the beginning of the training, be sure to let everyone know what is your "
-"role there and why you're taking notes on the practice."
+"Your agenda must be aligned and leave sufficient time to run your interviews "
+"or exercise at the end of the training session."
+msgstr ""
+
+#: https://community.torproject.org/user-research/guidelines/
+#: (content/user-research/guidelines/contents+en.lr:page.body)
+msgid ""
+"When the training commences, be sure to let everyone know your role and why "
+"you're taking notes during the session."
 msgstr ""
 
 #: https://community.torproject.org/user-research/guidelines/
@@ -643,38 +601,82 @@ msgstr ""
 #: https://community.torproject.org/user-research/guidelines/
 #: (content/user-research/guidelines/contents+en.lr:page.body)
 msgid ""
-"Print and bring with you the material that you will need to run the research "
-"- that will probably be something like:"
-msgstr ""
-
-#: https://community.torproject.org/user-research/guidelines/
-#: (content/user-research/guidelines/contents+en.lr:page.body)
-msgid "* Demographics"
-msgstr ""
-
-#: https://community.torproject.org/user-research/guidelines/
-#: (content/user-research/guidelines/contents+en.lr:page.body)
-msgid "* Usability test"
-msgstr ""
-
-#: https://community.torproject.org/user-research/guidelines/
-#: (content/user-research/guidelines/contents+en.lr:page.body)
-msgid "* Usability methodology"
+"Before your session, read and print the [Demographics questionnaire](https://"
+"gitlab.torproject.org/tpo/ux/research/-/blob/master/scripts%20and"
+"%20activities/2020/user_demographics-en.md) and [User Research Reporting]"
+"(https://gitlab.torproject.org/tpo/ux/research/-/blob/master/community/"
+"user_research_reporting.md) templates."
 msgstr ""
 
 #: https://community.torproject.org/user-research/guidelines/
 #: (content/user-research/guidelines/contents+en.lr:page.body)
 msgid ""
-"It is easier to have this material printed and in hand, but if you prefer, "
-"you can also type it on your computer."
+"You'll also need to bring your chosen usability test and its accompanying "
+"methodology, if applicable."
 msgstr ""
 
 #: https://community.torproject.org/user-research/guidelines/
 #: (content/user-research/guidelines/contents+en.lr:page.body)
 msgid ""
-"Keep in mind that you might not have Internet access at the venue, so if "
-"you're going to install a Tor feature with someone during the interview, you "
-"may need to have it downloaded before the training."
+"It's easier to have this material printed and in hand, however if you prefer "
+"you can use digital copies instead."
+msgstr ""
+
+#: https://community.torproject.org/user-research/guidelines/
+#: (content/user-research/guidelines/contents+en.lr:page.body)
+msgid "Keep in mind that you might not have Internet access at the venue."
+msgstr ""
+
+#: https://community.torproject.org/user-research/guidelines/
+#: (content/user-research/guidelines/contents+en.lr:page.body)
+msgid ""
+"If you're planning to install any Tor software during your exercise or "
+"interviews you may need to download it before the session."
+msgstr ""
+
+#: https://community.torproject.org/user-research/guidelines/
+#: (content/user-research/guidelines/contents+en.lr:page.body)
+msgid "## The interview process"
+msgstr ""
+
+#: https://community.torproject.org/user-research/guidelines/
+#: (content/user-research/guidelines/contents+en.lr:page.body)
+msgid ""
+"Thank the participant for their willingness to participate and explain that "
+"we are testing the product, not them."
+msgstr ""
+
+#: https://community.torproject.org/user-research/guidelines/
+#: (content/user-research/guidelines/contents+en.lr:page.body)
+msgid "The interview should not last longer than 20 minutes."
+msgstr ""
+
+#: https://community.torproject.org/user-research/guidelines/
+#: (content/user-research/guidelines/contents+en.lr:page.body)
+msgid ""
+"You can take notes on the printed material you will carry with you, or on "
+"your computer."
+msgstr ""
+
+#: https://community.torproject.org/user-research/guidelines/
+#: (content/user-research/guidelines/contents+en.lr:page.body)
+msgid ""
+"While we're not interested in the specific charactersitics of individual "
+"participants, it's important for us to be able to determine the reach of our "
+"training sessions, usability workshops and interviews."
+msgstr ""
+
+#: https://community.torproject.org/user-research/guidelines/
+#: (content/user-research/guidelines/contents+en.lr:page.body)
+msgid ""
+"Distribute the demographics questionnaire among the participants, and help "
+"answer their questions about how to fill it in if they have any."
+msgstr ""
+
+#: https://community.torproject.org/user-research/guidelines/
+#: (content/user-research/guidelines/contents+en.lr:page.body)
+msgid ""
+"Don't forget to thank the participant again at the end of the interview."
 msgstr ""
 
 #: https://community.torproject.org/user-research/guidelines/
@@ -684,62 +686,61 @@ msgstr ""
 
 #: https://community.torproject.org/user-research/guidelines/
 #: (content/user-research/guidelines/contents+en.lr:page.body)
-msgid "Before ending the training, coordinate the feedback with the trainer."
+msgid ""
+"Before ending the session, coordinate with the trainer to solicit feedback "
+"from the participants."
 msgstr ""
 
 #: https://community.torproject.org/user-research/guidelines/
 #: (content/user-research/guidelines/contents+en.lr:page.body)
 msgid ""
-"The two of you should work together to hand out post-its for the audience, "
-"you can give each participant post-it of a different color per question and "
-"ask them to fill it with what they think about: 1. the service they just "
-"learned; 2. Tor project; and 3. Tor in general."
+"The two of you should work together to hand out post-its to the audience."
 msgstr ""
 
 #: https://community.torproject.org/user-research/guidelines/
 #: (content/user-research/guidelines/contents+en.lr:page.body)
 msgid ""
-"It can also be questions - keep in mind that any feedback is a good feedback."
-msgstr ""
-
-#: https://community.torproject.org/user-research/guidelines/
-#: (content/user-research/guidelines/contents+en.lr:page.body)
-msgid "It is very important for us to hear back from you."
-msgstr ""
-
-#: https://community.torproject.org/user-research/guidelines/
-#: (content/user-research/guidelines/contents+en.lr:page.body)
-msgid ""
-"We want to know how the training and the research was for you, how we can "
-"improve our support and also, if you want to keep running Tor User Research."
+"Give each participant a different color of post-it per question and ask them "
+"to fill it in with what they think about: 1. the software, service or skill "
+"they just learned; 2. the Tor Project; and 3. Tor in general."
 msgstr ""
 
 #: https://community.torproject.org/user-research/guidelines/
 #: (content/user-research/guidelines/contents+en.lr:page.body)
 msgid ""
-"We will ask you to fill a form at the end of the research, so we can get "
-"your address to send to you a researcher kit (t-shirt and stickers)."
+"Their feedback can also take the form of questions - keep in mind that any "
+"feedback is a good feedback."
 msgstr ""
 
 #: https://community.torproject.org/user-research/guidelines/
 #: (content/user-research/guidelines/contents+en.lr:page.body)
-msgid "We hope to hear back from you very soon!"
-msgstr ""
-
-#: https://community.torproject.org/user-research/guidelines/
-#: (content/user-research/guidelines/contents+en.lr:page.body)
-msgid ""
-"Before your session, read and print this material on [User Research "
-"Reporting](https://gitlab.torproject.org/tpo/ux/research/-/blob/master/"
-"community/user_research_reporting.md)."
+msgid "It's very important for us to hear back from you too."
 msgstr ""
 
 #: https://community.torproject.org/user-research/guidelines/
 #: (content/user-research/guidelines/contents+en.lr:page.body)
 msgid ""
-"If you don't think you'll have time to report in this format, we will "
-"happily accept your findings another way - for example, you can take "
-"pictures or send your 'raw' notes to us."
+"We want to know how the session was for you, how we can improve our support "
+"going forward, and if you plan to keep running user research for Tor in the "
+"future."
+msgstr ""
+
+#: https://community.torproject.org/user-research/guidelines/
+#: (content/user-research/guidelines/contents+en.lr:page.body)
+msgid ""
+"After your research is complete we'll ask you to fill a form with your "
+"address so we can send you a researcher kit too (including a t-shirt and "
+"stickers)."
+msgstr ""
+
+#: https://community.torproject.org/user-research/guidelines/
+#: (content/user-research/guidelines/contents+en.lr:page.body)
+msgid ""
+"If you don't think you'll have time to format your report using the [User "
+"Research Reporting template](https://gitlab.torproject.org/tpo/ux/research/-/"
+"blob/master/community/user_research_reporting.md), we will happily accept "
+"your findings another way - for example, you can take pictures or send us "
+"your raw notes."
 msgstr ""
 
 #: https://community.torproject.org/user-research/guidelines/
@@ -765,19 +766,24 @@ msgstr ""
 #: (content/user-research/guidelines/contents+en.lr:page.body)
 msgid ""
 "3. Create issues in the [Research repository](https://gitlab.torproject.org/"
-"tpo/ux/research/-/blob/master/README.md)."
+"tpo/ux/research/-/issues)."
 msgstr ""
 
 #: https://community.torproject.org/user-research/guidelines/
 #: (content/user-research/guidelines/contents+en.lr:page.body)
 msgid ""
-"4. UX team will discuss each issue and forward it to developers when "
-"necessary."
+"4. Allow the UX team time to discuss each issue and forward it to developers "
+"when necessary."
 msgstr ""
 
 #: https://community.torproject.org/user-research/guidelines/
 #: (content/user-research/guidelines/contents+en.lr:page.body)
 msgid "## Additional links"
+msgstr ""
+
+#: https://community.torproject.org/user-research/guidelines/
+#: (content/user-research/guidelines/contents+en.lr:page.body)
+msgid "From the Tor Project:"
 msgstr ""
 
 #: https://community.torproject.org/user-research/guidelines/
@@ -789,9 +795,7 @@ msgstr ""
 
 #: https://community.torproject.org/user-research/guidelines/
 #: (content/user-research/guidelines/contents+en.lr:page.body)
-msgid ""
-"There are plenty of documents online about how to run User Research, here "
-"you can find some of them:"
+msgid "From elsewhere on the web:"
 msgstr ""
 
 #: https://community.torproject.org/user-research/guidelines/
@@ -1105,6 +1109,16 @@ msgstr ""
 #: https://community.torproject.org/user-research/reports/
 #: (content/user-research/reports/contents+en.lr:page.body)
 msgid "| -------- | ----------- | --------- | --------- | ----- |"
+msgstr ""
+
+#: https://community.torproject.org/user-research/reports/
+#: (content/user-research/reports/contents+en.lr:page.body)
+msgid ""
+"| Snowflake User Survey | Survey | Online | Q121, Q221 | [View on Gitlab]"
+"(https://gitlab.torproject.org/tpo/ux/research/-/blob/master/reports/2021/"
+"public-snowflake-survey-report.pdf) · [Download PDF](https://gitlab."
+"torproject.org/tpo/ux/research/-/raw/master/reports/2021/public-snowflake-"
+"survey-report.pdf?inline=false) |"
 msgstr ""
 
 #: https://community.torproject.org/user-research/reports/
@@ -3951,8 +3965,6 @@ msgstr ""
 #: (content/localization/current-status/contents+en.lr:page.section)
 #: https://community.torproject.org/localization/becoming-tor-translator/
 #: (content/localization/becoming-tor-translator/contents+en.lr:page.section)
-#: https://community.torproject.org/localization/pick-a-project/
-#: (content/localization/pick-a-project/contents+en.lr:page.section)
 #: https://community.torproject.org/localization/translation-problem/
 #: (content/localization/translation-problem/contents+en.lr:page.section)
 msgid "localization"
@@ -4198,120 +4210,6 @@ msgstr ""
 msgid ""
 "We meet on our irc channel every 3rd Friday of the month. Come over to hang "
 "out with other translators, ask questions, or simply translate together."
-msgstr ""
-
-#: https://community.torproject.org/localization/pick-a-project/
-#: (content/localization/pick-a-project/contents+en.lr:page.title)
-msgid "Pick a project"
-msgstr ""
-
-#: https://community.torproject.org/localization/pick-a-project/
-#: (content/localization/pick-a-project/contents+en.lr:page.subtitle)
-msgid "How to find a project to contribute to"
-msgstr ""
-
-#: https://community.torproject.org/localization/pick-a-project/
-#: (content/localization/pick-a-project/contents+en.lr:page.body)
-msgid ""
-"We want our tools to be available and localized for anyone who wants to use "
-"them, and we appreciate your help doing so. To find out where your knowledge "
-"may be most helpful, take a look at the translation progress for the Tor "
-"ecosystem of tools so far:"
-msgstr ""
-
-#: https://community.torproject.org/localization/pick-a-project/
-#: (content/localization/pick-a-project/contents+en.lr:page.body)
-msgid ""
-"<img class=\"col-lg-6\" src=\"../../static/images/localization/stats.png\">"
-msgstr ""
-
-#: https://community.torproject.org/localization/pick-a-project/
-#: (content/localization/pick-a-project/contents+en.lr:page.body)
-msgid ""
-"Please consider [helping with translations](/localization/becoming-tor-"
-"translator/) in your native language, however don't start a new regional "
-"variant of your language if there is a more general language available (for "
-"example: contribute to the French translation, instead of starting Canadian "
-"French)."
-msgstr ""
-
-#: https://community.torproject.org/localization/pick-a-project/
-#: (content/localization/pick-a-project/contents+en.lr:page.body)
-msgid ""
-"This is due to the fact that each additional language requires more "
-"resources, including a set of committed translators and space on our servers."
-msgstr ""
-
-#: https://community.torproject.org/localization/pick-a-project/
-#: (content/localization/pick-a-project/contents+en.lr:page.body)
-msgid ""
-"There are many files to translate and keep up to date to maintain a language "
-"for the Tor Project. Moreover, once translated, there are always future "
-"updates and new pages needing translated too."
-msgstr ""
-
-#: https://community.torproject.org/localization/pick-a-project/
-#: (content/localization/pick-a-project/contents+en.lr:page.body)
-msgid ""
-"The more users that will benefit from a translation, the more scalable that "
-"translation becomes – as it will also benefit from the help of a larger "
-"number of volunteers keeping it up to date."
-msgstr ""
-
-#: https://community.torproject.org/localization/pick-a-project/
-#: (content/localization/pick-a-project/contents+en.lr:page.body)
-msgid ""
-"We also recommend forming a team for your language: this way, the content "
-"can be reviewed by at least one other person, producing translations that "
-"are of higher quality and are easier to maintain."
-msgstr ""
-
-#: https://community.torproject.org/localization/pick-a-project/
-#: (content/localization/pick-a-project/contents+en.lr:page.body)
-msgid ""
-"Although we would value your contribution to any of the projects above, our "
-"most critical needs are Tor Browser, the Tor Browser User Manual, and our "
-"Support portal:"
-msgstr ""
-
-#: https://community.torproject.org/localization/pick-a-project/
-#: (content/localization/pick-a-project/contents+en.lr:page.body)
-msgid ""
-"* Tor Browser is translated in many different Transifex resources, but you "
-"can see the [Tor Browser total strings translated per language](https://"
-"torpat.ch/locales) to see where help is needed."
-msgstr ""
-
-#: https://community.torproject.org/localization/pick-a-project/
-#: (content/localization/pick-a-project/contents+en.lr:page.body)
-msgid ""
-"* The Tor Browser User Manual is a very useful resource for new users that "
-"do not speak English, see [Tor Browser User Manual translation statistics]"
-"(https://torpat.ch/manual-locales) or [translate](https://www.transifex.com/"
-"otf/tor-project-support-community-portal/tbmanual-contentspot/) to help."
-msgstr ""
-
-#: https://community.torproject.org/localization/pick-a-project/
-#: (content/localization/pick-a-project/contents+en.lr:page.body)
-msgid ""
-"* The [Support portal](https://support.torproject.org/) is also a valuable "
-"resource for all Tor users, see [Tor Support portal translation statistics]"
-"(https://torpat.ch/support-locales) or [translate](https://www.transifex.com/"
-"otf/tor-project-support-community-portal/support-portal/) to help."
-msgstr ""
-
-#: https://community.torproject.org/localization/pick-a-project/
-#: (content/localization/pick-a-project/contents+en.lr:page.body)
-msgid "We are also translating this page, the Community portal:"
-msgstr ""
-
-#: https://community.torproject.org/localization/pick-a-project/
-#: (content/localization/pick-a-project/contents+en.lr:page.body)
-msgid ""
-"* The [Community portal](https://community.torproject.org/) is this website, "
-"where you can find ways to contribute to Tor. Help us [translate](https://"
-"www.transifex.com/otf/tor-project-support-community-portal/communitytpo-"
-"contentspot/) it."
 msgstr ""
 
 #: https://community.torproject.org/localization/translation-problem/
@@ -11153,6 +11051,15 @@ msgstr ""
 
 #: https://community.torproject.org/relay/community-resources/good-bad-isps/
 #: (content/relay/community-resources/good-bad-isps/contents+en.lr:page.body)
+msgid ""
+"| [Privex](https://www.privex.io/tor-exit-policy/) | AS210083 | Yes | Yes | "
+"No | All node types permitted in Sweden, relays/bridges permitted in other "
+"regions. Tor friendly hosting provider who runs 3 relays and an exit "
+"themselves. Accepts cryptocurrency. | 2021/06/09 |"
+msgstr ""
+
+#: https://community.torproject.org/relay/community-resources/good-bad-isps/
+#: (content/relay/community-resources/good-bad-isps/contents+en.lr:page.body)
 msgid "### Germany"
 msgstr ""
 
@@ -11768,6 +11675,14 @@ msgstr ""
 #: (content/relay/community-resources/good-bad-isps/contents+en.lr:page.body)
 msgid ""
 "| [PRQ](http://prq.se/?p=dedicated&intl=1) |  - | Yes | Yes | Yes | - | - |"
+msgstr ""
+
+#: https://community.torproject.org/relay/community-resources/good-bad-isps/
+#: (content/relay/community-resources/good-bad-isps/contents+en.lr:page.body)
+msgid ""
+"| [Privex](https://www.privex.io/tor-exit-policy/) | AS210083 | Yes | Yes | "
+"Yes | Tor friendly hosting provider who runs 3 relays and an exit "
+"themselves. Accepts cryptocurrency. | 2021/06/09 |"
 msgstr ""
 
 #: https://community.torproject.org/relay/community-resources/good-bad-isps/
