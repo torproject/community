@@ -80,6 +80,7 @@ For network diversity and stronger anonymity, you should avoid providers and cou
 |-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
 | [Creanova](http://creanova.org) | AS51765 | Yes | Yes | No | - | 12/19/2018 |
 | [TeliaSonera Finland](https://www.sonera.fi/) | AS1759 | Yes | Yes | No | - | 03/26/2016 |
+| [Privex](https://www.privex.io/tor-exit-policy/) | AS210083 | Yes | Yes | No | All node types permitted in Sweden, relays/bridges permitted in other regions. Tor friendly hosting provider whom run 3 relays and an exit themselves. Accepts cryptocurrency. | 2021/06/09 |
 
 
 ### Germany
@@ -90,6 +91,7 @@ For network diversity and stronger anonymity, you should avoid providers and cou
 | [EUServ](http://euserv.de) | AS35366 | Yes | Yes | Yes | "Relays only allowed on dedicated Servers Prime64 and Pro64, Exit nodes only allowed on Prime64 and Pro64 with Pro-Option, own subnet, RIPE entry along with publicly visible abuse and police contact." | 03/2021 |
 | [IPX-Server](https://www.ipx-server.de) | - | Yes | Yes |  - | - | - |
 | [Keyweb](https://www.keyweb.de) | AS31103 | Yes | Yes | Yes | "Everything that is in accordance with current jurisprudence is permitted on our servers." | 03/2021 |
+| [Privex](https://www.privex.io/tor-exit-policy/) | AS210083 | Yes | Yes | No | All node types permitted in Sweden, relays/bridges permitted in other regions. Tor friendly hosting provider whom run 3 relays and an exit themselves. Accepts cryptocurrency. | 2021/06/09 |
 | [Afterburst](http://afterburst.com) |  AS29761, AS8100  | - | Yes | No | - | - |
 | [myLoc Managed IT](https://myloc.de) | AS31010, AS24961 | Yes | Yes | No | - | 2018-10-25 |
 | [linevast](https://www.linevast.de) | AS201206 | No | No | No |  | 03/2021 |
@@ -241,6 +243,7 @@ For network diversity and stronger anonymity, you should avoid providers and cou
 | [HostHatch](https://hosthatch.com) | AS42708 | Yes | Yes | No | - | 2016/05 |
 | TeliaSonera | - | Yes | Yes | ? | TeliaSonera is also big in Sweden and deliver where other ISPs can't. | - |
 | [PRQ](http://prq.se/?p=dedicated&intl=1) |  - | Yes | Yes | Yes | - | - |
+| [Privex](https://www.privex.io/tor-exit-policy/) | AS210083 | Yes | Yes | Yes | Tor friendly hosting provider whom run 3 relays and an exit themselves. Accepts cryptocurrency. | 2021/06/09 |
 | [Portlane](http://www.portlane.com/) | - | Yes | Yes | Yes | Previously provided connectivity for ThePirateBay, OpenBitTorrent tracker et al.  Handles abuse according to "Swedish praxis". |  - |
 | [Yourserver](https://www.yourserver.se/) | - | Yes | Yes | ? | Support team will allow relay/exit but TOR Traffic is throttled to 5Mbps speed. If your Exit relay receive too much complaints, they will ask to you to stop or otherwise they will suspend. | 2015/03/06 |
 | [Svea Hosting](https://svea.net/) | AS41634 | Yes | Yes | Yes | They run an exit node themselves and write on their dedicated server page "It is perfect for [...] TOR Exit Nodes"  | 04/2021 |
