@@ -6,9 +6,9 @@ To clone the code use either of
 
 ```git clone https://git.torproject.org/project/web/community.git/```
 
-```torify git clone http://dccbbv6cooddgcrq.onion/project/web/community.git/``` 
+```torify git clone http://xtlfhaspqtkeeqxk6umggfbr3gyfznvf4jhrge2fujz53433i2fcs3id.onion/project/web/community.git/``` 
 
-or browse it [online](http://xtlfhaspqtkeeqxk6umggfbr3gyfznvf4jhrge2fujz53433i2fcs3id.onion/project/web/community.git).
+or browse it [online](http://xtlfhaspqtkeeqxk6umggfbr3gyfznvf4jhrge2fujz53433i2fcs3id.onion/project/web/community).
 
 ## How to report bugs or feedback 
 
