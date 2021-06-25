@@ -6,7 +6,7 @@ title: Bad relays
 ---
 body:
 
-Ran into a misconfigured, malicious, or suspicious relay while using Tor? Please let us know by sending email to bad-relays AT lists DOT torproject DOT org! Many bad relays are caught thanks to our wider community, so many thanks for all your help and vigilance!
+Ran into a misconfigured, malicious, or suspicious relay while using Tor? Please let us know by sending email to bad-relays AT lists DOT torproject DOT org! Many bad relays are caught thanks to our wider community, so many thanks for all your help and vigilance! The criteria for rejecting bad relays can be found in the [wiki](https://gitlab.torproject.org/tpo/network-health/team/-/wikis/Criteria-for-rejecting-bad-relays)
 
 ### What is a bad relay?
 
