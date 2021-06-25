@@ -23,9 +23,9 @@ A bad relay is one that either doesn't work properly or tampers with our users' 
 
 Also, if your relay is stolen or goes missing, please report it as well, so we can blocklist it in case whoever took it puts it back online.
 
-The following are currently permitted yet do have some discussion for prohibition (as such, they should not be reported at this time)...
+The following are currently permitted yet do have some discussion for prohibition (as such, they should not be reported at this time):
 
- * Only allowing plain-text traffic (for instance, just port 80). There's no good reason to disallow its encrypted counterpart (like port 443), making these relays highly suspect for sniffing traffic. See [context](https://www.google.com/search?site:torproject.org+80+443+6667) and [spec](https://gitweb.torproject.org/torspec.git/tree/dir-spec.txt#n1969).
+* Only allowing plain-text traffic (for instance, just port 80). There's no good reason to disallow its encrypted counterpart (like port 443), making these relays highly suspect for sniffing traffic. See [context](https://www.google.com/search?site:torproject.org+80+443+6667) and [spec](https://gitweb.torproject.org/torspec.git/tree/dir-spec.txt#n1969).
 
 ### How do I report a bad relay?
 
