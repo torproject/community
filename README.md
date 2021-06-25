@@ -8,7 +8,7 @@ To clone the code use either of
 
 ```torify git clone http://xtlfhaspqtkeeqxk6umggfbr3gyfznvf4jhrge2fujz53433i2fcs3id.onion/project/web/community.git/``` 
 
-or browse it [online](http://xtlfhaspqtkeeqxk6umggfbr3gyfznvf4jhrge2fujz53433i2fcs3id.onion/project/web/community).
+or browse it [online](http://gzgme7ov25seqjbphab4fkcph3jkobfwwpivt5kzbv3kqx2y2qttl4yd.onion/project/web/community).
 
 ## How to report bugs or feedback 
 
