@@ -1,6 +1,6 @@
 # Community portal
 
-This is the repository of Community portal. The current online version of this portal can be found at https://community.torproject.org or [Community Onion Service](http://3gldbgtv5e4god56.onion/).
+This is the repository of Community portal. The current online version of this portal can be found at https://community.torproject.org or [Community Onion Service](http://xmrhfasfg5suueegrnc4gsgyi2tyclcy5oz7f5drnrodmdtob6t2ioyd.onion/).
 
 To clone the code use either of 
 
@@ -8,7 +8,7 @@ To clone the code use either of
 
 ```torify git clone http://dccbbv6cooddgcrq.onion/project/web/community.git/``` 
 
-or browse it [online](http://gitweb.torproject.org/project/web/community.git).
+or browse it [online](http://xtlfhaspqtkeeqxk6umggfbr3gyfznvf4jhrge2fujz53433i2fcs3id.onion/project/web/community.git).
 
 ## How to report bugs or feedback 
 
