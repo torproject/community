@@ -23,7 +23,9 @@ When visiting a site over the onion services protocol, the Tor protocol prevents
 No certificate authority is required for this proof, because that name is the actual public key used to authenticate the underlying connection.
 
 As ".onion" is a [special top level domain name](https://tools.ietf.org/html/rfc7686), most Certificate Authorities don't have support for issuing X.509 certificates for onion sites.
-Right now, HTTPS certificates are only provided by DigiCert with an Extended Validation (EV) TLS certificate, which means a considerable cost for an organization.
+Right now, HTTPS certificates are only provided by 
+- [DigiCert](https://www.digicert.com/) with an Extended Validation (EV) TLS certificate, which means a considerable cost for an organization. 
+- [Harica](https://www.harica.gr) with Domain Validation (DV) TLS certificates.
 
 That said, there are some specific cases where you would need or want to have an HTTPS for your onion site.
 
