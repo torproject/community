@@ -75,7 +75,7 @@ Don't forget to change the `ORPort`, `ServerTransportListenAddr`, `ContactInfo`,
   If your bridge is behind a firewall or NAT, make sure to open both ports.
   You can use [our reachability test](https://bridges.torproject.org/scan/) to see if your obfs4 port is reachable from the Internet.
 
-### 4. Start tor
+### 4. Start Tor
 
 Open up the Command Prompt App. Change your directory with: `cd C:\Users\<user>\AppData\Roaming\tor\`. Type: `tor.exe -f torrc`.
 

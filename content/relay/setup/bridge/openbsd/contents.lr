@@ -11,9 +11,8 @@ key: 8
 body:
 
 ### 1. Install packages 
-```
-pkg_add tor obfs4proxy
-```
+
+`# pkg_add tor obfs4proxy`
 
 ### 2. Edit your Tor config file
 
@@ -60,17 +59,16 @@ Don't forget to change the `ORPort`, `ServerTransportListenAddr`, `ContactInfo`,
 
 ### 3. Create the tor log directory and give it the correct permissions:
 
-```
-mkdir /var/log/tor
-chown _tor /var/log/tor
-```
+`# mkdir /var/log/tor`
+
+`# chown _tor /var/log/tor`
 
 ### 4. Start the tor daemon and make sure it starts at boot:
 
-```
-rcctl enable tor
-rcctl start tor
-```
+`# rcctl enable tor`
+
+`# rcctl start tor`
+
 ### 5. Monitor your logs
 
 To confirm your bridge is running with no issues, you should see something like this  (`/var/log/tor/notices.log`): 

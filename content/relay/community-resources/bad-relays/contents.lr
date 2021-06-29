@@ -6,7 +6,9 @@ title: Bad relays
 ---
 body:
 
-Ran into a misconfigured, malicious, or suspicious relay while using Tor? Please let us know by sending email to bad-relays AT lists DOT torproject DOT org! Many bad relays are caught thanks to our wider community, so many thanks for all your help and vigilance!
+Ran into a misconfigured, malicious, or suspicious relay while using Tor? Please let us know by sending email to bad-relays AT lists DOT torproject DOT org!
+Many bad relays are caught thanks to our wider community, so many thanks for all your help and vigilance!
+The criteria for rejecting bad relays can be found in the [Network Health wiki](https://gitlab.torproject.org/tpo/network-health/team/-/wikis/Criteria-for-rejecting-bad-relays).
 
 ### What is a bad relay?
 
@@ -21,9 +23,9 @@ A bad relay is one that either doesn't work properly or tampers with our users' 
 
 Also, if your relay is stolen or goes missing, please report it as well, so we can blocklist it in case whoever took it puts it back online.
 
-The following are currently permitted yet do have some discussion for prohibition (as such, they should not be reported at this time)...
+The following are currently permitted yet do have some discussion for prohibition (as such, they should not be reported at this time):
 
- * Only allowing plain-text traffic (for instance, just port 80). There's no good reason to disallow its encrypted counterpart (like port 443), making these relays highly suspect for sniffing traffic. See [context](https://www.google.com/search?site:torproject.org+80+443+6667) and [spec](https://gitweb.torproject.org/torspec.git/tree/dir-spec.txt#n1969).
+* Only allowing plain-text traffic (for instance, just port 80). There's no good reason to disallow its encrypted counterpart (like port 443), making these relays highly suspect for sniffing traffic. See [context](https://www.google.com/search?site:torproject.org+80+443+6667) and [spec](https://gitweb.torproject.org/torspec.git/tree/dir-spec.txt#n1969).
 
 ### How do I report a bad relay?
 
@@ -58,8 +60,6 @@ In just about all cases we're unable to contact the operator to resolve the issu
 Yes. For our automated issue detection see [exitmap](http://www.cs.kau.se/philwint/spoiled_onions/) and [sybilhunter](https://gitweb.torproject.org/user/phw/sybilhunter.git/).
 
 Other monitors include [tortunnel](https://github.com/moxie0/tortunnel), [SoaT](https://gitweb.torproject.org/torflow.git/tree/NetworkScanners/ExitAuthority/README.ExitScanning), [torscanner](https://code.google.com/p/torscanner/), and DetecTor.
-
-
 ---
 html: two-columns-page.html
 ---

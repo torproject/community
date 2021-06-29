@@ -16,14 +16,17 @@ html: two-columns-page.html
 ---
 body:
 
-When visiting a site over HTTPS (HTTP over TLS), the TLS protocol prevents data in transit from being read or manipulated by man in the middle attacks, and an x.509 certificate obtained from a Certificate Authority (CA) is validates that the user is actually connecting to a server representing the domain name in the browser address bar.
+When visiting a site over HTTPS (HTTP over TLS), the TLS protocol prevents data in transit from being read or manipulated by man in the middle attacks, and an x.509 certificate obtained from a Certificate Authority (CA) validates that the user is actually connecting to a server representing the domain name in the browser address bar.
 Modern browsers indicate that a connection is insecure if not using TLS, and require that a TLS connection is authenticated by a CA-issued x.509 certificate.
 
 When visiting a site over the onion services protocol, the Tor protocol prevents data in transit from being read or manipulated by man in the middle attacks, and the onion service protocol validates that the user is connected to the domain name in the browser address bar.
-No certificate authority is required for this proof, because that name is the actual public key used to authenticate the underlying connection.
+No certificate authority is required for this proof, because the name of the service is the actual public key used to authenticate the underlying connection.
 
 As ".onion" is a [special top level domain name](https://tools.ietf.org/html/rfc7686), most Certificate Authorities don't have support for issuing X.509 certificates for onion sites.
-Right now, HTTPS certificates are only provided by DigiCert with an Extended Validation (EV) TLS certificate, which means a considerable cost for an organization.
+Right now, HTTPS certificates are only provided by:
+
+- [DigiCert](https://www.digicert.com/) with an Extended Validation (EV) TLS certificate, which means a considerable cost for an organization.
+- [HARICA](https://www.harica.gr) with Domain Validation (DV) TLS certificates.
 
 That said, there are some specific cases where you would need or want to have an HTTPS for your onion site.
 
@@ -34,23 +37,29 @@ Users would need to click and do a manual verification, and that would show that
 Alternatively, websites can provide other ways to verify their onion address using HTTPS, for example, linking their onion site address from an HTTPS-authenticated page, or using [Onion-Location](https://community.torproject.org/onion-services/advanced/onion-location/).
 
 2. Another topic of this discussion is user expectations and modern browsers.
-While there is extensive criticism regarding HTTPS and the CA trust model, the information security community has taught users to look for HTTPS when visiting a website as a synonym of secure connection and avoid HTTP connections.
-Tor Developers and UX team worked together to bring a new user experience for Tor Browser users, so when a user visits an onion site using HTTP [Tor Browser doesn't display a warning or error message](https://support.torproject.org/onionservices/onionservices-5/).
+While there is extensive criticism regarding HTTPS and the CA trust model, the information security community has taught users to look for HTTPS when visiting a website as a synonym of secure connection, and to avoid HTTP connections.
+Tor Developers and UX team worked together to bring a new user experience for Tor Browser users, so when a user visits an onion site using HTTP, [Tor Browser doesn't display a warning or error message](https://support.torproject.org/onionservices/onionservices-5/).
 
-3. Some websites have a complex setup and are serving HTTP and HTTPS content.
+3. One of the risks of using a certificate issued by a CA is that `.onion` names might unintentionally get [leaked](https://crt.sh/?q=.onion) if the onion service owners use HTTPS due to [Certificate Transparency](https://certificate.transparency.dev/).
+There is an [open proposal](https://github.com/alecmuffett/onion-dv-certificate-proposal/blob/master/text/draft-muffett-same-origin-onion-certificates.txt) to allow Tor Browser to verify self-created HTTPS certificates.
+If this proposal gets implemented, an onion service operator could make their own HTTPS certificate chain using an onion key to sign it.
+Tor Browser would know how to verify such a self-created chain.
+This will mean that you don't need to involve a third-party in making it, so no third-party will know that your onion exists.
+
+4. Some websites have a complex setup, and are serving HTTP and HTTPS content.
 In that case, just using onion services over HTTP could leak [secure cookies](https://github.com/alecmuffett/eotk/blob/master/docs.d/security-advisories.d/001-torbrowser.md).
-We wrote about [Tor Browser security expectations](https://blog.torproject.org/tor-brower-onion-services-challenges-opportunities), and how we're working on onion services usability and adoption. 
+We wrote about [Tor Browser security expectations](https://blog.torproject.org/tor-brower-onion-services-challenges-opportunities), and how we're working on onion services usability and adoption.
 There are some alternatives you might want to try to address this problem:
 
  * To avoid using an HTTPS certificate for your onion, the easiest answer is to write all your content so it uses only relative links.
-Then the content will work smoothly no matter what website name it's being served from.
+This way the content will work smoothly, independently of what website name it's being served from.
  * Another option is to use webserver rules to rewrite absolute links on the fly.
- * Or use a reverse proxy in the middle or more specifically EOTK with an HTTPS certificate.
+ * Or use a reverse proxy in the middle (more specifically EOTK with an HTTPS certificate).
 
-4. Related to the previous point, some protocols, frameworks, and infrastructures use SSL as a technical requirement; they won't work if they don't see an "https://" link.
-In that case, your onion will need to use an HTTPS certificate in order to function.
+5. Related to the previous point, some protocols, frameworks, and infrastructures use SSL as a technical requirement; they won't work if they don't see an "https://" link.
+In that case, your onion service will need to use an HTTPS certificate in order to function.
 
-5. Actually HTTPS does give you a little bit more than onion services.
+6. Actually HTTPS does give you a little bit more than onion services.
 For example, in the case where the webserver isn't in the same location as the Tor program, you would need to use an HTTPS certificate to avoid exposing unencrypted traffic to the network in between the two.
 Remember that there's no requirement for the webserver and the Tor process to be on the same machine.
 
@@ -66,5 +75,6 @@ If you're going to purchase an HTTPS certificate be aware that [v2 onion service
  * For a detailed step by step how to create an HTTPS onion certificate, check [Brave's blog post](https://brave.com/new-onion-service/).
  * [Tor Browser and Onion Services - Challenges and Opportunities (2020)](https://blog.torproject.org/tor-brower-onion-services-challenges-opportunities)
  * [Facebook, hidden services, and https certs (2014)](https://blog.torproject.org/facebook-hidden-services-and-https-certs)
- * [DigiCert](https://www.digicert.com/blog/onion-officially-recognized-special-use-domain/)
+ * [DigiCert: Get TLS certificate with Extended Validation (EV) for your onion site (2015)](https://www.digicert.com/blog/onion-officially-recognized-special-use-domain/)
+ * [HARICA: Get a TLS certificate with Domain Validation (DV) for your onion site (2021)](https://blog.torproject.org/tls-certificate-for-onion-site)
  * [The ".onion" Special-Use Domain Name - IETF RFC 7686](https://tools.ietf.org/html/rfc7686)
