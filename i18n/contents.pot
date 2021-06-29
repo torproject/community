@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-22 17:18+CET\n"
+"POT-Creation-Date: 2021-06-29 12:10+CET\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -5069,8 +5069,12 @@ msgstr ""
 #: (content/relay/community-resources/contents+en.lr:page.body)
 msgid ""
 "To learn more about how to get support for a relay on your university's "
-"network, check out EFF's resources: [Tor on campus](https://www.eff.org/"
-"torchallenge/tor-on-campus.html)."
+"network, check out EFF's resources: Tor on campus [Part 1 - It's Been Done "
+"Before and Should Happen Again](https://www.eff.org/deeplinks/2014/08/tor-"
+"campus-part-i-its-been-done-and-should-happen-again) and [Part 2 - "
+"Icebreakers and Risk Mitigation Strategies](https://www.eff.org/"
+"deeplinks/2014/08/tor-campus-part-ii-icebreakers-and-risk-mitigation-"
+"strategies)."
 msgstr ""
 
 #: https://community.torproject.org/relay/community-resources/
@@ -6369,8 +6373,6 @@ msgstr ""
 
 #: https://community.torproject.org/training/resources/tor-relay-workshop/
 #: (content/training/resources/tor-relay-workshop/contents+en.lr:slide.description)
-#: https://community.torproject.org/relay/setup/bridge/freebsd/
-#: (content/relay/setup/bridge/freebsd/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/guard/freebsd/
 #: (content/relay/setup/guard/freebsd/contents+en.lr:page.body)
 msgid "echo \"net.inet.ip.random_id=1\" >> /etc/sysctl.conf"
@@ -6378,8 +6380,6 @@ msgstr ""
 
 #: https://community.torproject.org/training/resources/tor-relay-workshop/
 #: (content/training/resources/tor-relay-workshop/contents+en.lr:slide.description)
-#: https://community.torproject.org/relay/setup/bridge/freebsd/
-#: (content/relay/setup/bridge/freebsd/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/guard/freebsd/
 #: (content/relay/setup/guard/freebsd/contents+en.lr:page.body)
 msgid "sysctl net.inet.ip.random_id=1"
@@ -6392,8 +6392,6 @@ msgstr ""
 
 #: https://community.torproject.org/training/resources/tor-relay-workshop/
 #: (content/training/resources/tor-relay-workshop/contents+en.lr:slide.description)
-#: https://community.torproject.org/relay/setup/bridge/freebsd/
-#: (content/relay/setup/bridge/freebsd/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/guard/freebsd/
 #: (content/relay/setup/guard/freebsd/contents+en.lr:page.body)
 msgid "sysrc tor_enable=YES"
@@ -6401,10 +6399,6 @@ msgstr ""
 
 #: https://community.torproject.org/training/resources/tor-relay-workshop/
 #: (content/training/resources/tor-relay-workshop/contents+en.lr:slide.description)
-#: https://community.torproject.org/relay/setup/bridge/dragonflybsd/
-#: (content/relay/setup/bridge/dragonflybsd/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/bridge/freebsd/
-#: (content/relay/setup/bridge/freebsd/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/guard/dragonflybsd/
 #: (content/relay/setup/guard/dragonflybsd/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/guard/centosrhel/
@@ -7610,7 +7604,7 @@ msgstr ""
 msgid ""
 "When visiting a site over HTTPS (HTTP over TLS), the TLS protocol prevents "
 "data in transit from being read or manipulated by man in the middle attacks, "
-"and an x.509 certificate obtained from a Certificate Authority (CA) is "
+"and an x.509 certificate obtained from a Certificate Authority (CA) "
 "validates that the user is actually connecting to a server representing the "
 "domain name in the browser address bar."
 msgstr ""
@@ -7635,8 +7629,9 @@ msgstr ""
 #: https://community.torproject.org/onion-services/advanced/https/
 #: (content/onion-services/advanced/https/contents+en.lr:page.body)
 msgid ""
-"No certificate authority is required for this proof, because that name is "
-"the actual public key used to authenticate the underlying connection."
+"No certificate authority is required for this proof, because the name of the "
+"service is the actual public key used to authenticate the underlying "
+"connection."
 msgstr ""
 
 #: https://community.torproject.org/onion-services/advanced/https/
@@ -7649,10 +7644,21 @@ msgstr ""
 
 #: https://community.torproject.org/onion-services/advanced/https/
 #: (content/onion-services/advanced/https/contents+en.lr:page.body)
+msgid "Right now, HTTPS certificates are only provided by:"
+msgstr ""
+
+#: https://community.torproject.org/onion-services/advanced/https/
+#: (content/onion-services/advanced/https/contents+en.lr:page.body)
 msgid ""
-"Right now, HTTPS certificates are only provided by DigiCert with an Extended "
-"Validation (EV) TLS certificate, which means a considerable cost for an "
-"organization."
+"- [DigiCert](https://www.digicert.com/) with an Extended Validation (EV) TLS "
+"certificate, which means a considerable cost for an organization."
+msgstr ""
+
+#: https://community.torproject.org/onion-services/advanced/https/
+#: (content/onion-services/advanced/https/contents+en.lr:page.body)
+msgid ""
+"- [HARICA](https://www.harica.gr) with Domain Validation (DV) TLS "
+"certificates."
 msgstr ""
 
 #: https://community.torproject.org/onion-services/advanced/https/
@@ -7705,7 +7711,7 @@ msgstr ""
 msgid ""
 "While there is extensive criticism regarding HTTPS and the CA trust model, "
 "the information security community has taught users to look for HTTPS when "
-"visiting a website as a synonym of secure connection and avoid HTTP "
+"visiting a website as a synonym of secure connection, and to avoid HTTP "
 "connections."
 msgstr ""
 
@@ -7713,7 +7719,7 @@ msgstr ""
 #: (content/onion-services/advanced/https/contents+en.lr:page.body)
 msgid ""
 "Tor Developers and UX team worked together to bring a new user experience "
-"for Tor Browser users, so when a user visits an onion site using HTTP [Tor "
+"for Tor Browser users, so when a user visits an onion site using HTTP, [Tor "
 "Browser doesn't display a warning or error message](https://support."
 "torproject.org/onionservices/onionservices-5/)."
 msgstr ""
@@ -7721,7 +7727,45 @@ msgstr ""
 #: https://community.torproject.org/onion-services/advanced/https/
 #: (content/onion-services/advanced/https/contents+en.lr:page.body)
 msgid ""
-"3. Some websites have a complex setup and are serving HTTP and HTTPS content."
+"3. One of the risks of using a certificate issued by a CA is that `.onion` "
+"names might unintentionally get [leaked](https://crt.sh/?q=.onion) if the "
+"onion service owners use HTTPS due to [Certificate Transparency](https://"
+"certificate.transparency.dev/)."
+msgstr ""
+
+#: https://community.torproject.org/onion-services/advanced/https/
+#: (content/onion-services/advanced/https/contents+en.lr:page.body)
+msgid ""
+"There is an [open proposal](https://github.com/alecmuffett/onion-dv-"
+"certificate-proposal/blob/master/text/draft-muffett-same-origin-onion-"
+"certificates.txt) to allow Tor Browser to verify self-created HTTPS "
+"certificates."
+msgstr ""
+
+#: https://community.torproject.org/onion-services/advanced/https/
+#: (content/onion-services/advanced/https/contents+en.lr:page.body)
+msgid ""
+"If this proposal gets implemented, an onion service operator could make "
+"their own HTTPS certificate chain using an onion key to sign it."
+msgstr ""
+
+#: https://community.torproject.org/onion-services/advanced/https/
+#: (content/onion-services/advanced/https/contents+en.lr:page.body)
+msgid "Tor Browser would know how to verify such a self-created chain."
+msgstr ""
+
+#: https://community.torproject.org/onion-services/advanced/https/
+#: (content/onion-services/advanced/https/contents+en.lr:page.body)
+msgid ""
+"This will mean that you don't need to involve a third-party in making it, so "
+"no third-party will know that your onion exists."
+msgstr ""
+
+#: https://community.torproject.org/onion-services/advanced/https/
+#: (content/onion-services/advanced/https/contents+en.lr:page.body)
+msgid ""
+"4. Some websites have a complex setup, and are serving HTTP and HTTPS "
+"content."
 msgstr ""
 
 #: https://community.torproject.org/onion-services/advanced/https/
@@ -7756,8 +7800,8 @@ msgstr ""
 #: https://community.torproject.org/onion-services/advanced/https/
 #: (content/onion-services/advanced/https/contents+en.lr:page.body)
 msgid ""
-"Then the content will work smoothly no matter what website name it's being "
-"served from."
+"This way the content will work smoothly, independently of what website name "
+"it's being served from."
 msgstr ""
 
 #: https://community.torproject.org/onion-services/advanced/https/
@@ -7770,14 +7814,14 @@ msgstr ""
 #: https://community.torproject.org/onion-services/advanced/https/
 #: (content/onion-services/advanced/https/contents+en.lr:page.body)
 msgid ""
-"* Or use a reverse proxy in the middle or more specifically EOTK with an "
-"HTTPS certificate."
+"* Or use a reverse proxy in the middle (more specifically EOTK with an HTTPS "
+"certificate)."
 msgstr ""
 
 #: https://community.torproject.org/onion-services/advanced/https/
 #: (content/onion-services/advanced/https/contents+en.lr:page.body)
 msgid ""
-"4. Related to the previous point, some protocols, frameworks, and "
+"5. Related to the previous point, some protocols, frameworks, and "
 "infrastructures use SSL as a technical requirement; they won't work if they "
 "don't see an \"https://\" link."
 msgstr ""
@@ -7785,13 +7829,13 @@ msgstr ""
 #: https://community.torproject.org/onion-services/advanced/https/
 #: (content/onion-services/advanced/https/contents+en.lr:page.body)
 msgid ""
-"In that case, your onion will need to use an HTTPS certificate in order to "
-"function."
+"In that case, your onion service will need to use an HTTPS certificate in "
+"order to function."
 msgstr ""
 
 #: https://community.torproject.org/onion-services/advanced/https/
 #: (content/onion-services/advanced/https/contents+en.lr:page.body)
-msgid "5. Actually HTTPS does give you a little bit more than onion services."
+msgid "6. Actually HTTPS does give you a little bit more than onion services."
 msgstr ""
 
 #: https://community.torproject.org/onion-services/advanced/https/
@@ -7869,8 +7913,16 @@ msgstr ""
 #: https://community.torproject.org/onion-services/advanced/https/
 #: (content/onion-services/advanced/https/contents+en.lr:page.body)
 msgid ""
-"* [DigiCert](https://www.digicert.com/blog/onion-officially-recognized-"
+"* [DigiCert: Get TLS certificate with Extended Validation (EV) for your "
+"onion site (2015)](https://www.digicert.com/blog/onion-officially-recognized-"
 "special-use-domain/)"
+msgstr ""
+
+#: https://community.torproject.org/onion-services/advanced/https/
+#: (content/onion-services/advanced/https/contents+en.lr:page.body)
+msgid ""
+"* [HARICA: Get a TLS certificate with Domain Validation (DV) for your onion "
+"site (2021)](https://blog.torproject.org/tls-certificate-for-onion-site)"
 msgstr ""
 
 #: https://community.torproject.org/onion-services/advanced/https/
@@ -9544,8 +9596,22 @@ msgstr ""
 msgid ""
 "Ran into a misconfigured, malicious, or suspicious relay while using Tor? "
 "Please let us know by sending email to bad-relays AT lists DOT torproject "
-"DOT org! Many bad relays are caught thanks to our wider community, so many "
-"thanks for all your help and vigilance!"
+"DOT org!"
+msgstr ""
+
+#: https://community.torproject.org/relay/community-resources/bad-relays/
+#: (content/relay/community-resources/bad-relays/contents+en.lr:page.body)
+msgid ""
+"Many bad relays are caught thanks to our wider community, so many thanks for "
+"all your help and vigilance!"
+msgstr ""
+
+#: https://community.torproject.org/relay/community-resources/bad-relays/
+#: (content/relay/community-resources/bad-relays/contents+en.lr:page.body)
+msgid ""
+"The criteria for rejecting bad relays can be found in the [Network Health "
+"wiki](https://gitlab.torproject.org/tpo/network-health/team/-/wikis/Criteria-"
+"for-rejecting-bad-relays)."
 msgstr ""
 
 #: https://community.torproject.org/relay/community-resources/bad-relays/
@@ -9618,7 +9684,7 @@ msgstr ""
 #: (content/relay/community-resources/bad-relays/contents+en.lr:page.body)
 msgid ""
 "The following are currently permitted yet do have some discussion for "
-"prohibition (as such, they should not be reported at this time)..."
+"prohibition (as such, they should not be reported at this time):"
 msgstr ""
 
 #: https://community.torproject.org/relay/community-resources/bad-relays/
@@ -14590,11 +14656,9 @@ msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/netbsd/
 #: (content/relay/setup/bridge/netbsd/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/netbsd/
-#: (content/relay/setup/guard/netbsd/contents+en.lr:page.body)
 msgid ""
-"echo \"PKG_PATH=http://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/$(uname -m)/"
-"$(uname -r)/All\" > /etc/pkg_install.conf"
+"`# echo \"PKG_PATH=http://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/$(uname -"
+"m)/$(uname -r)/All\" > /etc/pkg_install.conf`"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/netbsd/
@@ -14604,7 +14668,7 @@ msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/netbsd/
 #: (content/relay/setup/bridge/netbsd/contents+en.lr:page.body)
-msgid "pkg_add obfs4proxy tor"
+msgid "`# pkg_add obfs4proxy tor`"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/netbsd/
@@ -15007,23 +15071,17 @@ msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/netbsd/
 #: (content/relay/setup/bridge/netbsd/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/netbsd/
-#: (content/relay/setup/guard/netbsd/contents+en.lr:page.body)
-msgid "ln -sf /usr/pkg/share/examples/rc.d/tor /etc/rc.d/tor"
+msgid "`# ln -sf /usr/pkg/share/examples/rc.d/tor /etc/rc.d/tor`"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/netbsd/
 #: (content/relay/setup/bridge/netbsd/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/netbsd/
-#: (content/relay/setup/guard/netbsd/contents+en.lr:page.body)
-msgid "echo \"tor=YES\" >> /etc/rc.conf"
+msgid "`# echo \"tor=YES\" >> /etc/rc.conf`"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/netbsd/
 #: (content/relay/setup/bridge/netbsd/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/netbsd/
-#: (content/relay/setup/guard/netbsd/contents+en.lr:page.body)
-msgid "/etc/rc.d/tor start"
+msgid "`# /etc/rc.d/tor start`"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/netbsd/
@@ -15044,7 +15102,7 @@ msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/netbsd/
 #: (content/relay/setup/bridge/netbsd/contents+en.lr:page.body)
-msgid "tail /var/log/messages"
+msgid "`# tail /var/log/messages`"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/netbsd/
@@ -15466,14 +15524,18 @@ msgstr ""
 #: (content/relay/setup/bridge/debian-ubuntu/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/bridge/centos-rhel-opensuse/
 #: (content/relay/setup/bridge/centos-rhel-opensuse/contents+en.lr:page.body)
-msgid "### 4. Restart tor"
+#: https://community.torproject.org/relay/setup/bridge/fedora/
+#: (content/relay/setup/bridge/fedora/contents+en.lr:page.body)
+msgid "### 4. Restart Tor"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/debian-ubuntu/
 #: (content/relay/setup/bridge/debian-ubuntu/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/bridge/centos-rhel-opensuse/
 #: (content/relay/setup/bridge/centos-rhel-opensuse/contents+en.lr:page.body)
-msgid "`systemctl restart tor`"
+#: https://community.torproject.org/relay/setup/bridge/fedora/
+#: (content/relay/setup/bridge/fedora/contents+en.lr:page.body)
+msgid "`sudo systemctl restart tor`"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/debian-ubuntu/
@@ -15680,7 +15742,7 @@ msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/windows/
 #: (content/relay/setup/bridge/windows/contents+en.lr:page.body)
-msgid "### 4. Start tor"
+msgid "### 4. Start Tor"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/windows/
@@ -15734,30 +15796,22 @@ msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/dragonflybsd/
 #: (content/relay/setup/bridge/dragonflybsd/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/dragonflybsd/
-#: (content/relay/setup/guard/dragonflybsd/contents+en.lr:page.body)
-msgid "cd /usr"
+msgid "`# cd /usr`"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/dragonflybsd/
 #: (content/relay/setup/bridge/dragonflybsd/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/dragonflybsd/
-#: (content/relay/setup/guard/dragonflybsd/contents+en.lr:page.body)
-msgid "make pkg-bootstrap"
+msgid "`# make pkg-bootstrap`"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/dragonflybsd/
 #: (content/relay/setup/bridge/dragonflybsd/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/dragonflybsd/
-#: (content/relay/setup/guard/dragonflybsd/contents+en.lr:page.body)
-msgid "rehash"
+msgid "`# rehash`"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/dragonflybsd/
 #: (content/relay/setup/bridge/dragonflybsd/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/dragonflybsd/
-#: (content/relay/setup/guard/dragonflybsd/contents+en.lr:page.body)
-msgid "pkg-static install -y pkg"
+msgid "`# pkg-static install -y pkg`"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/dragonflybsd/
@@ -15784,11 +15838,7 @@ msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/dragonflybsd/
 #: (content/relay/setup/bridge/dragonflybsd/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/dragonflybsd/
-#: (content/relay/setup/guard/dragonflybsd/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/freebsd/
-#: (content/relay/setup/guard/freebsd/contents+en.lr:page.body)
-msgid "pkg install ca_root_nss"
+msgid "`# pkg install ca_root_nss`"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/dragonflybsd/
@@ -15842,20 +15892,12 @@ msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/dragonflybsd/
 #: (content/relay/setup/bridge/dragonflybsd/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/dragonflybsd/
-#: (content/relay/setup/guard/dragonflybsd/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/freebsd/
-#: (content/relay/setup/guard/freebsd/contents+en.lr:page.body)
-msgid "pkg update -f"
+msgid "`# pkg update -f`"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/dragonflybsd/
 #: (content/relay/setup/bridge/dragonflybsd/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/dragonflybsd/
-#: (content/relay/setup/guard/dragonflybsd/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/freebsd/
-#: (content/relay/setup/guard/freebsd/contents+en.lr:page.body)
-msgid "pkg upgrade -y -f"
+msgid "`# pkg upgrade -y -f`"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/dragonflybsd/
@@ -15872,7 +15914,7 @@ msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/dragonflybsd/
 #: (content/relay/setup/bridge/dragonflybsd/contents+en.lr:page.body)
-msgid "pkg install tor obfs4proxy-tor"
+msgid "`# pkg install tor obfs4proxy-tor`"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/dragonflybsd/
@@ -15886,7 +15928,7 @@ msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/dragonflybsd/
 #: (content/relay/setup/bridge/dragonflybsd/contents+en.lr:page.body)
-msgid "pkg install tor-devel  obfs4proxy-tor"
+msgid "`# pkg install tor-devel  obfs4proxy-tor`"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/dragonflybsd/
@@ -15941,16 +15983,19 @@ msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/dragonflybsd/
 #: (content/relay/setup/bridge/dragonflybsd/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/dragonflybsd/
-#: (content/relay/setup/guard/dragonflybsd/contents+en.lr:page.body)
-msgid "echo \"tor_setuid=YES\" >> /etc/rc.conf"
+msgid "`# echo \"tor_setuid=YES\" >> /etc/rc.conf`"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/dragonflybsd/
 #: (content/relay/setup/bridge/dragonflybsd/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/dragonflybsd/
-#: (content/relay/setup/guard/dragonflybsd/contents+en.lr:page.body)
-msgid "echo \"tor_enable=YES\" >> /etc/rc.conf"
+msgid "`# echo \"tor_enable=YES\" >> /etc/rc.conf`"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/bridge/dragonflybsd/
+#: (content/relay/setup/bridge/dragonflybsd/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/bridge/freebsd/
+#: (content/relay/setup/bridge/freebsd/contents+en.lr:page.body)
+msgid "`# service tor start`"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/dragonflybsd/
@@ -15964,7 +16009,7 @@ msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/dragonflybsd/
 #: (content/relay/setup/bridge/dragonflybsd/contents+en.lr:page.body)
-msgid "tail /var/log/tor/notices.log"
+msgid "`# tail /var/log/tor/notices.log`"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/dragonflybsd/
@@ -16056,7 +16101,7 @@ msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/docker/
 #: (content/relay/setup/bridge/docker/contents+en.lr:page.body)
-msgid "docker-compose up -d obfs4-bridge"
+msgid "`docker-compose up -d obfs4-bridge`"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/docker/
@@ -16125,7 +16170,7 @@ msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/docker/
 #: (content/relay/setup/bridge/docker/contents+en.lr:page.body)
-msgid "docker logs CONTAINER_ID"
+msgid "`docker logs CONTAINER_ID`"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/docker/
@@ -16140,7 +16185,7 @@ msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/docker/
 #: (content/relay/setup/bridge/docker/contents+en.lr:page.body)
-msgid "docker exec CONTAINER_ID get-bridge-line"
+msgid "`docker exec CONTAINER_ID get-bridge-line`"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/docker/
@@ -16215,7 +16260,7 @@ msgstr ""
 #: (content/relay/setup/bridge/centos-rhel-opensuse/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/bridge/fedora/
 #: (content/relay/setup/bridge/fedora/contents+en.lr:page.body)
-msgid "### 1. Install tor and dependencies"
+msgid "### 1. Install Tor and dependencies"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/centos-rhel-opensuse/
@@ -16225,7 +16270,7 @@ msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/centos-rhel-opensuse/
 #: (content/relay/setup/bridge/centos-rhel-opensuse/contents+en.lr:page.body)
-msgid "yum install epel-release -y"
+msgid "`# yum install epel-release -y`"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/centos-rhel-opensuse/
@@ -16261,7 +16306,7 @@ msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/centos-rhel-opensuse/
 #: (content/relay/setup/bridge/centos-rhel-opensuse/contents+en.lr:page.body)
-msgid "yum install git golang tor policycoreutils-python-utils"
+msgid "`# yum install git golang tor policycoreutils-python-utils`"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/centos-rhel-opensuse/
@@ -16271,7 +16316,7 @@ msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/centos-rhel-opensuse/
 #: (content/relay/setup/bridge/centos-rhel-opensuse/contents+en.lr:page.body)
-msgid "zypper install tor go git"
+msgid "`# zypper install tor go git`"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/centos-rhel-opensuse/
@@ -16288,22 +16333,22 @@ msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/centos-rhel-opensuse/
 #: (content/relay/setup/bridge/centos-rhel-opensuse/contents+en.lr:page.body)
-msgid "export GOPATH=`mktemp -d`"
+msgid "`export GOPATH='mktemp -d'`"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/centos-rhel-opensuse/
 #: (content/relay/setup/bridge/centos-rhel-opensuse/contents+en.lr:page.body)
-msgid "go get gitlab.com/yawning/obfs4.git/obfs4proxy"
+msgid "`go get gitlab.com/yawning/obfs4.git/obfs4proxy`"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/centos-rhel-opensuse/
 #: (content/relay/setup/bridge/centos-rhel-opensuse/contents+en.lr:page.body)
-msgid "sudo cp $GOPATH/bin/obfs4proxy /usr/local/bin/"
+msgid "`sudo cp $GOPATH/bin/obfs4proxy /usr/local/bin/`"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/centos-rhel-opensuse/
 #: (content/relay/setup/bridge/centos-rhel-opensuse/contents+en.lr:page.body)
-msgid "chcon --reference=/usr/bin/tor /usr/local/bin/obfs4proxy"
+msgid "`# chcon --reference=/usr/bin/tor /usr/local/bin/obfs4proxy`"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/centos-rhel-opensuse/
@@ -16329,7 +16374,7 @@ msgstr ""
 #: https://community.torproject.org/relay/setup/bridge/fedora/
 #: (content/relay/setup/bridge/fedora/contents+en.lr:page.body)
 msgid ""
-"sudo semanage port -a -t tor_port_t -p tcp [OR port set earlier, in TODO1]"
+"`sudo semanage port -a -t tor_port_t -p tcp [OR port set earlier, in TODO1]`"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/centos-rhel-opensuse/
@@ -16337,7 +16382,8 @@ msgstr ""
 #: https://community.torproject.org/relay/setup/bridge/fedora/
 #: (content/relay/setup/bridge/fedora/contents+en.lr:page.body)
 msgid ""
-"sudo semanage port -a -t tor_port_t -p tcp [obfs4 port set earlier, in TODO2]"
+"`sudo semanage port -a -t tor_port_t -p tcp [obfs4 port set earlier, in "
+"TODO2]`"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/centos-rhel-opensuse/
@@ -16361,7 +16407,7 @@ msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/fedora/
 #: (content/relay/setup/bridge/fedora/contents+en.lr:page.body)
-msgid "Add the following to /etc/yum.repos.d/tor.repo"
+msgid "Add the following to `/etc/yum.repos.d/tor.repo`"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/fedora/
@@ -16379,16 +16425,6 @@ msgstr ""
 msgid ""
 "### 2. Edit your Tor config file, usually located at `/etc/tor/torrc` and "
 "replace its content with:"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/bridge/fedora/
-#: (content/relay/setup/bridge/fedora/contents+en.lr:page.body)
-msgid "### 3. Restart tor"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/bridge/fedora/
-#: (content/relay/setup/bridge/fedora/contents+en.lr:page.body)
-msgid "systemctl restart tor"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/fedora/
@@ -16422,7 +16458,7 @@ msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/freebsd/
 #: (content/relay/setup/bridge/freebsd/contents+en.lr:page.body)
-msgid "pkg install obfs4proxy-tor tor ca_root_nss"
+msgid "`# pkg install obfs4proxy-tor tor ca_root_nss`"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/freebsd/
@@ -16447,9 +16483,24 @@ msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/freebsd/
 #: (content/relay/setup/bridge/freebsd/contents+en.lr:page.body)
+msgid "`# echo \"net.inet.ip.random_id=1\" >> /etc/sysctl.conf`"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/bridge/freebsd/
+#: (content/relay/setup/bridge/freebsd/contents+en.lr:page.body)
+msgid "`# sysctl net.inet.ip.random_id=1`"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/bridge/freebsd/
+#: (content/relay/setup/bridge/freebsd/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/bridge/openbsd/
 #: (content/relay/setup/bridge/openbsd/contents+en.lr:page.body)
 msgid "### 4. Start the tor daemon and make sure it starts at boot:"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/bridge/freebsd/
+#: (content/relay/setup/bridge/freebsd/contents+en.lr:page.body)
+msgid "`# sysrc tor_enable=YES`"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/freebsd/
@@ -16466,9 +16517,7 @@ msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/freebsd/
 #: (content/relay/setup/bridge/freebsd/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/freebsd/
-#: (content/relay/setup/guard/freebsd/contents+en.lr:page.body)
-msgid "mkdir -p /usr/local/etc/pkg/repos"
+msgid "`# mkdir -p /usr/local/etc/pkg/repos`"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/freebsd/
@@ -16532,7 +16581,7 @@ msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/openbsd/
 #: (content/relay/setup/bridge/openbsd/contents+en.lr:page.body)
-msgid "pkg_add tor obfs4proxy"
+msgid "`# pkg_add tor obfs4proxy`"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/openbsd/
@@ -16563,26 +16612,22 @@ msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/openbsd/
 #: (content/relay/setup/bridge/openbsd/contents+en.lr:page.body)
-msgid "mkdir /var/log/tor"
+msgid "`# mkdir /var/log/tor`"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/openbsd/
 #: (content/relay/setup/bridge/openbsd/contents+en.lr:page.body)
-msgid "chown _tor /var/log/tor"
+msgid "`# chown _tor /var/log/tor`"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/openbsd/
 #: (content/relay/setup/bridge/openbsd/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/openbsd/
-#: (content/relay/setup/guard/openbsd/contents+en.lr:page.body)
-msgid "rcctl enable tor"
+msgid "`# rcctl enable tor`"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/openbsd/
 #: (content/relay/setup/bridge/openbsd/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/openbsd/
-#: (content/relay/setup/guard/openbsd/contents+en.lr:page.body)
-msgid "rcctl start tor"
+msgid "`# rcctl start tor`"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/openbsd/
@@ -16600,6 +16645,13 @@ msgstr ""
 #: https://community.torproject.org/relay/setup/guard/netbsd/
 #: (content/relay/setup/guard/netbsd/contents+en.lr:page.body)
 msgid "# 1. Setup `pkg_add`"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/netbsd/
+#: (content/relay/setup/guard/netbsd/contents+en.lr:page.body)
+msgid ""
+"echo \"PKG_PATH=http://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/$(uname -m)/"
+"$(uname -r)/All\" > /etc/pkg_install.conf"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/netbsd/
@@ -16699,6 +16751,21 @@ msgstr ""
 #: https://community.torproject.org/relay/setup/guard/openbsd/
 #: (content/relay/setup/guard/openbsd/contents+en.lr:page.body)
 msgid "Here we set `tor` to start during boot and call it for the first time:"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/netbsd/
+#: (content/relay/setup/guard/netbsd/contents+en.lr:page.body)
+msgid "ln -sf /usr/pkg/share/examples/rc.d/tor /etc/rc.d/tor"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/netbsd/
+#: (content/relay/setup/guard/netbsd/contents+en.lr:page.body)
+msgid "echo \"tor=YES\" >> /etc/rc.conf"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/netbsd/
+#: (content/relay/setup/guard/netbsd/contents+en.lr:page.body)
+msgid "/etc/rc.d/tor start"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/windows/
@@ -17065,6 +17132,26 @@ msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/dragonflybsd/
 #: (content/relay/setup/guard/dragonflybsd/contents+en.lr:page.body)
+msgid "cd /usr"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/dragonflybsd/
+#: (content/relay/setup/guard/dragonflybsd/contents+en.lr:page.body)
+msgid "make pkg-bootstrap"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/dragonflybsd/
+#: (content/relay/setup/guard/dragonflybsd/contents+en.lr:page.body)
+msgid "rehash"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/dragonflybsd/
+#: (content/relay/setup/guard/dragonflybsd/contents+en.lr:page.body)
+msgid "pkg-static install -y pkg"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/dragonflybsd/
+#: (content/relay/setup/guard/dragonflybsd/contents+en.lr:page.body)
 msgid "### 1.1. Recommended Steps to Setup `pkg`"
 msgstr ""
 
@@ -17078,6 +17165,13 @@ msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/dragonflybsd/
 #: (content/relay/setup/guard/dragonflybsd/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/freebsd/
+#: (content/relay/setup/guard/freebsd/contents+en.lr:page.body)
+msgid "pkg install ca_root_nss"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/dragonflybsd/
+#: (content/relay/setup/guard/dragonflybsd/contents+en.lr:page.body)
 msgid "DragonflyBSD has 2 packages repositories:"
 msgstr ""
 
@@ -17087,6 +17181,20 @@ msgid ""
 "We can simply edit the **URL** used to point out the repositories on `/usr/"
 "local/etc/pkg/repos/df-latest` and that's it! Remember to use **pkg+https://"
 "** for Avalon."
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/dragonflybsd/
+#: (content/relay/setup/guard/dragonflybsd/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/freebsd/
+#: (content/relay/setup/guard/freebsd/contents+en.lr:page.body)
+msgid "pkg update -f"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/dragonflybsd/
+#: (content/relay/setup/guard/dragonflybsd/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/freebsd/
+#: (content/relay/setup/guard/freebsd/contents+en.lr:page.body)
+msgid "pkg upgrade -y -f"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/dragonflybsd/
@@ -17161,6 +17269,16 @@ msgstr ""
 #: https://community.torproject.org/relay/setup/guard/dragonflybsd/
 #: (content/relay/setup/guard/dragonflybsd/contents+en.lr:page.body)
 msgid "# 4. Start the service"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/dragonflybsd/
+#: (content/relay/setup/guard/dragonflybsd/contents+en.lr:page.body)
+msgid "echo \"tor_setuid=YES\" >> /etc/rc.conf"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/dragonflybsd/
+#: (content/relay/setup/guard/dragonflybsd/contents+en.lr:page.body)
+msgid "echo \"tor_enable=YES\" >> /etc/rc.conf"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/dragonflybsd/
@@ -17490,6 +17608,11 @@ msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/freebsd/
 #: (content/relay/setup/guard/freebsd/contents+en.lr:page.body)
+msgid "mkdir -p /usr/local/etc/pkg/repos"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/freebsd/
+#: (content/relay/setup/guard/freebsd/contents+en.lr:page.body)
 msgid ""
 "This is how the new configuration file `/usr/local/etc/pkg/repos/FreeBSD."
 "conf` must look like:"
@@ -17671,6 +17794,16 @@ msgstr ""
 #: https://community.torproject.org/relay/setup/guard/openbsd/
 #: (content/relay/setup/guard/openbsd/contents+en.lr:page.body)
 msgid "sysctl kern.maxfiles=16000"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/openbsd/
+#: (content/relay/setup/guard/openbsd/contents+en.lr:page.body)
+msgid "rcctl enable tor"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/openbsd/
+#: (content/relay/setup/guard/openbsd/contents+en.lr:page.body)
+msgid "rcctl start tor"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/centosrhel/updates/
