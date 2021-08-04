@@ -67,7 +67,7 @@ Don't forget to change the `ORPort`, `ServerTransportListenAddr`, `ContactInfo`,
 
 ### 5. Monitor your logs
 
-To confirm your bridge is running with no issues, you should see something like this (usually in `/var/log/tor/log` or `/var/log/syslog`):
+To confirm your bridge is running with no issues, you should see something like this (usually in `/var/log/tor/notices.log` or `/var/log/syslog`):
 
 
 ```
