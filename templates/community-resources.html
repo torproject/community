@@ -10,12 +10,13 @@
           <div class="card h-100">
             <div class="card-header bg-white border-0">
                 <picture>
-                  <img src="{{ item.cover }}" class="img-fluid" alt="{{ item.name }}">
+                  <a href="{{ item.link }}"><img src="{{ item.cover }}" class="img-fluid" alt="{{ item.name }}"></a>
                 </picture>
             </div>
             <div class="card-body">
               <h5 class="card-title human-name">{{ item.name }}</h5>
-              <p>by {{ item.author }} | {{ item.languages }}</p>
+              <p>by {{ item.author }}</p>
+              <p>In {{ item.languages }}</p>
               <p>{{ item.description }}</p>
               {% if item.author=='Tor Project' %}
               	<a href="{{ item.link }}" title="{{ item.name }}" class="btn btn-primary">Check this resource</a>
