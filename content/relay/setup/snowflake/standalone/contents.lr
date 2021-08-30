@@ -49,6 +49,7 @@ You will need Go 1.13+ to run the Snowflake proxy.
    ```
 3. Build the Snowflake proxy.
    ```
+   cd snowflake/proxy  
    go build
    ```
 4. Run the Snowflake proxy.
