@@ -37,5 +37,16 @@
         "formats" : ["odp","pdf"],
         "description" : "Learn how to run a private unlisted Tor bridge",
         "date" : "2021"
+    },
+
+    "helping survivors" :
+    {
+        "label" : "Helping survivors",
+        "name" : "help-survivors",
+        "filename" : "help-survivors",
+        "formats" : ["odp","pdf"],
+        "description" : "A digital security guide for organizations helping survivors.",
+        "date" : "2021"
     }
+
 }

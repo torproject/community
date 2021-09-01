@@ -1,0 +1,33 @@
+<div class="row pt-5">
+  {% include 'sidenav.html' %}
+  <div class="col-sm-12 col-xs-12  ml-sm-auto col-md-9 col-lg-9 {{ bag('alternatives', this.alt, 'order') }}">
+    {{ this.body }}
+    <div class="row">
+
+        {% for id, item in bag('community-training-materials').items() %}
+        <div class="col-md-6 col-sm-12 col-xl-3 my-3">
+
+          <div class="card h-100">
+            <div class="card-header bg-white border-0">
+                <picture>
+                  <a href="{{ item.link }}"><img src="{{ item.cover }}" class="img-fluid" alt="{{ item.name }}"></a>
+                </picture>
+            </div>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title human-name">{{ item.name }}</h5>
+              <p>by {{ item.author }}</p>
+              <p>In {{ item.languages }}</p>
+              <p>{{ item.description }}</p>
+              {% if item.author=='Tor Project' %}
+              	<a href="{{ item.link }}" title="{{ item.name }}" class="btn btn-primary mt-auto">Check this resource</a>
+              {% else %}
+                <a href="{{ item.link }}" title="{{ item.name }}" class="btn btn-primary mt-auto">Check this resource</a>
+              {% endif %}
+            </div>
+          </div>
+      </div>
+      {% endfor %}
+
+    </div>
+  </div>
+</div>

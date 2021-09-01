@@ -2,33 +2,47 @@
   {% include 'sidenav.html' %}
   <div class="col-sm-12 col-xs-12  ml-sm-auto col-md-9 col-lg-9 {{ bag('alternatives', this.alt, 'order') }}">
     {{ this.body }}
-    <div class="container py-3">
+
       <div class="row">
-        <table class="table">
-          <thead>
-            <tr>
-              <th scope="col">Title</th>
-              <th scope="col">Description</th>
-              <th scope="col">Formats</th>
-              <th scope="col">Last Updated</th>
-            </tr>
-          </thead>
-          <tbody>
-          {% for id, item in bag('training-resources').items() %}
-            <tr>
-              <td>{{ item.label}}</td>
-              <td>{{ item.description }}</td>
-              <td>
-                {% for format in item.formats %}
-                <a href="https://gitweb.torproject.org/community/training.git/plain/{{ item.date }}/{{ item.name }}/{{ item.filename }}.{{format}}">{{ format }}</a>
-                {% endfor %}
-              </td>
-              <td>{{ item.date }}</td>
-            </tr>
-          {% endfor %}
-          </tbody>
-        </table>
-      </div>
+        {% for id, item in bag('community-training-materials').items() %}
+	{% if item.type=='official' %}
+        <div class="col-md-3 col-sm-12 col-xl-3 my-3">
+          <div class="card h-100">
+            <div class="card-header bg-white border-0">
+                <picture>
+                  <img src="{{ item.cover }}" class="img-fluid" alt="{{ item.name }}">
+                </picture>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title human-name">{{ item.name }}</h5>
+              <p>{{ item.description }}</p>
+
+              <p><i>{{ item.languages }}</i></p>
+              </p>format: {{ item.formats }}</p>
+              <p>Released: {{ item.date }}</p>
+              <a href="{{ item.link }}" title="{{ item.name }}" class="btn btn-primary">Check this resource</a>
+	</div>
+	</div>
+                {% else %}
+ 	<div class="col-md-3 col-sm-12 col-xl-3 my-3">
+  	        <div class="card h-100">
+   	        <div class="card-header bg-white border-0">
+    	            <picture>
+                  <img src="{{ item.cover }}" class="img-fluid" alt="{{ item.name }}">
+                </picture>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title human-name">{{ item.name }}</h5>
+              <p>{{ item.description }}</p>
+              <p><i>{{ item.languages }}</i></p>
+              <p>Released: {{ item.date }}</p>
+              <a href="{{ item.link }}" title="{{ item.name }}" class="btn btn-primary">Download</a>
+	</div>
+	</div>
+                {% endif %}
+            </div>
+	      {% endfor %}
+
     </div>
   </div>
 </div>
