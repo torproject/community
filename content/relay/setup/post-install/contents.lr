@@ -97,7 +97,7 @@ Note: You have to explicitly specify your IPv6 address in square brackets, you c
 If you have a global IPv6 address you should be able to find it in the output of the following command:
 
 ```
-ip addr|grep inet6|grep global;echo "Remove /xx suffix from the address"
+ip -6 addr | grep global | sed 's/inet6//;s#/.*##'
 ```
 
 If you are an exit relay with IPv6 connectivity, tell your tor daemon to allow exiting via IPv6 so clients can reach IPv6 destinations:
