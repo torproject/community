@@ -50,7 +50,7 @@ To just build the website once: ```$ lektor build -O <folder>```
 
 #### How to develop on the website
 
-Check our [wiki pages](https://gitlab.torproject.org/web/community/wikis/How-to-develop-on-the-website).
+Check our [wiki pages](https://gitlab.torproject.org/tpo/web/wiki/-/wikis/How-to-develop-on-the-website).
 
 ### Translations
 
