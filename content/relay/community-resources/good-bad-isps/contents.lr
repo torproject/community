@@ -59,7 +59,7 @@ For network diversity and stronger anonymity, you should avoid providers and cou
 
 | **Company/ISP** | **ASN** | **Bridges** | **Relay** | **Exit** | **Comments** | **Last Updated** |
 |-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
-| [T-Systems`](http://www.t-systems.cz/) | - | Yes | Yes | ? | - | - |
+| [T-Systems](http://www.t-systems.cz/) | - | Yes | Yes | ? | - | - |
 
 
 ### France
@@ -163,6 +163,11 @@ For network diversity and stronger anonymity, you should avoid providers and cou
 |-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
 | [Baltic Servers](http://www.balticservers.com) | - |  Yes | Yes | Yes | All abuse mails they got yielded support tickets | - |
 
+### Luxembourg
+
+| **Company/ISP** | **ASN** | **Bridges** | **Relay** | **Exit** | **Comments** | **Last Updated** |
+|-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
+| [BuyVM.net](https://buyvm.net) | AS53667 | Yes | Yes | Yes | New Tor rules [here](https://buyvm.net/acceptable-use-policy/#3). All relays are fine if you follow the steps. Notices are ignored. | 09/03/2021 |
 
 ### Mexico
 
@@ -196,7 +201,7 @@ For network diversity and stronger anonymity, you should avoid providers and cou
 | [Worldstream](https://www.worldstream.nl) | AS49981 | Yes | Yes | No |  - | 02/06/2019 |
 | [LeaseWeb](https://www.leaseweb.com/) | - | Yes | Yes | Yes | - | - |
 | [Novogara](http://www.novogara.com) | - | Yes | Yes | Yes | Explicitly allows Tor exit nodes and forwards abuse/DCMA, but their network isn't the most stable. You need to email them for a custom offer. They also accept Bitcoin/UKash/CashU | - |
-| [Netrouting`](http://netrouting.nl/) | - | Yes | Yes | No | ISP has confirmed by e-mail that exit nodes are NOT acceptable. | 2014-10-15 |
+| [Netrouting](http://netrouting.nl/) | - | Yes | Yes | No | ISP has confirmed by e-mail that exit nodes are NOT acceptable. | 2014-10-15 |
 | [DirectVPS](http://directvps.nl/) | - | Yes | Yes | ? | - | - |
 | [Versio](http://versio.nl/) | - | Yes | Yes | No | - | 2013 |
 | [SnelServer](https://www.snelserver.com/) | - | Yes | Yes | Yes | Abuse complaints must be responded to within 24 hours or the system automatically suspends your account until you do. | 2014 |
@@ -292,7 +297,7 @@ For network diversity and stronger anonymity, you should avoid providers and cou
 | [Arvixe](https://www.arvixe.com/vps_virtual_private_servers_hosting/) | - | Yes | Yes | Yes | - | 06/19/13 |
 | [Axigy](http://www.axigy.com) | - | Yes | Yes | Yes | - |  - |
 | [Blacklotus](http://www.blacklotus.net) | - | Yes | Yes | Yes | Liberal abuse handling policies | - |
-| [BuyVM.net](https://buyvm.net) | AS53667 | Yes | Yes | Yes | New Tor rules [here](https://buyvm.net/acceptable-use-policy/#3). All relays are fine if you follow the steps. | - |
+| [BuyVM.net](https://buyvm.net) | AS53667 | Yes | Yes | Yes | New Tor rules [here](https://buyvm.net/acceptable-use-policy/#3). All relays are fine if you follow the steps. Notices are ignored. | 09/03/2021 |
 | [Catalyst Host](https://catalysthost.com/) | - | ? | No | No | "If you are interested in hosting either, you can ask us about a dedicated server." | 10/01/14 |
 | [Cloudvider](https://www.clouvider.co.uk/) | - | No | No | No | This is for their US Operations arm. They will cancel your account and claim it is a ToS violation, which requires you to pay out a 60-day notice. | 10/2020 |
 | [ChunkHost](http://chunkhost.com) | - | Yes | Yes | ? | Questionable DMCA handling | 01/01/12 |
