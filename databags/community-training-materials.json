@@ -37,7 +37,7 @@
     "date": "2021",
     "cover": "/static/images/training/running-tor-bridges.png",
     "languages": "English",
-    "link": "https://web.archive.org/web/20210614063756/https://gitweb.torproject.org/community/training.git/plain/2021/private-bridges/private-bridges-workshop.odp"
+    "link": "https://gitweb.torproject.org/community/training.git/plain/2021/private-bridges/private-bridges-workshop.odp"
   },
   "exploring-the-tor-network": {
     "name": "Exploring the Tor network (poster)",
