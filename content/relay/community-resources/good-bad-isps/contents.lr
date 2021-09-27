@@ -68,9 +68,9 @@ For network diversity and stronger anonymity, you should avoid providers and cou
 |-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
 | [Online.net](http://www.online.net/) | AS12876 | Yes | Yes | Yes | The account holder is responsible for all the traffic going through theirs servers.| 01/28/2019 |
 | [Gandi VPS](https://www.gandi.net/) | - | Yes | Yes | Yes| Gandi send some abuse complaints to Exit relays, but they do not stop the server, and when you tell them your server is a Tor Exit relay, they say it is OK. They ask Exit relays to use the standard Reduced Exit Policy | - |
-| [OVH Kimsufi](http://www.kimsufi.com/) | - | Yes | Yes | No | Changed their TOS in July 2013 and allow Tor as long as they don't notice illegal activities. Exit nodes would eventually be shut down, but relays are allowed. Octave Klaba, CEO of OVH said himself that the TOS have been changed to make them clearer about the use of Tor. Many relays are currently running on Kimsufi servers | - |
+| [OVH Kimsufi](http://www.kimsufi.com/) | AS16276 | Yes | Yes | No | Unmetered bandwidth @ 100mbps - "I will gladly explain this situation for you. Running a Tor exit node is strictly forbidden and can lead to the suspension and even termination of your server and account." | 09/27/2021 |
 | [Digicube](http://www.digicube.fr/) | - | Yes | Yes | Yes | - | - |
-| [Pulse Servers](http://www.pulseservers.com/) | - | Yes | Yes | Yes | VPS uses OVH AS. You can build ANY kind tor relays. | 05/01/2016 |
+| [Pulse Servers](http://www.pulseservers.com/) | AS16276 | Yes | Yes | Yes | VPS uses OVH AS. You can build ANY kind tor relays. | 09/27/2021 |
 
 
 
@@ -96,14 +96,14 @@ For network diversity and stronger anonymity, you should avoid providers and cou
 | [myLoc Managed IT](https://myloc.de) | AS31010, AS24961 | Yes | Yes | No | - | 2018-10-25 |
 | [linevast](https://www.linevast.de) | AS201206 | No | No | No |  | 03/2021 |
 | [Server4You](https://www.server4you.de)| AS131914 | No | No | No | - | 03/2021 |
-| [Hetzner](http://hetzner.de) | AS24940 | Yes | Yes | Yes | Offers good dedicated root servers for a good price. "It is not a Problem, however, abuse reports can lead to a server lock" | 03/2021 |
-| [Contabo](https://contabo.de) | AS51167  | No | No | No | Tor prohibited due to terms of service | 03/2021 |
+| [Hetzner](http://hetzner.de) | AS24940 | Yes | Yes | Yes | Offers good dedicated root servers for a good price. Unmetered bandwidth on dedicated servers, 20tb on vps. "It is not a Problem, however, abuse reports can lead to a server lock" | 09/27/2021 |
+| [Contabo](https://contabo.de) | AS51167 | No | No | No | Tor prohibited due to terms of service | 03/2021 |
 | [Strato](https://strato.de) | AS6724 | No | No | No | - | 03/2021 |
 | [PraHost](https://www.prahost.com) | - | Yes | Yes | Yes | "If there is any abuse notice received, you need to solve it in given time, else your IP will be blocked until you take any action" | 03/2021 |
 | [DomainFactory](https://www.df.eu/de/cloud-hosting/cloud-server) | AS34011 | Yes | Yes | Yes | Only allowed on jiffybox | 03/2021 |
 | [NetCologne](https://www.netcologne.de) | - | - | Yes | Yes | - | - |
 | [Signaltransmitter](https://signaltransmitter.de) | AS24961 | Yes | Yes | Yes | "In principle, we do not limit our services apart from mining bitcoins" | 03/2021 |
-| [Netcup](https://www.netcup.de) | AS197540 | Yes | Yes | Yes | Tor allowed on VPS and rootservers | 03/2021 |
+| [Netcup](https://www.netcup.de) | AS197540 | Yes | Yes | Yes | 40TB+ bandwidth - Tor exit nodes allowed on VPS and rootservers - "Yes, it is. Everything is allowed that the T&Cs do not exclude." | 09/27/2021 |
 | [Onyxhosting](https://onyxhosting.de) | - | No | No | No | - | 03/2021 |
 | [IP-Projects](https://www.ip-projects.de) | AS48314 | No | No | No | - | 03/2021 |
 | [Lansol](https://www.lansol.de) | - | No | No | No | - | 03/2021 |
@@ -167,7 +167,7 @@ For network diversity and stronger anonymity, you should avoid providers and cou
 
 | **Company/ISP** | **ASN** | **Bridges** | **Relay** | **Exit** | **Comments** | **Last Updated** |
 |-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
-| [BuyVM.net](https://buyvm.net) | AS53667 | Yes | Yes | Yes | New Tor rules [here](https://buyvm.net/acceptable-use-policy/#3). All relays are fine if you follow the steps. Notices are ignored. | 09/03/2021 |
+| [BuyVM.net](https://buyvm.net) | AS53667 | Yes | Yes | Yes | New Tor rules [here](https://buyvm.net/acceptable-use-policy/#3). All relays are fine if you follow the steps. Notices are ignored. Unmetered bandwidth. | 09/27/2021 |
 
 ### Mexico
 
@@ -292,12 +292,12 @@ For network diversity and stronger anonymity, you should avoid providers and cou
 | **Company/ISP** | **ASN** | **Bridges** | **Relay** | **Exit** | **Comments** | **Last Updated** |
 |-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
 | [2HOST](https://2host.com/) | - | Yes | Yes | Yes(?) | Vague AUP/Abuse handling | 10/15/14 |
-| [Amazon Web Services (AWS)](https://aws.amazon.com) | - | Yes | Yes | No | - | - |
+| [Amazon Web Services (AWS)](https://aws.amazon.com) | - | Yes | Yes | No | Expensive bandwidth, you WILL be charged extra after reaching 15GB. | 09/27/2021 |
 | [AmeriNOC](https://www.amerinoc.com/) | - | Yes | Yes | Yes | - | - |
 | [Arvixe](https://www.arvixe.com/vps_virtual_private_servers_hosting/) | - | Yes | Yes | Yes | - | 06/19/13 |
 | [Axigy](http://www.axigy.com) | - | Yes | Yes | Yes | - |  - |
 | [Blacklotus](http://www.blacklotus.net) | - | Yes | Yes | Yes | Liberal abuse handling policies | - |
-| [BuyVM.net](https://buyvm.net) | AS53667 | Yes | Yes | Yes | New Tor rules [here](https://buyvm.net/acceptable-use-policy/#3). All relays are fine if you follow the steps. Notices are ignored. | 09/03/2021 |
+| [BuyVM.net](https://buyvm.net) | AS53667 | Yes | Yes | Yes | New Tor rules [here](https://buyvm.net/acceptable-use-policy/#3). All relays are fine if you follow the steps. Notices are ignored. Unmetered bandwidth. | 09/27/2021 |
 | [Catalyst Host](https://catalysthost.com/) | - | ? | No | No | "If you are interested in hosting either, you can ask us about a dedicated server." | 10/01/14 |
 | [Cloudvider](https://www.clouvider.co.uk/) | - | No | No | No | This is for their US Operations arm. They will cancel your account and claim it is a ToS violation, which requires you to pay out a 60-day notice. | 10/2020 |
 | [ChunkHost](http://chunkhost.com) | - | Yes | Yes | ? | Questionable DMCA handling | 01/01/12 |
@@ -313,7 +313,7 @@ For network diversity and stronger anonymity, you should avoid providers and cou
 | [HostUS](http://hostus.us/) | AS25926 | Yes | Yes | No | - | 10/16/14 |
 | [IPXcore](https://ipxcore.com/) | - | Yes | Yes | No | - | - |
 | [Luna Node](https://www.lunanode.com/index.php) | - | Yes | Yes | No | - | 05/01/14 |
-| [OVH](https://www.ovh.com/us/index.xml ) | AS16276 | Yes | Yes | ? | - | 12/31/14 |
+| [OVH](https://www.ovh.com/us/index.xml ) | AS16276 | Yes | Yes | No | Unmetered bandwidth in non asia locations. - "I will gladly explain this situation for you. Running a Tor exit node is strictly forbidden and can lead to the suspension and even termination of your server and account." | 09/27/2021 |
 | [Oplink.net](https://www.oplink.net) | - | Yes | Yes | No | - | 09/03/15 |
 | [Psychz.net](https://www.psychz.net/) | - | Yes | Yes | Yes | Very Exit friendly. Standard Tor response will resolve abuse issues. | 10/07/15 |
 | [PulseServers](https://www.pulseservers.com) | AS16276 | Yes | Yes | Yes | Exit-friendly. | 05/01/16 |
