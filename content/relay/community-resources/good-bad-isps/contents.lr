@@ -103,7 +103,7 @@ For network diversity and stronger anonymity, you should avoid providers and cou
 | [DomainFactory](https://www.df.eu/de/cloud-hosting/cloud-server) | AS34011 | Yes | Yes | Yes | Only allowed on jiffybox | 03/2021 |
 | [NetCologne](https://www.netcologne.de) | - | - | Yes | Yes | - | - |
 | [Signaltransmitter](https://signaltransmitter.de) | AS24961 | Yes | Yes | Yes | "In principle, we do not limit our services apart from mining bitcoins" | 03/2021 |
-| [Netcup](https://www.netcup.de) | AS197540 | Yes | Yes | Yes | 40TB+ bandwidth - Tor exit nodes allowed on VPS and rootservers - "Yes, it is. Everything is allowed that the T&Cs do not exclude." | 09/27/2021 |
+| [Netcup](https://www.netcup.de) | AS197540 | Yes | Yes | Yes | 40-120TB bandwidth - Tor exit nodes allowed on VPS and rootservers - "Yes, it is. Everything is allowed that the T&Cs do not exclude." | 09/27/2021 |
 | [Onyxhosting](https://onyxhosting.de) | - | No | No | No | - | 03/2021 |
 | [IP-Projects](https://www.ip-projects.de) | AS48314 | No | No | No | - | 03/2021 |
 | [Lansol](https://www.lansol.de) | - | No | No | No | - | 03/2021 |
