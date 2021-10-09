@@ -62,8 +62,8 @@ This will return a string similar to the following:
 obfs4 1.2.3.4:1234 B0E566C9031657EA7ED3FC9D248E8AC4F37635A4 cert=OYWq67L7MDApdJCctUAF7rX8LHvMxvIBPHOoAp0+YXzlQdsxhw6EapaMNwbbGICkpY8CPQ iat-mode=0
 ```
 
-Make sure to check out the [post-install notes](../post-install/).
 If you are having trouble setting up your bridge, have a look at [our help section](../../../getting-help/).
+If your bridge is now running, check out the [post-install notes](../post-install/).
 
 ### 4. Advanced usage
 
