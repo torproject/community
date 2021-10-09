@@ -148,8 +148,7 @@ With respect to your account, given that the attacker used Tor and not a large b
 Our recommendation is to treat this event as though there was a login from an open wireless access point in your city. Reset your password, and if you don't have antivirus already, download the free AVG: http://free.avg.com/us-en/download, Spybot SD: http://www.safer-networking.org/nl/home/index.html, and/or AdAware: http://www.lavasoft.com/?domain=lavasoftusa.com.
 Use these to scan to check for keyloggers or spyware that someone with access to your computer may have installed.
 
-To help protect yourself while using open wireless, consider using this Firefox plugin: https://www.eff.org/https-everywhere/ and encourage the
-site maintainer to support HTTPS logins.
+To help protect yourself while using open wireless, consider using this Firefox plugin: <https://www.eff.org/https-everywhere/> and encourage the site maintainer to support HTTPS logins.
 ```
 
 ## Hacking (PHP Webshells, XSS, SQL Injection)
