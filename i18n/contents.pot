@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-09 20:29+CET\n"
+"POT-Creation-Date: 2021-10-09 23:31+CET\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -1881,7 +1881,7 @@ msgstr ""
 #: (content/training/best-practices/contents+en.lr:page.body)
 msgid ""
 "8. Decide how you will facilitate a safer space. We recommend using the [Tor "
-"Code of Conduct](../training/code-of-conduct/)."
+"Code of Conduct](../code-of-conduct/)."
 msgstr ""
 
 #: https://community.torproject.org/training/best-practices/
@@ -1932,7 +1932,7 @@ msgstr ""
 #: https://community.torproject.org/training/best-practices/
 #: (content/training/best-practices/contents+en.lr:page.body)
 msgid ""
-"6. Show the participants the retources at [community.torproject.org](/) and "
+"6. Show the participants the resources at [community.torproject.org](/) and "
 "[support.torproject.org](https://support.torproject.org)."
 msgstr ""
 
@@ -18361,6 +18361,30 @@ msgstr ""
 
 #: lego/templates/navbar.html:25 templates/navbar.html:25
 msgid "Menu"
+msgstr ""
+
+#: lego/templates/navbar.html:86 templates/navbar.html:86
+msgid "About"
+msgstr ""
+
+#: lego/templates/navbar.html:87 templates/navbar.html:87
+msgid "Documentation"
+msgstr ""
+
+#: lego/templates/navbar.html:88 templates/navbar.html:88
+msgid "Support"
+msgstr ""
+
+#: lego/templates/navbar.html:89 templates/navbar.html:89
+msgid "Jobs"
+msgstr ""
+
+#: lego/templates/navbar.html:90 templates/navbar.html:90
+msgid "Contact"
+msgstr ""
+
+#: lego/templates/navbar.html:91 templates/navbar.html:91
+msgid "Press"
 msgstr ""
 
 #: lego/templates/search.html:5
