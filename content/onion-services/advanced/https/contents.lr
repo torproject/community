@@ -34,7 +34,7 @@ We compiled some topics and arguments, so you can analyze what's the best for yo
 
 1. As anyone can generate an onion address and its 56 random alphanumeric characters, some enterprise onions believe that associating their onion site to an HTTPS certificate might be a solution to announce their service to users.
 Users would need to click and do a manual verification, and that would show that they're visiting the onion site that they're expecting.
-Alternatively, websites can provide other ways to verify their onion address using HTTPS, for example, linking their onion site address from an HTTPS-authenticated page, or using [Onion-Location](https://community.torproject.org/onion-services/advanced/onion-location/).
+Alternatively, websites can provide other ways to verify their onion address using HTTPS, for example, linking their onion site address from an HTTPS-authenticated page, or using [Onion-Location](../onion-location/).
 
 2. Another topic of this discussion is user expectations and modern browsers.
 While there is extensive criticism regarding HTTPS and the CA trust model, the information security community has taught users to look for HTTPS when visiting a website as a synonym of secure connection, and to avoid HTTP connections.
