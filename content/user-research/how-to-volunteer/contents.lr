@@ -18,7 +18,7 @@ Please remember to update the issue as your research evolves.
 Not all of the data collected in our research is disclosed to the public, but our general findings are.
 To protect our participants' privacy we take care to anonymize their responses and avoid recording our sessions.
 
-If you're already familiar with the Tor Project and user testing, have a look at our [current needs for user research](https://community.torproject.org/user-research/open/) and see which study better suits you.
+If you're already familiar with the Tor Project and user testing, have a look at our [current needs for user research](../open/) and see which study better suits you.
 Remember to drop us an email telling us about your plans so we can follow and support your research.
 
 As a volunteer we also ask that you read and follow our [Code of Conduct](https://gitweb.torproject.org/community/policies.git/tree/code_of_conduct.txt), as well our [Guidelines for Research](https://community.torproject.org/user-research/guidelines/).
@@ -44,7 +44,7 @@ We also ask anyone running research not use software hosted by third parties lik
 After conducting your research, it's normal to be excited to see your feedback implemented as soon as possible.
 However all feedback must be discussed internally across the different teams at the Tor Project first.
 This means that it's often necessary to run the same research more than once to validate your findings, and meet the expectations of the engineers, developers, designers, researchers and others at Tor.
-Please read our [Guidelines](https://community.torproject.org/user-research/guidelines/) to get to know this process more.
+Please read our [Guidelines](../guidelines/) to get to know this process more.
 
 ## Checklist
 
@@ -53,7 +53,7 @@ Please read our [Guidelines](https://community.torproject.org/user-research/guid
 - If you don't have one yet, [request a Gitlab account](https://support.torproject.org/misc/bug-or-feedback/).
 - Open an issue in the [UX Research Repository](https://gitlab.torproject.org/tpo/ux/research/-/issues). 
 - Subscribe to the [UX mailing list](https://lists.torproject.org/cgi-bin/mailman/listinfo).
-- Learn more about our users by reading [Tor's user personas](https://community.torproject.org/user-research/persona).
+- Learn more about our users by reading [Tor's user personas](../persona).
 ---
 color: primary
 ---

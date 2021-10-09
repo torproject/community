@@ -28,7 +28,7 @@ If no authorization is configured, the service will be accessible to anyone with
 
 ### Service side
 
-To configure client authorization on the service side, the `<HiddenServiceDir>/authorized_clients/` directory needs to exist. Following the instructions described in the section [Setup](https://community.torproject.org/onion-services/setup/) will automatically create this directory.
+To configure client authorization on the service side, the `<HiddenServiceDir>/authorized_clients/` directory needs to exist. Following the instructions described in the section [Setup](../../setup/) will automatically create this directory.
 Client authorization will only be enabled for the service if tor successfully loads at least one authorization file.
 
 For now, you need to create the keys yourself with a script (like these written in [Bash](https://gist.github.com/mtigas/9c2386adf65345be34045dace134140b), [Rust](https://github.com/haxxpop/torkeygen) or [Python](https://github.com/pastly/python-snippits/blob/master/src/tor/x25519-gen.py)) or manually.
