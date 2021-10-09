@@ -38,7 +38,7 @@ Onion services aren't like a Tor relay in the network.
 
 An onion service on the Tor network behaves like any other Tor clients.
 The Onion Service to become available on the network connects to rendezvous nodes.
-A client that wants to access the onion service does the same. 
+A client that wants to access the onion service does the same.
 
 This means that connections from the client to the server never leave the Tor network.
 In contrast to running a [Tor relay](../../relay), running a Tor Onion Service does not result in your IP address being publicly listed anywhere, nor does your service relay other Tor traffic.
