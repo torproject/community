@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-09 18:52+CET\n"
+"POT-Creation-Date: 2021-10-09 20:29+CET\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -1881,7 +1881,7 @@ msgstr ""
 #: (content/training/best-practices/contents+en.lr:page.body)
 msgid ""
 "8. Decide how you will facilitate a safer space. We recommend using the [Tor "
-"Code of Conduct](/training/code-of-conduct/)."
+"Code of Conduct](../training/code-of-conduct/)."
 msgstr ""
 
 #: https://community.torproject.org/training/best-practices/
@@ -1932,9 +1932,8 @@ msgstr ""
 #: https://community.torproject.org/training/best-practices/
 #: (content/training/best-practices/contents+en.lr:page.body)
 msgid ""
-"6. Show the participants the resources at [community.torproject.org](https://"
-"community.torproject.org) and [support.torproject.org](https://support."
-"torproject.org)."
+"6. Show the participants the retources at [community.torproject.org](/) and "
+"[support.torproject.org](https://support.torproject.org)."
 msgstr ""
 
 #: https://community.torproject.org/training/best-practices/
@@ -3186,9 +3185,8 @@ msgstr ""
 #: https://community.torproject.org/onion-services/talk/
 #: (content/onion-services/talk/contents+en.lr:page.body)
 msgid ""
-"As explained in [Overview](https://community.torproject.org/onion-services/"
-"overview/), there's no central authority that approves or rejects onion "
-"services."
+"As explained in [Overview](../overview/), there's no central authority that "
+"approves or rejects onion services."
 msgstr ""
 
 #: https://community.torproject.org/onion-services/talk/
@@ -15371,12 +15369,34 @@ msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/netbsd/
 #: (content/relay/setup/bridge/netbsd/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/bridge/debian-ubuntu/
+#: (content/relay/setup/bridge/debian-ubuntu/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/bridge/windows/
+#: (content/relay/setup/bridge/windows/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/bridge/dragonflybsd/
+#: (content/relay/setup/bridge/dragonflybsd/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/bridge/docker/
+#: (content/relay/setup/bridge/docker/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/bridge/centos-rhel-opensuse/
+#: (content/relay/setup/bridge/centos-rhel-opensuse/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/bridge/fedora/
+#: (content/relay/setup/bridge/fedora/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/bridge/freebsd/
+#: (content/relay/setup/bridge/freebsd/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/bridge/openbsd/
+#: (content/relay/setup/bridge/openbsd/contents+en.lr:page.body)
+msgid ""
+"If you are having trouble setting up your bridge, have a look at [our help "
+"section](../../../getting-help/)."
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/bridge/netbsd/
+#: (content/relay/setup/bridge/netbsd/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/bridge/windows/
 #: (content/relay/setup/bridge/windows/contents+en.lr:page.body)
 msgid ""
-"If you are having troubles setting up your bridge, have a look at [our help "
-"section](https://community.torproject.org/relay/getting-help/). If your "
-"bridge is now running, check out the [post-install notes](../post-install/)."
+"If your bridge is now running, check out the [post-install notes](../../post-"
+"install/)."
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/post-install/
@@ -15682,23 +15702,6 @@ msgstr ""
 #: https://community.torproject.org/relay/setup/bridge/openbsd/
 #: (content/relay/setup/bridge/openbsd/contents+en.lr:page.body)
 msgid "### 6. Final notes"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/bridge/debian-ubuntu/
-#: (content/relay/setup/bridge/debian-ubuntu/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/bridge/docker/
-#: (content/relay/setup/bridge/docker/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/bridge/centos-rhel-opensuse/
-#: (content/relay/setup/bridge/centos-rhel-opensuse/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/bridge/fedora/
-#: (content/relay/setup/bridge/fedora/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/bridge/freebsd/
-#: (content/relay/setup/bridge/freebsd/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/bridge/openbsd/
-#: (content/relay/setup/bridge/openbsd/contents+en.lr:page.body)
-msgid ""
-"If you are having trouble setting up your bridge, have a look at [our help "
-"section](../../../getting-help/)."
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/debian-ubuntu/
@@ -16132,13 +16135,6 @@ msgstr ""
 #: https://community.torproject.org/relay/setup/bridge/dragonflybsd/
 #: (content/relay/setup/bridge/dragonflybsd/contents+en.lr:page.body)
 msgid "### 6. Final Notes"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/bridge/dragonflybsd/
-#: (content/relay/setup/bridge/dragonflybsd/contents+en.lr:page.body)
-msgid ""
-"If you are having troubles setting up your bridge, have a look at [our help "
-"section](../../../getting-help/)."
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/docker/
