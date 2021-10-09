@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-09 13:08+CET\n"
+"POT-Creation-Date: 2021-10-09 18:52+CET\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -398,8 +398,7 @@ msgstr ""
 #: (content/user-research/open/contents+en.lr:page.body)
 msgid ""
 "Before running Tor user research, be sure you read our [Guidelines to "
-"becoming a user researcher with Tor](https://community.torproject.org/user-"
-"research/guidelines)."
+"becoming a user researcher with Tor](../guidelines/)."
 msgstr ""
 
 #: https://community.torproject.org/user-research/open/
@@ -891,8 +890,8 @@ msgstr ""
 #: (content/user-research/how-to-volunteer/contents+en.lr:page.body)
 msgid ""
 "If you're already familiar with the Tor Project and user testing, have a "
-"look at our [current needs for user research](https://community.torproject."
-"org/user-research/open/) and see which study better suits you."
+"look at our [current needs for user research](../open/) and see which study "
+"better suits you."
 msgstr ""
 
 #: https://community.torproject.org/user-research/how-to-volunteer/
@@ -907,13 +906,12 @@ msgstr ""
 msgid ""
 "As a volunteer we also ask that you read and follow our [Code of Conduct]"
 "(https://gitweb.torproject.org/community/policies.git/tree/code_of_conduct."
-"txt), as well our [Guidelines for Research](https://community.torproject.org/"
-"user-research/guidelines/)."
+"txt), as well our [Guidelines for Research](../guidelines/)."
 msgstr ""
 
 #: https://community.torproject.org/user-research/how-to-volunteer/
 #: (content/user-research/how-to-volunteer/contents+en.lr:page.body)
-msgid "**Why do we run Demographics?**"
+msgid "### Why do we run Demographics?"
 msgstr ""
 
 #: https://community.torproject.org/user-research/how-to-volunteer/
@@ -1029,8 +1027,8 @@ msgstr ""
 #: https://community.torproject.org/user-research/how-to-volunteer/
 #: (content/user-research/how-to-volunteer/contents+en.lr:page.body)
 msgid ""
-"Please read our [Guidelines](https://community.torproject.org/user-research/"
-"guidelines/) to get to know this process more."
+"Please read our [Guidelines](../guidelines/) to get to know this process "
+"more."
 msgstr ""
 
 #: https://community.torproject.org/user-research/how-to-volunteer/
@@ -1076,8 +1074,7 @@ msgstr ""
 #: https://community.torproject.org/user-research/how-to-volunteer/
 #: (content/user-research/how-to-volunteer/contents+en.lr:page.body)
 msgid ""
-"- Learn more about our users by reading [Tor's user personas](https://"
-"community.torproject.org/user-research/persona)."
+"- Learn more about our users by reading [Tor's user personas](../persona/)."
 msgstr ""
 
 #: https://community.torproject.org/user-research/reports/
@@ -1522,8 +1519,7 @@ msgstr ""
 #: https://community.torproject.org/training/risks/
 #: (content/training/risks/contents+en.lr:page.body)
 msgid ""
-"* [EFF Tor legal FAQ](https://community.torproject.org/relay/community-"
-"resources/eff-tor-legal-faq/)"
+"* [EFF Tor legal FAQ](../../relay/community-resources/eff-tor-legal-faq/)"
 msgstr ""
 
 #: https://community.torproject.org/training/risks/
@@ -1584,15 +1580,12 @@ msgstr ""
 #: https://community.torproject.org/training/checklist/
 #: (content/training/checklist/contents+en.lr:page.body)
 msgid ""
-"* I read and agree with the Tor Project [Code of Coduct](https://community."
-"torproject.org/training/code-of-conduct/)"
+"* I read and agree with the Tor Project [Code of Coduct](../code-of-conduct/)"
 msgstr ""
 
 #: https://community.torproject.org/training/checklist/
 #: (content/training/checklist/contents+en.lr:page.body)
-msgid ""
-"* I read the Training [Best Practices](https://community.torproject.org/"
-"training/best-practices/)"
+msgid "* I read the Training [Best Practices](../best-practices/)"
 msgstr ""
 
 #: https://community.torproject.org/training/checklist/
@@ -1602,9 +1595,7 @@ msgstr ""
 
 #: https://community.torproject.org/training/checklist/
 #: (content/training/checklist/contents+en.lr:page.body)
-msgid ""
-"* I reviewed my [training slides](https://community.torproject.org/training/"
-"resources/)"
+msgid "* I reviewed my [training slides](../resources/)"
 msgstr ""
 
 #: https://community.torproject.org/training/checklist/
@@ -2803,10 +2794,9 @@ msgstr ""
 #: https://community.torproject.org/onion-services/talk/
 #: (content/onion-services/talk/contents+en.lr:page.body)
 msgid ""
-"[Tor relays](https://community.torproject.org/relay/types-of-relays/) are "
-"part of a [public infrastructure](https://metrics.torproject.org/rs."
-"html#toprelays), where Tor users encrypted traffic is routed around to reach "
-"out the open internet."
+"[Tor relays](../../relay/types-of-relays/) are part of a [public "
+"infrastructure](https://metrics.torproject.org/rs.html#toprelays), where Tor "
+"users encrypted traffic is routed around to reach out the open internet."
 msgstr ""
 
 #: https://community.torproject.org/onion-services/talk/
@@ -2841,18 +2831,17 @@ msgstr ""
 #: https://community.torproject.org/onion-services/talk/
 #: (content/onion-services/talk/contents+en.lr:page.body)
 msgid ""
-"In contrast to running a [Tor relay](https://community.torproject.org/"
-"relay), running a Tor Onion Service does not result in your IP address being "
-"publicly listed anywhere, nor does your service relay other Tor traffic."
+"In contrast to running a [Tor relay](../../relay), running a Tor Onion "
+"Service does not result in your IP address being publicly listed anywhere, "
+"nor does your service relay other Tor traffic."
 msgstr ""
 
 #: https://community.torproject.org/onion-services/talk/
 #: (content/onion-services/talk/contents+en.lr:page.body)
 msgid ""
-"For a broader understanding, read [Onion Services overview](https://"
-"community.torproject.org/onion-services/overview/) and watch this talk: [DEF "
-"CON 25 - Next Generation Tor Onion Services](https://www.youtube.com/watch?"
-"v=Di7qAVidy1Y)."
+"For a broader understanding, read [Onion Services overview](../overview/) "
+"and watch this talk: [DEF CON 25 - Next Generation Tor Onion Services]"
+"(https://www.youtube.com/watch?v=Di7qAVidy1Y)."
 msgstr ""
 
 #: https://community.torproject.org/onion-services/talk/
@@ -3302,9 +3291,8 @@ msgstr ""
 #: (content/onion-services/talk/contents+en.lr:page.body)
 msgid ""
 "Now that you know all the benefits of onion services, you may want to set up "
-"an [onion site](https://community.torproject.org/onion-services/setup/) and "
-"read about the [protocol overview](https://community.torproject.org/onion-"
-"services/overview/)."
+"an [onion site](../setup/) and read about the [protocol overview](../"
+"overview/)."
 msgstr ""
 
 #: https://community.torproject.org/onion-services/advanced/
@@ -3370,9 +3358,7 @@ msgstr ""
 
 #: https://community.torproject.org/onion-services/setup/
 #: (content/onion-services/setup/contents+en.lr:page.body)
-msgid ""
-"To set up Tor, please follow the [Tor installation guide](https://community."
-"torproject.org/onion-services/setup/install/)."
+msgid "To set up Tor, please follow the [Tor installation guide](./install/)."
 msgstr ""
 
 #: https://community.torproject.org/onion-services/setup/
@@ -3781,8 +3767,8 @@ msgstr ""
 #: https://community.torproject.org/onion-services/setup/
 #: (content/onion-services/setup/contents+en.lr:page.body)
 msgid ""
-"Read more about [Client authorization](https://community.torproject.org/"
-"onion-services/advanced/client-auth/) documentation."
+"Read more about [Client authorization](../advanced/client-auth/) "
+"documentation."
 msgstr ""
 
 #: https://community.torproject.org/onion-services/setup/
@@ -3978,9 +3964,7 @@ msgstr ""
 
 #: https://community.torproject.org/onion-services/setup/
 #: (content/onion-services/setup/contents+en.lr:page.body)
-msgid ""
-"* [Operational Security](https://community.torproject.org/onion-services/"
-"advanced/opsec/)."
+msgid "* [Operational Security](../advanced/opsec/)."
 msgstr ""
 
 #: https://community.torproject.org/onion-services/setup/
@@ -4009,12 +3993,11 @@ msgstr ""
 #: (content/onion-services/setup/contents+en.lr:page.body)
 msgid ""
 "Now that you have an onion site working, you may want to deploy [Onion-"
-"Location](https://community.torproject.org/onion-services/advanced/onion-"
-"location/), or use tools like Docker, [Heroku](https://gitlab.torproject.org/"
-"hiro/onions-on-heroku), [Terraform](https://gitlab.torproject.org/hiro/"
-"terraform-onions), [Ansible](https://galaxy.ansible.com/systemli/onion) or "
-"[stem](https://stem.torproject.org/tutorials/over_the_river.html) to "
-"automate the management of your onion services."
+"Location](../advanced/onion-location/), or use tools like Docker, [Heroku]"
+"(https://gitlab.torproject.org/hiro/onions-on-heroku), [Terraform](https://"
+"gitlab.torproject.org/hiro/terraform-onions), [Ansible](https://galaxy."
+"ansible.com/systemli/onion) or [stem](https://stem.torproject.org/tutorials/"
+"over_the_river.html) to automate the management of your onion services."
 msgstr ""
 
 #: https://community.torproject.org/onion-services/setup/
@@ -5822,9 +5805,7 @@ msgstr ""
 
 #: https://community.torproject.org/outreach/meetup/
 #: (content/outreach/meetup/contents+en.lr:page.body)
-msgid ""
-"Read and follow our [best practices](https://community.torproject.org/"
-"training/best-practices/)."
+msgid "Read and follow our [best practices](../../training/best-practices/)."
 msgstr ""
 
 #: https://community.torproject.org/outreach/meetup/
@@ -5836,8 +5817,7 @@ msgstr ""
 #: (content/outreach/meetup/contents+en.lr:page.body)
 msgid ""
 "Before the meetup, organize the space. Buy some chips and snacks, hang some "
-"[posters](https://community.torproject.org/outreach/kit/) nearby the local, "
-"so people can find easily."
+"[posters](../kit/) nearby the local, so people can find easily."
 msgstr ""
 
 #: https://community.torproject.org/outreach/meetup/
@@ -5870,8 +5850,8 @@ msgstr ""
 #: https://community.torproject.org/outreach/meetup/
 #: (content/outreach/meetup/contents+en.lr:page.body)
 msgid ""
-"After the meetup, clean up the space, remove the posters and upload your "
-"notes to [Tor Community Team](https://lists.torproject.org/cgi-bin/mailman/"
+"After the meetup, clean up the space, remove the posters and send your notes "
+"to the [Tor Community Team](https://lists.torproject.org/cgi-bin/mailman/"
 "listinfo/tor-community-team) mailing list."
 msgstr ""
 
@@ -7068,8 +7048,7 @@ msgstr ""
 msgid ""
 "That said, having too many onion addresses is actually bad for your security "
 "(because of the use of many guard nodes), so try to use [client "
-"authorization](https://community.torproject.org/onion-services/advanced/"
-"client-auth) when possible."
+"authorization](../client-auth/) when possible."
 msgstr ""
 
 #: https://community.torproject.org/onion-services/advanced/dos/
@@ -7785,8 +7764,7 @@ msgstr ""
 msgid ""
 "Alternatively, websites can provide other ways to verify their onion address "
 "using HTTPS, for example, linking their onion site address from an HTTPS-"
-"authenticated page, or using [Onion-Location](https://community.torproject."
-"org/onion-services/advanced/onion-location/)."
+"authenticated page, or using [Onion-Location](../onion-location/)."
 msgstr ""
 
 #: https://community.torproject.org/onion-services/advanced/https/
@@ -8055,9 +8033,8 @@ msgstr ""
 #: https://community.torproject.org/onion-services/advanced/opsec/
 #: (content/onion-services/advanced/opsec/contents+en.lr:page.body)
 msgid ""
-"- As mentioned [here](https://community.torproject.org/onion-services/"
-"setup/), be careful of letting your web server reveal identifying "
-"information about you, your computer, or your location."
+"- As mentioned [here](../../setup/), be careful of letting your web server "
+"reveal identifying information about you, your computer, or your location."
 msgstr ""
 
 #: https://community.torproject.org/onion-services/advanced/opsec/
@@ -8191,9 +8168,8 @@ msgstr ""
 msgid ""
 "To configure client authorization on the service side, the "
 "`<HiddenServiceDir>/authorized_clients/` directory needs to exist. Following "
-"the instructions described in the section [Setup](https://community."
-"torproject.org/onion-services/setup/) will automatically create this "
-"directory."
+"the instructions described in the section [Setup](../../setup/) will "
+"automatically create this directory."
 msgstr ""
 
 #: https://community.torproject.org/onion-services/advanced/client-auth/
@@ -9383,12 +9359,8 @@ msgstr ""
 #: (content/relay/community-resources/tor-abuse-templates/contents+en.lr:page.body)
 msgid ""
 "To help protect yourself while using open wireless, consider using this "
-"Firefox plugin: https://www.eff.org/https-everywhere/ and encourage the"
-msgstr ""
-
-#: https://community.torproject.org/relay/community-resources/tor-abuse-templates/
-#: (content/relay/community-resources/tor-abuse-templates/contents+en.lr:page.body)
-msgid "site maintainer to support HTTPS logins."
+"Firefox plugin: <https://www.eff.org/https-everywhere/> and encourage the "
+"site maintainer to support HTTPS logins."
 msgstr ""
 
 #: https://community.torproject.org/relay/community-resources/tor-abuse-templates/
@@ -10445,7 +10417,7 @@ msgstr ""
 
 #: https://community.torproject.org/relay/community-resources/tor-exit-guidelines/
 #: (content/relay/community-resources/tor-exit-guidelines/contents+en.lr:page.body)
-msgid "* [Tor Relay Guide](/relay)"
+msgid "* [Tor Relay Guide](../../)"
 msgstr ""
 
 #: https://community.torproject.org/relay/community-resources/tor-exit-guidelines/
@@ -10905,12 +10877,22 @@ msgstr ""
 #: (content/relay/community-resources/tor-relay-universities/contents+en.lr:page.body)
 msgid ""
 "If there are too many complaints coming in, there are several approaches you "
-"can take to reduce them. First, you should follow the tips in the [Tor relay "
-"documentation](https://community.torproject.org/relay), such as picking a "
-"descriptive hostname or getting your own IP address. If that doesn't work, "
-"you can scale back the advertised speed of your relay, by using the "
-"`MaxAdvertisedBandwidth` to attract less traffic from the Tor network. "
-"Lastly, you can scale back your exit policy."
+"can take to reduce them."
+msgstr ""
+
+#: https://community.torproject.org/relay/community-resources/tor-relay-universities/
+#: (content/relay/community-resources/tor-relay-universities/contents+en.lr:page.body)
+msgid ""
+"First, you should follow the tips in the [Tor relay documentation](../../), "
+"such as picking a descriptive hostname or getting your own IP address."
+msgstr ""
+
+#: https://community.torproject.org/relay/community-resources/tor-relay-universities/
+#: (content/relay/community-resources/tor-relay-universities/contents+en.lr:page.body)
+msgid ""
+"If that doesn't work, you can scale back the advertised speed of your relay, "
+"by using the `MaxAdvertisedBandwidth` to attract less traffic from the Tor "
+"network. Lastly, you can scale back your exit policy."
 msgstr ""
 
 #: https://community.torproject.org/relay/community-resources/tor-relay-universities/
@@ -15394,8 +15376,7 @@ msgstr ""
 msgid ""
 "If you are having troubles setting up your bridge, have a look at [our help "
 "section](https://community.torproject.org/relay/getting-help/). If your "
-"bridge is now running, check out the [post-install notes](https://community."
-"torproject.org/relay/setup/bridge/post-install/)."
+"bridge is now running, check out the [post-install notes](../post-install/)."
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/post-install/
@@ -15717,13 +15698,15 @@ msgstr ""
 #: (content/relay/setup/bridge/openbsd/contents+en.lr:page.body)
 msgid ""
 "If you are having trouble setting up your bridge, have a look at [our help "
-"section](https://community.torproject.org/relay/getting-help/)."
+"section](../../../getting-help/)."
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/debian-ubuntu/
 #: (content/relay/setup/bridge/debian-ubuntu/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/bridge/dragonflybsd/
 #: (content/relay/setup/bridge/dragonflybsd/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/bridge/docker/
+#: (content/relay/setup/bridge/docker/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/bridge/centos-rhel-opensuse/
 #: (content/relay/setup/bridge/centos-rhel-opensuse/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/bridge/fedora/
@@ -15733,8 +15716,8 @@ msgstr ""
 #: https://community.torproject.org/relay/setup/bridge/openbsd/
 #: (content/relay/setup/bridge/openbsd/contents+en.lr:page.body)
 msgid ""
-"If your bridge is now running, check out the [post-install notes](https://"
-"community.torproject.org/relay/setup/bridge/post-install/)."
+"If your bridge is now running, check out the [post-install notes](../post-"
+"install/)."
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/windows/
@@ -16155,7 +16138,7 @@ msgstr ""
 #: (content/relay/setup/bridge/dragonflybsd/contents+en.lr:page.body)
 msgid ""
 "If you are having troubles setting up your bridge, have a look at [our help "
-"section](https://community.torproject.org/relay/getting-help/)."
+"section](../../../getting-help/)."
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/docker/
@@ -16333,13 +16316,6 @@ msgid ""
 "obfs4 1.2.3.4:1234 B0E566C9031657EA7ED3FC9D248E8AC4F37635A4 "
 "cert=OYWq67L7MDApdJCctUAF7rX8LHvMxvIBPHOoAp0+YXzlQdsxhw6EapaMNwbbGICkpY8CPQ "
 "iat-mode=0"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/bridge/docker/
-#: (content/relay/setup/bridge/docker/contents+en.lr:page.body)
-msgid ""
-"Make sure to check out the [post-install notes](https://community.torproject."
-"org/relay/setup/bridge/post-install/)."
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/docker/
