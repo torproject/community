@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-29 12:10+CET\n"
+"POT-Creation-Date: 2021-10-09 13:08+CET\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -2112,14 +2112,91 @@ msgstr ""
 
 #: https://community.torproject.org/training/resources/
 #: (content/training/resources/contents+en.lr:page.body)
-msgid "##Resources"
+msgid ""
+"Our Community team delivers digital security training about Tor to human "
+"rights defenders, journalists, activists and marginalized communities around "
+"the world."
 msgstr ""
 
 #: https://community.torproject.org/training/resources/
 #: (content/training/resources/contents+en.lr:page.body)
 msgid ""
-"Do you teach your community about using Tor? These training resources are "
-"for you."
+"To request a Tor training for your organization or community, please contact "
+"us and send an email to [training at torproject.org](mailto:"
+"training@torproject.org)."
+msgstr ""
+
+#: https://community.torproject.org/training/resources/
+#: (content/training/resources/contents+en.lr:page.body)
+msgid ""
+"Or, if you want to teach your community about Tor, these training materials "
+"are for you!"
+msgstr ""
+
+#: https://community.torproject.org/training/resources/
+#: (content/training/resources/contents+en.lr:page.body)
+msgid "### Community building"
+msgstr ""
+
+#: https://community.torproject.org/training/resources/
+#: (content/training/resources/contents+en.lr:page.body)
+msgid ""
+"Do you know of or have any Tor training materials (slides, guides, fanzines, "
+"videos, and other formats) that should be part of this training section?"
+msgstr ""
+
+#: https://community.torproject.org/training/resources/
+#: (content/training/resources/contents+en.lr:page.body)
+msgid ""
+"Please send an email to [training at torproject.org](mailto:"
+"training@torproject.org) with:"
+msgstr ""
+
+#: https://community.torproject.org/training/resources/
+#: (content/training/resources/contents+en.lr:page.body)
+msgid "- Title and description"
+msgstr ""
+
+#: https://community.torproject.org/training/resources/
+#: (content/training/resources/contents+en.lr:page.body)
+msgid "- Author and author contact information"
+msgstr ""
+
+#: https://community.torproject.org/training/resources/
+#: (content/training/resources/contents+en.lr:page.body)
+msgid "- Link to download or access the resource"
+msgstr ""
+
+#: https://community.torproject.org/training/resources/
+#: (content/training/resources/contents+en.lr:page.body)
+msgid "- Resource license (Creative Commons or similar license)"
+msgstr ""
+
+#: https://community.torproject.org/training/resources/
+#: (content/training/resources/contents+en.lr:page.body)
+msgid "Please note that we will evaluate if:"
+msgstr ""
+
+#: https://community.torproject.org/training/resources/
+#: (content/training/resources/contents+en.lr:page.body)
+msgid "- The material is being updated and maintained."
+msgstr ""
+
+#: https://community.torproject.org/training/resources/
+#: (content/training/resources/contents+en.lr:page.body)
+msgid ""
+"- Do no harm: demystifies the \"dark/deep web\" and training materials that "
+"will not put people at risk."
+msgstr ""
+
+#: https://community.torproject.org/training/resources/
+#: (content/training/resources/contents+en.lr:page.body)
+msgid ""
+"- Follow the Tor Project's [Code of Conduct](https://gitweb.torproject.org/"
+"community/policies.git/tree/code_of_conduct.txt), [Statement of Values]"
+"(https://gitweb.torproject.org/community/policies.git/tree/"
+"statement_of_values.txt), and [Social Contract](https://gitweb.torproject."
+"org/community/policies.git/tree/social_contract.txt)."
 msgstr ""
 
 #: https://community.torproject.org/onion-services/overview/
@@ -4249,8 +4326,8 @@ msgstr ""
 #: (content/localization/translation-problem/contents+en.lr:page.body)
 msgid ""
 "Before opening a ticket, see the currently [open tickets for Translations]"
-"(https://github.com/torproject/community/tree/master/content/localization) "
-"because maybe it is already reported."
+"(https://gitlab.torproject.org/tpo/community/l10n/-/issues?"
+"scope=all&state=opened) because maybe it is already reported."
 msgstr ""
 
 #: https://community.torproject.org/localization/translation-problem/
@@ -5607,11 +5684,23 @@ msgstr ""
 #: https://community.torproject.org/relay/getting-help/
 #: (content/relay/getting-help/contents+en.lr:page.body)
 msgid ""
-"If you run into problems while setting up your relay, you can ask your "
-"questions on the public [tor-relays mailing list](https://lists.torproject."
-"org/cgi-bin/mailman/listinfo/tor-relays).  The list is a great resource for "
-"asking (and answering) questions, and for getting to know other relay "
-"operators. Make sure to check out the archives!"
+"If you run into problems while setting up your relay, please refer to the "
+"[FAQs page](https://support.torproject.org/relay-operators) in the Support "
+"Portal."
+msgstr ""
+
+#: https://community.torproject.org/relay/getting-help/
+#: (content/relay/getting-help/contents+en.lr:page.body)
+msgid ""
+"You can ask your questions on the public [tor-relays mailing list](https://"
+"lists.torproject.org/cgi-bin/mailman/listinfo/tor-relays)."
+msgstr ""
+
+#: https://community.torproject.org/relay/getting-help/
+#: (content/relay/getting-help/contents+en.lr:page.body)
+msgid ""
+"The list is a great resource for asking (and answering) questions, and for "
+"getting to know other relay operators. Make sure to check out the archives!"
 msgstr ""
 
 #: https://community.torproject.org/relay/getting-help/
@@ -10356,7 +10445,7 @@ msgstr ""
 
 #: https://community.torproject.org/relay/community-resources/tor-exit-guidelines/
 #: (content/relay/community-resources/tor-exit-guidelines/contents+en.lr:page.body)
-msgid "* [Tor Relay Guide](https://community.torproject.org/relay)"
+msgid "* [Tor Relay Guide](/relay)"
 msgstr ""
 
 #: https://community.torproject.org/relay/community-resources/tor-exit-guidelines/
@@ -11048,7 +11137,7 @@ msgstr ""
 
 #: https://community.torproject.org/relay/community-resources/good-bad-isps/
 #: (content/relay/community-resources/good-bad-isps/contents+en.lr:page.body)
-msgid "| [T-Systems`](http://www.t-systems.cz/) | - | Yes | Yes | ? | - | - |"
+msgid "| [T-Systems](http://www.t-systems.cz/) | - | Yes | Yes | ? | - | - |"
 msgstr ""
 
 #: https://community.torproject.org/relay/community-resources/good-bad-isps/
@@ -11076,12 +11165,10 @@ msgstr ""
 #: https://community.torproject.org/relay/community-resources/good-bad-isps/
 #: (content/relay/community-resources/good-bad-isps/contents+en.lr:page.body)
 msgid ""
-"| [OVH Kimsufi](http://www.kimsufi.com/) | - | Yes | Yes | No | Changed "
-"their TOS in July 2013 and allow Tor as long as they don't notice illegal "
-"activities. Exit nodes would eventually be shut down, but relays are "
-"allowed. Octave Klaba, CEO of OVH said himself that the TOS have been "
-"changed to make them clearer about the use of Tor. Many relays are currently "
-"running on Kimsufi servers | - |"
+"| [OVH Kimsufi](http://www.kimsufi.com/) | AS16276 | Yes | Yes | No | "
+"Unmetered bandwidth @ 100mbps - \"I will gladly explain this situation for "
+"you. Running a Tor exit node is strictly forbidden and can lead to the "
+"suspension and even termination of your server and account.\" | 09/27/2021 |"
 msgstr ""
 
 #: https://community.torproject.org/relay/community-resources/good-bad-isps/
@@ -11092,8 +11179,8 @@ msgstr ""
 #: https://community.torproject.org/relay/community-resources/good-bad-isps/
 #: (content/relay/community-resources/good-bad-isps/contents+en.lr:page.body)
 msgid ""
-"| [Pulse Servers](http://www.pulseservers.com/) | - | Yes | Yes | Yes | VPS "
-"uses OVH AS. You can build ANY kind tor relays. | 05/01/2016 |"
+"| [Pulse Servers](http://www.pulseservers.com/) | AS16276 | Yes | Yes | Yes "
+"| VPS uses OVH AS. You can build ANY kind tor relays. | 09/27/2021 |"
 msgstr ""
 
 #: https://community.torproject.org/relay/community-resources/good-bad-isps/
@@ -11192,14 +11279,15 @@ msgstr ""
 #: (content/relay/community-resources/good-bad-isps/contents+en.lr:page.body)
 msgid ""
 "| [Hetzner](http://hetzner.de) | AS24940 | Yes | Yes | Yes | Offers good "
-"dedicated root servers for a good price. \"It is not a Problem, however, "
-"abuse reports can lead to a server lock\" | 03/2021 |"
+"dedicated root servers for a good price. Unmetered bandwidth on dedicated "
+"servers, 20tb on vps. \"It is not a Problem, however, abuse reports can lead "
+"to a server lock\" | 09/27/2021 |"
 msgstr ""
 
 #: https://community.torproject.org/relay/community-resources/good-bad-isps/
 #: (content/relay/community-resources/good-bad-isps/contents+en.lr:page.body)
 msgid ""
-"| [Contabo](https://contabo.de) | AS51167  | No | No | No | Tor prohibited "
+"| [Contabo](https://contabo.de) | AS51167 | No | No | No | Tor prohibited "
 "due to terms of service | 03/2021 |"
 msgstr ""
 
@@ -11239,8 +11327,9 @@ msgstr ""
 #: https://community.torproject.org/relay/community-resources/good-bad-isps/
 #: (content/relay/community-resources/good-bad-isps/contents+en.lr:page.body)
 msgid ""
-"| [Netcup](https://www.netcup.de) | AS197540 | Yes | Yes | Yes | Tor allowed "
-"on VPS and rootservers | 03/2021 |"
+"| [Netcup](https://www.netcup.de) | AS197540 | Yes | Yes | Yes | 40-120TB "
+"bandwidth - Tor exit nodes allowed on VPS and rootservers - \"Yes, it is. "
+"Everything is allowed that the T&Cs do not exclude.\" | 09/27/2021 |"
 msgstr ""
 
 #: https://community.torproject.org/relay/community-resources/good-bad-isps/
@@ -11438,6 +11527,20 @@ msgstr ""
 
 #: https://community.torproject.org/relay/community-resources/good-bad-isps/
 #: (content/relay/community-resources/good-bad-isps/contents+en.lr:page.body)
+msgid "### Luxembourg"
+msgstr ""
+
+#: https://community.torproject.org/relay/community-resources/good-bad-isps/
+#: (content/relay/community-resources/good-bad-isps/contents+en.lr:page.body)
+msgid ""
+"| [BuyVM.net](https://buyvm.net) | AS53667 | Yes | Yes | Yes | New Tor rules "
+"[here](https://buyvm.net/acceptable-use-policy/#3). All relays are fine if "
+"you follow the steps. Notices are ignored. Unmetered bandwidth. | 09/27/2021 "
+"|"
+msgstr ""
+
+#: https://community.torproject.org/relay/community-resources/good-bad-isps/
+#: (content/relay/community-resources/good-bad-isps/contents+en.lr:page.body)
 msgid "### Mexico"
 msgstr ""
 
@@ -11568,7 +11671,7 @@ msgstr ""
 #: https://community.torproject.org/relay/community-resources/good-bad-isps/
 #: (content/relay/community-resources/good-bad-isps/contents+en.lr:page.body)
 msgid ""
-"| [Netrouting`](http://netrouting.nl/) | - | Yes | Yes | No | ISP has "
+"| [Netrouting](http://netrouting.nl/) | - | Yes | Yes | No | ISP has "
 "confirmed by e-mail that exit nodes are NOT acceptable. | 2014-10-15 |"
 msgstr ""
 
@@ -11861,6 +11964,15 @@ msgstr ""
 
 #: https://community.torproject.org/relay/community-resources/good-bad-isps/
 #: (content/relay/community-resources/good-bad-isps/contents+en.lr:page.body)
+msgid ""
+"| [Hostworld](https://hostworld.uk/) | - | Yes | Yes | Yes | They are very "
+"responsive and understand the uses of Tor. They have a strict policy with "
+"abuse/spam and will not refund under their money back guarantee if abuse has "
+"been noticed. | 09/2021 |"
+msgstr ""
+
+#: https://community.torproject.org/relay/community-resources/good-bad-isps/
+#: (content/relay/community-resources/good-bad-isps/contents+en.lr:page.body)
 msgid "### US"
 msgstr ""
 
@@ -11875,7 +11987,8 @@ msgstr ""
 #: (content/relay/community-resources/good-bad-isps/contents+en.lr:page.body)
 msgid ""
 "| [Amazon Web Services (AWS)](https://aws.amazon.com) | - | Yes | Yes | No | "
-"- | - |"
+"Expensive bandwidth, you WILL be charged extra after reaching 15GB. | "
+"09/27/2021 |"
 msgstr ""
 
 #: https://community.torproject.org/relay/community-resources/good-bad-isps/
@@ -11900,14 +12013,6 @@ msgstr ""
 msgid ""
 "| [Blacklotus](http://www.blacklotus.net) | - | Yes | Yes | Yes | Liberal "
 "abuse handling policies | - |"
-msgstr ""
-
-#: https://community.torproject.org/relay/community-resources/good-bad-isps/
-#: (content/relay/community-resources/good-bad-isps/contents+en.lr:page.body)
-msgid ""
-"| [BuyVM.net](https://buyvm.net) | AS53667 | Yes | Yes | Yes | New Tor rules "
-"[here](https://buyvm.net/acceptable-use-policy/#3). All relays are fine if "
-"you follow the steps. | - |"
 msgstr ""
 
 #: https://community.torproject.org/relay/community-resources/good-bad-isps/
@@ -12006,6 +12111,19 @@ msgstr ""
 #: https://community.torproject.org/relay/community-resources/good-bad-isps/
 #: (content/relay/community-resources/good-bad-isps/contents+en.lr:page.body)
 msgid ""
+"| [Linode](https://www.linode.com/) | AS63949 | Yes | Yes | Yes | \"We allow "
+"Tor exits as long as they have a reduced exit policy.\" - I've used 10TB "
+"this month in total for all 3 of my exit nodes spread out in different "
+"locations. I've recieved 0 notices from Linode while using the free 100$ "
+"credits you get. I allow ports 53,80,443. My DE exit node is now the [2nd "
+"fastest](https://i.imgur.com/Owj6HkD.png) Linode relay, with UK third. I "
+"would recommend this host to use the free credits, but wouldn't really "
+"recommend paying as bandwidth is limited. | 10/07/2021 |"
+msgstr ""
+
+#: https://community.torproject.org/relay/community-resources/good-bad-isps/
+#: (content/relay/community-resources/good-bad-isps/contents+en.lr:page.body)
+msgid ""
 "| [Luna Node](https://www.lunanode.com/index.php) | - | Yes | Yes | No | - | "
 "05/01/14 |"
 msgstr ""
@@ -12013,8 +12131,11 @@ msgstr ""
 #: https://community.torproject.org/relay/community-resources/good-bad-isps/
 #: (content/relay/community-resources/good-bad-isps/contents+en.lr:page.body)
 msgid ""
-"| [OVH](https://www.ovh.com/us/index.xml ) | AS16276 | Yes | Yes | ? | - | "
-"12/31/14 |"
+"| [OVH](https://www.ovh.com/us/index.xml) | AS16276 | Yes | Yes | No | "
+"Unmetered bandwidth in non asia locations. - \"I will gladly explain this "
+"situation for you. Running a Tor exit node is strictly forbidden and can "
+"lead to the suspension and even termination of your server and account.\" | "
+"09/27/2021 |"
 msgstr ""
 
 #: https://community.torproject.org/relay/community-resources/good-bad-isps/
@@ -12159,6 +12280,14 @@ msgstr ""
 msgid ""
 "| [MonkeyBrains](https://monkeybrains.net) | AS32329 | Yes | Yes | Yes | "
 "Only offers colocation, no cheap VPS option. | 1/14/19 |"
+msgstr ""
+
+#: https://community.torproject.org/relay/community-resources/good-bad-isps/
+#: (content/relay/community-resources/good-bad-isps/contents+en.lr:page.body)
+msgid ""
+"| [Universal Hosting](https://universal-hosting.com) | - | No | No | No | "
+"Charges, and suspends customers. [More info](https://universal-hosting.com/"
+"abuse) | 9/14/2021 |"
 msgstr ""
 
 #: https://community.torproject.org/relay/community-resources/swag/
@@ -13139,7 +13268,7 @@ msgstr ""
 #: (content/relay/setup/post-install/contents+en.lr:page.body)
 msgid ""
 "Also see the bandwidth entry in the [FAQ](https://support.torproject.org/"
-"operators/bandwidth-shaping/)."
+"relay-operators/bandwidth-shaping/)."
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/post-install/
@@ -13231,7 +13360,7 @@ msgstr ""
 
 #: https://community.torproject.org/relay/setup/post-install/
 #: (content/relay/setup/post-install/contents+en.lr:page.body)
-msgid "ip addr|grep inet6|grep global"
+msgid "ip -6 addr | grep global | sed 's/inet6//;s#/.*##'"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/post-install/
@@ -14513,8 +14642,8 @@ msgstr ""
 #: https://community.torproject.org/relay/setup/snowflake/standalone/
 #: (content/relay/setup/snowflake/standalone/contents+en.lr:page.body)
 msgid ""
-"We have a [Docker image](https://hub.docker.com/repository/docker/"
-"thetorproject/snowflake-proxy) to ease the setup of a snowflake proxy."
+"We have a [Docker image](https://hub.docker.com/r/thetorproject/snowflake-"
+"proxy) to ease the setup of a snowflake proxy."
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/snowflake/standalone/
@@ -14604,6 +14733,11 @@ msgstr ""
 #: https://community.torproject.org/relay/setup/snowflake/standalone/
 #: (content/relay/setup/snowflake/standalone/contents+en.lr:page.body)
 msgid "3. Build the Snowflake proxy."
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/snowflake/standalone/
+#: (content/relay/setup/snowflake/standalone/contents+en.lr:page.body)
+msgid "cd snowflake/proxy"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/snowflake/standalone/
