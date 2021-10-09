@@ -19,7 +19,7 @@ There are several ways to setup and run a standalone snowflake proxy.
 
 You must first have [Docker](https://docs.docker.com/engine/install/) and [docker-compose](https://docs.docker.com/compose/install/) installed.
 
-We have a [Docker image](https://hub.docker.com/repository/docker/thetorproject/snowflake-proxy) to ease the setup of a snowflake proxy.
+We have a [Docker image](https://hub.docker.com/r/thetorproject/snowflake-proxy) to ease the setup of a snowflake proxy.
 First [download docker-compose.yml](https://gitlab.torproject.org/tpo/anti-censorship/docker-snowflake-proxy/raw/main/docker-compose.yml).
 Then, deploy the proxy by running:
 ```
@@ -49,6 +49,7 @@ You will need Go 1.13+ to run the Snowflake proxy.
    ```
 3. Build the Snowflake proxy.
    ```
+   cd snowflake/proxy
    go build
    ```
 4. Run the Snowflake proxy.

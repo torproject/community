@@ -123,7 +123,7 @@ If you have your own experience of abuse handling, just share it on our public m
 
 Please read all the technical details before getting started. If you have any questions or need help, please contact us at [tor-relays](https://lists.torproject.org/cgi-bin/mailman/listinfo/tor-relays).
 
-* [Tor Relay Guide](https://community.torproject.org/relay)
+* [Tor Relay Guide](/relay)
 
 * Set up an informative website on the exit IP(s) on port 80.
 

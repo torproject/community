@@ -2,7 +2,7 @@
   "all-about-tor": {
     "name": "All About Tor",
     "author": "Tor Project",
-    "link": "https://community.torproject.org/training/resources/tor-relay-workshop/",
+    "link": "https://gitweb.torproject.org/community/training.git/plain/2021/all-about-tor/all-about-tor-full-pack.odp",
     "description": "Full set of slides for Tor Trainings: how the Tor network works, censorship circumvention, Tor Browser installation, and OnionShare.",
     "date": "2021",
     "cover": "/static/images/training/all-about-tor.png",
@@ -16,7 +16,7 @@
     "date": "2019",
     "cover": "/static/images/training/todo-sobre-tor.png",
     "languages": "Spanish",
-    "link" : "https://community.torproject.org/training/resources/tor-relay-workshop/"
+    "link" : "https://gitweb.torproject.org/community/training.git/plain/2019/all-about-tor/all-about-tor-full-pack+es.odp"
   },
   "tor network workshop": {
     "author": "Tor Project",
@@ -37,7 +37,7 @@
     "date": "2021",
     "cover": "/static/images/training/running-tor-bridges.png",
     "languages": "English",
-    "link": "https://community.torproject.org/training/resources/tor-relay-workshop/"
+    "link": "https://gitweb.torproject.org/community/training.git/plain/2021/private-bridges/private-bridges-workshop.odp"
   },
   "exploring-the-tor-network": {
     "name": "Exploring the Tor network (poster)",
