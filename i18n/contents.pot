@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-09 23:31+CET\n"
+"POT-Creation-Date: 2021-10-10 00:17+CET\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -18363,27 +18363,33 @@ msgstr ""
 msgid "Menu"
 msgstr ""
 
-#: lego/templates/navbar.html:86 templates/navbar.html:86
+#: lego/templates/navbar.html:86 templates/home.html:31
+#: templates/navbar.html:86
 msgid "About"
 msgstr ""
 
-#: lego/templates/navbar.html:87 templates/navbar.html:87
+#: lego/templates/navbar.html:87 templates/home.html:32
+#: templates/navbar.html:87
 msgid "Documentation"
 msgstr ""
 
-#: lego/templates/navbar.html:88 templates/navbar.html:88
+#: lego/templates/navbar.html:88 templates/home.html:33
+#: templates/navbar.html:88
 msgid "Support"
 msgstr ""
 
-#: lego/templates/navbar.html:89 templates/navbar.html:89
+#: lego/templates/navbar.html:89 templates/home.html:34
+#: templates/navbar.html:89
 msgid "Jobs"
 msgstr ""
 
-#: lego/templates/navbar.html:90 templates/navbar.html:90
+#: lego/templates/navbar.html:90 templates/home.html:35
+#: templates/navbar.html:90
 msgid "Contact"
 msgstr ""
 
-#: lego/templates/navbar.html:91 templates/navbar.html:91
+#: lego/templates/navbar.html:91 templates/home.html:36
+#: templates/navbar.html:91
 msgid "Press"
 msgstr ""
 
