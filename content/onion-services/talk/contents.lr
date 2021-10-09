@@ -116,7 +116,7 @@ OnionShare was developed after a human rights violation during the Snowden revel
 
 ### Decentralization
 
-As explained in [Overview](https://community.torproject.org/onion-services/overview/), there's no central authority that approves or rejects onion services.
+As explained in [Overview](../overview/), there's no central authority that approves or rejects onion services.
 The address of an onion service is automatically generated.
 Operators don't use the regular DNS infrastructure and do not need to purchase or register a domain name.
 
