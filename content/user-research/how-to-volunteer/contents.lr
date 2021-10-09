@@ -21,7 +21,7 @@ To protect our participants' privacy we take care to anonymize their responses a
 If you're already familiar with the Tor Project and user testing, have a look at our [current needs for user research](../open/) and see which study better suits you.
 Remember to drop us an email telling us about your plans so we can follow and support your research.
 
-As a volunteer we also ask that you read and follow our [Code of Conduct](https://gitweb.torproject.org/community/policies.git/tree/code_of_conduct.txt), as well our [Guidelines for Research](https://community.torproject.org/user-research/guidelines/).
+As a volunteer we also ask that you read and follow our [Code of Conduct](https://gitweb.torproject.org/community/policies.git/tree/code_of_conduct.txt), as well our [Guidelines for Research](../guidelines/).
 
 **Why do we run Demographics?** 
 We don't collect personal data in our [Demographics](https://gitlab.torproject.org/tpo/ux/research/-/blob/master/scripts%20and%20activities/2020/user_demographics-en.md), and all questions are optional.
@@ -53,7 +53,7 @@ Please read our [Guidelines](../guidelines/) to get to know this process more.
 - If you don't have one yet, [request a Gitlab account](https://support.torproject.org/misc/bug-or-feedback/).
 - Open an issue in the [UX Research Repository](https://gitlab.torproject.org/tpo/ux/research/-/issues). 
 - Subscribe to the [UX mailing list](https://lists.torproject.org/cgi-bin/mailman/listinfo).
-- Learn more about our users by reading [Tor's user personas](../persona).
+- Learn more about our users by reading [Tor's user personas](../persona/).
 ---
 color: primary
 ---
