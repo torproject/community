@@ -1,19 +1,18 @@
 # Community portal
 
-This is the repository of Community portal. The current online version of this portal can be found at https://community.torproject.org or [Community Onion Service](http://3gldbgtv5e4god56.onion/).
+This is the repository of Community portal. The current online version of this portal can be found at https://community.torproject.org or [Community Onion Service](http://xmrhfasfg5suueegrnc4gsgyi2tyclcy5oz7f5drnrodmdtob6t2ioyd.onion/).
 
 To clone the code use either of 
 
 ```git clone https://git.torproject.org/project/web/community.git/```
 
-```torify git clone http://dccbbv6cooddgcrq.onion/project/web/community.git/``` 
+```torify git clone http://xtlfhaspqtkeeqxk6umggfbr3gyfznvf4jhrge2fujz53433i2fcs3id.onion/project/web/community.git/``` 
 
-or browse it [online](http://gitweb.torproject.org/project/web/community.git).
+or browse it [online](http://gzgme7ov25seqjbphab4fkcph3jkobfwwpivt5kzbv3kqx2y2qttl4yd.onion/project/web/community).
 
 ## How to report bugs or feedback 
 
-First check if your issue wasn't already opened in [gitlab.torproject.org](https://gitlab.torproject.org/web/community/issues), then file a [trac ticket](https://trac.torproject.org/projects/tor/newticket) and choose the component: Webpages/Community. 
-
+First, check if the bug is already known. You can search and read all the issues at https://gitlab.torproject.org/. To create a new issue, please [request a new account](https://gitlab.onionize.space/) to access Tor Project's GitLab instance and [find the right repository](https://gitlab.torproject.org/tpo) to report your issue. Issues related to our websites should be filed under the [Web issue tracker](https://gitlab.torproject.org/groups/tpo/web/-/issues).
 
 ## What is Lektor
 
@@ -51,7 +50,7 @@ To just build the website once: ```$ lektor build -O <folder>```
 
 #### How to develop on the website
 
-Check our [wiki pages](https://gitlab.torproject.org/web/community/wikis/How-to-develop-on-the-website).
+Check our [wiki pages](https://gitlab.torproject.org/tpo/web/wiki/-/wikis/How-to-develop-on-the-website).
 
 ### Translations
 
