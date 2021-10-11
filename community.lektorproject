@@ -15,3 +15,8 @@ name = Español (es)
 primary = yes
 url_prefix = /es/
 locale = es
+
+[alternatives.tr]
+name = Türkçe (tr)
+url_prefix = /tr/
+locale = tr
