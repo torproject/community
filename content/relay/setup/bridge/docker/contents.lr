@@ -37,7 +37,11 @@ That's it! Your container is now bootstrapping your new obfs4 bridge.
 
 ### 2. Upgrade your container
 
-Upgrading to the latest version of our image is as simple as running:
+Upgrading to the latest version of our image is as simple as pulling the latest version of the image running:
+
+`docker-compose pull obfs4-bridge`
+
+And then restarting the container:
 
 `docker-compose up -d obfs4-bridge`
 
