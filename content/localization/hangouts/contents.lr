@@ -1,0 +1,35 @@
+section: localization
+---
+section_id: localization
+---
+color: primary
+---
+_template: layout.html
+---
+title: Monthly Localization Hangouts
+---
+subtitle: Every 3rd Friday of the month the Tor L10n Team meets to translate together, share tricks, meet fellow translators, and find out about the l10n priorities for the Tor Project.
+---
+key: 2
+---
+html: two-columns-page.html
+---
+body:
+Every 3rd Friday of the month the Tor L10n Team meets to translate together, share tricks, have fun while translating, meet fellow translators, and find out about the l10n priorities for the Tor Project.
+
+Come join us on the Localization Hangout, from Noon UTC, on the [#tor-l10n channel in OFTC](https://support.torproject.org/get-in-touch/#irc-help). (you can also use Element <https://element.io/> to connect: #tor-l10n:matrix.org)
+
+At 13 UTC we make a call on [Big Blue Button](https://tor.meet.coop/emm-qmu-8o2-d2w)
+
+If you are not a translator yet, you still have time to [become one](../becoming-tor-translator/) before the hangout.
+
+![person hanging out](/static/images/home/png/block-trackers.png)
+
+### What do we do in a hangout?
+
+- Translate stuff
+- Share translation tips and resources
+- Complain about developers
+- Talk about translation priorities
+- Talk about our local contexts
+- Practice bug reporting and git skills
