@@ -10,7 +10,7 @@ body:
 
 One of the most important things to keeps your relay secure is to install security updates timely and ideally automatically so you can not forget about it. Follow the instructions to enable automatic software updates for your operating system.
 
-# 1. Bootstrap `pkg`
+# 2. Bootstrap `pkg`
 
 DragonFlyBSD's daily snapshots and releases (starting with 3.4) come with `pkg` already installed.
 Upgrades from earlier releases, however, will not have it.
@@ -25,7 +25,7 @@ pkg-static install -y pkg
 rehash
 ```
 
-### 1.1. Recommended Steps to Setup `pkg`
+### 2.1. Recommended Steps to Setup `pkg`
 
 Here, it will be similar to what we have on a **FreeBSD** system, and we are going to use HTTPS to fetch our packages, and updates - so here we also need an extra package to help us out (ca_root_nss).
 
@@ -51,7 +51,7 @@ pkg update -f
 pkg upgrade -y -f
 ```
 
-# 2. Package Installation
+# 3. Package Installation
 
 Install the `tor` package:
 
@@ -66,7 +66,7 @@ pkg install tor
 pkg install tor-devel
 ```
 
-# 3. Configuration File
+# 4. Configuration File
 
 Put the configuration file `/usr/local/etc/tor/torrc` in place:
 
@@ -83,7 +83,7 @@ Log notice  syslog
 ContactInfo tor-operator@your-emailaddress-domain
 ```
 
-# 4. Start the service
+# 5. Start the service
 
 Here we set `tor` to start at boot time and use the setuid feature, in order to bind to lower ports like 443 (the daemon itself will still run as a regular non-privileged user).
 
@@ -93,7 +93,7 @@ echo "tor_enable=YES" >> /etc/rc.conf
 service tor start
 ```
 
-# 5. Final Notes
+# 6. Final Notes
 
 If you are having trouble setting up your relay, have a look at our [help section](/relay/getting-help/).
 If your relay is now running, check out the [post-install](/relay/setup/post-install/) notes.
