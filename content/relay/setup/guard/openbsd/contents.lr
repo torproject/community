@@ -6,6 +6,10 @@ title: OpenBSD
 ---
 body:
 
+# 1. Enable Automatic Software Updates
+
+One of the most important things to keeps your relay secure is to install security updates timely and ideally automatically so you can not forget about it. Follow the instructions to enable automatic software updates for your operating system.
+
 # 1. Install `tor` OpenBSD's Package
 
 Recent OpenBSD systems, like 6.5/amd64, already have the repository configured on `/etc/installurl` so we do not need to bother changing it.
