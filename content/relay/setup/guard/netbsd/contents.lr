@@ -10,19 +10,19 @@ body:
 
 One of the most important things to keeps your relay secure is to install security updates timely and ideally automatically so you can not forget about it. Follow the instructions to enable automatic software updates for your operating system.
 
-# 1. Setup `pkg_add`
+# 2. Setup `pkg_add`
 
 ```
 echo "PKG_PATH=http://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/$(uname -m)/$(uname -r)/All" > /etc/pkg_install.conf
 ```
 
-# 2. Install `tor` NetBSD's package
+# 3. Install `tor` NetBSD's package
 
 ```
 pkg_add tor
 ```
 
-# 3. Configure `/usr/pkg/etc/tor/torrc`
+# 4. Configure `/usr/pkg/etc/tor/torrc`
 
 ```
 Nickname    myBSDRelay    # Change your relay's nickname to something you like
@@ -33,7 +33,7 @@ SocksPort   0
 Log notice  syslog
 ```
 
-# 6. Start `tor`:
+# 5. Start `tor`:
 
 Here we set `tor` to start during boot and call it for the first time:
 
