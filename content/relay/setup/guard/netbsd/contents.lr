@@ -6,39 +6,51 @@ title: NetBSD
 ---
 body:
 
-# 1. Setup `pkg_add`
+# 1. Enable Automatic Software Updates
+
+One of the most important things to keeps your relay secure is to install security updates timely and ideally automatically so you can not forget about it. Follow the instructions to enable automatic software updates for your operating system.
+
+# 2. Setup `pkg_add`
+
+Modern versions of the NetBSD operating system can be set to use `pkgin`, which is a piece of software aimed to be like `apt` or `yum` for managing pkgsrc binary packages. We are not convering its setup here, and opt to use plain `pkg_add` instead.
 
 ```
-echo "PKG_PATH=http://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/$(uname -m)/$(uname -r)/All" > /etc/pkg_install.conf
+# echo "PKG_PATH=http://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/$(uname -m)/$(uname -r)/All" > /etc/pkg_install.conf
 ```
 
-# 2. Install `tor` NetBSD's package
+# 3. Install `tor` NetBSD's Package
 
 ```
-pkg_add tor
+# pkg_add tor
 ```
 
-# 3. Configure `/usr/pkg/etc/tor/torrc`
+# 4. Configure `/usr/pkg/etc/tor/torrc`
+
+This is a very simple version of the `torrc` configuration file in order to run a Middle/Guard relay on the Tor network:
 
 ```
-Nickname    myBSDRelay    # Change your relay's nickname to something you like
-ContactInfo your@email    # Please write your email address and be aware that it will be published
-ORPort      443           # You might want to use/try a different port, should you want to
+Nickname    myNiceRelay  # Change "myNiceRelay" to something you like
+ContactInfo your@e-mail  # Write your e-mail and be aware it will be published
+ORPort      443          # You might use a different port, should you want to
 ExitRelay   0
 SocksPort   0
 Log notice  syslog
 ```
 
-# 6. Start `tor`:
+# 5. Start `tor`
 
 Here we set `tor` to start during boot and call it for the first time:
 
 ```
-ln -sf /usr/pkg/share/examples/rc.d/tor /etc/rc.d/tor
-echo "tor=YES" >> /etc/rc.conf
-/etc/rc.d/tor start
+# ln -sf /usr/pkg/share/examples/rc.d/tor /etc/rc.d/tor
+# echo "tor=YES" >> /etc/rc.conf
+# /etc/rc.d/tor start
 ```
 
+# 6. Final Notes
+
+If you are having trouble setting up your relay, have a look at our [help section](/relay/getting-help/).
+If your relay is now running, check out the [post-install](/relay/setup/post-install/) notes.
 ---
 html: two-columns-page.html
 ---

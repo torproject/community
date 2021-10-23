@@ -6,20 +6,24 @@ title: OpenBSD
 ---
 body:
 
-# 1. Install `tor` OpenBSD's Package
+# 1. Enable Automatic Software Updates
 
-Recent OpenBSD systems, like 6.5/amd64, already have the repository configured on `/etc/installurl` so we do not need to bother changing it.
+One of the most important things to keeps your relay secure is to install security updates timely and ideally automatically so you can not forget about it. Follow the instructions to enable automatic software updates for your operating system.
+
+# 2. Install `tor` OpenBSD's Package
+
+Recent OpenBSD systems, since 6.5, already have the repository configured on `/etc/installurl` so we do not need to bother changing it.
 
 If that's not your case, please adjust the `installurl` configuration file like this:
 
 ```
-echo "https://cdn.openbsd.org/pub/OpenBSD" > /etc/installurl
+# echo "https://cdn.openbsd.org/pub/OpenBSD" > /etc/installurl
 ```
 
 Proceed with `pkg_add` to install the package:
 
 ```
-pkg_add tor
+# pkg_add tor
 ```
 
 ### 2.1. Recommended Steps to Install `tor` on OpenBSD
@@ -27,7 +31,7 @@ pkg_add tor
 If you want to install a newer version of the `tor` OpenBSD's package, you can use M:Tier's binary packages:
 
 ```
-ftp https://stable.mtier.org/openup
+# ftp https://stable.mtier.org/openup
 ```
 
 Right after fetching `openup` you can run it to sync M:Tier's repository and update your packages; it's an alternative to `pkg_add -u`.
@@ -35,7 +39,7 @@ Right after fetching `openup` you can run it to sync M:Tier's repository and upd
 Here is how you proceed with these steps:
 
 ```
-openup
+# ./openup
 ```
 
 # 3. Configure `/etc/tor/torrc`
@@ -43,16 +47,18 @@ openup
 This is a very simple version of the `torrc` configuration file in order to run a Middle/Guard relay on the Tor network:
 
 ```
-Nickname    myBSDRelay    # Change your relay's nickname to something you like
-ContactInfo your@email    # Please write your email address and be aware that it will be published
-ORPort      443           # You might want to use/try a different port, should you want to
-ExitRelay   0
-SocksPort   0
-Log notice  syslog
-User        _tor
+Nickname      myNiceRelay  # Change "myNiceRelay" to something you like
+ContactInfo   your@e-mail  # Write your e-mail and be aware it will be published
+ORPort        443          # You might use a different port, should you want to
+ExitRelay     0
+SocksPort     0
+Log notice    syslog
+DataDirectory /var/tor
+User          _tor
+RunAsDaemon   1
 ```
 
-# 4. Change `openfiles-max` and `maxfiles` Tweaks
+# 4. Change `openfiles-max` and `maxfiles`
 
 By default, OpenBSD maintains a rather low limit on the maximum number of open files for a process. For a daemon such as Tor's, that opens a connection to each and every other relay (currently around 7000 relays), these limits should be raised.
 
@@ -69,19 +75,23 @@ OpenBSD also stores a kernel-level file descriptor limit in the sysctl variable 
 Increase it from the default of 7030 to 16000:
 
 ```
-echo "kern.maxfiles=16000" >> /etc/sysctl.conf
-sysctl kern.maxfiles=16000
+# echo "kern.maxfiles=16000" >> /etc/sysctl.conf
+# sysctl kern.maxfiles=16000
 ```
 
-# 6. Start `tor`:
+# 5. Start `tor`
 
 Here we set `tor` to start during boot and call it for the first time:
 
 ```
-rcctl enable tor
-rcctl start tor
+# rcctl enable tor
+# rcctl start tor
 ```
 
+# 6. Final Notes
+
+If you are having trouble setting up your relay, have a look at our [help section](/relay/getting-help/).
+If your relay is now running, check out the [post-install](/relay/setup/post-install/) notes.
 ---
 html: two-columns-page.html
 ---
