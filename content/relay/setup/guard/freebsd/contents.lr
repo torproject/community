@@ -6,7 +6,7 @@ title: FreeBSD
 ---
 body:
 
-# 1. Enable Automatic Updates for Packages
+# 1. Enable Automatic Software Updates
 
 One of the most important things to keeps your relay secure is to install security updates timely and ideally automatically so you can not forget about it. Follow the instructions to enable [automatic software updates](updates) for your operating system.
 
