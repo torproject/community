@@ -6,6 +6,10 @@ title: DragonflyBSD
 ---
 body:
 
+# 1. Enable Automatic Software Updates
+
+One of the most important things to keeps your relay secure is to install security updates timely and ideally automatically so you can not forget about it. Follow the instructions to enable automatic software updates for your operating system.
+
 # 1. Bootstrap `pkg`
 
 DragonFlyBSD's daily snapshots and releases (starting with 3.4) come with `pkg` already installed.
