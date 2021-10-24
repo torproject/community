@@ -48,6 +48,8 @@ Please note that when you are installing the first package from the EPEL reposit
 
 # 5. Configure `/etc/tor/torrc`
 
+This is a very simple version of the `torrc` configuration file in order to run a Middle/Guard relay on the Tor network:
+
 ```
 Nickname    myNiceRelay  # Change "myNiceRelay" to something you like
 ContactInfo your@e-mail  # Write your e-mail and be aware it will be published
