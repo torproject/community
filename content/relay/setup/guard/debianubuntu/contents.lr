@@ -19,9 +19,10 @@ Enable the Tor Project's package repository by following the instructions **[her
 
 Ensure you update the packages database before installing the package, than call `apt` to install it:
 
-`apt update`
-
-`apt install tor`
+```
+# apt update
+# apt install tor
+```
 
 # 4. Configure `/etc/tor/torrc`
 
@@ -39,7 +40,9 @@ SocksPort   0
 
 Restart the `tor` daemon, so your configuration changes take effect:
 
-`systemctl restart tor@default`
+```
+# systemctl restart tor@default
+```
 
 # 6. Final Notes
 
