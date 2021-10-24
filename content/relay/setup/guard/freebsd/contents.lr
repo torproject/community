@@ -87,7 +87,7 @@ SocksPort   0
 Log notice  syslog
 ```
 
-# 5. Ensure `net.inet.ip.random_id` is enabled:
+# 5. Enable `net.inet.ip.random_id`
 
 ```
 echo "net.inet.ip.random_id=1" >> /etc/sysctl.conf
