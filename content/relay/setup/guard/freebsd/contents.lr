@@ -18,8 +18,8 @@ That means we do not have any packages installed, or even the `pkg` packages man
 To bootstrap and install `pkg` we should run the following command:
 
 ```
-pkg bootstrap
-pkg update -f
+# pkg bootstrap
+# pkg update -f
 ```
 
 ### 2.1. Recommended Steps to Setup `pkg`
@@ -31,7 +31,7 @@ One additional step is to prefer using HTTPS to fetch our packages, and updates 
 Installing the `ca_root_nss` package:
 
 ```
-pkg install ca_root_nss
+# pkg install ca_root_nss
 ```
 
 We are keeping the original setting used by `pkg` but setting a new one that will override it.
@@ -41,7 +41,7 @@ This configuration file will be `/usr/local/etc/pkg/repos/FreeBSD.conf`.
 Creating the new directory:
 
 ```
-mkdir -p /usr/local/etc/pkg/repos
+# mkdir -p /usr/local/etc/pkg/repos
 ```
 
 This is how the new configuration file `/usr/local/etc/pkg/repos/FreeBSD.conf` must look like:
@@ -55,8 +55,8 @@ FreeBSD: {
 After applying all these changes, we update the packages list again and try to check if there's already a new update to apply:
 
 ```
-pkg update -f
-pkg upgrade -y -f
+# pkg update -f
+# pkg upgrade -y -f
 ```
 
 # 3. Install `tor` FreeBSD's Package
@@ -64,14 +64,14 @@ pkg upgrade -y -f
 Here we can choose to install the latest stable version, like:
 
 ```
-pkg install tor
+# pkg install tor
 ```
 
   ... or install an alpha release:
 
 
 ```
-pkg install tor-devel
+# pkg install tor-devel
 ```
 
 # 4. Configure `/usr/local/etc/tor/torrc`
@@ -90,8 +90,8 @@ Log notice  syslog
 # 5. Enable `net.inet.ip.random_id`
 
 ```
-echo "net.inet.ip.random_id=1" >> /etc/sysctl.conf
-sysctl net.inet.ip.random_id=1
+# echo "net.inet.ip.random_id=1" >> /etc/sysctl.conf
+# sysctl net.inet.ip.random_id=1
 ```
 
 # 6. Start `tor`
@@ -99,9 +99,9 @@ sysctl net.inet.ip.random_id=1
 Here we set `tor` to start at boot time and use the setuid feature, in order to bind to lower ports like 443 (the daemon itself will still run as a regular non-privileged user).
 
 ```
-sysrc tor_setuid=YES
-sysrc tor_enable=YES
-service tor start
+# sysrc tor_setuid=YES
+# sysrc tor_enable=YES
+# service tor start
 ```
 
 # 7. Final Notes
