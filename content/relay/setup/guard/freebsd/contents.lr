@@ -12,7 +12,7 @@ One of the most important things to keeps your relay secure is to install securi
 
 # 2. Bootstrap `pkg`
 
-This article assumes we have already a base installation of FreeBSD running, and only the base system (here, we are running 12.0-RELEASE).
+This article assumes we have already a base installation of FreeBSD running, and only the base system (here, we are running 12.2-RELEASE).
 That means we do not have any packages installed, or even the `pkg` packages manager itself (there's no `sudo` available - we are running commands as root).
 
 To bootstrap and install `pkg` we should run the following command:
