@@ -66,7 +66,7 @@ pkg install tor
 pkg install tor-devel
 ```
 
-# 4. Configuration File
+# 4. Configure `/usr/local/etc/tor/torrc`
 
 This is a very simple version of the `torrc` configuration file in order to run a Middle/Guard relay on the Tor network:
 
