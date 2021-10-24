@@ -12,7 +12,7 @@ One of the most important things to keeps your relay secure is to install securi
 
 # 2. Install `tor` OpenBSD's Package
 
-Recent OpenBSD systems, like 6.5/amd64, already have the repository configured on `/etc/installurl` so we do not need to bother changing it.
+Recent OpenBSD systems, since 6.5, already have the repository configured on `/etc/installurl` so we do not need to bother changing it.
 
 If that's not your case, please adjust the `installurl` configuration file like this:
 
