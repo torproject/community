@@ -17,13 +17,16 @@ Enable the Tor Project's package repository by following the instructions **[her
 
 # 3. Install `tor`
 
-Install the `tor` package:
+Ensure you update the packages database before installing the package, than call `apt` to install it:
 
-`apt update && apt install tor`
+```
+apt update
+apt install tor
+```
 
 # 4. Configure `/etc/tor/torrc`
 
-Put the configuration file `/etc/tor/torrc` in place:
+This is a very simple version of the `torrc` configuration file in order to run a Middle/Guard relay on the Tor network:
 
 ```
 #change the nickname "myNiceRelay" to a name that you like
@@ -38,9 +41,11 @@ ContactInfo tor-operator@your-emailaddress-domain
 
 # 5. Restart the Service
 
-Restart the tor daemon so your configuration changes take effect:
+Restart the `tor` daemon, so your configuration changes take effect:
 
-`systemctl restart tor@default`
+```
+systemctl restart tor@default
+```
 
 # 6. Final Notes
 
