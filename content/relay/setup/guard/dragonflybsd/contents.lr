@@ -25,7 +25,7 @@ pkg-static install -y pkg
 rehash
 ```
 
-### 2.1. Recommended Steps to Setup `pkg`
+### 2.1. Recommended Steps to Setup `pkg` on DragonFlyBSD
 
 Here, it will be similar to what we have on a **FreeBSD** system, and we are going to use HTTPS to fetch our packages, and updates - so here we also need an extra package to help us out (ca_root_nss).
 
@@ -51,7 +51,7 @@ pkg update -f
 pkg upgrade -y -f
 ```
 
-# 3. Package Installation
+# 3. Install `tor` DragonFlyBSD's Package
 
 Install the `tor` package:
 
@@ -79,7 +79,7 @@ SocksPort   0
 Log notice  syslog
 ```
 
-# 5. Start the service
+# 5. Start `tor`
 
 Here we set `tor` to start at boot time and use the setuid feature, in order to bind to lower ports like 443 (the daemon itself will still run as a regular non-privileged user).
 
