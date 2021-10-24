@@ -94,7 +94,7 @@ echo "net.inet.ip.random_id=1" >> /etc/sysctl.conf
 sysctl net.inet.ip.random_id=1
 ```
 
-# 6. Start `tor`:
+# 6. Start `tor`
 
 Here we set `tor` to start at boot time and use the setuid feature, in order to bind to lower ports like 443 (the daemon itself will still run as a regular non-privileged user).
 

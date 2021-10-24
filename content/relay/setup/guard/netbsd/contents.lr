@@ -37,7 +37,7 @@ SocksPort   0
 Log notice  syslog
 ```
 
-# 5. Start `tor`:
+# 5. Start `tor`
 
 Here we set `tor` to start during boot and call it for the first time:
 
