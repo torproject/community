@@ -15,13 +15,13 @@ One of the most important things to keeps your relay secure is to install securi
 Modern versions of the NetBSD operating system can be set to use `pkgin`, which is a piece of software aimed to be like `apt` or `yum` for managing pkgsrc binary packages. We are not convering its setup here, and opt to use plain `pkg_add` instead.
 
 ```
-echo "PKG_PATH=http://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/$(uname -m)/$(uname -r)/All" > /etc/pkg_install.conf
+# echo "PKG_PATH=http://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/$(uname -m)/$(uname -r)/All" > /etc/pkg_install.conf
 ```
 
 # 3. Install `tor` NetBSD's package
 
 ```
-pkg_add tor
+# pkg_add tor
 ```
 
 # 4. Configure `/usr/pkg/etc/tor/torrc`
@@ -42,9 +42,9 @@ Log notice  syslog
 Here we set `tor` to start during boot and call it for the first time:
 
 ```
-ln -sf /usr/pkg/share/examples/rc.d/tor /etc/rc.d/tor
-echo "tor=YES" >> /etc/rc.conf
-/etc/rc.d/tor start
+# ln -sf /usr/pkg/share/examples/rc.d/tor /etc/rc.d/tor
+# echo "tor=YES" >> /etc/rc.conf
+# /etc/rc.d/tor start
 ```
 
 # 6. Final Notes

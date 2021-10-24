@@ -58,7 +58,7 @@ Install the `tor` package:
 # pkg install tor
 ```
 
-  ... OR install an alpha release:
+  ... or install an alpha release:
 
 
 ```
