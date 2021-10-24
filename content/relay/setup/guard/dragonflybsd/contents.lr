@@ -25,7 +25,7 @@ pkg-static install -y pkg
 rehash
 ```
 
-### 2.1. Recommended Steps to Setup `pkg` on DragonFlyBSD
+### 2.1. Recommended Steps to Setup `pkg`
 
 Here, it will be similar to what we have on a **FreeBSD** system, and we are going to use HTTPS to fetch our packages, and updates - so here we also need an extra package to help us out (ca_root_nss).
 
