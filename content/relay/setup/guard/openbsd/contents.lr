@@ -86,6 +86,10 @@ rcctl enable tor
 rcctl start tor
 ```
 
+# 6. Final Notes
+
+If you are having trouble setting up your relay, have a look at our [help section](/relay/getting-help/).
+If your relay is now running, check out the [post-install](/relay/setup/post-install/) notes.
 ---
 html: two-columns-page.html
 ---
