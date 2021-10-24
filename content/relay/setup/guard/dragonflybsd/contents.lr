@@ -71,15 +71,12 @@ pkg install tor-devel
 This is a very simple version of the `torrc` configuration file in order to run a Middle/Guard relay on the Tor network:
 
 ```
-#change the nickname "myBSDrelay" to a name that you like
-Nickname    myBSDRelay
-# You might want to use/try a different port, should you want to
-ORPort      443    
+Nickname    myNiceRelay  # Change "myNiceRelay" to something you like
+ContactInfo your@e-mail  # Write your e-mail and be aware it will be published
+ORPort      443          # You might use a different port, should you want to
 ExitRelay   0
 SocksPort   0
 Log notice  syslog
-# Change the email address below and be aware that it will be published
-ContactInfo tor-operator@your-emailaddress-domain
 ```
 
 # 5. Start the service
