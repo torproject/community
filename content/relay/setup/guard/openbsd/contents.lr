@@ -17,13 +17,13 @@ Recent OpenBSD systems, since 6.5, already have the repository configured on `/e
 If that's not your case, please adjust the `installurl` configuration file like this:
 
 ```
-echo "https://cdn.openbsd.org/pub/OpenBSD" > /etc/installurl
+# echo "https://cdn.openbsd.org/pub/OpenBSD" > /etc/installurl
 ```
 
 Proceed with `pkg_add` to install the package:
 
 ```
-pkg_add tor
+# pkg_add tor
 ```
 
 ### 2.1. Recommended Steps to Install `tor` on OpenBSD
@@ -31,7 +31,7 @@ pkg_add tor
 If you want to install a newer version of the `tor` OpenBSD's package, you can use M:Tier's binary packages:
 
 ```
-ftp https://stable.mtier.org/openup
+# ftp https://stable.mtier.org/openup
 ```
 
 Right after fetching `openup` you can run it to sync M:Tier's repository and update your packages; it's an alternative to `pkg_add -u`.
@@ -39,7 +39,7 @@ Right after fetching `openup` you can run it to sync M:Tier's repository and upd
 Here is how you proceed with these steps:
 
 ```
-openup
+# ./openup
 ```
 
 # 3. Configure `/etc/tor/torrc`
@@ -73,8 +73,8 @@ OpenBSD also stores a kernel-level file descriptor limit in the sysctl variable 
 Increase it from the default of 7030 to 16000:
 
 ```
-echo "kern.maxfiles=16000" >> /etc/sysctl.conf
-sysctl kern.maxfiles=16000
+# echo "kern.maxfiles=16000" >> /etc/sysctl.conf
+# sysctl kern.maxfiles=16000
 ```
 
 # 5. Start `tor`
@@ -82,8 +82,8 @@ sysctl kern.maxfiles=16000
 Here we set `tor` to start during boot and call it for the first time:
 
 ```
-rcctl enable tor
-rcctl start tor
+# rcctl enable tor
+# rcctl start tor
 ```
 
 # 6. Final Notes

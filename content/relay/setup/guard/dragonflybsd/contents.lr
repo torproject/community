@@ -12,9 +12,7 @@ One of the most important things to keeps your relay secure is to install securi
 
 # 2. Bootstrap `pkg`
 
-DragonFlyBSD's daily snapshots and releases (starting with 3.4) come with `pkg` already installed. Upgrades from earlier releases, however, will not have it.
-
-If `pkg` is missing on the system for any reason, it can be quickly bootstrapped without having to build it from source or even having **DPorts** installed:
+DragonFlyBSD's daily snapshots and releases (starting with 3.4) come with `pkg` already installed. Upgrades from earlier releases, however, will not have it. If `pkg` is missing on the system for any reason, it can be quickly bootstrapped without having to build it from source or even having **DPorts** installed:
 
 ```
 # cd /usr
