@@ -18,7 +18,7 @@ Modern versions of the NetBSD operating system can be set to use `pkgin`, which 
 # echo "PKG_PATH=http://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/$(uname -m)/$(uname -r)/All" > /etc/pkg_install.conf
 ```
 
-# 3. Install `tor` NetBSD's package
+# 3. Install `tor` NetBSD's Package
 
 ```
 # pkg_add tor
