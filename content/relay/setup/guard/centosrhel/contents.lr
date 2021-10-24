@@ -44,7 +44,7 @@ Once you are set with EPEL and the Tor repositories, you are now able to install
 
 `yum install tor`
 
-Please note that when you are installing the first package from the EPEL repository you will be asked about verifying the EPEL's GPG signing key. Please ensure the key matches with the one available on the [Fedora Project website](https://getfedora.org/keys/).
+Please note that when you are installing the first package from the EPEL repository you will be asked about verifying the EPEL's GPG signing key. Please ensure the key matches with the one available on the [Fedora Project website](https://getfedora.org/keys/). This will also happens when installing packages from Tor's repository for the first time - again you must ensure the key matches.
 
 # 5. Configure `/etc/tor/torrc`
 
