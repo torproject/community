@@ -30,7 +30,9 @@ More information about it can be found [here](https://support.torproject.org/rpm
 
 Once you are set with EPEL and the Tor repositories, you are now able to install the package:
 
-`dnf install tor`
+```
+# dnf install tor
+```
 
 # 4. Configure `/etc/tor/torrc`
 
@@ -46,7 +48,9 @@ SocksPort   0
 
 # 5. Enable and Start `tor`
 
-`systemctl enable --now tor`
+```
+# systemctl enable --now tor
+```
 
 # 6. Final Notes
 
