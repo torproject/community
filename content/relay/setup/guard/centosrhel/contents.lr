@@ -26,9 +26,9 @@ Recent versions of CentOS/RHEL are using `dnf` instead of `yum`, so the command 
 
 If you are on a recent version that uses `dnf`, please keep using it for the following steps where `yum` is called on this setup guide.
 
-# 3. Enable Tor Project's Repository
+# 3. Configure Tor Project's Repository
 
-Enabling the Tor Project's Repository for CentOS/RHEL consists basically on setting up `/etc/yum.repos.d/Tor.repo` with the following content:
+Configuring the Tor Project's Repository for CentOS/RHEL consists basically on setting up `/etc/yum.repos.d/Tor.repo` with the following content:
 
 ```
 [tor]

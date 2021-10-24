@@ -10,9 +10,9 @@ body:
 
 One of the most important things to keeps your relay secure is to install security updates timely and ideally automatically so you can not forget about it. Follow the instructions to enable [automatic software updates](updates) for your operating system.
 
-# 2. Enable Tor Project's Repository
+# 2. Configure Tor Project's Repository
 
-Enabling the Tor Project's Repository for Fedora consists basically on setting up `/etc/yum.repos.d/Tor.repo` with the following content:
+Configuring the Tor Project's Repository for Fedora consists basically on setting up `/etc/yum.repos.d/Tor.repo` with the following content:
 
 ```
 [tor]

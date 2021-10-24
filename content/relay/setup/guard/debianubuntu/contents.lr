@@ -11,9 +11,9 @@ body:
 One of the most important things to keeps your relay secure is to install security updates timely and ideally automatically so you can not forget about it.
 Follow the instructions to enable [automatic software updates](updates) for your operating system.
 
-# 2. Configure Tor Package Repository
+# 2. Configure Tor Project's Repository
 
-Enable the Tor Project's package repository by following the instructions **[here](https://support.torproject.org/apt/tor-deb-repo/)**.
+Configuring the Tor Project's package repository for Debian/Ubuntu is documented **[here](https://support.torproject.org/apt/tor-deb-repo/)**. Please follow those instructions before proceeding.
 
 # 3. Install `tor`
 
