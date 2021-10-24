@@ -63,8 +63,8 @@ By default, OpenBSD maintains a rather low limit on the maximum number of open f
 Append the following section to `/etc/login.conf`:
 
 ```
-tor:
-    :openfiles-max=13500:
+tor:\
+    :openfiles-max=13500:\
     :tc=daemon:
 ```
 
