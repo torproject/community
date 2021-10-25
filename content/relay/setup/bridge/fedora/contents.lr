@@ -77,6 +77,8 @@ This port must be externally reachable and must be different from the one specif
 # systemctl enable --now tor
 ```
 
+  * If **systemd** or `tor` complain about starting `obfs4proxy` by binding its socket to ports lower than 1024, you shall consider changing its binary's cappabilities or overriding Tor's unit. For detailed information please refer to our documentation on [GitLab Ticket #18356](https://gitlab.torproject.org/tpo/core/tor/-/issues/18356).
+
 # 6. Final Notes
 
 If you are having trouble setting up your bridge, have a look at [our help section](../../../getting-help/).

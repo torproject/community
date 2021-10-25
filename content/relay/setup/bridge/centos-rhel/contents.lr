@@ -117,6 +117,8 @@ Should you use an older release like CentOS/RHEL 6, that will be:
 # service tor start
 ```
 
+  * If **systemd** or `tor` complain about starting `obfs4proxy` by binding its socket to ports lower than 1024, you shall consider changing its binary's cappabilities or overriding Tor's unit. For detailed information please refer to our documentation on [GitLab Ticket #18356](https://gitlab.torproject.org/tpo/core/tor/-/issues/18356).
+
 # 8. Final Notes
 
 If you are having trouble setting up your bridge, have a look at [our help section](../../../getting-help/).
