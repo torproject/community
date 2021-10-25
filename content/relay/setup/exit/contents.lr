@@ -1,6 +1,6 @@
 _model: page
 ---
-title: Exit
+title: Exit Node
 ---
 color: primary
 ---
@@ -14,7 +14,7 @@ key: 3
 ---
 body:
 
-We assume you read through the [relay guide](..) already. This subpage is for operators that want to turn on exiting on their relay.
+We assume you read through the [relay guide](..) and [technical considerations](/relay/technical-considerations/) already. This subpage is for operators that want to turn on exiting on their relay.
 
 It is recommended that you setup exit relays on servers dedicated to this purpose.
 It is not recommended to install Tor exit relays on servers that you need for other services as well.
@@ -24,38 +24,42 @@ Do not mix your own traffic with your exit relay traffic.
 
 Before turning your non-exit relay into an exit relay, ensure that you have set a reverse DNS record (PTR) to make it more obvious that this is a tor exit relay. Something like "tor-exit" in its name is a good start.
 
+  * PTR records are used to resolve IP addresses to names; basically the oposite of what a regular A or AAAA record would do.
+
 If your provider offers it, make sure your WHOIS record contains clear indications that this is a Tor exit relay.
+
+  * More information about what a WHOIS record is can be found [here](https://whois.icann.org/en/about-whois).
 
 Do use a domain name that you own. Definitely do not use `torproject.org` as a domain name for your reverse DNS.
 
-## Exit Notice HTML page
+## Exit Notice HTML Page
 
 To make it even more obvious that this is a Tor exit relay you should serve a Tor exit notice HTML page.
-Tor can do that for you: if your DirPort is on TCP port 80, you can make use of tor's DirPortFrontPage feature to display an HTML file on that port.
+Tor can do that for you: if your **DirPort** is on TCP port 80, you can make use of `tor`'s **DirPortFrontPage** feature to display an HTML file on that port.
 This file will be shown to anyone directing their browser to your Tor exit relay IP address.
+
+If you didn't set this up before, the following configuration lines must be applied to your `torrc`:
 
 ```
 DirPort 80
 DirPortFrontPage /path/to/html/file
 ```
 
-We offer a sample Tor exit notice HTML file, but you might want to adjust it to your needs:
-https://gitweb.torproject.org/tor.git/plain/contrib/operator-tools/tor-exit-notice.html
+We offer a [sample Tor exit notice HTML file](https://gitweb.torproject.org/tor.git/plain/contrib/operator-tools/tor-exit-notice.html), but you might want to adjust it to your needs.
 
-Here are some more tips for running a reliable exit relay:
-https://blog.torproject.org/tips-running-exit-node
+We also have a great blog post with some more tips for running a reliable exit relay. Read it [here](https://blog.torproject.org/tips-running-exit-node).
 
 ## Exit Policy
 
-Defining the [exit policy](https://www.torproject.org/docs/tor-manual.html.en#ExitPolicy) is one of the most important parts of an exit relay configuration.
+Defining the [Exit Policy](https://www.torproject.org/docs/tor-manual.html.en#ExitPolicy) is one of the most important parts of an exit relay configuration.
 The exit policy defines which destination ports you are willing to forward.
 This has an impact on the amount of abuse emails you will get (less ports means less abuse emails, but an exit relay allowing only few ports is also less useful).
 If you want to be a useful exit relay you must **at least allow destination ports 80 and 443**.
 
 As a new exit relay - especially if you are new to your hoster - it is good to start with a reduced exit policy (to reduce the amount of abuse emails) and further open it up as you become more experienced.
-The reduced exit policy can be found on the [ReducedExitPolicy](https://trac.torproject.org/projects/tor/wiki/doc/ReducedExitPolicy) wiki page.
+The reduced exit policy can be found on the [Reduced Exit Policy](https://trac.torproject.org/projects/tor/wiki/doc/ReducedExitPolicy) wiki page.
 
-To become an exit relay change ExitRelay from 0 to 1 in your torrc configuration file and restart the tor daemon.
+To become an exit relay change **ExitRelay** from 0 to 1 in your `torrc` configuration file and restart the `tor` daemon. Here is how "ExitRelay" must be set:
 
 ```
 ExitRelay 1
@@ -69,9 +73,9 @@ DNS resolution on exit relays is crucial for Tor clients and it should be reliab
 * DNS resolution can have a significant impact on the performance and reliability that your exit relay provides.
 * Don't use any of the big DNS resolvers (Google, OpenDNS, Quad9, Cloudflare, 4.2.2.1-6) as your primary or fallback DNS resolver to avoid centralization.
 * We recommend running a local caching and DNSSEC-validating resolver without using any forwarders (specific instructions follow below, for various operating systems).
-    * If you want to add a second DNS resolver as a fallback to your /etc/resolv.conf configuration, choose a resolver within your autonomous system and make sure that it is not your first entry in that file (the first entry should be your local resolver).
+    * If you want to add a second DNS resolver as a fallback to your `/etc/resolv.conf` configuration, choose a resolver within your autonomous system and make sure that it is not your first entry in that file (the first entry should be your local resolver).
     * If a local resolver like unbound is not an option for you, use a resolver that your provider runs in the same autonomous system (to find out if an IP address is in the same AS as your relay, you can look it up using [bgp.he.net](https://bgp.he.net)).
-* Avoid adding more than two resolvers to your /etc/resolv.conf file to limit AS-level exposure of DNS queries.
+* Avoid adding more than two resolvers to your `/etc/resolv.conf` file to limit AS-level exposure of DNS queries.
 
 There are multiple options for DNS server software. [Unbound](https://nlnetlabs.nl/projects/unbound/about/) has become
 a popular one but feel free to use any other software that you are comfortable with.
@@ -80,78 +84,82 @@ Install the resolver software over your operating system's package manager, to e
 
 By using your own DNS resolver, you are less vulnerable to DNS-based censorship that your upstream resolver might impose.
 
-Below are instructions on how to install and configure unbound – a DNSSEC-validating and caching resolver – on your exit relay. Unbound has many configuration and tuning knobs but we keep these instructions simple and short; the basic setup will do just fine for most operators.
+Below are instructions on how to install and configure **Unbound** – a DNSSEC-validating and caching resolver – on your exit relayItnd has many configuration and tuning knobs but we keep these instructions simple and short; the basic setup will do just fine for most operator
 
-After switching to unbound, verify that it works as expected by resolving a valid hostname. If it does not work, you can restore your old resolv.conf file.
+After switching to **Unbound**, verify that it works as expected by resolving a valid hostname. If it does not work, you can restore your old `/etc/resolv.conf` file.
 
 ### Debian/Ubuntu
 
-The following three commands install unbound, backup your DNS configuration, and tell the system to use the local unbound:
+The following commands install `unbound`, backup your DNS configuration, and tell the system to use the local resolver:
 
 ```
-apt install unbound
-cp /etc/resolv.conf /etc/resolv.conf.backup
-echo nameserver 127.0.0.1 > /etc/resolv.conf
+# apt update
+# apt install unbound
+# cp /etc/resolv.conf /etc/resolv.conf.backup
+# echo nameserver 127.0.0.1 > /etc/resolv.conf
 ```
 
 To avoid unwanted configuration changed (for example by the DHCP client):
 
 ```
-chattr +i /etc/resolv.conf
+# chattr +i /etc/resolv.conf
 ```
 
 The Debian configuration ships with QNAME minimization (RFC7816) enabled by default, so you don't need to enable it explicitly.
 The unbound resolver you just installed also does DNSSEC validation.
 
+  * If you are running **systemd-resolved** with its stub listener, you may need to do a bit more than just that. Please refer to the [resolved.conf manpage](https://www.freedesktop.org/software/systemd/man/resolved.conf.html).
+
 ### CentOS/RHEL
 
-Install the unbound package:
+Install the `unbound` package:
 
 ```
-yum install unbound
+# yum install unbound
 ```
 
-in /etc/unbound/unbound.conf replace the line
+If you are using a recent version of CentOS/RHEL, they now use `dnf` instead of `yum`. If you were not able to install `unbound` using the previous command, try to run the following:
 
 ```
-# qname-minimisation: no
+# dnf install unbound
 ```
 
-with:
+  * After you got it installed, you must edit the `/etc/unbound/unbound.conf` configuration file and enable **qname-minimisation**. Here is how it must look like:
+
+  ```
+  qname-minimisation: yes
+  ```
+
+Enable and start `unbound` when you are done setting it up:
 
 ```
-qname-minimisation: yes
+# systemctl enable --now unbound
 ```
 
-enable and start unbound:
+Tell the system to use the local resolver:
 
 ```
-systemctl enable unbound
-systemctl start unbound
-```
-
-Tell the system to use the local unbound server:
-
-```
-cp /etc/resolv.conf /etc/resolv.conf.backup
-echo nameserver 127.0.0.1 > /etc/resolv.conf
+# cp /etc/resolv.conf /etc/resolv.conf.backup
+# echo nameserver 127.0.0.1 > /etc/resolv.conf
 ```
 
 To avoid unwanted configuration changes (for example by the DHCP client):
 
 ```
-chattr +i /etc/resolv.conf
+# chattr +i /etc/resolv.conf
 ```
+
+  * If you are running **systemd-resolved** with its stub listener, you may need to do a bit more than just that. Please refer to the [resolved.conf manpage](https://www.freedesktop.org/software/systemd/man/resolved.conf.html).
 
 ### FreeBSD
 
 FreeBSD ships unbound in the base system but the one in ports is usually following upstream more closely, so we install the unbound package:
 
 ```
-pkg install unbound
+# pkg install unbound
 ```
 
-Replace the content in /usr/local/etc/unbound/unbound.conf with the following lines:
+Replace the content in `/usr/local/etc/unbound/unbound.conf` with the following lines:
 
 ```
 server:
@@ -159,27 +167,26 @@ server:
 	qname-minimisation: yes
 ```
 
-enable and start the unbound service:
+Enable and start the unbound service:
 
 ```
-sysrc unbound_enable=YES
-service unbound start
+# sysrc unbound_enable=YES
+# service unbound start
 ```
 
 Tell the system to use the local unbound server:
 
 ```
-cp /etc/resolv.conf /etc/resolv.conf.backup
-echo nameserver 127.0.0.1 > /etc/resolv.conf
+# cp /etc/resolv.conf /etc/resolv.conf.backup
+# echo nameserver 127.0.0.1 > /etc/resolv.conf
 ```
 
 To avoid unwanted configuration changes (for example by the DHCP client):
 
 ```
-chflags schg /etc/resolv.conf
+# chflags schg /etc/resolv.conf
 ```
-
 ---
-subtitle: How to deploy an Exit node
+subtitle: How to deploy an Exit Node
 ---
 _slug: {{exit}}
