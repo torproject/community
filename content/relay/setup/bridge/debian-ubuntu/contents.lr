@@ -59,9 +59,13 @@ This port must be externally reachable and must be different from the one specif
 
   * One pretty important test you should consider doing is to test if we can talk **obfs4** to the port used by **ServerTransportListenAddr**. Please try our [reachability test tool for obfs4 Bridges](https://bridges.torproject.org/scan/) to check that.
 
-# 6. Restart the Service
+# 6. Enable and Start `tor`
 
-Restart the `tor` daemon, so your configuration changes take effect:
+```
+# systemctl enable --now tor@default
+```
+
+    ... or restart it if it was running already, so configurations take effect
 
 ```
 # systemctl restart tor@default

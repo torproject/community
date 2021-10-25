@@ -109,6 +109,11 @@ Recent versions os CentOS/RHEL which ship with systemd:
 ```
 # systemctl enable --now tor
 ```
+    ... or restart it if it was running already, so configurations take effect
+
+```
+# systemctl restart tor
+```
 
 Should you use an older release like CentOS/RHEL 6, that will be:
 
