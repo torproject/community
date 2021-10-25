@@ -2,13 +2,11 @@ _model: page
 ---
 color: primary
 ---
-title: CentOS / RHEL / OpenSUSE
+title: CentOS / RHEL
 ---
 body:
 
 ### 1. Install Tor and dependencies
-
-* CentOS / RHEL:
 
 `# yum install epel-release -y`
 
@@ -27,15 +25,9 @@ And then install the following packages.
 
 `# yum install git golang tor policycoreutils-python-utils`
 
-* OpenSUSE:
-
-`# zypper install tor go git`
-
 ### 2. Build obfs4proxy and move it into place.
 
 Heavily outdated versions of git can make `go get` fail, so try upgrading to a more recent git version if you're running into this problem.
-
-* CentOS / RHEL:
 
 `export GOPATH='mktemp -d'`
 
@@ -45,17 +37,7 @@ Heavily outdated versions of git can make `go get` fail, so try upgrading to a m
 
 `# chcon --reference=/usr/bin/tor /usr/local/bin/obfs4proxy`
 
-* OpenSUSE:
-
-`export GOPATH='mktemp -d'`
-
-`go get gitlab.com/yawning/obfs4.git/obfs4proxy`
-
-`sudo cp $GOPATH/bin/obfs4proxy /usr/local/bin/`
-
 ### 3. Edit your Tor config file, usually located at `/etc/tor/torrc` and replace its content with:
-
-* CentOS / RHEL / OpenSUSE:
 
 ```
 RunAsDaemon 1
@@ -93,41 +75,22 @@ Nickname PickANickname
 
 ### 4. Restart Tor
 
-* CentOS / RHEL:
-
 `sudo semanage port -a -t tor_port_t -p tcp [OR port set earlier, in TODO1]`
 
 `sudo semanage port -a -t tor_port_t -p tcp [obfs4 port set earlier, in TODO2]`
 
-* CentOS / RHEL / OpenSUSE:
-
 `sudo systemctl restart tor`
 
-### 5. Monitor your logs (usually in your syslog)
-
-To confirm your bridge is running with no issues, you should see something like this:
-
-```
-[notice] Your Tor server's identity key fingerprint is '<NICKNAME> <FINGERPRINT>'
-[notice] Your Tor bridge's hashed identity key fingerprint is '<NICKNAME> <HASHED FINGERPRINT>'
-[notice] Registered server transport 'obfs4' at '[::]:46396'
-[notice] Tor has successfully opened a circuit. Looks like client functionality is working.
-[notice] Bootstrapped 100%: Done
-[notice] Now checking whether ORPort <redacted>:3818 is reachable... (this may take up to 20 minutes -- look for log messages indicating success)
-[notice] Self-testing indicates your ORPort is reachable from the outside. Excellent. Publishing server descriptor.
-```
-
-### 6. Final notes
+### 5. Final Notes
 
 If you are having trouble setting up your bridge, have a look at [our help section](../../../getting-help/).
 If your bridge is now running, check out the [post-install notes](../post-install/).
-
 ---
 html: two-columns-page.html
 ---
 key: 1
 ---
-subtitle: How to deploy an obfs4 bridge on CentOS / RHEL / OpenSUSE
+subtitle: How to deploy an obfs4 bridge on CentOS / RHEL
 ---
 _template: layout.html
 ---

@@ -93,9 +93,7 @@ If your bridge is now running, check out the [post-install notes](../post-instal
 ---
 html: two-columns-page.html
 ---
-key:
-
-5
+key: 5
 ---
 subtitle: How to deploy an obfs4 bridge on Fedora
 ---
