@@ -6,11 +6,29 @@ title: CentOS / RHEL
 ---
 body:
 
-### 1. Install Tor and dependencies
+# 1. Enable Automatic Software Updates
 
-`# yum install epel-release -y`
+One of the most important things to keeps your relay secure is to install security updates timely and ideally automatically so you can not forget about it. Follow the instructions to enable [automatic software updates](updates) for your operating system.
 
-Then add the following to the `/etc/yum.repos.d/tor.repo` file.
+# 2. Install `epel-release`
+
+To install `tor` on CentOS/RHEL, you need to enable the use of the [EPEL](https://fedoraproject.org/wiki/EPEL) Repository first. To do so, you must install the `epel-release` package:
+
+```
+# yum install epel-release
+```
+
+Recent versions of CentOS/RHEL are using `dnf` instead of `yum`, so the command to install the package would be:
+
+```
+# dnf install epel-release
+```
+
+If you are on a recent version that uses `dnf`, please keep using it for the following steps where `yum` is called on this setup guide.
+
+# 3. Configure Tor Project's Repository
+
+Configuring the Tor Project's Repository for CentOS/RHEL consists basically on setting up `/etc/yum.repos.d/Tor.repo` with the following content:
 
 ```
 [tor]
@@ -21,67 +39,83 @@ gpgcheck=1
 gpgkey=https://rpm.torproject.org/centos/public_gpg.key
 cost=100
 ```
-And then install the following packages.
 
-`# yum install git golang tor policycoreutils-python-utils`
+More information about it can be found [here](https://support.torproject.org/rpm/).
 
-### 2. Build obfs4proxy and move it into place.
+# 4. Install `tor`
 
-Heavily outdated versions of git can make `go get` fail, so try upgrading to a more recent git version if you're running into this problem.
-
-`export GOPATH='mktemp -d'`
-
-`go get gitlab.com/yawning/obfs4.git/obfs4proxy`
-
-`sudo cp $GOPATH/bin/obfs4proxy /usr/local/bin/`
-
-`# chcon --reference=/usr/bin/tor /usr/local/bin/obfs4proxy`
-
-### 3. Edit your Tor config file, usually located at `/etc/tor/torrc` and replace its content with:
+Once you are set with EPEL and the Tor repositories, you are now able to install the package:
 
 ```
-RunAsDaemon 1
+# yum install tor
+```
+
+Please note that when you are installing the first package from the EPEL repository you will be asked about verifying the EPEL's GPG signing key. Please ensure the key matches with the one available on the [Fedora Project website](https://getfedora.org/keys/). This will also happens when installing packages from Tor's repository for the first time - again you must ensure the key matches.
+
+# 5. Install a Pluggable Transport
+
+We are opting here to install and use `obfs4` as pluggable transport, so we are going to install `obfs4proxy`.
+
+Sadly there's no package repository or a **.rpm** binary we can use to install it on CentOS/RHEL. We must build it from source.
+
+Here we install the dependencies we need to build the binary:
+
+```
+# yum install git golang policycoreutils-python-utils
+```
+
+Now we start building the binary, and copy it to a proper directory used by system's **$PATH**:
+
+```
+# mktemp -d
+/tmp/tmp.yR56oSmy
+# export GOPATH=/tmp/tmp.yR56oSmy
+# go get gitlab.com/yawning/obfs4.git/obfs4proxy
+# cp $GOPATH/bin/obfs4proxy /usr/local/bin/.
+# chcon --reference=/usr/bin/tor /usr/local/bin/obfs4proxy
+```
+
+Heavily outdated versions of `git` can make `go get` fail, so try upgrading to a more recent version of `git` if you're running into this problem.
+
+For more information on installing or building `obfs4proxy` from source, please refer to its [official docummentation](https://gitlab.com/yawning/obfs4/-/blob/master/README.md).
+
+# 6. Configure `/etc/tor/torrc`
+
+This is a very simple version of the `torrc` configuration file in order to run a Bridge on the Tor network:
+
+```
+Nickname    myNiceBridge # Change "myNiceBridge" to something you like
+ContactInfo your@e-mail  # Write your e-mail and be aware it will be published
+ORPort      443          # You might use a different port, should you want to
+ExitRelay   0
+SocksPort   0
 BridgeRelay 1
-
-# Replace "TODO1" with a Tor port of your choice.  This port must be externally
-# reachable.  Avoid port 9001 because it's commonly associated with Tor and
-# censors may be scanning the Internet for this port.
-ORPort TODO1
-
-ServerTransportPlugin obfs4 exec /usr/local/bin/obfs4proxy
-
-# Replace "TODO2" with an obfs4 port of your choice.  This port must be
-# externally reachable and must be different from the one specified for ORPort.
-# Avoid port 9001 because it's commonly associated with
-# Tor and censors may be scanning the Internet for this port.
-ServerTransportListenAddr obfs4 0.0.0.0:TODO2
-
-# Local communication port between Tor and obfs4.  Always set this to "auto".
-# "Ext" means "extended", not "external".  Don't try to set a specific port
-# number, nor listen on 0.0.0.0.
-ExtORPort auto
-
-# Replace "<address@email.com>" with your email address so we can contact you if
-# there are problems with your bridge.  This is optional but encouraged.
-ContactInfo <address@email.com>
-
-# Pick a nickname that you like for your bridge.  This is optional.
-Nickname PickANickname
+ExtORPort   auto
+Log notice  syslog
+ServerTransportPlugin     obfs4 exec /usr/local/bin/obfs4proxy
+ServerTransportListenAddr obfs4 0.0.0.0:CHANGEME
 ```
 
- Don't forget to change the `ORPort`, `ServerTransportListenAddr`, `ContactInfo`, and `Nickname` options.
+Replace "CHANGEME" with a port of your choice.
 
-* Note that both Tor's OR port and its obfs4 port must be reachable. If your bridge is behind a firewall or NAT, make sure to open both ports. You can use [our reachability test](https://bridges.torproject.org/scan/) to see if your obfs4 port is reachable from the Internet.
+This port must be externally reachable and must be different from the one specified for **ORPort**. Please avoid port 9001 because it's commonly associated with Tor and censors may be scanning the Internet for this port.
 
-### 4. Restart Tor
+# 7. Enable and Start `tor`
 
-`sudo semanage port -a -t tor_port_t -p tcp [OR port set earlier, in TODO1]`
+Recent versions os CentOS/RHEL which ship with systemd:
 
-`sudo semanage port -a -t tor_port_t -p tcp [obfs4 port set earlier, in TODO2]`
+```
+# systemctl enable --now tor
+```
 
-`sudo systemctl restart tor`
+Should you use an older release like CentOS/RHEL 6, that will be:
 
-### 5. Final Notes
+```
+# service tor enable
+# service tor start
+```
+
+# 8. Final Notes
 
 If you are having trouble setting up your bridge, have a look at [our help section](../../../getting-help/).
 If your bridge is now running, check out the [post-install notes](../post-install/).
@@ -90,7 +124,7 @@ html: two-columns-page.html
 ---
 key: 1
 ---
-subtitle: How to deploy an obfs4 bridge on CentOS / RHEL
+subtitle: How to deploy a Bridge with obfs4 on CentOS/RHEL
 ---
 _template: layout.html
 ---
