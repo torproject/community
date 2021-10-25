@@ -2,15 +2,15 @@ _model: page
 ---
 color: primary
 ---
-title: DragonflyBSD
+title: DragonFlyBSD
 ---
 body:
 
-# 1. Enable Automatic Software Updates
+### 1. Enable Automatic Software Updates
 
 One of the most important things to keeps your relay secure is to install security updates timely and ideally automatically so you can not forget about it. Follow the instructions to enable automatic software updates for your operating system.
 
-# 2. Bootstrap `pkg`
+### 2. Bootstrap `pkg`
 
 DragonFlyBSD's daily snapshots and releases (starting with 3.4) come with `pkg` already installed. Upgrades from earlier releases, however, will not have it. If `pkg` is missing on the system for any reason, it can be quickly bootstrapped without having to build it from source or even having **DPorts** installed:
 
@@ -22,7 +22,7 @@ DragonFlyBSD's daily snapshots and releases (starting with 3.4) come with `pkg` 
 # rehash
 ```
 
-### 2.1. Recommended Steps to Setup `pkg`
+#### 2.1. Recommended Steps to Setup `pkg`
 
 Here, it will be similar to what we have on a **FreeBSD** system, and we are going to use HTTPS to fetch our packages, and updates - so here we also need an extra package to help us out (ca_root_nss).
 
@@ -48,7 +48,7 @@ After applying all these changes, we update the packages list again and try to c
 # pkg upgrade -y -f
 ```
 
-# 3. Install `tor` DragonFlyBSD's Package
+### 3. Package installation
 
 Install the `tor` package:
 
@@ -63,9 +63,9 @@ Install the `tor` package:
 # pkg install tor-devel
 ```
 
-# 4. Configure `/usr/local/etc/tor/torrc`
+### 4. Configuration file
 
-This is a very simple version of the `torrc` configuration file in order to run a Middle/Guard relay on the Tor network:
+Put the configuration file `/usr/local/etc/tor/torrc` in place
 
 ```
 Nickname    myNiceRelay  # Change "myNiceRelay" to something you like
@@ -76,7 +76,7 @@ SocksPort   0
 Log notice  syslog
 ```
 
-# 5. Start `tor`
+### 5. Start the service
 
 Here we set `tor` to start at boot time and use the setuid feature, in order to bind to lower ports like 443 (the daemon itself will still run as a regular non-privileged user).
 
@@ -86,7 +86,7 @@ Here we set `tor` to start at boot time and use the setuid feature, in order to 
 # service tor start
 ```
 
-# 6. Final Notes
+### 6. Final Notes
 
 If you are having trouble setting up your relay, have a look at our [help section](/relay/getting-help/).
 If your relay is now running, check out the [post-install](/relay/setup/post-install/) notes.
@@ -99,4 +99,4 @@ section: Middle/Guard relay
 ---
 section_id: relay-operations
 ---
-subtitle: How to deploy a Middle/Guard relay on DragonflyBSD
+subtitle: How to deploy a Middle/Guard relay on DragonFlyBSD

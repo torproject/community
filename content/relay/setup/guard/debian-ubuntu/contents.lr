@@ -6,16 +6,16 @@ title: Debian/Ubuntu
 ---
 body:
 
-# 1. Enable Automatic Software Updates
+### 1. Enable Automatic Software Updates
 
 One of the most important things to keeps your relay secure is to install security updates timely and ideally automatically so you can not forget about it.
 Follow the instructions to enable [automatic software updates](updates) for your operating system.
 
-# 2. Configure Tor Project's Repository
+### 2. Configure Tor Project's Repository
 
 Configuring the Tor Project's package repository for Debian/Ubuntu is documented **[here](https://support.torproject.org/apt/tor-deb-repo/)**. Please follow those instructions before proceeding.
 
-# 3. Install `tor`
+### 3. Package installation
 
 Ensure you update the packages database before installing the package, than call `apt` to install it:
 
@@ -24,9 +24,9 @@ Ensure you update the packages database before installing the package, than call
 # apt install tor
 ```
 
-# 4. Configure `/etc/tor/torrc`
+### 4. Configuration file
 
-This is a very simple version of the `torrc` configuration file in order to run a Middle/Guard relay on the Tor network:
+Put the configuration file `/etc/tor/torrc` in place
 
 ```
 Nickname    myNiceRelay  # Change "myNiceRelay" to something you like
@@ -36,7 +36,7 @@ ExitRelay   0
 SocksPort   0
 ```
 
-# 5. Restart the Service
+### 5. Restart the service
 
 Restart the `tor` daemon, so your configuration changes take effect:
 
@@ -44,7 +44,7 @@ Restart the `tor` daemon, so your configuration changes take effect:
 # systemctl restart tor@default
 ```
 
-# 6. Final Notes
+### 6. Final Notes
 
 If you are having trouble setting up your relay, have a look at our [help section](/relay/getting-help/).
 If your relay is now running, check out the [post-install](/relay/setup/post-install/) notes.

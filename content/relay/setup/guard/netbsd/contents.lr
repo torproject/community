@@ -6,11 +6,11 @@ title: NetBSD
 ---
 body:
 
-# 1. Enable Automatic Software Updates
+### 1. Enable Automatic Software Updates
 
 One of the most important things to keeps your relay secure is to install security updates timely and ideally automatically so you can not forget about it. Follow the instructions to enable automatic software updates for your operating system.
 
-# 2. Setup `pkg_add`
+### 2. Setup `pkg_add`
 
 Modern versions of the NetBSD operating system can be set to use `pkgin`, which is a piece of software aimed to be like `apt` or `yum` for managing pkgsrc binary packages. We are not convering its setup here, and opt to use plain `pkg_add` instead.
 
@@ -18,15 +18,17 @@ Modern versions of the NetBSD operating system can be set to use `pkgin`, which 
 # echo "PKG_PATH=http://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/$(uname -m)/$(uname -r)/All" > /etc/pkg_install.conf
 ```
 
-# 3. Install `tor` NetBSD's Package
+### 3. Package installation
+
+Install `tor` NetBSD's package:
 
 ```
 # pkg_add tor
 ```
 
-# 4. Configure `/usr/pkg/etc/tor/torrc`
+### 4. Configuration file
 
-This is a very simple version of the `torrc` configuration file in order to run a Middle/Guard relay on the Tor network:
+Put the configuration file `/usr/pkg/etc/tor/torrc` in place:
 
 ```
 Nickname    myNiceRelay  # Change "myNiceRelay" to something you like
@@ -37,7 +39,7 @@ SocksPort   0
 Log notice  syslog
 ```
 
-# 5. Start `tor`
+### 5. Start the service
 
 Here we set `tor` to start during boot and call it for the first time:
 
@@ -47,7 +49,7 @@ Here we set `tor` to start during boot and call it for the first time:
 # /etc/rc.d/tor start
 ```
 
-# 6. Final Notes
+### 6. Final Notes
 
 If you are having trouble setting up your relay, have a look at our [help section](/relay/getting-help/).
 If your relay is now running, check out the [post-install](/relay/setup/post-install/) notes.

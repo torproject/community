@@ -6,11 +6,11 @@ title: FreeBSD
 ---
 body:
 
-# 1. Enable Automatic Software Updates
+### 1. Enable Automatic Software Updates
 
 One of the most important things to keeps your relay secure is to install security updates timely and ideally automatically so you can not forget about it. Follow the instructions to enable [automatic software updates](updates) for your operating system.
 
-# 2. Bootstrap `pkg`
+### 2. Bootstrap `pkg`
 
 This article assumes we have already a base installation of FreeBSD running, and only the base system (here, we are running 12.2-RELEASE).
 That means we do not have any packages installed, or even the `pkg` packages manager itself (there's no `sudo` available - we are running commands as root).
@@ -22,7 +22,7 @@ To bootstrap and install `pkg` we should run the following command:
 # pkg update -f
 ```
 
-### 2.1. Recommended Steps to Setup `pkg`
+#### 2.1. Recommended Steps to Setup `pkg`
 
 To follow upstream updates in a "faster way" we recommend changing the 'quarterly' branch used by `pkg` to its 'latest' branch.
 
@@ -59,8 +59,9 @@ After applying all these changes, we update the packages list again and try to c
 # pkg upgrade -y -f
 ```
 
-# 3. Install `tor` FreeBSD's Package
+### 3. Package installation
 
+Install `tor` FreeBSD's package.
 Here we can choose to install the latest stable version, like:
 
 ```
@@ -74,9 +75,9 @@ Here we can choose to install the latest stable version, like:
 # pkg install tor-devel
 ```
 
-# 4. Configure `/usr/local/etc/tor/torrc`
+### 4. Configuration file
 
-This is a very simple version of the `torrc` configuration file in order to run a Middle/Guard relay on the Tor network:
+Put the configuration file `/usr/local/etc/tor/torrc` in place:
 
 ```
 Nickname    myNiceRelay  # Change "myNiceRelay" to something you like
@@ -87,14 +88,14 @@ SocksPort   0
 Log notice  syslog
 ```
 
-# 5. Enable `net.inet.ip.random_id`
+### 5. Enable `net.inet.ip.random_id`
 
 ```
 # echo "net.inet.ip.random_id=1" >> /etc/sysctl.conf
 # sysctl net.inet.ip.random_id=1
 ```
 
-# 6. Start `tor`
+### 6. Start the service
 
 Here we set `tor` to start at boot time and use the setuid feature, in order to bind to lower ports like 443 (the daemon itself will still run as a regular non-privileged user).
 
@@ -104,7 +105,7 @@ Here we set `tor` to start at boot time and use the setuid feature, in order to 
 # service tor start
 ```
 
-# 7. Final Notes
+### 7. Final Notes
 
 If you are having trouble setting up your relay, have a look at our [help section](/relay/getting-help/).
 If your relay is now running, check out the [post-install](/relay/setup/post-install/) notes.

@@ -6,11 +6,11 @@ title: OpenBSD
 ---
 body:
 
-# 1. Enable Automatic Software Updates
+### 1. Enable Automatic Software Updates
 
 One of the most important things to keeps your relay secure is to install security updates timely and ideally automatically so you can not forget about it. Follow the instructions to enable automatic software updates for your operating system.
 
-# 2. Install `tor` OpenBSD's Package
+### 2. Package installation
 
 Recent OpenBSD systems, since 6.5, already have the repository configured on `/etc/installurl` so we do not need to bother changing it.
 
@@ -26,7 +26,7 @@ Proceed with `pkg_add` to install the package:
 # pkg_add tor
 ```
 
-### 2.1. Recommended Steps to Install `tor` on OpenBSD
+#### 2.1. Recommended Steps to Install `tor` on OpenBSD
 
 If you want to install a newer version of the `tor` OpenBSD's package, you can use M:Tier's binary packages:
 
@@ -42,9 +42,9 @@ Here is how you proceed with these steps:
 # ./openup
 ```
 
-# 3. Configure `/etc/tor/torrc`
+### 3. Configuration file
 
-This is a very simple version of the `torrc` configuration file in order to run a Middle/Guard relay on the Tor network:
+Put the configuration file `/etc/tor/torrc` in place:
 
 ```
 Nickname      myNiceRelay  # Change "myNiceRelay" to something you like
@@ -58,9 +58,10 @@ User          _tor
 RunAsDaemon   1
 ```
 
-# 4. Change `openfiles-max` and `maxfiles`
+### 4. Change `openfiles-max` and `maxfiles`
 
-By default, OpenBSD maintains a rather low limit on the maximum number of open files for a process. For a daemon such as Tor's, that opens a connection to each and every other relay (currently around 7000 relays), these limits should be raised.
+By default, OpenBSD maintains a rather low limit on the maximum number of open files for a process.
+For a daemon such as Tor's, that opens a connection to each and every other relay (currently around 7000 relays), these limits should be raised.
 
 Append the following section to `/etc/login.conf`:
 
@@ -79,7 +80,7 @@ Increase it from the default of 7030 to 16000:
 # sysctl kern.maxfiles=16000
 ```
 
-# 5. Start `tor`
+### 5. Start the service
 
 Here we set `tor` to start during boot and call it for the first time:
 
@@ -88,7 +89,7 @@ Here we set `tor` to start during boot and call it for the first time:
 # rcctl start tor
 ```
 
-# 6. Final Notes
+### 6. Final Notes
 
 If you are having trouble setting up your relay, have a look at our [help section](/relay/getting-help/).
 If your relay is now running, check out the [post-install](/relay/setup/post-install/) notes.
