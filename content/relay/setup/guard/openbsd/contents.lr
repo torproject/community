@@ -47,13 +47,15 @@ Here is how you proceed with these steps:
 This is a very simple version of the `torrc` configuration file in order to run a Middle/Guard relay on the Tor network:
 
 ```
-Nickname    myNiceRelay  # Change "myNiceRelay" to something you like
-ContactInfo your@e-mail  # Write your e-mail and be aware it will be published
-ORPort      443          # You might use a different port, should you want to
-ExitRelay   0
-SocksPort   0
-Log notice  syslog
-User        _tor
+Nickname      myNiceRelay  # Change "myNiceRelay" to something you like
+ContactInfo   your@e-mail  # Write your e-mail and be aware it will be published
+ORPort        443          # You might use a different port, should you want to
+ExitRelay     0
+SocksPort     0
+Log notice    syslog
+DataDirectory /var/tor
+User          _tor
+RunAsDaemon   1
 ```
 
 # 4. Change `openfiles-max` and `maxfiles`
