@@ -76,6 +76,8 @@ Replace "CHANGEME" with a port of your choice.
 
 This port must be externally reachable and must be different from the one specified for ORPort. Please avoid port 9001 because it's commonly associated with Tor and censors may be scanning the Internet for this port.
 
+  * One pretty important test you should consider doing is to test if we can talk **obfs4** to the port used by **ServerTransportListenAddr**. Please try our [reachability test tool for obfs4 Bridges](https://bridges.torproject.org/scan/) to check that.
+
 # 5. Change `openfiles-max` and `maxfiles`
 
 By default, OpenBSD maintains a rather low limit on the maximum number of open files for a process. For a daemon such as Tor's, that opens a connection to each and every other relay (currently around 7000 relays), these limits should be raised.
