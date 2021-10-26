@@ -6,19 +6,19 @@ title: CentOS / RHEL
 ---
 body:
 
-# 1. Enable Automatic Software Updates
+### 1. Enable Automatic Software Updates
 
 One of the most important things to keeps your relay secure is to install security updates timely and ideally automatically so you can not forget about it. Follow the instructions to enable [automatic software updates](updates) for your operating system.
 
-# 2. Install `epel-release`
+### 2. Install `epel-release`
 
-To install `tor` on CentOS/RHEL, you need to enable the use of the [EPEL](https://fedoraproject.org/wiki/EPEL) Repository first. To do so, you must install the `epel-release` package:
+To install the `tor` package on CentOS/RHEL, you need to enable the use of the [EPEL](https://fedoraproject.org/wiki/EPEL) Repository first. To do so, you must install the `epel-release` package:
 
 ```
 # yum install epel-release
 ```
 
-Recent versions of CentOS/RHEL are using `dnf` instead of `yum`, so the command to install the package would be:
+Recent versions of CentOS/RHEL are using `dnf` instead of `yum`:
 
 ```
 # dnf install epel-release
@@ -26,7 +26,7 @@ Recent versions of CentOS/RHEL are using `dnf` instead of `yum`, so the command 
 
 If you are on a recent version that uses `dnf`, please keep using it for the following steps where `yum` is called on this setup guide.
 
-# 3. Configure Tor Project's Repository
+### 3. Configure Tor Project's Repository
 
 Configuring the Tor Project's Repository for CentOS/RHEL consists basically on setting up `/etc/yum.repos.d/Tor.repo` with the following content:
 
@@ -42,7 +42,7 @@ cost=100
 
 More information about it can be found [here](https://support.torproject.org/rpm/).
 
-# 4. Install `tor`
+### 4. Install `tor`
 
 Once you are set with EPEL and the Tor repositories, you are now able to install the package:
 
@@ -52,7 +52,7 @@ Once you are set with EPEL and the Tor repositories, you are now able to install
 
 Please note that when you are installing the first package from the EPEL repository you will be asked about verifying the EPEL's GPG signing key. Please ensure the key matches with the one available on the [Fedora Project website](https://getfedora.org/keys/). This will also happens when installing packages from Tor's repository for the first time - again you must ensure the key matches.
 
-# 5. Install a Pluggable Transport
+### 5. Install a Pluggable Transport
 
 We are opting here to install and use `obfs4` as pluggable transport, so we are going to install `obfs4proxy`.
 
@@ -79,7 +79,7 @@ Heavily outdated versions of `git` can make `go get` fail, so try upgrading to a
 
 For more information on installing or building `obfs4proxy` from source, please refer to its [official docummentation](https://gitlab.com/yawning/obfs4/-/blob/master/README.md).
 
-# 6. Configure `/etc/tor/torrc`
+### 6. Configure `/etc/tor/torrc`
 
 This is a very simple version of the `torrc` configuration file in order to run a Bridge on the Tor network:
 
@@ -102,7 +102,7 @@ This port must be externally reachable and must be different from the one specif
 
   * One pretty important test you should consider doing is to test if we can talk **obfs4** to the port used by **ServerTransportListenAddr**. Please try our [reachability test tool for obfs4 Bridges](https://bridges.torproject.org/scan/) to check that.
 
-# 7. Enable and Start `tor`
+### 7. Enable and Start `tor`
 
 Recent versions os CentOS/RHEL which ship with systemd:
 
@@ -124,7 +124,7 @@ Should you use an older release like CentOS/RHEL 6, that will be:
 
   * If **systemd** or `tor` complain about starting `obfs4proxy` by binding its socket to ports lower than 1024, you shall consider changing its binary's cappabilities or overriding Tor's unit. For detailed information please refer to our documentation on [GitLab Ticket #18356](https://gitlab.torproject.org/tpo/core/tor/-/issues/18356).
 
-# 8. Final Notes
+### 8. Final Notes
 
 If you are having trouble setting up your bridge, have a look at [our help section](../../../getting-help/).
 If your bridge is now running, check out the [post-install notes](../post-install/).

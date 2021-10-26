@@ -6,17 +6,17 @@ title: OpenSUSE
 ---
 body:
 
-# 1. Enable Automatic Software Updates
+### 1. Enable Automatic Software Updates
 
 One of the most important things to keeps your relay secure is to install security updates timely and ideally automatically so you can not forget about it. Follow the instructions to enable automatic software updates for your operating system.
 
-# 2. Install `tor`
+### 2. Install `tor`
 
 ```
 # zypper install tor
 ```
 
-# 3. Install a Pluggable Transport
+### 3. Install a Pluggable Transport
 
 We are opting here to install and use `obfs4` as pluggable transport, so we are going to install `obfs4proxy`.
 
@@ -42,7 +42,7 @@ Heavily outdated versions of `git` can make `go get` fail, so try upgrading to a
 
 For more information on installing or building `obfs4proxy` from source, please refer to its [official docummentation](https://gitlab.com/yawning/obfs4/-/blob/master/README.md).
 
-# 4. Configure `/etc/tor/torrc`
+### 4. Configure `/etc/tor/torrc`
 
 This is a very simple version of the `torrc` configuration file in order to run a Bridge on the Tor network:
 
@@ -65,7 +65,7 @@ This port must be externally reachable and must be different from the one specif
 
   * One pretty important test you should consider doing is to test if we can talk **obfs4** to the port used by **ServerTransportListenAddr**. Please try our [reachability test tool for obfs4 Bridges](https://bridges.torproject.org/scan/) to check that.
 
-# 5. Enable and Start `tor`
+### 5. Enable and Start `tor`
 
 ```
 # systemctl enable --now tor
@@ -79,7 +79,7 @@ This port must be externally reachable and must be different from the one specif
 
   * If **systemd** or `tor` complain about starting `obfs4proxy` by binding its socket to ports lower than 1024, you shall consider changing its binary's cappabilities or overriding Tor's unit. For detailed information please refer to our documentation on [GitLab Ticket #18356](https://gitlab.torproject.org/tpo/core/tor/-/issues/18356).
 
-# 6. Final Notes
+### 6. Final Notes
 
 If you are having trouble setting up your bridge, have a look at [our help section](../../../getting-help/).
 If your bridge is now running, check out the [post-install notes](../post-install/).
