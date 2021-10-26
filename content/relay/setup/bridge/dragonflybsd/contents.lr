@@ -10,11 +10,11 @@ key: 4
 ---
 body:
 
-# 1. Enable Automatic Software Updates
+### 1. Enable Automatic Software Updates
 
 One of the most important things to keeps your relay secure is to install security updates timely and ideally automatically so you can not forget about it. Follow the instructions to enable automatic software updates for your operating system.
 
-# 2. Bootstrap `pkg`
+### 2. Bootstrap `pkg`
 
 DragonFlyBSD's daily snapshots and releases (starting with 3.4) come with `pkg` already installed. Upgrades from earlier releases, however, will not have it. If `pkg` is missing on the system for any reason, it can be quickly bootstrapped without having to build it from source or even having **DPorts** installed:
 
@@ -26,7 +26,7 @@ DragonFlyBSD's daily snapshots and releases (starting with 3.4) come with `pkg` 
 # rehash
 ```
 
-### 2.1. Recommended Steps to Setup `pkg`
+##### 2.1. Recommended Steps to Setup `pkg`
 
 Here, it will be similar to what we have on a **FreeBSD** system, and we are going to use HTTPS to fetch our packages, and updates - so here we also need an extra package to help us out; `ca_root_nss`.
 
@@ -50,7 +50,7 @@ After applying all these changes, we update the packages list again and try to c
 # pkg upgrade -y -f
 ```
 
-# 3. Install `tor` DragonflyBSD's Packages
+### 3. Install `tor` DragonflyBSD's Packages
 
 Here we can choose to install the latest stable version, like:
 
@@ -64,7 +64,7 @@ Here we can choose to install the latest stable version, like:
 # pkg install tor-devel
 ```
 
-# 4. Install a Pluggable Transport
+### 4. Install a Pluggable Transport
 
 We are opting here to install and use **obfs4** as pluggable transport, so we are going to install the `obfs4proxy-tor` package:
 
@@ -72,7 +72,7 @@ We are opting here to install and use **obfs4** as pluggable transport, so we ar
 # pkg install obfs4proxy-tor
 ```
 
-# 5. Configure `/usr/local/etc/tor/torrc`
+### 5. Configure `/usr/local/etc/tor/torrc`
 
 This is a very simple version of the `torrc` configuration file in order to run a Bridge on the Tor network:
 
@@ -95,7 +95,7 @@ This port must be externally reachable and must be different from the one specif
 
   * One pretty important test you should consider doing is to test if we can talk **obfs4** to the port used by **ServerTransportListenAddr**. Please try our [reachability test tool for obfs4 Bridges](https://bridges.torproject.org/scan/) to check that.
 
-# 6. Start `tor`
+### 6. Start `tor`
 
 Here we set `tor` to start at boot time and use the setuid feature, in order to bind to lower ports like 443 (the daemon itself will still run as a regular non-privileged user).
 
@@ -105,7 +105,7 @@ Here we set `tor` to start at boot time and use the setuid feature, in order to 
 # service tor start
 ```
 
-# 7. Final Notes
+### 7. Final Notes
 
 If you are having trouble setting up your bridge, have a look at [our help section](../../../getting-help/).
 If your bridge is now running, check out the [post-install notes](../post-install/).

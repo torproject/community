@@ -10,11 +10,11 @@ key: 7
 ---
 body:
 
-# 1. Enable Automatic Software Updates
+### 1. Enable Automatic Software Updates
 
 One of the most important things to keeps your relay secure is to install security updates timely and ideally automatically so you can not forget about it. Follow the instructions to enable automatic software updates for your operating system.
 
-# 2. Setup `pkg_add`
+### 2. Setup `pkg_add`
 
 Modern versions of the NetBSD operating system can be set to use `pkgin`, which is a piece of software aimed to be like `apt` or `yum` for managing pkgsrc binary packages. We are not convering its setup here, and opt to use plain `pkg_add` instead.
 
@@ -22,13 +22,13 @@ Modern versions of the NetBSD operating system can be set to use `pkgin`, which 
 # echo "PKG_PATH=http://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/$(uname -m)/$(uname -r)/All" > /etc/pkg_install.conf
 ```
 
-# 3. Install `tor` NetBSD's Package
+### 3. Install `tor` NetBSD's Package
 
 ```
 # pkg_add tor
 ```
 
-# 4. Install a Pluggable Transport
+### 4. Install a Pluggable Transport
 
 We are opting here to install and use **obfs4** as pluggable transport, so we are going to install the `obfs4proxy` package:
 
@@ -36,7 +36,7 @@ We are opting here to install and use **obfs4** as pluggable transport, so we ar
 # pkg_add install obfs4proxy
 ```
 
-# 5. Configure `/usr/pkg/etc/tor/torrc`
+### 5. Configure `/usr/pkg/etc/tor/torrc`
 
 This is a very simple version of the `torrc` configuration file in order to run a Bridge on the Tor network:
 
@@ -59,7 +59,7 @@ This port must be externally reachable and must be different from the one specif
 
   * One pretty important test you should consider doing is to test if we can talk **obfs4** to the port used by **ServerTransportListenAddr**. Please try our [reachability test tool for obfs4 Bridges](https://bridges.torproject.org/scan/) to check that.
 
-# 6. Start `tor`
+### 6. Start `tor`
 
 Here we set `tor` to start during boot and call it for the first time:
 
@@ -69,7 +69,7 @@ Here we set `tor` to start during boot and call it for the first time:
 # /etc/rc.d/tor start
 ```
 
-# 7. Final Notes
+### 7. Final Notes
 
 If you are having trouble setting up your bridge, have a look at [our help section](../../../getting-help/).
 If your bridge is now running, check out the [post-install notes](../../post-install/).

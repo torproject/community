@@ -10,11 +10,11 @@ key: 8
 ---
 body:
 
-# 1. Enable Automatic Software Updates
+### 1. Enable Automatic Software Updates
 
 One of the most important things to keeps your relay secure is to install security updates timely and ideally automatically so you can not forget about it. Follow the instructions to enable automatic software updates for your operating system.
 
-# 2. Install `tor` OpenBSD's Package
+### 2. Install `tor` OpenBSD's Package
 
 Recent OpenBSD systems, since 6.5, already have the repository configured on `/etc/installurl` so we do not need to bother changing it.
 
@@ -30,7 +30,7 @@ Proceed with `pkg_add` to install the package:
 # pkg_add tor
 ```
 
-### 2.1. Recommended Steps to Install `tor` on OpenBSD
+##### 2.1. Recommended Steps to Install `tor` on OpenBSD
 
 If you want to install a newer version of the `tor` OpenBSD's package, you can use M:Tier's binary packages:
 
@@ -46,7 +46,7 @@ Here is how you proceed with these steps:
 # ./openup
 ```
 
-# 3. Install a Pluggable Transport
+### 3. Install a Pluggable Transport
 
 We are opting here to install and use **obfs4** as pluggable transport, so we are going to install the `obfs4proxy` package:
 
@@ -54,7 +54,7 @@ We are opting here to install and use **obfs4** as pluggable transport, so we ar
 # pkg_add obfs4proxy
 ```
 
-# 4. Configure `/etc/tor/torrc`
+### 4. Configure `/etc/tor/torrc`
 
 This is a very simple version of the `torrc` configuration file in order to run a Bridge on the Tor network:
 
@@ -80,7 +80,7 @@ This port must be externally reachable and must be different from the one specif
 
   * One pretty important test you should consider doing is to test if we can talk **obfs4** to the port used by **ServerTransportListenAddr**. Please try our [reachability test tool for obfs4 Bridges](https://bridges.torproject.org/scan/) to check that.
 
-# 5. Change `openfiles-max` and `maxfiles`
+### 5. Change `openfiles-max` and `maxfiles`
 
 By default, OpenBSD maintains a rather low limit on the maximum number of open files for a process. For a daemon such as Tor's, that opens a connection to each and every other relay (currently around 7000 relays), these limits should be raised.
 
@@ -101,7 +101,7 @@ Increase it from the default of 7030 to 16000:
 # sysctl kern.maxfiles=16000
 ```
 
-# 6. Start `tor`
+### 6. Start `tor`
 
 Here we set `tor` to start during boot and call it for the first time:
 
@@ -110,7 +110,7 @@ Here we set `tor` to start during boot and call it for the first time:
 # rcctl start tor
 ```
 
-# 7. Final Notes
+### 7. Final Notes
 
 If you are having trouble setting up your bridge, have a look at [our help section](../../../getting-help/).
 If your bridge is now running, check out the [post-install notes](../post-install/).

@@ -10,11 +10,11 @@ key: 6
 ---
 body:
 
-# 1. Enable Automatic Software Updates
+### 1. Enable Automatic Software Updates
 
 One of the most important things to keeps your relay secure is to install security updates timely and ideally automatically so you can not forget about it. Follow the instructions to enable automatic software updates for your operating system.
 
-# 2. Bootstrap `pkg`
+### 2. Bootstrap `pkg`
 
 This article assumes we have already a base installation of FreeBSD running, and only the base system (here, we are running 12.2-RELEASE).
 That means we do not have any packages installed, or even the `pkg` packages manager itself (there's no `sudo` available - we are running commands as root).
@@ -26,7 +26,7 @@ To bootstrap and install `pkg` we should run the following command:
 # pkg update -f
 ```
 
-### 2.1. Recommended Steps to Setup `pkg`
+##### 2.1. Recommended Steps to Setup `pkg`
 
 To follow upstream updates in a "faster way" we recommend changing the 'quarterly' branch used by `pkg` to its 'latest' branch.
 
@@ -61,7 +61,7 @@ After applying all these changes, we update the packages list again and try to c
 # pkg upgrade -y -f
 ```
 
-# 3. Install `tor` FreeBSD's Package
+### 3. Install `tor` FreeBSD's Package
 
 Here we can choose to install the latest stable version, like:
 
@@ -76,7 +76,7 @@ Here we can choose to install the latest stable version, like:
 # pkg install tor-devel
 ```
 
-# 4. Install a Pluggable Transport
+### 4. Install a Pluggable Transport
 
 We are opting here to install and use **obfs4** as pluggable transport, so we are going to install the `obfs4proxy-tor` package:
 
@@ -84,7 +84,7 @@ We are opting here to install and use **obfs4** as pluggable transport, so we ar
 # pkg install obfs4proxy-tor
 ```
 
-# 5. Configure `/usr/local/etc/tor/torrc`
+### 5. Configure `/usr/local/etc/tor/torrc`
 
 This is a very simple version of the `torrc` configuration file in order to run a Bridge on the Tor network:
 
@@ -107,14 +107,14 @@ This port must be externally reachable and must be different from the one specif
 
   * One pretty important test you should consider doing is to test if we can talk **obfs4** to the port used by **ServerTransportListenAddr**. Please try our [reachability test tool for obfs4 Bridges](https://bridges.torproject.org/scan/) to check that.
 
-# 6. Enable `net.inet.ip.random_id`
+### 6. Enable `net.inet.ip.random_id`
 
 ```
 # echo "net.inet.ip.random_id=1" >> /etc/sysctl.conf
 # sysctl net.inet.ip.random_id=1
 ```
 
-# 7. Start `tor`
+### 7. Start `tor`
 
 Here we set `tor` to start at boot time and use the setuid feature, in order to bind to lower ports like 443 (the daemon itself will still run as a regular non-privileged user).
 
