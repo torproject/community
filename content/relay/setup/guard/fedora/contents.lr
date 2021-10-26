@@ -6,11 +6,13 @@ title: Fedora
 ---
 body:
 
-# 1. Enable Automatic Software Updates
+### 1. Enable Automatic Software Updates
 
 One of the most important things to keeps your relay secure is to install security updates timely and ideally automatically so you can not forget about it. Follow the instructions to enable [automatic software updates](updates) for your operating system.
 
-# 2. Add the following to `/etc/yum.repos.d/tor.repo` and then install the tor package.
+### 2. Configure Tor Project's Repository
+
+Configuring the Tor Project's Repository for Fedora consists basically on setting up `/etc/yum.repos.d/Tor.repo` with the following content:
 
 ```
 [tor]
@@ -22,30 +24,35 @@ gpgkey=https://rpm.torproject.org/fedora/public_gpg.key
 cost=100
 ```
 
-`sudo dnf install tor`
+More information about it can be found [here](https://support.torproject.org/rpm/).
 
+### 3. Package installation
 
-# 3. Configuration File
+Install the `tor` package:
+
+```
+# dnf install tor
+```
+
+### 4. Configuration file
 
 Put the configuration file `/etc/tor/torrc` in place:
 
 ```
-#change the nickname "myNiceRelay" to a name that you like
-Nickname myNiceRelay
-ORPort 9001
-ExitRelay 0
-# Change the email address below and be aware that it will be published
-ContactInfo tor-operator@your-emailaddress-domain
+Nickname    myNiceRelay  # Change "myNiceRelay" to something you like
+ContactInfo your@e-mail  # Write your e-mail and be aware it will be published
+ORPort      443          # You might use a different port, should you want to
+ExitRelay   0
+SocksPort   0
 ```
 
-# 4. Start the tor daemon and make sure it starts at boot
+# 5. Start the service
 
 ```
-systemctl enable tor
-systemctl start tor
+# systemctl enable --now tor
 ```
 
-# 5. Final notes
+# 6. Final Notes
 
 If you are having trouble setting up your relay, have a look at our [help section](/relay/getting-help/).
 If your relay is now running, check out the [post-install](/relay/setup/post-install/) notes.

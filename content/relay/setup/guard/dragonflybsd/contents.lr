@@ -2,33 +2,34 @@ _model: page
 ---
 color: primary
 ---
-title: DragonflyBSD
+title: DragonFlyBSD
 ---
 body:
 
-# 1. Bootstrap `pkg`
+### 1. Enable Automatic Software Updates
 
-DragonFlyBSD's daily snapshots and releases (starting with 3.4) come with `pkg` already installed.
-Upgrades from earlier releases, however, will not have it.
+One of the most important things to keeps your relay secure is to install security updates timely and ideally automatically so you can not forget about it. Follow the instructions to enable automatic software updates for your operating system.
 
-If `pkg` is missing on the system for any reason, it can be quickly bootstrapped without having to build it from source or even having **DPorts** installed:
+### 2. Bootstrap `pkg`
+
+DragonFlyBSD's daily snapshots and releases (starting with 3.4) come with `pkg` already installed. Upgrades from earlier releases, however, will not have it. If `pkg` is missing on the system for any reason, it can be quickly bootstrapped without having to build it from source or even having **DPorts** installed:
 
 ```
-cd /usr
-make pkg-bootstrap
-rehash
-pkg-static install -y pkg
-rehash
+# cd /usr
+# make pkg-bootstrap
+# rehash
+# pkg-static install -y pkg
+# rehash
 ```
 
-### 1.1. Recommended Steps to Setup `pkg`
+#### 2.1. Recommended Steps to Setup `pkg`
 
 Here, it will be similar to what we have on a **FreeBSD** system, and we are going to use HTTPS to fetch our packages, and updates - so here we also need an extra package to help us out (ca_root_nss).
 
 Installing the `ca_root_nss` package:
 
 ```
-pkg install ca_root_nss
+# pkg install ca_root_nss
 ```
 
 For fresh installations, the file `/usr/local/etc/pkg/repos/df-latest.conf.sample` is copied to `/usr/local/etc/pkg/repos/df-latest`. The files ending in the ".sample" extension are ignored; pkg(8) only reads files that end in ".conf" and it will read as many as it finds.
@@ -43,53 +44,49 @@ We can simply edit the **URL** used to point out the repositories on `/usr/local
 After applying all these changes, we update the packages list again and try to check if there's already a new update to apply:
 
 ```
-pkg update -f
-pkg upgrade -y -f
+# pkg update -f
+# pkg upgrade -y -f
 ```
 
-# 2. Package Installation
+### 3. Package installation
 
 Install the `tor` package:
 
 ```
-pkg install tor
+# pkg install tor
 ```
 
   ... or install an alpha release:
 
 
 ```
-pkg install tor-devel
+# pkg install tor-devel
 ```
 
-# 3. Configuration File
+### 4. Configuration file
 
-Put the configuration file `/usr/local/etc/tor/torrc` in place:
-
+Put the configuration file `/usr/local/etc/tor/torrc` in place
 
 ```
-#change the nickname "myBSDrelay" to a name that you like
-Nickname    myBSDRelay
-# You might want to use/try a different port, should you want to
-ORPort      443    
+Nickname    myNiceRelay  # Change "myNiceRelay" to something you like
+ContactInfo your@e-mail  # Write your e-mail and be aware it will be published
+ORPort      443          # You might use a different port, should you want to
 ExitRelay   0
 SocksPort   0
 Log notice  syslog
-# Change the email address below and be aware that it will be published
-ContactInfo tor-operator@your-emailaddress-domain
 ```
 
-# 4. Start the service
+### 5. Start the service
 
 Here we set `tor` to start at boot time and use the setuid feature, in order to bind to lower ports like 443 (the daemon itself will still run as a regular non-privileged user).
 
 ```
-echo "tor_setuid=YES" >> /etc/rc.conf
-echo "tor_enable=YES" >> /etc/rc.conf
-service tor start
+# echo "tor_setuid=YES" >> /etc/rc.conf
+# echo "tor_enable=YES" >> /etc/rc.conf
+# service tor start
 ```
 
-# 5. Final Notes
+### 6. Final Notes
 
 If you are having trouble setting up your relay, have a look at our [help section](/relay/getting-help/).
 If your relay is now running, check out the [post-install](/relay/setup/post-install/) notes.
@@ -102,4 +99,4 @@ section: Middle/Guard relay
 ---
 section_id: relay-operations
 ---
-subtitle: How to deploy a Middle/Guard relay on DragonflyBSD
+subtitle: How to deploy a Middle/Guard relay on DragonFlyBSD

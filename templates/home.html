@@ -14,7 +14,7 @@
                 <h2 class="card-title ">{{ _(child.title) }}</h2>
                 <p class="card-text">{{ _(child.subtitle) }}</p>
                 <div class="illo-container">
-                  <img src="/static/images/home/png/{{ child.section_id }}.png" class="img-fluid" alt="{{ _(child.section) }}" />
+                  <img src="/static/images/home/png{{ this.path }}.png" class="img-fluid" alt="{{ _(child.section) }}" />
                 </div>
               </div>
               <a href="{{ child.path|url }}" class="btn btn-primary">{{ _(child.cta) }}</a>

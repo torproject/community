@@ -1,0 +1,94 @@
+_model: page
+---
+color: primary
+---
+title: RPM Distributions
+---
+body:
+
+# CentOS and RHEL 8 or later versions
+
+For CentOS and RHEL 8 or later versions, the dnf-automatic package is the preferred approach:
+
+```
+dnf install dnf-automatic
+```
+
+In /etc/dnf/automatic.conf set:
+
+```
+download_updates = yes
+apply_updates = yes
+```
+
+Enable and start automatic updates via:
+
+```
+systemctl enable --now dnf-automatic.timer
+```
+
+Check status of dnf-automatic:
+```
+systemctl list-timers *dnf-*
+```
+
+# CentOS and RHEL 7 or earlier versions
+
+For CentOS and RHEL 7 or earlier versions, the yum-cron package is the preferred approach:
+
+```
+yum install yum-cron
+```
+
+In /etc/yum/yum-cron.conf set:
+
+```
+download_updates = yes
+apply_updates = yes
+```
+
+Enable and start automatic updates via:
+
+```
+systemctl start yum-cron.service
+```
+
+# openSUSE
+
+First, you need to install the automatic update package
+
+```
+zypper install  yast2-online-update-configuration
+```
+
+Then start the configuration tool (ncurses based) with:
+
+```
+yast2 online_update_configuration
+```
+
+Enable the following settings:
+
+```
+    Automatic Online Update
+    Interval: Daily
+    Skip Interactive Patches
+    Agree with Licenses
+    Use delta rpms
+```
+
+Confirm your configuration with OK.
+
+The official openSUSE documentation can be found [here](https://doc.opensuse.org/documentation/leap/startup/single-html/book.opensuse.startup/index.html#sec-onlineupdate-you-automatically).
+---
+html: two-columns-page.html
+---
+key: 1
+---
+section: Automatic Updates
+---
+section_id: automatic-updates
+---
+_slug: updates
+---
+_discoverable: no

@@ -1,0 +1,95 @@
+_model: page
+---
+color: primary
+---
+title: CentOS/RHEL
+---
+body:
+
+### 1. Enable Automatic Software Updates
+
+One of the most important things to keeps your relay secure is to install security updates timely and ideally automatically so you can not forget about it. Follow the instructions to enable [automatic software updates](updates) for your operating system.
+
+### 2. Install `epel-release`
+
+To install `tor` package on CentOS/RHEL, you need to install the [EPEL](https://fedoraproject.org/wiki/EPEL) repository first:
+
+```
+# yum install epel-release
+```
+
+Recent versions of CentOS/RHEL are using `dnf` instead of `yum`:
+
+```
+# dnf install epel-release
+```
+
+If you are on a recent version that uses `dnf`, please keep using it for the following steps where `yum` is called on this setup guide.
+
+### 3. Configure Tor Project's Repository
+
+Configuring the Tor Project's Repository for CentOS/RHEL consists basically on setting up `/etc/yum.repos.d/Tor.repo` with the following content:
+
+```
+[tor]
+name=Tor for Enterprise Linux $releasever - $basearch
+baseurl=https://rpm.torproject.org/centos/$releasever/$basearch
+enabled=1
+gpgcheck=1
+gpgkey=https://rpm.torproject.org/centos/public_gpg.key
+cost=100
+```
+
+More information about it can be found [here](https://support.torproject.org/rpm/).
+
+### 4. Package installation
+
+Once you are set with EPEL and the Tor repositories, you are now able to install the package:
+
+```
+# yum install tor
+```
+
+Please note that when you are installing the first package from the EPEL repository you will be asked about verifying the EPEL's GPG signing key. Please ensure the key matches with the one available on the [Fedora Project website](https://getfedora.org/keys/). This will also happens when installing packages from Tor's repository for the first time - again you must ensure the key matches.
+
+### 5. Configuration file 
+
+Put the configuration file `/etc/tor/torrc` in place:
+
+```
+Nickname    myNiceRelay  # Change "myNiceRelay" to something you like
+ContactInfo your@e-mail  # Write your e-mail and be aware it will be published
+ORPort      443          # You might use a different port, should you want to
+ExitRelay   0
+SocksPort   0
+```
+
+### 6. Enable and Start `tor`
+
+Recent versions os CentOS/RHEL which ship with systemd:
+
+```
+# systemctl enable --now tor
+```
+
+Should you use an older release like CentOS/RHEL 6, that will be:
+
+```
+# service tor enable
+# service tor start
+```
+
+### 7. Final Notes
+
+If you are having trouble setting up your relay, have a look at our [help section](/relay/getting-help/).
+If your relay is now running, check out the [post-install](/relay/setup/post-install/) notes.
+---
+html: two-columns-page.html
+---
+key: 1
+---
+section: Middle/Guard relay
+---
+section_id: relay-operations
+---
+subtitle: How to deploy a middle/Guard relay on CentOS/RHEL

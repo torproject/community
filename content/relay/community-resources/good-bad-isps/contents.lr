@@ -21,6 +21,8 @@ For network diversity and stronger anonymity, you should avoid providers and cou
  * Hetzner Online GmbH (AS24940)
  * DigitalOcean, LLC (AS14061)
 
+These hosts already have many tor nodes being hosted there.
+
 **Note**: This page is currently being revamped. If you would like to help out please see [#72](https://gitlab.torproject.org/tpo/web/community/-/issues/72).
 
 # Good Experiences
@@ -68,7 +70,7 @@ For network diversity and stronger anonymity, you should avoid providers and cou
 |-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
 | [Online.net](http://www.online.net/) | AS12876 | Yes | Yes | Yes | The account holder is responsible for all the traffic going through theirs servers.| 01/28/2019 |
 | [Gandi VPS](https://www.gandi.net/) | - | Yes | Yes | Yes| Gandi send some abuse complaints to Exit relays, but they do not stop the server, and when you tell them your server is a Tor Exit relay, they say it is OK. They ask Exit relays to use the standard Reduced Exit Policy | - |
-| [OVH Kimsufi](http://www.kimsufi.com/) | AS16276 | Yes | Yes | No | Unmetered bandwidth @ 100mbps - "I will gladly explain this situation for you. Running a Tor exit node is strictly forbidden and can lead to the suspension and even termination of your server and account." | 09/27/2021 |
+| [OVH Kimsufi](http://www.kimsufi.com/) | AS16276 | Yes | Yes | No | Unmetered bandwidth @ 100mbps - "I will gladly explain this situation for you. Running a Tor exit node is strictly forbidden and can lead to the suspension and even termination of your server and account." Locations: FR,CA | 09/27/2021 |
 | [Digicube](http://www.digicube.fr/) | - | Yes | Yes | Yes | - | - |
 | [Pulse Servers](http://www.pulseservers.com/) | AS16276 | Yes | Yes | Yes | VPS uses OVH AS. You can build ANY kind tor relays. | 09/27/2021 |
 
@@ -96,7 +98,7 @@ For network diversity and stronger anonymity, you should avoid providers and cou
 | [myLoc Managed IT](https://myloc.de) | AS31010, AS24961 | Yes | Yes | No | - | 2018-10-25 |
 | [linevast](https://www.linevast.de) | AS201206 | No | No | No |  | 03/2021 |
 | [Server4You](https://www.server4you.de)| AS131914 | No | No | No | - | 03/2021 |
-| [Hetzner](http://hetzner.de) | AS24940 | Yes | Yes | Yes | Offers good dedicated root servers for a good price. Unmetered bandwidth on dedicated servers, 20tb on vps. "It is not a Problem, however, abuse reports can lead to a server lock" | 09/27/2021 |
+| [Hetzner](http://hetzner.de) | AS24940 | Yes | Yes | Yes | Offers good dedicated root servers for a good price. Unmetered bandwidth on dedicated servers, 20tb on vps. "It is not a Problem, however, abuse reports can lead to a server lock" Locations: DE,FI | 09/27/2021 |
 | [Contabo](https://contabo.de) | AS51167 | No | No | No | Tor prohibited due to terms of service | 03/2021 |
 | [Strato](https://strato.de) | AS6724 | No | No | No | - | 03/2021 |
 | [PraHost](https://www.prahost.com) | - | Yes | Yes | Yes | "If there is any abuse notice received, you need to solve it in given time, else your IP will be blocked until you take any action" | 03/2021 |
@@ -313,9 +315,10 @@ For network diversity and stronger anonymity, you should avoid providers and cou
 | [HostHatch](https://hosthatch.com) | AS46562 | Yes | Yes | No | Their vps isp are mixed include: QuadraNet, nLayer, AboveNet, Inteliquent, Atrato Networks and open peering with the entire Any2LA and Atlanta TIE networks. | 05/01/16 |
 | [HostUS](http://hostus.us/) | AS25926 | Yes | Yes | No | - | 10/16/14 |
 | [IPXcore](https://ipxcore.com/) | - | Yes | Yes | No | - | - |
-| [Linode](https://www.linode.com/) | AS63949 | Yes | Yes | Yes | "We allow Tor exits as long as they have a reduced exit policy." - I've used 10TB this month in total for all 3 of my exit nodes spread out in different locations. I've recieved 0 notices from Linode while using the free 100$ credits you get. I allow ports 53,80,443. My DE exit node is now the [2nd fastest](https://i.imgur.com/Owj6HkD.png) Linode relay, with UK third. I would recommend this host to use the free credits, but wouldn't really recommend paying as bandwidth is limited. | 10/07/2021 |
+| [Linode](https://www.linode.com/) | AS63949 | Yes | Yes | Yes | "We allow Tor exits as long as they have a reduced exit policy." - I've used 10TB this month in total for all 3 of my exit nodes spread out in different locations. I've recieved 0 notices from Linode while using the free 100$ credits you get. I allow ports 53,80,443. My DE exit node is now the [2nd fastest](https://i.imgur.com/Owj6HkD.png) Linode relay, with UK third. I would recommend this host to use the free credits, but wouldn't really recommend paying as bandwidth is limited. Locations: US,CA,GB,DE,SG,JP,IN,AU | 10/07/2021 |
 | [Luna Node](https://www.lunanode.com/index.php) | - | Yes | Yes | No | - | 05/01/14 |
-| [OVH](https://www.ovh.com/us/index.xml) | AS16276 | Yes | Yes | No | Unmetered bandwidth in non asia locations. - "I will gladly explain this situation for you. Running a Tor exit node is strictly forbidden and can lead to the suspension and even termination of your server and account." | 09/27/2021 |
+| [Oracle Cloud](https://www.oracle.com/cloud/free/) | AS31898 | Yes | Yes | No | Offers generous free tier - 10TB free outbound bandwidth, I have ran a non exit relay for a few months with no problems, [as well as others](https://metrics.torproject.org/rs.html#search/as:AS31898). Note that they will terminate your account if you're suspicious and not provide reason, even on support chat, I've gotten an account banned simply for running a smokeping instance. (Pinging ip addresses to test network stability). Locations: US,CA,GB,DE,CH,NL,SA,UAE,BR,CL,JP,KR,AU,IN | 10/10/2021 |
+| [OVH](https://www.ovh.com/us/index.xml) | AS16276 | Yes | Yes | No | Unmetered bandwidth in non asia locations. - "I will gladly explain this situation for you. Running a Tor exit node is strictly forbidden and can lead to the suspension and even termination of your server and account." Locations: US,CA,FR,DE,PL,GB,SG | 09/27/2021 |
 | [Oplink.net](https://www.oplink.net) | - | Yes | Yes | No | - | 09/03/15 |
 | [Psychz.net](https://www.psychz.net/) | - | Yes | Yes | Yes | Very Exit friendly. Standard Tor response will resolve abuse issues. | 10/07/15 |
 | [PulseServers](https://www.pulseservers.com) | AS16276 | Yes | Yes | Yes | Exit-friendly. | 05/01/16 |
