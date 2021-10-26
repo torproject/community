@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-21 11:36+CET\n"
+"POT-Creation-Date: 2021-10-26 18:39+CET\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -3617,6 +3617,8 @@ msgstr ""
 #: (content/relay/setup/bridge/openbsd/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/guard/netbsd/
 #: (content/relay/setup/guard/netbsd/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/debian-ubuntu/
+#: (content/relay/setup/guard/debian-ubuntu/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/guard/windows/
 #: (content/relay/setup/guard/windows/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/guard/dragonflybsd/
@@ -3629,8 +3631,12 @@ msgstr ""
 #: (content/relay/setup/guard/debianubuntu/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/guard/freebsd/
 #: (content/relay/setup/guard/freebsd/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/
+#: (content/relay/setup/guard/centos-rhel/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/guard/openbsd/
 #: (content/relay/setup/guard/openbsd/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/debian-ubuntu/updates/
+#: (content/relay/setup/guard/debian-ubuntu/updates/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/guard/centosrhel/updates/
 #: (content/relay/setup/guard/centosrhel/updates/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/guard/fedora/updates/
@@ -3639,6 +3645,8 @@ msgstr ""
 #: (content/relay/setup/guard/debianubuntu/updates/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/guard/freebsd/updates/
 #: (content/relay/setup/guard/freebsd/updates/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
+#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
 msgid "```"
 msgstr ""
 
@@ -6327,8 +6335,6 @@ msgstr ""
 #: (content/relay/setup/guard/windows/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/guard/centosrhel/
 #: (content/relay/setup/guard/centosrhel/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/fedora/
-#: (content/relay/setup/guard/fedora/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/guard/debianubuntu/
 #: (content/relay/setup/guard/debianubuntu/contents+en.lr:page.body)
 msgid "Nickname myNiceRelay"
@@ -6340,8 +6346,6 @@ msgstr ""
 #: (content/relay/setup/guard/windows/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/guard/centosrhel/
 #: (content/relay/setup/guard/centosrhel/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/fedora/
-#: (content/relay/setup/guard/fedora/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/guard/debianubuntu/
 #: (content/relay/setup/guard/debianubuntu/contents+en.lr:page.body)
 msgid "ExitRelay 0"
@@ -6372,12 +6376,8 @@ msgstr ""
 #: (content/training/resources/tor-relay-workshop/contents+en.lr:slide.description)
 #: https://community.torproject.org/relay/setup/guard/windows/
 #: (content/relay/setup/guard/windows/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/dragonflybsd/
-#: (content/relay/setup/guard/dragonflybsd/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/guard/centosrhel/
 #: (content/relay/setup/guard/centosrhel/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/fedora/
-#: (content/relay/setup/guard/fedora/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/guard/debianubuntu/
 #: (content/relay/setup/guard/debianubuntu/contents+en.lr:page.body)
 msgid "ContactInfo tor-operator@your-emailaddress-domain"
@@ -6421,8 +6421,6 @@ msgstr ""
 #: (content/relay/setup/guard/windows/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/guard/centosrhel/
 #: (content/relay/setup/guard/centosrhel/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/fedora/
-#: (content/relay/setup/guard/fedora/contents+en.lr:page.body)
 msgid "ORPort 9001"
 msgstr ""
 
@@ -6440,15 +6438,11 @@ msgstr ""
 
 #: https://community.torproject.org/training/resources/tor-relay-workshop/
 #: (content/training/resources/tor-relay-workshop/contents+en.lr:slide.description)
-#: https://community.torproject.org/relay/setup/guard/freebsd/
-#: (content/relay/setup/guard/freebsd/contents+en.lr:page.body)
 msgid "echo \"net.inet.ip.random_id=1\" >> /etc/sysctl.conf"
 msgstr ""
 
 #: https://community.torproject.org/training/resources/tor-relay-workshop/
 #: (content/training/resources/tor-relay-workshop/contents+en.lr:slide.description)
-#: https://community.torproject.org/relay/setup/guard/freebsd/
-#: (content/relay/setup/guard/freebsd/contents+en.lr:page.body)
 msgid "sysctl net.inet.ip.random_id=1"
 msgstr ""
 
@@ -6459,19 +6453,13 @@ msgstr ""
 
 #: https://community.torproject.org/training/resources/tor-relay-workshop/
 #: (content/training/resources/tor-relay-workshop/contents+en.lr:slide.description)
-#: https://community.torproject.org/relay/setup/guard/freebsd/
-#: (content/relay/setup/guard/freebsd/contents+en.lr:page.body)
 msgid "sysrc tor_enable=YES"
 msgstr ""
 
 #: https://community.torproject.org/training/resources/tor-relay-workshop/
 #: (content/training/resources/tor-relay-workshop/contents+en.lr:slide.description)
-#: https://community.torproject.org/relay/setup/guard/dragonflybsd/
-#: (content/relay/setup/guard/dragonflybsd/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/guard/centosrhel/
 #: (content/relay/setup/guard/centosrhel/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/freebsd/
-#: (content/relay/setup/guard/freebsd/contents+en.lr:page.body)
 msgid "service tor start"
 msgstr ""
 
@@ -8573,6 +8561,8 @@ msgstr ""
 
 #: https://community.torproject.org/onion-services/setup/install/
 #: (content/onion-services/setup/install/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/debian-ubuntu/
+#: (content/relay/setup/guard/debian-ubuntu/contents+en.lr:page.body)
 msgid "# apt install tor"
 msgstr ""
 
@@ -8603,6 +8593,8 @@ msgstr ""
 #: (content/relay/setup/guard/centosrhel/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/guard/fedora/
 #: (content/relay/setup/guard/fedora/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/
+#: (content/relay/setup/guard/centos-rhel/contents+en.lr:page.body)
 msgid "[tor]"
 msgstr ""
 
@@ -8634,6 +8626,8 @@ msgstr ""
 #: (content/relay/setup/guard/centosrhel/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/guard/fedora/
 #: (content/relay/setup/guard/fedora/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/
+#: (content/relay/setup/guard/centos-rhel/contents+en.lr:page.body)
 msgid "enabled=1"
 msgstr ""
 
@@ -8647,6 +8641,8 @@ msgstr ""
 #: (content/relay/setup/guard/centosrhel/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/guard/fedora/
 #: (content/relay/setup/guard/fedora/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/
+#: (content/relay/setup/guard/centos-rhel/contents+en.lr:page.body)
 msgid "gpgcheck=1"
 msgstr ""
 
@@ -8669,11 +8665,15 @@ msgstr ""
 #: (content/relay/setup/guard/centosrhel/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/guard/fedora/
 #: (content/relay/setup/guard/fedora/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/
+#: (content/relay/setup/guard/centos-rhel/contents+en.lr:page.body)
 msgid "cost=100"
 msgstr ""
 
 #: https://community.torproject.org/onion-services/setup/install/
 #: (content/onion-services/setup/install/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/fedora/
+#: (content/relay/setup/guard/fedora/contents+en.lr:page.body)
 msgid "# dnf install tor"
 msgstr ""
 
@@ -8691,6 +8691,10 @@ msgstr ""
 
 #: https://community.torproject.org/onion-services/setup/install/
 #: (content/onion-services/setup/install/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/dragonflybsd/
+#: (content/relay/setup/guard/dragonflybsd/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/freebsd/
+#: (content/relay/setup/guard/freebsd/contents+en.lr:page.body)
 msgid "# pkg install tor"
 msgstr ""
 
@@ -8706,6 +8710,10 @@ msgstr ""
 
 #: https://community.torproject.org/onion-services/setup/install/
 #: (content/onion-services/setup/install/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/netbsd/
+#: (content/relay/setup/guard/netbsd/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/openbsd/
+#: (content/relay/setup/guard/openbsd/contents+en.lr:page.body)
 msgid "# pkg_add tor"
 msgstr ""
 
@@ -10992,6 +11000,11 @@ msgstr ""
 
 #: https://community.torproject.org/relay/community-resources/good-bad-isps/
 #: (content/relay/community-resources/good-bad-isps/contents+en.lr:page.body)
+msgid "These hosts already have many tor nodes being hosted there."
+msgstr ""
+
+#: https://community.torproject.org/relay/community-resources/good-bad-isps/
+#: (content/relay/community-resources/good-bad-isps/contents+en.lr:page.body)
 msgid ""
 "**Note**: This page is currently being revamped. If you would like to help "
 "out please see [#72](https://gitlab.torproject.org/tpo/web/community/-/"
@@ -11148,7 +11161,8 @@ msgid ""
 "| [OVH Kimsufi](http://www.kimsufi.com/) | AS16276 | Yes | Yes | No | "
 "Unmetered bandwidth @ 100mbps - \"I will gladly explain this situation for "
 "you. Running a Tor exit node is strictly forbidden and can lead to the "
-"suspension and even termination of your server and account.\" | 09/27/2021 |"
+"suspension and even termination of your server and account.\" Locations: FR,"
+"CA | 09/27/2021 |"
 msgstr ""
 
 #: https://community.torproject.org/relay/community-resources/good-bad-isps/
@@ -11261,7 +11275,7 @@ msgid ""
 "| [Hetzner](http://hetzner.de) | AS24940 | Yes | Yes | Yes | Offers good "
 "dedicated root servers for a good price. Unmetered bandwidth on dedicated "
 "servers, 20tb on vps. \"It is not a Problem, however, abuse reports can lead "
-"to a server lock\" | 09/27/2021 |"
+"to a server lock\" Locations: DE,FI | 09/27/2021 |"
 msgstr ""
 
 #: https://community.torproject.org/relay/community-resources/good-bad-isps/
@@ -12098,7 +12112,8 @@ msgid ""
 "credits you get. I allow ports 53,80,443. My DE exit node is now the [2nd "
 "fastest](https://i.imgur.com/Owj6HkD.png) Linode relay, with UK third. I "
 "would recommend this host to use the free credits, but wouldn't really "
-"recommend paying as bandwidth is limited. | 10/07/2021 |"
+"recommend paying as bandwidth is limited. Locations: US,CA,GB,DE,SG,JP,IN,AU "
+"| 10/07/2021 |"
 msgstr ""
 
 #: https://community.torproject.org/relay/community-resources/good-bad-isps/
@@ -12111,11 +12126,24 @@ msgstr ""
 #: https://community.torproject.org/relay/community-resources/good-bad-isps/
 #: (content/relay/community-resources/good-bad-isps/contents+en.lr:page.body)
 msgid ""
+"| [Oracle Cloud](https://www.oracle.com/cloud/free/) | AS31898 | Yes | Yes | "
+"No | Offers generous free tier - 10TB free outbound bandwidth, I have ran a "
+"non exit relay for a few months with no problems, [as well as others]"
+"(https://metrics.torproject.org/rs.html#search/as:AS31898). Note that they "
+"will terminate your account if you're suspicious and not provide reason, "
+"even on support chat, I've gotten an account banned simply for running a "
+"smokeping instance. (Pinging ip addresses to test network stability). "
+"Locations: US,CA,GB,DE,CH,NL,SA,UAE,BR,CL,JP,KR,AU,IN | 10/10/2021 |"
+msgstr ""
+
+#: https://community.torproject.org/relay/community-resources/good-bad-isps/
+#: (content/relay/community-resources/good-bad-isps/contents+en.lr:page.body)
+msgid ""
 "| [OVH](https://www.ovh.com/us/index.xml) | AS16276 | Yes | Yes | No | "
 "Unmetered bandwidth in non asia locations. - \"I will gladly explain this "
 "situation for you. Running a Tor exit node is strictly forbidden and can "
-"lead to the suspension and even termination of your server and account.\" | "
-"09/27/2021 |"
+"lead to the suspension and even termination of your server and account.\" "
+"Locations: US,CA,FR,DE,PL,GB,SG | 09/27/2021 |"
 msgstr ""
 
 #: https://community.torproject.org/relay/community-resources/good-bad-isps/
@@ -13411,6 +13439,11 @@ msgstr ""
 
 #: https://community.torproject.org/relay/setup/post-install/
 #: (content/relay/setup/post-install/contents+en.lr:page.body)
+msgid "* OpenBSD: `/var/tor/keys`"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/post-install/
+#: (content/relay/setup/post-install/contents+en.lr:page.body)
 msgid "* Fedora: `/var/lib/tor/keys`"
 msgstr ""
 
@@ -14170,6 +14203,8 @@ msgstr ""
 #: (content/relay/setup/guard/contents+en.lr:page.title)
 #: https://community.torproject.org/relay/setup/guard/netbsd/
 #: (content/relay/setup/guard/netbsd/contents+en.lr:page.section)
+#: https://community.torproject.org/relay/setup/guard/debian-ubuntu/
+#: (content/relay/setup/guard/debian-ubuntu/contents+en.lr:page.section)
 #: https://community.torproject.org/relay/setup/guard/windows/
 #: (content/relay/setup/guard/windows/contents+en.lr:page.section)
 #: https://community.torproject.org/relay/setup/guard/dragonflybsd/
@@ -14182,6 +14217,8 @@ msgstr ""
 #: (content/relay/setup/guard/debianubuntu/contents+en.lr:page.section)
 #: https://community.torproject.org/relay/setup/guard/freebsd/
 #: (content/relay/setup/guard/freebsd/contents+en.lr:page.section)
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/
+#: (content/relay/setup/guard/centos-rhel/contents+en.lr:page.section)
 #: https://community.torproject.org/relay/setup/guard/openbsd/
 #: (content/relay/setup/guard/openbsd/contents+en.lr:page.section)
 msgid "Middle/Guard relay"
@@ -15881,8 +15918,6 @@ msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/dragonflybsd/
 #: (content/relay/setup/bridge/dragonflybsd/contents+en.lr:page.title)
-#: https://community.torproject.org/relay/setup/guard/dragonflybsd/
-#: (content/relay/setup/guard/dragonflybsd/contents+en.lr:page.title)
 msgid "DragonflyBSD"
 msgstr ""
 
@@ -15906,8 +15941,6 @@ msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/dragonflybsd/
 #: (content/relay/setup/bridge/dragonflybsd/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/dragonflybsd/
-#: (content/relay/setup/guard/dragonflybsd/contents+en.lr:page.body)
 msgid ""
 "If `pkg` is missing on the system for any reason, it can be quickly "
 "bootstrapped without having to build it from source or even having "
@@ -16134,6 +16167,14 @@ msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/dragonflybsd/
 #: (content/relay/setup/bridge/dragonflybsd/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/netbsd/
+#: (content/relay/setup/guard/netbsd/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/debian-ubuntu/
+#: (content/relay/setup/guard/debian-ubuntu/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/dragonflybsd/
+#: (content/relay/setup/guard/dragonflybsd/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/openbsd/
+#: (content/relay/setup/guard/openbsd/contents+en.lr:page.body)
 msgid "### 6. Final Notes"
 msgstr ""
 
@@ -16400,6 +16441,8 @@ msgstr ""
 #: (content/relay/setup/bridge/centos-rhel-opensuse/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/guard/centosrhel/
 #: (content/relay/setup/guard/centosrhel/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/
+#: (content/relay/setup/guard/centos-rhel/contents+en.lr:page.body)
 msgid "name=Tor for Enterprise Linux $releasever - $basearch"
 msgstr ""
 
@@ -16407,6 +16450,8 @@ msgstr ""
 #: (content/relay/setup/bridge/centos-rhel-opensuse/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/guard/centosrhel/
 #: (content/relay/setup/guard/centosrhel/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/
+#: (content/relay/setup/guard/centos-rhel/contents+en.lr:page.body)
 msgid "baseurl=https://rpm.torproject.org/centos/$releasever/$basearch"
 msgstr ""
 
@@ -16414,6 +16459,8 @@ msgstr ""
 #: (content/relay/setup/bridge/centos-rhel-opensuse/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/guard/centosrhel/
 #: (content/relay/setup/guard/centosrhel/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/
+#: (content/relay/setup/guard/centos-rhel/contents+en.lr:page.body)
 msgid "gpgkey=https://rpm.torproject.org/centos/public_gpg.key"
 msgstr ""
 
@@ -16719,6 +16766,8 @@ msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/openbsd/
 #: (content/relay/setup/bridge/openbsd/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/openbsd/
+#: (content/relay/setup/guard/openbsd/contents+en.lr:page.body)
 msgid "DataDirectory /var/tor"
 msgstr ""
 
@@ -16762,85 +16811,166 @@ msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/netbsd/
 #: (content/relay/setup/guard/netbsd/contents+en.lr:page.body)
-msgid "# 1. Setup `pkg_add`"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/netbsd/
-#: (content/relay/setup/guard/netbsd/contents+en.lr:page.body)
-msgid ""
-"echo \"PKG_PATH=http://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/$(uname -m)/"
-"$(uname -r)/All\" > /etc/pkg_install.conf"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/netbsd/
-#: (content/relay/setup/guard/netbsd/contents+en.lr:page.body)
-msgid "# 2. Install `tor` NetBSD's package"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/netbsd/
-#: (content/relay/setup/guard/netbsd/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/openbsd/
-#: (content/relay/setup/guard/openbsd/contents+en.lr:page.body)
-msgid "pkg_add tor"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/netbsd/
-#: (content/relay/setup/guard/netbsd/contents+en.lr:page.body)
-msgid "# 3. Configure `/usr/pkg/etc/tor/torrc`"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/netbsd/
-#: (content/relay/setup/guard/netbsd/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/debian-ubuntu/
+#: (content/relay/setup/guard/debian-ubuntu/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/dragonflybsd/
+#: (content/relay/setup/guard/dragonflybsd/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/fedora/
+#: (content/relay/setup/guard/fedora/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/guard/freebsd/
 #: (content/relay/setup/guard/freebsd/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/
+#: (content/relay/setup/guard/centos-rhel/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/guard/openbsd/
 #: (content/relay/setup/guard/openbsd/contents+en.lr:page.body)
-msgid ""
-"Nickname    myBSDRelay    # Change your relay's nickname to something you "
-"like"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/netbsd/
-#: (content/relay/setup/guard/netbsd/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/freebsd/
-#: (content/relay/setup/guard/freebsd/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/openbsd/
-#: (content/relay/setup/guard/openbsd/contents+en.lr:page.body)
-msgid ""
-"ContactInfo your@email    # Please write your email address and be aware "
-"that it will be published"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/netbsd/
-#: (content/relay/setup/guard/netbsd/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/freebsd/
-#: (content/relay/setup/guard/freebsd/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/openbsd/
-#: (content/relay/setup/guard/openbsd/contents+en.lr:page.body)
-msgid ""
-"ORPort      443           # You might want to use/try a different port, "
-"should you want to"
+msgid "### 1. Enable Automatic Software Updates"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/netbsd/
 #: (content/relay/setup/guard/netbsd/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/guard/dragonflybsd/
 #: (content/relay/setup/guard/dragonflybsd/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/freebsd/
-#: (content/relay/setup/guard/freebsd/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/guard/openbsd/
 #: (content/relay/setup/guard/openbsd/contents+en.lr:page.body)
+msgid ""
+"One of the most important things to keeps your relay secure is to install "
+"security updates timely and ideally automatically so you can not forget "
+"about it. Follow the instructions to enable automatic software updates for "
+"your operating system."
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/netbsd/
+#: (content/relay/setup/guard/netbsd/contents+en.lr:page.body)
+msgid "### 2. Setup `pkg_add`"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/netbsd/
+#: (content/relay/setup/guard/netbsd/contents+en.lr:page.body)
+msgid ""
+"Modern versions of the NetBSD operating system can be set to use `pkgin`, "
+"which is a piece of software aimed to be like `apt` or `yum` for managing "
+"pkgsrc binary packages. We are not convering its setup here, and opt to use "
+"plain `pkg_add` instead."
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/netbsd/
+#: (content/relay/setup/guard/netbsd/contents+en.lr:page.body)
+msgid ""
+"# echo \"PKG_PATH=http://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/$(uname -"
+"m)/$(uname -r)/All\" > /etc/pkg_install.conf"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/netbsd/
+#: (content/relay/setup/guard/netbsd/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/debian-ubuntu/
+#: (content/relay/setup/guard/debian-ubuntu/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/dragonflybsd/
+#: (content/relay/setup/guard/dragonflybsd/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/fedora/
+#: (content/relay/setup/guard/fedora/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/freebsd/
+#: (content/relay/setup/guard/freebsd/contents+en.lr:page.body)
+msgid "### 3. Package installation"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/netbsd/
+#: (content/relay/setup/guard/netbsd/contents+en.lr:page.body)
+msgid "Install `tor` NetBSD's package:"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/netbsd/
+#: (content/relay/setup/guard/netbsd/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/debian-ubuntu/
+#: (content/relay/setup/guard/debian-ubuntu/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/dragonflybsd/
+#: (content/relay/setup/guard/dragonflybsd/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/fedora/
+#: (content/relay/setup/guard/fedora/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/freebsd/
+#: (content/relay/setup/guard/freebsd/contents+en.lr:page.body)
+msgid "### 4. Configuration file"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/netbsd/
+#: (content/relay/setup/guard/netbsd/contents+en.lr:page.body)
+msgid "Put the configuration file `/usr/pkg/etc/tor/torrc` in place:"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/netbsd/
+#: (content/relay/setup/guard/netbsd/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/debian-ubuntu/
+#: (content/relay/setup/guard/debian-ubuntu/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/dragonflybsd/
+#: (content/relay/setup/guard/dragonflybsd/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/fedora/
+#: (content/relay/setup/guard/fedora/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/freebsd/
+#: (content/relay/setup/guard/freebsd/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/
+#: (content/relay/setup/guard/centos-rhel/contents+en.lr:page.body)
+msgid "Nickname    myNiceRelay  # Change \"myNiceRelay\" to something you like"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/netbsd/
+#: (content/relay/setup/guard/netbsd/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/debian-ubuntu/
+#: (content/relay/setup/guard/debian-ubuntu/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/dragonflybsd/
+#: (content/relay/setup/guard/dragonflybsd/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/fedora/
+#: (content/relay/setup/guard/fedora/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/freebsd/
+#: (content/relay/setup/guard/freebsd/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/
+#: (content/relay/setup/guard/centos-rhel/contents+en.lr:page.body)
+msgid ""
+"ContactInfo your@e-mail  # Write your e-mail and be aware it will be "
+"published"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/netbsd/
+#: (content/relay/setup/guard/netbsd/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/debian-ubuntu/
+#: (content/relay/setup/guard/debian-ubuntu/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/dragonflybsd/
+#: (content/relay/setup/guard/dragonflybsd/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/fedora/
+#: (content/relay/setup/guard/fedora/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/freebsd/
+#: (content/relay/setup/guard/freebsd/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/
+#: (content/relay/setup/guard/centos-rhel/contents+en.lr:page.body)
+msgid ""
+"ORPort      443          # You might use a different port, should you want to"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/netbsd/
+#: (content/relay/setup/guard/netbsd/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/debian-ubuntu/
+#: (content/relay/setup/guard/debian-ubuntu/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/dragonflybsd/
+#: (content/relay/setup/guard/dragonflybsd/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/fedora/
+#: (content/relay/setup/guard/fedora/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/freebsd/
+#: (content/relay/setup/guard/freebsd/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/
+#: (content/relay/setup/guard/centos-rhel/contents+en.lr:page.body)
 msgid "ExitRelay   0"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/netbsd/
 #: (content/relay/setup/guard/netbsd/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/debian-ubuntu/
+#: (content/relay/setup/guard/debian-ubuntu/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/guard/dragonflybsd/
 #: (content/relay/setup/guard/dragonflybsd/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/fedora/
+#: (content/relay/setup/guard/fedora/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/guard/freebsd/
 #: (content/relay/setup/guard/freebsd/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/openbsd/
-#: (content/relay/setup/guard/openbsd/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/
+#: (content/relay/setup/guard/centos-rhel/contents+en.lr:page.body)
 msgid "SocksPort   0"
 msgstr ""
 
@@ -16850,18 +16980,16 @@ msgstr ""
 #: (content/relay/setup/guard/dragonflybsd/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/guard/freebsd/
 #: (content/relay/setup/guard/freebsd/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/openbsd/
-#: (content/relay/setup/guard/openbsd/contents+en.lr:page.body)
 msgid "Log notice  syslog"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/netbsd/
 #: (content/relay/setup/guard/netbsd/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/freebsd/
-#: (content/relay/setup/guard/freebsd/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/dragonflybsd/
+#: (content/relay/setup/guard/dragonflybsd/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/guard/openbsd/
 #: (content/relay/setup/guard/openbsd/contents+en.lr:page.body)
-msgid "# 6. Start `tor`:"
+msgid "### 5. Start the service"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/netbsd/
@@ -16873,17 +17001,147 @@ msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/netbsd/
 #: (content/relay/setup/guard/netbsd/contents+en.lr:page.body)
-msgid "ln -sf /usr/pkg/share/examples/rc.d/tor /etc/rc.d/tor"
+msgid "# ln -sf /usr/pkg/share/examples/rc.d/tor /etc/rc.d/tor"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/netbsd/
 #: (content/relay/setup/guard/netbsd/contents+en.lr:page.body)
-msgid "echo \"tor=YES\" >> /etc/rc.conf"
+msgid "# echo \"tor=YES\" >> /etc/rc.conf"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/netbsd/
 #: (content/relay/setup/guard/netbsd/contents+en.lr:page.body)
-msgid "/etc/rc.d/tor start"
+msgid "# /etc/rc.d/tor start"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/netbsd/
+#: (content/relay/setup/guard/netbsd/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/debian-ubuntu/
+#: (content/relay/setup/guard/debian-ubuntu/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/windows/
+#: (content/relay/setup/guard/windows/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/dragonflybsd/
+#: (content/relay/setup/guard/dragonflybsd/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/centosrhel/
+#: (content/relay/setup/guard/centosrhel/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/fedora/
+#: (content/relay/setup/guard/fedora/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/debianubuntu/
+#: (content/relay/setup/guard/debianubuntu/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/freebsd/
+#: (content/relay/setup/guard/freebsd/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/
+#: (content/relay/setup/guard/centos-rhel/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/openbsd/
+#: (content/relay/setup/guard/openbsd/contents+en.lr:page.body)
+msgid ""
+"If you are having trouble setting up your relay, have a look at our [help "
+"section](/relay/getting-help/)."
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/netbsd/
+#: (content/relay/setup/guard/netbsd/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/debian-ubuntu/
+#: (content/relay/setup/guard/debian-ubuntu/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/windows/
+#: (content/relay/setup/guard/windows/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/dragonflybsd/
+#: (content/relay/setup/guard/dragonflybsd/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/centosrhel/
+#: (content/relay/setup/guard/centosrhel/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/fedora/
+#: (content/relay/setup/guard/fedora/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/debianubuntu/
+#: (content/relay/setup/guard/debianubuntu/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/freebsd/
+#: (content/relay/setup/guard/freebsd/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/
+#: (content/relay/setup/guard/centos-rhel/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/openbsd/
+#: (content/relay/setup/guard/openbsd/contents+en.lr:page.body)
+msgid ""
+"If your relay is now running, check out the [post-install](/relay/setup/post-"
+"install/) notes."
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/debian-ubuntu/
+#: (content/relay/setup/guard/debian-ubuntu/contents+en.lr:page.title)
+#: https://community.torproject.org/relay/setup/guard/debianubuntu/
+#: (content/relay/setup/guard/debianubuntu/contents+en.lr:page.title)
+msgid "Debian/Ubuntu"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/debian-ubuntu/
+#: (content/relay/setup/guard/debian-ubuntu/contents+en.lr:page.subtitle)
+#: https://community.torproject.org/relay/setup/guard/debianubuntu/
+#: (content/relay/setup/guard/debianubuntu/contents+en.lr:page.subtitle)
+msgid "How to deploy a middle/Guard relay on Debian/Ubuntu"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/debian-ubuntu/
+#: (content/relay/setup/guard/debian-ubuntu/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/debianubuntu/
+#: (content/relay/setup/guard/debianubuntu/contents+en.lr:page.body)
+msgid ""
+"One of the most important things to keeps your relay secure is to install "
+"security updates timely and ideally automatically so you can not forget "
+"about it."
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/debian-ubuntu/
+#: (content/relay/setup/guard/debian-ubuntu/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/debianubuntu/
+#: (content/relay/setup/guard/debianubuntu/contents+en.lr:page.body)
+msgid ""
+"Follow the instructions to enable [automatic software updates](updates) for "
+"your operating system."
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/debian-ubuntu/
+#: (content/relay/setup/guard/debian-ubuntu/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/fedora/
+#: (content/relay/setup/guard/fedora/contents+en.lr:page.body)
+msgid "### 2. Configure Tor Project's Repository"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/debian-ubuntu/
+#: (content/relay/setup/guard/debian-ubuntu/contents+en.lr:page.body)
+msgid ""
+"Configuring the Tor Project's package repository for Debian/Ubuntu is "
+"documented **[here](https://support.torproject.org/apt/tor-deb-repo/)**. "
+"Please follow those instructions before proceeding."
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/debian-ubuntu/
+#: (content/relay/setup/guard/debian-ubuntu/contents+en.lr:page.body)
+msgid ""
+"Ensure you update the packages database before installing the package, than "
+"call `apt` to install it:"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/debian-ubuntu/
+#: (content/relay/setup/guard/debian-ubuntu/contents+en.lr:page.body)
+msgid "# apt update"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/debian-ubuntu/
+#: (content/relay/setup/guard/debian-ubuntu/contents+en.lr:page.body)
+msgid "Put the configuration file `/etc/tor/torrc` in place"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/debian-ubuntu/
+#: (content/relay/setup/guard/debian-ubuntu/contents+en.lr:page.body)
+msgid "### 5. Restart the service"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/debian-ubuntu/
+#: (content/relay/setup/guard/debian-ubuntu/contents+en.lr:page.body)
+msgid "Restart the `tor` daemon, so your configuration changes take effect:"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/debian-ubuntu/
+#: (content/relay/setup/guard/debian-ubuntu/contents+en.lr:page.body)
+msgid "# systemctl restart tor@default"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/windows/
@@ -17192,85 +17450,58 @@ msgstr ""
 msgid "## 4. Final notes"
 msgstr ""
 
-#: https://community.torproject.org/relay/setup/guard/windows/
-#: (content/relay/setup/guard/windows/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/guard/dragonflybsd/
-#: (content/relay/setup/guard/dragonflybsd/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/centosrhel/
-#: (content/relay/setup/guard/centosrhel/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/fedora/
-#: (content/relay/setup/guard/fedora/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/debianubuntu/
-#: (content/relay/setup/guard/debianubuntu/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/freebsd/
-#: (content/relay/setup/guard/freebsd/contents+en.lr:page.body)
-msgid ""
-"If you are having trouble setting up your relay, have a look at our [help "
-"section](/relay/getting-help/)."
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/windows/
-#: (content/relay/setup/guard/windows/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/dragonflybsd/
-#: (content/relay/setup/guard/dragonflybsd/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/centosrhel/
-#: (content/relay/setup/guard/centosrhel/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/fedora/
-#: (content/relay/setup/guard/fedora/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/debianubuntu/
-#: (content/relay/setup/guard/debianubuntu/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/freebsd/
-#: (content/relay/setup/guard/freebsd/contents+en.lr:page.body)
-msgid ""
-"If your relay is now running, check out the [post-install](/relay/setup/post-"
-"install/) notes."
+#: (content/relay/setup/guard/dragonflybsd/contents+en.lr:page.title)
+msgid "DragonFlyBSD"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/dragonflybsd/
 #: (content/relay/setup/guard/dragonflybsd/contents+en.lr:page.subtitle)
-msgid "How to deploy a Middle/Guard relay on DragonflyBSD"
+msgid "How to deploy a Middle/Guard relay on DragonFlyBSD"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/dragonflybsd/
 #: (content/relay/setup/guard/dragonflybsd/contents+en.lr:page.body)
-msgid "# 1. Bootstrap `pkg`"
+#: https://community.torproject.org/relay/setup/guard/freebsd/
+#: (content/relay/setup/guard/freebsd/contents+en.lr:page.body)
+msgid "### 2. Bootstrap `pkg`"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/dragonflybsd/
 #: (content/relay/setup/guard/dragonflybsd/contents+en.lr:page.body)
 msgid ""
 "DragonFlyBSD's daily snapshots and releases (starting with 3.4) come with "
-"`pkg` already installed."
+"`pkg` already installed. Upgrades from earlier releases, however, will not "
+"have it. If `pkg` is missing on the system for any reason, it can be quickly "
+"bootstrapped without having to build it from source or even having "
+"**DPorts** installed:"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/dragonflybsd/
 #: (content/relay/setup/guard/dragonflybsd/contents+en.lr:page.body)
-msgid "Upgrades from earlier releases, however, will not have it."
+msgid "# cd /usr"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/dragonflybsd/
 #: (content/relay/setup/guard/dragonflybsd/contents+en.lr:page.body)
-msgid "cd /usr"
+msgid "# make pkg-bootstrap"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/dragonflybsd/
 #: (content/relay/setup/guard/dragonflybsd/contents+en.lr:page.body)
-msgid "make pkg-bootstrap"
+msgid "# rehash"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/dragonflybsd/
 #: (content/relay/setup/guard/dragonflybsd/contents+en.lr:page.body)
-msgid "rehash"
+msgid "# pkg-static install -y pkg"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/dragonflybsd/
 #: (content/relay/setup/guard/dragonflybsd/contents+en.lr:page.body)
-msgid "pkg-static install -y pkg"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/dragonflybsd/
-#: (content/relay/setup/guard/dragonflybsd/contents+en.lr:page.body)
-msgid "### 1.1. Recommended Steps to Setup `pkg`"
+#: https://community.torproject.org/relay/setup/guard/freebsd/
+#: (content/relay/setup/guard/freebsd/contents+en.lr:page.body)
+msgid "#### 2.1. Recommended Steps to Setup `pkg`"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/dragonflybsd/
@@ -17285,7 +17516,7 @@ msgstr ""
 #: (content/relay/setup/guard/dragonflybsd/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/guard/freebsd/
 #: (content/relay/setup/guard/freebsd/contents+en.lr:page.body)
-msgid "pkg install ca_root_nss"
+msgid "# pkg install ca_root_nss"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/dragonflybsd/
@@ -17305,23 +17536,20 @@ msgstr ""
 #: (content/relay/setup/guard/dragonflybsd/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/guard/freebsd/
 #: (content/relay/setup/guard/freebsd/contents+en.lr:page.body)
-msgid "pkg update -f"
+msgid "# pkg update -f"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/dragonflybsd/
 #: (content/relay/setup/guard/dragonflybsd/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/guard/freebsd/
 #: (content/relay/setup/guard/freebsd/contents+en.lr:page.body)
-msgid "pkg upgrade -y -f"
+msgid "# pkg upgrade -y -f"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/dragonflybsd/
 #: (content/relay/setup/guard/dragonflybsd/contents+en.lr:page.body)
-msgid "# 2. Package Installation"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/dragonflybsd/
-#: (content/relay/setup/guard/dragonflybsd/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/fedora/
+#: (content/relay/setup/guard/fedora/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/guard/debianubuntu/
 #: (content/relay/setup/guard/debianubuntu/contents+en.lr:page.body)
 msgid "Install the `tor` package:"
@@ -17331,93 +17559,49 @@ msgstr ""
 #: (content/relay/setup/guard/dragonflybsd/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/guard/freebsd/
 #: (content/relay/setup/guard/freebsd/contents+en.lr:page.body)
-msgid "pkg install tor"
+msgid "# pkg install tor-devel"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/dragonflybsd/
+#: (content/relay/setup/guard/dragonflybsd/contents+en.lr:page.body)
+msgid "Put the configuration file `/usr/local/etc/tor/torrc` in place"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/dragonflybsd/
+#: (content/relay/setup/guard/dragonflybsd/contents+en.lr:page.body)
+msgid "# echo \"tor_setuid=YES\" >> /etc/rc.conf"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/dragonflybsd/
+#: (content/relay/setup/guard/dragonflybsd/contents+en.lr:page.body)
+msgid "# echo \"tor_enable=YES\" >> /etc/rc.conf"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/dragonflybsd/
 #: (content/relay/setup/guard/dragonflybsd/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/guard/freebsd/
 #: (content/relay/setup/guard/freebsd/contents+en.lr:page.body)
-msgid "pkg install tor-devel"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/dragonflybsd/
-#: (content/relay/setup/guard/dragonflybsd/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/fedora/
-#: (content/relay/setup/guard/fedora/contents+en.lr:page.body)
-msgid "# 3. Configuration File"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/dragonflybsd/
-#: (content/relay/setup/guard/dragonflybsd/contents+en.lr:page.body)
-msgid "Put the configuration file `/usr/local/etc/tor/torrc` in place:"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/dragonflybsd/
-#: (content/relay/setup/guard/dragonflybsd/contents+en.lr:page.body)
-msgid "#change the nickname \"myBSDrelay\" to a name that you like"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/dragonflybsd/
-#: (content/relay/setup/guard/dragonflybsd/contents+en.lr:page.body)
-msgid "Nickname    myBSDRelay"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/dragonflybsd/
-#: (content/relay/setup/guard/dragonflybsd/contents+en.lr:page.body)
-msgid "# You might want to use/try a different port, should you want to"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/dragonflybsd/
-#: (content/relay/setup/guard/dragonflybsd/contents+en.lr:page.body)
-msgid "ORPort      443"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/dragonflybsd/
-#: (content/relay/setup/guard/dragonflybsd/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/centosrhel/
-#: (content/relay/setup/guard/centosrhel/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/fedora/
-#: (content/relay/setup/guard/fedora/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/debianubuntu/
-#: (content/relay/setup/guard/debianubuntu/contents+en.lr:page.body)
-msgid "# Change the email address below and be aware that it will be published"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/dragonflybsd/
-#: (content/relay/setup/guard/dragonflybsd/contents+en.lr:page.body)
-msgid "# 4. Start the service"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/dragonflybsd/
-#: (content/relay/setup/guard/dragonflybsd/contents+en.lr:page.body)
-msgid "echo \"tor_setuid=YES\" >> /etc/rc.conf"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/dragonflybsd/
-#: (content/relay/setup/guard/dragonflybsd/contents+en.lr:page.body)
-msgid "echo \"tor_enable=YES\" >> /etc/rc.conf"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/dragonflybsd/
-#: (content/relay/setup/guard/dragonflybsd/contents+en.lr:page.body)
-msgid "# 5. Final Notes"
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/
+#: (content/relay/setup/guard/centos-rhel/contents+en.lr:page.body)
+msgid "# service tor start"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/centosrhel/
 #: (content/relay/setup/guard/centosrhel/contents+en.lr:page.title)
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/
+#: (content/relay/setup/guard/centos-rhel/contents+en.lr:page.title)
 msgid "CentOS/RHEL"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/centosrhel/
 #: (content/relay/setup/guard/centosrhel/contents+en.lr:page.subtitle)
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/
+#: (content/relay/setup/guard/centos-rhel/contents+en.lr:page.subtitle)
 msgid "How to deploy a middle/Guard relay on CentOS/RHEL"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/centosrhel/
 #: (content/relay/setup/guard/centosrhel/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/fedora/
-#: (content/relay/setup/guard/fedora/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/guard/debianubuntu/
 #: (content/relay/setup/guard/debianubuntu/contents+en.lr:page.body)
 msgid "# 1. Enable Automatic Software Updates"
@@ -17429,6 +17613,8 @@ msgstr ""
 #: (content/relay/setup/guard/fedora/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/guard/freebsd/
 #: (content/relay/setup/guard/freebsd/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/
+#: (content/relay/setup/guard/centos-rhel/contents+en.lr:page.body)
 msgid ""
 "One of the most important things to keeps your relay secure is to install "
 "security updates timely and ideally automatically so you can not forget "
@@ -17443,6 +17629,8 @@ msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/centosrhel/
 #: (content/relay/setup/guard/centosrhel/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/
+#: (content/relay/setup/guard/centos-rhel/contents+en.lr:page.body)
 msgid ""
 "To install `tor` package on CentOS/RHEL, you need to install the [EPEL]"
 "(https://fedoraproject.org/wiki/EPEL) repository first:"
@@ -17486,11 +17674,16 @@ msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/centosrhel/
 #: (content/relay/setup/guard/centosrhel/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/fedora/
-#: (content/relay/setup/guard/fedora/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/guard/debianubuntu/
 #: (content/relay/setup/guard/debianubuntu/contents+en.lr:page.body)
 msgid "#change the nickname \"myNiceRelay\" to a name that you like"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/centosrhel/
+#: (content/relay/setup/guard/centosrhel/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/debianubuntu/
+#: (content/relay/setup/guard/debianubuntu/contents+en.lr:page.body)
+msgid "# Change the email address below and be aware that it will be published"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/centosrhel/
@@ -17505,15 +17698,11 @@ msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/centosrhel/
 #: (content/relay/setup/guard/centosrhel/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/fedora/
-#: (content/relay/setup/guard/fedora/contents+en.lr:page.body)
 msgid "systemctl enable tor"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/centosrhel/
 #: (content/relay/setup/guard/centosrhel/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/fedora/
-#: (content/relay/setup/guard/fedora/contents+en.lr:page.body)
 msgid "systemctl start tor"
 msgstr ""
 
@@ -17542,55 +17731,45 @@ msgstr ""
 #: https://community.torproject.org/relay/setup/guard/fedora/
 #: (content/relay/setup/guard/fedora/contents+en.lr:page.body)
 msgid ""
-"# 2. Add the following to `/etc/yum.repos.d/tor.repo` and then install the "
-"tor package."
+"Configuring the Tor Project's Repository for Fedora consists basically on "
+"setting up `/etc/yum.repos.d/Tor.repo` with the following content:"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/fedora/
 #: (content/relay/setup/guard/fedora/contents+en.lr:page.body)
-msgid "`sudo dnf install tor`"
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/
+#: (content/relay/setup/guard/centos-rhel/contents+en.lr:page.body)
+msgid ""
+"More information about it can be found [here](https://support.torproject.org/"
+"rpm/)."
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/fedora/
 #: (content/relay/setup/guard/fedora/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/guard/debianubuntu/
 #: (content/relay/setup/guard/debianubuntu/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/
+#: (content/relay/setup/guard/centos-rhel/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/openbsd/
+#: (content/relay/setup/guard/openbsd/contents+en.lr:page.body)
 msgid "Put the configuration file `/etc/tor/torrc` in place:"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/fedora/
 #: (content/relay/setup/guard/fedora/contents+en.lr:page.body)
-msgid "# 4. Start the tor daemon and make sure it starts at boot"
+msgid "# 5. Start the service"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/fedora/
 #: (content/relay/setup/guard/fedora/contents+en.lr:page.body)
-msgid "# 5. Final notes"
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/
+#: (content/relay/setup/guard/centos-rhel/contents+en.lr:page.body)
+msgid "# systemctl enable --now tor"
 msgstr ""
 
-#: https://community.torproject.org/relay/setup/guard/debianubuntu/
-#: (content/relay/setup/guard/debianubuntu/contents+en.lr:page.title)
-msgid "Debian/Ubuntu"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/debianubuntu/
-#: (content/relay/setup/guard/debianubuntu/contents+en.lr:page.subtitle)
-msgid "How to deploy a middle/Guard relay on Debian/Ubuntu"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/debianubuntu/
-#: (content/relay/setup/guard/debianubuntu/contents+en.lr:page.body)
-msgid ""
-"One of the most important things to keeps your relay secure is to install "
-"security updates timely and ideally automatically so you can not forget "
-"about it."
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/debianubuntu/
-#: (content/relay/setup/guard/debianubuntu/contents+en.lr:page.body)
-msgid ""
-"Follow the instructions to enable [automatic software updates](updates) for "
-"your operating system."
+#: https://community.torproject.org/relay/setup/guard/fedora/
+#: (content/relay/setup/guard/fedora/contents+en.lr:page.body)
+msgid "# 6. Final Notes"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/debianubuntu/
@@ -17647,19 +17826,9 @@ msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/freebsd/
 #: (content/relay/setup/guard/freebsd/contents+en.lr:page.body)
-msgid "# 1. Enable Automatic Updates for Packages"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/freebsd/
-#: (content/relay/setup/guard/freebsd/contents+en.lr:page.body)
-msgid "# 2. Bootstrap `pkg`"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/freebsd/
-#: (content/relay/setup/guard/freebsd/contents+en.lr:page.body)
 msgid ""
 "This article assumes we have already a base installation of FreeBSD running, "
-"and only the base system (here, we are running 12.0-RELEASE)."
+"and only the base system (here, we are running 12.2-RELEASE)."
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/freebsd/
@@ -17677,12 +17846,7 @@ msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/freebsd/
 #: (content/relay/setup/guard/freebsd/contents+en.lr:page.body)
-msgid "pkg bootstrap"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/freebsd/
-#: (content/relay/setup/guard/freebsd/contents+en.lr:page.body)
-msgid "### 2.1. Recommended Steps to Setup `pkg`"
+msgid "# pkg bootstrap"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/freebsd/
@@ -17726,7 +17890,7 @@ msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/freebsd/
 #: (content/relay/setup/guard/freebsd/contents+en.lr:page.body)
-msgid "mkdir -p /usr/local/etc/pkg/repos"
+msgid "# mkdir -p /usr/local/etc/pkg/repos"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/freebsd/
@@ -17748,36 +17912,141 @@ msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/freebsd/
 #: (content/relay/setup/guard/freebsd/contents+en.lr:page.body)
-msgid "# 3. Install `tor` FreeBSD's Package"
+msgid "Install `tor` FreeBSD's package."
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/freebsd/
 #: (content/relay/setup/guard/freebsd/contents+en.lr:page.body)
-msgid "# 4. Configure `/usr/local/etc/tor/torrc`"
+msgid "Put the configuration file `/usr/local/etc/tor/torrc` in place:"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/freebsd/
 #: (content/relay/setup/guard/freebsd/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/openbsd/
-#: (content/relay/setup/guard/openbsd/contents+en.lr:page.body)
+msgid "### 5. Enable `net.inet.ip.random_id`"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/freebsd/
+#: (content/relay/setup/guard/freebsd/contents+en.lr:page.body)
+msgid "# echo \"net.inet.ip.random_id=1\" >> /etc/sysctl.conf"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/freebsd/
+#: (content/relay/setup/guard/freebsd/contents+en.lr:page.body)
+msgid "# sysctl net.inet.ip.random_id=1"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/freebsd/
+#: (content/relay/setup/guard/freebsd/contents+en.lr:page.body)
+msgid "### 6. Start the service"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/freebsd/
+#: (content/relay/setup/guard/freebsd/contents+en.lr:page.body)
+msgid "# sysrc tor_setuid=YES"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/freebsd/
+#: (content/relay/setup/guard/freebsd/contents+en.lr:page.body)
+msgid "# sysrc tor_enable=YES"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/freebsd/
+#: (content/relay/setup/guard/freebsd/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/
+#: (content/relay/setup/guard/centos-rhel/contents+en.lr:page.body)
+msgid "### 7. Final Notes"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/
+#: (content/relay/setup/guard/centos-rhel/contents+en.lr:page.body)
+msgid "### 2. Install `epel-release`"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/
+#: (content/relay/setup/guard/centos-rhel/contents+en.lr:page.body)
+msgid "# yum install epel-release"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/
+#: (content/relay/setup/guard/centos-rhel/contents+en.lr:page.body)
+msgid "Recent versions of CentOS/RHEL are using `dnf` instead of `yum`:"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/
+#: (content/relay/setup/guard/centos-rhel/contents+en.lr:page.body)
+msgid "# dnf install epel-release"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/
+#: (content/relay/setup/guard/centos-rhel/contents+en.lr:page.body)
 msgid ""
-"This is a very simple version of the `torrc` configuration file in order to "
-"run a Middle/Guard relay on the Tor network:"
+"If you are on a recent version that uses `dnf`, please keep using it for the "
+"following steps where `yum` is called on this setup guide."
 msgstr ""
 
-#: https://community.torproject.org/relay/setup/guard/freebsd/
-#: (content/relay/setup/guard/freebsd/contents+en.lr:page.body)
-msgid "# 5. Ensure `net.inet.ip.random_id` is enabled:"
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/
+#: (content/relay/setup/guard/centos-rhel/contents+en.lr:page.body)
+msgid "### 3. Configure Tor Project's Repository"
 msgstr ""
 
-#: https://community.torproject.org/relay/setup/guard/freebsd/
-#: (content/relay/setup/guard/freebsd/contents+en.lr:page.body)
-msgid "sysrc tor_setuid=YES"
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/
+#: (content/relay/setup/guard/centos-rhel/contents+en.lr:page.body)
+msgid ""
+"Configuring the Tor Project's Repository for CentOS/RHEL consists basically "
+"on setting up `/etc/yum.repos.d/Tor.repo` with the following content:"
 msgstr ""
 
-#: https://community.torproject.org/relay/setup/guard/freebsd/
-#: (content/relay/setup/guard/freebsd/contents+en.lr:page.body)
-msgid "# 7. Final Notes"
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/
+#: (content/relay/setup/guard/centos-rhel/contents+en.lr:page.body)
+msgid "### 4. Package installation"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/
+#: (content/relay/setup/guard/centos-rhel/contents+en.lr:page.body)
+msgid ""
+"Once you are set with EPEL and the Tor repositories, you are now able to "
+"install the package:"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/
+#: (content/relay/setup/guard/centos-rhel/contents+en.lr:page.body)
+msgid "# yum install tor"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/
+#: (content/relay/setup/guard/centos-rhel/contents+en.lr:page.body)
+msgid ""
+"Please note that when you are installing the first package from the EPEL "
+"repository you will be asked about verifying the EPEL's GPG signing key. "
+"Please ensure the key matches with the one available on the [Fedora Project "
+"website](https://getfedora.org/keys/). This will also happens when "
+"installing packages from Tor's repository for the first time - again you "
+"must ensure the key matches."
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/
+#: (content/relay/setup/guard/centos-rhel/contents+en.lr:page.body)
+msgid "### 5. Configuration file"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/
+#: (content/relay/setup/guard/centos-rhel/contents+en.lr:page.body)
+msgid "### 6. Enable and Start `tor`"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/
+#: (content/relay/setup/guard/centos-rhel/contents+en.lr:page.body)
+msgid "Recent versions os CentOS/RHEL which ship with systemd:"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/
+#: (content/relay/setup/guard/centos-rhel/contents+en.lr:page.body)
+msgid "Should you use an older release like CentOS/RHEL 6, that will be:"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/
+#: (content/relay/setup/guard/centos-rhel/contents+en.lr:page.body)
+msgid "# service tor enable"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/openbsd/
@@ -17787,14 +18056,14 @@ msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/openbsd/
 #: (content/relay/setup/guard/openbsd/contents+en.lr:page.body)
-msgid "# 1. Install `tor` OpenBSD's Package"
+msgid "### 2. Package installation"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/openbsd/
 #: (content/relay/setup/guard/openbsd/contents+en.lr:page.body)
 msgid ""
-"Recent OpenBSD systems, like 6.5/amd64, already have the repository "
-"configured on `/etc/installurl` so we do not need to bother changing it."
+"Recent OpenBSD systems, since 6.5, already have the repository configured on "
+"`/etc/installurl` so we do not need to bother changing it."
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/openbsd/
@@ -17806,7 +18075,7 @@ msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/openbsd/
 #: (content/relay/setup/guard/openbsd/contents+en.lr:page.body)
-msgid "echo \"https://cdn.openbsd.org/pub/OpenBSD\" > /etc/installurl"
+msgid "# echo \"https://cdn.openbsd.org/pub/OpenBSD\" > /etc/installurl"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/openbsd/
@@ -17816,7 +18085,7 @@ msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/openbsd/
 #: (content/relay/setup/guard/openbsd/contents+en.lr:page.body)
-msgid "### 2.1. Recommended Steps to Install `tor` on OpenBSD"
+msgid "#### 2.1. Recommended Steps to Install `tor` on OpenBSD"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/openbsd/
@@ -17828,7 +18097,7 @@ msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/openbsd/
 #: (content/relay/setup/guard/openbsd/contents+en.lr:page.body)
-msgid "ftp https://stable.mtier.org/openup"
+msgid "# ftp https://stable.mtier.org/openup"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/openbsd/
@@ -17845,31 +18114,76 @@ msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/openbsd/
 #: (content/relay/setup/guard/openbsd/contents+en.lr:page.body)
-msgid "openup"
+msgid "# ./openup"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/openbsd/
 #: (content/relay/setup/guard/openbsd/contents+en.lr:page.body)
-msgid "# 3. Configure `/etc/tor/torrc`"
+msgid "### 3. Configuration file"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/openbsd/
 #: (content/relay/setup/guard/openbsd/contents+en.lr:page.body)
-msgid "User        _tor"
+msgid ""
+"Nickname      myNiceRelay  # Change \"myNiceRelay\" to something you like"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/openbsd/
 #: (content/relay/setup/guard/openbsd/contents+en.lr:page.body)
-msgid "# 4. Change `openfiles-max` and `maxfiles` Tweaks"
+msgid ""
+"ContactInfo   your@e-mail  # Write your e-mail and be aware it will be "
+"published"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/openbsd/
+#: (content/relay/setup/guard/openbsd/contents+en.lr:page.body)
+msgid ""
+"ORPort        443          # You might use a different port, should you want "
+"to"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/openbsd/
+#: (content/relay/setup/guard/openbsd/contents+en.lr:page.body)
+msgid "ExitRelay     0"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/openbsd/
+#: (content/relay/setup/guard/openbsd/contents+en.lr:page.body)
+msgid "SocksPort     0"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/openbsd/
+#: (content/relay/setup/guard/openbsd/contents+en.lr:page.body)
+msgid "Log notice    syslog"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/openbsd/
+#: (content/relay/setup/guard/openbsd/contents+en.lr:page.body)
+msgid "User          _tor"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/openbsd/
+#: (content/relay/setup/guard/openbsd/contents+en.lr:page.body)
+msgid "RunAsDaemon   1"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/openbsd/
+#: (content/relay/setup/guard/openbsd/contents+en.lr:page.body)
+msgid "### 4. Change `openfiles-max` and `maxfiles`"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/openbsd/
 #: (content/relay/setup/guard/openbsd/contents+en.lr:page.body)
 msgid ""
 "By default, OpenBSD maintains a rather low limit on the maximum number of "
-"open files for a process. For a daemon such as Tor's, that opens a "
-"connection to each and every other relay (currently around 7000 relays), "
-"these limits should be raised."
+"open files for a process."
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/openbsd/
+#: (content/relay/setup/guard/openbsd/contents+en.lr:page.body)
+msgid ""
+"For a daemon such as Tor's, that opens a connection to each and every other "
+"relay (currently around 7000 relays), these limits should be raised."
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/openbsd/
@@ -17879,12 +18193,12 @@ msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/openbsd/
 #: (content/relay/setup/guard/openbsd/contents+en.lr:page.body)
-msgid "tor:"
+msgid "tor:\\"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/openbsd/
 #: (content/relay/setup/guard/openbsd/contents+en.lr:page.body)
-msgid ":openfiles-max=13500:"
+msgid ":openfiles-max=13500:\\"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/openbsd/
@@ -17906,29 +18220,33 @@ msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/openbsd/
 #: (content/relay/setup/guard/openbsd/contents+en.lr:page.body)
-msgid "echo \"kern.maxfiles=16000\" >> /etc/sysctl.conf"
+msgid "# echo \"kern.maxfiles=16000\" >> /etc/sysctl.conf"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/openbsd/
 #: (content/relay/setup/guard/openbsd/contents+en.lr:page.body)
-msgid "sysctl kern.maxfiles=16000"
+msgid "# sysctl kern.maxfiles=16000"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/openbsd/
 #: (content/relay/setup/guard/openbsd/contents+en.lr:page.body)
-msgid "rcctl enable tor"
+msgid "# rcctl enable tor"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/openbsd/
 #: (content/relay/setup/guard/openbsd/contents+en.lr:page.body)
-msgid "rcctl start tor"
+msgid "# rcctl start tor"
 msgstr ""
 
-#: https://community.torproject.org/relay/setup/guard/centosrhel/updates/
-#: (content/relay/setup/guard/centosrhel/updates/contents+en.lr:page.title)
-msgid "RPM Distributions"
+#: https://community.torproject.org/relay/setup/guard/debian-ubuntu/updates/
+#: (content/relay/setup/guard/debian-ubuntu/updates/contents+en.lr:page.title)
+#: https://community.torproject.org/relay/setup/guard/debianubuntu/updates/
+#: (content/relay/setup/guard/debianubuntu/updates/contents+en.lr:page.title)
+msgid "Debian and Ubuntu"
 msgstr ""
 
+#: https://community.torproject.org/relay/setup/guard/debian-ubuntu/updates/
+#: (content/relay/setup/guard/debian-ubuntu/updates/contents+en.lr:page.section)
 #: https://community.torproject.org/relay/setup/guard/centosrhel/updates/
 #: (content/relay/setup/guard/centosrhel/updates/contents+en.lr:page.section)
 #: https://community.torproject.org/relay/setup/guard/fedora/updates/
@@ -17937,16 +18255,176 @@ msgstr ""
 #: (content/relay/setup/guard/debianubuntu/updates/contents+en.lr:page.section)
 #: https://community.torproject.org/relay/setup/guard/freebsd/updates/
 #: (content/relay/setup/guard/freebsd/updates/contents+en.lr:page.section)
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
+#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.section)
 msgid "Automatic Updates"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/debian-ubuntu/updates/
+#: (content/relay/setup/guard/debian-ubuntu/updates/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/debianubuntu/updates/
+#: (content/relay/setup/guard/debianubuntu/updates/contents+en.lr:page.body)
+msgid "# 1. Install the required packages"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/debian-ubuntu/updates/
+#: (content/relay/setup/guard/debian-ubuntu/updates/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/debianubuntu/updates/
+#: (content/relay/setup/guard/debianubuntu/updates/contents+en.lr:page.body)
+msgid "apt-get install unattended-upgrades apt-listchanges"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/debian-ubuntu/updates/
+#: (content/relay/setup/guard/debian-ubuntu/updates/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/debianubuntu/updates/
+#: (content/relay/setup/guard/debianubuntu/updates/contents+en.lr:page.body)
+msgid "# 2.  Edit the configuration file"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/debian-ubuntu/updates/
+#: (content/relay/setup/guard/debian-ubuntu/updates/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/debianubuntu/updates/
+#: (content/relay/setup/guard/debianubuntu/updates/contents+en.lr:page.body)
+msgid ""
+"Put the lines below into the configuration file /etc/apt/apt.conf."
+"d/50unattended-upgrades, everything that was originally inside the generated "
+"file can be removed before you add the lines below."
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/debian-ubuntu/updates/
+#: (content/relay/setup/guard/debian-ubuntu/updates/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/debianubuntu/updates/
+#: (content/relay/setup/guard/debianubuntu/updates/contents+en.lr:page.body)
+msgid "Unattended-Upgrade::Origins-Pattern {"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/debian-ubuntu/updates/
+#: (content/relay/setup/guard/debian-ubuntu/updates/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/debianubuntu/updates/
+#: (content/relay/setup/guard/debianubuntu/updates/contents+en.lr:page.body)
+msgid "\"origin=Debian,codename=${distro_codename},label=Debian-Security\";"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/debian-ubuntu/updates/
+#: (content/relay/setup/guard/debian-ubuntu/updates/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/debianubuntu/updates/
+#: (content/relay/setup/guard/debianubuntu/updates/contents+en.lr:page.body)
+msgid "\"origin=TorProject\";"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/debian-ubuntu/updates/
+#: (content/relay/setup/guard/debian-ubuntu/updates/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/debianubuntu/updates/
+#: (content/relay/setup/guard/debianubuntu/updates/contents+en.lr:page.body)
+msgid "};"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/debian-ubuntu/updates/
+#: (content/relay/setup/guard/debian-ubuntu/updates/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/debianubuntu/updates/
+#: (content/relay/setup/guard/debianubuntu/updates/contents+en.lr:page.body)
+msgid "Unattended-Upgrade::Package-Blacklist {"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/debian-ubuntu/updates/
+#: (content/relay/setup/guard/debian-ubuntu/updates/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/debianubuntu/updates/
+#: (content/relay/setup/guard/debianubuntu/updates/contents+en.lr:page.body)
+msgid "#3. Automatically reboot"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/debian-ubuntu/updates/
+#: (content/relay/setup/guard/debian-ubuntu/updates/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/debianubuntu/updates/
+#: (content/relay/setup/guard/debianubuntu/updates/contents+en.lr:page.body)
+msgid ""
+"If you want to automatically reboot add the following at the the end of the "
+"file `/etc/apt/apt.conf.d/50unattended-upgrades`:"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/debian-ubuntu/updates/
+#: (content/relay/setup/guard/debian-ubuntu/updates/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/debianubuntu/updates/
+#: (content/relay/setup/guard/debianubuntu/updates/contents+en.lr:page.body)
+msgid "Unattended-Upgrade::Automatic-Reboot \"true\";"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/debian-ubuntu/updates/
+#: (content/relay/setup/guard/debian-ubuntu/updates/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/debianubuntu/updates/
+#: (content/relay/setup/guard/debianubuntu/updates/contents+en.lr:page.body)
+msgid ""
+"Update the file `/etc/apt/apt.conf.d/20auto-upgrades` with the following "
+"content"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/debian-ubuntu/updates/
+#: (content/relay/setup/guard/debian-ubuntu/updates/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/debianubuntu/updates/
+#: (content/relay/setup/guard/debianubuntu/updates/contents+en.lr:page.body)
+msgid "APT::Periodic::Update-Package-Lists \"1\";"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/debian-ubuntu/updates/
+#: (content/relay/setup/guard/debian-ubuntu/updates/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/debianubuntu/updates/
+#: (content/relay/setup/guard/debianubuntu/updates/contents+en.lr:page.body)
+msgid "APT::Periodic::AutocleanInterval \"5\";"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/debian-ubuntu/updates/
+#: (content/relay/setup/guard/debian-ubuntu/updates/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/debianubuntu/updates/
+#: (content/relay/setup/guard/debianubuntu/updates/contents+en.lr:page.body)
+msgid "APT::Periodic::Unattended-Upgrade \"1\";"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/debian-ubuntu/updates/
+#: (content/relay/setup/guard/debian-ubuntu/updates/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/debianubuntu/updates/
+#: (content/relay/setup/guard/debianubuntu/updates/contents+en.lr:page.body)
+msgid "APT::Periodic::Verbose \"1\";"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/debian-ubuntu/updates/
+#: (content/relay/setup/guard/debian-ubuntu/updates/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/debianubuntu/updates/
+#: (content/relay/setup/guard/debianubuntu/updates/contents+en.lr:page.body)
+msgid "# 4. Test"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/debian-ubuntu/updates/
+#: (content/relay/setup/guard/debian-ubuntu/updates/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/debianubuntu/updates/
+#: (content/relay/setup/guard/debianubuntu/updates/contents+en.lr:page.body)
+msgid "You can test your unattended-upgrades setup with the following command:"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/debian-ubuntu/updates/
+#: (content/relay/setup/guard/debian-ubuntu/updates/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/debianubuntu/updates/
+#: (content/relay/setup/guard/debianubuntu/updates/contents+en.lr:page.body)
+msgid "sudo unattended-upgrade -d"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/centosrhel/updates/
+#: (content/relay/setup/guard/centosrhel/updates/contents+en.lr:page.title)
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
+#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.title)
+msgid "RPM Distributions"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/centosrhel/updates/
 #: (content/relay/setup/guard/centosrhel/updates/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
+#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
 msgid "# CentOS and RHEL 8 or later versions"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/centosrhel/updates/
 #: (content/relay/setup/guard/centosrhel/updates/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
+#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
 msgid ""
 "For CentOS and RHEL 8 or later versions, the dnf-automatic package is the "
 "preferred approach:"
@@ -17956,51 +18434,71 @@ msgstr ""
 #: (content/relay/setup/guard/centosrhel/updates/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/guard/fedora/updates/
 #: (content/relay/setup/guard/fedora/updates/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
+#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
 msgid "dnf install dnf-automatic"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/centosrhel/updates/
 #: (content/relay/setup/guard/centosrhel/updates/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
+#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
 msgid "In /etc/dnf/automatic.conf set:"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/centosrhel/updates/
 #: (content/relay/setup/guard/centosrhel/updates/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
+#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
 msgid "download_updates = yes"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/centosrhel/updates/
 #: (content/relay/setup/guard/centosrhel/updates/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
+#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
 msgid "apply_updates = yes"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/centosrhel/updates/
 #: (content/relay/setup/guard/centosrhel/updates/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
+#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
 msgid "Enable and start automatic updates via:"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/centosrhel/updates/
 #: (content/relay/setup/guard/centosrhel/updates/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
+#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
 msgid "systemctl enable --now dnf-automatic.timer"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/centosrhel/updates/
 #: (content/relay/setup/guard/centosrhel/updates/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
+#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
 msgid "Check status of dnf-automatic:"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/centosrhel/updates/
 #: (content/relay/setup/guard/centosrhel/updates/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
+#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
 msgid "systemctl list-timers *dnf-*"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/centosrhel/updates/
 #: (content/relay/setup/guard/centosrhel/updates/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
+#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
 msgid "# CentOS and RHEL 7 or earlier versions"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/centosrhel/updates/
 #: (content/relay/setup/guard/centosrhel/updates/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
+#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
 msgid ""
 "For CentOS and RHEL 7 or earlier versions, the yum-cron package is the "
 "preferred approach:"
@@ -18008,81 +18506,113 @@ msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/centosrhel/updates/
 #: (content/relay/setup/guard/centosrhel/updates/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
+#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
 msgid "yum install yum-cron"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/centosrhel/updates/
 #: (content/relay/setup/guard/centosrhel/updates/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
+#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
 msgid "In /etc/yum/yum-cron.conf set:"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/centosrhel/updates/
 #: (content/relay/setup/guard/centosrhel/updates/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
+#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
 msgid "systemctl start yum-cron.service"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/centosrhel/updates/
 #: (content/relay/setup/guard/centosrhel/updates/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
+#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
 msgid "# openSUSE"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/centosrhel/updates/
 #: (content/relay/setup/guard/centosrhel/updates/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
+#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
 msgid "First, you need to install the automatic update package"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/centosrhel/updates/
 #: (content/relay/setup/guard/centosrhel/updates/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
+#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
 msgid "zypper install  yast2-online-update-configuration"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/centosrhel/updates/
 #: (content/relay/setup/guard/centosrhel/updates/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
+#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
 msgid "Then start the configuration tool (ncurses based) with:"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/centosrhel/updates/
 #: (content/relay/setup/guard/centosrhel/updates/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
+#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
 msgid "yast2 online_update_configuration"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/centosrhel/updates/
 #: (content/relay/setup/guard/centosrhel/updates/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
+#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
 msgid "Enable the following settings:"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/centosrhel/updates/
 #: (content/relay/setup/guard/centosrhel/updates/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
+#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
 msgid "Automatic Online Update"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/centosrhel/updates/
 #: (content/relay/setup/guard/centosrhel/updates/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
+#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
 msgid "Interval: Daily"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/centosrhel/updates/
 #: (content/relay/setup/guard/centosrhel/updates/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
+#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
 msgid "Skip Interactive Patches"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/centosrhel/updates/
 #: (content/relay/setup/guard/centosrhel/updates/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
+#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
 msgid "Agree with Licenses"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/centosrhel/updates/
 #: (content/relay/setup/guard/centosrhel/updates/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
+#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
 msgid "Use delta rpms"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/centosrhel/updates/
 #: (content/relay/setup/guard/centosrhel/updates/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
+#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
 msgid "Confirm your configuration with OK."
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/centosrhel/updates/
 #: (content/relay/setup/guard/centosrhel/updates/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
+#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
 msgid ""
 "The official openSUSE documentation can be found [here](https://doc.opensuse."
 "org/documentation/leap/startup/single-html/book.opensuse.startup/index."
@@ -18102,118 +18632,6 @@ msgstr ""
 #: https://community.torproject.org/relay/setup/guard/fedora/updates/
 #: (content/relay/setup/guard/fedora/updates/contents+en.lr:page.body)
 msgid "systemctl enable --now dnf-automatic-install.timer"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/debianubuntu/updates/
-#: (content/relay/setup/guard/debianubuntu/updates/contents+en.lr:page.title)
-msgid "Debian and Ubuntu"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/debianubuntu/updates/
-#: (content/relay/setup/guard/debianubuntu/updates/contents+en.lr:page.body)
-msgid "# 1. Install the required packages"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/debianubuntu/updates/
-#: (content/relay/setup/guard/debianubuntu/updates/contents+en.lr:page.body)
-msgid "apt-get install unattended-upgrades apt-listchanges"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/debianubuntu/updates/
-#: (content/relay/setup/guard/debianubuntu/updates/contents+en.lr:page.body)
-msgid "# 2.  Edit the configuration file"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/debianubuntu/updates/
-#: (content/relay/setup/guard/debianubuntu/updates/contents+en.lr:page.body)
-msgid ""
-"Put the lines below into the configuration file /etc/apt/apt.conf."
-"d/50unattended-upgrades, everything that was originally inside the generated "
-"file can be removed before you add the lines below."
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/debianubuntu/updates/
-#: (content/relay/setup/guard/debianubuntu/updates/contents+en.lr:page.body)
-msgid "Unattended-Upgrade::Origins-Pattern {"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/debianubuntu/updates/
-#: (content/relay/setup/guard/debianubuntu/updates/contents+en.lr:page.body)
-msgid "\"origin=Debian,codename=${distro_codename},label=Debian-Security\";"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/debianubuntu/updates/
-#: (content/relay/setup/guard/debianubuntu/updates/contents+en.lr:page.body)
-msgid "\"origin=TorProject\";"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/debianubuntu/updates/
-#: (content/relay/setup/guard/debianubuntu/updates/contents+en.lr:page.body)
-msgid "};"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/debianubuntu/updates/
-#: (content/relay/setup/guard/debianubuntu/updates/contents+en.lr:page.body)
-msgid "Unattended-Upgrade::Package-Blacklist {"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/debianubuntu/updates/
-#: (content/relay/setup/guard/debianubuntu/updates/contents+en.lr:page.body)
-msgid "#3. Automatically reboot"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/debianubuntu/updates/
-#: (content/relay/setup/guard/debianubuntu/updates/contents+en.lr:page.body)
-msgid ""
-"If you want to automatically reboot add the following at the the end of the "
-"file `/etc/apt/apt.conf.d/50unattended-upgrades`:"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/debianubuntu/updates/
-#: (content/relay/setup/guard/debianubuntu/updates/contents+en.lr:page.body)
-msgid "Unattended-Upgrade::Automatic-Reboot \"true\";"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/debianubuntu/updates/
-#: (content/relay/setup/guard/debianubuntu/updates/contents+en.lr:page.body)
-msgid ""
-"Update the file `/etc/apt/apt.conf.d/20auto-upgrades` with the following "
-"content"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/debianubuntu/updates/
-#: (content/relay/setup/guard/debianubuntu/updates/contents+en.lr:page.body)
-msgid "APT::Periodic::Update-Package-Lists \"1\";"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/debianubuntu/updates/
-#: (content/relay/setup/guard/debianubuntu/updates/contents+en.lr:page.body)
-msgid "APT::Periodic::AutocleanInterval \"5\";"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/debianubuntu/updates/
-#: (content/relay/setup/guard/debianubuntu/updates/contents+en.lr:page.body)
-msgid "APT::Periodic::Unattended-Upgrade \"1\";"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/debianubuntu/updates/
-#: (content/relay/setup/guard/debianubuntu/updates/contents+en.lr:page.body)
-msgid "APT::Periodic::Verbose \"1\";"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/debianubuntu/updates/
-#: (content/relay/setup/guard/debianubuntu/updates/contents+en.lr:page.body)
-msgid "# 4. Test"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/debianubuntu/updates/
-#: (content/relay/setup/guard/debianubuntu/updates/contents+en.lr:page.body)
-msgid "You can test your unattended-upgrades setup with the following command:"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/debianubuntu/updates/
-#: (content/relay/setup/guard/debianubuntu/updates/contents+en.lr:page.body)
-msgid "sudo unattended-upgrade -d"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/freebsd/updates/
@@ -18309,17 +18727,14 @@ msgstr ""
 msgid "Your donation will be matched by Friends of Tor, up to $100,000."
 msgstr ""
 
-#: lego/templates/banner.html:32 templates/banner.html:32
+#: lego/templates/banner.html:31 lego/templates/banner.html:33
+#: templates/banner.html:31 templates/banner.html:33
 msgid "Donate now"
 msgstr ""
 
-#: lego/templates/banner.html:34 templates/banner.html:34
-msgid "DONATE NOW"
-msgstr ""
-
 #: lego/templates/footer.html:13 lego/templates/footer.html:22
-#: lego/templates/navbar.html:95 templates/footer.html:13
-#: templates/footer.html:22 templates/navbar.html:95
+#: lego/templates/navbar.html:96 templates/footer.html:13
+#: templates/footer.html:22 templates/navbar.html:96
 msgid "Download Tor Browser"
 msgstr ""
 
@@ -18342,17 +18757,17 @@ msgid ""
 msgstr ""
 
 #: lego/templates/footer.html:64 lego/templates/footer.html:66
-#: lego/templates/navbar.html:18 lego/templates/navbar.html:20
-#: lego/templates/navbar.html:63 templates/footer.html:64
-#: templates/footer.html:66 templates/navbar.html:18 templates/navbar.html:20
-#: templates/navbar.html:63
+#: lego/templates/navbar.html:19 lego/templates/navbar.html:21
+#: lego/templates/navbar.html:64 templates/footer.html:64
+#: templates/footer.html:66 templates/navbar.html:19 templates/navbar.html:21
+#: templates/navbar.html:64
 msgid "Donate"
 msgstr ""
 
 #: lego/templates/footer.html:64 lego/templates/footer.html:66
-#: lego/templates/navbar.html:18 lego/templates/navbar.html:20
-#: templates/footer.html:64 templates/footer.html:66 templates/navbar.html:18
-#: templates/navbar.html:20
+#: lego/templates/navbar.html:19 lego/templates/navbar.html:21
+#: templates/footer.html:64 templates/footer.html:66 templates/navbar.html:19
+#: templates/navbar.html:21
 msgid "Donate Now"
 msgstr ""
 
@@ -18368,49 +18783,49 @@ msgstr ""
 msgid "Sign up"
 msgstr ""
 
-#: lego/templates/footer.html:98 templates/footer.html:98
+#: lego/templates/footer.html:101 templates/footer.html:101
 #, python-format
 msgid ""
 "Trademark, copyright notices, and rules for use by third parties can be "
 "found in our %(link_to_faq)s"
 msgstr ""
 
-#: lego/templates/navbar.html:25 templates/navbar.html:25
+#: lego/templates/navbar.html:26 templates/navbar.html:26
 msgid "Menu"
 msgstr ""
 
-#: lego/templates/navbar.html:55 templates/home.html:31
-#: templates/navbar.html:55
+#: lego/templates/navbar.html:56 templates/home.html:31
+#: templates/navbar.html:56
 msgid "About"
 msgstr ""
 
-#: lego/templates/navbar.html:56 templates/home.html:32
-#: templates/navbar.html:56
+#: lego/templates/navbar.html:57 templates/home.html:32
+#: templates/navbar.html:57
 msgid "Documentation"
 msgstr ""
 
-#: lego/templates/navbar.html:57 templates/home.html:33
-#: templates/navbar.html:57
+#: lego/templates/navbar.html:58 templates/home.html:33
+#: templates/navbar.html:58
 msgid "Support"
 msgstr ""
 
-#: lego/templates/navbar.html:59 templates/home.html:35
-#: templates/navbar.html:59
+#: lego/templates/navbar.html:60 templates/home.html:35
+#: templates/navbar.html:60
 msgid "Blog"
 msgstr ""
 
-#: lego/templates/navbar.html:60 templates/home.html:34
-#: templates/navbar.html:60
+#: lego/templates/navbar.html:61 templates/home.html:34
+#: templates/navbar.html:61
 msgid "Jobs"
 msgstr ""
 
-#: lego/templates/navbar.html:61 templates/home.html:36
-#: templates/navbar.html:61
+#: lego/templates/navbar.html:62 templates/home.html:36
+#: templates/navbar.html:62
 msgid "Contact"
 msgstr ""
 
-#: lego/templates/navbar.html:62 templates/home.html:37
-#: templates/navbar.html:62
+#: lego/templates/navbar.html:63 templates/home.html:37
+#: templates/navbar.html:63
 msgid "Press"
 msgstr ""
 
@@ -18520,6 +18935,20 @@ msgstr ""
 msgid "Tor Project"
 msgstr ""
 
+#: templates/homepage.html:25
+msgid ""
+"The Tor Project is committed to fostering an inclusive environment and "
+"community. Tor is a place where people should feel safe to engage, share "
+"their point of view, and participate. Read our [Code of Conduct](https://"
+"gitweb.torproject.org/community/policies.git/tree/code_of_conduct.txt \"Code "
+"of Conduct\"), [Social Contract](https://gitweb.torproject.org/community/"
+"policies.git/tree/social_contract.txt \"Social Contract\"), [Statement of "
+"Values](https://gitweb.torproject.org/community/policies.git/tree/"
+"statement_of_values.txt \"Statement of Values\"), and learn about the [Tor "
+"Community Council](https://gitweb.torproject.org/community/policies.git/tree/"
+"community_council.txt \"Tor Community Council\")."
+msgstr ""
+
 #: templates/localization.html:27
 msgid "Can you help us improve our translations?"
 msgstr ""
@@ -18532,7 +18961,7 @@ msgid ""
 msgstr ""
 
 #: templates/localization.html:32
-msgid "Translators mailing list"
+msgid "Join Tor Translators mailing list"
 msgstr ""
 
 #: templates/meta.html:3
@@ -18640,7 +19069,7 @@ msgstr ""
 msgid "Journalists, activists, and everyday internet users rely on Tor."
 msgstr ""
 
-#: templates/outreach-talk.html:75 templates/two-columns-page.html:28
+#: templates/outreach-talk.html:75
 msgid "Contributors to this page:"
 msgstr ""
 
