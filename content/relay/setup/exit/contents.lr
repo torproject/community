@@ -65,6 +65,12 @@ To become an exit relay change **ExitRelay** from 0 to 1 in your `torrc` configu
 ExitRelay 1
 ```
 
+If you also opt to allow IPv6 traffic the **IPv6Exit** option must also be set to 1, but `tor` can handle it for you if you want to. Should that be the case, **ExitRelay** can be set to "auto", like this:
+
+```
+ExitRelay auto
+```
+
 ## DNS on Exit Relays
 
 Unlike other types of relays, exit relays also do DNS resolution for Tor clients.
