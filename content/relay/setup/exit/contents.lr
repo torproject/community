@@ -126,11 +126,7 @@ Install the `unbound` package:
 # yum install unbound
 ```
 
-If you are using a recent version of CentOS/RHEL, they now use `dnf` instead of `yum`. If you were not able to install `unbound` using the previous command, try to run the following:
-
-```
-# dnf install unbound
-```
+If you are using a recent version of CentOS/RHEL, they now use `dnf` instead of `yum`.
 
   * After you got it installed, you must edit the `/etc/unbound/unbound.conf` configuration file and enable **qname-minimisation**. Here is how it must look like:
 
