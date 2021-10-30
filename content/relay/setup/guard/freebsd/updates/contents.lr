@@ -8,7 +8,7 @@ _slug: updates
 ---
 body:
 
-This guide should work for any DragonFlyBSD, FreeBSD, or  HardenedBSD operating system. It covers _ONLY_ packages updates/upgrades, and does not apply any other patch to base system or kernel.
+This guide should work for DragonFlyBSD, FreeBSD, and HardenedBSD operating system. It covers _ONLY_ packages updates/upgrades, and does not apply any other patch to base system or kernel.
 
 **NOTE:** All steps documented on this page are considering that your server is dedicated to provide a Tor (bridge/guard/exit) relay service. Please be aware that _services will be restarted_ during the automatic software update process documented here.
 
