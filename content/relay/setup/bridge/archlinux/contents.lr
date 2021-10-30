@@ -18,6 +18,25 @@ To install the `tor` package on Arch Linux, please run:
 # pacman -Syu tor
 ```
 
+### 3. Install a Pluggable Transport
+
+We are opting here to install and use `obfs4` as pluggable transport, so we are going to install `obfs4proxy`.
+
+Sadly there's no package available on Arch Linux's official repositories to install it, so we must either build and it from source, or use the AUR (ArchLinux User Repository).
+
+Should you opted to use AUR, once `makepkg` must not run as **root**, here is how `obfs4proxy` can be installed on Arch Linux using an unprivileged user with `sudo` permissions:
+
+```
+$ sudo pacman -Syu git
+$ git clone https://aur.archlinux.org/obfs4proxy
+$ cd obfs4proxy
+$ makepkg -irs
+```
+
+  * **DISCLAIMER:** _AUR_ packages are user produced content. Any use of the provided files is at your own risk.
+
+  For more information on installing or building `obfs4proxy` from source, please refer to its [official docummentation](https://gitlab.com/yawning/obfs4/-/blob/master/README.md).
+
 ### XXX. Final Notes
 
 If you are having trouble setting up your bridge, have a look at [our help section](../../../getting-help/).
