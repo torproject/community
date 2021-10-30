@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-26 18:39+CET\n"
+"POT-Creation-Date: 2021-10-30 08:55+CET\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -3623,12 +3623,8 @@ msgstr ""
 #: (content/relay/setup/guard/windows/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/guard/dragonflybsd/
 #: (content/relay/setup/guard/dragonflybsd/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/centosrhel/
-#: (content/relay/setup/guard/centosrhel/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/guard/fedora/
 #: (content/relay/setup/guard/fedora/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/debianubuntu/
-#: (content/relay/setup/guard/debianubuntu/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/guard/freebsd/
 #: (content/relay/setup/guard/freebsd/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/guard/centos-rhel/
@@ -3637,12 +3633,8 @@ msgstr ""
 #: (content/relay/setup/guard/openbsd/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/guard/debian-ubuntu/updates/
 #: (content/relay/setup/guard/debian-ubuntu/updates/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/centosrhel/updates/
-#: (content/relay/setup/guard/centosrhel/updates/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/guard/fedora/updates/
 #: (content/relay/setup/guard/fedora/updates/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/debianubuntu/updates/
-#: (content/relay/setup/guard/debianubuntu/updates/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/guard/freebsd/updates/
 #: (content/relay/setup/guard/freebsd/updates/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
@@ -6333,10 +6325,6 @@ msgstr ""
 #: (content/training/resources/tor-relay-workshop/contents+en.lr:slide.description)
 #: https://community.torproject.org/relay/setup/guard/windows/
 #: (content/relay/setup/guard/windows/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/centosrhel/
-#: (content/relay/setup/guard/centosrhel/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/debianubuntu/
-#: (content/relay/setup/guard/debianubuntu/contents+en.lr:page.body)
 msgid "Nickname myNiceRelay"
 msgstr ""
 
@@ -6344,10 +6332,6 @@ msgstr ""
 #: (content/training/resources/tor-relay-workshop/contents+en.lr:slide.description)
 #: https://community.torproject.org/relay/setup/guard/windows/
 #: (content/relay/setup/guard/windows/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/centosrhel/
-#: (content/relay/setup/guard/centosrhel/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/debianubuntu/
-#: (content/relay/setup/guard/debianubuntu/contents+en.lr:page.body)
 msgid "ExitRelay 0"
 msgstr ""
 
@@ -6355,10 +6339,6 @@ msgstr ""
 #: (content/training/resources/tor-relay-workshop/contents+en.lr:slide.description)
 #: https://community.torproject.org/relay/setup/guard/windows/
 #: (content/relay/setup/guard/windows/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/centosrhel/
-#: (content/relay/setup/guard/centosrhel/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/debianubuntu/
-#: (content/relay/setup/guard/debianubuntu/contents+en.lr:page.body)
 msgid "SocksPort 0"
 msgstr ""
 
@@ -6376,10 +6356,6 @@ msgstr ""
 #: (content/training/resources/tor-relay-workshop/contents+en.lr:slide.description)
 #: https://community.torproject.org/relay/setup/guard/windows/
 #: (content/relay/setup/guard/windows/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/centosrhel/
-#: (content/relay/setup/guard/centosrhel/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/debianubuntu/
-#: (content/relay/setup/guard/debianubuntu/contents+en.lr:page.body)
 msgid "ContactInfo tor-operator@your-emailaddress-domain"
 msgstr ""
 
@@ -6419,15 +6395,11 @@ msgstr ""
 #: (content/training/resources/tor-relay-workshop/contents+en.lr:slide.description)
 #: https://community.torproject.org/relay/setup/guard/windows/
 #: (content/relay/setup/guard/windows/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/centosrhel/
-#: (content/relay/setup/guard/centosrhel/contents+en.lr:page.body)
 msgid "ORPort 9001"
 msgstr ""
 
 #: https://community.torproject.org/training/resources/tor-relay-workshop/
 #: (content/training/resources/tor-relay-workshop/contents+en.lr:slide.description)
-#: https://community.torproject.org/relay/setup/guard/debianubuntu/
-#: (content/relay/setup/guard/debianubuntu/contents+en.lr:page.body)
 msgid "ControlSocket 0"
 msgstr ""
 
@@ -6458,8 +6430,6 @@ msgstr ""
 
 #: https://community.torproject.org/training/resources/tor-relay-workshop/
 #: (content/training/resources/tor-relay-workshop/contents+en.lr:slide.description)
-#: https://community.torproject.org/relay/setup/guard/centosrhel/
-#: (content/relay/setup/guard/centosrhel/contents+en.lr:page.body)
 msgid "service tor start"
 msgstr ""
 
@@ -8589,8 +8559,6 @@ msgstr ""
 #: (content/relay/setup/bridge/centos-rhel-opensuse/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/bridge/fedora/
 #: (content/relay/setup/bridge/fedora/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/centosrhel/
-#: (content/relay/setup/guard/centosrhel/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/guard/fedora/
 #: (content/relay/setup/guard/fedora/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/guard/centos-rhel/
@@ -8622,8 +8590,6 @@ msgstr ""
 #: (content/relay/setup/bridge/centos-rhel-opensuse/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/bridge/fedora/
 #: (content/relay/setup/bridge/fedora/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/centosrhel/
-#: (content/relay/setup/guard/centosrhel/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/guard/fedora/
 #: (content/relay/setup/guard/fedora/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/guard/centos-rhel/
@@ -8637,8 +8603,6 @@ msgstr ""
 #: (content/relay/setup/bridge/centos-rhel-opensuse/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/bridge/fedora/
 #: (content/relay/setup/bridge/fedora/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/centosrhel/
-#: (content/relay/setup/guard/centosrhel/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/guard/fedora/
 #: (content/relay/setup/guard/fedora/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/guard/centos-rhel/
@@ -8661,8 +8625,6 @@ msgstr ""
 #: (content/relay/setup/bridge/centos-rhel-opensuse/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/bridge/fedora/
 #: (content/relay/setup/bridge/fedora/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/centosrhel/
-#: (content/relay/setup/guard/centosrhel/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/guard/fedora/
 #: (content/relay/setup/guard/fedora/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/guard/centos-rhel/
@@ -14209,12 +14171,8 @@ msgstr ""
 #: (content/relay/setup/guard/windows/contents+en.lr:page.section)
 #: https://community.torproject.org/relay/setup/guard/dragonflybsd/
 #: (content/relay/setup/guard/dragonflybsd/contents+en.lr:page.section)
-#: https://community.torproject.org/relay/setup/guard/centosrhel/
-#: (content/relay/setup/guard/centosrhel/contents+en.lr:page.section)
 #: https://community.torproject.org/relay/setup/guard/fedora/
 #: (content/relay/setup/guard/fedora/contents+en.lr:page.section)
-#: https://community.torproject.org/relay/setup/guard/debianubuntu/
-#: (content/relay/setup/guard/debianubuntu/contents+en.lr:page.section)
 #: https://community.torproject.org/relay/setup/guard/freebsd/
 #: (content/relay/setup/guard/freebsd/contents+en.lr:page.section)
 #: https://community.torproject.org/relay/setup/guard/centos-rhel/
@@ -16439,8 +16397,6 @@ msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/centos-rhel-opensuse/
 #: (content/relay/setup/bridge/centos-rhel-opensuse/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/centosrhel/
-#: (content/relay/setup/guard/centosrhel/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/guard/centos-rhel/
 #: (content/relay/setup/guard/centos-rhel/contents+en.lr:page.body)
 msgid "name=Tor for Enterprise Linux $releasever - $basearch"
@@ -16448,8 +16404,6 @@ msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/centos-rhel-opensuse/
 #: (content/relay/setup/bridge/centos-rhel-opensuse/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/centosrhel/
-#: (content/relay/setup/guard/centosrhel/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/guard/centos-rhel/
 #: (content/relay/setup/guard/centos-rhel/contents+en.lr:page.body)
 msgid "baseurl=https://rpm.torproject.org/centos/$releasever/$basearch"
@@ -16457,8 +16411,6 @@ msgstr ""
 
 #: https://community.torproject.org/relay/setup/bridge/centos-rhel-opensuse/
 #: (content/relay/setup/bridge/centos-rhel-opensuse/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/centosrhel/
-#: (content/relay/setup/guard/centosrhel/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/guard/centos-rhel/
 #: (content/relay/setup/guard/centos-rhel/contents+en.lr:page.body)
 msgid "gpgkey=https://rpm.torproject.org/centos/public_gpg.key"
@@ -17022,12 +16974,8 @@ msgstr ""
 #: (content/relay/setup/guard/windows/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/guard/dragonflybsd/
 #: (content/relay/setup/guard/dragonflybsd/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/centosrhel/
-#: (content/relay/setup/guard/centosrhel/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/guard/fedora/
 #: (content/relay/setup/guard/fedora/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/debianubuntu/
-#: (content/relay/setup/guard/debianubuntu/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/guard/freebsd/
 #: (content/relay/setup/guard/freebsd/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/guard/centos-rhel/
@@ -17047,12 +16995,8 @@ msgstr ""
 #: (content/relay/setup/guard/windows/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/guard/dragonflybsd/
 #: (content/relay/setup/guard/dragonflybsd/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/centosrhel/
-#: (content/relay/setup/guard/centosrhel/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/guard/fedora/
 #: (content/relay/setup/guard/fedora/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/debianubuntu/
-#: (content/relay/setup/guard/debianubuntu/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/guard/freebsd/
 #: (content/relay/setup/guard/freebsd/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/guard/centos-rhel/
@@ -17066,22 +17010,16 @@ msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/debian-ubuntu/
 #: (content/relay/setup/guard/debian-ubuntu/contents+en.lr:page.title)
-#: https://community.torproject.org/relay/setup/guard/debianubuntu/
-#: (content/relay/setup/guard/debianubuntu/contents+en.lr:page.title)
 msgid "Debian/Ubuntu"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/debian-ubuntu/
 #: (content/relay/setup/guard/debian-ubuntu/contents+en.lr:page.subtitle)
-#: https://community.torproject.org/relay/setup/guard/debianubuntu/
-#: (content/relay/setup/guard/debianubuntu/contents+en.lr:page.subtitle)
 msgid "How to deploy a middle/Guard relay on Debian/Ubuntu"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/debian-ubuntu/
 #: (content/relay/setup/guard/debian-ubuntu/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/debianubuntu/
-#: (content/relay/setup/guard/debianubuntu/contents+en.lr:page.body)
 msgid ""
 "One of the most important things to keeps your relay secure is to install "
 "security updates timely and ideally automatically so you can not forget "
@@ -17090,8 +17028,6 @@ msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/debian-ubuntu/
 #: (content/relay/setup/guard/debian-ubuntu/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/debianubuntu/
-#: (content/relay/setup/guard/debianubuntu/contents+en.lr:page.body)
 msgid ""
 "Follow the instructions to enable [automatic software updates](updates) for "
 "your operating system."
@@ -17550,8 +17486,6 @@ msgstr ""
 #: (content/relay/setup/guard/dragonflybsd/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/guard/fedora/
 #: (content/relay/setup/guard/fedora/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/debianubuntu/
-#: (content/relay/setup/guard/debianubuntu/contents+en.lr:page.body)
 msgid "Install the `tor` package:"
 msgstr ""
 
@@ -17586,29 +17520,11 @@ msgstr ""
 msgid "# service tor start"
 msgstr ""
 
-#: https://community.torproject.org/relay/setup/guard/centosrhel/
-#: (content/relay/setup/guard/centosrhel/contents+en.lr:page.title)
-#: https://community.torproject.org/relay/setup/guard/centos-rhel/
-#: (content/relay/setup/guard/centos-rhel/contents+en.lr:page.title)
-msgid "CentOS/RHEL"
+#: https://community.torproject.org/relay/setup/guard/fedora/
+#: (content/relay/setup/guard/fedora/contents+en.lr:page.subtitle)
+msgid "How to deploy a middle/Guard relay on Fedora"
 msgstr ""
 
-#: https://community.torproject.org/relay/setup/guard/centosrhel/
-#: (content/relay/setup/guard/centosrhel/contents+en.lr:page.subtitle)
-#: https://community.torproject.org/relay/setup/guard/centos-rhel/
-#: (content/relay/setup/guard/centos-rhel/contents+en.lr:page.subtitle)
-msgid "How to deploy a middle/Guard relay on CentOS/RHEL"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/centosrhel/
-#: (content/relay/setup/guard/centosrhel/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/debianubuntu/
-#: (content/relay/setup/guard/debianubuntu/contents+en.lr:page.body)
-msgid "# 1. Enable Automatic Software Updates"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/centosrhel/
-#: (content/relay/setup/guard/centosrhel/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/guard/fedora/
 #: (content/relay/setup/guard/fedora/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/guard/freebsd/
@@ -17620,112 +17536,6 @@ msgid ""
 "security updates timely and ideally automatically so you can not forget "
 "about it. Follow the instructions to enable [automatic software updates]"
 "(updates) for your operating system."
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/centosrhel/
-#: (content/relay/setup/guard/centosrhel/contents+en.lr:page.body)
-msgid "# 2. Enable the EPEL repository"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/centosrhel/
-#: (content/relay/setup/guard/centosrhel/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/centos-rhel/
-#: (content/relay/setup/guard/centos-rhel/contents+en.lr:page.body)
-msgid ""
-"To install `tor` package on CentOS/RHEL, you need to install the [EPEL]"
-"(https://fedoraproject.org/wiki/EPEL) repository first:"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/centosrhel/
-#: (content/relay/setup/guard/centosrhel/contents+en.lr:page.body)
-msgid "`yum install epel-release`"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/centosrhel/
-#: (content/relay/setup/guard/centosrhel/contents+en.lr:page.body)
-msgid ""
-"# 3. Add the following to /etc/yum.repos.d/tor.repo and then install the tor "
-"package."
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/centosrhel/
-#: (content/relay/setup/guard/centosrhel/contents+en.lr:page.body)
-msgid "`yum install tor`"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/centosrhel/
-#: (content/relay/setup/guard/centosrhel/contents+en.lr:page.body)
-msgid ""
-"When you install the first package from the EPEL repository you will be "
-"asked about verifying the EPEL GPG signing key."
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/centosrhel/
-#: (content/relay/setup/guard/centosrhel/contents+en.lr:page.body)
-msgid ""
-"Please ensure the key matches with the one available on the [Fedora Project "
-"website](https://getfedora.org/keys/)."
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/centosrhel/
-#: (content/relay/setup/guard/centosrhel/contents+en.lr:page.body)
-msgid "# 4. Put the tor configuration file `/etc/tor/torrc` in place"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/centosrhel/
-#: (content/relay/setup/guard/centosrhel/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/debianubuntu/
-#: (content/relay/setup/guard/debianubuntu/contents+en.lr:page.body)
-msgid "#change the nickname \"myNiceRelay\" to a name that you like"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/centosrhel/
-#: (content/relay/setup/guard/centosrhel/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/debianubuntu/
-#: (content/relay/setup/guard/debianubuntu/contents+en.lr:page.body)
-msgid "# Change the email address below and be aware that it will be published"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/centosrhel/
-#: (content/relay/setup/guard/centosrhel/contents+en.lr:page.body)
-msgid "# 5. Enable and start your Tor relay"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/centosrhel/
-#: (content/relay/setup/guard/centosrhel/contents+en.lr:page.body)
-msgid "CentOS 7 / RHEL 7:"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/centosrhel/
-#: (content/relay/setup/guard/centosrhel/contents+en.lr:page.body)
-msgid "systemctl enable tor"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/centosrhel/
-#: (content/relay/setup/guard/centosrhel/contents+en.lr:page.body)
-msgid "systemctl start tor"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/centosrhel/
-#: (content/relay/setup/guard/centosrhel/contents+en.lr:page.body)
-msgid "CentOS 6 / RHEL 6:"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/centosrhel/
-#: (content/relay/setup/guard/centosrhel/contents+en.lr:page.body)
-msgid "service tor enable"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/centosrhel/
-#: (content/relay/setup/guard/centosrhel/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/debianubuntu/
-#: (content/relay/setup/guard/debianubuntu/contents+en.lr:page.body)
-msgid "# 6. Final notes"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/fedora/
-#: (content/relay/setup/guard/fedora/contents+en.lr:page.subtitle)
-msgid "How to deploy a middle/Guard relay on Fedora"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/fedora/
@@ -17746,8 +17556,6 @@ msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/fedora/
 #: (content/relay/setup/guard/fedora/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/debianubuntu/
-#: (content/relay/setup/guard/debianubuntu/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/guard/centos-rhel/
 #: (content/relay/setup/guard/centos-rhel/contents+en.lr:page.body)
 #: https://community.torproject.org/relay/setup/guard/openbsd/
@@ -17770,53 +17578,6 @@ msgstr ""
 #: https://community.torproject.org/relay/setup/guard/fedora/
 #: (content/relay/setup/guard/fedora/contents+en.lr:page.body)
 msgid "# 6. Final Notes"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/debianubuntu/
-#: (content/relay/setup/guard/debianubuntu/contents+en.lr:page.body)
-msgid "# 2. Configure Tor Package Repository"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/debianubuntu/
-#: (content/relay/setup/guard/debianubuntu/contents+en.lr:page.body)
-msgid ""
-"Enable the Torproject package repository by following the instructions "
-"**[here](https://support.torproject.org/apt/tor-deb-repo/)**."
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/debianubuntu/
-#: (content/relay/setup/guard/debianubuntu/contents+en.lr:page.body)
-msgid "# 3. Package Installation"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/debianubuntu/
-#: (content/relay/setup/guard/debianubuntu/contents+en.lr:page.body)
-msgid "`apt update && apt install tor`"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/debianubuntu/
-#: (content/relay/setup/guard/debianubuntu/contents+en.lr:page.body)
-msgid "# 4. Configuration File"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/debianubuntu/
-#: (content/relay/setup/guard/debianubuntu/contents+en.lr:page.body)
-msgid "ORPort 443"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/debianubuntu/
-#: (content/relay/setup/guard/debianubuntu/contents+en.lr:page.body)
-msgid "# 5. Restart the Service"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/debianubuntu/
-#: (content/relay/setup/guard/debianubuntu/contents+en.lr:page.body)
-msgid "Restart the tor daemon so your configuration changes take effect:"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/debianubuntu/
-#: (content/relay/setup/guard/debianubuntu/contents+en.lr:page.body)
-msgid "`systemctl restart tor@default`"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/freebsd/
@@ -17958,8 +17719,25 @@ msgid "### 7. Final Notes"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/centos-rhel/
+#: (content/relay/setup/guard/centos-rhel/contents+en.lr:page.title)
+msgid "CentOS/RHEL"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/
+#: (content/relay/setup/guard/centos-rhel/contents+en.lr:page.subtitle)
+msgid "How to deploy a middle/Guard relay on CentOS/RHEL"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/
 #: (content/relay/setup/guard/centos-rhel/contents+en.lr:page.body)
 msgid "### 2. Install `epel-release`"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/
+#: (content/relay/setup/guard/centos-rhel/contents+en.lr:page.body)
+msgid ""
+"To install `tor` package on CentOS/RHEL, you need to install the [EPEL]"
+"(https://fedoraproject.org/wiki/EPEL) repository first:"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/centos-rhel/
@@ -18240,19 +18018,13 @@ msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/debian-ubuntu/updates/
 #: (content/relay/setup/guard/debian-ubuntu/updates/contents+en.lr:page.title)
-#: https://community.torproject.org/relay/setup/guard/debianubuntu/updates/
-#: (content/relay/setup/guard/debianubuntu/updates/contents+en.lr:page.title)
 msgid "Debian and Ubuntu"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/debian-ubuntu/updates/
 #: (content/relay/setup/guard/debian-ubuntu/updates/contents+en.lr:page.section)
-#: https://community.torproject.org/relay/setup/guard/centosrhel/updates/
-#: (content/relay/setup/guard/centosrhel/updates/contents+en.lr:page.section)
 #: https://community.torproject.org/relay/setup/guard/fedora/updates/
 #: (content/relay/setup/guard/fedora/updates/contents+en.lr:page.section)
-#: https://community.torproject.org/relay/setup/guard/debianubuntu/updates/
-#: (content/relay/setup/guard/debianubuntu/updates/contents+en.lr:page.section)
 #: https://community.torproject.org/relay/setup/guard/freebsd/updates/
 #: (content/relay/setup/guard/freebsd/updates/contents+en.lr:page.section)
 #: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
@@ -18262,29 +18034,21 @@ msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/debian-ubuntu/updates/
 #: (content/relay/setup/guard/debian-ubuntu/updates/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/debianubuntu/updates/
-#: (content/relay/setup/guard/debianubuntu/updates/contents+en.lr:page.body)
 msgid "# 1. Install the required packages"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/debian-ubuntu/updates/
 #: (content/relay/setup/guard/debian-ubuntu/updates/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/debianubuntu/updates/
-#: (content/relay/setup/guard/debianubuntu/updates/contents+en.lr:page.body)
 msgid "apt-get install unattended-upgrades apt-listchanges"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/debian-ubuntu/updates/
 #: (content/relay/setup/guard/debian-ubuntu/updates/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/debianubuntu/updates/
-#: (content/relay/setup/guard/debianubuntu/updates/contents+en.lr:page.body)
 msgid "# 2.  Edit the configuration file"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/debian-ubuntu/updates/
 #: (content/relay/setup/guard/debian-ubuntu/updates/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/debianubuntu/updates/
-#: (content/relay/setup/guard/debianubuntu/updates/contents+en.lr:page.body)
 msgid ""
 "Put the lines below into the configuration file /etc/apt/apt.conf."
 "d/50unattended-upgrades, everything that was originally inside the generated "
@@ -18293,50 +18057,36 @@ msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/debian-ubuntu/updates/
 #: (content/relay/setup/guard/debian-ubuntu/updates/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/debianubuntu/updates/
-#: (content/relay/setup/guard/debianubuntu/updates/contents+en.lr:page.body)
 msgid "Unattended-Upgrade::Origins-Pattern {"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/debian-ubuntu/updates/
 #: (content/relay/setup/guard/debian-ubuntu/updates/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/debianubuntu/updates/
-#: (content/relay/setup/guard/debianubuntu/updates/contents+en.lr:page.body)
 msgid "\"origin=Debian,codename=${distro_codename},label=Debian-Security\";"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/debian-ubuntu/updates/
 #: (content/relay/setup/guard/debian-ubuntu/updates/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/debianubuntu/updates/
-#: (content/relay/setup/guard/debianubuntu/updates/contents+en.lr:page.body)
 msgid "\"origin=TorProject\";"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/debian-ubuntu/updates/
 #: (content/relay/setup/guard/debian-ubuntu/updates/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/debianubuntu/updates/
-#: (content/relay/setup/guard/debianubuntu/updates/contents+en.lr:page.body)
 msgid "};"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/debian-ubuntu/updates/
 #: (content/relay/setup/guard/debian-ubuntu/updates/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/debianubuntu/updates/
-#: (content/relay/setup/guard/debianubuntu/updates/contents+en.lr:page.body)
 msgid "Unattended-Upgrade::Package-Blacklist {"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/debian-ubuntu/updates/
 #: (content/relay/setup/guard/debian-ubuntu/updates/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/debianubuntu/updates/
-#: (content/relay/setup/guard/debianubuntu/updates/contents+en.lr:page.body)
 msgid "#3. Automatically reboot"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/debian-ubuntu/updates/
 #: (content/relay/setup/guard/debian-ubuntu/updates/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/debianubuntu/updates/
-#: (content/relay/setup/guard/debianubuntu/updates/contents+en.lr:page.body)
 msgid ""
 "If you want to automatically reboot add the following at the the end of the "
 "file `/etc/apt/apt.conf.d/50unattended-upgrades`:"
@@ -18344,15 +18094,11 @@ msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/debian-ubuntu/updates/
 #: (content/relay/setup/guard/debian-ubuntu/updates/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/debianubuntu/updates/
-#: (content/relay/setup/guard/debianubuntu/updates/contents+en.lr:page.body)
 msgid "Unattended-Upgrade::Automatic-Reboot \"true\";"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/debian-ubuntu/updates/
 #: (content/relay/setup/guard/debian-ubuntu/updates/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/debianubuntu/updates/
-#: (content/relay/setup/guard/debianubuntu/updates/contents+en.lr:page.body)
 msgid ""
 "Update the file `/etc/apt/apt.conf.d/20auto-upgrades` with the following "
 "content"
@@ -18360,268 +18106,49 @@ msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/debian-ubuntu/updates/
 #: (content/relay/setup/guard/debian-ubuntu/updates/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/debianubuntu/updates/
-#: (content/relay/setup/guard/debianubuntu/updates/contents+en.lr:page.body)
 msgid "APT::Periodic::Update-Package-Lists \"1\";"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/debian-ubuntu/updates/
 #: (content/relay/setup/guard/debian-ubuntu/updates/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/debianubuntu/updates/
-#: (content/relay/setup/guard/debianubuntu/updates/contents+en.lr:page.body)
 msgid "APT::Periodic::AutocleanInterval \"5\";"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/debian-ubuntu/updates/
 #: (content/relay/setup/guard/debian-ubuntu/updates/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/debianubuntu/updates/
-#: (content/relay/setup/guard/debianubuntu/updates/contents+en.lr:page.body)
 msgid "APT::Periodic::Unattended-Upgrade \"1\";"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/debian-ubuntu/updates/
 #: (content/relay/setup/guard/debian-ubuntu/updates/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/debianubuntu/updates/
-#: (content/relay/setup/guard/debianubuntu/updates/contents+en.lr:page.body)
 msgid "APT::Periodic::Verbose \"1\";"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/debian-ubuntu/updates/
 #: (content/relay/setup/guard/debian-ubuntu/updates/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/debianubuntu/updates/
-#: (content/relay/setup/guard/debianubuntu/updates/contents+en.lr:page.body)
 msgid "# 4. Test"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/debian-ubuntu/updates/
 #: (content/relay/setup/guard/debian-ubuntu/updates/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/debianubuntu/updates/
-#: (content/relay/setup/guard/debianubuntu/updates/contents+en.lr:page.body)
 msgid "You can test your unattended-upgrades setup with the following command:"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/debian-ubuntu/updates/
 #: (content/relay/setup/guard/debian-ubuntu/updates/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/debianubuntu/updates/
-#: (content/relay/setup/guard/debianubuntu/updates/contents+en.lr:page.body)
 msgid "sudo unattended-upgrade -d"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/centosrhel/updates/
-#: (content/relay/setup/guard/centosrhel/updates/contents+en.lr:page.title)
-#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
-#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.title)
-msgid "RPM Distributions"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/centosrhel/updates/
-#: (content/relay/setup/guard/centosrhel/updates/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
-#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
-msgid "# CentOS and RHEL 8 or later versions"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/centosrhel/updates/
-#: (content/relay/setup/guard/centosrhel/updates/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
-#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
-msgid ""
-"For CentOS and RHEL 8 or later versions, the dnf-automatic package is the "
-"preferred approach:"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/centosrhel/updates/
-#: (content/relay/setup/guard/centosrhel/updates/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/fedora/updates/
-#: (content/relay/setup/guard/fedora/updates/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
-#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
-msgid "dnf install dnf-automatic"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/centosrhel/updates/
-#: (content/relay/setup/guard/centosrhel/updates/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
-#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
-msgid "In /etc/dnf/automatic.conf set:"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/centosrhel/updates/
-#: (content/relay/setup/guard/centosrhel/updates/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
-#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
-msgid "download_updates = yes"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/centosrhel/updates/
-#: (content/relay/setup/guard/centosrhel/updates/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
-#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
-msgid "apply_updates = yes"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/centosrhel/updates/
-#: (content/relay/setup/guard/centosrhel/updates/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
-#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
-msgid "Enable and start automatic updates via:"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/centosrhel/updates/
-#: (content/relay/setup/guard/centosrhel/updates/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
-#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
-msgid "systemctl enable --now dnf-automatic.timer"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/centosrhel/updates/
-#: (content/relay/setup/guard/centosrhel/updates/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
-#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
-msgid "Check status of dnf-automatic:"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/centosrhel/updates/
-#: (content/relay/setup/guard/centosrhel/updates/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
-#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
-msgid "systemctl list-timers *dnf-*"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/centosrhel/updates/
-#: (content/relay/setup/guard/centosrhel/updates/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
-#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
-msgid "# CentOS and RHEL 7 or earlier versions"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/centosrhel/updates/
-#: (content/relay/setup/guard/centosrhel/updates/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
-#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
-msgid ""
-"For CentOS and RHEL 7 or earlier versions, the yum-cron package is the "
-"preferred approach:"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/centosrhel/updates/
-#: (content/relay/setup/guard/centosrhel/updates/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
-#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
-msgid "yum install yum-cron"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/centosrhel/updates/
-#: (content/relay/setup/guard/centosrhel/updates/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
-#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
-msgid "In /etc/yum/yum-cron.conf set:"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/centosrhel/updates/
-#: (content/relay/setup/guard/centosrhel/updates/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
-#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
-msgid "systemctl start yum-cron.service"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/centosrhel/updates/
-#: (content/relay/setup/guard/centosrhel/updates/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
-#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
-msgid "# openSUSE"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/centosrhel/updates/
-#: (content/relay/setup/guard/centosrhel/updates/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
-#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
-msgid "First, you need to install the automatic update package"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/centosrhel/updates/
-#: (content/relay/setup/guard/centosrhel/updates/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
-#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
-msgid "zypper install  yast2-online-update-configuration"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/centosrhel/updates/
-#: (content/relay/setup/guard/centosrhel/updates/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
-#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
-msgid "Then start the configuration tool (ncurses based) with:"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/centosrhel/updates/
-#: (content/relay/setup/guard/centosrhel/updates/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
-#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
-msgid "yast2 online_update_configuration"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/centosrhel/updates/
-#: (content/relay/setup/guard/centosrhel/updates/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
-#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
-msgid "Enable the following settings:"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/centosrhel/updates/
-#: (content/relay/setup/guard/centosrhel/updates/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
-#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
-msgid "Automatic Online Update"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/centosrhel/updates/
-#: (content/relay/setup/guard/centosrhel/updates/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
-#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
-msgid "Interval: Daily"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/centosrhel/updates/
-#: (content/relay/setup/guard/centosrhel/updates/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
-#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
-msgid "Skip Interactive Patches"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/centosrhel/updates/
-#: (content/relay/setup/guard/centosrhel/updates/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
-#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
-msgid "Agree with Licenses"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/centosrhel/updates/
-#: (content/relay/setup/guard/centosrhel/updates/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
-#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
-msgid "Use delta rpms"
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/centosrhel/updates/
-#: (content/relay/setup/guard/centosrhel/updates/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
-#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
-msgid "Confirm your configuration with OK."
-msgstr ""
-
-#: https://community.torproject.org/relay/setup/guard/centosrhel/updates/
-#: (content/relay/setup/guard/centosrhel/updates/contents+en.lr:page.body)
-#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
-#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
-msgid ""
-"The official openSUSE documentation can be found [here](https://doc.opensuse."
-"org/documentation/leap/startup/single-html/book.opensuse.startup/index."
-"html#sec-onlineupdate-you-automatically)."
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/fedora/updates/
 #: (content/relay/setup/guard/fedora/updates/contents+en.lr:page.body)
 msgid "On Fedora you enable automatic updates via:"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/fedora/updates/
+#: (content/relay/setup/guard/fedora/updates/contents+en.lr:page.body)
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
+#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
+msgid "dnf install dnf-automatic"
 msgstr ""
 
 #: https://community.torproject.org/relay/setup/guard/fedora/updates/
@@ -18708,6 +18235,153 @@ msgstr ""
 #: https://community.torproject.org/relay/setup/guard/freebsd/updates/
 #: (content/relay/setup/guard/freebsd/updates/contents+en.lr:page.body)
 msgid "# service cron restart"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
+#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.title)
+msgid "RPM Distributions"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
+#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
+msgid "# CentOS and RHEL 8 or later versions"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
+#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
+msgid ""
+"For CentOS and RHEL 8 or later versions, the dnf-automatic package is the "
+"preferred approach:"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
+#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
+msgid "In /etc/dnf/automatic.conf set:"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
+#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
+msgid "download_updates = yes"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
+#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
+msgid "apply_updates = yes"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
+#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
+msgid "Enable and start automatic updates via:"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
+#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
+msgid "systemctl enable --now dnf-automatic.timer"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
+#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
+msgid "Check status of dnf-automatic:"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
+#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
+msgid "systemctl list-timers *dnf-*"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
+#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
+msgid "# CentOS and RHEL 7 or earlier versions"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
+#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
+msgid ""
+"For CentOS and RHEL 7 or earlier versions, the yum-cron package is the "
+"preferred approach:"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
+#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
+msgid "yum install yum-cron"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
+#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
+msgid "In /etc/yum/yum-cron.conf set:"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
+#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
+msgid "systemctl start yum-cron.service"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
+#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
+msgid "# openSUSE"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
+#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
+msgid "First, you need to install the automatic update package"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
+#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
+msgid "zypper install  yast2-online-update-configuration"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
+#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
+msgid "Then start the configuration tool (ncurses based) with:"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
+#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
+msgid "yast2 online_update_configuration"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
+#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
+msgid "Enable the following settings:"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
+#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
+msgid "Automatic Online Update"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
+#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
+msgid "Interval: Daily"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
+#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
+msgid "Skip Interactive Patches"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
+#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
+msgid "Agree with Licenses"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
+#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
+msgid "Use delta rpms"
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
+#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
+msgid "Confirm your configuration with OK."
+msgstr ""
+
+#: https://community.torproject.org/relay/setup/guard/centos-rhel/updates/
+#: (content/relay/setup/guard/centos-rhel/updates/contents+en.lr:page.body)
+msgid ""
+"The official openSUSE documentation can be found [here](https://doc.opensuse."
+"org/documentation/leap/startup/single-html/book.opensuse.startup/index."
+"html#sec-onlineupdate-you-automatically)."
 msgstr ""
 
 #: lego/templates/banner.html:3 lego/templates/banner.html:5
