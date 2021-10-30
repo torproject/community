@@ -35,6 +35,8 @@ For this particular schedule we opt to run the script every 0h00 (depending on y
 # echo "0 0 * * * root /bin/sh /root/bin/pkg-upgrade.sh" > /etc/cron.d/pkg-upgrade
 ```
 
+  * If you want to change the scheduled execution of the update script, configure your [crontab settings](https://crontab.guru/) to a value you would like to use.
+
 ### 3. Restart `cron`
 
 Finally, restart the `cron` daemon to make configuration changes be used.
