@@ -69,9 +69,9 @@ This port must be externally reachable and must be different from the one specif
 ```
     ... or restart it if it was running already, so configurations take effect
 
-    ```
-    # systemctl restart tor
-    ```
+```
+# systemctl restart tor
+```
 
 ### 6. Final Notes
 
