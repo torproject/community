@@ -24,7 +24,7 @@ We are opting here to install and use `obfs4` as pluggable transport, so we are 
 
 Sadly there's no package available on Arch Linux's official repositories to install it, so we must either build and it from source, or use the AUR (ArchLinux User Repository).
 
-Should you opted to use AUR, once `makepkg` must not run as **root**, here is how `obfs4proxy` can be installed on Arch Linux using an unprivileged user with `sudo` permissions:
+Should you opted to use AUR, once `makepkg` must not run as **root**, here is how `obfs4proxy` can be installed on Arch Linux using an unprivileged user account with `sudo` permissions:
 
 ```
 $ sudo pacman -Syu git
@@ -62,7 +62,18 @@ This port must be externally reachable and must be different from the one specif
 
   * One pretty important test you should consider doing is to test if we can talk **obfs4** to the port used by **ServerTransportListenAddr**. Please try our [reachability test tool for obfs4 Bridges](https://bridges.torproject.org/scan/) to check that.
 
-### XXX. Final Notes
+### 5. Enable and Start `tor`
+
+```
+# systemctl enable --now tor
+```
+    ... or restart it if it was running already, so configurations take effect
+
+    ```
+    # systemctl restart tor
+    ```
+
+### 6. Final Notes
 
 If you are having trouble setting up your bridge, have a look at [our help section](../../../getting-help/).
 If your bridge is now running, check out the [post-install notes](../post-install/).
