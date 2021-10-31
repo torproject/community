@@ -24,7 +24,7 @@ DragonFlyBSD's daily snapshots and releases (starting with 3.4) come with `pkg` 
 
 #### 2.1. Recommended Steps to Setup `pkg`
 
-Here, it will be similar to what we have on a **FreeBSD** system, and we are going to use HTTPS to fetch our packages, and updates - so here we also need an extra package to help us out (ca_root_nss).
+Here, it will be similar to what we have on a **FreeBSD** system, and we are going to use HTTPS to fetch our packages, and updates - so here we also need an extra package to help us out (`ca_root_nss`).
 
 Installing the `ca_root_nss` package:
 
