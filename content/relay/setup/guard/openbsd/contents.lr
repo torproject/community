@@ -91,8 +91,8 @@ Here we set `tor` to start during boot and call it for the first time:
 
 ### 6. Final Notes
 
-If you are having trouble setting up your relay, have a look at our [help section](/relay/getting-help/).
-If your relay is now running, check out the [post-install](/relay/setup/post-install/) notes.
+If you are having trouble setting up your relay, have a look at our [help section](../../../getting-help/).
+If your relay is now running, check out the [post-install](../../post-install/) notes.
 ---
 html: two-columns-page.html
 ---
