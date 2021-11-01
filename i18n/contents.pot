@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-01 09:50+CET\n"
+"POT-Creation-Date: 2021-11-01 10:29+CET\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -18735,10 +18735,6 @@ msgstr ""
 
 #: templates/outreach-talk.html:67
 msgid "Journalists, activists, and everyday internet users rely on Tor."
-msgstr ""
-
-#: templates/outreach-talk.html:75
-msgid "Contributors to this page:"
 msgstr ""
 
 #: templates/outreach-talk.html:77 templates/two-columns-page.html:30
