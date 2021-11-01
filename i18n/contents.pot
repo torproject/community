@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-31 21:18+CET\n"
+"POT-Creation-Date: 2021-11-01 09:50+CET\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -18825,6 +18825,16 @@ msgstr ""
 
 #: templates/user-research.html:35
 msgid "UX team mailing list"
+msgstr ""
+
+#: templates/user-research.html:39
+msgid "Become a Tester"
+msgstr ""
+
+#: templates/user-research.html:40
+msgid ""
+"We regularly release Tor Browser early versions to allow users to test "
+"software improvements and new ideas. Sign up to be in our testing pool."
 msgstr ""
 
 #: templates/macros/projects.html:20
