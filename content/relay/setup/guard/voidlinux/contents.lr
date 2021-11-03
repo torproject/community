@@ -1,0 +1,65 @@
+_model: page
+---
+color: primary
+---
+title: Void Linux
+---
+body:
+
+### 1. Enable Automatic Software Updates
+
+One of the most important things to keeps your relay secure is to install security updates timely and ideally automatically so you can not forget about it. Follow the instructions to enable automatic software updates for your operating system.
+
+### 2. Install `tor`
+
+To install the `tor` package on Void Linux, please run:
+
+```
+# xbps-install -S tor
+```
+
+### 3. Configure `/etc/tor/torrc`
+
+This is a very simple version of the `torrc` configuration file in order to run a Bridge on the Tor network:
+
+```
+Nickname      myNiceRelay  # Change "myNiceRelay" to something you like
+ContactInfo   your@e-mail  # Write your e-mail and be aware it will be published
+ORPort        443          # You might use a different port, should you want to
+ExitRelay     0
+SocksPort     0
+Log notice    syslog
+DataDirectory /var/lib/tor
+User          tor
+```
+
+### 4. Enable and Start `tor`
+
+Different from most recent distributions, Void Linux does not uses **systemd**; it uses [runit](https://man.voidlinux.org/runit.8) instead.
+
+To enable `tor`'s service on a booted system:
+
+```
+# ln -s /etc/sv/tor /var/service/.
+```
+
+Once you enabled the service, it will automatically start. If you already started the `tor` daemon before and made changes do its configurations, you can restart it with:
+
+```
+# sv restart tor
+```
+
+### 5. Final Notes
+
+If you are having trouble setting up your bridge, have a look at [our help section](../../../getting-help/).
+If your bridge is now running, check out the [post-install notes](../post-install/).
+---
+html: two-columns-page.html
+---
+key:
+---
+section: Middle/Guard relay
+---
+section_id: relay-operations
+---
+subtitle: How to deploy a Guard/Middle Relay on Void Linux
