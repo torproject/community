@@ -1,0 +1,50 @@
+_model: page
+---
+title: OpenBSD
+---
+color: primary
+---
+_slug: updates
+---
+body:
+
+This guide should work for recent versions of an OpenBSD operating system. It covers _ONLY_ packages updates/upgrades, and does not apply any other patch to base system or kernel.
+
+**NOTE:** All steps documented on this page are considering that your server is dedicated to provide a Tor (bridge/guard/exit) relay service. Please be aware that _services will be restarted_ during the automatic software update process documented here.
+
+### 1. Create the Update Script
+
+OpenBSD offers us an easy way of running tasks **daily**, **weekly** or **monthly**. It allows us to write our own custom scripts to be called by `cron` in three different local files (depending on our needs, or particular choices):
+
+  * `/etc/daily.local`
+  * `/etc/weekly.local`
+  * `/etc/monthly.local`
+
+For this example, we are going to use `/etc/weekly.local`. Here is how it's going to look like:
+
+```
+#!/bin/sh
+PATH="/bin:/usr/bin:/sbin:/usr/sbin:/usr/local/bin:/usr/local/sbin"
+RAND=$(jot -r 1 900)
+sleep ${RAND}
+pkg_add -u -I && \
+rcctl restart tor
+```
+
+  * For this particular schedule we opt to run the script every week on Saturdays at 3h30 (depending on your timezone), and it will trigger the packages updates process itself depending on the value set to the `$RAND` variable - it's configured to produce a **sleep** between 0 and 900 seconds (15 minutes).
+
+### 2. Restart `cron`
+
+Finally, restart the `cron` daemon to make configuration changes be used.
+
+```
+# rcctl restart cron
+```
+---
+html: two-columns-page.html
+---
+section: Automatic Updates
+---
+section_id: automatic-updates
+---
+key: 1
