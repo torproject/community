@@ -72,6 +72,7 @@ DNS resolution on exit relays is crucial for Tor clients and it should be reliab
     * If you want to add a second DNS resolver as a fallback to your /etc/resolv.conf configuration, choose a resolver within your autonomous system and make sure that it is not your first entry in that file (the first entry should be your local resolver).
     * If a local resolver like unbound is not an option for you, use a resolver that your provider runs in the same autonomous system (to find out if an IP address is in the same AS as your relay, you can look it up using [bgp.he.net](https://bgp.he.net)).
 * Avoid adding more than two resolvers to your /etc/resolv.conf file to limit AS-level exposure of DNS queries.
+* ensure your local resolver does not use any outbound source IP address that is used by any tor exit or non-exits, because it is not uncommon that tor IPs are (temporarily) blocked and a blocked DNS resolver source IP address can have a broad impact. For unbound you can use the "outgoing-interface" option to specify the source IP addresses for contacting other DNS servers.
 
 There are multiple options for DNS server software. [Unbound](https://nlnetlabs.nl/projects/unbound/about/) has become
 a popular one but feel free to use any other software that you are comfortable with.
