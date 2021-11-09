@@ -1,4 +1,5 @@
 variables:
+  SITE_URL: "community.torproject.org"
   TRANSLATION_BRANCH: "communitytpo-contentspot"
 
 include:
