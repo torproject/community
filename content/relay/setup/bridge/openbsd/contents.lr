@@ -10,84 +10,110 @@ key: 8
 ---
 body:
 
-### 1. Install packages 
+### 1. Enable Automatic Software Updates
 
-`# pkg_add tor obfs4proxy`
+One of the most important things to keeps your relay secure is to install security updates timely and ideally automatically so you can not forget about it. Follow the instructions to enable automatic software updates for your operating system.
 
-### 2. Edit your Tor config file
+### 2. Install `tor` OpenBSD's Package
 
-Usually located at `/etc/tor/torrc`, and replace its content with:
+Recent OpenBSD systems, since 6.5, already have the repository configured on `/etc/installurl` so we do not need to bother changing it.
+
+If that's not your case, please adjust the `installurl` configuration file like this:
 
 ```
-RunAsDaemon 1
-BridgeRelay 1
+# echo "https://cdn.openbsd.org/pub/OpenBSD" > /etc/installurl
+```
 
-# Replace "TODO1" with a Tor port of your choice.  This port must be externally
-# reachable.  Avoid port 9001 because it's commonly associated with Tor and
-# censors may be scanning the Internet for this port.
-ORPort TODO1
+Proceed with `pkg_add` to install the package:
 
-ServerTransportPlugin obfs4 exec /usr/local/bin/obfs4proxy
+```
+# pkg_add tor
+```
 
-# Replace "TODO2" with an obfs4 port of your choice.  This port must be
-# externally reachable and must be different from the one specified for ORPort.
-# Avoid port 9001 because it's commonly associated with
-# Tor and censors may be scanning the Internet for this port.
-ServerTransportListenAddr obfs4 0.0.0.0:TODO2
+##### 2.1. Recommended Steps to Install `tor` on OpenBSD
 
-# Local communication port between Tor and obfs4.  Always set this to "auto".
-# "Ext" means "extended", not "external".  Don't try to set a specific port
-# number, nor listen on 0.0.0.0.
-ExtORPort auto
+If you want to install a newer version of the `tor` OpenBSD's package, you can use M:Tier's binary packages:
 
-# Replace "<address@email.com>" with your email address so we can contact you if
-# there are problems with your bridge.  This is optional but encouraged.
-ContactInfo <address@email.com>
+```
+# ftp https://stable.mtier.org/openup
+```
 
-# Pick a nickname that you like for your bridge.  This is optional.
-Nickname PickANickname
+Right after fetching `openup` you can run it to sync M:Tier's repository and update your packages; it's an alternative to `pkg_add -u`.
 
-Log notice file /var/log/tor/notices.log
+Here is how you proceed with these steps:
 
-User _tor
+```
+# ./openup
+```
+
+### 3. Install a Pluggable Transport
+
+We are opting here to install and use **obfs4** as pluggable transport, so we are going to install the `obfs4proxy` package:
+
+```
+# pkg_add obfs4proxy
+```
+
+### 4. Configure `/etc/tor/torrc`
+
+This is a very simple version of the `torrc` configuration file in order to run a Bridge on the Tor network:
+
+```
+Nickname      myNiceBridge # Change "myNiceBridge" to something you like
+ContactInfo   your@e-mail  # Write your e-mail and be aware it will be published
+ORPort        443          # You might use a different port, should you want to
+ExitRelay     0
+SocksPort     0
+Log notice    syslog
 DataDirectory /var/tor
+User          _tor
+RunAsDaemon   1
+ExtORPort     auto
+BridgeRelay   1
+ServerTransportPlugin     obfs4 exec /usr/local/bin/obfs4proxy
+ServerTransportListenAddr obfs4 0.0.0.0:CHANGEME
 ```
 
-Don't forget to change the `ORPort`, `ServerTransportListenAddr`, `ContactInfo`, and `Nickname` options. 
+Replace "CHANGEME" with a port of your choice.
 
-* Note that both Tor's OR port and its obfs4 port must be reachable. If your bridge is behind a firewall or NAT, make sure to open both ports. You can use [our reachability test](https://bridges.torproject.org/scan/) to see if your obfs4 port is reachable from the Internet.
+This port must be externally reachable and must be different from the one specified for ORPort. Please avoid port 9001 because it's commonly associated with Tor and censors may be scanning the Internet for this port.
 
-### 3. Create the tor log directory and give it the correct permissions:
+  * One pretty important test you should consider doing is to test if we can talk **obfs4** to the port used by **ServerTransportListenAddr**. Please try our [reachability test tool for obfs4 Bridges](https://bridges.torproject.org/scan/) to check that.
 
-`# mkdir /var/log/tor`
+### 5. Change `openfiles-max` and `maxfiles`
 
-`# chown _tor /var/log/tor`
+By default, OpenBSD maintains a rather low limit on the maximum number of open files for a process. For a daemon such as Tor's, that opens a connection to each and every other relay (currently around 7000 relays), these limits should be raised.
 
-### 4. Start the tor daemon and make sure it starts at boot:
-
-`# rcctl enable tor`
-
-`# rcctl start tor`
-
-### 5. Monitor your logs
-
-To confirm your bridge is running with no issues, you should see something like this  (`/var/log/tor/notices.log`): 
+Append the following section to `/etc/login.conf`:
 
 ```
-[notice] Your Tor server's identity key fingerprint is '<NICKNAME> <FINGERPRINT>'
-[notice] Your Tor bridge's hashed identity key fingerprint is '<NICKNAME> <HASHED FINGERPRINT>'
-[notice] Registered server transport 'obfs4' at '[::]:46396'
-[notice] Tor has successfully opened a circuit. Looks like client functionality is working.
-[notice] Bootstrapped 100%: Done
-[notice] Now checking whether ORPort <redacted>:3818 is reachable... (this may take up to 20 minutes -- look for log messages indicating success)
-[notice] Self-testing indicates your ORPort is reachable from the outside. Excellent. Publishing server descriptor.
+tor:\
+    :openfiles-max=13500:\
+    :tc=daemon:
 ```
 
-### 6. Final notes
+OpenBSD also stores a kernel-level file descriptor limit in the sysctl variable `kern.maxfiles`.
+
+Increase it from the default of 7030 to 16000:
+
+```
+# echo "kern.maxfiles=16000" >> /etc/sysctl.conf
+# sysctl kern.maxfiles=16000
+```
+
+### 6. Start `tor`
+
+Here we set `tor` to start during boot and call it for the first time:
+
+```
+# rcctl enable tor
+# rcctl start tor
+```
+
+### 7. Final Notes
 
 If you are having trouble setting up your bridge, have a look at [our help section](../../../getting-help/).
 If your bridge is now running, check out the [post-install notes](../post-install/).
-
 ---
 subtitle: How to deploy an obfs4 bridge on OpenBSD
 ---
