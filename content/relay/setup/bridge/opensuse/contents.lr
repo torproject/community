@@ -2,41 +2,47 @@ _model: page
 ---
 color: primary
 ---
-title: Debian / Ubuntu
+title: OpenSUSE
 ---
 body:
 
 ### 1. Enable Automatic Software Updates
 
-One of the most important things to keeps your relay secure is to install security updates timely and ideally automatically so you can not forget about it.
-Follow the instructions to enable [automatic software updates](updates) for your operating system.
+One of the most important things to keeps your relay secure is to install security updates timely and ideally automatically so you can not forget about it. Follow the instructions to enable automatic software updates for your operating system.
 
-### 2. Configure Tor Project's Repository
-
-Configuring the Tor Project's package repository for Debian/Ubuntu is documented **[here](https://support.torproject.org/apt/tor-deb-repo/)**. Please follow those instructions before proceeding.
-
-### 3. Install `tor`
-
-Ensure you update the packages database before installing the package, than call `apt` to install it:
+### 2. Install `tor`
 
 ```
-# apt update
-# apt install tor
+# zypper install tor
 ```
 
-### 4. Install a Pluggable Transport
+### 3. Install a Pluggable Transport
 
 We are opting here to install and use `obfs4` as pluggable transport, so we are going to install `obfs4proxy`.
 
-Different from other Linux distributions, [Debian](https://packages.debian.org/search?keywords=obfs4proxy) and [Ubuntu](https://packages.ubuntu.com/search?keywords=obfs4proxy) have a binary package available. If you're running any of them, that's all you need to install it:
+Sadly there's no package repository we can use to install it on OpenSUSE. We must build it from source.
+
+Here we install the dependencies we need to build the binary:
 
 ```
-# apt install obfs4proxy
+# zypper install go git
 ```
+
+Now we start building the binary, and copy it to a proper directory used by system's **$PATH**:
+
+```
+# mktemp -d
+/tmp/tmp.ZRyC46eW
+# export GOPATH=/tmp/tmp.ZRyC46eW
+# go get gitlab.com/yawning/obfs4.git/obfs4proxy
+# cp $GOPATH/bin/obfs4proxy /usr/local/bin/.
+```
+
+Heavily outdated versions of `git` can make `go get` fail, so try upgrading to a more recent version of `git` if you're running into this problem.
 
 For more information on installing or building `obfs4proxy` from source, please refer to its [official docummentation](https://gitlab.com/yawning/obfs4/-/blob/master/README.md).
 
-### 5. Configure `/etc/tor/torrc`
+### 4. Configure `/etc/tor/torrc`
 
 This is a very simple version of the `torrc` configuration file in order to run a Bridge on the Tor network:
 
@@ -49,7 +55,7 @@ SocksPort   0
 BridgeRelay 1
 ExtORPort   auto
 Log notice  syslog
-ServerTransportPlugin     obfs4 exec /usr/bin/obfs4proxy
+ServerTransportPlugin     obfs4 exec /usr/local/bin/obfs4proxy
 ServerTransportListenAddr obfs4 0.0.0.0:CHANGEME
 ```
 
@@ -59,27 +65,33 @@ This port must be externally reachable and must be different from the one specif
 
   * One pretty important test you should consider doing is to test if we can talk **obfs4** to the port used by **ServerTransportListenAddr**. Please try our [reachability test tool for obfs4 Bridges](https://bridges.torproject.org/scan/) to check that.
 
-### 6. Enable and Start `tor`
+### 5. Enable and Start `tor`
 
 ```
-# systemctl enable --now tor@default
+# systemctl enable --now tor
 ```
 
     ... or restart it if it was running already, so configurations take effect
 
 ```
-# systemctl restart tor@default
+# systemctl restart tor
 ```
 
   * If **systemd** or `tor` complain about starting `obfs4proxy` by binding its socket to ports lower than 1024, you shall consider changing its binary's cappabilities or overriding Tor's unit. For detailed information please refer to our documentation on [GitLab Ticket #18356](https://gitlab.torproject.org/tpo/core/tor/-/issues/18356).
 
-### 7. Final Notes
+### 6. Final Notes
 
 If you are having trouble setting up your bridge, have a look at [our help section](../../../getting-help/).
 If your bridge is now running, check out the [post-install notes](../post-install/).
 ---
-key: 2
----
 html: two-columns-page.html
 ---
-subtitle: How to deploy an obfs4 bridge on Debian / Ubuntu
+key: 9
+---
+subtitle: How to deploy an obfs4 bridge on OpenSUSE
+---
+_template: layout.html
+---
+section: bridge
+---
+section_id: bridge
