@@ -1,0 +1,91 @@
+_model: page
+---
+color: primary
+---
+title: Arch Linux
+---
+body:
+
+### 1. Enable Automatic Software Updates
+
+One of the most important things to keeps your relay secure is to install security updates timely and ideally automatically so you can not forget about it. Follow the instructions to enable automatic software updates for your operating system.
+
+### 2. Install `tor`
+
+To install the `tor` package on Arch Linux, please run:
+
+```
+# pacman -Syu tor
+```
+
+### 3. Install a Pluggable Transport
+
+We are opting here to install and use `obfs4` as pluggable transport, so we are going to install `obfs4proxy`.
+
+Sadly there's no package available on Arch Linux's official repositories to install it, so we must either build and it from source, or use the AUR (ArchLinux User Repository).
+
+Should you opted to use AUR, once `makepkg` must not run as **root**, here is how `obfs4proxy` can be installed on Arch Linux using an unprivileged user account with `sudo` permissions:
+
+```
+$ sudo pacman -Syu git
+$ git clone https://aur.archlinux.org/obfs4proxy
+$ cd obfs4proxy
+$ makepkg -irs
+```
+
+  * **DISCLAIMER:** _AUR_ packages are user produced content. Any use of the provided files is at your own risk.
+
+  For more information on installing or building `obfs4proxy` from source, please refer to its [official docummentation](https://gitlab.com/yawning/obfs4/-/blob/master/README.md).
+
+### 4. Configure `/etc/tor/torrc`
+
+This is a very simple version of the `torrc` configuration file in order to run a Bridge on the Tor network:
+
+```
+Nickname      myNiceBridge # Change "myNiceBridge" to something you like
+ContactInfo   your@e-mail  # Write your e-mail and be aware it will be published
+ORPort        443          # You might use a different port, should you want to
+ExitRelay     0
+SocksPort     0
+Log notice    syslog
+DataDirectory /var/lib/tor
+User          tor
+ExtORPort     auto
+BridgeRelay   1
+ServerTransportPlugin     obfs4 exec /usr/bin/obfs4proxy
+ServerTransportListenAddr obfs4 0.0.0.0:CHANGEME
+```
+
+Replace "CHANGEME" with a port of your choice.
+
+This port must be externally reachable and must be different from the one specified for ORPort. Please avoid port 9001 because it's commonly associated with Tor and censors may be scanning the Internet for this port.
+
+  * One pretty important test you should consider doing is to test if we can talk **obfs4** to the port used by **ServerTransportListenAddr**. Please try our [reachability test tool for obfs4 Bridges](https://bridges.torproject.org/scan/) to check that.
+
+### 5. Enable and Start `tor`
+
+```
+# systemctl enable --now tor
+```
+    ... or restart it if it was running already, so configurations take effect
+
+```
+# systemctl restart tor
+```
+
+### 6. Final Notes
+
+If you are having trouble setting up your bridge, have a look at [our help section](../../../getting-help/).
+If your bridge is now running, check out the [post-install notes](../post-install/).
+---
+html: two-columns-page.html
+---
+key:
+---
+subtitle: How to deploy a Bridge with obfs4 on Arch Linux
+---
+_template: layout.html
+---
+section: bridge
+---
+section_id: bridge
