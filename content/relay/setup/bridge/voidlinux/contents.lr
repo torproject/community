@@ -80,7 +80,7 @@ html: two-columns-page.html
 ---
 key:
 ---
-subtitle: How to deploy a Bridge with obfs4 on Void Linux
+subtitle: How to deploy an obfs4 bridge on Void Linux
 ---
 _template: layout.html
 ---

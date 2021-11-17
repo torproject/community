@@ -82,7 +82,7 @@ html: two-columns-page.html
 ---
 key:
 ---
-subtitle: How to deploy a Bridge with obfs4 on Arch Linux
+subtitle: How to deploy an obfs4 bridge on Arch Linux
 ---
 _template: layout.html
 ---

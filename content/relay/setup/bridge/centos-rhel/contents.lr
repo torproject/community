@@ -133,7 +133,7 @@ html: two-columns-page.html
 ---
 key: 1
 ---
-subtitle: How to deploy a Bridge with obfs4 on CentOS/RHEL
+subtitle: How to deploy an obfs4 bridge on CentOS/RHEL
 ---
 _template: layout.html
 ---
