@@ -8,78 +8,83 @@ body:
 
 ### 1. Enable Automatic Software Updates
 
-One of the most important things to keeps your relay secure is to install security updates timely and ideally automatically so you can not forget about it. Follow the instructions to enable automatic software updates for your operating system.
+One of the most important things to keeps your relay secure is to install security updates timely and ideally automatically so you can not forget about it.
+Follow the instructions to enable [automatic software updates](/relay/setup/guard/centos-rhel/updates/) for your operating system.
 
-### 2. Install `tor`
+### 2. Install Tor
 
 ```
 # zypper install tor
 ```
 
-### 3. Install a Pluggable Transport
+### 3. Build obfs4proxy and move it into place
 
-We are opting here to install and use `obfs4` as pluggable transport, so we are going to install `obfs4proxy`.
-
-Sadly there's no package repository we can use to install it on OpenSUSE. We must build it from source.
-
-Here we install the dependencies we need to build the binary:
+Heavily outdated versions of git can make `go get` fail, so try upgrading to a more recent git version if you're running into this problem.
 
 ```
 # zypper install go git
-```
-
-Now we start building the binary, and copy it to a proper directory used by system's **$PATH**:
-
-```
-# mktemp -d
-/tmp/tmp.ZRyC46eW
-# export GOPATH=/tmp/tmp.ZRyC46eW
+# export GOPATH='mktemp -d'
 # go get gitlab.com/yawning/obfs4.git/obfs4proxy
 # cp $GOPATH/bin/obfs4proxy /usr/local/bin/.
 ```
 
-Heavily outdated versions of `git` can make `go get` fail, so try upgrading to a more recent version of `git` if you're running into this problem.
-
-For more information on installing or building `obfs4proxy` from source, please refer to its [official docummentation](https://gitlab.com/yawning/obfs4/-/blob/master/README.md).
-
-### 4. Configure `/etc/tor/torrc`
-
-This is a very simple version of the `torrc` configuration file in order to run a Bridge on the Tor network:
+### 4. Edit your Tor config file, usually located at `/usr/local/etc/tor` and replace its content with:
 
 ```
-Nickname    myNiceBridge # Change "myNiceBridge" to something you like
-ContactInfo your@e-mail  # Write your e-mail and be aware it will be published
-ORPort      443          # You might use a different port, should you want to
-ExitRelay   0
-SocksPort   0
+RunAsDaemon 1
 BridgeRelay 1
-ExtORPort   auto
-Log notice  syslog
-ServerTransportPlugin     obfs4 exec /usr/local/bin/obfs4proxy
-ServerTransportListenAddr obfs4 0.0.0.0:CHANGEME
+
+# Replace "TODO1" with a Tor port of your choice.  This port must be externally
+# reachable.  Avoid port 9001 because it's commonly associated with Tor and
+# censors may be scanning the Internet for this port.
+ORPort TODO1
+
+ServerTransportPlugin obfs4 exec /usr/local/bin/obfs4proxy
+
+# Replace "TODO2" with an obfs4 port of your choice.  This port must be
+# externally reachable and must be different from the one specified for ORPort.
+# Avoid port 9001 because it's commonly associated with
+# Tor and censors may be scanning the Internet for this port.
+ServerTransportListenAddr obfs4 0.0.0.0:TODO2
+
+# Local communication port between Tor and obfs4.  Always set this to "auto".
+# "Ext" means "extended", not "external".  Don't try to set a specific port
+# number, nor listen on 0.0.0.0.
+ExtORPort auto
+
+# Replace "<address@email.com>" with your email address so we can contact you if
+# there are problems with your bridge.  This is optional but encouraged.
+ContactInfo <address@email.com>
+
+# Pick a nickname that you like for your bridge.  This is optional.
+Nickname PickANickname
 ```
+Don't forget to change the `ORPort`, `ServerTransportListenAddr`, `ContactInfo`, and `Nickname` options.
 
-Replace "CHANGEME" with a port of your choice.
+* Note that both Tor's OR port and its obfs4 port must be reachable. If your bridge is behind a firewall or NAT, make sure to open both ports. You can use [our reachability test](https://bridges.torproject.org/scan/) to see if your obfs4 port is reachable from the Internet.
 
-This port must be externally reachable and must be different from the one specified for **ORPort**. Please avoid port 9001 because it's commonly associated with Tor and censors may be scanning the Internet for this port.
-
-  * One pretty important test you should consider doing is to test if we can talk **obfs4** to the port used by **ServerTransportListenAddr**. Please try our [reachability test tool for obfs4 Bridges](https://bridges.torproject.org/scan/) to check that.
-
-### 5. Enable and Start `tor`
+### 5. Restart tor
 
 ```
 # systemctl enable --now tor
-```
-
-    ... or restart it if it was running already, so configurations take effect
-
-```
 # systemctl restart tor
 ```
 
-  * If **systemd** or `tor` complain about starting `obfs4proxy` by binding its socket to ports lower than 1024, you shall consider changing its binary's cappabilities or overriding Tor's unit. For detailed information please refer to our documentation on [GitLab Ticket #18356](https://gitlab.torproject.org/tpo/core/tor/-/issues/18356).
+### 6. Monitor your logs (usually in your syslog)
 
-### 6. Final Notes
+To confirm your bridge is running with no issues, you should see something like this:
+
+```
+[notice] Your Tor server's identity key fingerprint is '<NICKNAME> <FINGERPRINT>'
+[notice] Your Tor bridge's hashed identity key fingerprint is '<NICKNAME> <HASHED FINGERPRINT>'
+[notice] Registered server transport 'obfs4' at '[::]:46396'
+[notice] Tor has successfully opened a circuit. Looks like client functionality is working.
+[notice] Bootstrapped 100%: Done
+[notice] Now checking whether ORPort <redacted>:3818 is reachable... (this may take up to 20 minutes -- look for log messages indicating success)
+[notice] Self-testing indicates your ORPort is reachable from the outside. Excellent. Publishing server descriptor.
+```
+
+### 7. Final Notes
 
 If you are having trouble setting up your bridge, have a look at [our help section](../../../getting-help/).
 If your bridge is now running, check out the [post-install notes](../post-install/).
