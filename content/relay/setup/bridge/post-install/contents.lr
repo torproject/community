@@ -6,9 +6,16 @@ body:
 
 Congrats!
 
-If you get to this point, it means that your obfs4 bridge is running and is being distributed by BridgeDB to censored users. Note that it can take several days or weeks until you see a consistent set of users, so don't get discouraged if you don't see user connections right away. BridgeDB uses four buckets for bridge distribution: HTTPS, Moat, Email, and manual. Some buckets are used more than others, which also affects the time until your bridge sees users. Finally, there aren't many bridge users out there, so you cannot expect your bridge to be as popular as a relay.
+If you get to this point, it means that your obfs4 bridge is running and is being distributed by BridgeDB to censored users.
+Note that it can take several days or weeks until you see a consistent set of users, so don't get discouraged if you don't see user connections right away.
+BridgeDB uses four buckets for bridge distribution: HTTPS, Moat, Email, and manual.
+Some buckets are used more than others, which also affects the time until your bridge sees users.
+You can manually [change your bridge distribution method](https://support.torproject.org/relay-operators/change-bridge-distribution/).
+Finally, there aren't many bridge users out there, so you cannot expect your bridge to be as popular as a relay.
 
-If you want to connect to your bridge manually, you will need to know the bridge's obfs4 certificate. See the file `/var/lib/tor/pt_state/obfs4_bridgeline.txt` and paste the entire bridge line into Tor Browser:
+If you want to connect to your bridge manually, you will need to know the bridge's obfs4 certificate.
+See the file `obfs4_bridgeline.txt`, which is found inside Tor Data Directory, for example, in Debian/Ubuntu `/var/lib/tor/pt_state/obfs4_bridgeline.txt` or FreeBSD `/var/db/tor/pt_state/obfs4_bridgeline.txt`.
+Paste the entire bridge line into Tor Browser:
 
 ```
 Bridge obfs4 <IP ADDRESS>:<PORT> <FINGERPRINT> cert=<CERTIFICATE> iat-mode=0
@@ -16,7 +23,8 @@ Bridge obfs4 <IP ADDRESS>:<PORT> <FINGERPRINT> cert=<CERTIFICATE> iat-mode=0
 
 You'll need to replace `<IP ADDRESS>`, `<PORT>`, and `<FINGERPRINT>` with the actual values, which you can find in the tor log. Make sure to use `<FINGERPRINT>`, not `<HASHED FINGERPRINT>`; and that `<PORT>` is the obfs4 port you chose - and not the OR port.
 
-Finally, you can monitor your obfs4 bridge's usage on [Relay Search](https://metrics.torproject.org/rs.html#search).  Just enter your bridge's `<HASHED FINGERPRINT>` in the form and click "Search". After having set up the bridge, it takes approximately three hours for the bridge to show up in Relay Search.
+Finally, you can monitor your obfs4 bridge's usage on [Relay Search](https://metrics.torproject.org/rs.html#search).
+Just enter your bridge's `<HASHED FINGERPRINT>` in the form and click "Search". After having set up the bridge, it takes approximately three hours for the bridge to show up in Relay Search.
 
 ---
 html: two-columns-page.html
