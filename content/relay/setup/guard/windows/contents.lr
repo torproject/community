@@ -2,7 +2,7 @@ _model: page
 ---
 color: primary
 ---
-title: Windows 10
+title: Windows
 ---
 html: two-columns-page.html
 ---
@@ -45,9 +45,11 @@ The next step is to download and install Windows Expert bundle as well as set up
 ## 2.2 Configuration 
 
 1. Unpack the zipped Expert bundle into your newly created Tor directory. Two files will be placed there; one called `Tor`, and the other `Data`.
-2. You will now need to create a torrc file to define the ruleset of your relay. 
-3. The default directory path for this file is `C:\Users\torrelay\AppData\Roaming\tor\torrc`, though you can specify a custom location at commandline startup with the `-f` flag. (More below)
-4. Open up your newly created `torrc` file in your text editor and populate it with the following contents:
+2. You should now create a folder called `log` in `C:\Users\torrelay\tor`.
+You'll then need to create an empty file and name it `notices.log` in the `log` folder.
+3. You will now need to create a torrc file to define the ruleset of your relay. 
+4. The default directory path for this file is `C:\Users\torrelay\AppData\Roaming\tor\torrc`, though you can specify a custom location at commandline startup with the `-f` flag. (More below)
+5. Open up your newly created `torrc` file in your text editor and populate it with the following contents:
 
 ```
 #Change the nickname "myNiceRelay" to a name that you like
@@ -75,14 +77,14 @@ There are two methods for starting up your relay for the first time depending on
 ### 3.1 Method 1: User interface
 
 1. Navigate to the directory you extracted Tors files.
-2. Simply right-click on the `tor.exe` file and select 'Run as other user' from the drop-down menu, and enter the password for your Tor account when prompted.
+2. Simply Shift + right-click on the `tor.exe` file and select 'Run as other user' from the drop-down menu, and enter the password for your Tor account when prompted.
 * **Note:** Be sure **not** to click the 'Run as administrator' button - this is dangerous! 
 
 ### 3.2 Method 2: Command line
 
-1. Open your command prompt. Navigate to `C:\Users\user\torrelay\tor\Tor` with the command `cd C:\Users\user\torrelay\tor\Tor`.
+1. Open your command prompt. Navigate to `C:\Users\torrelay\tor\Tor` with the command `cd C:\Users\torrelay\tor\Tor`.
 2. Type `RUNAS /user:torrelay tor.exe` and press enter. If you have your `torrc` file somewhere other than the default location (Like the `home` folder), specify the path with the `-f` flag.
-* Example: `RUNAS /user:torrelay tor.exe -f C:\Users\user\torrelay\tor\Tor\torrc`
+* Example: `RUNAS /user:torrelay "tor.exe -f C:\Users\torrelay\tor\Tor\torrc"`
 3. You should now see Tor starting up in your terminal. Wait until its finished bootstrapping. 
 4. After a short period it should publish its OrPort, and you will be successfully relaying traffic for the Tor Network.
  * **Notice:** Depending on your systems settings, Tor may fail to start and produce an error indicating it is unable to create files. If this occurs, simply open the Windows Defender Security Center and select "App & browser control". Add the tor.exe file to the permissions list, then rerun `tor.exe` from the command line. Tor should now start up normally.
