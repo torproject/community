@@ -16,12 +16,13 @@ For network diversity and stronger anonymity, you should avoid providers and cou
 
 **Try to avoid** the following hosters:
 
+ * Frantech / Ponynet (AS53667)
  * OVH SAS (AS16276)
  * Online S.a.s. (AS12876)
  * Hetzner Online GmbH (AS24940)
  * DigitalOcean, LLC (AS14061)
 
-These hosts already have many tor nodes being hosted there.
+These hosts already have many Tor nodes being hosted there.
 
 **Note**: This page is currently being revamped. If you would like to help out please see [#72](https://gitlab.torproject.org/tpo/web/community/-/issues/72).
 
@@ -208,6 +209,7 @@ These hosts already have many tor nodes being hosted there.
 | [Versio](http://versio.nl/) | - | Yes | Yes | No | - | 2013 |
 | [SnelServer](https://www.snelserver.com/) | - | Yes | Yes | Yes | Abuse complaints must be responded to within 24 hours or the system automatically suspends your account until you do. | 2014 |
 | [ChmuraNet](https://www.chmuranet.com/) | - | Yes | Yes | Yes | Allows anonymous users to run tor exits. Abuse issues will be forwarded. Make sure to tell them that you're running an exit | 09/2014 |
+| [NiceVPS.net](https://nicevps.net) | - | Yes | Yes | Yes | Privacy registration with optional email, cryptocurrencies accepted, [Tor onion link](https://nicevpsb7u3vqpo5zhyahmvfi5tihon4gnh676ucmzpcyxwodeztr4yd.onion) | 06/11/21 |
 
 
 ### New Zealand and Australia
@@ -263,7 +265,7 @@ These hosts already have many tor nodes being hosted there.
 | [Solar Communications Gmbh](https://solarcom.ch/) | AS197988 | Yes | Yes | No | "We allow to place Tor routers, but don't allow to place Tor exit nodes." This applies to all their partners, who actually sell Solar's services to the public, namely: [Server & cloud](https://server-cloud.com), [CoinsHost](https://coinshost.com), [Incloudibly](https://incloudibly.net), [Cloudcom](https://cloudc.me), [AtomDrive](https://atomdrive.net). Cryptocurrencies are accepted. | 12/04/2015 |
 | [fsit](http://www.fsit.ch/) | - | Yes | Yes | Yes | - | 11/2015 |
 | [Swiss Made Host](https://swissmade.host/en/) | - | No | No | No | "Tor is not welcome on our network." | 10/2020 |
-
+| [NiceVPS.net](https://nicevps.net) | - | Yes | Yes | Yes | Privacy registration with optional email, cryptocurrencies accepted, [Tor onion link](https://nicevpsb7u3vqpo5zhyahmvfi5tihon4gnh676ucmzpcyxwodeztr4yd.onion) | 06/11/21 |
 
 ### Slovenia
 
