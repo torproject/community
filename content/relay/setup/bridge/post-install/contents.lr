@@ -15,6 +15,13 @@ Finally, there aren't many bridge users out there, so you cannot expect your bri
 
 If you want to connect to your bridge manually, you will need to know the bridge's obfs4 certificate.
 See the file `obfs4_bridgeline.txt`, which is found inside Tor Data Directory, for example, in Debian/Ubuntu `/var/lib/tor/pt_state/obfs4_bridgeline.txt` or FreeBSD `/var/db/tor/pt_state/obfs4_bridgeline.txt`.
+
+Or when using Docker, use the following command to retrieve the bridge line:
+
+```sh
+docker exec CONTAINER_ID get-bridge-line
+```
+
 Paste the entire bridge line into Tor Browser:
 
 ```
