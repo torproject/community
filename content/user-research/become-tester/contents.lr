@@ -18,7 +18,8 @@ body:
 
 # Become an alpha tester
 
-To help keep Tor Browser available on so many platforms, we rely on a community of volunteer Quality Assurance (QA) testers to trial alpha versions of Tor Browser before its general release. In addition to finding and reporting bugs, alpha testers also have the opportunity to provide feedback on new features to the team before they reach Tor Browser stable.
+To help keep Tor Browser available on so many platforms, we rely on a community of volunteer Quality Assurance (QA) testers to trial alpha versions of Tor Browser before its general release.
+In addition to finding and reporting bugs, alpha testers also have the opportunity to provide feedback on new features to the team before they reach Tor Browser stable.
 
 
 ## How to get started
@@ -27,7 +28,7 @@ To help keep Tor Browser available on so many platforms, we rely on a community 
 
 * Sign up for an account on the [Tor Forum](https://forum.torproject.net/) and post any issues you discover in the [Tor Browser Alpha Feedback](https://forum.torproject.net/c/feedback/tor-browser-alpha-feedback/6) category.
 
-* Or, if you have a Gitlab account, post any bugs you find using the templates provided in [applications/tor-browser](https://gitlab.torproject.org/tpo/applications/tor-browser/-/issues) (but make sure to search the repo for duplicates first).
+* Or, if you have a GitLab account, post any bugs you find using the templates provided in [applications/tor-browser](https://gitlab.torproject.org/tpo/applications/tor-browser/-/issues) (but make sure to search the repo for duplicates first).
 
 
 Please only [download a Tor Browser Alpha](https://www.torproject.org/download/alpha/) if you are okay with some things not working properly, want to help us find and [report bugs](https://support.torproject.org/misc/bug-or-feedback/), and are not putting yourself at risk.
