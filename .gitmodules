@@ -1,4 +1,4 @@
 [submodule "lego"]
 	path = lego
 	url = https://gitlab.torproject.org/tpo/web/lego.git
-	branch = master
+	branch = main
