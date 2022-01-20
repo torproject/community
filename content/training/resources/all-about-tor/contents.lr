@@ -94,8 +94,8 @@ title: Tor Browser
 ----
 description:
 - little-t tor plus patched Firefox
-- Anyone snooping can’t see the websites you visit
-- Websites can’t track you or see other sites you visit (cross-tracking)
+- Anyone snooping can't see the websites you visit
+- Websites can't track you or see other sites you visit (cross-tracking)
 - Prevents other privacy violations like fingerprinting or 3rd party cookies
 - Writes nearly nothing to disk
 - No browser history
@@ -121,8 +121,8 @@ description:
 title: Tor Browser in other languages
 ----
 description:
-- Go to https://torproject.org
-- Select the language  on dropdown menu
+- Go to <https://torproject.org>
+- Select the language on dropdown menu
 - Or select "Download in another language or platform"
 - img place holder
 
@@ -131,12 +131,12 @@ description:
 title: Downloading Tor Browser
 ----
 description:
-- The safest way to download is from https://torproject.org
-- If https://torproject.org is blocked, try mirrors:
-  - http://tor.calyxinstitute.org/
-  - https://tor.eff.org/
+- The safest way to download is from <https://torproject.org>.
+- If <https://torproject.org> is blocked, try mirrors:
+  - <http://tor.calyxinstitute.org/>
+  - <https://tor.eff.org/>
 - Or try GetTor
-  - email gettor@torproject.org and in the message write “windows”, “osx” or “linux” (no quotes, no subject line)
+  - email gettor@torproject.org and in the message write "windows", "osx" or "linux" (no quotes, no subject line)
 
 
 #### slide ####
@@ -200,7 +200,7 @@ description:
 - Is your antivirus or firewall blocking Tor?
 - Do you have a very old operating system?
 - Try uninstalling and reinstalling
-- Get help at https://support.torproject.org 
+- Get help at <https://support.torproject.org> and <https://forum.torproject.net>
 
 
 #### slide ####
@@ -242,9 +242,9 @@ description:
 title: DuckDuckGo
 ----
 description:
-- DuckDuckGo is the default search engine in Tor Browser
-- Using Tor Browser prevents DDG from tracking users, even if they wanted to (they claim not to)
-- Duckduckgo.com or https://3g2upl4pq6kufc4m.onion/
+- DuckDuckGo is the default search engine in Tor Browser.
+- Using Tor Browser prevents DDG from tracking users, even if they wanted to (they claim not to).
+- Duckduckgo.com or <https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/>.
 - img place holder
 
 
@@ -273,20 +273,20 @@ description:
 title: Things to know about mobile Tor
 ----
 description:
-- The design of mobile devices makes full privacy impossible
-- Mobile Tor is best for censorship prevention
-- Can also provide better privacy for some threat models
-- We're making it better all the time and better options for mobile devices are coming out soon
+- The design of mobile devices makes full privacy impossible.
+- Mobile Tor is best for censorship prevention.
+- Can also provide better privacy for some threat models.
+- We're making it better all the time and better options for mobile devices are coming out soon.
 
 
 #### slide ####
 title: Tor Browser for Android
 ----
 description:
-- You don't need to install two APPs (Orbot and Orfox) anymore
-- Find it in the [Google Play](https://play.google.com/store/apps/details?id=org.torproject.torbrowser)
-- Or Guardian Project repository in F-Droid
-- Or download .apk 
+- You don't need to install two APPs (Orbot and Orfox) anymore.
+- Find it in the [Google Play](https://play.google.com/store/apps/details?id=org.torproject.torbrowser).
+- Or Guardian Project repository in F-Droid.
+- Or download the apk .
 - img place holder
 
 
@@ -297,8 +297,15 @@ description:
 - Tor Browser for iOS
 - Find it in the App Store
 - Lots of fake Tor Browsers for iOS
-- Very rudimentary
 - Crashes on sleep
+- img place holder
+
+
+#### slide ####
+title: Orbot
+----
+description:
+-img place holder
 
 
 #### slide ####
@@ -337,19 +344,19 @@ description:
 title: Help using Tor
 ----
 description:
-- Tor Browser Manual: https://tb-manual.torproject.org
-- Support portal: https://support.torproject.org
-- Open mailing lists: https://lists.torproject.org 
-- Chat: IRC OFTC network - easy access through https://webchat.oftc.net channel #tor
-- Community portal: https://community.torproject.org
+- Tor Browser Manual: <https://tb-manual.torproject.org>
+- Support portal: <https://support.torproject.org>
+- Tor Forum: <https://forum.torproject.net> 
+- Chat: IRC OFTC network - easy access through <https://webchat.oftc.net> channel #tor
+- Community portal: <https://community.torproject.org>
 
 
 #### slide ####
 title: If you find a bug in Tor
 ----
 description:
-- GitLab: https://gitlab.torproject.org/
-- Create a login: https://gitlab.onionize.space/
+- GitLab: <https://gitlab.torproject.org/>
+- Create a login: <https://gitlab.onionize.space/>
 - Search for your issue to find any existing tickets.
 - If no ticket opened, open a new ticket with detailed description of the problem.
 
@@ -393,8 +400,8 @@ title: When torproject.org is blocked
 ----
 description:
 - Mirrors
- - https://tor.eff.org/ 
- - http://tor.calyxinstitute.org/ (if https is blocked)
+ - <https://tor.eff.org/>
+ - <http://tor.calyxinstitute.org/> (if https is blocked)
 - GetTor email: gettor@torproject.org
   - Contact from a Gmail or Riseup account
 - Flash drive with Tor on it from someone you trust
@@ -408,7 +415,7 @@ title: Bridges and pluggable transports
 description:
 - Bridges are relays that are not listed publicly
 - Get bridges directly from Tor Browser (moat)
-- Or from the website https://bridges.torproject.org or send an email to bridges@torproject.org from a Gmail, or Riseup.net account
+- Or from the website <https://bridges.torproject.org> or send an email to bridges@torproject.org from a Gmail, or Riseup.net account
 - Or get a bridge address from a trusted person
 - Pluggable transports can be used like bridges to disguise Tor traffic (also called "built-in bridges")
 
@@ -440,15 +447,15 @@ title: Pluggable transports
 description:
 - **obfs4**: makes Tor traffic look random; works in many situations including China (if not, try meek).
 - **meek-azure**: makes it look like Microsoft traffic; works in China.
-- **snowflake**: proxies traffic through temporary proxies using WebRTC (under development). https://snowflake.torproject.org
+- **snowflake**: proxies traffic through temporary proxies using WebRTC. <https://snowflake.torproject.org>
 
 
 #### slide ####
 title: OONI
 ----
-- Open Observatory of Network Interference:https://ooni.torproject.org
+- Open Observatory of Network Interference: <https://ooni.torproject.org>
 - Country-level reports of specific censorship tools in use on certain websites
-- View their reports: https://explorer.ooni.org/
+- View their reports: <https://explorer.ooni.org/>
 - Or use your own OONI Probe to test websites: available in App Store and Google Play.
 
 
@@ -516,7 +523,7 @@ title: OnionShare
 - Uses onion services to securely send files.
 - Creates an onion service where the file can be downloaded.
 - No need to trust third parties like Dropbox.
-- Download from https://onionshare.org
+- Download from <https://onionshare.org>
 
 
 #### slide ####
