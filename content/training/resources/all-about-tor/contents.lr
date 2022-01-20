@@ -1,0 +1,555 @@
+_model: slideshow
+---
+title: All About Tor
+---
+_template: slideshow.html
+---
+background: white
+---
+image: /static/images/onion.png
+---
+slides:
+
+#### slide ####
+title: Agenda
+----
+description:
+- Fill in this section
+- With your agenda for the day
+- To help your audience stay focused!
+
+
+#### slide ####
+title: Let's begin
+----
+description:
+- Do you use Tor?
+- If not, why not?
+- If yes, do you have any questions, concerns, issues, or doubts about using it?
+- Do you teach others about Tor?
+
+
+#### slide ####
+title: What is Tor?
+----
+description:
+- Tor is free software and an open network.
+- Mitigates against tracking, surveillance and censorship.
+- Run by a US non-profit and volunteers from all over the world.
+- It's Tor, not TOR.
+
+
+#### slide ####
+title: Why do we need Tor?
+----
+description:
+- Government mass and targeted surveillance
+- The business model of the Internet: big data, advertising, non-consensual tracking
+- Surveillance threats from family, bosses, bad people on the Internet
+
+
+#### slide ####
+title: Why do you need Tor?
+----
+description:
+- Let's discuss the work you do 
+- Adversaries and challenges 
+- Mitigations
+- How Tor can help
+
+
+#### slide ####
+title: little-t Tor or core tor
+----
+description:
+- Tor the network daemon (a computer program)
+- Presents a SOCKS or http proxy
+- Location and source anonymity, similar to a VPN or regular proxy (but better!)
+- Network of relays in many parts of the world
+
+
+#### slide ####
+title: How Tor relays work
+----
+description:
+- img placeholder
+
+
+#### slide ####
+title: Who can see your activity without Tor or HTTPS?
+----
+description:
+- img placeholder
+
+
+#### slide ####
+title: Who can see your activity with Tor and HTTPS?
+----
+description:
+- img place holder
+
+
+#### slide ####
+title: Tor Browser
+----
+description:
+- little-t tor plus patched Firefox
+- Anyone snooping can’t see the websites you visit
+- Websites can’t track you or see other sites you visit (cross-tracking)
+- Prevents other privacy violations like fingerprinting or 3rd party cookies
+- Writes nearly nothing to disk
+- No browser history
+- Cross platform: Windows, macOS, Linux and Android
+
+
+#### slide ####
+title: Tor Browser features
+----
+description:
+- img place holder
+
+
+#### slide ####
+title: Tor Browser
+----
+description:
+- img place holder
+
+
+
+#### slide ####
+title: Tor Browser in other languages
+----
+description:
+- Go to https://torproject.org
+- Select the language  on dropdown menu
+- Or select "Download in another language or platform"
+- img place holder
+
+
+#### slide ####
+title: Downloading Tor Browser
+----
+description:
+- The safest way to download is from https://torproject.org
+- If https://torproject.org is blocked, try mirrors:
+  - http://tor.calyxinstitute.org/
+  - https://tor.eff.org/
+- Or try GetTor
+  - email gettor@torproject.org and in the message write “windows”, “osx” or “linux” (no quotes, no subject line)
+
+
+#### slide ####
+title: Running Tor Browser the first time
+----
+description:
+- img place holder
+
+
+#### slide ####
+title: Running Tor Browser the first time
+----
+description:
+- img place holder
+
+
+#### slide ####
+title: Using Tor Browser
+----
+description:
+- Default search engine: DuckDuckGo
+- Bundled with NoScript, HTTPS Everywhere
+- You should not add any other extensions nor enable any plugins (eg Flash)!
+- Best practices
+  - Websites won't know anything about you unless you login and tell them.
+
+
+#### slide ####
+title: Changing your Tor circuit
+----
+description:
+- img place holder
+- Clicking on the padlock will show your current Tor circuit (and "New Circuit for this site" option)
+
+
+#### slide ####
+title: Updating Tor Browser
+----
+description:
+- img place holder
+
+
+#### slide ####
+title: Uninstalling Tor Browser
+----
+description:
+- Uninstalling Tor Browser is as easy as moving the folder to the trash! Then, empty the trash.
+- Default Tor Browser folder locations:
+  - Windows: desktop
+  - macOS: move the Tor Browser application to Trash and also the TorBrowser-Data folder `~/Library/Application Support/`
+  - Linux: home, or look for a name like "tor-browser_en-US"
+
+
+#### slide ####
+title: Troubleshooting Tor Browser
+----
+description:
+- Is your system clock correct?
+- Is the browser already running?
+- Are you being censored?
+- Is your antivirus or firewall blocking Tor?
+- Do you have a very old operating system?
+- Try uninstalling and reinstalling
+- Get help at https://support.torproject.org 
+
+
+#### slide ####
+title: More Tor Browser
+----
+slide_layout: title-slide
+----
+background_image: /static/images/onion-white.png
+----
+description:
+-
+
+
+#### slide ####
+title: Tor settings
+----
+description:
+- img place holder
+- Tor settings: censorship mitigation options; access to Tor log
+
+
+#### slide ####
+title: Security Slider
+----
+description:
+- img place holder
+
+
+#### slide ####
+title: NoScript
+----
+description:
+- It's not advisable to change settings in the NoScript "options" menu.
+- For example, adding sites to the "whitelist" can result in fingerprinting.
+- Instead, only "temporarily trust" blocked objects, or use security slider (Standard, Safer, Safest)
+- img place holder
+
+#### slide ####
+title: DuckDuckGo
+----
+description:
+- DuckDuckGo is the default search engine in Tor Browser
+- Using Tor Browser prevents DDG from tracking users, even if they wanted to (they claim not to)
+- Duckduckgo.com or https://3g2upl4pq6kufc4m.onion/
+- img place holder
+
+
+#### slide ####
+title: Plugins, add-ons, JavaScript
+----
+description:
+- Do not add any new add-ons/extensions to Tor, and don't enable any plugins
+  - For example, Flash plugin can reveal your real location 
+- JavaScript is enabled by default, but is sanitized to preserve anonymity
+- To prevent possible JavaScript vulnerabilities, use the "safest" setting in the security slider
+
+
+#### slide ####
+title: Mobile Tor
+----
+slide_layout: title-slide
+----
+background_image: /static/images/onion-white.png
+----
+description:
+-
+
+
+#### slide ####
+title: Things to know about mobile Tor
+----
+description:
+- The design of mobile devices makes full privacy impossible
+- Mobile Tor is best for censorship prevention
+- Can also provide better privacy for some threat models
+- We're making it better all the time and better options for mobile devices are coming out soon
+
+
+#### slide ####
+title: Tor Browser for Android
+----
+description:
+- You don't need to install two APPs (Orbot and Orfox) anymore
+- Find it in the [Google Play](https://play.google.com/store/apps/details?id=org.torproject.torbrowser)
+- Or Guardian Project repository in F-Droid
+- Or download .apk 
+- img place holder
+
+
+#### slide ####
+title: Onion Browser
+----
+description:
+- Tor Browser for iOS
+- Find it in the App Store
+- Lots of fake Tor Browsers for iOS
+- Very rudimentary
+- Crashes on sleep
+
+
+#### slide ####
+title: Using Orbot
+----
+description:
+- Tor proxy for Android
+- Find it on the Play Store or F-Droid
+- Use it to run other Apps through Tor (like Twitter)
+- Click start to run 
+- You can choose your exit country if you want (some countries don't have exits!)
+- img place holder
+
+
+#### slide ####
+title: Using Orbot
+----
+description:
+- Toggle "VPN mode" on main screen  
+- Then click "Orbot-enabled apps"
+- Then select the apps you want to proxy with Tor
+
+
+#### slide ####
+title: How do I get help using Tor?
+----
+slide_layout: title-slide
+----
+background_image: /static/images/onion-white.png
+----
+description:
+-
+
+
+#### slide ####
+title: Help using Tor
+----
+description:
+- Tor Browser Manual: https://tb-manual.torproject.org
+- Support portal: https://support.torproject.org
+- Open mailing lists: https://lists.torproject.org 
+- Chat: IRC OFTC network - easy access through https://webchat.oftc.net channel #tor
+- Community portal: https://community.torproject.org
+
+
+#### slide ####
+title: If you find a bug in Tor
+----
+description:
+- GitLab: https://gitlab.torproject.org/
+- Create a login: https://gitlab.onionize.space/
+- Search for your issue to find any existing tickets.
+- If no ticket opened, open a new ticket with detailed description of the problem.
+
+
+#### slide ####
+title: Circumventing censorship with Tor
+----
+slide_layout: title-slide
+----
+background_image: /static/images/onion.png
+----
+background: white
+---
+description:
+-
+
+
+#### slide ####
+title: What do you do when Tor is blocked?
+----
+slide_layout: title-slide
+----
+background_image: /static/images/onion.png
+----
+background: white
+---
+description:
+-
+
+
+#### slide ####
+title: I downloaded Tor Browser, but it won't connect
+----
+description:
+- If this screen takes a long time and does not connect, you may need a bridge or pluggable transport
+- img place holder
+
+
+#### slide ####
+title: When torproject.org is blocked
+----
+description:
+- Mirrors
+ - https://tor.eff.org/ 
+ - http://tor.calyxinstitute.org/ (if https is blocked)
+- GetTor email: gettor@torproject.org
+  - Contact from a Gmail or Riseup account
+- Flash drive with Tor on it from someone you trust
+- Get the EXE, DMG, tar.xz, don't copy the installed folder
+- Downloading Tor Browser from a non-official source is dangerous!
+
+
+#### slide ####
+title: Bridges and pluggable transports
+----
+description:
+- Bridges are relays that are not listed publicly
+- Get bridges directly from Tor Browser (moat)
+- Or from the website https://bridges.torproject.org or send an email to bridges@torproject.org from a Gmail, or Riseup.net account
+- Or get a bridge address from a trusted person
+- Pluggable transports can be used like bridges to disguise Tor traffic (also called "built-in bridges")
+
+
+#### slide ####
+title: Bridges and pluggable transports
+----
+description:
+- img place holder
+
+
+#### slide ####
+title: Request a bridge
+----
+description:
+- img place holder
+
+
+#### slide ####
+title: Or select a built-in bridge
+----
+description:
+- img place holder
+
+
+#### slide ####
+title: Pluggable transports
+----
+description:
+- **obfs4**: makes Tor traffic look random; works in many situations including China (if not, try meek).
+- **meek-azure**: makes it look like Microsoft traffic; works in China.
+- **snowflake**: proxies traffic through temporary proxies using WebRTC (under development). https://snowflake.torproject.org
+
+
+#### slide ####
+title: OONI
+----
+- Open Observatory of Network Interference:https://ooni.torproject.org
+- Country-level reports of specific censorship tools in use on certain websites
+- View their reports: https://explorer.ooni.org/
+- Or use your own OONI Probe to test websites: available in App Store and Google Play.
+
+
+#### slide ####
+title: Sharing content anonymously with Tor
+----
+slide_layout: title-slide
+----
+background_image: /static/images/onion.png
+----
+background: white
+---
+description:
+-
+
+
+#### slide ####
+title: What are Onion Services?
+----
+slide_layout: title-slide
+----
+background_image: /static/images/onion-white.png
+----
+description:
+-
+
+
+#### slide ####
+title: What are Onion Services?
+----
+slide_layout: title-slide
+----
+background_image: /static/images/onion-white.png
+----
+description:
+- The regular internet allows adversaries to see what you are sharing and with whom, whether you're using Dropbox etc, downloading it from email or through your browser... 
+
+
+#### slide ####
+title: What are Onion Services?
+----
+slide_layout: title-slide
+----
+background_image: /static/images/onion-white.png
+----
+description:
+- ...so Tor devised a sneaky way to hide both the file data and the related metadata!
+
+
+#### slide ####
+title: Onion Services
+----
+- Protection for both the user and the server
+- User learns about xyz.onion
+- Client and service meet at rendezvous point in the Tor cloud
+- End-to-end encrypted without HTTPS
+- Connections never go out to the "vanilla" internet
+- img place holder
+
+
+#### slide ####
+title: OnionShare
+----
+- Secure, private, anonymous file sharing done easy, built on top of the Tor network.
+- Uses onion services to securely send files.
+- Creates an onion service where the file can be downloaded.
+- No need to trust third parties like Dropbox.
+- Download from https://onionshare.org
+
+
+#### slide ####
+title: OnionShare
+----
+- OnionShare connects to Tor network.
+- Click "Start sharing" to share files. Or select another option: host a static website, receive files, anonymous chat.
+- Your contacts only need to have Tor Browser installed.
+- img place holder
+
+
+#### slide ####
+title: OnionShare
+----
+- Once the file is added, click "start sharing"
+- Tip: To allow downloading more than once, e.g. for you group, uncheck the first box.
+- img place holder
+
+#### slide ####
+title: OnionShare
+----
+- When they finish downloading, you'll see a notification alert in OnionShare's history. 
+- Copy and share the address with your contacts (e.g. chat room, Signal group).
+- img place holder
+
+#### slide ####
+title: Thank you!
+----
+slide_layout: title-slide
+----
+background_image: /static/images/onion-white.png
+----
+background: white
+---
+description:
+-
