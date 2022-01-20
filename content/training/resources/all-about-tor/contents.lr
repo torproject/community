@@ -72,21 +72,24 @@ description:
 title: How Tor relays work
 ----
 description:
-- img placeholder
+
+![How Tor relays work](/static/images/training/slides/all-about-tor/how-tor-relays-work.png)
 
 
 #### slide ####
 title: Who can see your activity without Tor or HTTPS?
 ----
 description:
-- img placeholder
+
+![Who can see your activity without Tor or HTTPS](/static/images/training/slides/all-about-tor/who-can-see-your-activity-without-tor-or-https.png)
 
 
 #### slide ####
 title: Who can see your activity with Tor and HTTPS?
 ----
 description:
-- img place holder
+
+![Who can see your activity with Tor and HTTPS](/static/images/training/slides/all-about-tor/who-can-see-your-activity-with-tor-and-https.png)
 
 
 #### slide ####
@@ -106,15 +109,15 @@ description:
 title: Tor Browser features
 ----
 description:
-- img place holder
+
+![Tor Browser features](/static/images/training/slides/all-about-tor/tor-browser-features.png)
 
 
 #### slide ####
 title: Tor Browser
 ----
 description:
-- img place holder
-
+![Tor Browser 10](/static/images/training/slides/all-about-tor/tor-browser-10.png)
 
 
 #### slide ####
@@ -124,7 +127,8 @@ description:
 - Go to <https://torproject.org>
 - Select the language on dropdown menu
 - Or select "Download in another language or platform"
-- img place holder
+
+![Tor Browser localization](/static/images/training/slides/all-about-tor/tb-l10n-2.png)
 
 
 #### slide ####
@@ -143,15 +147,15 @@ description:
 title: Running Tor Browser the first time
 ----
 description:
-- img place holder
+![Tor Browser connecting screen](/static/images/training/slides/all-about-tor/tb-launcher.png)
+
 
 
 #### slide ####
 title: Running Tor Browser the first time
 ----
 description:
-- img place holder
-
+![Tor Browser connecting screen 2](/static/images/training/slides/all-about-tor/tb-launcher-2.png)
 
 #### slide ####
 title: Using Tor Browser
@@ -168,7 +172,11 @@ description:
 title: Changing your Tor circuit
 ----
 description:
-- img place holder
+
+![Tor circuit](/static/images/training/slides/all-about-tor/new-tor-circuit.png)
+
+![Tor new circuit](/static/images/training/slides/all-about-tor/new-tor-circuit-2.png)
+
 - Clicking on the padlock will show your current Tor circuit (and "New Circuit for this site" option)
 
 
