@@ -220,6 +220,13 @@ These hosts already have many Tor nodes being hosted there.
 | [Rimu hosting](http://rimuhosting.com) | - | Yes | Yes | Yes | Have servers in N.Z.; Sydney; London; and Dallas. Locations may vary, but quite happy with the specific Oz/NZ query. | - |
 
 
+### Norway
+
+| **Company/ISP** | **ASN** | **Bridges** | **Relay** | **Exit** | **Comments** | **Last Updated** |
+|-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
+| [Terrahost](https://terrahost.no/) | AS56655 | Yes | Yes | Yes | Check the requirements for running a Tor exit node with them first https://terrahost.no/avtalebetingelser | 01/2022 |
+
+
 ### Poland
 
 | **Company/ISP** | **ASN** | **Bridges** | **Relay** | **Exit** | **Comments** | **Last Updated** |
