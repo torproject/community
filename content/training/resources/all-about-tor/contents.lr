@@ -376,8 +376,6 @@ slide_layout: title-slide
 ----
 background_image: /static/images/onion.png
 ----
-background: white
----
 description:
 -
 
@@ -389,8 +387,6 @@ slide_layout: title-slide
 ----
 background_image: /static/images/onion.png
 ----
-background: white
----
 description:
 -
 
@@ -474,8 +470,6 @@ slide_layout: title-slide
 ----
 background_image: /static/images/onion.png
 ----
-background: white
----
 description:
 -
 
@@ -564,7 +558,5 @@ slide_layout: title-slide
 ----
 background_image: /static/images/onion-white.png
 ----
-background: white
----
 description:
--
+- Name - (add your email here)
