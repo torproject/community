@@ -282,10 +282,10 @@ description:
 title: Plugins, add-ons, JavaScript
 ----
 description:
-- Do not add any new add-ons/extensions to Tor, and don't enable any plugins
-  - For example, Flash plugin can reveal your real location 
-- JavaScript is enabled by default, but is sanitized to preserve anonymity
-- To prevent possible JavaScript vulnerabilities, use the "safest" setting in the security slider
+- Do not add any new add-ons/extensions to Tor, and don't enable any plugins.
+  - For example, Flash plugin can reveal your real location. 
+- JavaScript is enabled by default, but is sanitized to preserve anonymity.
+- To prevent possible JavaScript vulnerabilities, use the "safest" setting in the security slider.
 
 
 #### slide ####
