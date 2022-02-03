@@ -43,13 +43,17 @@ description:
 title: Why do we need Tor?
 ----
 description:
-- Government mass and targeted surveillance
-- The business model of the Internet: big data, advertising, non-consensual tracking
-- Surveillance threats from family, bosses, bad people on the Internet
+- Government mass and targeted surveillance.
+- The business model of the Internet: big data, advertising, non-consensual tracking.
+- Surveillance threats from family, bosses, bad people on the Internet.
 
 
 #### slide ####
 title: Why do you need Tor?
+----
+slide_layout: image_right
+----
+image: /static/images/training/slides/all-about-tor/why-do-you-need-tor.png
 ----
 description:
 - Let's discuss the work you do 
@@ -77,19 +81,26 @@ description:
 
 
 #### slide ####
-title: Who can see your activity without Tor or HTTPS?
+title: 
+----
+slide_layout: image_right
+----
+image: /static/images/training/slides/all-about-tor/who-can-see-your-activity-without-tor-or-https.png
 ----
 description:
 
-![Who can see your activity without Tor or HTTPS](/static/images/training/slides/all-about-tor/who-can-see-your-activity-without-tor-or-https.png)
-
+Who can see your activity without Tor or HTTPS?
 
 #### slide ####
-title: Who can see your activity with Tor and HTTPS?
+title: 
 ----
+slide_layout: image_right
+----
+image: /static/images/training/slides/all-about-tor/who-can-see-your-activity-with-tor-and-https.png
+---- 
 description:
 
-![Who can see your activity with Tor and HTTPS](/static/images/training/slides/all-about-tor/who-can-see-your-activity-with-tor-and-https.png)
+Who can see your activity with Tor and HTTPS?
 
 
 #### slide ####
@@ -123,12 +134,14 @@ description:
 #### slide ####
 title: Tor Browser in other languages
 ----
+slide_layout: image_right
+----
+image: /static/images/training/slides/all-about-tor/tb-l10n-2.png
+----
 description:
 - Go to <https://torproject.org>
 - Select the language on dropdown menu
 - Or select "Download in another language or platform"
-
-![Tor Browser localization](/static/images/training/slides/all-about-tor/tb-l10n-2.png)
 
 
 #### slide ####
@@ -147,15 +160,15 @@ description:
 title: Running Tor Browser the first time
 ----
 description:
-![Tor Browser connecting screen](/static/images/training/slides/all-about-tor/tb-launcher.png)
-
+![Tor Browser connection screen](/static/images/training/slides/all-about-tor/running-tb-first-time.png)
 
 
 #### slide ####
 title: Running Tor Browser the first time
 ----
 description:
-![Tor Browser connecting screen 2](/static/images/training/slides/all-about-tor/tb-launcher-2.png)
+![Tor Browser connection screen](/static/images/training/slides/all-about-tor/running-tb-first-time-2.png)
+
 
 #### slide ####
 title: Using Tor Browser
@@ -171,20 +184,20 @@ description:
 #### slide ####
 title: Changing your Tor circuit
 ----
+slide_layout: image_right
+----
+image: /static/images/training/slides/all-about-tor/new-circuit.png
+----
 description:
-
-![Tor circuit](/static/images/training/slides/all-about-tor/new-tor-circuit.png)
-
-![Tor new circuit](/static/images/training/slides/all-about-tor/new-tor-circuit-2.png)
-
-- Clicking on the padlock will show your current Tor circuit (and "New Circuit for this site" option)
+Clicking on the padlock will show your current Tor circuit (and "New Circuit for this site" option)
 
 
 #### slide ####
 title: Updating Tor Browser
 ----
 description:
-- img place holder
+
+![Updating Tor Browser](/static/images/training/slides/all-about-tor/update1.png)
 
 
 #### slide ####
@@ -225,8 +238,12 @@ description:
 #### slide ####
 title: Tor settings
 ----
+slide_layout: image_right
+----
+image: /static/images/training/slides/all-about-tor/tor-browser-settings.png
+----
 description:
-- img place holder
+
 - Tor settings: censorship mitigation options; access to Tor log
 
 
@@ -234,17 +251,21 @@ description:
 title: Security Slider
 ----
 description:
-- img place holder
+![Security Slider](/static/images/training/slides/all-about-tor/security-level.png)
 
 
 #### slide ####
 title: NoScript
 ----
+slide_layout: image_left
+----
+image: /static/images/training/slides/all-about-tor/no-script.png
+----
 description:
 - It's not advisable to change settings in the NoScript "options" menu.
 - For example, adding sites to the "whitelist" can result in fingerprinting.
 - Instead, only "temporarily trust" blocked objects, or use security slider (Standard, Safer, Safest)
-- img place holder
+
 
 #### slide ####
 title: DuckDuckGo
@@ -253,7 +274,8 @@ description:
 - DuckDuckGo is the default search engine in Tor Browser.
 - Using Tor Browser prevents DDG from tracking users, even if they wanted to (they claim not to).
 - Duckduckgo.com or <https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/>.
-- img place holder
+
+![DuckDuckGo Onion site](/static/images/training/slides/all-about-tor/duckduckgo.png)
 
 
 #### slide ####
@@ -290,34 +312,45 @@ description:
 #### slide ####
 title: Tor Browser for Android
 ----
+slide_layout: image_right
+----
+image: /static/images/training/slides/all-about-tor/tba.png
+----
 description:
 - You don't need to install two APPs (Orbot and Orfox) anymore.
 - Find it in the [Google Play](https://play.google.com/store/apps/details?id=org.torproject.torbrowser).
 - Or Guardian Project repository in F-Droid.
-- Or download the apk .
-- img place holder
+- Or download the apk.
 
 
 #### slide ####
 title: Onion Browser
+----
+slide_layout: image_right
+----
+image: /static/images/training/slides/all-about-tor/onionbrowser.png
 ----
 description:
 - Tor Browser for iOS
 - Find it in the App Store
 - Lots of fake Tor Browsers for iOS
 - Crashes on sleep
-- img place holder
 
 
 #### slide ####
 title: Orbot
 ----
 description:
--img place holder
+
+![Orbot](/static/images/training/slides/all-about-tor/orbot.png)
 
 
 #### slide ####
 title: Using Orbot
+----
+slide_layout: image_right
+----
+image: /static/images/training/slides/all-about-tor/using-orbot.png
 ----
 description:
 - Tor proxy for Android
@@ -325,11 +358,14 @@ description:
 - Use it to run other Apps through Tor (like Twitter)
 - Click start to run 
 - You can choose your exit country if you want (some countries don't have exits!)
-- img place holder
 
 
 #### slide ####
 title: Using Orbot
+----
+slide_layout: image_right
+----
+image: /static/images/training/slides/all-about-tor/orbot-vpn.png
 ----
 description:
 - Toggle "VPN mode" on main screen  
@@ -374,7 +410,7 @@ title: Circumventing censorship with Tor
 ----
 slide_layout: title-slide
 ----
-background_image: /static/images/onion.png
+background_image: /static/images/onion-white.png
 ----
 description:
 -
@@ -385,7 +421,7 @@ title: What do you do when Tor is blocked?
 ----
 slide_layout: title-slide
 ----
-background_image: /static/images/onion.png
+background_image: /static/images/onion-white.png
 ----
 description:
 -
@@ -396,7 +432,7 @@ title: I downloaded Tor Browser, but it won't connect
 ----
 description:
 - If this screen takes a long time and does not connect, you may need a bridge or pluggable transport
-- img place holder
+![Tor connection screen](/static/images/training/slides/all-about-tor/connecting-tor-blocked.png)
 
 
 #### slide ####
@@ -428,21 +464,23 @@ description:
 title: Bridges and pluggable transports
 ----
 description:
-- img place holder
+
+![Bridges and Pluggable Transports](/static/images/training/slides/all-about-tor/bridges-pts.png)
+
 
 
 #### slide ####
 title: Request a bridge
 ----
 description:
-- img place holder
+![Request a bridge](/static/images/training/slides/all-about-tor/bridges-moat.png)
 
 
 #### slide ####
 title: Or select a built-in bridge
 ----
 description:
-- img place holder
+![Built-in bridge](/static/images/training/slides/all-about-tor/bridges-builtin.png)
 
 
 #### slide ####
@@ -457,6 +495,11 @@ description:
 #### slide ####
 title: OONI
 ----
+slide_layout: image_right
+----
+image: /static/images/training/slides/all-about-tor/ooniprobe.png
+----
+description:
 - Open Observatory of Network Interference: <https://ooni.torproject.org>
 - Country-level reports of specific censorship tools in use on certain websites
 - View their reports: <https://explorer.ooni.org/>
@@ -468,17 +511,6 @@ title: Sharing content anonymously with Tor
 ----
 slide_layout: title-slide
 ----
-background_image: /static/images/onion.png
-----
-description:
--
-
-
-#### slide ####
-title: What are Onion Services?
-----
-slide_layout: title-slide
-----
 background_image: /static/images/onion-white.png
 ----
 description:
@@ -488,39 +520,36 @@ description:
 #### slide ####
 title: What are Onion Services?
 ----
-slide_layout: title-slide
-----
-background_image: /static/images/onion-white.png
-----
 description:
-- The regular internet allows adversaries to see what you are sharing and with whom, whether you're using Dropbox etc, downloading it from email or through your browser... 
+The regular internet allows adversaries to see what you are sharing and with whom, whether you're using Dropbox etc, downloading it from email or through your browser... 
 
 
 #### slide ####
-title: What are Onion Services?
-----
-slide_layout: title-slide
-----
-background_image: /static/images/onion-white.png
+title: 
 ----
 description:
-- ...so Tor devised a sneaky way to hide both the file data and the related metadata!
+
+...so Tor devised a sneaky way to hide both the file data and the related metadata!
 
 
 #### slide ####
 title: Onion Services
 ----
+description:
 - Protection for both the user and the server
 - User learns about xyz.onion
 - Client and service meet at rendezvous point in the Tor cloud
 - End-to-end encrypted without HTTPS
 - Connections never go out to the "vanilla" internet
-- img place holder
+
+![ProPublica Onion site](/static/images/training/slides/all-about-tor/propublica.png)
+
 
 
 #### slide ####
 title: OnionShare
 ----
+description:
 - Secure, private, anonymous file sharing done easy, built on top of the Tor network.
 - Uses onion services to securely send files.
 - Creates an onion service where the file can be downloaded.
@@ -531,32 +560,63 @@ title: OnionShare
 #### slide ####
 title: OnionShare
 ----
-- OnionShare connects to Tor network.
+slide_layout: image_right
+----
+image: /static/images/training/slides/all-about-tor/onionshare.png
+----
+description:
 - Click "Start sharing" to share files. Or select another option: host a static website, receive files, anonymous chat.
 - Your contacts only need to have Tor Browser installed.
-- img place holder
 
 
 #### slide ####
 title: OnionShare
 ----
-- Once the file is added, click "start sharing"
+slide_layout: image_right
+----
+image: /static/images/training/slides/all-about-tor/onionshare-2.png
+----
+description:
+- Once the file is added, click "start sharing".
 - Tip: To allow downloading more than once, e.g. for you group, uncheck the first box.
-- img place holder
+
 
 #### slide ####
 title: OnionShare
 ----
-- When they finish downloading, you'll see a notification alert in OnionShare's history. 
+slide_layout: image_right
+----
+image: /static/images/training/slides/all-about-tor/onionshare-3.png
+----
+description:
 - Copy and share the address with your contacts (e.g. chat room, Signal group).
-- img place holder
+
+
+#### slide ####
+title: OnionShare
+----
+slide_layout: image_right
+----
+image: /static/images/training/slides/all-about-tor/onionshare-4.png
+----
+description:
+- When they finish downloading, you'll see a notification alert in OnionShare's history.
+
 
 #### slide ####
 title: Thank you!
+----
+author:
+name - email@example.com
+----
+subtitle:
+PGP FINGERPRINT
 ----
 slide_layout: title-slide
 ----
 background_image: /static/images/onion-white.png
 ----
 description:
-- Name - (add your email here)
+-
+
+
