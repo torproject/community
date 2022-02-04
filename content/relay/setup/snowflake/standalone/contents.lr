@@ -34,7 +34,7 @@ and your proxy is up and running!
 
 ### Ansible
 
-There is now an ansible role to install a Snowflake proxy on Debian [created by Jacobo Nájera](https://lists.torproject.org/pipermail/anti-censorship-team/2021-March/000143.html): https://galaxy.ansible.com/nvjacobo/snowflake
+There is now an ansible role to install a Snowflake proxy on Debian, Fedora, ArchLinux, FreeBSD and Ubuntu [created by Jacobo Nájera](https://lists.torproject.org/pipermail/anti-censorship-team/2021-March/000143.html): https://galaxy.ansible.com/nvjacobo/snowflake
 
 ### Compiling and running from source
 
