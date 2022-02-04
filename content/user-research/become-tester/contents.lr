@@ -16,8 +16,6 @@ html: two-columns-page.html
 ---
 body:
 
-# Become an alpha tester
-
 To help keep Tor Browser available on so many platforms, we rely on a community of volunteer Quality Assurance (QA) testers to trial alpha versions of Tor Browser before its general release.
 In addition to finding and reporting bugs, alpha testers also have the opportunity to provide feedback on new features to the team before they reach Tor Browser stable.
 
