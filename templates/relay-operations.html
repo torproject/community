@@ -4,7 +4,7 @@
       {{ this.body }}
     </div>
     <div class="col-lg-5">
-      <img src="/static/images/home/png/{{ this.section_id }}.png" class="img-fluid" alt="{{ _(this.section) }}" />
+      <img src="{{ ('/static/images/home/png/'+ this.section_id + '.png')|url }}" class="img-fluid" alt="{{ this.title }}" />
     </div>
   </div>
   <div class="row">
