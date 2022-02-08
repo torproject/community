@@ -56,8 +56,8 @@ slide_layout: image_right
 image: /static/images/training/slides/all-about-tor/why-do-you-need-tor.png
 ----
 description:
-- Let's discuss the work you do 
-- Adversaries and challenges 
+- Let's discuss the work you do
+- Adversaries and challenges
 - Mitigations
 - How Tor can help
 
@@ -81,7 +81,7 @@ description:
 
 
 #### slide ####
-title: 
+title:
 ----
 slide_layout: image_right
 ----
@@ -92,12 +92,12 @@ description:
 Who can see your activity without Tor or HTTPS?
 
 #### slide ####
-title: 
+title:
 ----
 slide_layout: image_right
 ----
 image: /static/images/training/slides/all-about-tor/who-can-see-your-activity-with-tor-and-https.png
----- 
+----
 description:
 
 Who can see your activity with Tor and HTTPS?
@@ -257,16 +257,12 @@ description:
 #### slide ####
 title: NoScript
 ----
-slide_layout: image_left
-----
-image: /static/images/training/slides/all-about-tor/no-script.png
-----
 description:
 - It's not advisable to change settings in the NoScript "options" menu.
 - For example, adding sites to the "whitelist" can result in fingerprinting.
 - Instead, only "temporarily trust" blocked objects, or use security slider (Standard, Safer, Safest)
 
-
+![Noscript example](/static/images/training/slides/all-about-tor/no-script.png)
 #### slide ####
 title: DuckDuckGo
 ----
@@ -417,7 +413,7 @@ description:
 
 
 #### slide ####
-title: What do you do when Tor is blocked?
+title: What to do when Tor is blocked?
 ----
 slide_layout: title-slide
 ----
