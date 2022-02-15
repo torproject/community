@@ -21,6 +21,28 @@ However there is no single one-size-fits-all solution for this problem at the mo
 Defending a site under attack requires creativity and a custom-tailored approach.
 Here are a few tips:
 
+### Configuration parameters
+
+Since [Proposal 305](https://gitlab.torproject.org/tpo/core/torspec/-/blob/main/proposals/305-establish-intro-dos-defense-extention.txt) was implemented, some `torrc` options were added to help mitigating DoS attacks at the introduction points:
+
+* `HiddenServiceEnableIntroDoSDefense`: Enable DoS defense at the intropoint level.
+   When this is enabled, the rate and burst parameter will be sent to the intro point which will then use them to apply rate limiting for introduction request to this service.
+
+* `HiddenServiceEnableIntroDoSBurstPerSec`: The allowed client introduction burst per second at the introduction point.
+   If this option is 0, it is considered infinite and thus if HiddenServiceEnableIntroDoSDefense is set, it then effectively disables the defenses.
+
+* `HiddenServiceEnableIntroDoSRatePerSec`: The allowed client introduction rate per second at the introduction point.
+   If this option is 0, it is considered infinite and thus if HiddenServiceEnableIntroDoSDefense is set, it then effectively disables the defenses.
+
+For more information on how they work, check the `tor(1)` manpage and the `[EST_INTRO_DOS_EXT]` section of the [Onion Services v3 specification](https://gitlab.torproject.org/tpo/core/torspec/-/blob/main/rend-spec-v3.txt).
+
+The following configuration options can be used to limit connections in the rendezvous circuits:
+
+* `HiddenServiceMaxStreams`: The maximum number of simultaneous streams (connections) per rendezvous circuit.
+   The maximum value allowed is 65535. (Setting this to 0 will allow an unlimited number of simultaneous streams.)
+
+* `HiddenServiceMaxStreamsCloseCircuit`: If set to 1, then exceeding HiddenServiceMaxStreams will cause the offending rendezvous circuit to be torn down, as opposed to stream creation requests that exceed the limit being silently ignored.
+
 ### Onionbalance
 
 [Onionbalance](https://onionbalance-v3.readthedocs.io/en/latest/v3/tutorial-v3.html) allows onion service operators to achieve the property of high availability by allowing multiple machines to handle requests for an onion service.
