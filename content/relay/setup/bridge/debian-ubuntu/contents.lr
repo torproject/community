@@ -76,18 +76,18 @@ To work around systemd hardening, you will also need to set `NoNewPrivileges=no`
 Enable and Start `tor`:
 
 ```
-# systemctl enable --now tor@default
+# systemctl enable --now tor.service
 ```
 
 Or restart it if it was running already, so configurations take effect:
 
 ```
-# systemctl restart tor
+# systemctl restart tor.service
 ```
 
 ### 7. Monitor your logs
 
-To confirm your bridge is running with no issues, you should see something like this (usually in `/var/log/tor/log` or `/var/log/syslog`):
+To confirm your bridge is running with no issues, you should see something like this (usually in `/var/log/syslog` or run `# journalctl -e -u tor@default`):
 ```
 [notice] Your Tor server's identity key fingerprint is '<NICKNAME> <FINGERPRINT>'
 [notice] Your Tor bridge's hashed identity key fingerprint is '<NICKNAME> <HASHED FINGERPRINT>'
