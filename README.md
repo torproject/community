@@ -24,7 +24,7 @@ Its code can be found at [GitHub](https://github.com/lektor/lektor).
 
 ### (Easy) Edit this page button
 
-You can click ```Edit this page``` and submit your content changes in a [Pull Request in GitHub](https://github.com/torproject/community/pulls).
+You can click ```Edit this page``` and submit your content changes in a [Pull Request in GitLab](https://gitlab.torproject.org/tpo/web/community/-/merge_requests/).
 
 ### (Advanced) Compiling a local version of the website
 
