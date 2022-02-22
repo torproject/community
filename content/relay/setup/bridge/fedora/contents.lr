@@ -47,7 +47,7 @@ The package is called `obfs4` and this is all you need to install it:
 # dnf install obfs4
 ```
 
-For more information about installing or building `obfs4proxy` from source, please refer to its [official docummentation](https://gitlab.com/yawning/obfs4/-/blob/master/README.md).
+For more information about installing or building `obfs4proxy` from source, please refer to its [official documentation](https://gitlab.com/yawning/obfs4/-/blob/master/README.md).
 
 ### 5. Edit your Tor config file, usually located at `/etc/tor/torrc` and replace its content with:
 
