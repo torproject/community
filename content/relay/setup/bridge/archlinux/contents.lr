@@ -36,7 +36,7 @@ $ makepkg -irs
 
   * **DISCLAIMER:** _AUR_ packages are user produced content. Any use of the provided files is at your own risk.
 
-  For more information on installing or building `obfs4proxy` from source, please refer to its [official docummentation](https://gitlab.com/yawning/obfs4/-/blob/master/README.md).
+  For more information on installing or building `obfs4proxy` from source, please refer to its [official documentation](https://gitlab.com/yawning/obfs4/-/blob/master/README.md).
 
 ### 4. Edit your Tor config file, usually located at `/etc/tor/torrc` and replace its content with:
 
