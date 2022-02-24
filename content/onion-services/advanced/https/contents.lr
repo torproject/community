@@ -68,8 +68,6 @@ Remember that there's no requirement for the webserver and the Tor process to be
 Recently in 2020, the Certificate Authority/Browser Forum voted and [approved version 3 onion certificates](https://archive.cabforum.org/pipermail/servercert-wg/2020-February/001637.html), so CAs are now allowed to issue Domain Validation (DV) and Organization Validation (OV) certificates containing Tor onion addresses.
 In the nearby future, we hope that [Let's Encrypt](https://letsencrypt.org/) CA can start issuing v3 onion certificates for free.
 
-If you're going to purchase an HTTPS certificate be aware that [v2 Onion Service deprecation](https://blog.torproject.org/v2-deprecation-timeline) will happen between July - October 2021.
-
 ### Read more
 
  * For a detailed step by step how to create an HTTPS onion certificate, check [Brave's blog post](https://brave.com/new-onion-service/).
