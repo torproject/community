@@ -8,7 +8,7 @@ _template: layout.html
 ---
 title: Onion Services
 ---
-subtitle: Onion services help you and your users defeat surveillance and censorship. Learn how you can deploy onion services.
+subtitle: Onion services help you and your users defeat surveillance and censorship. Learn how you can deploy Onion Services.
 ---
 cta: Grow your .onion
 ---
@@ -20,4 +20,4 @@ body:
 
 ##What are Onion Services?
 
-Onion services are services that can only be accessed over Tor. Running an onion service gives your users all the security of HTTPS with the added privacy benefits of Tor Browser.
+Onion services are services that can only be accessed over Tor. Running an Onion Service gives your users all the security of HTTPS with the added privacy benefits of Tor Browser.
