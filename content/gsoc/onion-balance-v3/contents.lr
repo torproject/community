@@ -26,7 +26,7 @@ title: Onion Balance V3 Enhancements
 ---
 subtitle:
 
-OnionBalance allows Tor onion service requests to be distributed across multiple backend Tor instances. OnionBalance provides load-balancing while also making onion services more resilient and reliable by eliminating single points-of-failure.
+OnionBalance allows Tor Onion Service requests to be distributed across multiple backend Tor instances. OnionBalance provides load-balancing while also making Onion Services more resilient and reliable by eliminating single points-of-failure.
 ---
 body:
 
@@ -34,7 +34,7 @@ body:
 
 Onion services have been around for a while. During the past few years, they have been deployed by many serious websites like major media organizations (like the Washington Post), search engines (such as DuckDuckGo) and critical Internet infrastructure (e.g. PGP keyservers). This has been a great opportunity for us, the onion balance development team, since our code has been hardened and tested by the sheer volume of clients that use it every day.
 
-Onionbalance is one of the standard ways onion service administrators can load balance onion services, but it didn't work for v3 onions. Until [recently](https://blog.torproject.org/cooking-onions-reclaiming-onionbalance) when we released a new version of Onionbalance that supports v3 onion services.
+Onionbalance is one of the standard ways Onion Service administrators can load balance Onion Services, but it didn't work for v3 onions. Until [recently](https://blog.torproject.org/cooking-onions-reclaiming-onionbalance) when we released a new version of Onionbalance that supports v3 Onion Services.
 
 # Proposal
 
@@ -45,10 +45,10 @@ In particular, we would like to implement some or all of the following features:
 - Support for v3 ["distinct descriptor" mode](https://onionbalance-v3.readthedocs.io/en/latest/v2/design.html#choice-of-introduction-points).
 This mode allows Onionbalance v2 to load-balance more than 10 backend instances, whereas currently Onionbalance v3 has a limit of 8 backend instances. In theory, Onionbalance could load-balance hundreds of backend instances by publishing descriptors at small time intervals that contain introduction points from a different subset of those instances each time.
 - Minimize the differences between both v3 and other descriptors.
-Currently Onionbalance v3 descriptors can look different from other descriptors, which makes it possible for clients and HSDirs to learn that a service is using Onionbalance. This can be an issue for more [advanced onion service threat models](https://github.com/mikeperry-tor/vanguards/blob/master/README_SECURITY.md#how-to-onionbalance).
+Currently Onionbalance v3 descriptors can look different from other descriptors, which makes it possible for clients and HSDirs to learn that a service is using Onionbalance. This can be an issue for more [advanced Onion Service threat models](https://github.com/mikeperry-tor/vanguards/blob/master/README_SECURITY.md#how-to-onionbalance).
 - Enable client authorization on the frontend service.
 This may be needed in specialized use cases. Adding this feature would first require implementing client authorization support to Stem v3 descriptors and then using that feature in Onionbalance.
-- Allow the ability to transfer your existing v3 onion service to Onionbalance.
+- Allow the ability to transfer your existing v3 Onion Service to Onionbalance.
 
 
 # Resources

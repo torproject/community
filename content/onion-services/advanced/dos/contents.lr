@@ -45,14 +45,14 @@ The following configuration options can be used to limit connections in the rend
 
 ### Onionbalance
 
-[Onionbalance](https://onionbalance-v3.readthedocs.io/en/latest/v3/tutorial-v3.html) allows onion service operators to achieve the property of high availability by allowing multiple machines to handle requests for an onion service.
+[Onionbalance](https://onionbalance-v3.readthedocs.io/en/latest/v3/tutorial-v3.html) allows Onion Service operators to achieve the property of high availability by allowing multiple machines to handle requests for an Onion Service.
 You can use Onionbalance to scale horizontally.
 The more you scale, the harder it is for attackers to overwhelm you.
-Onionbalance is available for [v3 onion services](https://blog.torproject.org/cooking-onions-reclaiming-onionbalance).
+Onionbalance is available for [v3 Onion Services](https://blog.torproject.org/cooking-onions-reclaiming-onionbalance).
 
 ### Client authorization or multiple onion addresses to compartmentalize your users
 
-If you have users you trust, give them dedicated onion service and client authorization credentials so that it can always be available.
+If you have users you trust, give them dedicated Onion Service and client authorization credentials so that it can always be available.
 For users you don't trust, split them into multiple addresses.
 That said, having too many onion addresses is actually bad for your security (because of the use of many guard nodes), so try to use [client authorization](../client-auth/) when possible.
 

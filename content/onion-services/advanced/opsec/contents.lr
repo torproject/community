@@ -1,4 +1,4 @@
-_section: onion services
+_section: Onion Services
 ---
 section_id: onion-services
 ---
@@ -22,11 +22,11 @@ Also, here are some more anonymity issues you should keep in mind:
 
  - As mentioned [here](../../setup/), be careful of letting your web server reveal identifying information about you, your computer, or your location.
 For example, readers can probably determine whether it's thttpd or Apache, and learn something about your operating system.
- - If your computer isn't online all the time, your onion service won't be either.
+ - If your computer isn't online all the time, your Onion Service won't be either.
 This leaks information to an observant adversary.
- - It is generally a better idea to host onion services on a Tor client rather than a Tor relay, since relay uptime and other properties are publicly visible.
- - The longer an onion service is online, the higher the risk that its location is discovered.
-The most prominent attacks are building a profile of the onion service's availability and matching induced traffic patterns.
+ - It is generally a better idea to host Onion Services on a Tor client rather than a Tor relay, since relay uptime and other properties are publicly visible.
+ - The longer an Onion Service is online, the higher the risk that its location is discovered.
+The most prominent attacks are building a profile of the Onion Service's availability and matching induced traffic patterns.
  - Another common issue is whether to use HTTPS on your onionsite or not.
 Have a look at [this post](https://blog.torproject.org/blog/facebook-hidden-services-and-https-certs) on the Tor Blog to learn more about these issues.
- - To protect your onion service from advanced attacks you should use [Vanguards addon](https://github.com/mikeperry-tor/vanguards), read [Tor blog about Vanguards](https://blog.torproject.org/announcing-vanguards-add-onion-services) and [Vanguards' Security README](https://github.com/mikeperry-tor/vanguards/blob/master/README_SECURITY.md).
+ - To protect your Onion Service from advanced attacks you should use [Vanguards addon](https://github.com/mikeperry-tor/vanguards), read [Tor blog about Vanguards](https://blog.torproject.org/announcing-vanguards-add-onion-services) and [Vanguards' Security README](https://github.com/mikeperry-tor/vanguards/blob/master/README_SECURITY.md).

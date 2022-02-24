@@ -6,7 +6,7 @@ color: primary
 ---
 _template: layout.html
 ---
-title: HTTPS for your onion service
+title: HTTPS for your Onion Service
 ---
 subtitle: Learn why some onions have TLS certificates.
 ---
@@ -19,7 +19,7 @@ body:
 When visiting a site over HTTPS (HTTP over TLS), the TLS protocol prevents data in transit from being read or manipulated by man in the middle attacks, and an x.509 certificate obtained from a Certificate Authority (CA) validates that the user is actually connecting to a server representing the domain name in the browser address bar.
 Modern browsers indicate that a connection is insecure if not using TLS, and require that a TLS connection is authenticated by a CA-issued x.509 certificate.
 
-When visiting a site over the onion services protocol, the Tor protocol prevents data in transit from being read or manipulated by man in the middle attacks, and the onion service protocol validates that the user is connected to the domain name in the browser address bar.
+When visiting a site over the Onion Services protocol, the Tor protocol prevents data in transit from being read or manipulated by man in the middle attacks, and the Onion Service protocol validates that the user is connected to the domain name in the browser address bar.
 No certificate authority is required for this proof, because the name of the service is the actual public key used to authenticate the underlying connection.
 
 As ".onion" is a [special top level domain name](https://tools.ietf.org/html/rfc7686), most Certificate Authorities don't have support for issuing X.509 certificates for onion sites.
@@ -40,15 +40,15 @@ Alternatively, websites can provide other ways to verify their onion address usi
 While there is extensive criticism regarding HTTPS and the CA trust model, the information security community has taught users to look for HTTPS when visiting a website as a synonym of secure connection, and to avoid HTTP connections.
 Tor Developers and UX team worked together to bring a new user experience for Tor Browser users, so when a user visits an onion site using HTTP, [Tor Browser doesn't display a warning or error message](https://support.torproject.org/onionservices/onionservices-5/).
 
-3. One of the risks of using a certificate issued by a CA is that `.onion` names might unintentionally get [leaked](https://crt.sh/?q=.onion) if the onion service owners use HTTPS due to [Certificate Transparency](https://certificate.transparency.dev/).
+3. One of the risks of using a certificate issued by a CA is that `.onion` names might unintentionally get [leaked](https://crt.sh/?q=.onion) if the Onion Service owners use HTTPS due to [Certificate Transparency](https://certificate.transparency.dev/).
 There is an [open proposal](https://github.com/alecmuffett/onion-dv-certificate-proposal/blob/master/text/draft-muffett-same-origin-onion-certificates.txt) to allow Tor Browser to verify self-created HTTPS certificates.
-If this proposal gets implemented, an onion service operator could make their own HTTPS certificate chain using an onion key to sign it.
+If this proposal gets implemented, an Onion Service operator could make their own HTTPS certificate chain using an onion key to sign it.
 Tor Browser would know how to verify such a self-created chain.
 This will mean that you don't need to involve a third-party in making it, so no third-party will know that your onion exists.
 
 4. Some websites have a complex setup, and are serving HTTP and HTTPS content.
-In that case, just using onion services over HTTP could leak [secure cookies](https://github.com/alecmuffett/eotk/blob/master/docs.d/security-advisories.d/001-torbrowser.md).
-We wrote about [Tor Browser security expectations](https://blog.torproject.org/tor-brower-onion-services-challenges-opportunities), and how we're working on onion services usability and adoption.
+In that case, just using Onion Services over HTTP could leak [secure cookies](https://github.com/alecmuffett/eotk/blob/master/docs.d/security-advisories.d/001-torbrowser.md).
+We wrote about [Tor Browser security expectations](https://blog.torproject.org/tor-brower-onion-services-challenges-opportunities), and how we're working on Onion Services usability and adoption.
 There are some alternatives you might want to try to address this problem:
 
  * To avoid using an HTTPS certificate for your onion, the easiest answer is to write all your content so it uses only relative links.
@@ -57,9 +57,9 @@ This way the content will work smoothly, independently of what website name it's
  * Or use a reverse proxy in the middle (more specifically EOTK with an HTTPS certificate).
 
 5. Related to the previous point, some protocols, frameworks, and infrastructures use SSL as a technical requirement; they won't work if they don't see an "https://" link.
-In that case, your onion service will need to use an HTTPS certificate in order to function.
+In that case, your Onion Service will need to use an HTTPS certificate in order to function.
 
-6. Actually HTTPS does give you a little bit more than onion services.
+6. Actually HTTPS does give you a little bit more than Onion Services.
 For example, in the case where the webserver isn't in the same location as the Tor program, you would need to use an HTTPS certificate to avoid exposing unencrypted traffic to the network in between the two.
 Remember that there's no requirement for the webserver and the Tor process to be on the same machine.
 
@@ -68,7 +68,7 @@ Remember that there's no requirement for the webserver and the Tor process to be
 Recently in 2020, the Certificate Authority/Browser Forum voted and [approved version 3 onion certificates](https://archive.cabforum.org/pipermail/servercert-wg/2020-February/001637.html), so CAs are now allowed to issue Domain Validation (DV) and Organization Validation (OV) certificates containing Tor onion addresses.
 In the nearby future, we hope that [Let's Encrypt](https://letsencrypt.org/) CA can start issuing v3 onion certificates for free.
 
-If you're going to purchase an HTTPS certificate be aware that [v2 onion service deprecation](https://blog.torproject.org/v2-deprecation-timeline) will happen between July - October 2021.
+If you're going to purchase an HTTPS certificate be aware that [v2 Onion Service deprecation](https://blog.torproject.org/v2-deprecation-timeline) will happen between July - October 2021.
 
 ### Read more
 

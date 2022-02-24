@@ -46,7 +46,7 @@ If you get an error message, something has gone wrong and you cannot continue un
 Header set Onion-Location "http://your-onion-address.onion%{REQUEST_URI}s"
 ```
 
-Where `your-onion-address.onion` is the onion service address you want to redirect and `{REQUEST_URI}` is the [path component of the requested URI](https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html), such as "/index.html".
+Where `your-onion-address.onion` is the Onion Service address you want to redirect and `{REQUEST_URI}` is the [path component of the requested URI](https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html), such as "/index.html".
 
 Virtual Host example:
 
@@ -77,7 +77,7 @@ To test if Onion-Location is working, fetch the website HTTP headers, for exampl
 
      $ wget --server-response --spider your-website.tld
 
-Look for `onion-location` entry and the onion service address.
+Look for `onion-location` entry and the Onion Service address.
 Or open the website in Tor Browser and a purple pill will appear in the address bar.
 
 ### Nginx
@@ -94,7 +94,7 @@ HiddenServicePort 80 unix:/var/run/tor-hs-my-website.sock
 
 **Step 2.** Edit website configuration file
 
-In `/etc/nginx/conf.d/<your-website>.conf` add the Onion-Location header and the onion service address.
+In `/etc/nginx/conf.d/<your-website>.conf` add the Onion-Location header and the Onion Service address.
 For example:
 
 ```
@@ -181,7 +181,7 @@ To test if the Onion-Location is working, fetch the web site HTTP headers, for e
 
      $ wget --server-response --spider your-website.tld
 
-Look for `onion-location` entry and the onion service address.
+Look for `onion-location` entry and the Onion Service address.
 Or, open the web site in Tor Browser and a purple pill will appear in the address bar.
 
 ### Caddy
@@ -207,14 +207,14 @@ file_server
 
      $ wget --server-response --spider your-website.tld
 
-Look for `onion-location` entry and the onion service address.
+Look for `onion-location` entry and the Onion Service address.
 Or, open the web site in Tor Browser and a purple pill will appear in the address bar.
 
 ### Using an HTML `<meta>` attribute
 
 The identical behaviour of Onion-Location includes the option of defining it as a HTML `<meta>` http-equiv attribute.
 This may be used by websites that prefer (or need) to define an Onion-Location by modifying the served HTML content instead of adding a new HTTP header.
-The Onion-Location header would be equivalent to a `<meta http-equiv="onion-location" content="http://<your-onion-service-address>.onion" />` added in the HTML head element of the webpage. Replace `<your-onion-service-address.onion>` with the onion service that you want to redirect.
+The Onion-Location header would be equivalent to a `<meta http-equiv="onion-location" content="http://<your-onion-service-address>.onion" />` added in the HTML head element of the webpage. Replace `<your-onion-service-address.onion>` with the Onion Service that you want to redirect.
 
 ### More information
 
