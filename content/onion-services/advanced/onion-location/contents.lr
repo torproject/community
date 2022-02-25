@@ -25,7 +25,7 @@ For the header to be valid the following conditions need to be fulfilled:
  * The webpage defining the Onion-Location header must be served over HTTPS.
  * The webpage defining the Onion-Location header must not be an onion site.
 
-In this page, the commands to manage the web server are based on Debian-like operating systems and may differ from other systems.
+On this page, the commands to manage the web server are based on Debian-like operating systems and may differ from other systems.
 Check your web server and operating system documentation.
 
 ### Apache
