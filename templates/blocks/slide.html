@@ -13,7 +13,7 @@
       <h4>{{ strip_p_tag(this.subtitle) }}</h4>
     {% endif %}
     {% if this.author %}
-      <h5>{{ strip_p_tag(this.author) }}</h5>
+      <h5>{{ this.author }}</h5>
     {% endif %}
   </section>
 {% elif this.slide_layout == "image_left" %}
@@ -41,7 +41,7 @@
     <h2>{{ strip_p_tag(this.title) }}</h2>
     {{ this.description }}
     {% if this.image %}
-        <img data-src="{{ this.image }}">
+        <img data-src="{{ this.image|url }}">
     {% endif %}
   </section>
 {% endif %}
