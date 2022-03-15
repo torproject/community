@@ -114,7 +114,8 @@ IPv6Exit 1
 
 After your initial installation and start of the tor daemon it is a good idea to make a backup of your relay's long term identity keys.
 They are located in the "keys" subfolder of your DataDirectory (simply make a copy of the entire folder and store it in a secure location).
-Since relays have a ramp-up time it makes sense to back up the identity key to be able to restore your relay's reputation after a disk failure - otherwise you would have to go through the ramp-up phase again. Only do this if you have a very secure place for your keys as if stolen, these keys could theoretically allow traffic decryption or impersonation. 
+Since relays have a ramp-up time it makes sense to back up the identity key to be able to restore your relay's reputation after a disk failure - otherwise you would have to go through the ramp-up phase again.
+Only do this if you have a very secure place for your keys as if stolen, these keys could theoretically allow traffic decryption or impersonation. 
 
 Default locations of the keys folder:
 
