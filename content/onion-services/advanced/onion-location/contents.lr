@@ -216,6 +216,13 @@ The identical behaviour of Onion-Location includes the option of defining it as 
 This may be used by websites that prefer (or need) to define an Onion-Location by modifying the served HTML content instead of adding a new HTTP header.
 The Onion-Location header would be equivalent to a `<meta http-equiv="onion-location" content="http://<your-onion-service-address>.onion" />` added in the HTML head element of the webpage. Replace `<your-onion-service-address.onion>` with the Onion Service that you want to redirect.
 
+#### Limitations
+
+HTML cannot read the requested URL and insert it dynamically in the http-equiv meta tag.
+For this reason, visitors are always redirected to the .onion URL specified in the content-part of the meta tag, regardless of which subpage they are on.
+
+Therefore, if possible, we recommend using one of the above methods.
+
 ### More information
 
 Read the [Onion-Location spec](https://gitweb.torproject.org/tor-browser-spec.git/tree/proposals/100-onion-location-header.txt).
