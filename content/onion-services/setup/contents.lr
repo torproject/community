@@ -66,7 +66,7 @@ Then try putting a file in the main html directory, and make sure it shows up wh
 The next step is opening the config file of Tor (torrc) and doing the appropriate configurations to setup an Onion Service.
 Depending on your operating system and setup, your Tor configuration file can be at a different location or look different.
 
-You will need to put the following two lines in your `torrc` file:
+You will need to add the following two lines to your `torrc` file:
 
      HiddenServiceDir /var/lib/tor/my_website/
      HiddenServicePort 80 127.0.0.1:80
@@ -77,7 +77,7 @@ You will want to change the `HiddenServiceDir` line, so that it points to an act
 The `HiddenServicePort` line specifies a _virtual port_ (that is, the port that people visiting your Onion Service will be using), and in the above case it says that any traffic incoming to port 80 of your Onion Service should be redirected to `127.0.0.1:80` (which is where the web server from step 1 is listening).
 
 **Tip:** A good practice to avoid leaking an Onion Service to a local network is to run Onion Services over Unix sockets instead of a TCP socket.
-You will need to edit and put the following two lines in your `torrc` file:
+You will need to add the following two lines to your `torrc` file:
 
 ```
 HiddenServiceDir /var/lib/tor/my-website/
