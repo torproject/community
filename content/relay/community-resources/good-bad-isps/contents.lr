@@ -143,7 +143,7 @@ These hosts already have many Tor nodes being hosted there.
 | [ArubaCloud /Aruba](https://cloud.it/) | - | Yes | Yes | Yes |  TOS generically indicate that the operator is responsible for all the activities on the machine. [Read more](https://balist.es/blog/2016/04/18/running-a-tor-exit-node-on-aruba-arubacloud-a-detailed-account/) | - |
 | [SelfServer by Enter](https://selfserver.it/) | - | Yes | Yes | Yes | Uncomfortable due to old CentOS 6.10, NATed IPv4-only networking, ports other than the well-known are filtered. Abuse complaints need to go through their support service | 11/2018 |
 | [Revolution Hosting](https://rhosting.it/) | AS60798 | Yes | Yes | No | Exit nodes are allowed but they will be immediately terminated if any abuse complaint is issued. KVM VPS. IPv4+IPv6 native support. * Gnu/Linux, FreeBSD and Windows server supported. Coingate supported. | 12/2020 |
-| [G-Core Labs](https://gcorelabs.com) | AS199524 | Yes | Yes | Yes | Comments: No restrictions but legality is mandatory. Exits are welcome. Abuse complaints are forwarded to the customer and discussed with the abuse team. KVM VPS. IPv4+IPv6 native support. * Gnu/Linux, FreeBSD and Windows server supported. Unmetered traffic. | 12/2020 |
+| [G-Core Labs](https://gcorelabs.com) | AS199524 | Yes | Yes | No | They don't allow exits and will suspend your active services and restrict your access to the account if they receive abuse messages. KVM VPS. IPv4+IPv6 native support. * Gnu/Linux, FreeBSD and Windows server supported. Unmetered traffic. | 03/2022 |
 
 
 
