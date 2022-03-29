@@ -1,9 +1,10 @@
+---
 variables:
-  SITE_URL: "community.torproject.org"
-  TRANSLATION_BRANCH: "communitytpo-contentspot"
+  SITE_URL: community.torproject.org
+  TRANSLATION_BRANCH: communitytpo-contentspot
 
 include:
   - project: tpo/tpa/ci-templates
-    file: lektor.yml
-  - project: tpo/tpa/ci-templates
-    file: static-shim-deploy.yml
+    file:
+      - lektor.yml
+      - static-shim-deploy.yml
