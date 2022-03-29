@@ -1,6 +1,7 @@
 ---
 variables:
   SITE_URL: community.torproject.org
+  STAGING_URL: community.staging.torproject.org
   TRANSLATION_BRANCH: communitytpo-contentspot
 
 include:
