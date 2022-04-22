@@ -21,7 +21,7 @@ Self-testing indicates your ORPort is reachable from the outside. Excellent.
 Publishing server descriptor.
 ```
 
-About 3 hours after you start your relay it should appear on [Relay Search](https://metrics.torproject.org/rs.html).
+About 3 hours after you start your relay, it should appear on [Relay Search](https://metrics.torproject.org/rs.html) on the Metrics portal.
 You can search for your relay using your nickname or IP address.
 
 # 3. Read about Tor relay lifecycle
