@@ -1,0 +1,21 @@
+_model: page
+---
+section: training
+---
+section_id: partners
+---
+color: primary
+---
+_template: layout.html
+---
+title: Partners
+---
+subtitle: Since 2018, we have formed parterships with the following organizations.
+---
+html: partners.html
+---
+key: 7
+---
+body:
+
+Since 2018, we have formed partnerships with the following organizations. They have organized Tor trainings, collected user feedback, promoted the Tor Project mission and values.

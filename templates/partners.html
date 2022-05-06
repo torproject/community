@@ -1,0 +1,37 @@
+<div class="row pt-5">
+  {% include 'sidenav.html' %}
+  <div class="col-sm-12 col-xs-12  ml-sm-auto col-md-9 col-lg-9 {{ bag('alternatives', this.alt, 'order') }}">
+    {{ this.body }}
+
+      <div class="row">
+        {% for id, item in bag('partners').items() %}
+	{% if item.active=='yes' %}
+        <div class="col-md-3 col-sm-12 col-xl-3 my-3">
+          <div class="card h-100">
+            <div class="card-header bg-white border-0">
+                <picture>
+                  <a href="{{ item.url }}" title="{{ item.name }}">
+                    <img src="{{ '/static/images/training/partners/' + item.logo|url}}" class="img-fluid" alt="{{ item.name }}">
+                  </a>
+                </picture>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title human-name">{{ item.name }}</h5>
+              <p><b>{{ item.country }}</b></p>	
+              <p>{{ item.description }}</p>
+       </div>
+	</div>
+                {% else %}
+ 	<div class="col-md-3 col-sm-12 col-xl-3 my-3">
+    <h5>Inactive</h5>
+              <h5 class="card-title human-name">{{ item.name }}</h5>
+              <p><i>{{ item.languages }}</i></p>
+	</div>
+	</div>
+                {% endif %}
+            </div>
+	      {% endfor %}
+
+    </div>
+  </div>
+</div>
