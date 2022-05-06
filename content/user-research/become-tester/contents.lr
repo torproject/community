@@ -8,7 +8,7 @@ _model: page
 ---
 title: Become an alpha tester
 ---
-subtitle: We regularly release Tor Browser early versions to allow users to test software improvements and new ideas. Sign up to be in our testing pool.
+subtitle: We rely on a community of volunteer Alpha testers to try out early versions of Tor Browser before their general release. Sign up to become an Alpha tester.
 ---
 key: 1
 ---
@@ -16,17 +16,53 @@ html: two-columns-page.html
 ---
 body:
 
-To help keep Tor Browser available on so many platforms, we rely on a community of volunteer Quality Assurance (QA) testers to trial alpha versions of Tor Browser before its general release.
-In addition to finding and reporting bugs, alpha testers also have the opportunity to provide feedback on new features to the team before they reach Tor Browser stable.
+To help keep Tor Browser available on Windows, Linux, MacOS and Android, we rely on a community of volunteer Alpha testers to try out early versions of Tor Browser before their general release.
+In addition to finding and reporting bugs, Alpha testers are also encouraged to provide feedback about new and experimental features to the team before they reach Tor Browser stable.
 
+To become an Alpha Tester all you need to do is:
 
-## How to get started
+#### Step 1
+Download the latest [Tor Browser Alpha](https://www.torproject.org/download/alpha/) available for your platform.
 
-* Join the [Tor QA mailing list](https://lists.torproject.org/cgi-bin/mailman/listinfo/tor-qa) to receive an email whenever a new alpha is ready for testing.
+#### Step 2
+Sign up for an account on the [Tor Forum](https://forum.torproject.net/) (if you'd like to submit your feedback there).
 
-* Sign up for an account on the [Tor Forum](https://forum.torproject.net/) and post any issues you discover in the [Tor Browser Alpha Feedback](https://forum.torproject.net/c/feedback/tor-browser-alpha-feedback/6) category.
+#### Step 3
+Start testing and follow the steps below to feed back any issues you discover to our developers.
 
-* Or, if you have a GitLab account, post any bugs you find using the templates provided in [applications/tor-browser](https://gitlab.torproject.org/tpo/applications/tor-browser/-/issues) (but make sure to search the repo for duplicates first).
+## What to look out for
 
+Each new version of Tor Browser Alpha is accompanied by a release post on the [Tor Blog](https://blog.torproject.org/category/applications/) and [Forum](https://forum.torproject.net/c/feedback/tor-browser-alpha-feedback/6) that includes a short, specific list of changes to test.
+You can also find a more general list of browser functionality worth checking on the [Tor Browser Wiki](https://gitlab.torproject.org/tpo/applications/tor-browser/-/wikis/Quality-Assurance).
 
-Please only [download a Tor Browser Alpha](https://www.torproject.org/download/alpha/) if you are okay with some things not working properly, want to help us find and [report bugs](https://support.torproject.org/misc/bug-or-feedback/), and are not putting yourself at risk.
+However, Firefox updates can introduce new bugs to Tor Browser in unpredictable ways. As such, we encourage you to continue to test features and functionality beyond what's listed in the changelog too.
+
+## Feeding back to our developers
+
+Firstly, check to see if the issue is unique to Tor Browser Alpha, or if it’s present in [Tor Browser’s stable release](https://www.torproject.org/download/) and/or Firefox as well.
+
+Once you’ve verified that the problem you’ve encountered is indeed an issue with Tor Browser Alpha, check the [Tor Browser Alpha Feedback category](https://forum.torproject.net/c/feedback/tor-browser-alpha-feedback/6) on the Forum to see if it’s been reported already. If so, you can add your report to the same thread.
+
+If you’re the first to discover the issue, please create a new thread in the [Tor Browser Alpha Feedback](https://forum.torproject.net/c/feedback/tor-browser-alpha-feedback/6) category.
+Make sure to include the following details:
+
+- Summarize the issue concisely
+- Outline the steps necessary to reproduce the issue
+- Describe what you expected to happen instead
+- What security level Tor Browser is set to?
+- What version of Tor Browser Alpha are you using? E.g. Tor Browser 11.5a9
+- What platform are you using? E.g. Windows 11, Debian 11.3, MacOS 12.3, Android 12 etc.
+- What type of device are you using? E.g. Lenovo ThinkPad, MacBook Air, Samsung Galaxy S22, Google Pixel 6 etc.
+- How did you install Tor Browser?
+- Any relevant logs and/or screenshots
+
+Or, if you have a GitLab account, post any bugs you find using the templates provided in [applications/tor-browser](https://gitlab.torproject.org/tpo/applications/tor-browser/-/issues) (but make sure to search the project for duplicates first).
+
+You can also submit Gitlab issues anonymously using [Anonticket](https://anonticket.onionize.space).
+
+## What are the risks?
+
+Tor Browser Alpha and Nightly are unstable versions of Tor Browser and should not be used for activities that could put you at risk.
+Instead, please limit your use of Tor Browser Alpha and Nightly to preview new features, test their performance and provide feedback before their release.
+
+Happy testing!

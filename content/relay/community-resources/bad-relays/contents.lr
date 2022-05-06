@@ -6,26 +6,21 @@ title: Bad relays
 ---
 body:
 
-Ran into a misconfigured, malicious, or suspicious relay while using Tor? Please let us know by sending email to bad-relays AT lists DOT torproject DOT org!
-Many bad relays are caught thanks to our wider community, so many thanks for all your help and vigilance!
-The criteria for rejecting bad relays can be found in the [Network Health wiki](https://gitlab.torproject.org/tpo/network-health/team/-/wikis/Criteria-for-rejecting-bad-relays).
-
 ### What is a bad relay?
 
-A bad relay is one that either doesn't work properly or tampers with our users' connections. This can be either through maliciousness or misconfiguration. Some common examples are...
-
- * Tampering with exit traffic in any way (including dropping accepted connections). This might be accidental (such as an anti-virus filter) or malicious (commonly SSLStrip, which replaces https:// links with http:// to snoop on traffic) or even intentional (such as layer 7 inspection for P2P traffic detection/mitigation).
- * Running HSDirs that harvest and probe .onion addresses
- * Manipulating the DHT that is used for Onion Services, e.g., by positioning itself in the DHT.
- * Using a DNS provider that censors its results (such as some [OpenDNS](http://www.opendns.com) or Quad (9.9.9.9) configurations).
- * Performing a [Sybil attack](https://en.wikipedia.org/wiki/Sybil_attack), which means flooding the network with new relays in an effort to deanonymize users. If you want to run multiple relays then that's great! But please be sure to set the [MyFamily parameter](https://www.torproject.org/docs/tor-manual.html.en#MyFamily).
- * Exit relays routing their exit traffic back into the tor network (not actually exiting any traffic)
+A bad relay is one that either doesn't work properly or tampers with our users' connections.
+This can be either through maliciousness or misconfiguration.
+Ran into a misconfigured, malicious, or suspicious relay while using Tor?
+Please let us know by sending email to `bad-relays AT lists DOT torproject DOT org`.
+Many bad relays are caught thanks to our wider community, so many thanks for all your help and vigilance.
+The description of bad relays as well as the criteria for rejecting them can be found in the [Network Health wiki](https://gitlab.torproject.org/tpo/network-health/team/-/wikis/Criteria-for-rejecting-bad-relays).
 
 Also, if your relay is stolen or goes missing, please report it as well, so we can blocklist it in case whoever took it puts it back online.
 
 The following are currently permitted yet do have some discussion for prohibition (as such, they should not be reported at this time):
 
-* Only allowing plain-text traffic (for instance, just port 80). There's no good reason to disallow its encrypted counterpart (like port 443), making these relays highly suspect for sniffing traffic. See [context](https://www.google.com/search?site:torproject.org+80+443+6667) and [spec](https://gitweb.torproject.org/torspec.git/tree/dir-spec.txt#n1969).
+* Only allowing plain-text traffic (for instance, just port 80).
+There's no good reason to disallow its encrypted counterpart (like port 443), making these relays highly suspect for sniffing traffic. See [context](https://www.google.com/search?site:torproject.org+80+443+6667) and [spec](https://gitweb.torproject.org/torspec.git/tree/dir-spec.txt#n1969).
 
 ### How do I report a bad relay?
 
@@ -37,7 +32,7 @@ You can check which exit you are using at any time by visiting [tor check](https
  2. What kind of behavior did you see?
  3. Any additional information we'll need to reproduce the issue.
 
-However, if you need help with anything Tor-related, please contact the [front desk](https://www.torproject.org/about/contact) instead.
+However, if you need help with anything Tor-related, please use the [Tor Forum](https://forum.torproject.net/c/support/) instead.
 
 ### What happens to bad relays?
 

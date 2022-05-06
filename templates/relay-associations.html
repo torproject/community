@@ -9,11 +9,12 @@
             <tr>
               <th scope="col">Organization Name</th>
               <th scope="col">Country</th>
+              <th scope="col">Status</th>
+              <th scope="col">Donate</th>
             </tr>
           </thead>
           <tbody>
           {% for id, item in bag('relay-associations').items() %}
-            {% if item.active == 'True' %}
                 <tr>
                     <td>
                         {% if item.link|length %}
@@ -24,8 +25,20 @@
                     </td>
 
                     <td>{{ item.country }}</td>
+                  
+                        {% if item.active=='True' %}
+                           <td>Active</td>
+                        {% else %}
+                           <td>Inactive</td>
+                       {% endif %}
+                       <td>
+                         {% if item.donate|length %}
+                             <a href="{{ item.donate }}">Donate now!</a>
+                         {% else %}
+                             {{ item.donate }}
+                         {% endif %}
+                       </td>
                 </tr>
-            {% endif %}
           {% endfor %}
           </tbody>
         </table>

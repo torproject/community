@@ -1,0 +1,34 @@
+{
+    "tierra comun" : 
+    {
+        "logo" : "tierracomun.png",
+        "name" : "Cooperativa Tierra Común",
+        "country" : "Mexico",
+        "description" : "Tierra común is a working cooperative formed by a group of professionals and experts in free technologies, computer protection and training. They facilitate training processes for technological re-appropriation and the use of free software.",
+        "url" : "https://tierracomun.org",
+        "date" : "2018",
+        "active" : "yes"
+    },
+
+    "Fundacion Karisma" :
+    {
+        "logo" : "karisma.png",
+        "name" : "Fundación Karisma",
+        "country" : "Colombia",
+        "description" : "Fundación Karisma is a Colombian civil society organization, who want to ensure that digital technologies protect and advance fundamental human rights and promote social justice.",
+        "url" : "https://web.karisma.org.co",
+        "date" : "2018",
+        "active" : "yes"
+    },
+
+    "Sursiendo" :
+    {
+        "logo" : "sursiendo.png",
+        "name" : "Sursiendo",
+        "country" : "Mexico",
+        "description" : "Sursiendo focus on a free internet as a social space. We've contributed to the discussion about human rights in digital spaces with the intention of generating small nodes of digital autonomy that will allow us to gradually take control of our connected lives and rewrite the technologies according to our traditions, desires and needs.",
+        "url" : "https://sursiendo.org",
+        "date" : "2018",
+        "active" : "yes"
+    }
+}
