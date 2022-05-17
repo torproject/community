@@ -16,6 +16,11 @@ primary = yes
 url_prefix = /es/
 locale = es
 
+[alternatives.ru]
+name = Русский (ru)
+url_prefix = /ru/
+locale = ru
+
 [alternatives.tr]
 name = Türkçe (tr)
 url_prefix = /tr/
