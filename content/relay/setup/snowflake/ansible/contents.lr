@@ -1,0 +1,135 @@
+_model: page
+---
+color: primary
+---
+title: Standalone Snowflake proxy with ansible role
+
+body:
+
+With this ansible role you can install, configure and operate snowflake proxies of the Tor network with standalone version.
+
+## Features
+
+- Support for Ubuntu, Debian, Debian, ArchLinux, Fedora and FreeBSD
+- Systemd unit to manage Snowflake service on GNU/Linux and rc script for FreeBSD
+
+## Requirements
+
+- Python
+- Ansible 2.9 or higher
+
+## How to use
+
+### Ansible installation with pip
+
+```
+python -m pip install --user ansible
+```
+
+Other ways to install ansible [Installation Guide](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html)
+
+### Download ansible role from the Galaxy repository
+
+```
+ansible-galaxy install nvjacobo.snowflake
+```
+
+Galaxy repository  where users can share roles, and to a command line tool for installing, creating and managing roles.
+
+### Creating the playbook site.yml
+
+```
+- hosts: snowflake
+  roles:
+      - nvjacobo.snowflake
+```
+
+An Ansible playbook is an organized unit of scripts that defines work for a server configuration managed by the automation tool Ansible.
+
+### Creation of our inventory file
+
+```
+[snowflake]
+ip-address
+```
+Inventory represents the set of machines that Ansible will automatically manage through the playbooks.
+
+### Running our playbook
+
+```
+ansible-playbook -i inventory site.yml -u root
+```
+
+Or with sudo
+
+```
+ansible-playbook -i inventory site.yml -u username -b
+```
+
+## Managing snowflake proxy with systemd on Ubuntu, Debian, Fedora, ArchLinux via Ansible
+
+Status snowflake proxy
+
+```
+ansible all -i inventory -a 'systemctl status snowflake-proxy'
+```
+Start snowflake proxy
+
+```
+ansible all -i inventory -a 'systemctl start snowflake-proxy'
+```
+
+Stop snowflake proxy
+
+```
+ansible all -i inventory -a 'systemctl stop snowflake-proxy'
+```
+
+## Managing snowflake proxy with rc script on FreeBSD
+
+Status snowflake proxy
+
+```
+ansible all -i inventory -a 'service snowflake status'
+```
+
+Start snowflake proxy
+
+```
+ansible all -i inventory -a 'service snowflake start'
+```
+
+Stop snowflake proxy
+
+```
+ansible all -i inventory -a 'service snowflake stop'
+```
+## Upgrade snowflake proxy version via Afnsible
+
+To update to the latest snowflake version available it is necessary to run our playbook again.
+
+```
+ansible-playbook -i inventory site.yml -u root
+```
+
+## Variables
+
+Role Variables (not for FreeBSD). You can set the number of clients for your proxy by clients variable. Maximum concurrent clients by default is 0 = non limit.
+
+### Example Playbook site.yml with Variable clients
+
+```
+- hosts: snowflake
+   vars:
+    clients: 300
+  roles:
+     - nvjacobo.snowflake
+```
+The above playbook has a limit of 300 concurrent clients.
+
+---
+key: 1
+---
+html: two-columns-page.html
+---
+subtitle: How to run a standalone Snowflake proxy with Ansible role
