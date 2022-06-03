@@ -34,9 +34,8 @@ and your proxy is up and running!
 
 ### Ansible
 
-There is now an ansible role to install a Snowflake proxy on Debian, Fedora, ArchLinux, FreeBSD and Ubuntu [created by Jacobo Nájera](https://lists.torproject.org/pipermail/anti-censorship-team/2021-March/000143.html).
-
-[How to run a standalone Snowflake proxy with Ansible role](https://community.torproject.org/relay/setup/snowflake/ansible/)
+There is now an [Ansible role](https://galaxy.ansible.com/nvjacobo/snowflake) to install a Snowflake proxy on Debian, Fedora, Arch Linux, FreeBSD and Ubuntu created by Jacobo Nájera.
+Follow the guide to run a [Snowflake with Ansible](/relay/setup/snowflake/standalone/ansible).
 
 ### Compiling and running from source
 
