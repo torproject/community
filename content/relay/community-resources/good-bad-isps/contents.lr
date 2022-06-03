@@ -306,6 +306,7 @@ These hosts already have many Tor nodes being hosted there.
 | [BuyVM.net](https://buyvm.net) | AS53667 | Yes | Yes | Yes | New Tor rules [here](https://buyvm.net/acceptable-use-policy/#3). All relays are fine if you follow the steps. Notices are ignored. Unmetered bandwidth. | 09/27/2021 |
 | [Catalyst Host](https://catalysthost.com/) | - | ? | No | No | "If you are interested in hosting either, you can ask us about a dedicated server." | 10/01/14 |
 | [Cloudvider](https://www.clouvider.co.uk/) | - | No | No | No | This is for their US Operations arm. They will cancel your account and claim it is a ToS violation, which requires you to pay out a 60-day notice. | 10/2020 |
+| [Comcast](https://comcast.net/) | AS7922 | Yes | Yes | No | To run an exit, you must be on a commercial subscription and must contact them first. | 3/2022 |
 | [ChunkHost](https://chunkhost.com) | - | Yes | Yes | ? | Questionable DMCA handling | 01/01/12 |
 | [Cyberonic](https://www.cyberonic.com) | - | Yes | Yes | ? | - | - |
 | [Datawagon](https://datawagon.net) | AS27176 | Yes | Yes | Yes | Customers are forwarded abuse complaints to handle themselves | 03/06/19 |
