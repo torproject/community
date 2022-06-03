@@ -190,5 +190,29 @@
     "link": "https://exposingtheinvisible.org/en/guides/leak-and-onion-soup",
     "cover": "/static/images/training/leak-and-onion-soup.png",
     "languages": "English"
+  },
+  "tails-tu-computadora-segura-en-cualquier-lugar": {
+    "name": "Tails: Tu computadora segura en cualquier lugar",
+    "author": "Tails",
+    "description": "Tails training slides to human rights defenders, journalists and activists in Latin America.",
+    "link": "https://tails.boum.org/contribute/how/promote/material/slides/Ciclo_Autodefensa_Digital_202204/Tails-Spanish.odp",
+    "cover": "/static/images/training/tails-logo.svg",
+    "languages": "Español"
+  },
+  "orbot-tor-vpn-para-ios-android": {
+    "name": "Orbot: Tor VPN para iOS y Android",
+    "author": "The Guardian Project",
+    "description": "Orbot training slides that cover how Tor works, how to bypass the censorship using bridges, and what are pluggable transports.",
+    "link": "https://gitlab.com/guardianproject/pluto/-/blob/main/Orbot_Spanish.pdf",
+    "cover": "/static/images/training/orbot.png",
+    "languages": "Español"
+  },
+  "onion-browser-para-ios": {
+    "name": "Onion Browser: Tu conexión confiable a Tor desde iOS",
+    "author": "The Guardian Project",
+    "description": "Onion Browser training slides. This material covers how Tor works, bypassing censorship using bridges and pluggable transports.",
+    "link": "https://gitlab.com/guardianproject/pluto/-/blob/main/Onion_Browser.pdf",
+    "cover": "/static/images/training/onion-browser.png",
+    "languages": "Español"
   }
 }
