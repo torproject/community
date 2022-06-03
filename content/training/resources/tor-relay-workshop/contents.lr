@@ -216,8 +216,7 @@ description:
   Nickname myNiceRelay
   ExitRelay 0
   SocksPort 0
-  ControORPort 443
-  lSocket 0
+  ORPort 9001
   ContactInfo tor-operator@your-emailaddress-domain
   Log notice syslog
 ```
@@ -256,7 +255,6 @@ description:
   ORPort 9001
   ExitRelay 0
   SocksPort 0
-  ControlSocket 0
   ContactInfo tor-operator@your-emailaddress-domain
   Log notice syslog
 ```
