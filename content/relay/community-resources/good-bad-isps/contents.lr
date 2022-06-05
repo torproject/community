@@ -204,6 +204,7 @@ These hosts already have many Tor nodes being hosted there.
 | [ChmuraNet](https://www.chmuranet.com/) | - | Yes | Yes | Yes | Allows anonymous users to run tor exits. Abuse issues will be forwarded. Make sure to tell them that you're running an exit | 09/2014 |
 | [NiceVPS.net](https://nicevps.net) | - | Yes | Yes | Yes | Privacy registration with optional email, cryptocurrencies accepted, [Tor onion link](https://nicevpsb7u3vqpo5zhyahmvfi5tihon4gnh676ucmzpcyxwodeztr4yd.onion) | 06/11/21 |
 | [IncogNET](https://incognet.io/) | AS206607 | Yes | Yes | Yes | You need to host a page on port 80 explaining that the server is a Tor Exit and use their reduced exit policy https://incognet.io/tor-exits | 01/2022 |
+| [Freedom Internet](https://www.freedom.nl/) | AS206238 | ? | Yes | ? | | 2022-06-05 |
 
 
 ### New Zealand and Australia
