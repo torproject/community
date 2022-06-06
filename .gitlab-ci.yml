@@ -9,3 +9,6 @@ include:
     file:
       - lektor.yml
       - static-shim-deploy.yml
+
+.lektor:
+  image: python:3.9-bullseye
