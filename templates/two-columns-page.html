@@ -11,8 +11,8 @@
         <div class="col-sm-6 col-md-6 col-sm-12 col-xl-6 py-3">
             <div class="card h-100">
                 <div class="card-body">
-                    <h4 class="card-title text-primary"><a href="{{ child.path|url }}">{{ child.title }}</a></h4>
-                    <p class="card-text">{{ child.subtitle }}</p>
+                    <h4 class="card-title text-primary"><a href="{{ child.path|url(alt=this.alt) }}">{{ _(child.title) }}</a></h4>
+                    <p class="card-text">{% if child.subtitle %}{{ _(child.subtitle) }}{% endif %}</p>
                 </div>
             </div>
         </div>

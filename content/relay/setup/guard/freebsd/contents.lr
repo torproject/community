@@ -4,6 +4,8 @@ color: primary
 ---
 title: FreeBSD
 ---
+subtitle: How to deploy a Middle/Guard relay on FreeBSD
+---
 body:
 
 ### 1. Enable Automatic Software Updates
