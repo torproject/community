@@ -203,7 +203,7 @@ It has also been reviewed by someone who works in Abuse at a major ISP.
   * The ISP is not at fault and not liable for your actions. This is normally the case, but the poor abuse person dealing with the issues just wants to hear it isn't the ISPs problem. They will move on after they are comfortable.
  * Discuss options. Options Phobos has been offered:
   * The ISP/Complainant may very well demand to see logfiles. Fortunately, by default, nothing sensitive disclosed. You may want a new ISP if they demand access to log files ad hoc.
-  * The ISP/Complainant suggests you convert to middleman. In this case, you may want to counter with a reduced exit policy, such as the one suggested in [item #6 of the above blog post](https://blog.torproject.org/running-exit-node).
+  * The ISP/Complainant suggests you convert to middleman. In this case, you may want to counter with a reduced exit policy, such as the one suggested in [item #6 of the above blog post](https://blog.torproject.org/tips-running-exit-node).
   * The ISP/Complainant demands you disable Tor. You may want a new ISP as a result.
   * The ISP/Complainant states they will firewall off the traffic on the default ports. You may want a new ISP as a result.
   * Update the config to disallow traffic to a certain IP range from your exit node. You may want to suggest the complainant use the [Tor DNS RBL](https://2019.www.torproject.org/projects/tordnsel.html.en) instead.
