@@ -57,7 +57,7 @@ These hosts already have many Tor nodes being hosted there.
 ### Costa Rica
 | **Company/ISP** | **ASN** | **Bridges** | **Relay** | **Exit** | **Comments** | **Last Updated** |
 |-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
-| RackNation | AS52423 | No | No | Yes | Currently some Guard / Middle and exit nodes are running in Rackation network | 2022 |
+| [RackNation](https://www.racknation.cr) | AS52423 | Yes | Yes | Yes | Currently some Guard / Middle and exit nodes are running in Rackation network | 2022 |
 
 
 
