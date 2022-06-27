@@ -54,6 +54,13 @@ These hosts already have many Tor nodes being hosted there.
 | [oneprovider](https://oneprovider.com/) | - | Yes | Yes | Yes |  They are reselling dedicated servers in many locations around the world. Abuse handling differs depending on the provider from which they resell. | 2016/06 |
 | [Vidéotron Ltee](https://videotron.com/) | AS5769 | Yes | Yes | ? |  No mention of Tor in ToS, relays and bridges seem allowed. | - |
 
+### Costa Rica
+| **Company/ISP** | **ASN** | **Bridges** | **Relay** | **Exit** | **Comments** | **Last Updated** |
+|-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
+| RackNation | AS52423 | No | No | Yes | Currently some Guard / Middle and exit nodes are running in Rackation network | 2022 |
+
+
+
 
 ### Czech Republic
 
@@ -179,8 +186,10 @@ These hosts already have many Tor nodes being hosted there.
 | **Company/ISP** | **ASN** | **Bridges** | **Relay** | **Exit** | **Comments** | **Last Updated** |
 |-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
 | Axtel | AS6503 | Yes | Yes | Yes |  Currently some Guard / Middle and exit nodes are running in Axtel network | 2020 |
-| Telmex | AS8151 | No | Yes | No |  Currently some Guard / Middle nodes are running in Telmex network | 2020 |
+| Telmex | AS8151 | No | Yes | Yes |  Currently some Guard / Middle and exit nodes are running in Telmex network | 2022 |
 | Mega Cable | AS13999 | No | Yes | No |  Currently some Guard / Middle nodes are running in Mega Cable network | 2020 |
+| Truxgo | AS139235 | No | Yes | Yes |  Currently one exit node is running in Truxgo network | 2022 |
+
 
 
 ### Moldova
@@ -328,7 +337,7 @@ These hosts already have many Tor nodes being hosted there.
 | [DreamHost](https://www.dreamhost.com/) | - | Yes | Yes | ? | - | 11/29/17 |
 | [Evolucix](https://www.evolucix.com) | -  | Yes | Yes | No(?) | - | - |
 | [Future Hosting](https://www.futurehosting.com/) | - | Yes | Yes | No | - | 09/01/14 |
-| [Hivelocity](https://www.hivelocity.net/) | - | No | No | No | They are symphathetic, but do not want their IP space "polluted" by Tor abuse requests. | 10/2020 | 
+| [Hivelocity](https://www.hivelocity.net/) | - | No | No | No | They are symphathetic, but do not want their IP space "polluted" by Tor abuse requests. | 10/2020 |
 | [HostGator](https://www.hostgator.com/) | - | No | No | No | - | - |
 | [HostHatch](https://hosthatch.com) | AS46562 | Yes | Yes | No | Their vps isp are mixed include: QuadraNet, nLayer, AboveNet, Inteliquent, Atrato Networks and open peering with the entire Any2LA and Atlanta TIE networks. | 05/01/16 |
 | [HostUS](https://hostus.us/) | AS25926 | Yes | Yes | No | - | 10/16/14 |
