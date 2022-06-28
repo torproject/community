@@ -62,6 +62,10 @@ These hosts already have many Tor nodes being hosted there.
 | [RackNation](https://www.racknation.cr) | AS52423 | Yes | Yes | Yes | Currently some Guard / Middle and exit nodes are running in RackNation network | 2022 |
 
 
+### Croatia
+| **Company/ISP** | **ASN** | **Bridges** | **Relay** | **Exit** | **Comments** | **Last Updated** |
+|-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
+| [MAXKO Hosting](https://www.maxko-hosting.com/) | AS211619 | Yes | Yes | Yes | You can run anything you want as long (tor nodes are specifically allowed) as it's not a spam relay, botnet controller, they are pretty flexible regarding the packages they offer and will give a few days to test them before deciding. IPv6 is available (you have to ask) and the customer support is really helpful and will go the extra mile to help you. You will also be warned first if you do something wrong so you have a chance to fix it and warned again and again... The servers are pretty fast and there's usually discount codes available. They don't collect any personal info and you can pay in crypto. | 06/2022 |
 
 
 ### Czech Republic
