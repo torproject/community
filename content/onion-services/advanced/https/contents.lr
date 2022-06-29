@@ -32,7 +32,7 @@ That said, there are some specific cases where you would need or want to have an
 
 We compiled some topics and arguments, so you can analyze what's the best for your onion site:
 
-1. As anyone can generate an onion address and its 56 random alphanumeric characters, some enterprise onions believe that associating their onion site to an HTTPS certificate might be a solution to announce their service to users.
+1. As anyone can generate an onion address and its 56 random alphanumeric characters, some enterprise administrators believe that associating their onion site to an HTTPS certificate might be a solution to announce their service to users.
 Users would need to click and do a manual verification, and that would show that they're visiting the onion site that they're expecting.
 Alternatively, websites can provide other ways to verify their onion address using HTTPS, for example, linking their onion site address from an HTTPS-authenticated page, or using [Onion-Location](../onion-location/).
 
@@ -76,3 +76,4 @@ In the nearby future, we hope that [Let's Encrypt](https://letsencrypt.org/) CA 
  * [DigiCert: Get TLS certificate with Extended Validation (EV) for your onion site (2015)](https://www.digicert.com/blog/onion-officially-recognized-special-use-domain/)
  * [HARICA: Get a TLS certificate with Domain Validation (DV) for your onion site (2021)](https://blog.torproject.org/tls-certificate-for-onion-site)
  * [The ".onion" Special-Use Domain Name - IETF RFC 7686](https://tools.ietf.org/html/rfc7686)
+ * [EOTK - Enterprise Onion Toolkit](https://github.com/alecmuffett/eotk)

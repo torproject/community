@@ -21,7 +21,7 @@ To install the `tor` package on Arch Linux, please run:
 
 ### 3. Configure `/etc/tor/torrc`
 
-This is a very simple version of the `torrc` configuration file in order to run a Bridge on the Tor network:
+Put the configuration file `/etc/tor/torrc` in place
 
 ```
 Nickname      myNiceRelay  # Change "myNiceRelay" to something you like

@@ -56,7 +56,7 @@ You will need Go 1.13+ to run the Snowflake proxy.
 4. Run the Snowflake proxy.
 
 For our fallback proxy-go instances on snowflake-broker, [we manage proxy-go instances using runit](https://gitlab.torproject.org/tpo/anti-censorship/team/-/wikis/Survival-Guides/Snowflake-Bridge-Survival-Guide#standalone-proxy-go-instances).
-However, a simpler nohup command will also allow you to run an instance in the background.
+However, a simpler `nohup` command will also allow you to run an instance in the background.
    ```
    nohup ./proxy &
    ```

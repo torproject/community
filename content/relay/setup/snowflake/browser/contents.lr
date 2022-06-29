@@ -6,7 +6,7 @@ title: Browser Snowflake proxy
 ---
 body:
 
-Running a Snowflake proxy as a browser add on is a great low-effort way to donate bandwidth if you don't have acces to an always-on highly connected server.
+Running a Snowflake proxy as a browser add on is a great low-effort way to donate bandwidth if you don't have access to an always-on highly connected server.
 There are very few requirements to running a browser-based proxy:
 1. Use Firefox or Chromium/Chrome as your browser
 2. Have WebRTC enabled
