@@ -151,6 +151,11 @@ These hosts already have many Tor nodes being hosted there.
 | [FlokiNET](https://flokinet.is/) | (AS200651) | Yes | Yes | Yes | Sponsor enn.lu and saveyourprivacy exit nodes | - |
 | [orangewebsite](https://www.orangewebsite.com/vps.php) | - | Yes | Yes | Yes? | - | - |
 
+### Israel
+
+| **Company/ISP** | **ASN** | **Bridges** | **Relay** | **Exit** | **Comments** | **Last Updated** |
+|-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
+| [BlueVPS](https://bluevps.com/) | AS61102 | Yes | Yes | Yes | They do not explicitly prohibit tor exits, but the upstream providers may cut off your internet given too many complaints.  This can be resolved by contacting support and getting a new IP.  Cheap with unmetered bandwidth, IPv4+IPv6, but network is highly unreliable.  Accepts crypto. | 2022/07 |
 
 ### Italy
 
@@ -232,6 +237,7 @@ These hosts already have many Tor nodes being hosted there.
 | [IncogNET](https://incognet.io/) | AS206607 | Yes | Yes | Yes | You need to host a page on port 80 explaining that the server is a Tor Exit and use their reduced exit policy https://incognet.io/tor-exits | 01/2022 |
 | [Freedom Internet](https://www.freedom.nl/) | AS206238 | ? | Yes | ? | | 2022-06-05 |
 | [G-Core Labs](https://gcorelabs.com) | AS199524 | Yes | Yes | No | They don't allow exits and will suspend your active services and restrict your access to the account if they receive abuse messages. KVM VPS. IPv4+IPv6 native support. * Gnu/Linux, FreeBSD and Windows server supported. Unmetered traffic. | 06/2022 |
+| [VPSslim](https://www.vpsslim.com) | AS207083 | Yes | Yes | Yes | Don't pull over 2TB tx+rx bandwidth per day or the VPS will be locked (easily resolved by opening a ticket).  Use of AccountingMax highly recommended.  Extremely cheap with IPv4+IPv6, and unmetered fair use gigabit internet.  Accepts crypto. | 2022/07 |
 
 
 ### New Zealand and Australia
