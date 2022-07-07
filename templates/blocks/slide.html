@@ -23,14 +23,14 @@
         <div style="display: inline-block; vertical-align: top; width: 46%; float: left;"><img data-src="{{ this.image|url }}"></div>
     {% endif %}
     <div style="display: inline-block; width: 46%;">
-        {{ this.description }}
+        {{ md(this.description.source) }}
     </div>
   </section>
 {% elif this.slide_layout == "image_right" %}
   <section class="slide-image-right" {% if this.background != "white" %} data-background-color="{{ this.background }}" {% else %} data-background-color="white" {% endif %} >
     <h2>{{ strip_p_tag(this.title) }}</h2>
     <div style="display: inline-block; width: 46%;">
-        {{ this.description }}
+        {{ md(this.description.source) }}
     </div>
     {% if this.image %}
         <div style="display: inline-block; vertical-align: top; width: 46%; float: right;"><img data-src="{{ this.image|url }}"></div>
@@ -39,7 +39,7 @@
 {% else %}
   <section {% if this.background != "white" %} data-background-color="{{ this.background }}" {% else %} data-background-color="white" {% endif %} >
     <h2>{{ strip_p_tag(this.title) }}</h2>
-    {{ this.description }}
+    {{ md(this.description.source) }}
     {% if this.image %}
         <img data-src="{{ this.image|url }}">
     {% endif %}
