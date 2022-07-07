@@ -27,22 +27,6 @@ Proceed with `pkg_add` to install the package:
 # pkg_add tor
 ```
 
-#### 2.1. Recommended Steps to Install `tor` on OpenBSD
-
-If you want to install a newer version of the `tor` OpenBSD's package, you can use M:Tier's binary packages:
-
-```
-# ftp https://stable.mtier.org/openup
-```
-
-Right after fetching `openup` you can run it to sync M:Tier's repository and update your packages; it's an alternative to `pkg_add -u`.
-
-Here is how you proceed with these steps:
-
-```
-# ./openup
-```
-
 ### 3. Configuration file
 
 Put the configuration file `/etc/tor/torrc` in place:
@@ -90,7 +74,11 @@ Here we set `tor` to start during boot and call it for the first time:
 # rcctl start tor
 ```
 
+To apply our raised open files limits, make sure to start tor with `rcctl`.
+
 ### 6. Final Notes
+
+Latest version of tor will be made avaliable as package for the most recent OpenBSD release and OpenBSD -current(development snapshot), therefore, remember to upgrade OpenBSD on time  and configure automatic software updates.
 
 If you are having trouble setting up your relay, have a look at our [help section](../../../getting-help/).
 If your relay is now running, check out the [post-install](../../post-install/) notes.
