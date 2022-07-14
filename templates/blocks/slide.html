@@ -1,16 +1,30 @@
-{# this.title and this.subtitle are enclosed in <p> tags #}
-{# this makes styling slide text really difficult #}
-{# tpo/web/community#246 #}
-{% macro strip_p_tag(text) %}
-  {{- (text|string)[3:-5] }}
-{% endmacro -%}
+{# lektor-i18n-plugin has an edgecase where flowblock markdown isn't properly
+   translated <https://gitlab.torproject.org/tpo/web/community/-/issues/251#note_2819508>.
+   any markdown fields in a flowblock need to have a type of `text` and be
+   rendered with this macro, or they won't be translated.
+
+   this macro splits by line, translates all non-whitespace lines, and rejoins.
+   the `lines.append(...)` method returns `None` so we have to add `or ''` to
+   avoid rendering the literal text "None" on the page. #}
+{# HACK: this is an awful hack and needs to be patched in lektor-i18n-plugin #}
+{%- macro render_markdown(md_str) %}
+  {%- set lines = [] %}
+  {%- for line in md_str.split('\n') %}
+    {%- if line.strip() != '' %}
+      {{- lines.append(_(line)) or '' }}
+    {%- else %}
+      {{- lines.append(line) or '' }}
+    {%- endif %}
+  {%- endfor %}
+  {{- md(lines|join('\n')) }}
+{% endmacro %}
 
 {% if this.slide_layout == "title-slide" %}
   <section class="title" data-background-color="white" {% if this.background_image %} data-background-image="{{ this.background_image|asseturl }}" data-background-position="right bottom" data-background-size="3em" {% endif %} >
-    <h3>{{ strip_p_tag(this.title) }}</h3>
+    <h3>{{ render_markdown(this.title) }}</h3>
     <hr class="dark" />
     {% if this.subtitle %}
-      <h4>{{ strip_p_tag(this.subtitle) }}</h4>
+      <h4>{{ render_markdown(this.subtitle) }}</h4>
     {% endif %}
     {% if this.author %}
       <h5>{{ this.author }}</h5>
@@ -18,19 +32,19 @@
   </section>
 {% elif this.slide_layout == "image_left" %}
   <section class="slide-image-left" {% if this.background != "white" %} data-background-color="{{ this.background }}" {% else %} data-background-color="white" {% endif %} >
-    <h2>{{ strip_p_tag(this.title) }}</h2>
+    <h2>{{ render_markdown(this.title) }}</h2>
     {% if this.image %}
         <div style="display: inline-block; vertical-align: top; width: 46%; float: left;"><img data-src="{{ this.image|url }}"></div>
     {% endif %}
     <div style="display: inline-block; width: 46%;">
-        {{ md(this.description.source) }}
+        {{ render_markdown(this.description) }}
     </div>
   </section>
 {% elif this.slide_layout == "image_right" %}
   <section class="slide-image-right" {% if this.background != "white" %} data-background-color="{{ this.background }}" {% else %} data-background-color="white" {% endif %} >
-    <h2>{{ strip_p_tag(this.title) }}</h2>
+    <h2>{{ render_markdown(this.title) }}</h2>
     <div style="display: inline-block; width: 46%;">
-        {{ md(this.description.source) }}
+        {{ render_markdown(this.description) }}
     </div>
     {% if this.image %}
         <div style="display: inline-block; vertical-align: top; width: 46%; float: right;"><img data-src="{{ this.image|url }}"></div>
@@ -38,8 +52,8 @@
   </section>
 {% else %}
   <section {% if this.background != "white" %} data-background-color="{{ this.background }}" {% else %} data-background-color="white" {% endif %} >
-    <h2>{{ strip_p_tag(this.title) }}</h2>
-    {{ md(this.description.source) }}
+    <h2>{{ render_markdown(this.title) }}</h2>
+    {{ render_markdown(this.description) }}
     {% if this.image %}
         <img data-src="{{ this.image|url }}">
     {% endif %}
