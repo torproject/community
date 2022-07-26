@@ -18,9 +18,11 @@ For network diversity and stronger anonymity, you should avoid providers and cou
 
  * Frantech / Ponynet (AS53667)
  * OVH SAS (AS16276)
- * Online S.a.s. (AS12876)
+ * Online S.A.S. / Scaleway (AS12876)
  * Hetzner Online GmbH (AS24940)
  * DigitalOcean, LLC (AS14061)
+ * IONOS SE (AS8560)
+ * netcup GmbH (AS197540)
 
 These hosts already have many Tor nodes being hosted there.
 
@@ -102,7 +104,7 @@ These hosts already have many Tor nodes being hosted there.
 | [linevast](https://www.linevast.de) | AS201206 | No | No | No |  | 03/2021 |
 | [Server4You](https://www.server4you.de)| AS131914 | No | No | No | - | 03/2021 |
 | [Hetzner](https://hetzner.de) | AS24940 | Yes | Yes | Yes | Offers good dedicated root servers for a good price. Unmetered bandwidth on dedicated servers, 20tb on vps. "It is not a Problem, however, abuse reports can lead to a server lock" Locations: DE,FI | 09/27/2021 |
-| [Contabo](https://contabo.de) | AS51167 | No | No | No | Tor prohibited due to terms of service | 03/2021 |
+| [Contabo](https://contabo.de) | AS51167 | No | No | No | "The Provider is entitled to immediately block any webspace packages and servers that are being used to operate the “TOR” service, insofar as the Provider has become aware that the server or package is being used unlawfully." | 07/2022 |
 | [Strato](https://strato.de) | AS6724 | No | No | No | - | 03/2021 |
 | [PraHost](https://www.prahost.com) | - | Yes | Yes | Yes | "If there is any abuse notice received, you need to solve it in given time, else your IP will be blocked until you take any action" | 03/2021 |
 | [DomainFactory](https://www.df.eu/de/cloud-hosting/cloud-server) | AS34011 | Yes | Yes | Yes | Only allowed on jiffybox | 03/2021 |
@@ -119,6 +121,7 @@ These hosts already have many Tor nodes being hosted there.
 | [active-servers](https://www.active-servers.com) | AS197071 | Yes | Yes | Yes | "Usually this leads to abuse mails, which only cause trouble – but basically we have nothing against it" | 03/2021 |
 | [UltraVPS](https://www.ultravps.eu) | - | No | No | No | "We are not the right host for your project" | 03/2021 |
 | [G-Core Labs](https://gcorelabs.com) | AS199524 | Yes | Yes | No | They don't allow exits and will suspend your active services and restrict your access to the account if they receive abuse messages. KVM VPS. IPv4+IPv6 native support. * Gnu/Linux, FreeBSD and Windows server supported. Unmetered traffic. | 06/2022 |
+| [Venocix](https://venocix.de/) | AS44486 | Yes | Yes | ? | running relay since 3 months without problems. traffic is "fair use" and speed got limited after 10TB of traffic. | 07/2022 |
 
 
 ### Hong Kong
@@ -172,6 +175,7 @@ These hosts already have many Tor nodes being hosted there.
 | **Company/ISP** | **ASN** | **Bridges** | **Relay** | **Exit** | **Comments** | **Last Updated** |
 |-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
 | [Baltic Servers](https://www.balticservers.com) | - |  Yes | Yes | Yes | All abuse mails they got yielded support tickets | - |
+| [Time4VPS](https://www.time4vps.com/) | AS62282 |  No | No | No | "To not use Time4VPS services for any of the following: [...] Hosting public Proxy or Tor services;" | 07/2022 |
 
 ### Luxembourg
 
