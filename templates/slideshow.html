@@ -1,3 +1,4 @@
+{% from 'util.jinja2' import render_markdown %}
 <!doctype html>
 <html lang="en">
 	<head>
@@ -19,9 +20,11 @@
 			<div class="slides {{ bag('alternatives', this.alt, 'order') }}">
 				<section>
 					<section class="title" data-background-color="#683086" data-background-image="{{ this.image|asseturl }}" data-background-position="right bottom" data-background-size="3em">
-					  <h3>{{ this.title }}</h3>
+					  <h3>{{ render_markdown(this.title) }}</h3>
 						<hr />
-					  <h4>{{ this.subtitle }}</h4>
+                                          {% if this.subtitle %}
+					  <h4>{{ render_markdown(this.subtitle) }}</h4>
+                                          {% endif %}
 						<p>{{ this.author }}</p>
 					</section>
 

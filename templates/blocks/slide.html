@@ -1,24 +1,4 @@
-{# lektor-i18n-plugin has an edgecase where flowblock markdown isn't properly
-   translated <https://gitlab.torproject.org/tpo/web/community/-/issues/251#note_2819508>.
-   any markdown fields in a flowblock need to have a type of `text` and be
-   rendered with this macro, or they won't be translated.
-
-   this macro splits by line, translates all non-whitespace lines, and rejoins.
-   the `lines.append(...)` method returns `None` so we have to add `or ''` to
-   avoid rendering the literal text "None" on the page. #}
-{# HACK: this is an awful hack and needs to be patched in lektor-i18n-plugin #}
-{%- macro render_markdown(md_str) %}
-  {%- set lines = [] %}
-  {%- for line in md_str.split('\n') %}
-    {%- if line.strip() != '' %}
-      {{- lines.append(_(line)) or '' }}
-    {%- else %}
-      {{- lines.append(line) or '' }}
-    {%- endif %}
-  {%- endfor %}
-  {{- md(lines|join('\n')) }}
-{% endmacro %}
-
+{% from 'util.jinja2' import render_markdown %}
 {% if this.slide_layout == "title-slide" %}
   <section class="title" data-background-color="white" {% if this.background_image %} data-background-image="{{ this.background_image|asseturl }}" data-background-position="right bottom" data-background-size="3em" {% endif %} >
     <h3>{{ render_markdown(this.title) }}</h3>
