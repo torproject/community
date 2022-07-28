@@ -121,7 +121,7 @@ These hosts already have many Tor nodes being hosted there.
 | [active-servers](https://www.active-servers.com) | AS197071 | Yes | Yes | Yes | "Usually this leads to abuse mails, which only cause trouble – but basically we have nothing against it" | 03/2021 |
 | [UltraVPS](https://www.ultravps.eu) | - | No | No | No | "We are not the right host for your project" | 03/2021 |
 | [G-Core Labs](https://gcorelabs.com) | AS199524 | Yes | Yes | No | They don't allow exits and will suspend your active services and restrict your access to the account if they receive abuse messages. KVM VPS. IPv4+IPv6 native support. * Gnu/Linux, FreeBSD and Windows server supported. Unmetered traffic. | 06/2022 |
-| [Venocix](https://venocix.de/) | AS44486 | Yes | Yes | ? | running relay since 3 months without problems. traffic is "fair use" and speed got limited after 10TB of traffic. | 07/2022 |
+| [Venocix](https://venocix.de/) | AS44486 | Yes | Yes | ? | Running relay since 3 months without problems. Traffic is "fair use" and speed got limited after 10TB of traffic. | 07/2022 |
 
 
 ### Hong Kong
