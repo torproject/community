@@ -16,9 +16,9 @@ subtitle: How to deploy a Middle/Guard relay on Windows
 ---
 body:
 
-**Note: You should only run a Windows relay if you can run it 24/7. If the operator is unable to guarantee that, a [Snowflake](https://snowflake.torproject.org/) is a better way to contribute resources.**
+**Note: You should only run a Windows relay if you can run it 24/7. If you are unable to guarantee that, a [Snowflake](https://snowflake.torproject.org/) is a better way to contribute resources.**
 
-Setting up a Windows system as a relay requires performing a few simple steps to set up a user account, download the expert bundle, implement a torrc configuration file and start up Tor from the command line.
+Setting up a Windows system as a relay requires performing a few simple steps to set up a user account, download the `Windows expert bundle`, implement a torrc configuration file and start up Tor from the command line.
 Below are detailed instructions on how to perform these steps - please ensure you follow them very carefully, and make any of the necessary modifications outlined along the way.
 
 # 1. Creating a user account for Tor
@@ -44,31 +44,30 @@ The next step is to download and install Windows Expert bundle as well as set up
 
 ## 2.2 Configuration 
 
-1. Unpack the zipped Expert bundle into your newly created Tor directory. Two files will be placed there; one called `Tor`, and the other `Data`.
+1. Unpack the zipped Expert bundle into your newly created Tor directory. Two folders will be placed there; one called `Tor`, and the other `Data`.
 2. You should now create a folder called `log` in `C:\Users\torrelay\tor`.
 You'll then need to create an empty file and name it `notices.log` in the `log` folder.
 3. You will now need to create a torrc file to define the ruleset of your relay. 
-4. The default directory path for this file is `C:\Users\torrelay\AppData\Roaming\tor\torrc`, though you can specify a custom location at commandline startup with the `-f` flag. (More below)
-5. Open up your newly created `torrc` file in your text editor and populate it with the following contents:
+   The default directory path for this file is `C:\Users\torrelay\AppData\Roaming\tor\torrc`, though you can specify a custom location at commandline startup with the `-f` flag. (More below)
+4. Open up your newly created `torrc` file in your text editor and populate it with the following contents:
 
-```
-#Change the nickname "myNiceRelay" to a name that you like
-Nickname myNiceRelay
-ORPort 9001
-ExitRelay 0
-SocksPort 0
-#Paths assume you extracted to C:\Users\torrelay\tor - if you 
-#extracted elsewhere or used a different username, adjust the 
-#paths accordingly
-DataDirectory C:\Users\torrelay\tor\Data
-Log notice file C:\Users\torrelay\tor\log\notices.log
-GeoIPFile C:\Users\torrelay\tor\Data\Tor\geoip
-GeoIPv6File C:\Users\torrelay\tor\Data\Tor\geoip6
-#Put your email below - Note that it will be published on the metrics page
-ContactInfo tor-operator@your-emailaddress-domain
-```
-
-Make sure everything is filled in correctly, then save and exit.
+   ```
+   #Change the nickname "myNiceRelay" to a name that you like
+   Nickname myNiceRelay
+   ORPort 9001
+   ExitRelay 0
+   SocksPort 0
+   #Paths assume you extracted to C:\Users\torrelay\tor - if you
+   #extracted elsewhere or used a different username, adjust the
+   #paths accordingly
+   DataDirectory C:\Users\torrelay\tor\Data
+   Log notice file C:\Users\torrelay\tor\log\notices.log
+   GeoIPFile C:\Users\torrelay\tor\Data\Tor\geoip
+   GeoIPv6File C:\Users\torrelay\tor\Data\Tor\geoip6
+   #Put your email below - Note that it will be published on the metrics page
+   ContactInfo tor-operator@your-emailaddress-domain
+   ```
+5. Make sure everything is filled in correctly, then save and exit.
 
 # 3. Starting up your relay
 
@@ -76,7 +75,7 @@ There are two methods for starting up your relay for the first time depending on
 
 ### 3.1 Method 1: User interface
 
-1. Navigate to the directory you extracted Tors files.
+1. Navigate to the directory where you extracted Tor's files.
 2. Simply Shift + right-click on the `tor.exe` file and select 'Run as other user' from the drop-down menu, and enter the password for your Tor account when prompted.
 * **Note:** Be sure **not** to click the 'Run as administrator' button - this is dangerous! 
 

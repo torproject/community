@@ -17,7 +17,7 @@ html: two-columns-page.html
 body:
 
 Onion-Location is an easy way to advertise an onion site to the users.
-You can either configure a web server to show an Onion-Location Header or add an HTML meta attribute in the website.
+You can either configure a web server to show an Onion-Location Header or add an HTML `<meta>` attribute in the website.
 
 For the header to be valid the following conditions need to be fulfilled:
 
@@ -218,7 +218,7 @@ The Onion-Location header would be equivalent to a `<meta http-equiv="onion-loca
 
 #### Limitations
 
-HTML cannot read the requested URL and insert it dynamically in the http-equiv meta tag.
+HTML cannot read the requested URL and insert it dynamically in the http-equiv `<meta>` tag.
 For this reason, visitors are always redirected to the .onion URL specified in the content-part of the meta tag, regardless of which subpage they are on.
 
 Therefore, if possible, we recommend using one of the above methods.

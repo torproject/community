@@ -47,13 +47,13 @@ ExitRelay   0
 SocksPort   0
 ```
 
-# 5. Start the service
+### 5. Start the service
 
 ```
 # systemctl enable --now tor
 ```
 
-# 6. Final Notes
+### 6. Final Notes
 
 If you are having trouble setting up your relay, have a look at our [help section](../../../getting-help/).
 If your relay is now running, check out the [post-install](../../post-install/) notes.
