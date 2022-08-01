@@ -89,7 +89,7 @@ As Edward Snowden points out in his book, **"Permanent Record"** (2019),
 [Onionmx](https://github.com/ehloonion/onionmx) is a software that allows the delivery of emails entirely over Onion Services, obfuscating the metadata of who is talking with whom.
 E-mail providers like [Riseup](https://riseup.net/en/security/network-security/tor#riseups-tor-onion-services), [Systemli](https://www.systemli.org/service/onion.html) and [many others](https://github.com/ehloonion/onionmx/blob/master/sources/map.yml) protect their users privacy using onionmx.
 
-Other providers like [ProtonMail](https://protonmail.com/blog/protonmail-tor-censorship/) allow users to read and send their e-mail securely and anonymously over their webclient that serves an onion site.
+Other providers like [Proton](https://proton.me/news/protonmail-tor-censorship) allow users to read and send their e-mail securely and anonymously over their webclient that serves an onion site.
 
 ### Protect sources, whistleblowers, and journalists
 
