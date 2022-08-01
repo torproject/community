@@ -66,7 +66,7 @@ These circuits are anonymized circuits, so the server does not reveal the servic
 
 The Onion Service will hide and protect itself behind the Tor network by only allowing access through three introduction points that it connects to through a two-hop Tor circuit.
 
-<img class="col-lg-8" src="../../static/images/onion-services/overview/onion-service-01.png" alt="Onion Services: Step 1">
+![Onion Services: Step 1](/static/images/onion-services/overview/onion-service-01.png#fullwidth)
 
 ### Act 2: Where the Onion Service publishes its descriptors
 
@@ -78,14 +78,14 @@ The _identity private key_ used here is the private part of the **public key tha
 The Onion Service upload that signed descriptor to a _distributed hash table_, which is part of the Tor network, so that clients can also get it.
 It uses an anonymized Tor circuit to do this upload so that it does not reveal its location.
 
-<img class="col-lg-8" src="../../static/images/onion-services/overview/onion-service-02.png" alt="Onion Services: Step 2">
+![Onion Services: Step 2](/static/images/onion-services/overview/onion-service-02.png#fullwidth)
 
 ### Act 3:  Where a client wants to visit the Onion Service
 
 Say you want to anonymously send some tax fraud data to your local newspaper through its SecureDrop.
 You find the onion address for the newspaper's SecureDrop from a public website or friend.
 
-<img class="col-lg-8" src="../../static/images/onion-services/overview/onion-service-03.png" alt="Onion Services: Step 3">
+![Onion Services: Step 3](/static/images/onion-services/overview/onion-service-03.png#fullwidth)
 
 ### Act 4: Where the client introduces itself to the Onion Service
 
@@ -95,7 +95,7 @@ Now let's fast-forward to the point where an actual client wants to visit the se
 In this case, the client has the onion address of SecureDrop and want to visit it, so they connect to the service with Tor Browser.
 Now the next thing that needs to happen is that the client goes to the _distributed hash table_ from **Step 2** and ask for the signed descriptor of SecureDrop's Onion Service.
 
-<img class="col-lg-8" src="../../static/images/onion-services/overview/onion-service-04.png" alt="Onion Services: Step 4">
+![Onion Services: Step 4](/static/images/onion-services/overview/onion-service-04.png#fullwidth)
 
 ### Act 5:  Where the client verify onion address signature
 
@@ -104,20 +104,20 @@ This provides the _end-to-end authentication_ security property, since we are no
 
 And inside the descriptor, there are the introduction points that allow the client to introduce themselves to SecureDrop's Onion Service.
 
-<img class="col-lg-8" src="../../static/images/onion-services/overview/onion-service-05.png" alt="Onion Services: Step 5">
+![Onion Services: Step 5](/static/images/onion-services/overview/onion-service-05.png#fullwidth)
 
 ### Act 6: Where the client establishes a rendezvous point
 
 Before the introduction takes place, the client (in this case, you) picks a Tor relay and establishes a circuit to it. 
 The client asks the relay to become their rendezvous point and give it an "one-time secret" that will be used as part of the rendezvous procedure.
 
-<img class="col-lg-8" src="../../static/images/onion-services/overview/onion-service-06.png" alt="Onion Services: Step 6">
+![Onion Services: Step 6](/static/images/onion-services/overview/onion-service-06.png#fullwidth)
 
 ### Act 7: Where the Onion Service rendezvous with the client
 
 The introduction point passes your details (secret string and rendezvous address) on to the Onion Service, which runs multiple verification processes to decide whether you're trustworthy or not.
 
-<img class="col-lg-8" src="../../static/images/onion-services/overview/onion-service-07.png" alt="Onion Services: Step 7">
+![Onion Services: Step 7](/static/images/onion-services/overview/onion-service-07.png#fullwidth)
 
 ### Act 8: Where the rendezvous point verifies the client's secret
 
@@ -126,7 +126,7 @@ The rendezvous point makes one final verification to match the secret strings fr
 
 The rendezvous point simply relays (end-to-end encrypted) messages from client to service and vice versa.
 
-<img class="col-lg-8" src="../../static/images/onion-services/overview/onion-service-08.png" alt="Onion Services: Step 8">
+![Onion Services: Step 8](/static/images/onion-services/overview/onion-service-08.png#fullwidth)
 
 ### Act 9: Where the Onion Service rendezvous with the client
 
@@ -135,7 +135,7 @@ This provides _location hiding_ to this connection.
 
 Finally, using the rendezvous point, a Tor circuit is formed between you and your newspaper's SecureDrop Onion Service.
 
-<img class="col-lg-8" src="../../static/images/onion-services/overview/onion-service-09.png" alt="Onion Services: Step 9">
+![Onion Services: Step 9](/static/images/onion-services/overview/onion-service-09.png#fullwidth)
 
 ## Further resources
 
