@@ -1,0 +1,19 @@
+_model: resource
+---
+name: Exploring the Tor network (poster)
+---
+link: https://catnip.article19.org/data/ARTICLE19-Catnip-Tor-Network-2021-web.pdf
+---
+author: Article19
+---
+description: A tabloid containing an amazing graphic about the Tor network. Part of the book How the Internet really works.
+---
+formats: None
+---
+date: None
+---
+cover: /static/images/training/exploring-the-tor-network.jpg
+---
+languages: English
+---
+key: exploring-the-tor-network

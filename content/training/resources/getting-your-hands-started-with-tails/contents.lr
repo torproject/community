@@ -1,0 +1,19 @@
+_model: resource
+---
+name: Getting your hands started with Tails
+---
+link: mailto:geb@riseup.net
+---
+author: geb
+---
+description: Step by step tutorial used to introduce Tails to journalism students. Actually used in journalism schools in France. Topics: Tor, persistence, metadata, secure removal, Veracrypt, OnionShare etc. On request ; please click to contact author.
+---
+formats: None
+---
+date: None
+---
+cover: /static/images/training/tails-logo.svg
+---
+languages: English
+---
+key: getting-your-hands-started-with-tails

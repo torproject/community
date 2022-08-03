@@ -1,5 +1,7 @@
 _model: slideshow
 ---
+_discoverable: no
+---
 title: All About Tor
 ---
 _template: slideshow.html

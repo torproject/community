@@ -1,5 +1,7 @@
 _model: slideshow
 ---
+_discoverable: no
+---
 title: The Tor Network
 ---
 _template: slideshow.html

@@ -1,0 +1,19 @@
+_model: resource
+---
+name: What's fingerprinting?
+---
+link: https://ssd.eff.org/en/module/what-fingerprinting
+---
+author: Electronic Frontier Foundation (EFF)
+---
+description: Surveillance Self-Defense article explaining web browser fingerprinting and how Tor Browser protects you.
+---
+formats: None
+---
+date: None
+---
+cover: /static/images/training/eff-ssd-guide.png
+---
+languages: Multiple languages
+---
+key: whats-fingerprinting

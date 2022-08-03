@@ -1,0 +1,19 @@
+_model: resource
+---
+name: Leak and Onion Soup
+---
+link: https://exposingtheinvisible.org/en/guides/leak-and-onion-soup
+---
+author: Exposing the invisible (Tactical Tech)
+---
+description: A guide about using Tor to read, verify and process leaked data, which might come with a risk.
+---
+formats: None
+---
+date: None
+---
+cover: /static/images/training/leak-and-onion-soup.png
+---
+languages: English
+---
+key: leak-onion-soup

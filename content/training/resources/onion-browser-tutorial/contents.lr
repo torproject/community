@@ -1,0 +1,19 @@
+_model: resource
+---
+name: Onion Browser Tutorial
+---
+link: https://guardianproject.info/2020/06/02/onion-browser-release-2.6-tutorial/
+---
+author: Guardian Project
+---
+description: This resource explains the features and how to use Onion Browser. Onion Browser is the only browser for iOS recommended by the Tor Project.
+---
+formats: None
+---
+date: None
+---
+cover: /static/images/training/onion-browser.png
+---
+languages: English
+---
+key: onion-browser-tutorial

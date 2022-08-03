@@ -1,0 +1,19 @@
+_model: resource
+---
+name: 'Que no quede huella... que no, que no': diálogos feministas para las libertades y autocuidados digitales
+---
+link: https://www.derechosdigitales.org/wp-content/uploads/que-no-quede-huella.pdf
+---
+author: Tormenta
+---
+description: A feminist fanzine discussing the Internet, anonymity, Tor, Tails.
+---
+formats: None
+---
+date: None
+---
+cover: /static/images/training/que-no-quede-huella.jpg
+---
+languages: Spanish
+---
+key: que-no-quede-huella

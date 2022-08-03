@@ -3,31 +3,26 @@
   <div class="col-sm-12 col-xs-12  ml-sm-auto col-md-9 col-lg-9 {{ bag('alternatives', this.alt, 'order') }}">
     {{ this.body }}
     <div class="row">
-
-        {% for id, item in bag('community-training-materials').items() %}
-        <div class="col-md-6 col-sm-12 col-xl-3 my-3">
-
-          <div class="card h-100">
+      {% for child in this.pagination.items %}
+      <div class="col-md-6 col-sm-12 col-xl-3 my-3">
+        <div class="card h-100">
+          {% if child.cover %}
             <div class="card-header bg-white border-0">
-                <picture>
-                  <a href="{{ item.link }}"><img src="{{ item.cover }}" class="img-fluid" alt="{{ item.name }}"></a>
-                </picture>
+              <picture>
+                <a href="{{ child.link }}"><img src="{{ child.cover | url }}" class="img-fluid" alt="{{ child.name }}"></a>
+              </picture>
             </div>
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title human-name">{{ item.name }}</h5>
-              <p>by {{ item.author }}</p>
-              <p>In {{ item.languages }}</p>
-              <p>{{ item.description }}</p>
-              {% if item.author=='Tor Project' %}
-              	<a href="{{ item.link }}" title="{{ item.name }}" class="btn btn-primary mt-auto">Check this resource</a>
-              {% else %}
-                <a href="{{ item.link }}" title="{{ item.name }}" class="btn btn-primary mt-auto">Check this resource</a>
-              {% endif %}
-            </div>
+          {% endif %}
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title human-name">{{ child.name }}</h5>
+            <p>By {{ child.author }}</p>
+            <p>In {{ child.languages | join(', ') }}</p>
+            <p>{{ child.description }}</p>
+            <a href="{{ child.link }}" title="{{ child.name }}" class="btn btn-primary mt-auto">Check this resource</a>
           </div>
+        </div>
       </div>
       {% endfor %}
-
     </div>
   </div>
 </div>
