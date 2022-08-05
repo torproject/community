@@ -25,5 +25,16 @@
       </div>
       {% endfor %}
     </div>
+    <div class="btn-group">
+      <a href="{{ (this.pagination.prev or '#')|url }}" class="btn btn-outline-muted {% if not this.pagination.has_prev %}btn-muted disabled{% endif %}">{{ _('Previous') }}</a>
+      {% for page in range(1, this.pagination.pages + 1)%}
+        {% if page == this.pagination.page %}
+          <a href="#" class="btn btn-primary">{{ this.pagination.page }}</a>
+        {% else %}
+          <a href="{{ this.pagination.for_page(page)|url }}" class="btn btn-outline-muted">{{ page }}</a>
+        {% endif %}
+      {% endfor %}
+      <a href="{{ (this.pagination.next or '#')|url }}" class="btn btn-outline-muted {% if not this.pagination.has_next %}btn-muted disabled{% endif %}">{{ _('Next') }}</a>
+    </div>
   </div>
 </div>
