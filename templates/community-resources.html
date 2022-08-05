@@ -36,5 +36,19 @@
       {% endfor %}
       <a href="{{ (this.pagination.next or '#')|url }}" class="btn btn-outline-muted {% if not this.pagination.has_next %}btn-muted disabled{% endif %}">{{ _('Next') }}</a>
     </div>
+    <hr>
+    {{ md(_('### Community building
+
+Do you know of or have any Tor training materials (slides, guides, fanzines, videos, and other formats) that should be part of this training section?
+Please send an email to [training at torproject.org](mailto:training@torproject.org) with:
+ - Title and description
+ - Author and author contact information
+ - Link to download or access the resource
+ - Resource license (Creative Commons or similar license)
+
+Please note that we will evaluate if:
+ - The material is being updated and maintained.
+ - Do no harm: demystifies the "dark/deep web" and training materials that will not put people at risk.
+ - Follow the Tor Project\'s [Code of Conduct](https://gitweb.torproject.org/community/policies.git/tree/code_of_conduct.txt), [Statement of Values](https://gitweb.torproject.org/community/policies.git/tree/statement_of_values.txt), and [Social Contract](https://gitweb.torproject.org/community/policies.git/tree/social_contract.txt).')) }}
   </div>
 </div>
