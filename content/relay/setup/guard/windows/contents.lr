@@ -83,7 +83,7 @@ There are two methods for starting up your relay for the first time depending on
 
 1. Open your command prompt. Navigate to `C:\Users\torrelay\tor\Tor` with the command `cd C:\Users\torrelay\tor\Tor`.
 2. Type `RUNAS /user:torrelay tor.exe` and press enter. If you have your `torrc` file somewhere other than the default location (Like the `home` folder), specify the path with the `-f` flag.
-* Example: `RUNAS /user:torrelay "tor.exe -f C:\Users\torrelay\tor\Tor\torrc"`
+ * Example: `RUNAS /user:torrelay "tor.exe -f C:\Users\torrelay\tor\Tor\torrc"`
 3. You should now see Tor starting up in your terminal. Wait until its finished bootstrapping. 
 4. After a short period it should publish its OrPort, and you will be successfully relaying traffic for the Tor Network.
  * **Notice:** Depending on your systems settings, Tor may fail to start and produce an error indicating it is unable to create files. If this occurs, simply open the Windows Defender Security Center and select "App & browser control". Add the tor.exe file to the permissions list, then rerun `tor.exe` from the command line. Tor should now start up normally.
