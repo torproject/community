@@ -1,5 +1,6 @@
 ---
 variables:
+  LEKTOR_BUILD_FLAGS: scss
   SITE_URL: community.torproject.org
   STAGING_URL: community.staging.torproject.net
   TRANSLATION_BRANCH: communitytpo-contentspot
