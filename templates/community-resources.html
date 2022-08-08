@@ -9,11 +9,13 @@
           <div class="bg-white border-0 col-sm-3 p-0 pr-4 align-self-center">
             <a href="{{ child.link }}" class="d-block"><img src="{{ child.cover | url }}" class="img-fluid" alt="{{ child.name }}"></a>
           </div>
-          <div class="d-flex flex-column">
+          <div class="d-flex flex-column w-100">
             <div class="d-flex flex-row gap-10-px align-items-start">
               <h3 class="card-title font-weight-600 m-0">{{ child.name }}</h3>
               <a href="{{ child.link }}" title="{{ child.name }}" class="btn btn-primary font-weight-600">{{ _('View') }}</a>
               <a href="{{ child.link }}" title="{{ child.name }}" class="btn btn-outline-primary font-weight-600">{{ _("Trainer's guide") }}</a>
+              <span class="flex-grow-1"></span> {# spacer so the updated date appears at the end #}
+              <span class="text-muted font-weight-600 font-size-18-px">{{ _('Updated: {}').format('<u>' + child.date + '</u>')|safe }}</span>
             </div>
             <span class="text-primary font-weight-600 my-2 font-size-18-px">{{ _('By {}').format(child.author) }}</span>
             <span class="m-0 font-size-18-px p-0 flex-grow-1">{{ child.description }}</span>
