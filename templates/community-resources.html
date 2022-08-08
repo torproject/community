@@ -13,7 +13,9 @@
             <div class="d-flex flex-row gap-10-px align-items-start">
               <h3 class="card-title font-weight-600 m-0">{{ child.name }}</h3>
               <a href="{{ child.link }}" title="{{ child.name }}" class="btn btn-primary font-weight-600">{{ _('View') }}</a>
-              <a href="{{ child.link }}" title="{{ child.name }}" class="btn btn-outline-primary font-weight-600">{{ _("Trainer's guide") }}</a>
+              {% if child.trainer_guide %}
+                <a href="{{ child.trainer_guide }}" title="{{ child.name }}" class="btn btn-outline-primary font-weight-600">{{ _("Trainer's guide") }}</a>
+              {% endif %}
               <span class="flex-grow-1"></span> {# spacer so the updated date appears at the end #}
               <span class="text-muted font-weight-600 font-size-18-px">{{ _('Updated: {}').format('<u>' + child.date + '</u>')|safe }}</span>
             </div>
