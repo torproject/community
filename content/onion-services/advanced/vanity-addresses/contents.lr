@@ -30,22 +30,20 @@ This has some advantages:
 
 * It has some branding appeal to site owners.
 
-* It's easy for Onion Services operators to debug their logs and know which services have errors without recurring to a table or to memorize some random characters from a regular onion address as [pointed by Alec Muffet](https://github.com/alecmuffett/eotk/blob/master/docs.d/TIPS-FOR-MINING-ONIONS.md).
+* It's easy for Onion Services operators to debug their logs and know which services have errors without recurring to a table or to memorize some random characters from a regular onion address.
 
 But it also has some disadvantages:
 
 * It's relatively easy for anybody with average computing resources to create other keys beginning with `mysitename` (although it's very unlikely to come up with the exact key from the example above).
-
 So, in a sense, vanity keys might be confusing and offer a false sense of identity: users can easily be mistaken into accessing an impersonating onion service just because it starts with `mysitename`.
 
 * It consumes resources (time and energy): the bigger the vanity name, the longer (and more computing power) it takes.
-
 An argument for using it, despite the resource consumption, is that an attacker wishing to impersonate an existing onionsite by creating a fake version of it might be inclined to use vanity addresses as an additional way to convince users that their address is the correct.
 If the legitimate site does not use a vanity address, users might get confused and think that the fake site is the valid one since it has a nicer address.
 
 The long term solution involves a better onion naming scheme, with [existing proposals for that](http://gitlab.torproject.org/tpo/onion-services/onion-support/-/wikis/Documentation/Onion-Services-UX-Proposals) and that can make vanity addresses only as a way to help system administrators to group onion addresses like when running many [Onionbalance](https://onionbalance.readthedocs.io/en/latest/) backends.
 
-## Vanity Address Generation
+## Vanity address generation
 
 mkp224o is one of the tools that can be used to generate vanity addresses.
 
@@ -62,4 +60,8 @@ For more options, refer to
 
     $ ./mkp224o -h
 
-and the tool's [FAQs](https://github.com/cathugger/mkp224o#faq-and-other-useful-info).
+## Read more
+
+* [Tips when mining Onion Addresses](https://github.com/alecmuffett/eotk/blob/master/docs.d/TIPS-FOR-MINING-ONIONS.md)
+* [mkp224o FAQ](https://github.com/cathugger/mkp224o#faq-and-other-useful-info)
+* [Onion Services UX Proposals](https://gitlab.torproject.org/tpo/onion-services/onion-support/-/wikis/Documentation/Onion-Services-UX-Proposals)
