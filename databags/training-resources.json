@@ -39,6 +39,16 @@
         "date" : "2021"
     },
 
+    "Introduction to Onion Services" :
+    {
+        "label" : "Brief introduction to Tor and Onion Services",
+        "name" : "onion-services",
+        "filename" : "intro-onion-service-2022",
+        "formats" : ["odp","pdf"],
+        "description" : "Learn about onion services and their benefits",
+        "date" : "2022"
+    },
+
     "helping survivors" :
     {
         "label" : "Helping survivors",
