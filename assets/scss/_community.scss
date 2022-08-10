@@ -13,3 +13,25 @@
 .gap-10-px {
     gap: 10px;
 }
+
+.image-thumb-200px {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+table.resource-table {
+    max-width: min-content;
+
+    tr {
+        background-color: unset !important;
+
+        &:first-child td {
+            border-top: none !important;
+        }
+    }
+
+    td > span {
+        white-space: nowrap;
+    }
+}

@@ -1,6 +1,6 @@
 _model: resource
 ---
-name: Running Tor bridges
+title: Running Tor bridges
 ---
 link: https://gitweb.torproject.org/community/training.git/plain/2021/private-bridges/private-bridges-workshop.odp
 ---

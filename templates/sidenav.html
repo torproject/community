@@ -1,3 +1,4 @@
+{% set sidenav_items = sidenav_items or this.parent.children %}
 <div class="container-fluid sidebar col-xs-12 col-sm-12 col-md-3 col-lg-3">
   <nav class="smalltopics no-background navbar navbar-expand-lg navbar-light bg-white p-0 fixed">
     <label class="side-toggler" for="menu-toggle">
@@ -9,7 +10,7 @@
 
     <div class="collapse navbar-collapse burger-menu" id="navbarSupportedTopicsContent">
       <ul class="nav nav-pills flex-column">
-        {% for child in this.parent.children %}
+        {% for child in sidenav_items %}
           <li{% if this.is_child_of(child.path) %} class="toc-entry toc-h2 active nav-item" {% else %} class="toc-entry toc-h2 nav-item" {% endif %}>
             <a role="button" {% if this.is_child_of(child.path) %} class="nav-link active" {% else %} class="nav-link" {% endif %}
               href="{{ child.path|url(alt=this.alt) }}">{{ _(child.title) }}</a>
@@ -22,7 +23,7 @@
 
   <nav class="d-none d-sm-block bg-white border-right sidetopics" id="sidenav-topics" style="top:172px;">
     <ul class="nav nav-pills flex-column">
-      {% for child in this.parent.children|sort(attribute='key') %}
+      {% for child in sidenav_items|sort(attribute='key') %}
         <li{% if this.is_child_of(child.path) %} class="toc-entry toc-h2 active nav-item" {% else %} class="toc-entry toc-h2 nav-item" {% endif %}>
           <a role="button" {% if this.is_child_of(child.path) %} class="nav-link active" {% else %} class="nav-link" {% endif %}
             href="{{ child.path|url(alt=this.alt) }}">{{ _(child.title) }}</a>

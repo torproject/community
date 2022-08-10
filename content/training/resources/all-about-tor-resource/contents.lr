@@ -1,6 +1,6 @@
 _model: resource
 ---
-name: All About Tor
+title: All About Tor
 ---
 link: https://gitweb.torproject.org/community/training.git/plain/2021/all-about-tor/all-about-tor-full-pack.odp
 ---
@@ -13,6 +13,11 @@ formats: None
 date: 2021
 ---
 cover: /static/images/training/all-about-tor.png
+---
+topics:
+foo
+bar
+baz
 ---
 languages: English
 ---

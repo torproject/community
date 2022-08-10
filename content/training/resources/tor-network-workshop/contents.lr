@@ -1,6 +1,6 @@
 _model: resource
 ---
-name: The Tor network
+title: The Tor network
 ---
 link: https://community.torproject.org/training/resources/tor-relay-workshop/
 ---

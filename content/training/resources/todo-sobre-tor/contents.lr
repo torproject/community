@@ -1,6 +1,6 @@
 _model: resource
 ---
-name: Todo sobre Tor
+title: Todo sobre Tor
 ---
 link: https://gitweb.torproject.org/community/training.git/plain/2019/all-about-tor/all-about-tor-full-pack+es.odp
 ---

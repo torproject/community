@@ -1,0 +1,77 @@
+{% set sidenav_items = this.parent.parent.children %}
+<div class="row pt-5">
+  {% include 'sidenav.html' %}
+  <div class="col-sm-12 col-xs-12  ml-sm-auto col-md-9 col-lg-9 {{ bag('alternatives', this.alt, 'order') }}">
+    <div>
+      <img src="{{ this.cover | url }}" class="image-thumb-200px mb-5" alt="{{ this.title }}">
+      <h1 class="mb-5">{{ this.title }}</h1>
+      <div>
+        <table class="resource-table mb-5">
+          <tr>
+            <td>
+              <span class="text-muted h5 font-weight-600">{{ _('Maintained by') }}</span>
+            </td>
+            <td>
+              <span class="h5 font-weight-600">{{ this.author }}</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span class="text-muted h5 font-weight-600">{{ _('Last updated') }}</span>
+            </td>
+            <td>
+              <span class="h5 font-weight-600">{{ this.date }}</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span class="text-muted h5 font-weight-600">{{ _('Estimated time') }}</span>
+            </td>
+            <td>
+              <span class="h5 font-weight-600">{{ this.estimated_time or 'FIXME: NO TIME ESTIMATE' }}</span>
+            </td>
+          </tr>
+        </table>
+        <p class="mb-5">{{ this.description }}</p>
+        {% if this.objectives %}
+          <div class="mb-5">
+            <h4>{{ _('Objectives') }}</h4>
+            <ul>
+              {% for objective in this.objectives %}
+                <li>{{ objective }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+        {% endif %}
+        {% if this.external_sources %}
+          <div class="mb-5">
+            <h4>{{ _('External reading sources') }}</h4>
+            <ul>
+              {% for external_source in this.external_sources %}
+                <li>{{ external_source }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+        {% endif %}
+        <h4 class="mb-5">{{ _('Download sample slides') }}</h4>
+        {% if this.topics %}
+          <div class="mb-5">
+            <h4>{{ _('Topics') }}</h4>
+            <p>
+              {% for topic in this.topics %}
+                <span>{{ topic }}</span>
+                {%- if loop.index != this.topics|length -%}
+                  {{ ', ' }}
+                {% endif %}
+              {% endfor %}
+            </p>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+    <div class="d-flex my-4">
+    </div>
+    <hr class="mb-5 mt-0">
+    <h2 class="text-primary">{{ _('Join the Conversation') }}</h2>
+  </div>
+</div>

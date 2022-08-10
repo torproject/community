@@ -1,6 +1,6 @@
 _model: resource
 ---
-name: Orbot: Tor VPN para iOS y Android
+title: Orbot: Tor VPN para iOS y Android
 ---
 link: https://gitlab.com/guardianproject/pluto/-/blob/main/Orbot_Spanish.pdf
 ---
