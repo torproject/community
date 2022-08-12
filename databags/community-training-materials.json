@@ -39,6 +39,19 @@
     "languages": "English",
     "link": "https://gitweb.torproject.org/community/training.git/plain/2021/private-bridges/private-bridges-workshop.odp"
   },
+
+"Introduction to Onion Services" :
+  {
+      "author": "Tor Project",
+      "name": "Introduction to Onion Services",
+      "formats": ["odp","pdf"],
+      "description": "Learn more about Onion Services and their benefits",
+      "date": "2022",
+      "cover": "/static/images/training/onion-services.png",
+      "languages": "English",
+      "link": "https://gitlab.torproject.org/tpo/community/training/-/raw/master/2022/onion-services/intro-onion-service-2022.odp?inline=false"
+  },
+
   "exploring-the-tor-network": {
     "name": "Exploring the Tor network (poster)",
     "author": "Article19",
@@ -47,6 +60,7 @@
     "cover": "/static/images/training/exploring-the-tor-network.jpg",
     "languages": "English"
   },
+  
   "understanding-and-circumventing-network-censorship": {
     "name": "Understanding and Circumventing Network Censorship",
     "author": "Electronic Frontier Foundation (EFF)",
