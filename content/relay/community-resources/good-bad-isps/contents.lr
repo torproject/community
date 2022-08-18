@@ -400,7 +400,7 @@ These hosts already have many Tor nodes being hosted there.
 | [PulseServers](https://www.pulseservers.com) | AS16276 | Yes | Yes | Yes | Exit-friendly. | 05/01/16 |
 | [RamNode](https://ramnode.com/) | AS3842 | Yes | Yes | No | - | 11/03/14 |
 | [Server Complete](https://servercomplete.com/) | - | ? | ? | No | - | 11/03/14 |
-| [Shape Host](https://shape.host) | AS16276 | Yes | Yes | Yes | I am running an exit for 8 months but make sure you block all abuse ports. Add port 80 showing its tor relay with nginx. I'm having no problems. "Hello, We want to avoid getting DCMA notice, because of this we ca not provide any VPS for exit relays." Unlimited bandwidth: $2/month | 9/01/22 |
+| [Shape Host](https://shape.host) | AS16276 | Yes | Yes | Yes | I am running an exit for 8 months but make sure you block all abuse ports. Add port 80 showing its tor relay with nginx. I'm having no problems. "Hello, We want to avoid getting DCMA notice, because of this we ca not provide any VPS for exit relays." Unlimited bandwidth: $2/month | 8/01/22 |
 | [Softlayer](https://www.softlayer.com) | - | Yes | Yes | ? | - | - |
 | [Slicehost/Rackspace](http://www.slicehost.com/) | - | Yes | Yes | No | Host, not an ISP | - |
 | [SolarVPS](https://solarvps.com) | - | Yes | Yes | Yes | - | - |
