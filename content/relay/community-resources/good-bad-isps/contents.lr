@@ -193,7 +193,7 @@ These hosts already have many Tor nodes being hosted there.
 | **Company/ISP** | **ASN** | **Bridges** | **Relay** | **Exit** | **Comments** | **Last Updated** |
 |-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
 | [BuyVM.net](https://buyvm.net) | AS53667 | Yes | Yes | Yes | New Tor rules [here](https://buyvm.net/acceptable-use-policy/#3). All relays are fine if you follow the steps. Notices are ignored. Unmetered bandwidth. | 09/27/2021 |
-| [Hostaku](https://Hostaku.com) | - | Yes | ? | No | Not Allowed Torrent, Tor, VPN services. They have plans $5/yearly. Unlimited Bandwidth, Direct Admin. Code: (50OFF). This would be really good for Bridges because its really cheap per year. Read TOS. Las Vegas, LU | 08/01/2022 |
+| [Hostaku](https://Hostaku.com) | - | Yes | ? | No | Not Allowed Torrent, Tor, VPN services. They have plans $5/yearly. Unlimited Bandwidth, Direct Admin. This would be really good for Bridges because its really cheap per year. Read TOS. Las Vegas, LU | 08/01/2022 |
 | [G-Core Labs](https://gcorelabs.com) | AS199524 | Yes | Yes | No | They don't allow exits and will suspend your active services and restrict your access to the account if they receive abuse messages. KVM VPS. IPv4+IPv6 native support. * Gnu/Linux, FreeBSD and Windows server supported. Unmetered traffic. | 06/2022 |
 | [ShinJiru](https://shinJiru.com) | - | Yes | Yes | Yes | Offshore Hosting: Have been running an exit for over a year. Cheap for an exit relay. DMCA Notices Ignored! Code: 30% off (JYB301) | 08/01/2022 |
 | [Oceanohost](https://oceanohost.com) | - | Yes | Yes | Yes | $15/month 1gbps unmetered. Italy, Finland, Spain, Germany, Canda, LU | 08/01/2022 |
