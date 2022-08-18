@@ -134,7 +134,7 @@ These hosts already have many Tor nodes being hosted there.
 |-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
 | [hosthatch](https://hosthatch.com/) | AS36351 | Yes | Yes | No | Their Hong Kong VPS type is OpenVZ,and ISP is SoftLayer. VPS locate in Pacnet's data centers, Hong Kong. | - | 05/01/16 |
 | [G-Core Labs](https://gcorelabs.com) | AS199524 | Yes | Yes | No | They don't allow exits and will suspend your active services and restrict your access to the account if they receive abuse messages. KVM VPS. IPv4+IPv6 native support. * Gnu/Linux, FreeBSD and Windows server supported. Unmetered traffic. | 06/2022 |
-| [ShinJiru](https://shinJiru.com) | - | Yes | Yes | Yes | Offshore Hosting: Have been running an exit for over a year. Cheap for an exit relay. DMCA Notices Ignored! Code: 30% off (JYB301) | 08/01/2022 |
+| [ShinJiru](https://shinJiru.com) | - | Yes | Yes | Yes | Offshore Hosting: Have been running an exit for over a year. Cheap for an exit relay. DMCA Notices Ignored! | 08/01/2022 |
 
 
 ### Hungary
