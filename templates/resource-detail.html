@@ -1,10 +1,12 @@
 {% set sidenav_items = this.parent.parent.children %}
+{% set resource_name = this.resource_name or this._path.split('/')[-1][:-('-guide'|length)] %}
+{% set resource = bag('community-training-materials', resource_name) %}
 <div class="row pt-5">
   {% include 'sidenav.html' %}
   <div class="col-sm-12 col-xs-12  ml-sm-auto col-md-9 col-lg-9 {{ bag('alternatives', this.alt, 'order') }}">
     <div>
-      <img src="{{ this.cover | url }}" class="image-thumb-200px mb-5" alt="{{ this.title }}">
-      <h1 class="mb-5">{{ this.title }}</h1>
+      <img src="{{ resource['cover'] | url }}" class="image-thumb-200px mb-5" alt="{{ this.title }}">
+      <h1 class="mb-5">{{ resource['name'] }}</h1>
       <div>
         <table class="resource-table mb-5">
           <tr>
@@ -12,7 +14,7 @@
               <span class="text-muted h5 font-weight-600">{{ _('Maintained by') }}</span>
             </td>
             <td>
-              <span class="h5 font-weight-600">{{ this.author }}</span>
+              <span class="h5 font-weight-600">{{ resource['author'] }}</span>
             </td>
           </tr>
           <tr>
@@ -32,7 +34,7 @@
             </td>
           </tr>
         </table>
-        <p class="mb-5">{{ this.description }}</p>
+        <p class="mb-5">{{ resource['description'] }}</p>
         {% if this.objectives %}
           <div class="mb-5">
             <h4>{{ _('Objectives') }}</h4>

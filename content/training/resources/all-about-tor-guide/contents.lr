@@ -1,0 +1,13 @@
+_model: resource
+---
+title: All About Tor Training Guide
+---
+author: Tor Project
+---
+cover:
+---
+background: white
+---
+image: /static/images/onion.png
+---
+body: foobar

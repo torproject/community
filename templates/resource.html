@@ -1,5 +1,1 @@
-{#- resource pages are intended to be trainer guides, but we only want trainer guides for resoureces written by Tor Project -#}
-{#- empty pages are generated for non-Tor Project resources, and should be removed after the build -#}
-{%- if this.author.lower().strip() == 'tor project' -%}
 {% extends 'layout.html' %}
-{%- endif -%}
