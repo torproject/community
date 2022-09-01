@@ -1,0 +1,128 @@
+section: Community
+---
+section_id: training
+---
+color: primary
+---
+_template: print.html
+---
+title: Training participants survey
+---
+subtitle: Use this form to collect participants' feedback about Tor training sessions. Print, distribute and ask participants to fill it by the end of the training.
+---
+key: 3
+---
+html: empty.html
+---
+body:
+#### Training Participants Survey
+
+**Note:** *This file should be filled by the training participants.*
+
+**Please share**:
+- Date:
+- Country:
+- Organization:
+- Facilitator/Trainer:
+
+
+1. Is this your first Digital Security training?
+
+   ▢ Yes - ▢ No
+
+2. Is this the first Tor training you attend?
+
+   ▢ Yes - ▢ No
+
+3. On a scale of 1 to 5, circle the option of how strongly you believe you need to protect your privacy and security online.
+   (Consider an answer of 1 as "I don't think I need protection", and 5 as "I really need protection"):
+
+   1 - 2 - 3 - 4 - 5
+
+4. What types of devices do you use to access the Internet?
+   - ▢ Mobile/cell phone
+   - ▢ Tablet
+   - ▢ Desktop or laptop computer
+   - ▢ Other:
+
+5. Have you used Tor before?
+
+   ▢ Yes - ▢ No
+
+6. How often do you use Tor?
+   - ▢ At least once a day
+   - ▢ At least once a week
+   - ▢ Just in specific situations
+   - ▢ N/A
+
+7. Which of the following Tor-powered products do you use?
+   - ▢ Tor Browser for Desktop
+   - ▢ Tor Browser for Android
+   - ▢ Onion Browser
+   - ▢ OnionShare
+   - ▢ Orbot
+   - ▢ Tails
+   - ▢ SecureDrop
+   - ▢ N/A
+   - ▢ Other:
+
+8. How often do you use a VPN?
+   - ▢ At least once a day
+   - ▢ At least once a week
+   - ▢ Just in specific situations
+   - ▢ I do not use a VPN
+
+9. Which VPN do you use?
+
+   ................
+
+   ................
+
+   ................
+
+   ................
+
+10. What gender do you identify as?
+   - ▢ Female
+   - ▢ Male
+   - ▢ Non binary
+   - ▢ Prefer not to disclose
+
+11. Would you describe yourself mostly as a...
+   - ▢ Day to day technology user
+   - ▢ Someone that has a good understanding of tools and how things work
+   - ▢ Technical Expert
+   - ▢ Other:
+
+12. How old are you?
+   - ▢ Less than 20
+   - ▢ Between 20 - 40
+   - ▢ More than 40
+
+13. How can this training be useful for your work?
+
+   ................
+
+   ................
+
+   ................
+
+   ................
+
+14. Are there any additional topics missing that you would still like to learn?
+
+   ................
+
+   ................
+
+   ................
+
+   ................
+
+
+
+
+Feel free to contact us if you have any questions or suggestions at ``ux-team@torproject.org``.
+
+**Thank you!**
+

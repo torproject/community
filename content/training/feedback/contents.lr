@@ -1,0 +1,32 @@
+_model: page
+---
+section: training
+---
+section_id: training
+---
+color: primary
+---
+_template: layout.html
+---
+title: Training Feedback
+---
+subtitle: We rely on user feedback to improve our software. Use these resources to collect feedback during your Tor Training.
+---
+cta: Help us to improve Tor
+---
+key: 5
+---
+html: two-columns-page.html
+---
+_discoverable: no
+---
+body:
+
+We rely on user feedback to improve our software.
+During training, it is very common that users experience pain points and frustrations.
+Knowing them can help the community to develop and make necessary user-centered improvements on Tor tools.
+
+Use these materials to collect [participants' feedback](participant) about the training, and [this form to report](trainer) your training and user feedback to us.
+It's very important that you read the [User Research Guidelines](https://community.torproject.org/user-research/guidelines/) and both participant and training feedback beforehand, so you can better understand what to take notes about and how to care about users data privacy.
+
+We appreciate all the time you're taking to teach and improve Tor tools!

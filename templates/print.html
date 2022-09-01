@@ -1,0 +1,9 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="{{ this.alt }}" {% if bag('alternatives', this.alt, 'direction') == 'text-right' %}dir="rtl"{% endif %}>
+  <head>
+    {% include 'meta.html' %}
+    </head>
+<body >
+  <div class="mx-auto col-12 {{ bag('alternatives', this.alt, 'direction') }}">
+          {% include this.html %}
+  </div>
+</body>
