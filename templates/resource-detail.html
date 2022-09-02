@@ -1,6 +1,11 @@
 {% set sidenav_items = this.parent.parent.children %}
 {% set resource_name = this.resource_name or this._path.split('/')[-1][:-('-guide'|length)] %}
 {% set resource = bag('community-training-materials', resource_name) %}
+<style>
+#sample-slides td:not(:first-child) {
+  padding-right: 0;
+}
+</style>
 <div class="row pt-5">
   {% include 'sidenav.html' %}
   <div class="col-sm-12 col-xs-12  ml-sm-auto col-md-9 col-lg-9 {{ bag('alternatives', this.alt, 'order') }}">
@@ -55,7 +60,33 @@
             </ul>
           </div>
         {% endif %}
-        <h4 class="mb-5">{{ _('Download sample slides') }}</h4>
+        {% if this.sample_slides %}
+          <h4 class="mb-5">{{ _('Download sample slides') }}</h4>
+          <table class="resource-table mb-5" id="sample-slides">
+            {% for slide in this.sample_slides.blocks %}
+              <tr class="h5 font-weight-600">
+                <td>
+                  <span class="text-muted">{{ slide.language }}</span>
+                </td>
+                {% if slide.view_link %}
+                  <td>
+                    <a href="{{ slide.view_link }}"><button type="button" class="btn btn-sm btn-primary font-weight-600 h5">View</button></a>
+                  </td>
+                {% endif %}
+                {% if slide.pdf_link %}
+                  <td>
+                    <button type="button" class="btn btn-sm btn-outline-primary font-weight-600 h5">PDF</button>
+                  </td>
+                {% endif %}
+                {% if slide.odp_link %}
+                  <td>
+                    <button type="button" class="btn btn-sm btn-outline-primary font-weight-600 h5">ODP</button>
+                  </td>
+                {% endif %}
+              </tr>
+            {% endfor %}
+          </table>
+        {% endif %}
         {% if this.topics %}
           <div class="mb-5">
             <h4>{{ _('Topics') }}</h4>
