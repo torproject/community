@@ -1,1 +1,33 @@
 {% extends 'layout.html' %}
+{% macro pathbar_segments(page) -%}
+  {% set current_page = page == this %}
+  {%- if page.parent -%}
+  {{ pathbar_segments(page.parent) }}
+  {% endif %}
+  <li class="d-inline">
+    {% if not current_page %}
+      <a href="{{ page|url }}" title="page.title">{{ page.title }}</a>
+    {% else %}
+      {{ page.title }}
+    {% endif %}
+  </li>
+{% endmacro %}
+
+{% block pathbar %}
+<style>
+#pathbar ul li:not(:last-child)::after {
+  content: "/";
+  color: #B9B8BB;
+}
+#pathbar ul li:last-child {
+  color: #B9B8BB;
+  font-weight: 600;
+}
+#pathbar ul {
+  font-size: 16px;
+}
+</style>
+<div style="background-color: #F3F3F3;" class="py-3 pl-4" id="pathbar">
+  <ul class="m-0 pl-3">{{ pathbar_segments(this.record) }}</ul>
+</div>
+{% endblock %}
