@@ -35,3 +35,21 @@ table.resource-table {
         white-space: nowrap;
     }
 }
+
+#pathbar {
+    background-color: #F3F3F3;
+
+    ul {
+        font-size: 16px;
+
+        li:not(:last-child)::after {
+            content: "/";
+            color: #B9B8BB;
+        }
+
+        li:last-child {
+            color: #B9B8BB;
+            font-weight: 600;
+        }
+    }
+}
