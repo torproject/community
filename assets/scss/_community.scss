@@ -14,6 +14,10 @@
     gap: 10px;
 }
 
+.gap-32px {
+    gap: 32px;
+}
+
 .image-thumb-200px {
     width: 200px;
     height: 200px;
@@ -25,9 +29,19 @@ table.resource-table {
 
     tr {
         background-color: unset !important;
+        border-top: 1px solid #e9ecef;
+        border-bottom: 1px solid #e9ecef;
 
-        &:first-child td {
-            border-top: none !important;
+        &:first-child {
+            border-top: none;
+        }
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+        td {
+            border: none !important;
         }
     }
 
