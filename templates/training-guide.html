@@ -43,7 +43,7 @@
       <p class="mb-5">{{ resource['description'] }}</p>
       {% if this.objectives %}
       <div class="mb-5">
-        <h4>{{ _('Objectives') }}</h4>
+        <h4 class="font-weight-600">{{ _('Objectives') }}</h4>
         <ul>
           {% for objective in this.objectives %}
           <li>{{ objective }}</li>
@@ -53,7 +53,7 @@
       {% endif %}
       {% if this.external_sources %}
       <div class="mb-5">
-        <h4>{{ _('External reading sources') }}</h4>
+        <h4 class="font-weight-600">{{ _('External reading sources') }}</h4>
         <ul>
           {% for external_source in this.external_sources %}
           <li>{{ external_source }}</li>
@@ -62,7 +62,7 @@
       </div>
       {% endif %}
       {% if this.sample_slides %}
-      <h4 class="mb-5">{{ _('Download sample slides') }}</h4>
+      <h4 class="mb-5 font-weight-600">{{ _('Download sample slides') }}</h4>
       <table class="resource-table mb-5" id="sample-slides">
         {% for slide in this.sample_slides.blocks %}
         <tr class="h5 font-weight-600">
@@ -90,7 +90,7 @@
       {% endif %}
       {% if this.topics %}
       <div class="mb-5">
-        <h4>{{ _('Topics') }}</h4>
+        <h4 class="font-weight-600">{{ _('Topics') }}</h4>
         <p>
           {% for topic in this.topics %}
           <span>{{ topic }}</span>
