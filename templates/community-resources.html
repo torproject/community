@@ -1,74 +1,48 @@
 <div class="row pt-5">
   {% include 'sidenav.html' %}
-  <div class="col-sm-12 col-xs-12  ml-sm-auto col-md-9 col-lg-9 {{ bag('alternatives', this.alt, 'order') }}">
+  <div class="col-sm-12 col-xs-12  ml-sm-auto col-md-9 col-lg-9 pr-6 {{ bag('alternatives', this.alt, 'order') }}">
     {{ this.body }}
-    <div>
-      {% for resource_name, resource in bag('community-training-materials').items() %}
-      <div class="my-3 w-100 border p-3">
-        <div class="h-100 d-flex align-items-stretch">
-          <div class="bg-white border-0 col-sm-3 p-0 pr-4 align-self-center">
-            <a href="{{ resource['link']|url }}" class="d-block"><img src="{{ resource['cover']|url }}" class="img-fluid" alt="{{ resource['name'] }}"></a>
-          </div>
-          <div class="d-flex flex-column w-100">
-            <div class="d-flex flex-row gap-10px align-items-start">
-              <h3 class="card-title font-weight-600 m-0">{{ resource['name'] }}</h3>
-              <a href="{{ resource['link']|url }}" title="{{ resource['name'] }}" class="btn btn-primary font-weight-600">{{ _('View') }}</a>
-              {% set training_guide = site.get(this._path + '/' + resource_name + '-guide') %}
-              {% if training_guide %}
-                <a href="{{ training_guide|url }}" title="{{ resource['name'] }}" class="btn btn-outline-primary font-weight-600">{{ _("Trainer's guide") }}</a>
-              {% endif %}
-              <span class="flex-grow-1"></span> {# spacer so the updated date appears at the end #}
-              <span class="text-muted font-weight-600 font-size-18-px">{{ _('Updated: {}').format(resource['date']) }}</span>
+    <div class="mr-4">
+      <div>
+        {% for resource_name, resource in bag('community-training-materials').items() %}
+        <div class="my-3 w-100 border p-3">
+          <div class="h-100 d-flex align-items-stretch">
+            <div class="bg-white border-0 col-sm-3 p-0 pr-4 align-self-center">
+              <a href="{{ resource['link']|url }}" class="d-block"><img src="{{ resource['cover']|url }}" class="img-fluid" alt="{{ resource['name'] }}"></a>
             </div>
-            <span class="text-primary font-weight-600 my-2 font-size-18-px">{{ _('By {}').format(resource['author']) }}</span>
-            <span class="m-0 font-size-18-px p-0 flex-grow-1">{{ resource['description'] }}</span>
-            <span class="text-muted font-weight-600 m-0 font-size-18-px">{{ _('Available in: {}').format(resource['languages']|join(', ')) }}</span>
+            <div class="d-flex flex-column w-100">
+              <div class="d-flex flex-row gap-10px align-items-start">
+                <h3 class="card-title font-weight-600 m-0">{{ resource['name'] }}</h3>
+                <a href="{{ resource['link']|url }}" title="{{ resource['name'] }}" class="btn btn-primary font-weight-600">{{ _('View') }}</a>
+                {% set training_guide = site.get(this._path + '/' + resource_name + '-guide') %}
+                {% if training_guide %}
+                <a href="{{ training_guide|url }}" title="{{ resource['name'] }}" class="btn btn-outline-primary font-weight-600">{{ _("Trainer's guide") }}</a>
+                {% endif %}
+                <span class="flex-grow-1"></span> {# spacer so the updated date appears at the end #}
+                <span class="text-muted font-weight-600 font-size-18-px">{{ _('Updated: {}').format(resource['date']) }}</span>
+              </div>
+              <span class="text-primary font-weight-600 my-2 font-size-18-px">{{ _('By {}').format(resource['author']) }}</span>
+              <span class="m-0 font-size-18-px p-0 flex-grow-1">{{ resource['description'] }}</span>
+              <span class="text-muted font-weight-600 m-0 font-size-18-px">{{ _('Available in: {}').format(resource['languages']|join(', ')) }}</span>
+            </div>
           </div>
         </div>
-      </div>
-      {% endfor %}
-    </div>
-    <div class="d-flex my-4">
-      <ul class="pagination m-0 ml-auto">
-        <li class="page-item {% if not this.pagination.has_prev %}disabled{% endif %}">
-          {% if this.pagination.has_prev %}
-            <a href="{{ this.pagination.prev|url }}" class="page-link">{{ _('Previous') }}</a>
-          {% else %}
-            <span class="page-link">{{ _('Previous') }}</span>
-          {% endif %}
-        </li>
-        {% for page in range(1, this.pagination.pages + 1)%}
-        <li class="page-item {% if page == this.pagination.page %}active{% endif %}">
-            {% if page == this.pagination.page %}
-              <a href="#" class="page-link">
-            {% else %}
-              <a href="{{ this.pagination.for_page(page)|url }}" class="page-link">
-            {% endif %}
-            {{ page }}</a>
-          </li>
         {% endfor %}
-        <li class="page-item {% if not this.pagination.has_next %}disabled{% endif %}">
-          {% if this.pagination.has_next %}
-            <a href="{{ this.pagination.next|url }}" class="page-link">{{ _('Next') }}</a>
-          {% else %}
-            <span class="page-link">{{ _('Next') }}</span>
-          {% endif %}
-        </li>
-      </ul>
-    </div>
-    <hr class="mb-5">
-    {{ md(_('### Community building
+      </div>
+      <hr class="my-5">
+      {{ md(_('### Community building
 
 Do you know of or have any Tor training materials (slides, guides, fanzines, videos, and other formats) that should be part of this training section?
 Please send an email to [training at torproject.org](mailto:training@torproject.org) with:
- - Title and description
- - Author and author contact information
- - Link to download or access the resource
- - Resource license (Creative Commons or similar license)
+- Title and description
+- Author and author contact information
+- Link to download or access the resource
+- Resource license (Creative Commons or similar license)
 
 Please note that we will evaluate if:
- - The material is being updated and maintained.
- - Do no harm: demystifies the "dark/deep web" and training materials that will not put people at risk.
- - Follow the Tor Project\'s [Code of Conduct](https://gitweb.torproject.org/community/policies.git/tree/code_of_conduct.txt), [Statement of Values](https://gitweb.torproject.org/community/policies.git/tree/statement_of_values.txt), and [Social Contract](https://gitweb.torproject.org/community/policies.git/tree/social_contract.txt).')) }}
+- The material is being updated and maintained.
+- Do no harm: demystifies the "dark/deep web" and training materials that will not put people at risk.
+- Follow the Tor Project\'s [Code of Conduct](https://gitweb.torproject.org/community/policies.git/tree/code_of_conduct.txt), [Statement of Values](https://gitweb.torproject.org/community/policies.git/tree/statement_of_values.txt), and [Social Contract](https://gitweb.torproject.org/community/policies.git/tree/social_contract.txt).')) }}
+    </div>
   </div>
 </div>
