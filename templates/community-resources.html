@@ -13,8 +13,8 @@
             <div class="col-sm pl-lg-1">
               <div class="row">
                 <div class="col-sm row">
-                  <h3 class="col-sm card-title font-weight-600 m-0" style="max-width: fit-content">{{ resource['name'] }}</h3>
-                  <div class="row gap-10px pl-3">
+                  <h3 class="col-sm card-title font-weight-600 m-0 pr-0" style="max-width: fit-content">{{ resource['name'] }}</h3>
+                  <div class="row gap-10px pl-3 m-0">
                     <div>
                       <a href="{{ resource['link']|url }}" title="{{ resource['name'] }}" class="btn btn-primary font-weight-600">{{ _('View') }}</a>
                     </div>
@@ -26,7 +26,7 @@
                     </div></div>
                     <div class="col-sm-6"></div>
                 </div>
-                <div class="col-sm-auto text-right">
+                <div class="d-none d-md-inline col-sm-auto text-right">
                   <span class="text-muted font-weight-600 font-size-18-px">{{ _('Updated: {}').format(resource['date']) }}</span>
                 </div>
               </div>
