@@ -5,25 +5,40 @@
     <div class="mr-4">
       <div>
         {% for resource_name, resource in bag('community-training-materials').items() %}
-        <div class="my-3 w-100 border p-3">
-          <div class="h-100 d-flex align-items-stretch">
-            <div class="bg-white border-0 col-sm-3 p-0 pr-4 align-self-center">
+        <div class="border container-fluid p-3 px-0 my-3">
+          <div class="row">
+            <div class="col-sm-3">
               <a href="{{ resource['link']|url }}" class="d-block"><img src="{{ resource['cover']|url }}" class="img-fluid" alt="{{ resource['name'] }}"></a>
             </div>
-            <div class="d-flex flex-column w-100">
-              <div class="d-flex flex-row gap-10px align-items-start">
-                <h3 class="card-title font-weight-600 m-0">{{ resource['name'] }}</h3>
-                <a href="{{ resource['link']|url }}" title="{{ resource['name'] }}" class="btn btn-primary font-weight-600">{{ _('View') }}</a>
-                {% set training_guide = site.get(this._path + '/' + resource_name + '-guide') %}
-                {% if training_guide %}
-                <a href="{{ training_guide|url }}" title="{{ resource['name'] }}" class="btn btn-outline-primary font-weight-600">{{ _("Trainer's guide") }}</a>
-                {% endif %}
-                <span class="flex-grow-1"></span> {# spacer so the updated date appears at the end #}
-                <span class="text-muted font-weight-600 font-size-18-px">{{ _('Updated: {}').format(resource['date']) }}</span>
+            <div class="col-sm pl-lg-1">
+              <div class="row">
+                <div class="col-sm row">
+                  <h3 class="col-sm card-title font-weight-600 m-0" style="max-width: fit-content">{{ resource['name'] }}</h3>
+                  <div class="row gap-10px pl-3">
+                    <div>
+                      <a href="{{ resource['link']|url }}" title="{{ resource['name'] }}" class="btn btn-primary font-weight-600">{{ _('View') }}</a>
+                    </div>
+                    <div>
+                      {% set training_guide = site.get(this._path + '/' + resource_name + '-guide') %}
+                      {% if training_guide %}
+                      <a href="{{ training_guide|url }}" title="{{ resource['name'] }}" class="btn btn-outline-primary font-weight-600">{{ _("Trainer's guide") }}</a>
+                      {% endif %}
+                    </div></div>
+                    <div class="col-sm-6"></div>
+                </div>
+                <div class="col-sm-auto text-right">
+                  <span class="text-muted font-weight-600 font-size-18-px">{{ _('Updated: {}').format(resource['date']) }}</span>
+                </div>
               </div>
-              <span class="text-primary font-weight-600 my-2 font-size-18-px">{{ _('By {}').format(resource['author']) }}</span>
-              <span class="m-0 font-size-18-px p-0 flex-grow-1">{{ resource['description'] }}</span>
-              <span class="text-muted font-weight-600 m-0 font-size-18-px">{{ _('Available in: {}').format(resource['languages']|join(', ')) }}</span>
+              <div class="row">
+                <span class="text-primary font-weight-600 my-2 font-size-18-px col">{{ _('By {}').format(resource['author']) }}</span>
+              </div>
+              <div class="row">
+                <span class="m-0 font-size-18-px flex-grow-1 col">{{ resource['description'] }}</span>
+              </div>
+              <div class="row">
+                <span class="text-muted font-weight-600 m-0 font-size-18-px col">{{ _('Available in: {}').format(resource['languages']|join(', ')) }}</span>
+              </div>
             </div>
           </div>
         </div>
@@ -32,17 +47,17 @@
       <hr class="my-5">
       {{ md(_('### Community building
 
-Do you know of or have any Tor training materials (slides, guides, fanzines, videos, and other formats) that should be part of this training section?
-Please send an email to [training at torproject.org](mailto:training@torproject.org) with:
-- Title and description
-- Author and author contact information
-- Link to download or access the resource
-- Resource license (Creative Commons or similar license)
+      Do you know of or have any Tor training materials (slides, guides, fanzines, videos, and other formats) that should be part of this training section?
+      Please send an email to [training at torproject.org](mailto:training@torproject.org) with:
+      - Title and description
+      - Author and author contact information
+      - Link to download or access the resource
+      - Resource license (Creative Commons or similar license)
 
-Please note that we will evaluate if:
-- The material is being updated and maintained.
-- Do no harm: demystifies the "dark/deep web" and training materials that will not put people at risk.
-- Follow the Tor Project\'s [Code of Conduct](https://gitweb.torproject.org/community/policies.git/tree/code_of_conduct.txt), [Statement of Values](https://gitweb.torproject.org/community/policies.git/tree/statement_of_values.txt), and [Social Contract](https://gitweb.torproject.org/community/policies.git/tree/social_contract.txt).')) }}
+      Please note that we will evaluate if:
+      - The material is being updated and maintained.
+      - Do no harm: demystifies the "dark/deep web" and training materials that will not put people at risk.
+      - Follow the Tor Project\'s [Code of Conduct](https://gitweb.torproject.org/community/policies.git/tree/code_of_conduct.txt), [Statement of Values](https://gitweb.torproject.org/community/policies.git/tree/statement_of_values.txt), and [Social Contract](https://gitweb.torproject.org/community/policies.git/tree/social_contract.txt).')) }}
     </div>
   </div>
 </div>
