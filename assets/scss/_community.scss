@@ -18,13 +18,17 @@
     gap: 32px;
 }
 
-.image-thumb-200px {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
+@media (min-width: 992px) {
+    .image-thumb-200px {
+        width: 200px;
+        max-width: 200px;
+        height: 200px;
+        object-fit: cover;
+        padding: 0;
+    }
 }
 
-table.resource-table {
+/*table.resource-table {
     max-width: min-content;
 
     tr {
@@ -47,6 +51,12 @@ table.resource-table {
 
     td > span {
         white-space: nowrap;
+    }
+}*/
+
+div.resource-table {
+    span {
+        border-bottom: 1px solid #e9ecef;
     }
 }
 
