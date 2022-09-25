@@ -115,7 +115,7 @@ The playbook below has a limit of 300 concurrent clients:
 
 ```
 - hosts: snowflake
-   vars:
+  vars:
     clients: 300
   roles:
      - nvjacobo.snowflake
