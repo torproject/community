@@ -11,3 +11,34 @@ background: white
 image: /static/images/onion.png
 ---
 body: foobar
+---
+external_sources:
+https://www.acsac.org/2011/program/keynotes/syverson.pdf
+https://matt.traudt.xyz/posts/2021-02-22-tor-spelling/
+---
+objectives:
+Understand the privacy advantages of the Tor network.
+Understand the breadth of the Tor ecosystem of tools.
+Identify properties important in privacy-preserving technologies.
+---
+topics:
+foo
+bar
+baz
+---
+sample_slides:
+
+#### sample_slide ####
+language: English
+----
+view_link: test
+----
+pdf_link: test
+----
+odp_link: test
+----
+
+#### sample_slide ####
+language: Español
+----
+
