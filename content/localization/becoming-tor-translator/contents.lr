@@ -16,6 +16,7 @@ html: two-columns-page.html
 ---
 body:
 Thank you for your interest in helping us with translations.
+Our localization efforts are supported by the [Localization Lab](https://www.localizationlab.org/).
 
 # Localization mailing list
 <a name="tor-l10n" />
@@ -24,37 +25,35 @@ To communicate with other translators, please join the [Tor localization mailing
 
 # Translation platform
 
-Most of our localization efforts are hosted in the [Localization Lab Hub](https://www.localizationlab.org/) on Transifex, a third-party translation platform.
+Most of our localization efforts are hosted on [weblate](https://hosted.weblate.org/projects/tor/), a third-party translation platform.
 
-In order to begin contributing you will have to sign up with Transifex. Here's an outline of what to expect during that process.
+You can submit anonymous suggestions, but it is better to create an account, so you can comment and discuss with other translators, or review their contributions.
 
-## Signing Up On Transifex
+We encourage the use of pseudonymous accounts!
 
-1. Head over to the [Transifex signup page](https://transifex.com/signup/).
-  Enter your information into the fields and click the 'Sign Up' button:
-![Sign up to Transifex](/static/images/localization/tr1.png)
-1. Fill out the next page with your name and select "Localization" and "Translator" from the drop-down menus:
-![Fill out details](/static/images/localization/tr2.png)
-1. On the next page, select 'Join an existing project' and continue.
-1. On the next page, select the languages you speak from the drop-down menu and continue.
-1. You are now signed up! Go to the [Tor Transifex page](https://www.transifex.com/otf/torproject/).
-1. Click the blue 'Join Team' button on the far right:
-<img style="display:block" src="/static/images/localization/tr3.png" alt="Join Team">
-1. Select the language you would like to translate from the dropdown menu:
-<img style="display:block" src="/static/images/localization/tr4.png" alt="Choose Language">
-1. A notification will now show up on the top of the page like so:
-<img style="display:block" src="/static/images/localization/tr5.png" alt="Request Submitted">
-1. Before translating, please read through the Tor Project page on the [Localization Lab Wiki](https://wiki.localizationlab.org/index.php/Tor).
-1. Please consult the Tor L10n wikipages for [translators](https://gitlab.torproject.org/tpo/community/l10n/-/wikis/Localization-for-translators) and [reviewers](https://gitlab.torproject.org/tpo/community/l10n/-/wikis/Localization-for-reviewers).
-   The page includes guidelines, resources, and priorities that will help you make the most out of your contribution.
+Before translating, please read through the Tor Project page on the [Localization Lab Wiki](https://wiki.localizationlab.org/index.php/Tor), and our documentation at the [Tor L10n wiki for translators](https://gitlab.torproject.org/tpo/community/l10n/-/wikis/Localization-for-translators) and [reviewers](https://gitlab.torproject.org/tpo/community/l10n/-/wikis/Localization-for-reviewers).
+The page includes guidelines, resources, and priorities that will help you make the most out of your contribution.
 
-After your membership is approved, you're ready to begin.
+## Registering On Weblate
+
+1. Head over to the [weblate signup page](https://hosted.weblate.org/accounts/register/).
+1. Fill out the next page with your information, and wait for the confirmation email (it can take up to 10 minutes to arrive to your inbox).
+1. Activate your account by clicking on the email from weblate, agreeing to the terms of service, and adding a new password.
+1. On the next page, select the languages you will translate to from the menu, and save.
+1. Go to [Notifications](https://hosted.weblate.org/accounts/profile/#notifications) and select `Tor Project` from watched projects.
+   Other projects we recomend are Guardian Project and Onionshare:
+   ![Watch Tor Project in Weblate](/static/images/localization/watch-projects.png#fullwidth)
+1. Make sure to also select notifications for your watched projects.
+1. Now you will see the Tor Project translations on your [weblate dashboard](https://hosted.weblate.org/): 
+  ![Weblate dashboard](/static/images/localization/weblate-dashboard.png#fullwidth)
+1. To start translating a new resource, you first need to agree to its 'Contributor Agreement'. Each resource has its own Contributor Agreement.
+
 
 #IRC channel
 
-We hang out in the #tor-l10n channel on the oftc IRC network.
-Please [join us to talk about localization](https://support.torproject.org/get-in-touch/#irc-help) (l10n)!
+We hang out in the #tor-l10n channel on the oftc IRC network. Please [join us to talk about localization](https://support.torproject.org/get-in-touch/#irc-help) (l10n)!
+You can also use Element https://element.io/ to connect: #tor-l10n:matrix.org.
 
-# [Tor Monthly Localization Hangouts](https://gitlab.torproject.org/tpo/community/l10n/-/wikis/Monthly-Tor-Localization-Hangouts)
+# [Tor Monthly Localization Hangouts](../hangouts/)
 
 We meet on our irc channel every 3rd Friday of the month. Come over to hang out with other translators, ask questions, or simply translate together.
