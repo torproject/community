@@ -1,15 +1,17 @@
 <div class="row pt-5">
   {% include 'sidenav.html' %}
-  <div class="col-sm-12 col-xs-12  ml-sm-auto col-md-9 col-lg-9 pr-6 {{ bag('alternatives', this.alt, 'order') }}">
+  <div class="col-sm-12 col-xs-12  ml-sm-auto col-md-9 col-lg-9 pr-lg-6 {{ bag('alternatives', this.alt, 'order') }}">
     {{ this.body }}
-    <div class="mr-4">
+    <div class="mr-lg-4">
       <div>
         {% for resource_name, resource in bag('community-training-materials').items() %}
         <div class="border container-fluid p-3 px-0 my-3">
-          <div class="row">
-            <div class="col-sm-3">
-              <a href="{{ resource['link']|url }}" class="d-block"><img src="{{ resource['cover']|url }}" class="img-fluid" alt="{{ resource['name'] }}"></a>
-            </div>
+          {# couldn't get the desktop and mobile layouts to coexist, so each card has two layouts at different breakpoints #}
+          {# this is the desktop layout, at `large` breakpoint #}
+          <div class="row d-none d-lg-flex">
+            <a href="{{ resource['link']|url }}" class="d-block col-sm-3">
+              <img src="{{ resource['cover']|url }}" class="img-fluid" alt="{{ resource['name'] }}">
+            </a>
             <div class="col-sm pl-lg-1">
               <div class="row">
                 <div class="col-sm row">
@@ -23,8 +25,9 @@
                       {% if training_guide %}
                       <a href="{{ training_guide|url }}" title="{{ resource['name'] }}" class="btn btn-outline-primary font-weight-600">{{ _("Trainer's guide") }}</a>
                       {% endif %}
-                    </div></div>
-                    <div class="col-sm-6"></div>
+                    </div>
+                  </div>
+                <div class="col-sm-6"></div>
                 </div>
                 <div class="d-none d-md-inline col-sm-auto text-right">
                   <span class="text-muted font-weight-600 font-size-18-px">{{ _('Updated: {}').format(resource['date']) }}</span>
@@ -41,6 +44,47 @@
               </div>
             </div>
           </div>
+          {# end of desktop layout #}
+          {# mobile layout #}
+          <div class="col d-lg-none px-0">
+            <a href="{{ resource['link']|url }}" class="d-block pb-4">
+              <img src="{{ resource['cover']|url }}" class="img-fluid" alt="{{ resource['name'] }}">
+            </a>
+            <div class="col-sm pl-lg-1">
+              <div class="row">
+                <div class="col-sm row">
+                  <h3 class="card-title font-weight-600 m-0 pr-0" style="max-width: fit-content">{{ resource['name'] }}</h3>
+                  <div class="row gap-10px pl-3 m-0">
+                    <div>
+                      <a href="{{ resource['link']|url }}" title="{{ resource['name'] }}" class="btn btn-primary font-weight-600">{{ _('View') }}</a>
+                    </div>
+                  </div>
+                <div class="col-sm-6"></div>
+                </div>
+                <div class="d-none d-md-inline col-sm-auto text-right">
+                  <span class="text-muted font-weight-600 font-size-18-px">{{ _('Updated: {}').format(resource['date']) }}</span>
+                </div>
+              </div>
+              <div class="row">
+                <span class="text-primary font-weight-600 my-2 font-size-18-px">{{ _('By {}').format(resource['author']) }}</span>
+              </div>
+              <div class="row">
+                <span class="m-0 font-size-18-px flex-grow-1">{{ resource['description'] }}</span>
+              </div>
+              <div class="row">
+                <span class="text-muted font-weight-600 m-0 font-size-18-px mt-2">{{ _('Available in: {}').format(resource['languages']|join(', ')) }}</span>
+              </div>
+              <div class="row">
+                <div>
+                  {% set training_guide = site.get(this._path + '/' + resource_name + '-guide') %}
+                  {% if training_guide %}
+                    <a href="{{ training_guide|url }}" title="{{ resource['name'] }}" class="btn btn-outline-primary font-weight-600 mt-2">{{ _("Trainer's guide") }}</a>
+                  {% endif %}
+                </div>
+              </div>
+            </div>
+          </div>
+          {# end of mobile layout #}
         </div>
         {% endfor %}
       </div>
