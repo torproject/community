@@ -41,4 +41,8 @@ odp_link: test
 #### sample_slide ####
 language: Español
 ----
-
+view_link: test
+----
+pdf_link: test
+----
+odp_link: test

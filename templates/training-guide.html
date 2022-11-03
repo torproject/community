@@ -16,13 +16,13 @@
       <h1>{{ resource['name'] }}</h1>
     </div>
     <div class="row col resource-table">
-      <span class="text-muted h5 font-weight-600 col-6 col-lg-2">{{ _('Maintained by') }}</span>
-      <span class="h5 font-weight-600 col-6 col-lg-2">{{ resource['author'] }}</span>
+      <span class="text-muted h5 font-weight-600 col-6 col-lg-2 pl-0 border-bottom">{{ _('Maintained by') }}</span>
+      <span class="h5 font-weight-600 col-6 col-lg-2 border-bottom">{{ resource['author'] }}</span>
       <div class="w-100"></div>
-      <span class="text-muted h5 font-weight-600 col-6 col-lg-2">{{ _('Last updated') }}</span>
-      <span class="h5 font-weight-600 col-6 col-lg-2">{{ resource['date'] }}</span>
+      <span class="text-muted h5 font-weight-600 col-6 col-lg-2 pl-0 border-bottom">{{ _('Last updated') }}</span>
+      <span class="h5 font-weight-600 col-6 col-lg-2 border-bottom">{{ resource['date'] }}</span>
       <div class="w-100"></div>
-      <span class="text-muted h5 font-weight-600 col-6 col-lg-2">{{ _('Estimated time') }}</span>
+      <span class="text-muted h5 font-weight-600 col-6 col-lg-2 pl-0">{{ _('Estimated time') }}</span>
       <span class="h5 font-weight-600 col-6 col-lg-2">{{ this.estimated_time or 'FIXME: NO TIME ESTIMATE' }}</span>
     </div>
     <p class="mb-5">{{ resource['description'] }}</p>
@@ -48,24 +48,24 @@
       {% endif %}
       {% if this.sample_slides %}
       <h4 class="mb-5 font-weight-600">{{ _('Download sample slides') }}</h4>
-      <div class="resource-table mb-5 row">
+      <div class="resource-table mb-5">
         {% for slide in this.sample_slides.blocks %}
-        <span class="text-muted col-2 col-lg-1">{{ slide.language }}</span>
-        {% if slide.view_link or slide.pdf_link or slide.odp_link %}
-          <div class="col-auto">
-            {% if slide.view_link %}
-              <a href="{{ slide.view_link }}"><button type="button" class="btn btn-sm btn-primary font-weight-600 h5">View</button></a>
-            {% endif %}
-            {% if slide.pdf_link %}
-              <button type="button" class="btn btn-sm btn-outline-primary font-weight-600 h5">PDF</button>
-            {% endif %}
-            {% if slide.odp_link %}
-              <button type="button" class="btn btn-sm btn-outline-primary font-weight-600 h5">ODP</button>
+          <div class="row">
+            <div class="col-2 col-lg-1"><p class="text-muted m-0">{{ slide.language }}</span></div>
+            {% if slide.view_link or slide.pdf_link or slide.odp_link %}
+              <div class="col-auto">
+                {% if slide.view_link %}
+                  <a href="{{ slide.view_link }}"><button type="button" class="btn btn-sm btn-primary font-weight-600 h5 m-0">View</button></a>
+                {% endif %}
+                {% if slide.pdf_link %}
+                  <button type="button" class="btn btn-sm btn-outline-primary font-weight-600 h5 m-0">PDF</button>
+                {% endif %}
+                {% if slide.odp_link %}
+                  <button type="button" class="btn btn-sm btn-outline-primary font-weight-600 h5 m-0">ODP</button>
+                {% endif %}
+              </div>
             {% endif %}
           </div>
-        {% endif %}
-        <div class="col-9"></div>
-        <div class="w-100"></div>
         {% endfor %}
       </div>
       {% endif %}

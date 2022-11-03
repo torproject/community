@@ -28,12 +28,19 @@
     }
 }
 
-div.resource-table {
-    span, div {
-        :not(:nth-last-child(-n+2)) {
-            border-bottom: 1px solid #e9ecef;
-        }
+@include media-breakpoint-down(md) {
+    div.resource-table > div.row {
+        margin-left: 0 !important;
     }
+}
+
+div.resource-table > div.row:not(:first-child) > * {
+    @extend .pt-1;
+    border-top: 1px solid #e9ecef;
+}
+
+div.resource-table > div.row:not(:last-child) {
+    @extend .pb-1;
 }
 
 #pathbar {
