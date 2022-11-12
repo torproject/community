@@ -28,7 +28,16 @@ Ensure you update the packages database before installing the package, than call
 
 ### 4. Install obfs4proxy
 
-On [Debian](https://packages.debian.org/search?keywords=obfs4proxy), the latest version `obfs4proxy` package is available in stable-backports. On [Ubuntu](https://packages.ubuntu.com/search?keywords=obfs4proxy), bionic, cosmic, disco, eoan, and focal have the package. If you're running any of them, `sudo apt-get install obfs4proxy` should work.
+On [Debian](https://packages.debian.org/search?keywords=obfs4proxy), the latest version `obfs4proxy` package is available in stable-backports. By default, backports packages are not installed, so to install the latest version of `obfs4proxy` you need to use the following command `sudo apt install -t bullseye-backports obfs4proxy` or to pin the package with a config similar to this one that you will place in `/etc/apt/preferences.d/obfs4proxy.pref`.
+
+```
+Explanation: tor meta, always run latest version of obfs4proxy
+Package: obfs4proxy
+Pin: release a=bullseye-backports
+Pin-Priority: 500
+```
+
+On [Ubuntu](https://packages.ubuntu.com/search?keywords=obfs4proxy), bionic, cosmic, disco, eoan, and focal have the package. If you're running any of them, `sudo apt-get install obfs4proxy` should work.
 
 If not, you can [build it from source](https://gitlab.com/yawning/obfs4#installation).
 
