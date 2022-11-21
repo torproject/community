@@ -1,0 +1,32 @@
+{% from 'resource_list.jinja2' import resource_list %}
+
+<div class="row pt-5">
+  {# default sidenav_items is `this.parent.children`. we want the same sidenav
+     as /training/resource, which is `this.parent.parent.parent` #}
+  {% with sidenav_items=this.parent.parent.parent.parent.children %}
+    {% include 'sidenav.html' %}
+  {% endwith %}
+  <div class="col-sm-12 col-xs-12  ml-sm-auto col-md-9 col-lg-9 pr-lg-6 {{ bag('alternatives', this.alt, 'order') }}">
+    {{ this.body }}
+    <div class="mr-lg-4">
+      <div>
+        {{ resource_list(json_loads(this.sortby_resources), this, this.parent.parent.parent) }}
+        {#<pre>{{ this.sortby_resources }}</pre>#}
+      </div>
+      <hr class="my-5">
+      {{ md(_('### Community building
+
+Do you know of or have any Tor training materials (slides, guides, fanzines, videos, and other formats) that should be part of this training section?
+Please send an email to [training at torproject.org](mailto:training@torproject.org) with:
+- Title and description
+- Author and author contact information
+- Link to download or access the resource
+- Resource license (Creative Commons or similar license)
+
+Please note that we will evaluate if:
+- The material is being updated and maintained.
+- Do no harm: demystifies the "dark/deep web" and training materials that will not put people at risk.
+- Follow the Tor Project\'s [Code of Conduct](https://gitweb.torproject.org/community/policies.git/tree/code_of_conduct.txt), [Statement of Values](https://gitweb.torproject.org/community/policies.git/tree/statement_of_values.txt), and [Social Contract](https://gitweb.torproject.org/community/policies.git/tree/social_contract.txt).')) }}
+    </div>
+  </div>
+</div>
