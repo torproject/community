@@ -15,6 +15,15 @@
       {% endif %}
     {% endfor %}
   </details>
+  <details>
+    <summary>{{ _('Maintained by') }}</summary>
+    {% for author in get_authors() %}
+      <a href="{{ ((training_guide_this|url) + '/sortby/author/' + slugify(author))|url }}">{{ author }}</a>
+      {% if not loop.last %}
+        <br>
+      {% endif %}
+    {% endfor %}
+  </details>
   {% for resource_name, resource in resource_dict.items() %}
     <div class="border container-fluid p-3 px-0 my-3">
       {# couldn't get the desktop and mobile layouts to coexist, so each card has two layouts at different breakpoints #}

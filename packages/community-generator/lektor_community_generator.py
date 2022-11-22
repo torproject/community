@@ -5,6 +5,7 @@ import os
 from urllib.parse import quote_plus
 
 from lektor.pluginsystem import Plugin
+from lektor.utils import slugify
 
 
 class CommunityGeneratorPlugin(Plugin):
@@ -86,6 +87,14 @@ body:
         # flatten
         return set(duplicated_languages)
 
+    def _get_authors(self):
+        """Return a set of every author used by at least one resource."""
+        authors = set()
+        for resource in self.resources.values():
+            authors.add(resource['author'])
+
+        return authors
+
     def generate_files(self):
         """Generate contents.lr files for the sortby fields: topics, languages, author."""
         with open(os.path.join(self.env.project.tree, 'databags', 'community-training-materials.json'), 'r') as f:
@@ -96,15 +105,14 @@ body:
         # topics = set(filter(map(lambda resource: resource.get('topic'))))
         languages = self._get_resource_langs()
 
-        authors = set(filter(None, map(lambda resource: resource.get('author'), self.resources.values())))
 
+        authors = self._get_authors()
 
         # lektor won't render a page if it doesn't have a parent contents.lr
         self._generate_file_helper(f'training/resources/sortby', self._format_default(self.contents_lr_tmpl))
         
         # TODO: generate sortby/topics
 
-            
         # generate sortby/language
         self._generate_file_helper(f'training/resources/sortby/language', self._format_default(self.contents_lr_tmpl))
         for language_code, language_name in languages:
@@ -126,11 +134,34 @@ Or, if you want to teach your community about Tor, these training materials are 
                     '''
                 ))
 
+        # generate sortby/author
+        self._generate_file_helper(f'training/resources/sortby/author', self._format_default(self.contents_lr_tmpl))
+        for author_name in authors:
+            sortby_resources = filter(lambda resource: author_name == resource[1]['author'], self.resources.items())
+            self._generate_file_helper(
+                f'training/resources/sortby/author/{slugify(author_name)}',
+                self._format_default(
+                    self.contents_lr_tmpl,
+                    section='Training',
+                    color='primary',
+                    template='layout.html',
+                    title='Training Resources',
+                    html='resources-sortby.html',
+                    sortby_resources=json.dumps(dict(sortby_resources)),
+                    body='''
+Our Community team delivers digital security training about Tor to human rights defenders, journalists, activists and marginalized communities around the world.
+To request a Tor training for your organization or community, please contact us and send an email to [training at torproject.org](mailto:training@torproject.org).
+Or, if you want to teach your community about Tor, these training materials are for you!
+                    '''
+                ))
+
     def on_setup_env(self, **extra):
         """Generate files when the lektor process starts."""
         self.generate_files()
         self.env.jinja_env.globals['json_loads'] = json.loads
         self.env.jinja_env.globals['get_resource_langs'] = self._get_resource_langs
+        self.env.jinja_env.globals['get_authors'] = self._get_authors
+        self.env.jinja_env.globals['slugify'] = slugify
 
     def on_server_spawn(self, **extra):
         """Generate files when the dev server restarts."""
