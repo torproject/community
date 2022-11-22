@@ -80,8 +80,8 @@ body:
         """Return a set of every language used by at least one resource."""
         duplicated_languages = []
         for resource in self.resources.values():
-            language_list = resource.get('languages', [])
-            duplicated_languages.extend(language_list)
+            language_list = resource.get('languages', {})
+            duplicated_languages.extend(language_list.items())
 
         # flatten
         return set(duplicated_languages)
@@ -107,10 +107,10 @@ body:
             
         # generate sortby/language
         self._generate_file_helper(f'training/resources/sortby/language', self._format_default(self.contents_lr_tmpl))
-        for language in languages:
-            sortby_resources = filter(lambda resource: language.lower() in [lang.lower() for lang in resource[1].get('languages')], self.resources.items())
+        for language_code, language_name in languages:
+            sortby_resources = filter(lambda resource: language_code in resource[1]['languages'], self.resources.items())
             self._generate_file_helper(
-                f'training/resources/sortby/language/{quote_plus(language).lower()}',
+                f'training/resources/sortby/language/{language_code}',
                 self._format_default(
                     self.contents_lr_tmpl,
                     section='Training',
@@ -131,7 +131,6 @@ Or, if you want to teach your community about Tor, these training materials are 
         self.generate_files()
         self.env.jinja_env.globals['json_loads'] = json.loads
         self.env.jinja_env.globals['get_resource_langs'] = self._get_resource_langs
-        self.env.jinja_env.globals['quote_plus'] = quote_plus
 
     def on_server_spawn(self, **extra):
         """Generate files when the dev server restarts."""

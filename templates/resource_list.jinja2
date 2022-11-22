@@ -8,8 +8,8 @@
   {% set training_guide_this = training_guide_this or this %}
   <details>
     <summary>{{ _('Language') }}</summary>
-    {% for language in get_resource_langs() %}
-      <a href="{{ ((training_guide_this|url) + '/sortby/language/' + quote_plus(language).lower())|url }}">{{ language }}</a>
+    {% for language_code, language_name in get_resource_langs() %}
+      <a href="{{ ((training_guide_this|url) + '/sortby/language/' + language_code)|url }}">{{ language_name }}</a>
       {% if not loop.last %}
         <br>
       {% endif %}
@@ -51,7 +51,7 @@
             <span class="m-0 font-size-18-px flex-grow-1 col">{{ resource['description'] }}</span>
           </div>
           <div class="row">
-            <span class="text-muted font-weight-600 m-0 font-size-18-px col">{{ _('Available in: {}').format(resource['languages']|join(', ')) }}</span>
+            <span class="text-muted font-weight-600 m-0 font-size-18-px col">{{ _('Available in: {}').format(resource['languages'].values()|join(', ')) }}</span>
           </div>
         </div>
       </div>
