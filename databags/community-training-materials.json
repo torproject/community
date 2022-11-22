@@ -6,6 +6,7 @@
     "description": "Full set of slides for Tor Trainings: how the Tor network works, censorship circumvention, Tor Browser installation, and OnionShare.",
     "date": "2021",
     "cover": "/static/images/training/all-about-tor.png",
+    "topics": [],
     "languages": {
       "en": "English"
     }
@@ -17,6 +18,7 @@
     "description": "Un conjunto completo de diapositivas para los entrenamientos de Tor",
     "date": "2019",
     "cover": "/static/images/training/todo-sobre-tor.png",
+    "topics": [],
     "languages": {
       "es": "Español"
     },
@@ -29,6 +31,7 @@
     "description": "Learn about the Tor network and how to run a relay",
     "date": "2019",
     "cover": "/static/images/training/the-tor-network.png",
+    "topics": [],
     "languages": {
       "en": "English"
     },
@@ -42,6 +45,7 @@
     "description": "Learn how to run a private unlisted Tor bridge",
     "date": "2021",
     "cover": "/static/images/training/running-tor-bridges.png",
+    "topics": [],
     "languages": {
       "en": "English"
     },
@@ -56,6 +60,7 @@
     "description": "Learn more about Onion Services and their benefits",
     "date": "2022",
     "cover": "/static/images/training/onion-services.png",
+    "topics": [],
     "languages": {
       "en": "English"
     },
@@ -68,6 +73,7 @@
     "description": "A tabloid containing an amazing graphic about the Tor network. Part of the book How the Internet really works.",
     "link": "https://catnip.article19.org/data/ARTICLE19-Catnip-Tor-Network-2021-web.pdf",
     "cover": "/static/images/training/exploring-the-tor-network.jpg",
+    "topics": [],
     "languages": {
       "en": "English"
     }
@@ -79,6 +85,7 @@
     "description": "This resource is part of Surveillance Self-Defense (SSD) guides maintained by EFF.",
     "link": "https://ssd.eff.org/en/module/understanding-and-circumventing-network-censorship",
     "cover": "/static/images/training/eff-ssd-guide.png",
+    "topics": [],
     "languages": {
       "multiple_languages": "Multiple languages"
     }
@@ -89,6 +96,7 @@
     "description": "This resource is part of Surveillance Self-Defense (SSD) guides maintained by EFF.",
     "link": "https://ssd.eff.org/en/node/97",
     "cover": "/static/images/training/eff-ssd-guide.png",
+    "topics": [],
     "languages": {
       "multiple_languages": "Multiple languages"
     }
@@ -99,6 +107,7 @@
     "description": "Surveillance Self-Defense article explaining web browser fingerprinting and how Tor Browser protects you.",
     "link": "https://ssd.eff.org/en/module/what-fingerprinting",
     "cover": "/static/images/training/eff-ssd-guide.png",
+    "topics": [],
     "languages": {
       "multiple_languages": "Multiple languages"
     }
@@ -109,6 +118,7 @@
     "description": "",
     "link": "https://milpadigital.org/milpadigital-8",
     "cover": "/static/images/training/milpa-digital.jpg",
+    "topics": [],
     "languages": {
       "es": "Español"
     }
@@ -119,6 +129,7 @@
     "description": "An online course that teach how to use anti-censorship tools",
     "link": "https://learn.totem-project.org/courses/course-v1:Totem+TP_CT_EN+001/about",
     "cover": "/static/images/training/how-to-bypass-censorship.png",
+    "topics": [],
     "languages": {
       "multiple_languages": "Multiple languages"
     }
@@ -129,6 +140,7 @@
     "description": "",
     "link": "https://securityplanner.consumerreports.org/tool/browse-privately-with-tor",
     "cover": "/static/images/training/become-harder-to-trace.png",
+    "topics": [],
     "languages": {
       "en": "English"
     }
@@ -139,6 +151,7 @@
     "description": "",
     "link": "https://cyber-women.com/es/anonimato/anonimato/",
     "cover": "/static/images/training/cibermujeres-anonimato.jpg",
+    "topics": [],
     "languages": {
       "es": "Español"
     }
@@ -149,6 +162,7 @@
     "description": "Guide explaining how to use Tor Browser and Tor bridges",
     "link": "https://vesinfiltro.com/bloqueos/torbrowser/",
     "cover": "/static/images/training/como-usar-tor-browser.png",
+    "topics": [],
     "languages": {
       "es": "Español"
     }
@@ -159,6 +173,7 @@
     "description": "A tailored digital security guide made for journalists.",
     "link": "https://cpj.org/2019/07/digital-safety-kit-journalists/",
     "cover": "/static/images/training/digital-safety-kit.jpg",
+    "topics": [],
     "languages": {
       "es": "Español",
       "fr": "Français",
@@ -172,6 +187,7 @@
     "description": "E-learning platform based on Moodle.",
     "link": "https://cuidadosdigitales.sursiendo.org/mod/page/view.php?id=13",
     "cover": "/static/images/training/que-es-el-tor-browser.png",
+    "topics": [],
     "languages": {
       "es": "Español"
     }
@@ -182,6 +198,7 @@
     "description": "A guide comparing Tor Browser and other browser's security.",
     "link": "https://freedom.press/training/-depth-guide-choosing-web-browser/",
     "cover": "/static/images/training/guide-to-choosing-a-web-browser.png",
+    "topics": [],
     "languages": {
       "en": "English"
     }
@@ -192,6 +209,7 @@
     "description": "A short video explaining what's Tor and how Tor works.",
     "link": "https://www.youtube.com/watch?v=Zj0FYhcngZ8",
     "cover": "/static/images/training/como-protegerte-mientras-navegas-en-internet.jpg",
+    "topics": [],
     "languages": {
       "es": "Español"
     }
@@ -202,6 +220,7 @@
     "description": "A feminist fanzine discussing the Internet, anonymity, Tor, Tails.",
     "link": "https://www.derechosdigitales.org/wp-content/uploads/que-no-quede-huella.pdf",
     "cover": "/static/images/training/que-no-quede-huella.jpg",
+    "topics": [],
     "languages": {
       "es": "Español"
     }
@@ -212,6 +231,7 @@
     "description": "This resource explains the features and how to use Onion Browser. Onion Browser is the only browser for iOS recommended by the Tor Project.",
     "link": "https://guardianproject.info/2020/06/02/onion-browser-release-2.6-tutorial/",
     "cover": "/static/images/training/onion-browser.png",
+    "topics": [],
     "languages": {
       "en": "English"
     }
@@ -222,6 +242,7 @@
     "description": "Video tutorial with best practices to browse the web securely on iOS using Onion Browser",
     "link": "https://www.youtube.com/playlist?list=PL4-CVUWabKWeHeBpadBLjzlWVa7binXpj",
     "cover": "/static/images/training/onion-browser.png",
+    "topics": [],
     "languages": {
       "en": "English"
     }
@@ -232,6 +253,7 @@
     "description": "Step by step tutorial used to introduce Tails to journalism students. Actually used in journalism schools in France. Topics: Tor, persistence, metadata, secure removal, Veracrypt, OnionShare etc. On request ; please click to contact author.",
     "link": "mailto:geb@riseup.net",
     "cover": "/static/images/training/tails-logo.svg",
+    "topics": [],
     "languages": {
       "en": "English"
     }
@@ -242,6 +264,7 @@
     "description": "An introduction book to cryptography, Tor, and surveillance used against social movements in US.",
     "link": "https://open.oregonstate.education/defenddissent/",
     "cover": "/static/images/training/defend-dissent.jpg",
+    "topics": [],
     "languages": {
       "en": "English"
     }
@@ -252,6 +275,7 @@
     "description": "A guide about using Tor to read, verify and process leaked data, which might come with a risk.",
     "link": "https://exposingtheinvisible.org/en/guides/leak-and-onion-soup",
     "cover": "/static/images/training/leak-and-onion-soup.png",
+    "topics": [],
     "languages": {
       "en": "English"
     }
@@ -262,6 +286,7 @@
     "description": "Tails training slides to human rights defenders, journalists and activists in Latin America.",
     "link": "https://tails.boum.org/contribute/how/promote/material/slides/Ciclo_Autodefensa_Digital_202204/Tails-Spanish.odp",
     "cover": "/static/images/training/tails-logo.svg",
+    "topics": [],
     "languages": {
       "es": "Español"
     }
@@ -272,6 +297,7 @@
     "description": "Orbot training slides that cover how Tor works, how to bypass the censorship using bridges, and what are pluggable transports.",
     "link": "https://gitlab.com/guardianproject/pluto/-/blob/main/Orbot_Spanish.pdf",
     "cover": "/static/images/training/orbot.png",
+    "topics": [],
     "languages": {
       "es": "Español"
     }
@@ -282,6 +308,7 @@
     "description": "Onion Browser training slides. This material covers how Tor works, bypassing censorship using bridges and pluggable transports.",
     "link": "https://gitlab.com/guardianproject/pluto/-/blob/main/Onion_Browser.pdf",
     "cover": "/static/images/training/onion-browser.png",
+    "topics": [],
     "languages": {
       "es": "Español"
     }

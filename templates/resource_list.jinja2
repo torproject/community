@@ -7,6 +7,15 @@
 {% macro resource_list(resource_dict, this, training_guide_this) %}
   {% set training_guide_this = training_guide_this or this %}
   <details>
+    <summary>{{ _('Topic') }}</summary>
+    {% for topic in get_resource_topics() %}
+      <a href="{{ ((training_guide_this|url) + '/sortby/topic/' + slugify(topic))|url }}">{{ topic }}</a>
+      {% if not loop.last %}
+        <br>
+      {% endif %}
+    {% endfor %}
+  </details>
+  <details>
     <summary>{{ _('Language') }}</summary>
     {% for language_code, language_name in get_resource_langs() %}
       <a href="{{ ((training_guide_this|url) + '/sortby/language/' + language_code)|url }}">{{ language_name }}</a>
