@@ -6,33 +6,38 @@
 #}
 {% macro resource_list(resource_dict, this, training_guide_this) %}
   {% set training_guide_this = training_guide_this or this %}
-  <details>
-    <summary>{{ _('Topic') }}</summary>
-    {% for topic in get_resource_topics() %}
-      <a href="{{ ((training_guide_this|url) + '/sortby/topic/' + slugify(topic))|url }}">{{ topic }}</a>
-      {% if not loop.last %}
-        <br>
-      {% endif %}
-    {% endfor %}
-  </details>
-  <details>
-    <summary>{{ _('Language') }}</summary>
-    {% for language_code, language_name in get_resource_langs() %}
-      <a href="{{ ((training_guide_this|url) + '/sortby/language/' + language_code)|url }}">{{ language_name }}</a>
-      {% if not loop.last %}
-        <br>
-      {% endif %}
-    {% endfor %}
-  </details>
-  <details>
-    <summary>{{ _('Maintained by') }}</summary>
-    {% for author in get_authors() %}
-      <a href="{{ ((training_guide_this|url) + '/sortby/author/' + slugify(author))|url }}">{{ author }}</a>
-      {% if not loop.last %}
-        <br>
-      {% endif %}
-    {% endfor %}
-  </details>
+  <div class="js-filter-dropdowns d-flex justify-content-end gap-10px">
+    <div class="dropdown">
+      <button class="btn btn-md btn-outline-primary dropdown-toggle font-weight-600" type="button" id="topicDropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        {{ _('Topic') }}
+      </button>
+      <div class="dropdown-menu" aria-labelledby="topicDropdownMenuButton">
+        {% for topic in get_resource_topics() %}
+          <a class="d-block" href="{{ ((training_guide_this|url) + '/sortby/topic/' + slugify(topic))|url }}">{{ topic }}</a>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="btn btn-md btn-outline-primary dropdown-toggle font-weight-600" type="button" id="languageDropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        {{ _('Language') }}
+      </button>
+      <div class="dropdown-menu" aria-labelledby="languageDropdownMenuButton">
+      {% for language_code, language_name in get_resource_langs() %}
+          <a class="d-block" href="{{ ((training_guide_this|url) + '/sortby/language/' + language_code)|url }}">{{ language_name }}</a>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="btn btn-md btn-outline-primary dropdown-toggle font-weight-600" type="button" id="authorDropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        {{ _('Maintained by')}}
+      </button>
+      <div class="dropdown-menu" aria-labelledby="authorDropdownMenuButton">
+        {% for author in get_authors() %}
+          <a class="d-block" href="{{ ((training_guide_this|url) + '/sortby/author/' + slugify(author))|url }}">{{ author }}</a>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
   {% for resource_name, resource in resource_dict.items() %}
     <div class="border container-fluid p-3 px-0 my-3">
       {# couldn't get the desktop and mobile layouts to coexist, so each card has two layouts at different breakpoints #}

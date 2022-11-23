@@ -68,3 +68,18 @@ main li {
 .pr-6 {
     padding-right: 3.5rem !important;
 }
+
+.js-filter-dropdowns {
+    .dropdown {
+        width: min-content;
+
+        .btn {
+            border-radius: 0.25rem;
+        }
+    }
+
+    .dropdown-menu {
+        left: initial !important;
+        right: 0 !important;
+    }
+}
