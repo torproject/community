@@ -1,11 +1,31 @@
 # -*- coding: utf-8 -*-
 import json
 import os
+import string
 
 from urllib.parse import quote_plus
 
 from lektor.pluginsystem import Plugin
-from lektor.utils import slugify
+
+
+# lektor's slugify removes characters that *should* be url-safe, so let's make our own
+def slugify(it: str):
+    # url-safe characters as defined by RFC 3986
+    url_safe = string.ascii_lowercase + string.digits + '-._~'
+
+    result = []
+    last_char_was_dash = False
+    for char in it.lower().encode('ascii', 'replace').decode():
+        if char in url_safe:
+            result.append(char)
+            last_char_was_dash = False
+        elif last_char_was_dash:
+            continue
+        else:
+            result.append('-')
+            last_char_was_dash = True
+    
+    return ''.join(result)
 
 
 class CommunityGeneratorPlugin(Plugin):
@@ -29,11 +49,15 @@ subtitle: {subtitle}
 ---
 cta: {cta}
 ---
-key: {key}
----
 html: {html}
 ---
 sortby_resources: {sortby_resources}
+---
+current_topic: {current_topic}
+---
+current_lang: {current_lang}
+---
+current_author: {current_author}
 ---
 body:
 
@@ -67,9 +91,11 @@ body:
             'title': '',
             'subtitle': '',
             'cta': '',
-            'key': '',
             'html': '',
             'sortby_resources': '',
+            'current_topic': '',
+            'current_lang': '',
+            'current_author': '',
             'body': '',
         }
 
@@ -77,28 +103,43 @@ body:
 
         return to_format.format(**formatting)
 
+    def _get_new_link(self, current_page, new_topic=None, new_lang=None, new_author=None):
+        current_url = current_page.url_path.rstrip('/')
+        if current_url == '/training/resources':
+            current_url = '/'.join([current_url, 'sortby', 'none', 'none', 'none'])
+
+        split_url = current_url.split('/')
+        if new_topic:
+            split_url[-3] = new_topic
+        if new_lang:
+            split_url[-2] = new_lang
+        if new_author:
+            split_url[-1] = new_author
+
+        return '/'.join(split_url)
+
     def _get_resource_topics(self):
         """Return a set of every author used by at least one resource."""
-        topics = []
+        topics = ['none']
         for resource in self.resources.values():
             topics.extend(resource.get('topics', []))
 
         # flatten
         return set(topics)
 
-    def _get_resource_langs(self):
+    def _get_resource_langs(self):  # type: set[tuple[str, str]]
         """Return a set of every language used by at least one resource."""
-        duplicated_languages = []
+        languages = [('none', 'none')]
         for resource in self.resources.values():
             language_list = resource.get('languages', {})
-            duplicated_languages.extend(language_list.items())
+            languages.extend(language_list.items())
 
         # flatten
-        return set(duplicated_languages)
+        return set(languages)
 
     def _get_authors(self):
         """Return a set of every author used by at least one resource."""
-        authors = set()
+        authors = set(('none',))
         for resource in self.resources.values():
             authors.add(resource['author'])
 
@@ -115,13 +156,18 @@ body:
 
         # lektor won't render a page if it doesn't have a parent contents.lr
         self._generate_file_helper(f'training/resources/sortby', self._format_default(self.contents_lr_tmpl))
-        
-        # generate sortby/topics
-        self._generate_file_helper(f'training/resources/sortby/topic', self._format_default(self.contents_lr_tmpl))
+
+        # loop through topics
         for topic in topics:
-            sortby_resources = filter(lambda resource: topic in resource[1].get('topics', []), self.resources.items())
+            topic_resources = self.resources.copy()
+
+            if topic != 'none':
+                topic_resources = dict(filter(lambda resource: topic in resource[1].get('topics', []), topic_resources.items()))
+
+            self._generate_file_helper(f'training/resources/sortby/{slugify(topic)}', self._format_default(self.contents_lr_tmpl))
+            self._generate_file_helper(f'training/resources/sortby/{slugify(topic)}/none', self._format_default(self.contents_lr_tmpl))
             self._generate_file_helper(
-                f'training/resources/sortby/topic/{slugify(topic)}',
+                f'training/resources/sortby/{slugify(topic)}/none/none',
                 self._format_default(
                     self.contents_lr_tmpl,
                     section='Training',
@@ -129,60 +175,69 @@ body:
                     template='layout.html',
                     title='Training Resources',
                     html='resources-sortby.html',
-                    sortby_resources=json.dumps(dict(sortby_resources)),
+                    sortby_resources=json.dumps(topic_resources),
+                    current_topic=topic if topic != 'none' else '',
                     body='''
 Our Community team delivers digital security training about Tor to human rights defenders, journalists, activists and marginalized communities around the world.
 To request a Tor training for your organization or community, please contact us and send an email to [training at torproject.org](mailto:training@torproject.org).
 Or, if you want to teach your community about Tor, these training materials are for you!
-                    '''
+'''
                 ))
 
-        # generate sortby/language
-        self._generate_file_helper(f'training/resources/sortby/language', self._format_default(self.contents_lr_tmpl))
-        for language_code, language_name in languages:
-            sortby_resources = filter(lambda resource: language_code in resource[1]['languages'], self.resources.items())
-            self._generate_file_helper(
-                f'training/resources/sortby/language/{language_code}',
-                self._format_default(
-                    self.contents_lr_tmpl,
-                    section='Training',
-                    color='primary',
-                    template='layout.html',
-                    title='Training Resources',
-                    html='resources-sortby.html',
-                    sortby_resources=json.dumps(dict(sortby_resources)),
-                    body='''
+            for language_code, language_name in languages:
+                language_resources = topic_resources.copy()
+                if language_code != 'none':
+                    language_resources = dict(filter(lambda resource: language_code in resource[1]['languages'], language_resources.items()))
+            
+                self._generate_file_helper(f'training/resources/sortby/{slugify(topic)}/{language_code}', self._format_default(self.contents_lr_tmpl))
+                self._generate_file_helper(
+                    f'training/resources/sortby/{slugify(topic)}/{language_code}/none',
+                    self._format_default(
+                        self.contents_lr_tmpl,
+                        section='Training',
+                        color='primary',
+                        template='layout.html',
+                        title='Training Resources',
+                        html='resources-sortby.html',
+                        sortby_resources=json.dumps(language_resources),
+                        current_topic=topic if topic != 'none' else '',
+                        current_lang=language_name if language_name != 'none' else '',
+                        body='''
 Our Community team delivers digital security training about Tor to human rights defenders, journalists, activists and marginalized communities around the world.
 To request a Tor training for your organization or community, please contact us and send an email to [training at torproject.org](mailto:training@torproject.org).
-Or, if you want to teach your community about Tor, these training materials are for you!
-                    '''
-                ))
+Or, if you want to teach your community about Tor, these training materials are for you!'''
+                    ))
 
-        # generate sortby/author
-        self._generate_file_helper(f'training/resources/sortby/author', self._format_default(self.contents_lr_tmpl))
-        for author_name in authors:
-            sortby_resources = filter(lambda resource: author_name == resource[1]['author'], self.resources.items())
-            self._generate_file_helper(
-                f'training/resources/sortby/author/{slugify(author_name)}',
-                self._format_default(
-                    self.contents_lr_tmpl,
-                    section='Training',
-                    color='primary',
-                    template='layout.html',
-                    title='Training Resources',
-                    html='resources-sortby.html',
-                    sortby_resources=json.dumps(dict(sortby_resources)),
-                    body='''
+                for author_name in authors:
+                    author_resources = language_resources.copy()
+
+                    if author_name != 'none':
+                        author_resources = dict(filter(lambda resource: author_name == resource[1]['author'], author_resources.items()))
+
+                    self._generate_file_helper(
+                        f'training/resources/sortby/{slugify(topic)}/{language_code}/{slugify(author_name)}',
+                        self._format_default(
+                            self.contents_lr_tmpl,
+                            section='Training',
+                            color='primary',
+                            template='layout.html',
+                            title='Training Resources',
+                            html='resources-sortby.html',
+                            sortby_resources=json.dumps(author_resources),
+                            current_topic=topic if topic != 'none' else '',
+                            current_lang=language_name if language_name != 'none' else '',
+                            current_author=author_name if author_name != 'none' else '',
+                            body='''
 Our Community team delivers digital security training about Tor to human rights defenders, journalists, activists and marginalized communities around the world.
 To request a Tor training for your organization or community, please contact us and send an email to [training at torproject.org](mailto:training@torproject.org).
-Or, if you want to teach your community about Tor, these training materials are for you!
-                    '''
-                ))
+Or, if you want to teach your community about Tor, these training materials are for you!'''
+                    ))
 
     def on_setup_env(self, **extra):
         """Generate files when the lektor process starts."""
         self.generate_files()
         self.env.jinja_env.globals['json_loads'] = json.loads
+        self.env.jinja_env.globals['get_new_link'] = self._get_new_link
         self.env.jinja_env.globals['get_resource_topics'] = self._get_resource_topics
         self.env.jinja_env.globals['get_resource_langs'] = self._get_resource_langs
         self.env.jinja_env.globals['get_authors'] = self._get_authors
