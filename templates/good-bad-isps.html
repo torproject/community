@@ -17,6 +17,7 @@
 						<th><strong>Exit</strong></th>
 						<th><strong>Comments</strong></th>
 						<th><strong>Last Updated</strong></th>
+						<th><strong>Consenus Weight</strong></th>
 					</tr>
 				</thead>
 				{% for item in items %}
@@ -29,6 +30,7 @@
 						<td>{{ item.exit }}</td>
 						<td>{{ item.comment }}</td>
 						<td>{{ item.last_updated }}</td>
+						<td>{{ item.cw_fraction }}</td>
 						</tr>
 				</tbody>
 				{% endfor %}
