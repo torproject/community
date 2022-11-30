@@ -1,0 +1,80 @@
+{# asset files don't get rendered from jinja, so we'll pass some translated strings here #}
+<script
+  src="{{ '/js/resources_page.js'|asseturl }}"
+  defer
+  topic="{{ _('Topic') }}"
+  topic-colon="{{ _('Topic:') }}"
+  lang="{{ _('Language') }}"
+  lang-colon="{{ _('Language:') }}"
+  author="{{ _('Maintained by') }}"
+  author-colon="{{ _('Maintained by:') }}"
+></script>
+
+<div class="js-filter-dropdowns d-flex justify-content-end gap-10px">
+  <div class="dropdown">
+    <button class="btn btn-md btn-outline-primary dropdown-toggle font-weight-600" type="button" id="topicDropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      {% if this.current_topic %}
+        {{ _('Topic:') + ' ' + this.current_topic }}
+      {% else %}
+        {{ _('Topic') }}
+      {% endif %}
+    </button>
+    <div class="dropdown-menu" aria-labelledby="topicDropdownMenuButton">
+      {% for topic in get_resource_topics() %}
+        <a
+          onclick="setTopic(event)"
+          class="d-block"
+          data-topic="{{ slugify(topic) }}"
+          href="{{ get_new_link(this, new_topic=slugify(topic)) }}"
+        >
+          {{ topic }}
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="btn btn-md btn-outline-primary dropdown-toggle font-weight-600" type="button" id="languageDropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      {% if this.current_lang %}
+        {{ _('Language:') +  ' ' + this.current_lang }}
+      {% else %}
+        {{ _('Language') }}
+      {% endif %}
+    </button>
+    <div class="dropdown-menu" aria-labelledby="languageDropdownMenuButton">
+      {% for language_code, language_name in get_resource_langs() %}
+        <a
+          onclick="setLang(event)"
+          class="d-block"
+          data-lang="{{ language_code }}"
+          href="{{ get_new_link(this, new_lang=language_code) }}"
+        >
+          {{ language_name }}
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="btn btn-md btn-outline-primary dropdown-toggle font-weight-600" type="button" id="authorDropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      {% if this.current_author %}
+        {{ _('Maintained by:')  + ' ' + this.current_author }}
+      {% else %}
+        {{ _('Maintained by')}}
+      {% endif %}
+    </button>
+    <div class="dropdown-menu" aria-labelledby="authorDropdownMenuButton">
+      {% for author in get_authors() %}
+        <a
+          onclick="setAuthor(event)"
+          class="d-block"
+          data-author="{{ slugify(author) }}"
+          href="{{ get_new_link(this, new_author=author) }}"
+        >
+          {{ author }}
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+  <button class="btn btn-md btn-primary font-weight-600 d-none filterApplyButton" type="button">
+    {{ _('Apply filters') }}
+  </button>
+</div>
