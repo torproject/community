@@ -91,7 +91,7 @@ These hosts already have many Tor nodes being hosted there.
 | **Company/ISP** | **ASN** | **Bridges** | **Relay** | **Exit** | **Comments** | **Last Updated** |
 |-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
 | [Online.net](https://www.online.net/) | AS12876 | Yes | Yes | Yes | The account holder is responsible for all the traffic going through theirs servers.| 01/28/2019 |
-| [Gandi VPS](https://www.gandi.net/) | - | Yes | Yes | Yes| Gandi send some abuse complaints to Exit relays, but they do not stop the server, and when you tell them your server is a Tor Exit relay, they say it is OK. They ask Exit relays to use the standard Reduced Exit Policy | - |
+| [Gandi VPS](https://www.gandi.net/) | AS29169 | Yes | Yes | No| They don't allow exit nodes according to the [relay mailinglist](https://lists.torproject.org/pipermail/tor-relays/2022-November/020868.html) | 11/2022 |
 | [OVH Kimsufi](https://www.kimsufi.com/) | AS16276 | Yes | Yes | No | Unmetered bandwidth @ 100mbps - "I will gladly explain this situation for you. Running a Tor exit node is strictly forbidden and can lead to the suspension and even termination of your server and account." Locations: FR,CA | 09/27/2021 |
 | [Digicube](https://www.digicube.fr/) | - | Yes | Yes | Yes | - | - |
 | [Pulse Servers](https://www.pulseservers.com/) | AS16276 | Yes | Yes | Yes | VPS uses OVH AS. You can build ANY kind tor relays. | 09/27/2021 |
@@ -364,7 +364,7 @@ These hosts already have many Tor nodes being hosted there.
 | [Lumen (CenturyLink)](http://www.lumen.com) | - | Yes | Yes | ? | [Home TOS doesn't explicitly ban "servers"](https://www.centurylink.com/legal/docs/Internet_Subscriber_Agreement_LQ_ENG.pdf), but unsure about exits. | 4/27/2023 |
 | [BuyVM.net](https://buyvm.net) | AS53667 | Yes | Yes | Yes | New Tor rules [here](https://buyvm.net/acceptable-use-policy/#3). All relays are fine if you follow the steps. Notices are ignored. Unmetered bandwidth. | 09/27/2021 |
 | [Catalyst Host](https://catalysthost.com/) | - | ? | No | No | "If you are interested in hosting either, you can ask us about a dedicated server." | 10/01/14 |
-| [Cloudvider](https://www.clouvider.co.uk/) | - | No | No | No | This is for their US Operations arm. They will cancel your account and claim it is a ToS violation, which requires you to pay out a 60-day notice. | 10/2020 |
+| [Cloudvider](https://www.clouvider.co.uk/) | AS62240 | Yes | Yes | No | Prohibited Uses: to run a Tor Exit Node. They will cancel your account and claim it is a ToS violation, which requires you to pay out a 60-day notice. | 11/2022 |
 | [Comcast](https://comcast.net/) | AS7922 | Yes | Yes | No | To run an exit, you must be on a commercial subscription and must contact them first. | 3/2022 |
 | [ChunkHost](https://chunkhost.com) | - | Yes | Yes | ? | Questionable DMCA handling | 01/01/12 |
 | [Cyberonic](https://www.cyberonic.com) | - | Yes | Yes | ? | - | - |
@@ -383,8 +383,8 @@ These hosts already have many Tor nodes being hosted there.
 | [Luna Node](https://www.lunanode.com/index.php) | - | Yes | Yes | No | - | 05/01/14 |
 | [Oracle Cloud](https://www.oracle.com/cloud/free/) | AS31898 | Yes | Yes | No | Offers generous free tier - 10TB free outbound bandwidth, I have ran a non exit relay for a few months with no problems, [as well as others](https://metrics.torproject.org/rs.html#search/as:AS31898). Note that they will terminate your account if you're suspicious and not provide reason, even on support chat, I've gotten an account banned simply for running a smokeping instance. (Pinging ip addresses to test network stability). Locations: US,CA,GB,DE,CH,NL,SA,UAE,BR,CL,JP,KR,AU,IN | 10/10/2021 |
 | [OVH](https://www.ovh.com/us/index.xml) | AS16276 | Yes | Yes | No | Unmetered bandwidth in non asia locations. - "I will gladly explain this situation for you. Running a Tor exit node is strictly forbidden and can lead to the suspension and even termination of your server and account." Locations: US,CA,FR,DE,PL,GB,SG | 09/27/2021 |
-| [Oplink.net](https://www.oplink.net) | - | Yes | Yes | No | - | 09/03/15 |
-| [Psychz.net](https://www.psychz.net/) | - | Yes | Yes | Yes | Very Exit friendly. Standard Tor response will resolve abuse issues. | 10/07/15 |
+| [Oplink.net](https://www.oplink.net) | - | No | No | No | Specifically Prohibited Abuse: hosting of any TOR exit relays or nodes. | 11/2022 |
+| [Psychz.net](https://www.psychz.net/) | AS40676 | Yes | Yes | Yes | Very Exit friendly. Standard Tor response will resolve abuse issues. | 10/07/15 |
 | [PulseServers](https://www.pulseservers.com) | AS16276 | Yes | Yes | Yes | Exit-friendly. | 05/01/16 |
 | [RamNode](https://ramnode.com/) | AS3842 | Yes | Yes | No | - | 11/03/14 |
 | [Server Complete](https://servercomplete.com/) | - | ? | ? | No | - | 11/03/14 |
