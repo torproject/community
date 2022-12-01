@@ -37,8 +37,8 @@ These hosts already have many Tor nodes being hosted there.
 | **Company/ISP** | **ASN** | **Bridges** | **Relay** | **Exit** | **Comments** | **Last Updated** |
 |-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
 | [UPC Austria GmbH](https://www.upc.at/) | - | - | Yes | Yes | (ISP) does not care what their customers do at all (unless you have a business connection) | 12/2011 |
-| [A1(former Telekom Austria)](https://a1.net) | - | - | Yes | No | Does not like Abuse (in any form) at all. Seems to give out customer data at alleged abuse. Not recommended but cheap. | 12/2011 |
 | [M247 Europe](https://m247.com/) | AS9009  | Yes | Yes | Yes | | 04/2023 |
+| [A1(former Telekom Austria)](https://a1.net) | AS8447 | - | Yes | No | Does not like Abuse (in any form) at all. Seems to give out customer data at alleged abuse. Not recommended but cheap. | 12/2011 |
 
 
 
@@ -46,7 +46,7 @@ These hosts already have many Tor nodes being hosted there.
 
 | **Company/ISP** | **ASN** | **Bridges** | **Relay** | **Exit** | **Comments** | **Last Updated** |
 |-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
-| [VPS.BG](https://www.vpsbg.eu/en/) | - | Yes | Yes | Yes |  They don't collect any personal info and you can pay in bitcoin. | 01/11/2016 |
+| [VPS.BG](https://www.vpsbg.eu/en/) | AS34224 | Yes | Yes | Yes |  They don't collect any personal info and you can pay in bitcoin. | 01/11/2016 |
 | [G-Core Labs](https://gcorelabs.com) | AS199524 | Yes | Yes | No | They don't allow exits and will suspend your active services and restrict your access to the account if they receive abuse messages. KVM VPS. IPv4+IPv6 native support. * Gnu/Linux, FreeBSD and Windows server supported. Unmetered traffic. | 06/2022 |
 
 
@@ -54,7 +54,7 @@ These hosts already have many Tor nodes being hosted there.
 
 | **Company/ISP** | **ASN** | **Bridges** | **Relay** | **Exit** | **Comments** | **Last Updated** |
 |-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
-| [TekSavvy](https://www.teksavvy.ca) | - | Yes | Yes | ? | has a server-friendly Internet Use Policy (e.g., running a Tor relay) and has taken a stand in favor of net neutrality | 2008/12 |
+| [TekSavvy](https://www.teksavvy.ca) | AS5645 | Yes | Yes | ? | has a server-friendly Internet Use Policy (e.g., running a Tor relay) and has taken a stand in favor of net neutrality | 2008/12 |
 | [oneprovider](https://oneprovider.com/) | - | Yes | Yes | Yes |  They are reselling dedicated servers in many locations around the world. Abuse handling differs depending on the provider from which they resell. | 2016/06 |
 | [Vidéotron Ltee](https://videotron.com/) | AS5769 | Yes | Yes | ? |  No mention of Tor in ToS, relays and bridges seem allowed. | - |
 | [Servarica](https://servarica.com/) | AS26832 | Yes | Yes | No |  They allow running Tor relay but not Tor Exit.  | - |
@@ -115,7 +115,7 @@ These hosts already have many Tor nodes being hosted there.
 | [Keyweb](https://www.keyweb.de) | AS31103 | Yes | Yes | Yes | "Everything that is in accordance with current jurisprudence is permitted on our servers." | 03/2021 |
 | [Privex](https://www.privex.io/tor-exit-policy/) | AS210083 | Yes | Yes | No | All node types permitted in Sweden, relays/bridges permitted in other regions. Tor friendly hosting provider who runs 3 relays and an exit themselves. Requires cryptocurrency to buy a server. | 06/2022 |
 | [Afterburst](https://afterburst.com) |  AS29761, AS8100  | - | Yes | No | - | - |
-| [myLoc Managed IT](https://myloc.de) | AS31010, AS24961 | Yes | Yes | No | - | 2018-10-25 |
+| [myLoc Managed IT](https://myloc.de) | AS24961 | Yes | Yes | No | - | 2018-10-25 |
 | [linevast](https://www.linevast.de) | AS201206 | No | No | No |  | 03/2021 |
 | [Server4You](https://www.server4you.de)| AS131914 | No | No | No | - | 03/2021 |
 | [Hetzner](https://hetzner.de) | AS24940 | Yes | Yes | Yes | Offers good dedicated root servers for a good price. Unmetered bandwidth on dedicated servers, 20tb on vps. "It is not a Problem, however, abuse reports can lead to a server lock" Locations: DE,FI | 09/27/2021 |
@@ -123,7 +123,7 @@ These hosts already have many Tor nodes being hosted there.
 | [Strato](https://strato.de) | AS6724 | No | No | No | - | 03/2021 |
 | [PraHost](https://www.prahost.com) | - | Yes | Yes | Yes | "If there is any abuse notice received, you need to solve it in given time, else your IP will be blocked until you take any action" | 03/2021 |
 | [DomainFactory](https://www.df.eu/de/cloud-hosting/cloud-server) | AS34011 | Yes | Yes | Yes | Only allowed on jiffybox | 03/2021 |
-| [NetCologne](https://www.netcologne.de) | - | - | Yes | Yes | - | - |
+| [NetCologne](https://www.netcologne.de) | AS8422 | - | Yes | Yes | - | - |
 | [Signaltransmitter](https://signaltransmitter.de) | AS24961 | Yes | Yes | Yes | "In principle, we do not limit our services apart from mining bitcoins" | 03/2021 |
 | [Netcup](https://www.netcup.de) | AS197540 | Yes | Yes | Yes | 40-120TB bandwidth - Tor exit nodes allowed on VPS and rootservers - "Yes, it is. Everything is allowed that the T&Cs do not exclude." | 09/27/2021 |
 | [Onyxhosting](https://onyxhosting.de) | - | No | No | No | - | 03/2021 |
@@ -134,7 +134,7 @@ These hosts already have many Tor nodes being hosted there.
 | [Serverprofis](https://www.serverprofis.de) | AS5539 | No | No | No | - | 03/2021 |
 | [manitu](https://www.manitu.de) | AS34240 | No | No | No | "I'm sorry - even if the network has great added value for specific purposes, we have decided to prohibit Tor services on our network" | 03/2021 |
 | [active-servers](https://www.active-servers.com) | AS197071 | Yes | Yes | Yes | "Usually this leads to abuse mails, which only cause trouble – but basically we have nothing against it" | 03/2021 |
-| [UltraVPS](https://www.ultravps.eu) | - | No | No | No | "We are not the right host for your project" | 03/2021 |
+| [UltraVPS](https://www.ultravps.eu) | AS29141 | No | No | No | "We are not the right host for your project" | 03/2021 |
 | [G-Core Labs](https://gcorelabs.com) | AS199524 | Yes | Yes | No | They don't allow exits and will suspend your active services and restrict your access to the account if they receive abuse messages. KVM VPS. IPv4+IPv6 native support. * Gnu/Linux, FreeBSD and Windows server supported. Unmetered traffic. | 06/2022 |
 | [Venocix](https://venocix.de/) | AS44486 | Yes | Yes | ? | Running relay since 3 months without problems. Traffic is "fair use" and speed got limited after 10TB of traffic. | 07/2022 |
 | [V.PS](https://v.ps/) | - | Yes | Yes | No | Exit nodes are not allowed | 04/2023 |
@@ -160,9 +160,9 @@ These hosts already have many Tor nodes being hosted there.
 
 | **Company/ISP** | **ASN** | **Bridges** | **Relay** | **Exit** | **Comments** | **Last Updated** |
 |-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
-| [1984Hosting](https://1984hosting.com/) | - | Yes | Yes | Yes | - | - |
-| [FlokiNET](https://flokinet.is/) | (AS200651) | Yes | Yes | Yes | Sponsor enn.lu and saveyourprivacy exit nodes | - |
-| [orangewebsite](https://www.orangewebsite.com/vps.php) | - | Yes | Yes | Yes? | - | - |
+| [1984Hosting](https://1984hosting.com/) | AS44925 | Yes | Yes | Yes | - | - |
+| [FlokiNET](https://flokinet.is/) | AS200651 | Yes | Yes | Yes | Sponsor enn.lu and saveyourprivacy exit nodes | - |
+| [orangewebsite](https://www.orangewebsite.com/vps.php) |  | Yes | Yes | Yes? | - | - |
 
 ### Israel
 
@@ -175,8 +175,8 @@ These hosts already have many Tor nodes being hosted there.
 | **Company/ISP** | **ASN** | **Bridges** | **Relay** | **Exit** | **Comments** | **Last Updated** |
 |-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
 | [Fastweb](https://fastweb.it/) |  - | Yes | Yes | Yes | - | - |
-| [Prometeus](https://www.prometeus.net/sito/) | - | Yes | Yes | No | - | - |
-| [ArubaCloud /Aruba](https://cloud.it/) | - | Yes | Yes | Yes |  TOS generically indicate that the operator is responsible for all the activities on the machine. [Read more](https://balist.es/blog/2016/04/18/running-a-tor-exit-node-on-aruba-arubacloud-a-detailed-account/) | - |
+| [Prometeus](https://www.prometeus.net/sito/) | AS34971 | Yes | Yes | No | - | - |
+| [ArubaCloud /Aruba](https://cloud.it/) | AS31034 | Yes | Yes | Yes |  TOS generically indicate that the operator is responsible for all the activities on the machine. [Read more](https://balist.es/blog/2016/04/18/running-a-tor-exit-node-on-aruba-arubacloud-a-detailed-account/) | - |
 | [SelfServer by Enter](https://selfserver.it/) | - | Yes | Yes | Yes | Uncomfortable due to old CentOS 6.10, NATed IPv4-only networking, ports other than the well-known are filtered. Abuse complaints need to go through their support service | 11/2018 |
 | [Revolution Hosting](https://rhosting.it/) | AS60798 | Yes | Yes | No | Exit nodes are allowed but they will be immediately terminated if any abuse complaint is issued. KVM VPS. IPv4+IPv6 native support. * Gnu/Linux, FreeBSD and Windows server supported. Coingate supported. | 12/2020 |
 | [G-Core Labs](https://gcorelabs.com) | AS199524 | Yes | Yes | No | They don't allow exits and will suspend your active services and restrict your access to the account if they receive abuse messages. KVM VPS. IPv4+IPv6 native support. * Gnu/Linux, FreeBSD and Windows server supported. Unmetered traffic. | 06/2022 |
@@ -187,7 +187,7 @@ These hosts already have many Tor nodes being hosted there.
 | **Company/ISP** | **ASN** | **Bridges** | **Relay** | **Exit** | **Comments** | **Last Updated** |
 |-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
 | [Yourserver](https://www.yourserver.se/) | - | Yes | Yes | ? | Support team will allow relay/exit but TOR Traffic is throttled to 5Mbps speed. If your Exit relay receive too much complaints, they will ask to you to stop or otherwise they will suspend. | 2015/03/06 |
-| [Dataclub](https://www.dataclub.eu/) | - | Yes | Yes | Yes | Your Exit should use Reduced Exit Policy. IPv6 is optional. Unmetered traffic. | 06/2022 |
+| [Dataclub](https://www.dataclub.eu/) | AS203557 | Yes | Yes | Yes | Your Exit should use Reduced Exit Policy. IPv6 is optional. Unmetered traffic. | 06/2022 |
 
 
 
@@ -195,7 +195,7 @@ These hosts already have many Tor nodes being hosted there.
 
 | **Company/ISP** | **ASN** | **Bridges** | **Relay** | **Exit** | **Comments** | **Last Updated** |
 |-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
-| [Baltic Servers](https://www.balticservers.com) | - |  Yes | Yes | Yes | All abuse mails they got yielded support tickets | - |
+| [Baltic Servers](https://www.balticservers.com) | AS59642 |  Yes | Yes | Yes | All abuse mails they got yielded support tickets | - |
 | [Time4VPS](https://www.time4vps.com/) | AS62282 |  No | No | No | "To not use Time4VPS services for any of the following: [...] Hosting public Proxy or Tor services;" | 07/2022 |
 
 ### Luxembourg
@@ -222,8 +222,8 @@ These hosts already have many Tor nodes being hosted there.
 | **Company/ISP** | **ASN** | **Bridges** | **Relay** | **Exit** | **Comments** | **Last Updated** |
 |-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
 | [MivoCloud](https://www.mivocloud.com/) | - | Yes | Yes | No | - | 09/13/16 |
-| [Trabia](https://www.trabia.com/) | - | Yes | Yes | Yes | - | 01/05/23 |
-| [AlexHost](https://alexhost.md/) | - | Yes | Yes | No | Unmetered bandwidth @ 100mbps "Tor exit relay is strictly forbidden on our company's servers" | 04/2023 |
+| [AlexHost](https://alexhost.md/) | AS200019 | Yes | Yes | No | Unmetered bandwidth @ 100mbps "Tor exit relay is strictly forbidden on our company's servers" | 04/2023 |
+| [Trabia](https://www.trabia.com/) | AS43289 | Yes | Yes | Yes | - | 01/05/23 |
 | [G-Core Labs](https://gcorelabs.com) | AS199524 | Yes | Yes | No | They don't allow exits and will suspend your active services and restrict your access to the account if they receive abuse messages. KVM VPS. IPv4+IPv6 native support. * Gnu/Linux, FreeBSD and Windows server supported. Unmetered traffic. | 06/2022 |
 
 
@@ -233,17 +233,17 @@ These hosts already have many Tor nodes being hosted there.
 |-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
 | [XS4ALL](https://www.xs4all.nl/en/) | AS3265 | Yes | Yes | Yes | Abuse can result in temporary blocks, therefore they recommend to use an dedicated IP address for exit nodes | 06/16/15 |
 | [HostHatch](https://hosthatch.com/) | AS42708 | Yes | Yes | No | - | 05/01/16 |
-| Ziggo | AS9143 | Yes | Yes | Yes | - | 05/24/2016 |
+| [Ziggo](https://www.ziggo.nl/) | 33915 | Yes | Yes | Yes | - | 05/24/2016 |
 | [LiteServer](https://www.liteserver.nl/) | AS60404 | Yes | Yes | Yes | Can pay with Bitcoin. While their AUP doesn't allow tor exit nodes (see [here](https://www.liteserver.nl/en/acceptable-usage-policy/)), they make an exception if your exit-node has a reduced exit policy. And you must leave a note to them that you are running a exit-node. "We allow tor exit nodes as long you run a limited exit policy (block SMTP) to avoid abuse. | 12/26/2018 |
-| [i3D](https://www.i3d.net/) | - | Yes | Yes | Yes | Allows also exits, if abuse is handled properly | 08/13/2017 |
+| [i3D](https://www.i3d.net/) | AS49544 | Yes | Yes | Yes | Allows also exits, if abuse is handled properly | 08/13/2017 |
 | [KoDDoS](https://koddos.net) | AS206264 | Yes | Yes | Yes | Bitcoin accepted. | 10/12/2017 |
 | [Worldstream](https://www.worldstream.nl) | AS49981 | Yes | Yes | No |  - | 02/06/2019 |
-| [LeaseWeb](https://www.leaseweb.com/) | - | Yes | Yes | Yes | - | - |
-| [Novogara](https://www.novogara.com) | - | Yes | Yes | Yes | Explicitly allows Tor exit nodes and forwards abuse/DCMA, but their network isn't the most stable. You need to email them for a custom offer. They also accept Bitcoin/UKash/CashU | - |
-| [Netrouting](https://netrouting.nl/) | - | Yes | Yes | No | ISP has confirmed by e-mail that exit nodes are NOT acceptable. | 2014-10-15 |
-| [DirectVPS](https://directvps.nl/) | - | Yes | Yes | ? | - | - |
+| [LeaseWeb](https://www.leaseweb.com/) | AS60781 | Yes | Yes | Yes | - | - |
+| [Novogara](https://www.novogara.com) | AS202425 | Yes | Yes | Yes | Explicitly allows Tor exit nodes and forwards abuse/DCMA, but their network isn't the most stable. You need to email them for a custom offer. They also accept Bitcoin/UKash/CashU | - |
+| [Netrouting](https://netrouting.nl/) | AS47869 | Yes | Yes | No | ISP has confirmed by e-mail that exit nodes are NOT acceptable. | 2014-10-15 |
+| [DirectVPS](https://directvps.nl/) |  | Yes | Yes | ? | - | - |
 | [Versio](https://versio.nl/) | - | Yes | Yes | No | - | 2013 |
-| [SnelServer](https://www.snelserver.com/) | - | Yes | Yes | Yes | Abuse complaints must be responded to within 24 hours or the system automatically suspends your account until you do. | 2014 |
+| [SnelServer](https://www.snelserver.com/) | AS62370 | Yes | Yes | Yes | Abuse complaints must be responded to within 24 hours or the system automatically suspends your account until you do. | 2014 |
 | [ChmuraNet](https://www.chmuranet.com/) | - | Yes | Yes | Yes | Allows anonymous users to run tor exits. Abuse issues will be forwarded. Make sure to tell them that you're running an exit | 09/2014 |
 | [NiceVPS.net](https://nicevps.net) | - | Yes | Yes | Yes | Privacy registration with optional email, cryptocurrencies accepted, [Tor onion link](https://nicevpsb7u3vqpo5zhyahmvfi5tihon4gnh676ucmzpcyxwodeztr4yd.onion) | 06/11/21 |
 | [IncogNET](https://incognet.io/) | AS210630 | Yes | Yes | Yes | You need to host a page on port 80 explaining that the server is a Tor Exit and use their reduced exit policy https://incognet.io/tor-exits | 04/2023 |
@@ -258,7 +258,7 @@ These hosts already have many Tor nodes being hosted there.
 | **Company/ISP** | **ASN** | **Bridges** | **Relay** | **Exit** | **Comments** | **Last Updated** |
 |-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
 | [HostHatch](https://hosthatch.com/) | AS36351 | Yes | Yes | No | Their VPS location is: Sydney, AU - Equinix IBX SY3 Data Center.Their ISP is:SoftLayer network, which includes primary transit from Telstra and peering with Equinix, Pipe-IX, NSW-IX and Megaport. | - |
-| [Rimu hosting](https://rimuhosting.com) | - | Yes | Yes | Yes | Have servers in N.Z.; Sydney; London; and Dallas. Locations may vary, but quite happy with the specific Oz/NZ query. | - |
+| [Rimu hosting](https://rimuhosting.com) | AS45671 | Yes | Yes | Yes | Have servers in N.Z.; Sydney; London; and Dallas. Locations may vary, but quite happy with the specific Oz/NZ query. | - |
 
 
 ### Norway
@@ -273,14 +273,14 @@ These hosts already have many Tor nodes being hosted there.
 | **Company/ISP** | **ASN** | **Bridges** | **Relay** | **Exit** | **Comments** | **Last Updated** |
 |-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
 | [cyber_Folks](https://cyberfokls.pl/) | - | Yes | Yes | No | They had unpleasant experiences with exit relays so they don't allow it | 03/02/2022 |
-| [Hitme.pl](https://hitme.pl/) | - | Yes | Yes | No | They block accounts if you receive an abuse report | 29/03/2021 |
+| [Hitme.pl](https://hitme.pl/) | AS50840 | Yes | Yes | No | They block accounts if you receive an abuse report | 29/03/2021 |
 | [HOSTEAM ](https://hosteam.pl/pl) | AS51290 | Yes | Yes | ? | - | 04/2023 |
 | [Hostowisko.pl](http://www.hostowisko.pl/) | - | Yes | Yes | ? | -  | 27/08/2013 |
 | [Exone](https://www.exone.pl/) | - | Yes | Yes | ? | - | 28/08/2013 |
-| [e24cloud](https://www.e24cloud.com/en) | - | Yes | Yes | ? | - | 01/10/2013 |
-| [hostinger.pl](https://www.hostinger.pl) | - | Yes | Yes | Yes | | 02/10/2013 |
+| [e24cloud](https://www.e24cloud.com/en) | AS31229 | Yes | Yes | ? | - | 01/10/2013 |
+| [hostinger.pl](https://www.hostinger.pl) |  | Yes | Yes | Yes | | 02/10/2013 |
 | [statnet.pl](https://www.statnet.pl/) | - | No | No | No | Used to allow Tor-relays, but now is blocking Tor activity | 12/06/2017 |
-| [IQ PL](https://www.iq.pl/) | - | Yes | Yes | Yes | They allow running exit node on collocated dedicated server |  - |
+| [IQ PL](https://www.iq.pl/) | AS47544 | Yes | Yes | Yes | They allow running exit node on collocated dedicated server |  - |
 | [Slask DataCenter](https://sldc.eu/) | - | ? | No | No | They don't allow Tor traffic on their servers (anymore?) | 03/02/2022 |
 | [Remote Admin](https://remoteadmin.store/) | AS212663 | Yes | Yes | Yes | You can install any software you want until it's legal and complies with polish law. They ask to properly and responsibly configure exit node to minimize abuse and they reserve rights to suspend your service if requested by law enforcement. | 03/02/2022 |
 | [G-Core Labs](https://gcorelabs.com) | AS199524 | Yes | Yes | No | They don't allow exits and will suspend your active services and restrict your access to the account if they receive abuse messages. KVM VPS. IPv4+IPv6 native support. * Gnu/Linux, FreeBSD and Windows server supported. Unmetered traffic. | 06/2022 |
@@ -293,7 +293,7 @@ These hosts already have many Tor nodes being hosted there.
 | **Company/ISP** | **ASN** | **Bridges** | **Relay** | **Exit** | **Comments** | **Last Updated** |
 |-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
 |[M247 Europe](https://m247.com/) | AS9009  | Yes | Yes | Yes | | 04/2023 |
-|[Voxility](https://www.voxility.com/) | - | Yes | Yes | ? | Read more [2015 tor-talk thread](https://lists.torproject.org/pipermail/tor-relays/2015-April/006867.html%7CApril)  | 04/2015 |
+| [Voxility](https://www.voxility.com/) | AS3223 | Yes | Yes | ? | Read more [2015 tor-talk thread](https://lists.torproject.org/pipermail/tor-relays/2015-April/006867.html%7CApril)  | 04/2015 |
 | [JavaPipe](https://javapipe.com/) | - | Yes | Yes | ? | - | 04/2016 |
 | [MilesWeb](https://www.milesweb.com/) | - | Yes | Yes | No | Plans in Romania and also have data centers in USA and UK with 24x7 free support. | 03/2017 |
 | [G-Core Labs](https://gcorelabs.com) | AS199524 | Yes | Yes | No | They don't allow exits and will suspend your active services and restrict your access to the account if they receive abuse messages. KVM VPS. IPv4+IPv6 native support. * Gnu/Linux, FreeBSD and Windows server supported. Unmetered traffic. | 06/2022 |
@@ -308,9 +308,9 @@ These hosts already have many Tor nodes being hosted there.
 | [Dataclub](https://www.dataclub.eu/) | - | Yes | Yes | Yes | Your Exit should use Reduced Exit Policy. IPv6 is optional. Unmetered traffic. | 06/2022 |
 | [HostHatch](https://hosthatch.com) | AS42708 | Yes | Yes | No | - | 2016/05 |
 | TeliaSonera | - | Yes | Yes | ? | TeliaSonera is also big in Sweden and deliver where other ISPs can't. | - |
-| [PRQ](https://prq.se/?p=dedicated&intl=1) |  - | Yes | Yes | Yes | - | - |
+| [PRQ](https://prq.se/?p=dedicated&intl=1) | AS33837 | Yes | Yes | Yes | - | - |
 | [Privex](https://www.privex.io/tor-exit-policy/) | AS210083 | Yes | Yes | Yes | Tor friendly hosting provider who runs 3 relays and an exit themselves. Requires cryptocurrency to buy a server. | 06/2022 |
-| [Portlane](http://www.portlane.com/) | - | Yes | Yes | Yes | Previously provided connectivity for ThePirateBay, OpenBitTorrent tracker et al.  Handles abuse according to "Swedish praxis". |  - |
+| [Portlane](http://www.portlane.com/) | AS42708 | Yes | Yes | Yes | Previously provided connectivity for ThePirateBay, OpenBitTorrent tracker et al.  Handles abuse according to "Swedish praxis". |  - |
 | [Yourserver](https://www.yourserver.se/) | - | Yes | Yes | ? | Support team will allow relay/exit but TOR Traffic is throttled to 5Mbps speed. If your Exit relay receive too much complaints, they will ask to you to stop or otherwise they will suspend. | 2015/03/06 |
 | [Svea Hosting](https://svea.net/) | AS41634 | Yes | Yes | Yes | They run an exit node themselves and write on their dedicated server page "It is perfect for [...] TOR Exit Nodes"  | 04/2021 |
 
@@ -320,7 +320,7 @@ These hosts already have many Tor nodes being hosted there.
 | **Company/ISP** | **ASN** | **Bridges** | **Relay** | **Exit** | **Comments** | **Last Updated** |
 |-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
 | [Solar Communications Gmbh](https://solarcom.ch/) | AS197988 | Yes | Yes | No | "We allow to place Tor routers, but don't allow to place Tor exit nodes." This applies to all their partners, who actually sell Solar's services to the public, namely: [Server & cloud](https://server-cloud.com), [CoinsHost](https://coinshost.com), [Incloudibly](https://incloudibly.net), [Cloudcom](https://cloudc.me), [AtomDrive](https://atomdrive.net). Cryptocurrencies are accepted. | 12/04/2015 |
-| [fsit](https://www.fsit.ch/) | - | Yes | Yes | Yes | - | 11/2015 |
+| [fsit](https://www.fsit.ch/) | AS59891 | Yes | Yes | Yes | - | 11/2015 |
 | [Swiss Made Host](https://swissmade.host/en/) | - | No | No | No | "Tor is not welcome on our network." | 10/2020 |
 | [NiceVPS.net](https://nicevps.net) | - | Yes | Yes | Yes | Privacy registration with optional email, cryptocurrencies accepted, [Tor onion link](https://nicevpsb7u3vqpo5zhyahmvfi5tihon4gnh676ucmzpcyxwodeztr4yd.onion) | 06/11/21 |
 
@@ -335,8 +335,8 @@ These hosts already have many Tor nodes being hosted there.
 
 | **Company/ISP** | **ASN** | **Bridges** | **Relay** | **Exit** | **Comments** | **Last Updated** |
 |-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
-| [UrDN](https://urdn.com.ua) | - | Yes | Yes | Yes | free speech hoster, allows anything but spam/scam. Abuse always forwarded. | 10/08/2015 |
-| [Colocall](https://www.colocall.net/) | - | Yes | Yes | Yes | - | - |
+| [UrDN](https://urdn.com.ua) | AS207656 | Yes | Yes | Yes | free speech hoster, allows anything but spam/scam. Abuse always forwarded. | 10/08/2015 |
+| [Colocall](https://www.colocall.net/) | AS15497 | Yes | Yes | Yes | - | - |
 | [G-Core Labs](https://gcorelabs.com) | AS199524 | Yes | Yes | No | They don't allow exits and will suspend your active services and restrict your access to the account if they receive abuse messages. KVM VPS. IPv4+IPv6 native support. * Gnu/Linux, FreeBSD and Windows server supported. Unmetered traffic. | 06/2022 |
 | [Virtual Systems](https://vsys.host/)| AS30860 | Yes | Yes | Yes | Allow payment with crypto | 04/2023|
 | [HOSTIKO](https://hostiko.com.ua/)| AS199785 | Yes | Yes | Yes | Allow payment with crypto. Also servers in Germany and Poland | 04/2023|
@@ -358,7 +358,7 @@ These hosts already have many Tor nodes being hosted there.
 
 | **Company/ISP** | **ASN** | **Bridges** | **Relay** | **Exit** | **Comments** | **Last Updated** |
 |-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
-| [Amazon Web Services (AWS)](https://aws.amazon.com) | - | Yes | Yes | No | Expensive bandwidth, you WILL be charged extra after reaching 15GB. | 09/27/2021 |
+| [Amazon Web Services (AWS)](https://aws.amazon.com) | AS16509 | Yes | Yes | No | Expensive bandwidth, you WILL be charged extra after reaching 15GB. | 09/27/2021 |
 | [AmeriNOC](https://www.amerinoc.com/) | - | Yes | Yes | Yes | - | - |
 | [Arvixe](https://www.arvixe.com/vps_virtual_private_servers_hosting/) | - | Yes | Yes | Yes | - | 06/19/13 |
 | [Lumen (CenturyLink)](http://www.lumen.com) | - | Yes | Yes | ? | [Home TOS doesn't explicitly ban "servers"](https://www.centurylink.com/legal/docs/Internet_Subscriber_Agreement_LQ_ENG.pdf), but unsure about exits. | 4/27/2023 |
@@ -370,17 +370,17 @@ These hosts already have many Tor nodes being hosted there.
 | [Cyberonic](https://www.cyberonic.com) | - | Yes | Yes | ? | - | - |
 | [Data Ideas (AlienData)](https://dataideas.com/) | AS398355 | Yes | Yes | Yes | AUP [here](https://dataideas.com/acceptable-use-policy.html). Notices are ignored. Unmetered bandwidth. | 04/13/2023 |
 | [Datawagon](https://datawagon.net) | AS27176 | Yes | Yes | Yes | Customers are forwarded abuse complaints to handle themselves | 03/06/19 |
-| [DreamHost](https://www.dreamhost.com/) | - | Yes | Yes | ? | - | 11/29/17 |
+| [DreamHost](https://www.dreamhost.com/) | AS26347 | Yes | Yes | ? | - | 11/29/17 |
 | [Evolucix](https://www.evolucix.com) | -  | Yes | Yes | No(?) | - | - |
 | [Future Hosting](https://www.futurehosting.com/) | - | Yes | Yes | No | - | 09/01/14 |
-| [Hivelocity](https://www.hivelocity.net/) | - | No | No | No | They are symphathetic, but do not want their IP space "polluted" by Tor abuse requests. | 10/2020 |
+| [Hivelocity](https://www.hivelocity.net/) | AS29802 | No | No | No | They are symphathetic, but do not want their IP space "polluted" by Tor abuse requests. | 10/2020 |
 | [HostGator](https://www.hostgator.com/) | - | No | No | No | - | - |
 | [HostHatch](https://hosthatch.com) | AS46562 | Yes | Yes | No | - | 05/01/16 |
 | [HostUS](https://hostus.us/) | AS25926 | Yes | Yes | No | - | 10/16/14 |
 | [IPXcore](https://ipxcore.com/) | - | Yes | Yes | No | - | - |
 | [IncogNET](https://incognet.io/) | AS210630 | Yes | Yes | Yes | You need to host a page on port 80 explaining that the server is a Tor Exit and use their reduced exit policy https://incognet.io/tor-exits | 04/2023 |
 | [Linode](https://www.linode.com/) | AS63949 | Yes | Yes | Yes | "We allow Tor exits as long as they have a reduced exit policy." - I've used 10TB this month in total for all 3 of my exit nodes spread out in different locations. I've recieved 0 notices from Linode while using the free 100$ credits you get. I allow ports 53,80,443. My DE exit node is now the [2nd fastest](https://i.imgur.com/Owj6HkD.png) Linode relay, with UK third. I would recommend this host to use the free credits, but wouldn't really recommend paying as bandwidth is limited. Locations: US,CA,GB,DE,SG,JP,IN,AU | 10/07/2021 |
-| [Luna Node](https://www.lunanode.com/index.php) | - | Yes | Yes | No | - | 05/01/14 |
+| [Luna Node](https://www.lunanode.com/index.php) | AS16276 / AS174 | Yes | Yes | No | - | 05/01/14 |
 | [Oracle Cloud](https://www.oracle.com/cloud/free/) | AS31898 | Yes | Yes | No | Offers generous free tier - 10TB free outbound bandwidth, I have ran a non exit relay for a few months with no problems, [as well as others](https://metrics.torproject.org/rs.html#search/as:AS31898). Note that they will terminate your account if you're suspicious and not provide reason, even on support chat, I've gotten an account banned simply for running a smokeping instance. (Pinging ip addresses to test network stability). Locations: US,CA,GB,DE,CH,NL,SA,UAE,BR,CL,JP,KR,AU,IN | 10/10/2021 |
 | [OVH](https://www.ovh.com/us/index.xml) | AS16276 | Yes | Yes | No | Unmetered bandwidth in non asia locations. - "I will gladly explain this situation for you. Running a Tor exit node is strictly forbidden and can lead to the suspension and even termination of your server and account." Locations: US,CA,FR,DE,PL,GB,SG | 09/27/2021 |
 | [Oplink.net](https://www.oplink.net) | - | No | No | No | Specifically Prohibited Abuse: hosting of any TOR exit relays or nodes. | 11/2022 |
@@ -389,20 +389,23 @@ These hosts already have many Tor nodes being hosted there.
 | [RamNode](https://ramnode.com/) | AS3842 | Yes | Yes | No | - | 11/03/14 |
 | [Server Complete](https://servercomplete.com/) | - | ? | ? | No | - | 11/03/14 |
 | [IBM Cloud](https://www.ibm.com/cloud) | - | Yes | Yes | ? | - | - |
+| [VPSWebServer.com](https://www.vpswebserver.com) | - | Yes | No | ? | - | - |
+| [Astound Broadband](https://www.astound.com/) | - | No | No | No | The [acceptable use policy](https://www.astound.com/policies-disclaimers/acceptable-use-policy/) disallows "servers" and "proxies". | 04/13/23 |
+| [Softlayer](https://www.softlayer.com) | AS36351 | Yes | Yes | ? | - | - |
+| [Rackspace](https://www.rackspace.com/) | - | Yes | Yes | No | Host, not an ISP | - |
 | [SolarVPS](https://solarvps.com) | - | Yes | Yes | Yes | - | - |
 | [SeedVPS](https://www.seedvps.com) | - | Yes | Yes | No | - | - |
 | [VPS6.NET](https://vps6.net/) | - | Yes | Yes | No | - | - |
-| [VPSWebServer.com](https://www.vpswebserver.com) | - | Yes | No | ? | - | - |
-| [Astound Broadband](https://www.astound.com/) | - | No | No | No | The [acceptable use policy](https://www.astound.com/policies-disclaimers/acceptable-use-policy/) disallows "servers" and "proxies". | 04/13/23 |
-| [DigitalOcean](https://digitalocean.com/) | - | Yes | Yes | No | - | - |
+| [CondoInternet ISP](http://www.condointernet.net/) | - | Yes | Yes | Yes | - | - |
+| [DigitalOcean](https://digitalocean.com/) | AS14061 | Yes | Yes | No | - | - |
 | [PhoenixNap / Secured Servers](https://www.phoenixnap.com/) | - | Yes | Yes | No | - | 08/01/14 |
 | [Vultr](https://vultr.com) | AS20473 | Yes | Yes | No | When asked directly they will claim they do support Tor exits but will pull the rug out from under you later on. This has happened to at least two exit operators. | - |
-| [ChicagoVPS](https://chicagovps.net/) | - | Yes | Yes | No | Tor bridge/relay is allowed on the whole VPS range. Any VPS running Exit nodes will be suspended without prior notice. | 15/01/15 |
-| [Xmission](https://www.xmission.com/) | - | Yes | Yes | Yes | - | 01/28/15 |
+| [ChicagoVPS](https://chicagovps.net/) | AS36352 | Yes | Yes | No | Tor bridge/relay is allowed on the whole VPS range. Any VPS running Exit nodes will be suspended without prior notice. | 15/01/15 |
+| [Xmission](https://www.xmission.com/) | AS6315 | Yes | Yes | Yes | - | 01/28/15 |
 | [MonkeyBrains](https://monkeybrains.net) | AS32329 | Yes | Yes | Yes | Only offers colocation, no cheap VPS option. | 1/14/19 |
 | [Universal Hosting](https://universal-hosting.com) | - | No | No | No | Charges, and suspends customers. [More info](https://universal-hosting.com/abuse) | 9/14/2021 |
 | [Spectrum](https://www.spectrum.com/) | AS12271 | No | No | No | - | 01/19/22 |
-| [Microsoft Azure](https://azure.microsoft.com) | - | Yes | Yes | No | Expensive bandwidth, you WILL be charged extra after reaching 15GB. | 06/2022 |
+| [Microsoft Azure](https://azure.microsoft.com) | AS8075 | Yes | Yes | No | Expensive bandwidth, you WILL be charged extra after reaching 15GB. | 06/2022 |
 | [G-Core Labs](https://gcorelabs.com) | AS199524 | Yes | Yes | No | They don't allow exits and will suspend your active services and restrict your access to the account if they receive abuse messages. KVM VPS. IPv4+IPv6 native support. * Gnu/Linux, FreeBSD and Windows server supported. Unmetered traffic. | 06/2022 |
 | [Tornado VPS](https://tornadovps.com/) | - | Yes | Yes | Yes | Allows exits [with a reduced exit policy](https://tornadovps.com/faq). | 05/15/2023 |
 
