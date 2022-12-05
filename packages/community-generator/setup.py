@@ -9,7 +9,7 @@ with io.open('README.md', 'rt', encoding="utf8") as f:
 
 _description_re = re.compile(r'description\s+=\s+(?P<description>.*)')
 
-with open('lektor_community_generator.py', 'rb') as f:
+with open('lektor_community_generator/__init__.py', 'rb') as f:
     description = str(ast.literal_eval(_description_re.search(
         f.read().decode('utf-8')).group(1)))
 

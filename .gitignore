@@ -1,3 +1,6 @@
+# this file is auto-generated on each build
+models/sortby_resources.ini
+
 assets/static/css
 
 node_modules

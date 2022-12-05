@@ -7,6 +7,8 @@ from urllib.parse import quote_plus
 
 from lektor.pluginsystem import Plugin
 
+from .file_templates import contents_lr_tmpl, sortby_resources_ini
+
 
 # lektor's slugify removes characters that *should* be url-safe, so let's make our own
 def slugify(it: str):
@@ -31,38 +33,6 @@ def slugify(it: str):
 class CommunityGeneratorPlugin(Plugin):
     name = 'community-generator'
     description = u'Generate content files for community training resource page'
-
-    contents_lr_tmpl = '''
-section: {section}
----
-_model: sortby_resources
----
-section_id: {section_id}
----
-color: {color}
----
-_template: {template}
----
-title: {title}
----
-subtitle: {subtitle}
----
-cta: {cta}
----
-html: {html}
----
-sortby_resources: {sortby_resources}
----
-current_topic: {current_topic}
----
-current_lang: {current_lang}
----
-current_author: {current_author}
----
-body:
-
-{body}
-'''
 
     def _generate_file_helper(self, url_path: str, content: str) -> None:
         """Generate a contents.lr file from a URL path and content string.
@@ -147,6 +117,9 @@ body:
 
     def generate_files(self):
         """Generate contents.lr files for the sortby fields: topics, languages, author."""
+        with open(os.path.join(self.env.project.tree, 'models', 'sortby_resources.ini'), 'w') as f:
+            f.write(sortby_resources_ini)
+
         with open(os.path.join(self.env.project.tree, 'databags', 'community-training-materials.json'), 'r') as f:
             self.resources = json.load(f)
 
@@ -155,7 +128,7 @@ body:
         authors = self._get_authors()
 
         # lektor won't render a page if it doesn't have a parent contents.lr
-        self._generate_file_helper(f'training/resources/sortby', self._format_default(self.contents_lr_tmpl))
+        self._generate_file_helper(f'training/resources/sortby', self._format_default(contents_lr_tmpl))
 
         # loop through topics
         for topic in topics:
@@ -164,12 +137,12 @@ body:
             if topic != 'none':
                 topic_resources = dict(filter(lambda resource: topic in resource[1].get('topics', []), topic_resources.items()))
 
-            self._generate_file_helper(f'training/resources/sortby/{slugify(topic)}', self._format_default(self.contents_lr_tmpl))
-            self._generate_file_helper(f'training/resources/sortby/{slugify(topic)}/none', self._format_default(self.contents_lr_tmpl))
+            self._generate_file_helper(f'training/resources/sortby/{slugify(topic)}', self._format_default(contents_lr_tmpl))
+            self._generate_file_helper(f'training/resources/sortby/{slugify(topic)}/none', self._format_default(contents_lr_tmpl))
             self._generate_file_helper(
                 f'training/resources/sortby/{slugify(topic)}/none/none',
                 self._format_default(
-                    self.contents_lr_tmpl,
+                    contents_lr_tmpl,
                     section='Training',
                     color='primary',
                     template='layout.html',
@@ -189,11 +162,11 @@ Or, if you want to teach your community about Tor, these training materials are 
                 if language_code != 'none':
                     language_resources = dict(filter(lambda resource: language_code in resource[1]['languages'], language_resources.items()))
             
-                self._generate_file_helper(f'training/resources/sortby/{slugify(topic)}/{language_code}', self._format_default(self.contents_lr_tmpl))
+                self._generate_file_helper(f'training/resources/sortby/{slugify(topic)}/{language_code}', self._format_default(contents_lr_tmpl))
                 self._generate_file_helper(
                     f'training/resources/sortby/{slugify(topic)}/{language_code}/none',
                     self._format_default(
-                        self.contents_lr_tmpl,
+                        contents_lr_tmpl,
                         section='Training',
                         color='primary',
                         template='layout.html',
@@ -217,7 +190,7 @@ Or, if you want to teach your community about Tor, these training materials are 
                     self._generate_file_helper(
                         f'training/resources/sortby/{slugify(topic)}/{language_code}/{slugify(author_name)}',
                         self._format_default(
-                            self.contents_lr_tmpl,
+                            contents_lr_tmpl,
                             section='Training',
                             color='primary',
                             template='layout.html',
