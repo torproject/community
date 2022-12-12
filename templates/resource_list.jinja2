@@ -1,10 +1,11 @@
 {#
   Args:
     resource_dict: a dictionary mapping a resource name to a resource
+    visible_resource_list: resources will be rendered (but not displayed) unless the resource's key is in this list
     this: `this`
     training_guide_this: the `this` to use for resolving training guides. defaults to `this`
 #}
-{% macro resource_list(resource_dict, this, training_guide_this) %}
+{% macro resource_list(resource_dict, visible_resource_list, this, training_guide_this) %}
   {% set training_guide_this = training_guide_this or this %}
   {% include 'resource_filter.jinja2' %}
   <div id="resource-list">
@@ -14,7 +15,7 @@
     {% endif %}
     {% for resource_name, resource in resource_dict.items() %}
       <div
-        class="border container-fluid p-3 px-0 my-3 resource-list-entry"
+        class="border container-fluid p-3 px-0 my-3 resource-list-entry {% if resource_name not in visible_resource_list %}d-none{% endif %}"
         data-topics=":{% for topic in resource['topics']%}{{ slugify(topic) }}:{% endfor %}"
         data-langs=":{% for lang in resource['languages']%}{{ lang }}:{% endfor %}"
         data-author="{{ slugify(resource['author']) }}"

@@ -50,8 +50,7 @@ class CommunityGeneratorPlugin(Plugin):
         with open(content_path, 'w') as f:
             f.write(content)
 
-    @classmethod
-    def _format_default(cls, to_format: str, **kwargs: str) -> str:
+    def _format_default(self, to_format: str, **kwargs: str) -> str:
         """Call str.format but with default values."""
         formatting = {
             'section': '',
@@ -63,13 +62,23 @@ class CommunityGeneratorPlugin(Plugin):
             'cta': '',
             'html': '',
             'sortby_resources': '',
+            'sortby_resources_visible': '',
             'current_topic': '',
             'current_lang': '',
+            'current_lang_code': '',
             'current_author': '',
             'body': '',
         }
 
         formatting.update(kwargs)
+        if formatting['current_lang'] and not formatting['current_lang_code']:
+            try:
+                languages = self._get_resource_langs()
+                language_code, _ = next(filter(lambda item: item[1] == formatting['current_lang'], languages))
+                formatting['current_lang_code'] = language_code
+            except StopIteration:
+                breakpoint()
+                pass
 
         return to_format.format(**formatting)
 
@@ -130,6 +139,8 @@ class CommunityGeneratorPlugin(Plugin):
         # lektor won't render a page if it doesn't have a parent contents.lr
         self._generate_file_helper(f'training/resources/sortby', self._format_default(contents_lr_tmpl))
 
+        sortby_resources = json.dumps(self.resources)
+
         # loop through topics
         for topic in topics:
             topic_resources = self.resources.copy()
@@ -148,8 +159,11 @@ class CommunityGeneratorPlugin(Plugin):
                     template='layout.html',
                     title='Training Resources',
                     html='resources-sortby.html',
-                    sortby_resources=json.dumps(topic_resources),
+                    sortby_resources=sortby_resources,
+                    sortby_resources_visible='\n'.join(topic_resources.keys()),
                     current_topic=topic if topic != 'none' else '',
+                    current_lang='',
+                    current_author='',
                     body='''
 Our Community team delivers digital security training about Tor to human rights defenders, journalists, activists and marginalized communities around the world.
 To request a Tor training for your organization or community, please contact us and send an email to [training at torproject.org](mailto:training@torproject.org).
@@ -161,7 +175,7 @@ Or, if you want to teach your community about Tor, these training materials are 
                 language_resources = topic_resources.copy()
                 if language_code != 'none':
                     language_resources = dict(filter(lambda resource: language_code in resource[1]['languages'], language_resources.items()))
-            
+
                 self._generate_file_helper(f'training/resources/sortby/{slugify(topic)}/{language_code}', self._format_default(contents_lr_tmpl))
                 self._generate_file_helper(
                     f'training/resources/sortby/{slugify(topic)}/{language_code}/none',
@@ -172,9 +186,11 @@ Or, if you want to teach your community about Tor, these training materials are 
                         template='layout.html',
                         title='Training Resources',
                         html='resources-sortby.html',
-                        sortby_resources=json.dumps(language_resources),
+                        sortby_resources=sortby_resources,
+                        sortby_resources_visible='\n'.join(language_resources.keys()),
                         current_topic=topic if topic != 'none' else '',
                         current_lang=language_name if language_name != 'none' else '',
+                        current_author='',
                         body='''
 Our Community team delivers digital security training about Tor to human rights defenders, journalists, activists and marginalized communities around the world.
 To request a Tor training for your organization or community, please contact us and send an email to [training at torproject.org](mailto:training@torproject.org).
@@ -196,7 +212,8 @@ Or, if you want to teach your community about Tor, these training materials are 
                             template='layout.html',
                             title='Training Resources',
                             html='resources-sortby.html',
-                            sortby_resources=json.dumps(author_resources),
+                            sortby_resources=sortby_resources,
+                            sortby_resources_visible='\n'.join(author_resources.keys()),
                             current_topic=topic if topic != 'none' else '',
                             current_lang=language_name if language_name != 'none' else '',
                             current_author=author_name if author_name != 'none' else '',

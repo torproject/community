@@ -6,7 +6,7 @@
     {{ this.body }}
     <div class="mr-lg-4">
       <div>
-        {{ resource_list(bag('community-training-materials'), this) }}
+        {{ resource_list(bag('community-training-materials'), bag('community-training-materials'), this) }}
       </div>
       <hr class="my-5">
       {{ md(_('### Community building

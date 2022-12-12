@@ -1,9 +1,9 @@
 'use strict';
 
-window.resourceFilters = {
-  topic: null,
-  lang: null,
-  author: null,
+let resourceFilters = {
+  topic: document.getElementById('topicDropdownMenuButton').dataset.currentValue || null,
+  lang: document.getElementById('languageDropdownMenuButton').dataset.currentValue || null,
+  author: document.getElementById('authorDropdownMenuButton').dataset.currentValue || null,
 };
 
 let resources = document.querySelectorAll('#resource-list > .resource-list-entry');
@@ -31,7 +31,7 @@ function setTopic(ev) {
   }
 
   topic_dropdown_button.innerText = newText;
-  window.resourceFilters.topic = topic;
+  resourceFilters.topic = topic;
 }
 
 function setLang(ev) {
@@ -47,7 +47,7 @@ function setLang(ev) {
   }
 
   lang_dropdown_button.innerText = newText;
-  window.resourceFilters.lang = lang;
+  resourceFilters.lang = lang;
 }
 
 function setAuthor(ev) {
@@ -62,7 +62,7 @@ function setAuthor(ev) {
     newText = translatedAuthor;
   }
 
-  window.resourceFilters.author = author;
+  resourceFilters.author = author;
   author_dropdown_button.innerText = newText;
 }
 
@@ -73,10 +73,13 @@ function applyFilters(topic, lang, author) {
   resources.forEach(resource => {
     let hidden = false;
     if (topic && !resource.dataset.topics.includes(`:${topic}:`)) {
+        console.log('topic');
       hide(resource);
     } else if (lang && !resource.dataset.langs.includes(`:${lang}:`)) {
+        console.log(`dataset does not include selected lang: :${lang}:`);
       hide(resource);
     } else if (author && resource.dataset.author != author) {
+        console.log('author');
       hide(resource);
     } else {
       unhide(resource);
@@ -87,6 +90,6 @@ function applyFilters(topic, lang, author) {
 document.querySelectorAll('.filterApplyButton').forEach(button => {
   button.classList.remove('d-none');
   button.addEventListener('click', ev => {
-    applyFilters(window.resourceFilters.topic, window.resourceFilters.lang, window.resourceFilters.author);
+    applyFilters(resourceFilters.topic, resourceFilters.lang, resourceFilters.author);
   });
 });

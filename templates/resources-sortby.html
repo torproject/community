@@ -10,8 +10,7 @@
     {{ this.body }}
     <div class="mr-lg-4">
       <div>
-        {{ resource_list(json_loads(this.sortby_resources), this, this.parent.parent.parent) }}
-        {#<pre>{{ this.sortby_resources }}</pre>#}
+        {{ resource_list(json_loads(this.sortby_resources), this.sortby_resources_visible, this, this.parent.parent.parent) }}
       </div>
       <hr class="my-5">
       {{ md(_('### Community building

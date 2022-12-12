@@ -12,7 +12,7 @@
 
 <div class="js-filter-dropdowns d-flex justify-content-end gap-10px">
   <div class="dropdown">
-    <button class="btn btn-md btn-outline-primary dropdown-toggle font-weight-600" type="button" id="topicDropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <button class="btn btn-md btn-outline-primary dropdown-toggle font-weight-600" type="button" id="topicDropdownMenuButton" data-current-value="{{ slugify(this.current_topic or '') }}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       {% if this.current_topic %}
         {{ _('Topic:') + ' ' + this.current_topic }}
       {% else %}
@@ -33,7 +33,7 @@
     </div>
   </div>
   <div class="dropdown">
-    <button class="btn btn-md btn-outline-primary dropdown-toggle font-weight-600" type="button" id="languageDropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <button class="btn btn-md btn-outline-primary dropdown-toggle font-weight-600" type="button" id="languageDropdownMenuButton" data-current-value="{{ this.current_lang_code }}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       {% if this.current_lang %}
         {{ _('Language:') +  ' ' + this.current_lang }}
       {% else %}
@@ -54,7 +54,7 @@
     </div>
   </div>
   <div class="dropdown">
-    <button class="btn btn-md btn-outline-primary dropdown-toggle font-weight-600" type="button" id="authorDropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <button class="btn btn-md btn-outline-primary dropdown-toggle font-weight-600" type="button" id="authorDropdownMenuButton" data-current-value="{{ slugify(this.current_author or '') }}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       {% if this.current_author %}
         {{ _('Maintained by:')  + ' ' + this.current_author }}
       {% else %}
