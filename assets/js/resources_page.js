@@ -21,14 +21,40 @@ const translatedAuthorColon = document.currentScript.getAttribute('author-colon'
 // set the initial state, for our history api manipulation
 history.replaceState(resourceFilters, '', window.location.pathname);
 
-function setTopic(ev) {
-  ev.preventDefault();
+Array.from(document.getElementsByClassName('onclick-setTopic'))
+  .forEach(el => el.addEventListener('click', event => {
+    event.preventDefault()
 
-  let topic = ev.target.dataset.topic;
-  let topicReadable = ev.target.innerText;
+    let topic = event.target.dataset.topic;
+    let topicReadable = event.target.innerText;
+
+    setTopic(topic, topicReadable);
+  }));
+
+Array.from(document.getElementsByClassName('onclick-setLang'))
+  .forEach(el => el.addEventListener('click', event => {
+    event.preventDefault()
+
+    let lang = event.target.dataset.lang;
+    let langReadable = event.target.innerText;
+
+    setLang(lang, langReadable);
+  }));
+
+Array.from(document.getElementsByClassName('onclick-setAuthor'))
+  .forEach(el => el.addEventListener('click', event => {
+    event.preventDefault()
+
+    let author = event.target.dataset.author;
+    let authorReadable = event.target.innerText;
+
+    setAuthor(topic, topicReadable);
+  }));
+
+function setTopic(topic, topicReadable) {
   let newText = `${translatedTopicColon} ${topicReadable}`;
 
-  if (topic === 'none') { 
+  if (topic === 'none' || topic === null) {
     topic = null;
     newText = translatedTopic;
   }
@@ -37,14 +63,10 @@ function setTopic(ev) {
   resourceFilters.topic = topic;
 }
 
-function setLang(ev) {
-  ev.preventDefault();
-
-  let lang = ev.target.dataset.lang;
-  let langReadable = ev.target.innerText;
+function setLang(lang, langReadable) {
   let newText = `${translatedLangColon} ${langReadable}`;
 
-  if (lang === 'none') {
+  if (lang === 'none' || lang === null) {
     lang = null;
     newText = translatedLang;
   }
@@ -53,14 +75,10 @@ function setLang(ev) {
   resourceFilters.lang = lang;
 }
 
-function setAuthor(ev) {
-  ev.preventDefault();
-
-  let author = ev.target.dataset.author;
-  let authorReadable = ev.target.innerText;
+function setAuthor(author, authorReadable) {
   let newText = `${translatedAuthorColon} ${authorReadable}`;
 
-  if (author === 'none') {
+  if (author === 'none' || author === null) {
     author = null;
     newText = translatedAuthor;
   }
@@ -120,7 +138,24 @@ document.querySelectorAll('.filterApplyButton').forEach(button => {
 
 window.addEventListener('popstate', event => {
   event.preventDefault();
-  console.log(event);
-  console.log(window.location.pathname);
+
+  let topicReadable = null;
+  let langReadable = null;
+  let authorReadable = null;
+  
+  if (event.state.topic) {
+    topicReadable = document.querySelector(`div[aria-labelledby=topicDropdownMenuButton] a[data-topic=${event.state.topic}]`).innerText;
+  }
+  if (event.state.lang) {
+    langReadable = document.querySelector(`div[aria-labelledby=languageDropdownMenuButton] a[data-lang=${event.state.lang}]`).innerText;
+  }
+  if(event.state.author) {
+    authorReadable = document.querySelector(`div[aria-labelledby=authorDropdownMenuButton] a[data-author=${event.state.author}]`).innerText;
+  }
+
+  setTopic(event.state.topic, topicReadable);
+  setLang(event.state.lang, langReadable);
+  setAuthor(event.state.author, authorReadable);
+
   applyFilters(event.state.topic, event.state.lang, event.state.author, false)
 });

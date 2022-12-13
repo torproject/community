@@ -23,8 +23,7 @@
     <div class="dropdown-menu" aria-labelledby="topicDropdownMenuButton">
       {% for topic in get_resource_topics() %}
         <a
-          onclick="setTopic(event)"
-          class="d-block"
+          class="d-block onclick-setTopic"
           data-topic="{{ slugify(topic) }}"
           href="{{ get_new_link(this, new_topic=slugify(topic)) }}"
         >
@@ -44,8 +43,7 @@
     <div class="dropdown-menu" aria-labelledby="languageDropdownMenuButton">
       {% for language_code, language_name in get_resource_langs() %}
         <a
-          onclick="setLang(event)"
-          class="d-block"
+          class="d-block onclick-setLang"
           data-lang="{{ language_code }}"
           href="{{ get_new_link(this, new_lang=language_code) }}"
         >
@@ -65,8 +63,7 @@
     <div class="dropdown-menu" aria-labelledby="authorDropdownMenuButton">
       {% for author in get_authors() %}
         <a
-          onclick="setAuthor(event)"
-          class="d-block"
+          class="d-block onclick-setAuthor"
           data-author="{{ slugify(author) }}"
           href="{{ get_new_link(this, new_author=author) }}"
         >
