@@ -13,11 +13,12 @@
 <div class="js-filter-dropdowns d-flex justify-content-end gap-10px">
   <div class="dropdown">
   <button class="btn btn-md btn-outline-primary dropdown-toggle font-weight-600" type="button" id="topicDropdownMenuButton" data-current-value="{{ slugify(this.current_topic or '') }}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      {% if this.current_topic %}
-        {{ _('Topic:') + ' ' + this.current_topic }}
-      {% else %}
-        {{ _('Topic') }}
-      {% endif %}
+      {# we need to strip whitespace here, or it visibly renders inside the button text #}
+      {%- if this.current_topic %}
+        {{- _('Topic:') + ' ' + this.current_topic }}
+      {%- else %}
+        {{- _('Topic') }}
+      {%- endif -%}
     </button>
     <div class="dropdown-menu" aria-labelledby="topicDropdownMenuButton">
       {% for topic in get_resource_topics() %}
@@ -27,18 +28,18 @@
           data-topic="{{ slugify(topic) }}"
           href="{{ get_new_link(this, new_topic=slugify(topic)) }}"
         >
-          {{ topic }}
+          {{- topic -}}
         </a>
       {% endfor %}
     </div>
   </div>
   <div class="dropdown">
     <button class="btn btn-md btn-outline-primary dropdown-toggle font-weight-600" type="button" id="languageDropdownMenuButton" data-current-value="{{ this.current_lang_code }}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      {% if this.current_lang %}
-        {{ _('Language:') +  ' ' + this.current_lang }}
-      {% else %}
-        {{ _('Language') }}
-      {% endif %}
+      {%- if this.current_lang %}
+        {{- _('Language:') +  ' ' + this.current_lang }}
+      {%- else %}
+        {{- _('Language') }}
+      {%- endif -%}
     </button>
     <div class="dropdown-menu" aria-labelledby="languageDropdownMenuButton">
       {% for language_code, language_name in get_resource_langs() %}
@@ -48,18 +49,18 @@
           data-lang="{{ language_code }}"
           href="{{ get_new_link(this, new_lang=language_code) }}"
         >
-          {{ language_name }}
+          {{- language_name -}}
         </a>
       {% endfor %}
     </div>
   </div>
   <div class="dropdown">
     <button class="btn btn-md btn-outline-primary dropdown-toggle font-weight-600" type="button" id="authorDropdownMenuButton" data-current-value="{{ slugify(this.current_author or '') }}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      {% if this.current_author %}
-        {{ _('Maintained by:')  + ' ' + this.current_author }}
-      {% else %}
-        {{ _('Maintained by')}}
-      {% endif %}
+      {%- if this.current_author %}
+        {{- _('Maintained by:')  + ' ' + this.current_author }}
+      {%- else %}
+        {{- _('Maintained by')}}
+      {%- endif -%}
     </button>
     <div class="dropdown-menu" aria-labelledby="authorDropdownMenuButton">
       {% for author in get_authors() %}
@@ -69,7 +70,7 @@
           data-author="{{ slugify(author) }}"
           href="{{ get_new_link(this, new_author=author) }}"
         >
-          {{ author }}
+          {{- author -}}
         </a>
       {% endfor %}
     </div>
