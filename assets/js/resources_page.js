@@ -118,11 +118,14 @@ function buildNewUrl(currentUrl, filters) {
     currentUrl = currentUrl.slice(0, -1);
   }
 
-  let baseUrl = currentUrl.split('/').slice(0, -3).join('/');
-
   let topic = filters.topic || 'none';
   let lang = filters.lang || 'none';
   let author = filters.author || 'none';
+
+  let baseUrl = `${currentUrl}/sortby`;
+  if (currentUrl.split('/').slice(-4,-3).join().toLowerCase() == 'sortby') {
+    baseUrl = currentUrl.split('/').slice(0, -3).join('/');
+  }
 
   return `${baseUrl}/${topic}/${lang}/${author}/`;
 }
