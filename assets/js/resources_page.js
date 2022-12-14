@@ -29,6 +29,7 @@ Array.from(document.getElementsByClassName('onclick-setTopic'))
     let topicReadable = event.target.innerText;
 
     setTopic(topic, topicReadable);
+    applyFilters(resourceFilters.topic, resourceFilters.lang, resourceFilters.author)
   }));
 
 Array.from(document.getElementsByClassName('onclick-setLang'))
@@ -39,6 +40,7 @@ Array.from(document.getElementsByClassName('onclick-setLang'))
     let langReadable = event.target.innerText;
 
     setLang(lang, langReadable);
+    applyFilters(resourceFilters.topic, resourceFilters.lang, resourceFilters.author)
   }));
 
 Array.from(document.getElementsByClassName('onclick-setAuthor'))
@@ -48,7 +50,8 @@ Array.from(document.getElementsByClassName('onclick-setAuthor'))
     let author = event.target.dataset.author;
     let authorReadable = event.target.innerText;
 
-    setAuthor(topic, topicReadable);
+    setAuthor(author, authorReadable);
+    applyFilters(resourceFilters.topic, resourceFilters.lang, resourceFilters.author)
   }));
 
 function setTopic(topic, topicReadable) {
