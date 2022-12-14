@@ -3,7 +3,7 @@
 <div class="row pt-5">
   {# default sidenav_items is `this.parent.children`. we want the same sidenav
      as /training/resource, which is `this.parent.parent.parent` #}
-  {% with sidenav_items=this.parent.parent.parent.parent.children %}
+  {% with sidenav_items=this.parent.parent.parent.parent.parent.children %}
     {% include 'sidenav.html' %}
   {% endwith %}
   <div class="col-sm-12 col-xs-12  ml-sm-auto col-md-9 col-lg-9 pr-lg-6 {{ bag('alternatives', this.alt, 'order') }}">
