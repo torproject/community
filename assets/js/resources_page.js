@@ -10,6 +10,7 @@ let resources = document.querySelectorAll('#resource-list > .resource-list-entry
 let topic_dropdown_button = document.getElementById('topicDropdownMenuButton');
 let lang_dropdown_button = document.getElementById('languageDropdownMenuButton');
 let author_dropdown_button = document.getElementById('authorDropdownMenuButton');
+let filterClearButton = document.getElementById('filterClearButton');
 
 const translatedTopic = document.currentScript.getAttribute('topic');
 const translatedTopicColon = document.currentScript.getAttribute('topic-colon');
@@ -53,6 +54,14 @@ Array.from(document.getElementsByClassName('onclick-setAuthor'))
     setAuthor(author, authorReadable);
     applyFilters(resourceFilters.topic, resourceFilters.lang, resourceFilters.author)
   }));
+
+filterClearButton.addEventListener('click', ev => {
+  ev.preventDefault();
+  setTopic('none', 'none');
+  setLang('none', 'none');
+  setAuthor('none', 'none');
+  applyFilters(null, null, null);
+});
 
 function setTopic(topic, topicReadable) {
   let newText = `${translatedTopicColon} ${topicReadable}`;
