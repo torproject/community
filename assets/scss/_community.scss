@@ -83,3 +83,14 @@ main li {
         right: 0 !important;
     }
 }
+
+
+@media (max-width: 650px) {
+    .js-filter-dropdowns {
+        flex-flow: column;
+
+        .dropdown .dropdown-menu {
+            left: 0 !important;
+        }
+    }
+}
