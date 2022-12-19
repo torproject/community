@@ -10,11 +10,21 @@ primary = yes
 url_prefix = /
 locale = en
 
+[alternatives.de]
+name = Deutsch (de)
+url_prefix = /de/
+locale = de
+
 [alternatives.es]
 name = Español (es)
 primary = yes
 url_prefix = /es/
 locale = es
+
+[alternatives.fa]
+name = فارسی (fa)
+url_prefix = /fa/
+locale = fa
 
 [alternatives.ru]
 name = Русский (ru)
@@ -25,3 +35,10 @@ locale = ru
 name = Türkçe (tr)
 url_prefix = /tr/
 locale = tr
+
+[alternatives.ro]
+name = Română (ro)
+url_prefix = /ro/
+locale = ro
+
+
