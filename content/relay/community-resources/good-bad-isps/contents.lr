@@ -56,6 +56,13 @@ These hosts already have many Tor nodes being hosted there.
 | [oneprovider](https://oneprovider.com/) | - | Yes | Yes | Yes |  They are reselling dedicated servers in many locations around the world. Abuse handling differs depending on the provider from which they resell. | 2016/06 |
 | [Vidéotron Ltee](https://videotron.com/) | AS5769 | Yes | Yes | ? |  No mention of Tor in ToS, relays and bridges seem allowed. | - |
 
+### Chile
+
+| **Company/ISP** | **ASN** | **Bridges** | **Relay** | **Exit** | **Comments** | **Last Updated** |
+|-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
+| [VTR](https://vtr.com/) | AS22047 | No | Yes | No | Middle relay is running in VTR network | 2022 |
+
+
 ### Costa Rica
 | **Company/ISP** | **ASN** | **Bridges** | **Relay** | **Exit** | **Comments** | **Last Updated** |
 |-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
