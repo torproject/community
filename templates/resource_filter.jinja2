@@ -21,7 +21,7 @@
       {%- endif -%}
     </button>
     <div class="dropdown-menu pl-2" aria-labelledby="topicDropdownMenuButton">
-      <a class="d-block onclick-setTopic" data-topic="none" href="{{ get_new_link(this, new_topic='none') }}">{{ _('None') }}</a>
+      <a class="d-block onclick-setTopic" data-topic="none" href="{{ get_new_link(this, new_topic='none') }}">{{ _('(None)') }}</a>
       {% for topic in get_resource_topics()|sort(case_sensitive=False) if topic != 'none' %}
         <a
           class="d-block onclick-setTopic"
@@ -42,7 +42,7 @@
       {%- endif -%}
     </button>
     <div class="dropdown-menu pl-2" aria-labelledby="languageDropdownMenuButton">
-      <a class="d-block onclick-setLang" data-lang="none" href="{{ get_new_link(this, new_lang='none') }}">{{ _('None') }}</a>
+      <a class="d-block onclick-setLang" data-lang="none" href="{{ get_new_link(this, new_lang='none') }}">{{ _('(None)') }}</a>
       {% for language_code, language_name in get_resource_langs()|sort(attribute='1', case_sensitive=False) if language_code != 'none' %}
         <a
           class="d-block onclick-setLang"
@@ -63,7 +63,7 @@
       {%- endif -%}
     </button>
     <div class="dropdown-menu pl-2" aria-labelledby="authorDropdownMenuButton">
-      <a class="d-block onclick-setAuthor" data-author="none" href="{{ get_new_link(this, new_author='none') }}">{{ _('None') }}</a>
+      <a class="d-block onclick-setAuthor" data-author="none" href="{{ get_new_link(this, new_author='none') }}">{{ _('(None)') }}</a>
       {% for author in get_authors()|sort(case_sensitive=False) if author != 'none' %}
         <a
           class="d-block onclick-setAuthor"
