@@ -1,0 +1,4 @@
+./lego/packages/i18n
+./lego/packages/lektor-md-tag
+./lego/packages/txt-to-html
+./lego/packages/xml-to-html
