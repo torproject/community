@@ -9,9 +9,6 @@
 <div class="row pt-5">
   {% include 'sidenav.html' %}
   <div class="col-sm-12 col-xs-12  ml-sm-auto col-md-9 col-lg-9 {{ bag('alternatives', this.alt, 'order') }}">
-    <div class="row">
-      <img src="{{ resource['cover'] | url }}" class="image-thumb-200px col col-lg-3" alt="{{ this.title }}">
-    </div>
     <div class="row col">
       <h1>{{ resource['name'] }}</h1>
     </div>
