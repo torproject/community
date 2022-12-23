@@ -108,18 +108,3 @@ Then restart `tor` and you should be able to connect to the Onion Service addres
 If you are generating a private key for an onion site, the user does not necessarily need to edit Tor Browser's torrc. It is possible to enter the private key directly in the [Tor Browser](https://tb-manual.torproject.org/onion-services/) interface.
 
 For more information about client authentication, please see [Tor manual](https://2019.www.torproject.org/docs/tor-onion-service.html.en#ClientAuthorization).
-
-## Configuring v2 Onion Services
-
-To set up Cookie Authentication for **v2** services, see the entries for the [HidServAuth](https://2019.www.torproject.org/docs/tor-manual.html.en#HidServAuth) and [HiddenServiceAuthorizeClient](https://2019.www.torproject.org/docs/tor-manual.html.en#HiddenServiceAuthorizeClient) options in the tor manual.
-First add the following line to the [torrc](https://2019.www.torproject.org/docs/faq.html.en#torrc) file of your Onion Service:
-
-     HiddenServiceAuthorizeClient [auth-type] [service-name]
-    
-Restart tor and read the cookie from the hostname file of your Onion Service, for example in
-`/var/lib/tor/hidden_service_path/hostname`.
-To access it with a tor client, add following line to torrc and restart tor:
-
-     HidServAuth [onion-address] [auth-cookie] [service-name]
- 
-You can now connect to the Onion Service address.
