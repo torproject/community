@@ -41,11 +41,9 @@ Follow the guide to run a [Snowflake with Ansible](/relay/setup/snowflake/standa
 
 1. First you will need to install and configure the Go compiler to build the standalone proxy from source code.
 Please login using a user account with `sudo` rights or directly with `root` (in the later case omit the `sudo` part in the following commands).
-
 If you are running Ubuntu or Debian, you can install Go by executing `sudo apt install golang`.
 If you are using Fedora, Red Hat or Amazon Linux with `sudo yum install golang` or `sudo dnf install golang`. 
 Otherwise visit https://golang.org/dl/.
-
 You will need Go 1.15 or newer to run the Snowflake proxy.
 You can check your installed version using the command `go version`.
 
