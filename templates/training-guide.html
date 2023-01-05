@@ -12,15 +12,15 @@
     <div class="row col">
       <h1>{{ resource['name'] }}</h1>
     </div>
-    <div class="row col resource-table">
-      <span class="text-muted font-size-1-1-rem font-weight-600 col-6 col-lg-2 pl-0 border-bottom">{{ _('Maintained by') }}</span>
-      <span class="font-size-1-1-rem font-weight-600 col-6 col-lg-2 border-bottom">{{ resource['author'] }}</span>
+    <div class="row col resource-table my-5">
+      <span class="text-muted font-size-1-1-rem font-weight-600 col-6 col-lg-2 pl-0 pb-3 border-bottom">{{ _('Maintained by') }}</span>
+      <span class="font-size-1-1-rem font-weight-600 col-6 col-lg-2 pb-3 border-bottom">{{ resource['author'] }}</span>
       <div class="w-100"></div>
-      <span class="text-muted font-size-1-1-rem font-weight-600 col-6 col-lg-2 pl-0 border-bottom">{{ _('Last updated') }}</span>
-      <span class="font-size-1-1-rem font-weight-600 col-6 col-lg-2 border-bottom">{{ resource['date'] }}</span>
+      <span class="text-muted font-size-1-1-rem font-weight-600 col-6 col-lg-2 pl-0 py-3 border-bottom">{{ _('Last updated') }}</span>
+      <span class="font-size-1-1-rem font-weight-600 col-6 col-lg-2 py-3 border-bottom">{{ resource['date'] }}</span>
       <div class="w-100"></div>
-      <span class="text-muted font-size-1-1-rem font-weight-600 col-6 col-lg-2 pl-0">{{ _('Estimated time') }}</span>
-      <span class="font-size-1-1-rem font-weight-600 col-6 col-lg-2">{{ this.estimated_time or 'FIXME: NO TIME ESTIMATE' }}</span>
+      <span class="text-muted font-size-1-1-rem font-weight-600 col-6 col-lg-2 pl-0 pt-3">{{ _('Estimated time') }}</span>
+      <span class="font-size-1-1-rem font-weight-600 col-6 col-lg-2 pt-3">{{ this.estimated_time or 'FIXME: NO TIME ESTIMATE' }}</span>
     </div>
     <p class="mb-5">{{ resource['description'] }}</p>
     {% if this.objectives %}
