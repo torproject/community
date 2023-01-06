@@ -61,16 +61,18 @@ div.resource-table > div.row:not(:last-child) {
     }
 }
 
-main li {
-    font-size: 1.3rem;
-}
-
 .pr-6 {
     padding-right: 3.5rem !important;
 }
 
 .font-size-1-1-rem {
     font-size: 1.1rem !important;
+}
+
+#training-guide-content {
+    p {
+        font-size: 18px;
+    }
 }
 
 .js-filter-dropdowns {
