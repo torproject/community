@@ -10,12 +10,23 @@ from lektor.pluginsystem import Plugin
 from .file_templates import contents_lr_tmpl, sortby_resources_ini
 
 
-# lektor's slugify removes characters that *should* be url-safe, so let's make our own
+_contents_lr_body = '''
+Our Community team delivers digital security training about Tor to human rights defenders, journalists, activists and marginalized communities around the world.
+To request a Tor training for your organization or community, please contact us and send an email to [training at torproject.org](mailto:training@torproject.org).
+Or, if you want to teach your community about Tor, these training materials are for you!'''
+
+
 def slugify(it: str):
+    """Slugify a string for use as a lektor content path.
+
+    lektor's own slugify removes characters that should be url-safe, creating ugly-looking URLs.
+    """
     # url-safe characters as defined by RFC 3986
     url_safe = string.ascii_lowercase + string.digits + '-._~'
 
     result = []
+    # we're also collapsing multiple replacements to one dash
+    # so we don't end up with strings full of "f--o-ob---a-r
     last_char_was_dash = False
     for char in it.lower().encode('ascii', 'replace').decode():
         if char in url_safe:
@@ -31,6 +42,18 @@ def slugify(it: str):
 
 
 class CommunityGeneratorPlugin(Plugin):
+    """Lektor plugin that generates pages used for the training resources filter
+
+    The training resources list needs a filter that works without javascript or a backend. We
+    achieve this by generating a page for every single combination of filters. This is a bad
+    solution, but it's also the *only* solution.
+
+    The final number of pages created is `(3 * len(topics)) * (2* len(lang)) * len(author)`.
+    Most of these pages are empty. Lektor requires a contents.lr file at every level of the
+    content hierarchy, for example the URL `/foo/bar/baz` will require `/foo/contents.lr`,
+    `/foo/bar/contents.lr`, and finally `/foo/bar/baz/contents.lr`.
+    """
+
     name = 'community-generator'
     description = u'Generate content files for community training resource page'
 
@@ -77,23 +100,20 @@ class CommunityGeneratorPlugin(Plugin):
                 language_code, _ = next(filter(lambda item: item[1] == formatting['current_lang'], languages))
                 formatting['current_lang_code'] = language_code
             except StopIteration:
-                breakpoint()
                 pass
 
         return to_format.format(**formatting)
 
     def _get_new_link(self, current_page, new_topic=None, new_lang=None, new_author=None):
+        """Helper method to generate a new from one filter page to another."""
         current_url = current_page.url_path.rstrip('/')
         if current_url == '/training/resources':
             current_url = '/'.join([current_url, 'sortby', 'none', 'none', 'none'])
 
-        split_url = current_url.split('/')
-        if new_topic:
-            split_url[-3] = new_topic
-        if new_lang:
-            split_url[-2] = new_lang
-        if new_author:
-            split_url[-1] = new_author
+        split_url = current_url.split('/')[:-3]
+        split_url.append(new_topic or 'none')
+        split_url.append(new_lang or 'none')
+        split_url.append(new_author or 'none')
 
         return '/'.join(split_url)
 
@@ -103,17 +123,18 @@ class CommunityGeneratorPlugin(Plugin):
         for resource in self.resources.values():
             topics.extend(resource.get('topics', []))
 
-        # flatten
+        # remove duplicates
+        # order doesn't matter, so we'll take the easy route and just use a set
         return set(topics)
 
-    def _get_resource_langs(self):  # type: set[tuple[str, str]]
+    def _get_resource_langs(self):
         """Return a set of every language used by at least one resource."""
         languages = [('none', 'none')]
         for resource in self.resources.values():
             language_list = resource.get('languages', {})
             languages.extend(language_list.items())
 
-        # flatten
+        # remove duplicates
         return set(languages)
 
     def _get_authors(self):
@@ -122,6 +143,7 @@ class CommunityGeneratorPlugin(Plugin):
         for resource in self.resources.values():
             authors.add(resource['author'])
 
+        #remove duplicates
         return authors
 
     def generate_files(self):
@@ -148,8 +170,11 @@ class CommunityGeneratorPlugin(Plugin):
             if topic != 'none':
                 topic_resources = dict(filter(lambda resource: topic in resource[1].get('topics', []), topic_resources.items()))
 
+            # generate empty templates to make lektor happy
             self._generate_file_helper(f'training/resources/sortby/{slugify(topic)}', self._format_default(contents_lr_tmpl))
             self._generate_file_helper(f'training/resources/sortby/{slugify(topic)}/none', self._format_default(contents_lr_tmpl))
+
+            # generate the actual "filtered resources" contents file
             self._generate_file_helper(
                 f'training/resources/sortby/{slugify(topic)}/none/none',
                 self._format_default(
@@ -164,11 +189,7 @@ class CommunityGeneratorPlugin(Plugin):
                     current_topic=topic if topic != 'none' else '',
                     current_lang='',
                     current_author='',
-                    body='''
-Our Community team delivers digital security training about Tor to human rights defenders, journalists, activists and marginalized communities around the world.
-To request a Tor training for your organization or community, please contact us and send an email to [training at torproject.org](mailto:training@torproject.org).
-Or, if you want to teach your community about Tor, these training materials are for you!
-'''
+                    body=_contents_lr_body
                 ))
 
             for language_code, language_name in languages:
@@ -191,10 +212,7 @@ Or, if you want to teach your community about Tor, these training materials are 
                         current_topic=topic if topic != 'none' else '',
                         current_lang=language_name if language_name != 'none' else '',
                         current_author='',
-                        body='''
-Our Community team delivers digital security training about Tor to human rights defenders, journalists, activists and marginalized communities around the world.
-To request a Tor training for your organization or community, please contact us and send an email to [training at torproject.org](mailto:training@torproject.org).
-Or, if you want to teach your community about Tor, these training materials are for you!'''
+                        body=_contents_lr_body
                     ))
 
                 for author_name in authors:
@@ -217,15 +235,14 @@ Or, if you want to teach your community about Tor, these training materials are 
                             current_topic=topic if topic != 'none' else '',
                             current_lang=language_name if language_name != 'none' else '',
                             current_author=author_name if author_name != 'none' else '',
-                            body='''
-Our Community team delivers digital security training about Tor to human rights defenders, journalists, activists and marginalized communities around the world.
-To request a Tor training for your organization or community, please contact us and send an email to [training at torproject.org](mailto:training@torproject.org).
-Or, if you want to teach your community about Tor, these training materials are for you!'''
+                            body=_contents_lr_body
                     ))
 
     def on_setup_env(self, **extra):
-        """Generate files when the lektor process starts."""
+        """Generate files when the lektor process starts, and initialize jinja globals."""
         self.generate_files()
+
+        # functions used by the sortby templates
         self.env.jinja_env.globals['json_loads'] = json.loads
         self.env.jinja_env.globals['get_new_link'] = self._get_new_link
         self.env.jinja_env.globals['get_resource_topics'] = self._get_resource_topics

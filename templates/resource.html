@@ -1,4 +1,6 @@
 {% extends 'layout.html' %}
+
+{# recursively generate the pathbar segments for a given page #}
 {% macro pathbar_segments(page) -%}
   {% set current_page = page == this %}
   {%- if page.parent -%}
