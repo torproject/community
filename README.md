@@ -65,3 +65,58 @@ If you want to contribute to the Community portal, we will be happy to help you.
 This lektor site uses a special plugin called `community-generator`, you can find it in the `packages` directory. This plugin generates a special set of lektor contents files used for a js-free filtering system on the training resources page.
 
 You shouldn't need to do anything or know anything about this plugin in order to use it. If you want to develop on this plugin, see the plugin's [README](packages/community-generator/README.md).
+
+#### Adding training guides for training resources
+
+Each training resource can optionally have a training guide. You can create a training guide for a particular resource by creating a new lektor contents file with the path `content/training/resources/<resource name>-guide/contents.lr`. So to create a guide for a resource called `all-about-tor`, you would create `content/training/resources/all-about-tor-guide/contents.lr`. Here's an example contents file for a training guide:
+
+```
+_model: resource
+---
+title: All About Tor Training Guide
+---
+author: Tor Project
+---
+cover:
+---
+background: white
+---
+image: /static/images/onion.png
+---
+body: body test goes here!
+---
+external_sources:
+https://www.acsac.org/2011/program/keynotes/syverson.pdf
+https://matt.traudt.xyz/posts/2021-02-22-tor-spelling/
+---
+objectives:
+Understand the privacy advantages of the Tor network.
+Understand the breadth of the Tor ecosystem of tools.
+Identify properties important in privacy-preserving technologies.
+---
+topics:
+foo
+bar
+baz
+---
+sample_slides:
+
+#### sample_slide ####
+language: English
+----
+view_link: link to view the training guide
+----
+pdf_link: link to the pdf guide
+----
+odp_link: link to the odp guide
+----
+
+#### sample_slide ####
+language: Español
+----
+view_link: link to view the training guide
+----
+pdf_link: link to the pdf guide
+----
+odp_link: link to the odp guide
+```
