@@ -34,7 +34,7 @@
                 <h3 class="col-sm card-title font-weight-600 m-0 pr-0" style="max-width: fit-content">{{ resource['name'] }}</h3>
                 <div class="row gap-10px pl-3 m-0">
                   <div>
-                    <a href="{{ resource['link']|url }}" title="{{ resource['name'] }}" class="btn btn-primary font-weight-600">{{ _('View') }}</a>
+                    <a href="{{ resource['link'] }}" title="{{ resource['name'] }}" class="btn btn-primary font-weight-600">{{ _('View') }}</a>
                   </div>
                   <div>
                     {% set training_guide = site.get(training_guide_this._path + '/' + resource_name + '-guide') %}
@@ -62,7 +62,7 @@
         {# end of desktop layout #}
         {# mobile layout #}
         <div class="col d-lg-none px-0">
-          <a href="{{ resource['link']|url }}" class="d-block pb-4">
+          <a href="{{ resource['link'] }}" class="d-block pb-4">
             <img src="{{ resource['cover']|url }}" class="img-fluid" alt="{{ resource['name'] }}">
           </a>
           <div class="col-sm pl-lg-1">
@@ -71,7 +71,7 @@
                 <h3 class="card-title font-weight-600 m-0 pr-0" style="max-width: fit-content">{{ resource['name'] }}</h3>
                 <div class="row gap-10px pl-3 m-0">
                   <div>
-                    <a href="{{ resource['link']|url }}" title="{{ resource['name'] }}" class="btn btn-primary font-weight-600">{{ _('View') }}</a>
+                    <a href="{{ resource['link'] }}" title="{{ resource['name'] }}" class="btn btn-primary font-weight-600">{{ _('View') }}</a>
                   </div>
                 </div>
               <div class="col-sm-6"></div>
