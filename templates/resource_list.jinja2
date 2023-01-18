@@ -33,9 +33,21 @@
               <div class="col-sm row">
                 <h3 class="col-sm card-title font-weight-600 m-0 pr-0" style="max-width: fit-content">{{ resource['name'] }}</h3>
                 <div class="row gap-10px pl-3 m-0">
-                  <div>
-                    <a href="{{ resource['link'] }}" title="{{ resource['name'] }}" class="btn btn-primary font-weight-600">{{ _('View') }}</a>
-                  </div>
+                <button id="resource-view-{{ resource_name }}" class="btn btn-primary font-weight-600 {% if resource['formats'] %}dropdown-toggle{% endif %}" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a href="{{ resource['link'] }}" title="{{ resource['name'] }}" class="text-white">{{ _('View') }}</a>
+                  </button>
+                  {% if resource['formats'] %}
+                    <div class="dropdown-menu pl-2" aria-labelledby="resource-view-{{ resource_name }}">
+                      {% for format_name, format_link in resource['formats'].items() %}
+                        <a
+                          class="d-block"
+                          href="{{ format_link }}"
+                        >
+                          {{ _('View ' + format_name) }}
+                        </a>
+                      {% endfor %}
+                    </div>
+                  {% endif %}
                   <div>
                     {% set training_guide = site.get(training_guide_this._path + '/' + resource_name + '-guide') %}
                     {% if training_guide %}
@@ -70,9 +82,21 @@
               <div class="col-sm row">
                 <h3 class="card-title font-weight-600 m-0 pr-0" style="max-width: fit-content">{{ resource['name'] }}</h3>
                 <div class="row gap-10px pl-3 m-0">
-                  <div>
-                    <a href="{{ resource['link'] }}" title="{{ resource['name'] }}" class="btn btn-primary font-weight-600">{{ _('View') }}</a>
-                  </div>
+                  <button id="resource-view-mobile-{{ resource_name }}" class="btn btn-primary font-weight-600 {% if resource['formats'] %}dropdown-toggle{% endif %}" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a href="{{ resource['link'] }}" title="{{ resource['name'] }}" class="text-white">{{ _('View') }}</a>
+                  </button>
+                  {% if resource['formats'] %}
+                    <div class="dropdown-menu pl-2" aria-labelledby="resource-view-mobile-{{ resource_name }}">
+                      {% for format_name, format_link in resource['formats'].items() %}
+                        <a
+                          class="d-block"
+                          href="{{ format_link }}"
+                        >
+                          {{ _('View ' + format_name) }}
+                        </a>
+                      {% endfor %}
+                    </div>
+                  {% endif %}
                 </div>
               <div class="col-sm-6"></div>
               </div>
