@@ -18,6 +18,10 @@
     gap: 32px;
 }
 
+.dropdown-rounded {
+    border-radius: 0.25rem !important;
+}
+
 @media (min-width: 992px) {
     .image-thumb-200px {
         width: 200px;
@@ -78,10 +82,6 @@ div.resource-table > div.row:not(:last-child) {
 .js-filter-dropdowns {
     .dropdown {
         width: min-content;
-
-        .btn {
-            border-radius: 0.25rem;
-        }
     }
 
     .dropdown-menu {
