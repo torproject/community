@@ -41,7 +41,7 @@ The system does not record logs of client connections or previous hops.
 This is because the Tor network is a censorship resistance, privacy, and anonymity system used by whistle blowers, journalists, Chinese dissidents skirting the Great Firewall, abuse victims, stalker targets, the US military, and law enforcement, just to name a few.
 See https://www.torproject.org/about/torusers.html.en for more info.
 
-Unfortunately, some people misuse the network. However, compared to the rate of legitimate use (the IP range in question processes nearly a gigabit of traffic per second), abuse complaints are rare: https://support.torproject.org/abuse/.
+Unfortunately, some people misuse the network. However, compared to the rate of legitimate use (the IP range in question processes nearly a gigabit of traffic per second), [abuse complaints are rare](https://support.torproject.org/abuse/).
 ```
 
 ## Abuse Scenarios
