@@ -6,7 +6,11 @@
     {{ this.body }}
     <div class="mr-lg-4">
       <div>
-        {{ resource_list(bag('community-training-materials'), bag('community-training-materials'), this) }}
+        {% if this == site.get('/training/resources') %}
+          {{ resource_list(bag('community-training-materials'), bag('community-training-materials'), this) }}
+        {% else %}
+          {{ resource_list(bag('digital-safety-guides'), bag('digital-safety-guides'), this) }}
+        {% endif %}
       </div>
       <hr class="my-5">
       {{ md(_('### Community building

@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+import ast
 import json
 import os
 import string
@@ -37,7 +38,7 @@ def slugify(it: str):
         else:
             result.append('-')
             last_char_was_dash = True
-    
+
     return ''.join(result)
 
 
@@ -96,7 +97,7 @@ class CommunityGeneratorPlugin(Plugin):
         formatting.update(kwargs)
         if formatting['current_lang'] and not formatting['current_lang_code']:
             try:
-                languages = self._get_resource_langs()
+                languages = self._get_resource_langs(formatting['sortby_resources'])
                 language_code, _ = next(filter(lambda item: item[1] == formatting['current_lang'], languages))
                 formatting['current_lang_code'] = language_code
             except StopIteration:
@@ -117,66 +118,90 @@ class CommunityGeneratorPlugin(Plugin):
 
         return '/'.join(split_url)
 
-    def _get_resource_topics(self):
+    def _get_resource_topics(self, resources):
         """Return a set of every author used by at least one resource."""
+        # python can pass a dict to jinja, but jinja can't pass a dict to python. it just passes a
+        # string representation of the dict
+        if type(resources) is str:
+            resources = ast.literal_eval(resources)
+
         topics = ['none']
-        for resource in self.resources.values():
+        for resource in resources.values():
             topics.extend(resource.get('topics', []))
 
         # remove duplicates
         # order doesn't matter, so we'll take the easy route and just use a set
         return set(topics)
 
-    def _get_resource_langs(self):
+    def _get_resource_langs(self, resources):
         """Return a set of every language used by at least one resource."""
+        if type(resources) is str:
+            resources = ast.literal_eval(resources)
+
         languages = [('none', 'none')]
-        for resource in self.resources.values():
+        for resource in resources.values():
             language_list = resource.get('languages', {})
             languages.extend(language_list.items())
 
         # remove duplicates
         return set(languages)
 
-    def _get_authors(self):
+    def _get_authors(self, resources):
         """Return a set of every author used by at least one resource."""
+        if type(resources) is str:
+            resources = ast.literal_eval(resources)
+
         authors = set(('none',))
-        for resource in self.resources.values():
+        for resource in resources.values():
             authors.add(resource['author'])
 
         #remove duplicates
         return authors
 
     def generate_files(self):
+        with open(os.path.join(self.env.project.tree, 'databags', 'community-training-materials.json'), 'r') as f:
+            training_resources = json.load(f)
+
+        with open(os.path.join(self.env.project.tree, 'databags', 'digital-safety-guides.json'), 'r') as f:
+            safety_guide_resources = json.load(f)
+
+        training_topics = self._get_resource_topics(training_resources)
+        training_languages = self._get_resource_langs(training_resources)
+        training_authors = self._get_authors(training_resources)
+
+        safety_topics = self._get_resource_topics(safety_guide_resources)
+        safety_languages = self._get_resource_langs(safety_guide_resources)
+        safety_authors = self._get_authors(safety_guide_resources)
+
+        self._generate_files(os.path.join('training', 'resources', 'sortby'), training_topics,
+                            training_languages, training_authors, training_resources)
+        self._generate_files(os.path.join('training', 'digital-privacy-guides', 'sortby'),
+                            safety_topics, safety_languages, safety_authors, safety_guide_resources)
+
+    def _generate_files(self, sortby_root, topics, languages, authors, resources):
         """Generate contents.lr files for the sortby fields: topics, languages, author."""
         with open(os.path.join(self.env.project.tree, 'models', 'sortby_resources.ini'), 'w') as f:
             f.write(sortby_resources_ini)
 
-        with open(os.path.join(self.env.project.tree, 'databags', 'community-training-materials.json'), 'r') as f:
-            self.resources = json.load(f)
-
-        topics = self._get_resource_topics()
-        languages = self._get_resource_langs()
-        authors = self._get_authors()
-
         # lektor won't render a page if it doesn't have a parent contents.lr
-        self._generate_file_helper(f'training/resources/sortby', self._format_default(contents_lr_tmpl))
+        self._generate_file_helper(sortby_root, self._format_default(contents_lr_tmpl))
 
-        sortby_resources = json.dumps(self.resources)
+        sortby_resources = json.dumps(resources.copy())
 
         # loop through topics
         for topic in topics:
-            topic_resources = self.resources.copy()
+            topic_resources = resources.copy()
 
             if topic != 'none':
                 topic_resources = dict(filter(lambda resource: topic in resource[1].get('topics', []), topic_resources.items()))
 
             # generate empty templates to make lektor happy
-            self._generate_file_helper(f'training/resources/sortby/{slugify(topic)}', self._format_default(contents_lr_tmpl))
-            self._generate_file_helper(f'training/resources/sortby/{slugify(topic)}/none', self._format_default(contents_lr_tmpl))
+            self._generate_file_helper(os.path.join(sortby_root, slugify(topic)), self._format_default(contents_lr_tmpl))
+            self._generate_file_helper(os.path.join(sortby_root, slugify(topic), 'none'), self._format_default(contents_lr_tmpl))
 
             # generate the actual "filtered resources" contents file
             self._generate_file_helper(
-                f'training/resources/sortby/{slugify(topic)}/none/none',
+                os.path.join(sortby_root, slugify(topic), 'none', 'none'),
                 self._format_default(
                     contents_lr_tmpl,
                     section='Training',
@@ -197,9 +222,9 @@ class CommunityGeneratorPlugin(Plugin):
                 if language_code != 'none':
                     language_resources = dict(filter(lambda resource: language_code in resource[1]['languages'], language_resources.items()))
 
-                self._generate_file_helper(f'training/resources/sortby/{slugify(topic)}/{language_code}', self._format_default(contents_lr_tmpl))
+                self._generate_file_helper(os.path.join(sortby_root, slugify(topic), language_code), self._format_default(contents_lr_tmpl))
                 self._generate_file_helper(
-                    f'training/resources/sortby/{slugify(topic)}/{language_code}/none',
+                    os.path.join(sortby_root, slugify(topic), language_code, 'none'),
                     self._format_default(
                         contents_lr_tmpl,
                         section='Training',
@@ -222,7 +247,8 @@ class CommunityGeneratorPlugin(Plugin):
                         author_resources = dict(filter(lambda resource: author_name == resource[1]['author'], author_resources.items()))
 
                     self._generate_file_helper(
-                        f'training/resources/sortby/{slugify(topic)}/{language_code}/{slugify(author_name)}',
+                        os.path.join(sortby_root, slugify(topic), language_code,
+                                     slugify(author_name)),
                         self._format_default(
                             contents_lr_tmpl,
                             section='Training',

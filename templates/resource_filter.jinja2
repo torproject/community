@@ -24,7 +24,14 @@
     </button>
     <div class="dropdown-menu pl-2" aria-labelledby="topicDropdownMenuButton">
       <a class="d-block onclick-setTopic" data-topic="none" href="{{ get_new_link(this, new_topic='none') }}">{{ _('(None)') }}</a>
-      {% for topic in get_resource_topics()|sort(case_sensitive=False) if topic != 'none' %}
+      {% if this == site.get('/training/resources') %}
+        {% set sortby_resources = bag('community-training-materials') %}
+      {% elif this == site.get('/training/digital-privacy-guides') %}
+        {% set sortby_resources = bag('digital-safety-guides') %}
+      {% else %}
+        {% set sortby_resources = this.sortby_resources %}
+      {% endif %}
+      {% for topic in get_resource_topics(sortby_resources)|sort(case_sensitive=False) if topic != 'none' %}
         <a
           class="d-block onclick-setTopic"
           data-topic="{{ slugify(topic) }}"
@@ -45,7 +52,7 @@
     </button>
     <div class="dropdown-menu pl-2" aria-labelledby="languageDropdownMenuButton">
       <a class="d-block onclick-setLang" data-lang="none" href="{{ get_new_link(this, new_lang='none') }}">{{ _('(None)') }}</a>
-      {% for language_code, language_name in get_resource_langs()|sort(attribute='1', case_sensitive=False) if language_code != 'none' %}
+      {% for language_code, language_name in get_resource_langs(sortby_resources)|sort(attribute='1', case_sensitive=False) if language_code != 'none' %}
         <a
           class="d-block onclick-setLang"
           data-lang="{{ language_code }}"
@@ -66,7 +73,7 @@
     </button>
     <div class="dropdown-menu pl-2" aria-labelledby="authorDropdownMenuButton">
       <a class="d-block onclick-setAuthor" data-author="none" href="{{ get_new_link(this, new_author='none') }}">{{ _('(None)') }}</a>
-      {% for author in get_authors()|sort(case_sensitive=False) if author != 'none' %}
+      {% for author in get_authors(sortby_resources)|sort(case_sensitive=False) if author != 'none' %}
         <a
           class="d-block onclick-setAuthor"
           data-author="{{ slugify(author) }}"
