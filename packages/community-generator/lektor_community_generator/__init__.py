@@ -162,7 +162,7 @@ class CommunityGeneratorPlugin(Plugin):
         with open(os.path.join(self.env.project.tree, 'databags', 'community-training-materials.json'), 'r') as f:
             training_resources = json.load(f)
 
-        with open(os.path.join(self.env.project.tree, 'databags', 'digital-safety-guides.json'), 'r') as f:
+        with open(os.path.join(self.env.project.tree, 'databags', 'digital-security-guides.json'), 'r') as f:
             safety_guide_resources = json.load(f)
 
         training_topics = self._get_resource_topics(training_resources)
@@ -175,7 +175,7 @@ class CommunityGeneratorPlugin(Plugin):
 
         self._generate_files(os.path.join('training', 'resources', 'sortby'), training_topics,
                             training_languages, training_authors, training_resources)
-        self._generate_files(os.path.join('training', 'digital-privacy-guides', 'sortby'),
+        self._generate_files(os.path.join('training', 'digital-security-guides', 'sortby'),
                             safety_topics, safety_languages, safety_authors, safety_guide_resources)
 
     def _generate_files(self, sortby_root, topics, languages, authors, resources):

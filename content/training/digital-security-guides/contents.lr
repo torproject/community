@@ -1,0 +1,23 @@
+_model: community-resources
+---
+section: Digital Security Guides
+---
+section_id: digital-security-guides
+---
+color: primary
+---
+_template: layout.html
+---
+title: Digital Security Guides
+---
+subtitle: A set of short guides on topics related to Tor and digital security more broadly, to share during trainings or for personal learning.
+---
+cta: Check out our resources
+---
+key: 3
+---
+html: community-resources.html
+---
+body:
+
+These guides are explainers on topics related to Tor and digital security more broadly including: Web fingerprinting, Internet censorship, Tails, metadata security, and more! You can make use of these guides for self-learning or during trainings as reading resources. For training material, please visit: https://community.torproject.org/training/resources/

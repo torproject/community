@@ -26,8 +26,8 @@
       <a class="d-block onclick-setTopic" data-topic="none" href="{{ get_new_link(this, new_topic='none') }}">{{ _('(None)') }}</a>
       {% if this == site.get('/training/resources') %}
         {% set sortby_resources = bag('community-training-materials') %}
-      {% elif this == site.get('/training/digital-privacy-guides') %}
-        {% set sortby_resources = bag('digital-safety-guides') %}
+      {% elif this == site.get('/training/digital-security-guides') %}
+        {% set sortby_resources = bag('digital-security-guides') %}
       {% else %}
         {% set sortby_resources = this.sortby_resources %}
       {% endif %}
