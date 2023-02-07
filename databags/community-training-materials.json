@@ -2,7 +2,7 @@
   "all-about-tor": {
     "name": "All About Tor",
     "author": "Tor Project",
-    "link": "https://gitweb.torproject.org/community/training.git/plain/2021/all-about-tor/all-about-tor-full-pack.odp",
+    "link": "https://community.torproject.org/training/resources/all-about-tor",
     "description": "Full set of slides for Tor Trainings: how the Tor network works, censorship circumvention, Tor Browser installation, and OnionShare.",
     "date": "2021",
     "cover": "/static/images/training/all-about-tor.png",
@@ -11,7 +11,7 @@
       "en": "English"
     },
     "formats": {
-      "PDF": "whatever"
+      "ODP": "https://gitweb.torproject.org/community/training.git/plain/2021/all-about-tor/all-about-tor-full-pack.odp"
     }
   },
   "todo sobre tor": {
