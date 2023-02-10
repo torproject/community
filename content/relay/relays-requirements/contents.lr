@@ -48,8 +48,8 @@ Your IPv4 address should remain unchanged for at least 3 hours (if it regularly 
 Additional IPv6 connectivity is great and recommended/encouraged but not a requirement.
 There should be no problem at all with this requirement (all commercially available servers come with at least one IPv4 address).
 
-Note: You can only run two Tor relays per public IPv4 address.
-If you want to run more than two relays you will need more IPv4 addresses.
+Note: You can only run [four Tor relays](https://lists.torproject.org/pipermail/tor-relays/2023-February/020999.html) per public IPv4 address.
+If you want to run more than four relays you will need more IPv4 addresses.
 
 # Memory Requirements
 
@@ -66,7 +66,7 @@ A typical Tor relay needs less than 200 MB for Tor related data (in addition to 
 
 * Any modern CPU should be fine.
 * It is recommended to use CPUs with AESNI support (that will improve performance and allow for up to about ~400-450 Mbps in each direction on a single tor instance on modern CPUs).
-  If the file /proc/cpuinfo contains the word aes your CPU has support for AES-NI.
+  If the file `/proc/cpuinfo` contains the word aes your CPU has support for AES-NI.
 
 # Uptime
 
