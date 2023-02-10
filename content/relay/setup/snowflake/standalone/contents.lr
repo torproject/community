@@ -13,6 +13,7 @@ Therefore, we especially recommend:
 2. A full-cone NAT (you can use this [NAT behaviour tool](https://github.com/pion/stun/tree/master/cmd/stun-nat-behaviour) to test what type of NAT you have.
 The properties you are looking for are address-independent mapping and either address-independent or address-dependent filtering)
 3. A server behind no or unrestricted NAT, with incoming UDP on the whole port range of `cat /proc/sys/net/ipv4/ip_local_port_range` open (or the range set using the optional `-ephemeral-ports-range` flag).
+
 There are several ways to setup and run a standalone snowflake proxy.
 
 ### Docker setup
