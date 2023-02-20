@@ -18,6 +18,8 @@ body:
 
 Requirements for Tor relays depend on the type of relay and the bandwidth they provide.
 
+If you don't meet the requirements to run a Tor relay or obfs4 bridge, running a Snowflake proxy is a great way to donate your bandwidth to help users circumvent censorship.
+
 # Bandwidth and Connections
 
 A non-exit relay should be able to handle at least 7000 concurrent connections.
