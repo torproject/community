@@ -13,7 +13,7 @@ body:
 ### 1. Enable Automatic Software Updates
 
 One of the most important things to keep your relay secure is to install security updates timely and ideally automatically so you can not forget about it.
-Follow the instructions to enable [automatic software updates](/relay/setup/guard/freebsd/updates/) for your operating system.
+Follow the instructions to enable [automatic software updates](../../guard/freebsd/updates/) for your operating system.
 
 ### 2. Bootstrap `pkg`
 
