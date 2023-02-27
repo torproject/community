@@ -12,7 +12,7 @@ Note to Tor relay operators: In this litigious era, anyone providing routing ser
 Fortunately, copyright law should provide protections from many of them both to you and to your upstream provider.
 If your Internet host forwards a copyright complaint to you, you can use this template to write a response, though you will need to customize it to your situation.
 Please also ensure all the statements are true for you.
-(The Tor Project has an [abuse collection of templates](/relay/community-resources/tor-abuse-templates/) to help you respond to other types of abuse complaints, too.)
+(The Tor Project has an [abuse collection of templates](../../tor-abuse-templates/) to help you respond to other types of abuse complaints, too.)
 Before sending any response to your ISP, you may want to seek the advice of an attorney licensed to practice in your jurisdiction.
 
 This template letter is for informational purposes only and does not constitute legal advice.
@@ -21,7 +21,7 @@ This template is intended as a starting point, but you should tailor it to your 
 In addition, it's up to you to comply with your ISP's terms of service.
 If you're not comfortable including so much legal explanation, feel free to invite the ISP to contact EFF for a fuller discussion.
 
-Also, if you received this document from anywhere other than the EFF web site or [tor-dmca-response](/relay/community-resources/eff-tor-legal-faq/tor-dmca-response), it may be out of date. 
+Also, if you received this document from anywhere other than the EFF web site or [tor-dmca-response](../tor-dmca-response), it may be out of date. 
 Follow the link to get the latest version.
 
 ```
