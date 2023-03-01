@@ -58,7 +58,7 @@ For example, when running many [Onionbalance](https://onionbalance.readthedocs.i
     $ ./mkp224o -d onions mysitename
 
 This will create a new folder `onions` and folders for each of the discovered onion addresses and their respective keys.
-For more options, refer to
+For more options, refer to:
 
     $ ./mkp224o -h
 
