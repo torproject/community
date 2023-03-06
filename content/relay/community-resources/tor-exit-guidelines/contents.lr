@@ -21,7 +21,7 @@ Therefore, please do not act on this information alone; if you have any specific
 Find some professors (or deans!) who like the idea of supporting and/or researching anonymity on the Internet.
 If possible, use an extra IP range whose abuse contact doesn't go through the main university abuse team.
 Ideally, use addresses that are not trusted by the IP-based authentication many library-related services use -- if the university's entire IP address space is "trusted" to access these library resources, the university is forced to maintain an iron grip on all its addresses.
-Also read [How do I make my University / ISP / etc happy with my exit node?](/relay/community-resources/tor-relay-universities/)
+Also read [How do I make my University / ISP / etc happy with my exit node?](../tor-relay-universities/)
 
 ### Find Tor-friendly ISPs.
 
@@ -29,7 +29,7 @@ A good ISP is one that offers cheap bandwidth and is not being used by other mem
 Before you continue, you may ask the Tor community if your choice is a good one.
 We very much need diversity, and it does not help if we pool too many exits at one friendly ISP.
 
-In any case, add the ISP to the [GoodBadISPs](/relay/community-resources/good-bad-isps/) page.
+In any case, add the ISP to the [GoodBadISPs](../good-bad-isps/) page.
 
 To find an ISP, go through forums and sites where ISPs posts their latest deals, and contact them about Tor hosting.
 Once you identified your ISP, you can follow the two-step advice of TorServers.net.
@@ -48,7 +48,7 @@ The two-step process usually helps in elevating your request to higher levels of
 At least most western countries should have regulations that exclude communication service providers from liability.
 Please add your country's regulations to this list.
 
- * USA: [DMCA 512](https://www.law.cornell.edu/uscode/text/17/512); see [EFF's Legal FAQ for Tor Operators](/relay/community-resources/eff-tor-legal-faq)  (a very good and relevant read for other countries as well)
+ * USA: [DMCA 512](https://www.law.cornell.edu/uscode/text/17/512); see [EFF's Legal FAQ for Tor Operators](../eff-tor-legal-faq) (a very good and relevant read for other countries as well)
  * Germany: [TMG 8](http://www.gesetze-im-internet.de/tmg/__8.html)  and [15](http://www.gesetze-im-internet.de/tmg/__15.html).
  * Netherlands: [Artikel 6:196c BW](http://wetten.overheid.nl/BWBR0005289/Boek6/Titel3/Afdeling4A/Artikel196c/)
  * Austria: [ECG 13](http://www.ris.bka.gv.at/Dokument.wxe?Abfrage=Bundesnormen&Dokumentnummer=NOR40025809)
@@ -58,7 +58,7 @@ If your country is missing here and you know a lawyer who can provide a legal op
 
 ### If you're part of an organization that will be running the exit relay (ISP, university etc), consider teaching your legal people about Tor.
 
-It's way better for them to hear about Tor from you, in a relaxed environment, than to hear about it from a stranger over the phone. Make them aware of [EFF's Legal FAQ for Tor Operators](/relay/community-resources/eff-tor-legal-faq). EFF has also offered to talk to other lawyers to explain the legal aspects of Tor.
+It's way better for them to hear about Tor from you, in a relaxed environment, than to hear about it from a stranger over the phone. Make them aware of [EFF's Legal FAQ for Tor Operators](../eff-tor-legal-faq). EFF has also offered to talk to other lawyers to explain the legal aspects of Tor.
 
 ### If you're not part of an organization, think about starting one!
 
@@ -86,7 +86,7 @@ TorServers.net is a fairly large Tor exit operator and we receive only a very sm
 Roughly 80% are automated reports, and the rest is usually satisfied with [our default reply](https://www.torservers.net/wiki/abuse/templates).
 We have not needed the input of a lawyer in many years of operation following the advice on this page.
 
-In addition to the [templates at Torservers.net](https://www.torservers.net/wiki/abuse/templates), you can find many more templates for various scenarios on the [Tor Abuse Templates](/relay/community-resources/tor-abuse-templates/).
+In addition to the [templates at Torservers.net](https://www.torservers.net/wiki/abuse/templates), you can find many more templates for various scenarios on the [Tor Abuse Templates](../tor-abuse-templates/).
 It is exceptionally rare to encounter a scenario where none of these templates apply.
 
 ### If you receive a threatening letter from a lawyer about abusive use or a DMCA complaint, also don't freak out.
@@ -115,7 +115,7 @@ Torservers.net uses a free German fax-to-email service, call-manager.de, and a V
 ### Consider using the Reduced Exit Policy.
 
 The [Reduced Exit Policy](https://trac.torproject.org/projects/tor/wiki/doc/ReducedExitPolicy) is an alternative to the default exit policy. It allows many Internet services while still blocking the majority of TCP ports.
-This drastically reduces the odds that a Bittorrent user will select your node and thus reduces or even eliminates the number of [DMCA complaints](/relay/community-resources/eff-tor-legal-faq/tor-dmca-response/) you will receive.
+This drastically reduces the odds that a Bittorrent user will select your node and thus reduces or even eliminates the number of [DMCA complaints](../eff-tor-legal-faq/tor-dmca-response/) you will receive.
 
 If you have your own experience of abuse handling, just share it on our public mailing list or write us an email to frontdesk@torproject.org.
 
