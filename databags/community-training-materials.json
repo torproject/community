@@ -11,7 +11,9 @@
       "en": "English"
     },
     "formats": {
-      "ODP": "https://gitweb.torproject.org/community/training.git/plain/2021/all-about-tor/all-about-tor-full-pack.odp"
+      "ODP": "https://gitlab.torproject.org/tpo/community/training/-/blob/master/2023/All_About_Tor.odp",
+      "PDF": "https://gitlab.torproject.org/tpo/community/training/-/blob/master/2023/All_About_Tor.pdf",
+      "Google Slides": "https://docs.google.com/presentation/d/1GNIautRjFyRJUqR8ODgwDyR8a-qygBd8ibBZUzBadgQ/edit?usp=sharing"
     }
   },
   "todo sobre tor": {
