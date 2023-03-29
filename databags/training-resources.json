@@ -3,10 +3,10 @@
     {
         "label" : "All About Tor",
         "name" : "all-about-tor",
-        "filename" : "all-about-tor-full-pack",
+        "filename" : "All_About_Tor",
         "formats" : ["odp","pdf"],
         "description" : "Full set of slides for Tor Trainings",
-        "date" : "2021"
+        "date" : "2023"
     },
 
     "todo sobre tor" :
