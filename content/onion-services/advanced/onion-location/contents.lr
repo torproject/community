@@ -177,12 +177,12 @@ If you get an error message, something has gone wrong and you cannot continue un
 
 **Step 5.** Testing your Onion-Location
 
-To test if the Onion-Location is working, fetch the web site HTTP headers, for example:
+To test if Onion-Location is working, fetch the web site HTTP headers, for example:
 
      $ wget --server-response --spider your-website.tld
 
 Look for `onion-location` entry and the Onion Service address.
-Or, open the web site in Tor Browser and a purple pill will appear in the address bar.
+Or open the website in Tor Browser and a purple pill will appear in the address bar.
 
 ### Caddy
 
