@@ -391,7 +391,7 @@ These hosts already have many Tor nodes being hosted there.
 | [SolarVPS](https://solarvps.com) | - | Yes | Yes | Yes | - | - |
 | [SeedVPS](https://www.seedvps.com) | - | Yes | Yes | No | - | - |
 | [VPS6.NET](https://vps6.net/) | - | Yes | Yes | No | - | - |
-| [VPSWebServer.com](https://www.vpswebserver.com) | - | Yes || No | ? | - | - |
+| [VPSWebServer.com](https://www.vpswebserver.com) | - | Yes | No | ? | - | - |
 | [Astound Broadband](https://www.astound.com/) | - | No | No | No | The [acceptable use policy](https://www.astound.com/policies-disclaimers/acceptable-use-policy/) disallows "servers" and "proxies". | 04/13/23 |
 | [DigitalOcean](https://digitalocean.com/) | - | Yes | Yes | No | - | - |
 | [PhoenixNap / Secured Servers](https://www.phoenixnap.com/) | - | Yes | Yes | No | - | 08/01/14 |
