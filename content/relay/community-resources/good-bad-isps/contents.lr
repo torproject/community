@@ -337,7 +337,7 @@ These hosts already have many Tor nodes being hosted there.
 | [UrDN](https://urdn.com.ua) | - | Yes | Yes | Yes | free speech hoster, allows anything but spam/scam. Abuse always forwarded. | 10/08/2015 |
 | [Colocall](https://www.colocall.net/) | - | Yes | Yes | Yes | - | - |
 | [G-Core Labs](https://gcorelabs.com) | AS199524 | Yes | Yes | No | They don't allow exits and will suspend your active services and restrict your access to the account if they receive abuse messages. KVM VPS. IPv4+IPv6 native support. * Gnu/Linux, FreeBSD and Windows server supported. Unmetered traffic. | 06/2022 |
-| [Virtual Systems]|(https://vsys.host/)| AS30860 | Yes | Yes | Yes | Allow payment with crypto | 04/2023|
+| [Virtual Systems](https://vsys.host/)| AS30860 | Yes | Yes | Yes | Allow payment with crypto | 04/2023|
 | [HOSTIKO](https://hostiko.com.ua/)| AS199785 | Yes | Yes | Yes | Allow payment with crypto. Also servers in Germany and Poland | 04/2023|
 
 
