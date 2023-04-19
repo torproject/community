@@ -6,7 +6,7 @@ body:
 
 #1. Make sure relay ports can be reached
 
-If you are using a firewall, open a hole in your firewall so incoming connections can reach the ports you will use for your relay (ORPort, plus DirPort if you enabled it).
+If you are using a firewall, open a hole in your firewall so incoming connections can reach the ports you will use for your relay (ORPort).
 
 Also, make sure you allow all outgoing connections too, so your relay can reach the other Tor relays, clients and destinations.
 
