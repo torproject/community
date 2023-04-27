@@ -360,7 +360,7 @@ These hosts already have many Tor nodes being hosted there.
 | [Amazon Web Services (AWS)](https://aws.amazon.com) | - | Yes | Yes | No | Expensive bandwidth, you WILL be charged extra after reaching 15GB. | 09/27/2021 |
 | [AmeriNOC](https://www.amerinoc.com/) | - | Yes | Yes | Yes | - | - |
 | [Arvixe](https://www.arvixe.com/vps_virtual_private_servers_hosting/) | - | Yes | Yes | Yes | - | 06/19/13 |
-| [Blacklotus](http://www.blacklotus.net) | - | Yes | Yes | Yes | Liberal abuse handling policies | - |
+| [Lumen (CenturyLink)](http://www.lumen.com) | - | Yes | Yes | ? | [Home TOS doesn't explicitly ban "servers"](https://www.centurylink.com/legal/docs/Internet_Subscriber_Agreement_LQ_ENG.pdf), but unsure about exits. | 4/27/2023 |
 | [BuyVM.net](https://buyvm.net) | AS53667 | Yes | Yes | Yes | New Tor rules [here](https://buyvm.net/acceptable-use-policy/#3). All relays are fine if you follow the steps. Notices are ignored. Unmetered bandwidth. | 09/27/2021 |
 | [Catalyst Host](https://catalysthost.com/) | - | ? | No | No | "If you are interested in hosting either, you can ask us about a dedicated server." | 10/01/14 |
 | [Cloudvider](https://www.clouvider.co.uk/) | - | No | No | No | This is for their US Operations arm. They will cancel your account and claim it is a ToS violation, which requires you to pay out a 60-day notice. | 10/2020 |
