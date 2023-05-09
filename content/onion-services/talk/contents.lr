@@ -84,7 +84,9 @@ Even though privacy aware users can adopt tools to protect their communications 
 
 As Edward Snowden points out in his book, **"Permanent Record"** (2019),
 
-    "You know what you're saying during a phone call, or what you're writing in an email. But you have hardly any control over the metadata you produce, because it is generated automatically. [...] In sum, metadata can tell your surveillant virtually everything they'd ever want or need to know about you, except what's actually going on inside your head."
+> "You know what you're saying during a phone call, or what you're writing in an email.
+> But you have hardly any control over the metadata you produce, because it is generated automatically.
+> [...] In sum, metadata can tell your surveillant virtually everything they'd ever want or need to know about you, except what's actually going on inside your head."
 
 [Onionmx](https://github.com/ehloonion/onionmx) is a software that allows the delivery of emails entirely over Onion Services, obfuscating the metadata of who is talking with whom.
 E-mail providers like [Riseup](https://riseup.net/en/security/network-security/tor#riseups-tor-onion-services), [Systemli](https://www.systemli.org/service/onion.html) and [many others](https://github.com/ehloonion/onionmx/blob/master/sources/map.yml) protect their users privacy using onionmx.
