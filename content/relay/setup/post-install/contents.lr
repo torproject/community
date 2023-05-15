@@ -78,7 +78,7 @@ Before enabling your tor daemon to use IPv6 in addition to IPv4 you should do so
 The following command line will ping the IPv6 addresses of Tor directory authorities from your server:
 
 ```
-ping6 -c2 2001:858:2:2:aabb:0:563b:1526 && ping6 -c2 2620:13:4000:6000::1000:118 && ping6 -c2 2001:67c:289c::9 && ping6 -c2 2001:678:558:1000::244 && ping6 -c2 2607:8500:154::3 && ping6 -c2 2001:638:a000:4140::ffff:189 && echo OK.
+ping6 -c2 2001:858:2:2:aabb:0:563b:1526 && ping6 -c2 2620:13:4000:6000::1000:118 && ping6 -c2 2001:67c:289c::9 && ping6 -c2 2001:678:558:1000::244 && ping6 -c2 2001:638:a000:4140::ffff:189 && echo OK.
 ```
 
 At the end of the output you should see "OK." if that is not the case, do not enable IPv6 in your torrc configuration file before IPv6 is indeed working.
