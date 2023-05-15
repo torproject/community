@@ -366,7 +366,7 @@ These hosts already have many Tor nodes being hosted there.
 | [Comcast](https://comcast.net/) | AS7922 | Yes | Yes | No | To run an exit, you must be on a commercial subscription and must contact them first. | 3/2022 |
 | [ChunkHost](https://chunkhost.com) | - | Yes | Yes | ? | Questionable DMCA handling | 01/01/12 |
 | [Cyberonic](https://www.cyberonic.com) | - | Yes | Yes | ? | - | - |
-| [Data Ideas/AlienData](https://dataideas.com/) | AS398355 | Yes | Yes | Yes | AUP [here](https://dataideas.com/acceptable-use-policy.html). Notices are ignored. Unmetered bandwidth. | 04/13/2023 |
+| [Data Ideas (AlienData)](https://dataideas.com/) | AS398355 | Yes | Yes | Yes | AUP [here](https://dataideas.com/acceptable-use-policy.html). Notices are ignored. Unmetered bandwidth. | 04/13/2023 |
 | [Datawagon](https://datawagon.net) | AS27176 | Yes | Yes | Yes | Customers are forwarded abuse complaints to handle themselves | 03/06/19 |
 | [DreamHost](https://www.dreamhost.com/) | - | Yes | Yes | ? | - | 11/29/17 |
 | [Evolucix](https://www.evolucix.com) | -  | Yes | Yes | No(?) | - | - |
