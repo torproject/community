@@ -386,7 +386,7 @@ These hosts already have many Tor nodes being hosted there.
 | [PulseServers](https://www.pulseservers.com) | AS16276 | Yes | Yes | Yes | Exit-friendly. | 05/01/16 |
 | [RamNode](https://ramnode.com/) | AS3842 | Yes | Yes | No | - | 11/03/14 |
 | [Server Complete](https://servercomplete.com/) | - | ? | ? | No | - | 11/03/14 |
-| [Softlayer](https://www.softlayer.com) | - | Yes | Yes | ? | - | - |
+| [IBM Cloud](https://www.ibm.com/cloud) | - | Yes | Yes | ? | - | - |
 | [SolarVPS](https://solarvps.com) | - | Yes | Yes | Yes | - | - |
 | [SeedVPS](https://www.seedvps.com) | - | Yes | Yes | No | - | - |
 | [VPS6.NET](https://vps6.net/) | - | Yes | Yes | No | - | - |
