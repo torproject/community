@@ -16,7 +16,7 @@ For network diversity and stronger anonymity, you should avoid providers and cou
 
 **Try to avoid** the following hosters:
 
- * Frantech / Ponynet (AS53667)
+ * Frantech / Ponynet / BuyVM (AS53667)
  * OVH SAS (AS16276)
  * Online S.A.S. / Scaleway (AS12876)
  * Hetzner Online GmbH (AS24940)
