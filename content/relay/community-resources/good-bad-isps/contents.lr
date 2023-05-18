@@ -373,7 +373,7 @@ These hosts already have many Tor nodes being hosted there.
 | [Future Hosting](https://www.futurehosting.com/) | - | Yes | Yes | No | - | 09/01/14 |
 | [Hivelocity](https://www.hivelocity.net/) | - | No | No | No | They are symphathetic, but do not want their IP space "polluted" by Tor abuse requests. | 10/2020 |
 | [HostGator](https://www.hostgator.com/) | - | No | No | No | - | - |
-| [HostHatch](https://hosthatch.com) | AS46562 | Yes | Yes | No | Their vps isp are mixed include: QuadraNet, nLayer, AboveNet, Inteliquent, Atrato Networks and open peering with the entire Any2LA and Atlanta TIE networks. | 05/01/16 |
+| [HostHatch](https://hosthatch.com) | AS46562 | Yes | Yes | No | - | 05/01/16 |
 | [HostUS](https://hostus.us/) | AS25926 | Yes | Yes | No | - | 10/16/14 |
 | [IPXcore](https://ipxcore.com/) | - | Yes | Yes | No | - | - |
 | [IncogNET](https://incognet.io/) | AS210630 | Yes | Yes | Yes | You need to host a page on port 80 explaining that the server is a Tor Exit and use their reduced exit policy https://incognet.io/tor-exits | 04/2023 |
