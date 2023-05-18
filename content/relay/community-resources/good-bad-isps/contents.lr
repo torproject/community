@@ -140,7 +140,7 @@ These hosts already have many Tor nodes being hosted there.
 ### Hong Kong
 | **Company/ISP** | **ASN** | **Bridges** | **Relay** | **Exit** | **Comments** | **Last Updated** |
 |-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
-| [HostHatch](https://hosthatch.com/) | AS63473 | Yes | Yes | No | - | - | 05/01/16 |
+| [HostHatch](https://hosthatch.com/) | AS63473 | Yes | Yes | No | - | - | 05/2023 |
 | [G-Core Labs](https://gcorelabs.com) | AS199524 | Yes | Yes | No | They don't allow exits and will suspend your active services and restrict your access to the account if they receive abuse messages. KVM VPS. IPv4+IPv6 native support. * Gnu/Linux, FreeBSD and Windows server supported. Unmetered traffic. | 06/2022 |
 
 
