@@ -263,7 +263,7 @@ These hosts already have many Tor nodes being hosted there.
 
 | **Company/ISP** | **ASN** | **Bridges** | **Relay** | **Exit** | **Comments** | **Last Updated** |
 |-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
-| [Terrahost](https://terrahost.no/) | AS56655 | Yes | Yes | Yes | Check the requirements for running a Tor exit node with them first https://terrahost.no/avtalebetingelser. May requires ID card or passport for account creation. Unmetered traffic. | 06/2022 |
+| [Terrahost](https://terrahost.no/) | AS56655 | Yes | Yes | Yes | Check the requirements for running a Tor exit node with them first https://terrahost.no/avtalebetingelser. May require a photo of an ID card or passport for account creation. Unmetered traffic. | 06/2022 |
 
 
 ### Poland
