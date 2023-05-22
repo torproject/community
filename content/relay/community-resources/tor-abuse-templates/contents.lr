@@ -39,7 +39,7 @@ Client connections are routed through multiple relays, and are multiplexed toget
 The system does not record logs of client connections or previous hops.
 
 This is because the Tor network is a censorship resistance, privacy, and anonymity system used by whistle blowers, journalists, Chinese dissidents skirting the Great Firewall, abuse victims, stalker targets, the US military, and law enforcement, just to name a few.
-See https://2019.www.torproject.org/about/torusers.html.en for more info.
+See https://www.torproject.org/about/torusers.html.en for more info.
 
 Unfortunately, some people misuse the network. However, compared to the rate of legitimate use (the IP range in question processes nearly a gigabit of traffic per second), [abuse complaints are rare](https://support.torproject.org/abuse/).
 ```
@@ -55,7 +55,7 @@ The common boilerplate should be abridged or be omitted if the abuse complainant
 This does not mean that nothing can be done, however.
 
 The Tor Project provides an automated DNSRBL for you to query to flag posts coming from Tor nodes as requiring special review.
-You can also use this DNSRBL to only allow Tor IPs to read but not post comments. https://2019.www.torproject.org/projects/tordnsel.html.en
+You can also use this DNSRBL to only allow Tor IPs to read but not post comments: https://www.torproject.org/projects/tordnsel.html.en
 
 However, be aware that this may be just one jerk amongst many legitimate Tor users who use your forums.
 You might have luck getting rid of this jerk by temporarily limiting account creation to require Gmail accounts before posting, or by requiring account creation be done over non-Tor before posting.
@@ -94,7 +94,7 @@ We're sorry your site is experiencing this heavy load from Tor.
 However, it is possible that your rate limiting alarms simply experienced a false positive due to the amount of traffic that flows through the router.
 We provide service to almost a gigabit of traffic per second, 98% of which is web traffic.
 
-If the attack is real and ongoing, however, the Tor project provides an automated DNSRBL for you to query to block login attempts coming from Tor nodes: https://2019.www.torproject.org/projects/tordnsel.html.en
+If the attack is real and ongoing, however, the Tor project provides an automated DNSRBL for you to query to block login attempts coming from Tor nodes: https://www.torproject.org/projects/tordnsel.html.en
 
 It is also possible to download a list of all Tor exit IPs that will connect to your server port:
 https://check.torproject.org/cgi-bin/TorBulkExitList.py?ip=YOUR_IP&port=80
@@ -119,7 +119,7 @@ http://deflate.medialayer.com/
 We're sorry your account has been brute forced. We can try to prevent our node from connecting to this site, but since the Tor network has 800 or so exits, doing so wouldn't really stop the action long term.
 The attacker would probably just chain an open proxy after Tor, or just use open wireless and/or a proxy without Tor.
 
-The Tor project does provide an automated DNSRBL for you to query to flag requests from Tor nodes as requiring special treatment: https://2019.www.torproject.org/projects/tordnsel.html.en
+The Tor project does provide an automated DNSRBL for you to query to flag requests from Tor nodes as requiring special treatment: https://www.torproject.org/projects/tordnsel.html.en
 
 In general, we believe that problems like this are best solved by improving the service to defend against the attack from the Internet at large rather than specifically tailoring behavior for Tor.
 Brute force login attempts can be reduced/slowed by Captchas, which is the approach taken by Gmail for this same problem.
@@ -134,7 +134,7 @@ Many worms, scanners, and botnets scan the entire Internet looking for SSH login
 The fact that a few logins happened to come from Tor is likely a small blip on your overall login attempt rate.
 You might also consider a rate limiting solution: https://kvz.io/blog/2007/07/28/block-brute-force-attacks-with-iptables/
 
-If it is in fact a serious problem specific to Tor, the Tor project provides an automated DNSRBL for you to query to block login attempts coming from Tor nodes: https://2019.www.torproject.org/projects/tordnsel.html.en
+If it is in fact a serious problem specific to Tor, the Tor project provides an automated DNSRBL for you to query to block login attempts coming from Tor nodes: https://www.torproject.org/projects/tordnsel.html.en
 
 It is also possible to download a list of all Tor exit IPs that will connect to your SSH port: https://check.torproject.org/cgi-bin/TorBulkExitList.py?ip=YOUR_IP&port=22
 
@@ -159,7 +159,7 @@ To help protect yourself while using open wireless, consider using this Firefox 
 This also does not mean that there is nothing that can be done.
 For serious incidents, traditional police work techniques of running stings and investigating to determine means, motive, and opportunity are still very effective.
 
-Additionally, the Tor project provides an automated DNSRBL for you to query to flag visitors coming from Tor nodes as requiring special treatment: https://2019.www.torproject.org/projects/tordnsel.html.en.
+Additionally, the Tor project provides an automated DNSRBL for you to query to flag visitors coming from Tor nodes as requiring special treatment: https://www.torproject.org/projects/tordnsel.html.en.
 The same list is available through the Tor Bulk Exit List: https://check.torproject.org/cgi-bin/TorBulkExitList.py
 
 However, rather than banning legitimate Tor users from using your service in general, we recommend ensuring that such services are updated and maintained to free of vulnerabilities that can lead to situations such as this (PHP webshell/XSS compromise/SQL Injection compromise).
@@ -171,7 +171,7 @@ However, rather than banning legitimate Tor users from using your service in gen
 This also does not mean that there is nothing that can be done.
 For serious incidents, traditional police work techniques of running stings and investigating to determine means, motive, and opportunity are still very effective.
 
-Additionally, the Tor project provides an automated DNSRBL for you to query to flag orders coming from Tor nodes as requiring special review: https://2019.www.torproject.org/projects/tordnsel.html.en
+Additionally, the Tor project provides an automated DNSRBL for you to query to flag orders coming from Tor nodes as requiring special review: https://www.torproject.org/projects/tordnsel.html.en
 
 It also provides a Bulk Exit List service for retrieving the entire list: https://check.torproject.org/cgi-bin/TorBulkExitList.py
 
