@@ -388,17 +388,14 @@ These hosts already have many Tor nodes being hosted there.
 | [PulseServers](https://www.pulseservers.com) | AS16276 | Yes | Yes | Yes | Exit-friendly. | 05/01/16 |
 | [RamNode](https://ramnode.com/) | AS3842 | Yes | Yes | No | - | 11/03/14 |
 | [Server Complete](https://servercomplete.com/) | - | ? | ? | No | - | 11/03/14 |
-| [IBM Cloud](https://www.ibm.com/cloud) | - | Yes | Yes | ? | - | - |
+| [IBM Cloud](https://www.ibm.com/cloud) | AS36351 | Yes | Yes | ? | - | - |
 | [VPSWebServer.com](https://www.vpswebserver.com) | - | Yes | No | ? | - | - |
 | [Astound Broadband](https://www.astound.com/) | - | No | No | No | The [acceptable use policy](https://www.astound.com/policies-disclaimers/acceptable-use-policy/) disallows "servers" and "proxies". | 04/13/23 |
-| [Softlayer](https://www.softlayer.com) | AS36351 | Yes | Yes | ? | - | - |
-| [Rackspace](https://www.rackspace.com/) | - | Yes | Yes | No | Host, not an ISP | - |
 | [SolarVPS](https://solarvps.com) | - | Yes | Yes | Yes | - | - |
 | [SeedVPS](https://www.seedvps.com) | - | Yes | Yes | No | - | - |
 | [VPS6.NET](https://vps6.net/) | - | Yes | Yes | No | - | - |
-| [CondoInternet ISP](http://www.condointernet.net/) | - | Yes | Yes | Yes | - | - |
 | [DigitalOcean](https://digitalocean.com/) | AS14061 | Yes | Yes | No | - | - |
-| [PhoenixNap / Secured Servers](https://www.phoenixnap.com/) | - | Yes | Yes | No | - | 08/01/14 |
+| [PhoenixNap (Secured Servers)](https://www.phoenixnap.com/) | - | Yes | Yes | No | - | 08/01/14 |
 | [Vultr](https://vultr.com) | AS20473 | Yes | Yes | No | When asked directly they will claim they do support Tor exits but will pull the rug out from under you later on. This has happened to at least two exit operators. | - |
 | [ChicagoVPS](https://chicagovps.net/) | AS36352 | Yes | Yes | No | Tor bridge/relay is allowed on the whole VPS range. Any VPS running Exit nodes will be suspended without prior notice. | 15/01/15 |
 | [Xmission](https://www.xmission.com/) | AS6315 | Yes | Yes | Yes | - | 01/28/15 |
