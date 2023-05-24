@@ -29,7 +29,7 @@ Most of our localization efforts are hosted on [weblate](https://hosted.weblate.
 
 You can submit anonymous suggestions, but it is better to create an account, so you can comment and discuss with other translators, or review their contributions.
 
-Remember that the username you choose will be made public in the translation platform, as you will be 'signing' the changes with it.
+Remember that the username and email address you choose will be made public in the translation platform, as you will be 'signing' the changes with them.
 We encourage the use of pseudonymous accounts!
 
 Before translating, please read through the Tor Project page on the [Localization Lab Wiki](https://wiki.localizationlab.org/index.php/Tor), and our documentation at the [Tor L10n wiki for translators](https://gitlab.torproject.org/tpo/community/l10n/-/wikis/Localization-for-translators) and [reviewers](https://gitlab.torproject.org/tpo/community/l10n/-/wikis/Localization-for-reviewers).
