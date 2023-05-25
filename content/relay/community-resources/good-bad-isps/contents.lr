@@ -231,6 +231,7 @@ These hosts already have many Tor nodes being hosted there.
 
 | **Company/ISP** | **ASN** | **Bridges** | **Relay** | **Exit** | **Comments** | **Last Updated** |
 |-------------------------|-------------|-----------------|--------------|-------------|---------------------|------------------------|
+| [100UP](https://100up.org/) | AS49581 | Yes | Yes | Yes | Use the Netherlands server for exit nodes, middle nodes can be ran on all servers | 05/25/22 |
 | [XS4ALL](https://www.xs4all.nl/en/) | AS3265 | Yes | Yes | Yes | Abuse can result in temporary blocks, therefore they recommend to use an dedicated IP address for exit nodes | 06/16/15 |
 | [HostHatch](https://hosthatch.com/) | AS42708 | Yes | Yes | No | - | 05/01/16 |
 | [Ziggo](https://www.ziggo.nl/) | 33915 | Yes | Yes | Yes | - | 05/24/2016 |
