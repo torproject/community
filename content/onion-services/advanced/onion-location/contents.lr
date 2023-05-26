@@ -177,7 +177,7 @@ If you get an error message, something has gone wrong and you cannot continue un
 
 **Step 5.** Testing your Onion-Location
 
-To test if Onion-Location is working, fetch the web site HTTP headers, for example:
+To test if Onion-Location is working, fetch the website HTTP headers, for example:
 
      $ wget --server-response --spider your-website.tld
 
