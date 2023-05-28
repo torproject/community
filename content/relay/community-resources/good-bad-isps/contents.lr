@@ -17,7 +17,7 @@ For network diversity and stronger anonymity, you should avoid providers and cou
 **Try to avoid** the following hosters:
 
  * Frantech / Ponynet / BuyVM (AS53667)
- * OVH SAS (AS16276)
+ * OVH SAS / OVHcloud (AS16276)
  * Online S.A.S. / Scaleway (AS12876)
  * Hetzner Online GmbH (AS24940)
  * IONOS SE (AS8560)
@@ -384,7 +384,7 @@ These hosts already have many Tor nodes being hosted there.
 | [Linode](https://www.linode.com/) | AS63949 | Yes | Yes | Yes | "We allow Tor exits as long as they have a reduced exit policy." - I've used 10TB this month in total for all 3 of my exit nodes spread out in different locations. I've recieved 0 notices from Linode while using the free 100$ credits you get. I allow ports 53,80,443. My DE exit node is now the [2nd fastest](https://i.imgur.com/Owj6HkD.png) Linode relay, with UK third. I would recommend this host to use the free credits, but wouldn't really recommend paying as bandwidth is limited. Locations: US,CA,GB,DE,SG,JP,IN,AU | 10/07/2021 |
 | [Luna Node](https://www.lunanode.com/index.php) | AS16276 / AS174 | Yes | Yes | No | - | 05/01/14 |
 | [Oracle Cloud](https://www.oracle.com/cloud/free/) | AS31898 | Yes | Yes | No | Offers generous free tier - 10TB free outbound bandwidth, I have ran a non exit relay for a few months with no problems, [as well as others](https://metrics.torproject.org/rs.html#search/as:AS31898). Note that they will terminate your account if you're suspicious and not provide reason, even on support chat, I've gotten an account banned simply for running a smokeping instance. (Pinging ip addresses to test network stability). Locations: US,CA,GB,DE,CH,NL,SA,UAE,BR,CL,JP,KR,AU,IN | 10/10/2021 |
-| [OVH](https://www.ovh.com/us/index.xml) | AS16276 | Yes | Yes | No | Unmetered bandwidth in non asia locations. - "I will gladly explain this situation for you. Running a Tor exit node is strictly forbidden and can lead to the suspension and even termination of your server and account." Locations: US,CA,FR,DE,PL,GB,SG | 09/27/2021 |
+| [OVHcloud](https://www.ovh.com/us/index.xml) | AS16276 | Yes | Yes | No | Unmetered bandwidth in non asia locations. - "I will gladly explain this situation for you. Running a Tor exit node is strictly forbidden and can lead to the suspension and even termination of your server and account." Locations: US,CA,FR,DE,PL,GB,SG | 09/27/2021 |
 | [Oplink.net](https://www.oplink.net) | - | No | No | No | Specifically Prohibited Abuse: hosting of any TOR exit relays or nodes. | 11/2022 |
 | [Psychz Networks](https://www.psychz.net/) | AS40676 | Yes | Yes | Yes | Very Exit friendly. Standard Tor response will resolve abuse issues. | 10/07/15 |
 | [PulseServers](https://www.pulseservers.com) | AS16276 | Yes | Yes | Yes | Exit-friendly. | 05/01/16 |
