@@ -386,7 +386,7 @@ These hosts already have many Tor nodes being hosted there.
 | [Oracle Cloud](https://www.oracle.com/cloud/free/) | AS31898 | Yes | Yes | No | Offers generous free tier - 10TB free outbound bandwidth, I have ran a non exit relay for a few months with no problems, [as well as others](https://metrics.torproject.org/rs.html#search/as:AS31898). Note that they will terminate your account if you're suspicious and not provide reason, even on support chat, I've gotten an account banned simply for running a smokeping instance. (Pinging ip addresses to test network stability). Locations: US,CA,GB,DE,CH,NL,SA,UAE,BR,CL,JP,KR,AU,IN | 10/10/2021 |
 | [OVH](https://www.ovh.com/us/index.xml) | AS16276 | Yes | Yes | No | Unmetered bandwidth in non asia locations. - "I will gladly explain this situation for you. Running a Tor exit node is strictly forbidden and can lead to the suspension and even termination of your server and account." Locations: US,CA,FR,DE,PL,GB,SG | 09/27/2021 |
 | [Oplink.net](https://www.oplink.net) | - | No | No | No | Specifically Prohibited Abuse: hosting of any TOR exit relays or nodes. | 11/2022 |
-| [Psychz.net](https://www.psychz.net/) | AS40676 | Yes | Yes | Yes | Very Exit friendly. Standard Tor response will resolve abuse issues. | 10/07/15 |
+| [Psychz Networks](https://www.psychz.net/) | AS40676 | Yes | Yes | Yes | Very Exit friendly. Standard Tor response will resolve abuse issues. | 10/07/15 |
 | [PulseServers](https://www.pulseservers.com) | AS16276 | Yes | Yes | Yes | Exit-friendly. | 05/01/16 |
 | [RamNode](https://ramnode.com/) | AS3842 | Yes | Yes | No | - | 11/03/14 |
 | [Server Complete](https://servercomplete.com/) | - | ? | ? | No | - | 11/03/14 |
