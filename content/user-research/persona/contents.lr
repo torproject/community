@@ -16,7 +16,9 @@ html: two-columns-page.html
 ---
 body:
 
-User personas are a key component of our human-centered design process. They help foster empathy by encouraging our developers to better understand the motivations, pain points, and goals of our users.
+User personas are a key component of our human-centered design process.
+They help foster empathy by encouraging our developers to better understand the motivations, pain points and goals of our users.
+
 The first generation of Tor personas were created following a series of field studies in the Global South from 2018 to 2019, where we were fortunate to meet many different kinds of Tor users – including activists, journalists and other human rights defenders.
 
 * Jelani, the human rights defender: [View on Gitlab](https://gitlab.torproject.org/tpo/ux/research/-/blob/master/personas/jelani.pdf) · [Download PDF](https://gitlab.torproject.org/tpo/ux/research/-/raw/master/personas/jelani.pdf)
