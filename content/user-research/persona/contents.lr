@@ -16,13 +16,28 @@ html: two-columns-page.html
 ---
 body:
 
-Persona is a tool that represents the needs, thoughts, and goals of the target user. We created personas because they help us to drive human-centered design processes.
-As part of our global south travels during 2018 and 2019, we got the lucky chance to meet a lot of different Tor users: from activists to journalists, all of them with different motivations, but demanding a usable private and secure tool to access the Internet.
-With the Community Team, we have been working collecting and mapping real user stories and finding patterns across them. It is how our Personas emerged from our in field research.
+User personas are a key component of our human-centered design process. They help foster empathy by encouraging our developers to better understand the motivations, pain points, and goals of our users.
+The first generation of Tor personas were created following a series of field studies in the Global South from 2018 to 2019, where we were fortunate to meet many different kinds of Tor users – including activists, journalists and other human rights defenders.
 
-### Tor Personas
 * Jelani, the human rights defender: [View on Gitlab](https://gitlab.torproject.org/tpo/ux/research/-/blob/master/personas/jelani.pdf) · [Download PDF](https://gitlab.torproject.org/tpo/ux/research/-/raw/master/personas/jelani.pdf)
 * Aleisha, the privacy seeker: [View on Gitlab](https://gitlab.torproject.org/tpo/ux/research/-/blob/master/personas/aleisha.pdf) · [Download PDF](https://gitlab.torproject.org/tpo/ux/research/-/raw/master/personas/aleisha.pdf)
 * Fernanda, the feminist activist: [View on Gitlab](https://gitlab.torproject.org/tpo/ux/research/-/blob/master/personas/fernanda.pdf) · [Download PDF](https://gitlab.torproject.org/tpo/ux/research/-/raw/master/personas/fernanda.pdf)
 * Fatima, the censored user: [View on Gitlab](https://gitlab.torproject.org/tpo/ux/research/-/blob/master/personas/fatima.pdf) · [Download PDF](https://gitlab.torproject.org/tpo/ux/research/-/raw/master/personas/fatima.pdf)
 * Alex, the fearless journalist: [View on Gitlab](https://gitlab.torproject.org/tpo/ux/research/-/blob/master/personas/alex.pdf) · [Download PDF](https://gitlab.torproject.org/tpo/ux/research/-/raw/master/personas/alex.pdf)
+
+However as of 2023, some of the information presented in them (e.g. the social/political context and state of censorship in some countries) may be out of date.
+As such, these personas are due to be replaced in the near future.
+
+## Second generation
+
+In 2020, as part of a wider project on censorship circumvention, we created two additional personas set in the context of contemporaneous internet censorship events in West Africa:
+
+* Felix, the determined teacher: [View on Gitlab](https://gitlab.torproject.org/tpo/ux/research/-/blob/master/personas/felix.pdf) · [Download PDF](https://gitlab.torproject.org/tpo/ux/research/-/raw/master/personas/felix.pdf)
+* Ifeanyi, the resolute reporter: [View on Gitlab](https://gitlab.torproject.org/tpo/ux/research/-/blob/master/personas/ifeanyi.pdf) · [Download PDF](https://gitlab.torproject.org/tpo/ux/research/-/raw/master/personas/ifeanyi.pdf)
+
+## Third generation
+
+Following a series of digital security workshops and usability testing sessions in Brazil, Ecuador & Mexico from 2021–2023, we consolidated much of what we learned into two more personas:
+
+* Rosa, the transfeminist campaigner: [View on Gitlab](https://gitlab.torproject.org/tpo/ux/research/-/blob/master/personas/rosa.pdf) · [Download PDF](https://gitlab.torproject.org/tpo/ux/research/-/raw/master/personas/rosa.pdf)
+* Daniel, the exiled journalist: [View on Gitlab](https://gitlab.torproject.org/tpo/ux/research/-/blob/master/personas/daniel.pdf) · [Download PDF](https://gitlab.torproject.org/tpo/ux/research/-/raw/master/personas/daniel.pdf)
