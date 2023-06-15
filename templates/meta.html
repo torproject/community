@@ -8,3 +8,9 @@
 <!-- Recommended favicon format -->
 <link rel="icon" type="image/png" href="{{ '/static/images/favicon.png'|asseturl }}">
 <title>{{ _("Tor Project") }} | {% block title %}{{ this.title }}{% endblock %}</title>
+<!-- The following script sets the base href to the current page's URL, which is necessary for correct functioning of relative links. -->
+<script>
+  var baseElement = document.createElement('base');
+  baseElement.href = location.href;
+  document.head.appendChild(baseElement);
+</script>
