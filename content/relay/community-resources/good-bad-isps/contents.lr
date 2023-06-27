@@ -408,6 +408,7 @@ These hosts already have many Tor nodes being hosted there.
 | [Microsoft Azure](https://azure.microsoft.com) | AS8075 | Yes | Yes | No | Expensive bandwidth, you WILL be charged extra after reaching 15GB. | 06/2022 |
 | [G-Core Labs](https://gcorelabs.com) | AS199524 | Yes | Yes | No | They don't allow exits and will suspend your active services and restrict your access to the account if they receive abuse messages. KVM VPS. IPv4+IPv6 native support. * Gnu/Linux, FreeBSD and Windows server supported. Unmetered traffic. | 06/2022 |
 | [Tornado VPS](https://tornadovps.com/) | - | Yes | Yes | Yes | Allows exits [with a reduced exit policy](https://tornadovps.com/faq). | 05/15/2023 |
+| [ReliableSite](https://reliablesite.net/) | AS23470 | No | No | No | While not mentioned in the AUP, has said they "disallow" Tor even if you announce your own IP ranges. | 06/27/2023 |
 
 ---
 html: two-columns-page.html
