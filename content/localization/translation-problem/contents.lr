@@ -18,6 +18,11 @@ body:
 
 ### Reporting an error with a translation
 
+Our translations are done by volunteers, and sometimes they may be errors.
+We always need help on improving the translations already done. Also, as our websites change, translations become outdated.
+If you find many errors on a translation, please consider [contributing to our translations](../becoming-tor-translator/).
+
+
 * If you are already a [Tor translator](../becoming-tor-translator), you can simply find the string and fix it in [weblate](https://hosted.weblate.org/projects/tor/#search).
 * If you don't know how to find the string to fix, you can [open a ticket on our Bugtracker](https://support.torproject.org/misc/bug-or-feedback/), under the **Community/Localization** repository.
   Before opening a ticket, see the currently [open tickets for Translations](https://gitlab.torproject.org/tpo/community/l10n/-/issues?scope=all&state=opened) because maybe it is already reported.
