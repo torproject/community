@@ -16,11 +16,12 @@ html: two-columns-page.html
 ---
 body:
 
-Some languages are more active than others with a higher number of active and committed contributors (such as French, Russian, Portuguese). However you are still welcome to help us with these languages, even after the translations are complete.
+Some languages are more active than others with a higher number of active and committed contributors. However you are still welcome to help us with these languages, even after the translations are complete.
 
 Our translations are incomplete for a lot of languages. They may be spoken by fewer people around the world, but it is still critical that we improve access to Tor for people who do not speak English.
 
-We have statistics about some of our translations available in [Weblate Tor section](https://hosted.weblate.org/projects/tor/#languages)
+We have statistics about our translations at the [L10n statistics page](https://tpo.pages.torproject.net/community/l10n/stats.html), with information about priority translations and released translations.
+This statistics are calculated daily.
 
 To learn more about the different files in translation, please consult [our wiki section for translators](https://gitlab.torproject.org/tpo/community/l10n/-/wikis/Localization-for-translators)
 
