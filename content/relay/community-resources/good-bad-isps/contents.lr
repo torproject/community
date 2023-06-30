@@ -362,7 +362,7 @@ These hosts already have many Tor nodes being hosted there.
 | [Amazon Web Services (AWS)](https://aws.amazon.com) | AS16509 | Yes | Yes | No | Expensive bandwidth, you WILL be charged extra after reaching 15GB. | 09/27/2021 |
 | [AmeriNOC](https://www.amerinoc.com/) | - | Yes | Yes | Yes | - | - |
 | [Arvixe](https://www.arvixe.com/vps_virtual_private_servers_hosting/) | - | Yes | Yes | Yes | - | 06/19/13 |
-| [Lumen (CenturyLink)](http://www.lumen.com) | - | Yes | Yes | ? | [Home TOS doesn't explicitly ban "servers"](https://www.centurylink.com/legal/docs/Internet_Subscriber_Agreement_LQ_ENG.pdf), but unsure about exits. | 4/27/2023 |
+| [Lumen (CenturyLink)](http://www.lumen.com) | AS209 / AS3356 | Yes | Yes | ? | [Home TOS doesn't explicitly ban "servers"](https://www.centurylink.com/legal/docs/Internet_Subscriber_Agreement_LQ_ENG.pdf), but unsure about exits. | 4/27/2023 |
 | [BuyVM.net](https://buyvm.net) | AS53667 | Yes | Yes | Yes | New Tor rules [here](https://buyvm.net/acceptable-use-policy/#3). All relays are fine if you follow the steps. Notices are ignored. Unmetered bandwidth. | 09/27/2021 |
 | [Catalyst Host](https://catalysthost.com/) | - | ? | No | No | "If you are interested in hosting either, you can ask us about a dedicated server." | 10/01/14 |
 | [Cloudvider](https://www.clouvider.co.uk/) | AS62240 | Yes | Yes | No | Prohibited Uses: to run a Tor Exit Node. They will cancel your account and claim it is a ToS violation, which requires you to pay out a 60-day notice. | 11/2022 |
@@ -384,19 +384,19 @@ These hosts already have many Tor nodes being hosted there.
 | [Luna Node](https://www.lunanode.com/index.php) | AS16276 / AS174 | Yes | Yes | No | - | 05/01/14 |
 | [Oracle Cloud](https://www.oracle.com/cloud/free/) | AS31898 | Yes | Yes | No | Offers generous free tier - 10TB free outbound bandwidth, I have ran a non exit relay for a few months with no problems, [as well as others](https://metrics.torproject.org/rs.html#search/as:AS31898). Note that they will terminate your account if you're suspicious and not provide reason, even on support chat, I've gotten an account banned simply for running a smokeping instance. (Pinging ip addresses to test network stability). Locations: US,CA,GB,DE,CH,NL,SA,UAE,BR,CL,JP,KR,AU,IN | 10/10/2021 |
 | [OVHcloud](https://www.ovh.com/us/index.xml) | AS16276 | Yes | Yes | No | Unmetered bandwidth in non asia locations. - "I will gladly explain this situation for you. Running a Tor exit node is strictly forbidden and can lead to the suspension and even termination of your server and account." Locations: US,CA,FR,DE,PL,GB,SG | 09/27/2021 |
-| [Oplink.net](https://www.oplink.net) | - | No | No | No | Specifically Prohibited Abuse: hosting of any TOR exit relays or nodes. | 11/2022 |
+| [Oplink.net](https://www.oplink.net) | AS40156 | No | No | No | Specifically Prohibited Abuse: hosting of any Tor exit relays or nodes. | 11/2022 |
 | [Psychz Networks](https://www.psychz.net/) | AS40676 | Yes | Yes | Yes | Very Exit friendly. Standard Tor response will resolve abuse issues. | 10/07/15 |
 | [PulseServers](https://www.pulseservers.com) | AS16276 | Yes | Yes | Yes | Exit-friendly. | 05/01/16 |
 | [RamNode](https://ramnode.com/) | AS3842 | Yes | Yes | No | - | 11/03/14 |
 | [Server Complete](https://servercomplete.com/) | - | ? | ? | No | - | 11/03/14 |
 | [IBM Cloud](https://www.ibm.com/cloud) | AS36351 | Yes | Yes | ? | - | - |
 | [VPSWebServer.com](https://www.vpswebserver.com) | - | Yes | No | ? | - | - |
-| [Astound Broadband](https://www.astound.com/) | - | No | No | No | The [acceptable use policy](https://www.astound.com/policies-disclaimers/acceptable-use-policy/) disallows "servers" and "proxies". | 04/13/23 |
+| [Astound Broadband](https://www.astound.com/) | AS11404 | No | No | No | The [acceptable use policy](https://www.astound.com/policies-disclaimers/acceptable-use-policy/) disallows "servers" and "proxies". | 04/13/23 |
 | [SolarVPS](https://solarvps.com) | - | Yes | Yes | Yes | - | - |
 | [SeedVPS](https://www.seedvps.com) | - | Yes | Yes | No | - | - |
 | [VPS6.NET](https://vps6.net/) | - | Yes | Yes | No | - | - |
 | [DigitalOcean](https://digitalocean.com/) | AS14061 | Yes | Yes | No | - | - |
-| [PhoenixNap (Secured Servers)](https://www.phoenixnap.com/) | - | Yes | Yes | No | - | 08/01/14 |
+| [PhoenixNap (Secured Servers)](https://www.phoenixnap.com/) | AS12189 | Yes | Yes | No | - | 08/01/14 |
 | [Vultr](https://vultr.com) | AS20473 | Yes | Yes | No | When asked directly they will claim they do support Tor exits but will pull the rug out from under you later on. This has happened to at least two exit operators. | - |
 | [ChicagoVPS](https://chicagovps.net/) | AS36352 | Yes | Yes | No | Tor bridge/relay is allowed on the whole VPS range. Any VPS running Exit nodes will be suspended without prior notice. | 15/01/15 |
 | [Xmission](https://www.xmission.com/) | AS6315 | Yes | Yes | Yes | - | 01/28/15 |
@@ -405,7 +405,7 @@ These hosts already have many Tor nodes being hosted there.
 | [Spectrum](https://www.spectrum.com/) | AS12271 | No | No | No | - | 01/19/22 |
 | [Microsoft Azure](https://azure.microsoft.com) | AS8075 | Yes | Yes | No | Expensive bandwidth, you WILL be charged extra after reaching 15GB. | 06/2022 |
 | [G-Core Labs](https://gcorelabs.com) | AS199524 | Yes | Yes | No | They don't allow exits and will suspend your active services and restrict your access to the account if they receive abuse messages. KVM VPS. IPv4+IPv6 native support. * Gnu/Linux, FreeBSD and Windows server supported. Unmetered traffic. | 06/2022 |
-| [Tornado VPS](https://tornadovps.com/) | - | Yes | Yes | Yes | Allows exits [with a reduced exit policy](https://tornadovps.com/faq). | 05/15/2023 |
+| [Tornado VPS](https://tornadovps.com/) | AS47066 | Yes | Yes | Yes | Allows exits [with a reduced exit policy](https://tornadovps.com/faq). | 05/15/2023 |
 | [ReliableSite](https://reliablesite.net/) | AS23470 | No | No | No | While not mentioned in the AUP, has said they "disallow" Tor even if you announce your own IP ranges. | 06/27/2023 |
 
 ---
