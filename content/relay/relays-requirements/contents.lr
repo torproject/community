@@ -50,8 +50,8 @@ Your IPv4 address should remain unchanged for at least 3 hours (if it regularly 
 Additional IPv6 connectivity is great and recommended/encouraged but not a requirement.
 There should be no problem at all with this requirement (all commercially available servers come with at least one IPv4 address).
 
-Note: You can only run [four Tor relays](https://lists.torproject.org/pipermail/tor-relays/2023-February/020999.html) per public IPv4 address.
-If you want to run more than four relays you will need more IPv4 addresses.
+Note: You can only run [eight Tor relays](https://lists.torproject.org/pipermail/tor-relays/2023-June/021226.html) per public IPv4 address.
+If you want to run more than eight relays you will need more IPv4 addresses.
 
 # Memory Requirements
 
