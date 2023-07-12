@@ -35,7 +35,7 @@ We encourage the use of pseudonymous accounts.
 Before translating, please read through the Tor Project page on the [Localization Lab Wiki](https://wiki.localizationlab.org/index.php/Tor), and our documentation at the [Tor L10n wiki for translators](https://gitlab.torproject.org/tpo/community/l10n/-/wikis/Localization-for-translators) and [reviewers](https://gitlab.torproject.org/tpo/community/l10n/-/wikis/Localization-for-reviewers).
 The page includes guidelines, resources, and priorities that will help you make the most out of your contribution.
 
-## Registering On Weblate
+## Registering on Weblate
 
 1. Head over to the [weblate signup page](https://hosted.weblate.org/accounts/register/).
    Remember that the username and email address you choose will be publicly visible on the translation platform since they will be associated with the changes you make.
