@@ -29,8 +29,8 @@ Most of our localization efforts are hosted on [weblate](https://hosted.weblate.
 
 You can submit anonymous suggestions, but it is better to create an account, so you can comment and discuss with other translators, or review their contributions.
 
-Remember that the username and email address you choose will be made public in the translation platform, as you will be 'signing' the changes with them.
-We encourage the use of pseudonymous accounts
+Remember that the username and email address you choose will be publicly visible on the translation platform since they will be associated with the changes you make.
+We encourage the use of pseudonymous accounts.
 
 Before translating, please read through the Tor Project page on the [Localization Lab Wiki](https://wiki.localizationlab.org/index.php/Tor), and our documentation at the [Tor L10n wiki for translators](https://gitlab.torproject.org/tpo/community/l10n/-/wikis/Localization-for-translators) and [reviewers](https://gitlab.torproject.org/tpo/community/l10n/-/wikis/Localization-for-reviewers).
 The page includes guidelines, resources, and priorities that will help you make the most out of your contribution.
@@ -38,8 +38,8 @@ The page includes guidelines, resources, and priorities that will help you make 
 ## Registering On Weblate
 
 1. Head over to the [weblate signup page](https://hosted.weblate.org/accounts/register/).
-   Remember that the username and email address you choose will be made public in the translation platform, as you will be 'signing' the changes with them.
-   We encourage the use of pseudonymous accounts!
+   Remember that the username and email address you choose will be publicly visible on the translation platform since they will be associated with the changes you make.
+   We encourage the use of pseudonymous accounts.
 1. Fill out the next page with your information, and wait for the confirmation email (it can take up to 10 minutes to arrive to your inbox).
 1. Activate your account by clicking on the email from weblate, agreeing to the terms of service, and adding a new password.
 1. On the next page, select the languages you will translate to from the menu, and save.
