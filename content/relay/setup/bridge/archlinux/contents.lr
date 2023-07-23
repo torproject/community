@@ -23,7 +23,7 @@ To install the `tor` package on Arch Linux, please run:
 
 We are opting here to install and use `obfs4` as pluggable transport, so we are going to install `obfs4proxy`.
 
-Sadly there's no package available on Arch Linux's official repositories to install it, so we must either build and it from source, or use the AUR (ArchLinux User Repository).
+Sadly there's no package available on Arch Linux's official repositories to install it, so we must either build it from source, or use the AUR (ArchLinux User Repository).
 
 Should you opted to use AUR, once `makepkg` must not run as **root**, here is how `obfs4proxy` can be installed on Arch Linux using an unprivileged user account with `sudo` permissions:
 
