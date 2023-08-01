@@ -8,7 +8,7 @@ Congrats!
 
 If you get to this point, it means that your obfs4 bridge is running and is being distributed by BridgeDB to censored users.
 Note that it can take several days or weeks until you see a consistent set of users, so don't get discouraged if you don't see user connections right away.
-BridgeDB use six buckets for bridge distribution: HTTPS, Moat, Email, Telegram, Settings, and manual.
+BridgeDB uses six buckets for bridge distribution: HTTPS, Moat, Email, Telegram, Settings, and manual.
 Some buckets are used more than others, which also affects the time until your bridge sees users.
 You can manually [change your bridge distribution method](https://support.torproject.org/relay-operators/change-bridge-distribution/).
 Finally, there aren't many bridge users out there, so you cannot expect your bridge to be as popular as a relay.
