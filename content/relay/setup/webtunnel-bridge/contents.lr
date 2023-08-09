@@ -1,0 +1,134 @@
+_model: page
+---
+title: WebTunnel Bridge
+---
+body:
+
+This guide will help you set up a WebTunnel bridge to help censored users connect to the Tor network.
+[WebTunnel](https://gitlab.torproject.org/tpo/anti-censorship/pluggable-transports/webtunnel) is a pluggable transport that attempts to imitate web browsing activities based on [HTTPT](https://censorbib.nymity.ch/#Frolov2020b).
+
+The requirements for deploying a WebTunnel bridge are:
+1. A static IPv4 (preferably);
+2. The ability to expose TCP ports to the Internet (make sure that NAT doesn't get in the way);
+3. A self-hosted website, including a configurable web server (such as NGINX or Apache) and a domain under your control;
+4. A valid TLS certificate.
+
+Deploying a WebTunnel bridge involves configuring both a web server and a Tor bridge with this pluggable transport.
+The first part of this guide provides detailed instructions for configuring your web server to support WebTunnel.
+The second part, you will choose between two methods for running the WebTunnel bridge: either using Docker or by compiling from the source code.
+
+Please note that if you don't meet the requirements to run a WebTunnel or obfs4 bridge, running a [Snowflake proxy](/relay/setup/snowflake) is a great way to donate your bandwidth to help users circumvent censorship.
+
+### Web server configuration
+
+#### Step 1. Configure your domain
+
+If you already have a website domain, you can either use the main domain or create a subdomain.
+In this guide, the WebTunnel bridge is hosted on the same server as your website, but it's possible to host it in a different server.
+
+#### Step 2. Obtain a valid certificate
+
+If your website doesn't have a TLS certificate, you can obtain one by using [acme.sh](https://github.com/acmesh-official/acme.sh), which is an ACME protocol client written in Shell language.
+
+**2.1. Install ACME**
+
+Replace `my@example.com` with your email address:
+
+```$ curl https://get.acme.sh | sh -s email=my@example.com```
+
+Or
+
+```$ wget -O -  https://get.acme.sh | sh -s email=my@example.com```
+
+**2.2. Issue a certificate**
+
+Replace `example.com` with your website domain.
+
+```
+$ ~/.acme.sh/acme.sh --issue --standalone --domain example.com
+```
+
+#### Step 3. Install NGINX
+
+To coexist with other content on a single port, you should install a reverse proxy, such as NGINX.
+Install NGINX:
+
+```
+$ sudo apt install nginx
+```
+
+#### Step 4. Configure NGINX
+
+4.1. Generate a random string
+
+When clients connect to your web server, they will be redirected to your WebTunnel proxy when they use a secret path.
+You can generate a random string by running this command:
+
+```
+$ echo $(cat /dev/urandom | tr -cd "qwertyuiopasdfghjklzxcvbnmMNBVCXZLKJHGFDSAQWERTUIOP0987654321"|head -c 24)
+```
+
+4.2. Create or edit an NGINX vhost
+
+Create a new vhost file such as `/etc/nginx/sites-available/webtunnel-vhost` that forwards traffic to the WebTunnel bridge.
+Here is a full [NGINX vhost with WebTunnel example](https://gitlab.torproject.org/-/snippets/190).
+
+<script src="https://gitlab.torproject.org/-/snippets/190.js"></script>
+
+Or if you want to use an existing vhost, you can just edit and add the ```location {}``` block to it.
+Replace `$PATH` with the random string.
+
+```
+# NGINX vhost block example
+location = /$PATH {
+        proxy_pass http://127.0.0.1:15000;
+        proxy_http_version 1.1;
+
+        ### Set WebSocket headers ###
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection "upgrade";
+
+        ### Set Proxy headers ###
+        proxy_set_header        Accept-Encoding   "";
+        proxy_set_header        Host            $host;
+        proxy_set_header        X-Real-IP       $remote_addr;
+        proxy_set_header        X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header        X-Forwarded-Proto $scheme;
+        add_header              Front-End-Https   on;
+
+        proxy_redirect     off;
+        access_log  off;
+        error_log off;
+}
+```
+
+4.3. Test the vhost configuration and reload NGINX
+
+```
+sudo ln -s /etc/nginx/sites-available/webtunnel-vhost /etc/nginx/sites-enabled/
+sudo nginx -t
+sudo systemctl reload nginx
+```
+
+#### Step 5. Configure your Tor WebTunnel bridge
+
+Congratulations! You've successfully configured your web server to proxy requests to your Tor bridge.
+Now, you must install and configure your bridge to receive these requests from the web server.
+Please follow the second part of this guide.
+You have two options available: either compile a Go binary from the [source](source) or use [Docker](docker).
+
+---
+html: two-columns-page.html
+---
+key: 6
+---
+section: WebTunnel Bridge
+---
+section_id: bridge_operations
+---
+subtitle: Run a WebTunnel bridge to help censored users connect to the Tor network
+---
+_slug: {{webtunnel}}
+---
+color: primary
+---

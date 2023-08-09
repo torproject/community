@@ -1,0 +1,152 @@
+_model: page
+---
+color: primary
+---
+title: Compile and run WebTunnel from the source
+---
+body:
+
+This guide will help you set up a WebTunnel bridge compiled from the source to help censored users connect to the Tor network.
+
+#### 0. Configure your domain and web server
+
+Before you proceed with the instructions below, it's necessary to configure your domain and web server first.
+Refer to the first part of the [WebTunnel guide](/relay/setup/webtunnel) to see how to set up your web server.
+
+#### 1. Install Golang
+
+To build the WebTunnel server binary, you need to install [Golang](https://go.dev/dl/).
+You can install Go on Debian by running:
+
+```
+$ sudo apt install golang
+```
+
+#### 2. Clone and compile
+
+Clone the WebTunnel git repository:
+
+```
+$ git clone https://gitlab.torproject.org/tpo/anti-censorship/pluggable-transports/webtunnel
+```
+
+And compile the WebTunnel server binary:
+
+```
+$ cd webtunnel/main/server
+$ go build
+```
+
+Finally, copy the binary to another location:
+
+```
+$ sudo cp server /usr/local/bin/webtunnel
+```
+
+#### 3. Install Tor
+
+On a Debian-like system, install Tor from the [Tor Debian repository](https://support.torproject.org/apt/tor-deb-repo/).
+
+```
+$ sudo apt install apt-transport-https lsb-release
+```
+
+And run these commands to enable the Tor Debian repository:
+
+```
+$ CODENAME=$(lsb_release -cs)
+
+$ cat <<EOF > /etc/apt/sources.list.d/tor.list
+   deb     [signed-by=/usr/share/keyrings/tor-archive-keyring.gpg] https://deb.torproject.org/torproject.org $CODENAME main
+   deb-src [signed-by=/usr/share/keyrings/tor-archive-keyring.gpg] https://deb.torproject.org/torproject.org $CODENAME main
+EOF
+```
+
+Import the Tor Project keyring:
+
+```
+$ wget -qO- https://deb.torproject.org/torproject.org/A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89.asc | gpg --dearmor | sudo tee /usr/share/keyrings/tor-archive-keyring.gpg >/dev/null
+```
+
+Finally, update your package list and install Tor:
+
+```
+$ sudo apt update && sudo apt install tor deb.torproject.org-keyring -y
+```
+
+#### 4. Edit your torrc
+
+Edit your Tor config file, usually located at `/etc/tor/torrc` and replace its contents with:
+
+- `url=https://yourdomain/path` with your WebTunnel url including your domain and secret path;
+- `<address@email.com>` with your contact email address;
+- `Nickname WebTunnetTest` with the nickname of your bridge.
+
+```
+BridgeRelay 1
+ORPort 127.0.0.1:auto
+AssumeReachable 1
+ServerTransportPlugin webtunnel exec /usr/local/bin/webtunnel
+ServerTransportListenAddr webtunnel 127.0.0.1:15000
+ServerTransportOptions webtunnel url=https://yourdomain/path
+ExtORPort auto
+ContactInfo <address@email.com>
+Nickname WebTunnelTest
+SocksPort 0
+```
+
+#### 5. Restart Tor
+
+Enable and Start tor:
+
+```
+$ sudo systemctl enable --now tor.service
+```
+
+Or restart it if it was running already, so configurations take effect:
+
+```
+$ sudo systemctl restart tor.service
+```
+
+#### 6. Monitor your logs
+
+To confirm your bridge is running with no issues, you should see something like this (usually in /var/log/syslog or run `sudo journalctl -e -u tor@default`):
+
+```
+[notice] Your Tor server's identity key fingerprint is '<NICKNAME> <FINGERPRINT>'
+[notice] Your Tor bridge's hashed identity key fingerprint is '<NICKNAME> <HASHED FINGERPRINT>'
+[notice] Tor has successfully opened a circuit. Looks like client functionality is working.
+[notice] Bootstrapped 100%: Done
+```
+You can monitor your WebTunnel bridge's usage on [Relay Search](https://metrics.torproject.org/rs.html#search).
+Just enter your bridge's `<HASHED FINGERPRINT>` in the form and click "Search".
+After having set up the bridge, it takes approximately three hours for the bridge to show up in Relay Search.
+
+
+#### 7. Final notes
+
+By default, your WebTunnel bridge will be distributed via the [Bridges website](https://bridges.torproject.org).
+If you are having trouble setting up your bridge, have a look at our [help section](relay/getting-help).
+
+If your bridge is now running, you can test it by copying and pasting your bridge line into Tor Browser (Alpha).
+To build your WebTunnel bridge line, you need to copy your bridge `FINGERPRINT`, but don't confuse it with your hashed fingerprint, which is the fingerprint that you will find on the Tor Relay Search website.
+If you copy the hashed fingerprint instead of your bridge fingerprint, you won't be able to connect.
+You can find your bridge fingerprint in the `/var/lib/tor/fingerprint` file.
+Remember to copy only the fingerprint and do not include the bridge nickname.
+
+Finally, you can replace the URL contents with your domain and secret path.
+You can find this in your torrc line under `ServerTransportOptions`.
+
+Now, just replace the content below to create your WebTunnel bridge line:
+
+```
+webtunnel 10.0.0.2:443 FINGERPRINT url=https://yourdomain/path
+```
+
+---
+key: 2
+---
+html: two-columns-page.html
+---
+subtitle: How to run a WebTunnel bridge from the source

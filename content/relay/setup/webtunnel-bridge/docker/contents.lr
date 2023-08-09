@@ -1,0 +1,71 @@
+_model: page
+---
+color: primary
+---
+title: WebTunnel Docker setup
+---
+body:
+
+This guide will help you set up a WebTunnel bridge using Docker to help censored users connect to the Tor network.
+
+#### 0. Configure your domain and web server
+
+Before you proceed with the instructions below, it's necessary to configure your domain and web server first.
+Refer to the first part of the [WebTunnel guide](/relay/setup/webtunnel) to see how to set up your website domain and web server.
+
+#### 1. Install Docker runtime
+
+The instructions in this step are for Debian-based systems, but you can find [Docker instructions](https://docs.docker.com/get-docker/) for other supported platforms.
+
+```
+# apt install curl sudo
+$ curl -fsSL https://get.docker.com -o get-docker.sh
+$ sudo sh ./get-docker.sh
+```
+
+#### 2. Run Dockerized WebTunnel bridge
+
+Replace `URL` with your domain and path (refer to the first part of the WebTunnel guide), and `OPERATOR_EMAIL` with your email address, then run:
+
+```
+$ truncate --size 0 .env
+$ echo "URL=https://yourdomain/and/path" >> .env
+$ echo "OPERATOR_EMAIL=your@email.org" >> .env
+$ echo "BRIDGE_NICKNAME=WTBr$(cat /dev/urandom | tr -cd 'qwertyuiopasdfghjklzxcvbnmMNBVCXZLKJHGFDSAQWERTUIOP0987654321'|head -c 10)" >> .env
+$ echo "GENEDORPORT=4$(cat /dev/urandom | tr -cd '0987654321'|head -c 4)" >> .env
+```
+
+These commands will create an environment file (`.env`) for the configuration of WebTunnel bridge.
+
+#### 3. Download the WebTunnel docker compose file
+
+```
+$ curl https://gitlab.torproject.org/tpo/anti-censorship/pluggable-transports/webtunnel/-/raw/main/release/container/docker-compose.yml?inline=false > docker-compose.yml
+```
+
+#### 4. Start your WebTunnel bridge
+
+```
+docker compose up -d
+```
+
+Note that this Docker compose file includes auto-update by default, and will update the WebTunnel bridge server without any further action.
+Remove `watchtower` to disable this behavior.
+
+#### 5. Test your WebTunnel bridge
+
+You can obtain your bridge line address and verify if it is working by running:
+
+```
+$ docker compose exec webtunnel-bridge get-bridge-line.sh
+```
+
+You can copy and paste the bridge line in Tor Browser (Alpha), and it should work.
+By default, your docker WebTunnel bridge will be distributed via [Bridges website](https://bridges.torproject.org).
+
+---
+key: 1
+---
+html: two-columns-page.html
+---
+subtitle: How to run a WebTunnel bridge on Docker
