@@ -33,7 +33,9 @@ Creating snowflake-proxy ... done
 ```
 and your proxy is up and running!
 
-The [docker-compose.yml](https://gitlab.torproject.org/tpo/anti-censorship/docker-snowflake-proxy/raw/main/docker-compose.yml) contains a `watchtower` container, configured to automatically check for updates to the snowflake docker container every day, download them and run them. So if you are using that, your snowflake proxy will stay updated automatically! Otherwise, you will need to periodically pull the latest container and restart it manually.
+The [docker-compose.yml](https://gitlab.torproject.org/tpo/anti-censorship/docker-snowflake-proxy/raw/main/docker-compose.yml) contains a `watchtower` container, configured to automatically check for updates to the snowflake docker container every day, download them and run them.
+So if you are using that, your snowflake proxy will stay updated automatically!
+Otherwise, you will need to periodically pull the latest container and restart it manually.
 
 ### Ansible
 
