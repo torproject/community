@@ -17,11 +17,13 @@ html: two-columns-page.html
 body:
 
 In this page we present a few ways to mitigate DoS attacks currently.
+All these approaches can be combined.
 However there is no single one-size-fits-all solution for this problem at the moment.
 Defending a site under attack requires creativity and a custom-tailored approach.
+
 Here are a few tips:
 
-### Configuration parameters
+### Rate limiting at the Introduction Points
 
 Since [Proposal 305](https://gitlab.torproject.org/tpo/core/torspec/-/blob/main/proposals/305-establish-intro-dos-defense-extention.txt) was implemented, some `torrc` options were added to help mitigating DoS attacks at the introduction points:
 
@@ -36,6 +38,54 @@ Since [Proposal 305](https://gitlab.torproject.org/tpo/core/torspec/-/blob/main/
 
 For more information on how they work, check the `tor(1)` manpage and the `[EST_INTRO_DOS_EXT]` section of the [Onion Services v3 specification](https://gitlab.torproject.org/tpo/core/torspec/-/blob/main/rend-spec-v3.txt).
 
+### Proof of Work (PoW) before establishing Rendezvous Circuits
+
+With the implementation of [Proposal 327](https://gitlab.torproject.org/tpo/core/torspec/-/blob/main/proposals/327-pow-over-intro.txt), a Proof of Work (PoW) defense mechanism can be configured for each Onion Service with the following `torrc` options:
+
+* `HiddenServicePoWDefensesEnabled`: Enable proof-of-work based service DoS mitigation.
+   When enabled, tor will include parameters for an optional client puzzle in the encrypted portion of this hidden service's descriptor.
+   Incoming rendezvous requests will be prioritized based on the amount of effort a client chooses to make when computing a solution to the puzzle.
+   The service will periodically update a suggested amount of effort, based on attack load, and disable the puzzle entirely when the service is not overloaded.
+
+* `HiddenServicePoWQueueRate`: The sustained rate of rendezvous requests to dispatch per second from the priority queue.
+
+* `HiddenServicePoWQueueBurst`: The maximum burst size for rendezvous requests handled from the priority queue at once.
+
+The following global option is applicable to both onion services and their clients:
+
+* `CompiledProofOfWorkHash`: When proof-of-work DoS mitigation is active, both the services themselves and the clients which connect will use a dynamically generated hash function as part of the puzzle computation.
+
+PoW is enabled by default on C Tor versions 0.4.8.1-alpha onwards (but can be disabled if compiled with `--disable-module-pow`).
+Basic PoW support can be checked by running this command:
+
+```
+tor --list-modules
+relay: yes
+dirauth: yes
+dircache: yes
+pow: yes
+```
+
+If you have `pow: yes`, then you have the PoW defense mechanism built into C Tor.
+
+Due to license requirements, the PoW v1 client puzzle libraries ([Equi-X][] and [HashX][] by tevador, both under the LGPL-3.0) are enabled only if tor is compiled with `--enable-gpl`.
+This can be confirmed by running the following command:
+
+```
+tor --version
+Tor version 0.4.8.3-rc.
+This build of Tor is covered by the GNU General Public License (https://www.gnu.org/licenses/gpl-3.0.en.html)
+Tor is running on Linux with Libevent 2.1.12-stable, OpenSSL 3.0.9, Zlib 1.2.13, Liblzma 5.4.1, Libzstd N/A and Glibc 2.36 as libc.
+Tor compiled with GCC version 12.2.0
+```
+
+[Equi-X][]: https://github.com/tevador/equix
+[HashX][]: https://github.com/tevador/hashx
+
+If your installed C Tor does not have PoW enabled or is not built with GNU GPL support, then you'll have to look for other packages or compile it yourself.
+
+### Stream limits in the established Rendezvous Circuits
+
 The following configuration options can be used to limit connections in the rendezvous circuits:
 
 * `HiddenServiceMaxStreams`: The maximum number of simultaneous streams (connections) per rendezvous circuit.
@@ -49,6 +99,18 @@ The following configuration options can be used to limit connections in the rend
 You can use Onionbalance to scale horizontally.
 The more you scale, the harder it is for attackers to overwhelm you.
 Onionbalance is available for [v3 Onion Services](https://blog.torproject.org/cooking-onions-reclaiming-onionbalance).
+
+### Webserver rate limiting
+
+If attackers are overwhelming you with aggressive circuits that perform too many queries, try to detect that overuse and kill them using the `HiddenServiceExportCircuitID` torrc option. 
+You can use your own heuristics or use your web server's [rate limiting module](https://www.nginx.com/blog/rate-limiting-nginx/).
+
+The above tips should help you keep afloat in turbulent times.
+At the same time [we are working on more advanced defenses](https://blog.torproject.org/stop-the-onion-denial), so that less manual configuration and tinkering is needed by onion operators.
+
+### Caching
+
+Another way to reduce the load on your service is to implement content caching, either directly at the backend application or by setting up a caching proxy frontend.
 
 ### Client authorization or multiple onion addresses to compartmentalize your users
 
@@ -77,11 +139,3 @@ At your webserver check that clients can set valid cookies, malicious clients of
 In Nginx, Cloudflare provide a [library](https://github.com/cloudflare/lua-resty-cookie) to interact with cookies.
 
 Other methods include making sure that clients connecting to your .onion have valid User-Agent header and the Referer header is not set to a value you can associate with the attack.
-
-### Webserver rate limiting
-
-If attackers are overwhelming you with aggressive circuits that perform too many queries, try to detect that overuse and kill them using the `HiddenServiceExportCircuitID` torrc option. 
-You can use your own heuristics or use your web server's [rate limiting module](https://www.nginx.com/blog/rate-limiting-nginx/).
-
-The above tips should help you keep afloat in turbulent times.
-At the same time [we are working on more advanced defenses](https://blog.torproject.org/stop-the-onion-denial), so that less manual configuration and tinkering is needed by onion operators.
