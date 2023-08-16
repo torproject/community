@@ -68,7 +68,7 @@ pow: yes
 
 If you have `pow: yes`, then you have the PoW defense mechanism built into C Tor.
 
-Due to license requirements, the PoW v1 client puzzle libraries ([Equi-X][] and [HashX][] by tevador, both under the LGPL-3.0) are enabled only if tor is compiled with `--enable-gpl`.
+Due to license requirements, the PoW v1 client puzzle libraries ([Equi-X](https://github.com/tevador/equix) and [HashX](https://github.com/tevador/hashx) by tevador, both under the LGPL-3.0) are enabled only if tor is compiled with `--enable-gpl`.
 This can be confirmed by running the following command:
 
 ```
@@ -78,9 +78,6 @@ This build of Tor is covered by the GNU General Public License (https://www.gnu.
 Tor is running on Linux with Libevent 2.1.12-stable, OpenSSL 3.0.9, Zlib 1.2.13, Liblzma 5.4.1, Libzstd N/A and Glibc 2.36 as libc.
 Tor compiled with GCC version 12.2.0
 ```
-
-[Equi-X][]: https://github.com/tevador/equix
-[HashX][]: https://github.com/tevador/hashx
 
 If your installed C Tor does not have PoW enabled or is not built with GNU GPL support, then you'll have to look for other packages or compile it yourself.
 
