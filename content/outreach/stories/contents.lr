@@ -1,0 +1,22 @@
+section: outreach
+---
+section_id: outreach
+---
+color: primary
+---
+_template: layout.html
+---
+title: Stories
+---
+subtitle: A public collection of anonymous stories of people who use Tor.
+---
+key: 4
+---
+html: outreach-stories.html
+---
+body:
+
+This is a public collection of anonymous stories of people who use Tor, drawing
+attention to the importance of encryption in daily life and activism. As
+demonstrated by the stories below, privacy and anonymity online are evermore
+critical to advancing human rights.
