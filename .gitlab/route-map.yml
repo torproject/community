@@ -33,6 +33,9 @@
 - source: 'templates/outreach-talk.html'
   public: '/outreach/talk/index.html'
 
+- source: 'templates/outreach-stories.html'
+  public: '/outreach/stories/index.html'
+
 - source: 'templates/relay-associations.html'
   public: '/relay/community-resources/relay-associations/index.html'
 
