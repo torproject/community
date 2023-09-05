@@ -5,7 +5,7 @@
   public: '/index.html'
 
 - source: /content/(.+)/contents\.lr/
-  public: '/$1/index.html'
+  public: '/\1/index.html'
 
 # Templates
 
