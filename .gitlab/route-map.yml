@@ -1,0 +1,46 @@
+---
+# Content
+
+- source: 'content/contents\.lr'
+  public: '/index.html'
+
+- source: 'content/(.+)/contents\.lr'
+  public: '/$1/index.html'
+
+# Templates
+
+- source: 'templates/(hero|home|homepage|jumbotron)\.html'
+  public: '/index.html'
+
+- source: 'templates/community-resources\.html'
+  public: '/training/resources/index.html'
+
+- source: 'templates/community-resources\.html'
+  public: '/training/digital-security-guides/index.html'
+
+- source: 'templates/gsoc\.html'
+  public: '/gsoc/index.html'
+
+- source: 'templates/onion-services\.html'
+  public: '/onion-services/index.html'
+
+- source: 'templates/outreach\.html'
+  public: '/outreach/index.html'
+
+- source: 'templates/outreach-materials.html'
+  public: '/outreach/kit/index.html'
+
+- source: 'templates/outreach-talk.html'
+  public: '/outreach/talk/index.html'
+
+- source: 'templates/relay-associations\.html'
+  public: '/relay/community-resources/relay-associations/index.html'
+
+- source: 'templates/relay-operations\.html'
+  public: '/relay/index.html'
+
+- source: 'templates/training\.html'
+  public: '/training/index.html'
+
+- source: 'templates/user-research\.html'
+  public: '/user-research/index.html'
