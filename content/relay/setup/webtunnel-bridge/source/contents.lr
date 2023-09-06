@@ -109,7 +109,26 @@ Or restart it if it was running already, so configurations take effect:
 $ sudo systemctl restart tor.service
 ```
 
-#### 6. Monitor your logs
+#### 6. Edit and reload AppArmor tor permission
+
+To allow tor to run your WebTunnel binary, edit the AppArmor `system_tor` profile at `/etc/apparmor.d/system_tor` and add an entry allowing tor to execute WebTunnel:
+
+```
+  # During startup, tor (as root) tries to open various things such as
+  # directories via check_private_dir().  Let it.
+  /usr/local/bin/webtunnel ix,
+```
+
+Reload the AppArmor profile:
+
+```
+$ sudo apparmor_parser -r /etc/apparmor.d/system_tor
+```
+
+After modifying the profile and reloading it, test to see if the tor process can now execute `/usr/local/bin/webtunnel` without any AppArmor denials.
+Check the system logs (e.g., `dmesg` or `/var/log/syslog`) to ensure the error doesn't reappear.
+
+#### 7. Monitor your logs
 
 To confirm your bridge is running with no issues, you should see something like this (usually in /var/log/syslog or run `sudo journalctl -e -u tor@default`):
 
@@ -123,8 +142,7 @@ You can monitor your WebTunnel bridge's usage on [Relay Search](https://metrics.
 Just enter your bridge's `<HASHED FINGERPRINT>` in the form and click "Search".
 After having set up the bridge, it takes approximately three hours for the bridge to show up in Relay Search.
 
-
-#### 7. Final notes
+#### 8. Final notes
 
 By default, your WebTunnel bridge will be distributed via the [Bridges website](https://bridges.torproject.org).
 If you are having trouble setting up your bridge, have a look at our [help section](relay/getting-help).
