@@ -127,3 +127,45 @@ a.anchor {
 .anchored-title:hover .fa-link {
    visibility: visible;
 }
+
+/* style user stories cards */
+.story-cards {
+    .col {
+        max-width: 360px;
+    }
+    img {
+        display: block;
+    }
+    .card-title {
+        font-size: 1.8rem;
+        margin: 0.8em 0;
+    }
+    .card-text:before {
+        content: '\201C';
+        position: absolute;
+        left: 0.15em;
+        margin-top: 0.05em;
+        color: #ccc;
+        font-size: 3em;
+        line-height: 0.8em;
+	}
+    .card-text p {
+        font-size: 1.2rem;
+    }
+}
+
+/* style user story pages */
+#story-full {
+    > p:first-child {
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+    }
+    > p:first-child:before {
+        content: '\201C';
+        position: absolute;
+        left: -0.25em;
+        color: #ccc;
+        font-size: 2.5em;
+        line-height: 0.6em;
+    }
+}

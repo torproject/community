@@ -10,22 +10,17 @@
     <p>These real people using Tor to improve their privacy and protect themselves from companies and governments snooping on their data and learning about their behavior.</p>
   </div>
 </div>
-<div class="container py-5">
-  <div class="row py-5">
-    <div class="col-lg-7">
+<div class="container py-3 story-cards">
+  <div class="row">
 {% for child in this.children.filter(F.category == "consumer-privacy").all() %}
-      <div class="col-sm-6 col-md-6 col-sm-12 col-xl-6 py-3">
-        <div class="card h-100">
-          <div class="card-body">
-              <a href="{{ child.path|url(alt=this.alt) }}">
-                <img src="{{ child.attachments.images.get('portrait.png')|url }}" class="card-img-top" />
-                <h4 class="card-title text-center">{{ child.title }}</h4>
-              </a>
-              <p class="card-text">{{ child.body }}</p>
-            </div>
+      <div class="col mx-auto my-3">
+        <div class="card h-100 p-3">
+            <img class="mx-auto" src="{{ child.attachments.images.get('portrait.png')|url }}" />
+            <h4 class="card-title my-3 text-center">{{ child.title }}</h4>
+            <div class="card-text ml-3 text-left">{% if child.summary %}<p>{{ child.summary }}</p>{% else %}{{ child.body }}{% endif %}</div>
+            <div class="card-btn mt-auto"><a class="btn btn-outline-primary mx-auto my-0 w-100" href="{{ child.path|url(alt=this.alt) }}">{{ _('View and share') }}</a></div>
         </div>
       </div>
 {% endfor %}
-    </div>
   </div>
 </div>
