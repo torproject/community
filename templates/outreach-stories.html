@@ -11,7 +11,7 @@
   </div>
 </div>
 <div class="container py-3 story-cards">
-  <div class="row">
+  <div class="row flex-nowrap">
 {% for child in this.children.filter(F.category == "consumer-privacy").all() %}
       <div class="col mx-auto my-3">
         <div class="card h-100 p-3">

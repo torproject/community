@@ -130,6 +130,9 @@ a.anchor {
 
 /* style user stories cards */
 .story-cards {
+    .row {
+        overflow: auto;
+    }
     .col {
         max-width: 360px;
     }
