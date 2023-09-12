@@ -10,11 +10,20 @@
       <a class="btn btn-outline-primary mt-3" href="{{ this.parent|url(alt=this.alt) }}">{{ _('Read more stories') }}</a>
     </div>
   </div>
-  <div class="row p-4 bg-primary">
+  <div class="row p-4 bg-primary" id="share-story">
     <div class="col">
-      <p class="text-white font-bold">{{ _("Share this story on social media") }}</p>
-      <p>(... share links ...)</p>
-      <p class="text-white small">{{ _("These links are not an endorsement of social media. They are provided for your convenience.") }}</p>
+      <p class="text-white" id="share-story-title">{{ _("Share this story on social media") }}</p>
+      <div class="row mb-2" id="share-story-links">
+          <div class="col-auto pt-0 pb-2 mr-3"><a class="text-white" href="#"><i class="fas fa-link"></i>Copy link</a></div>
+          <div class="col-auto pt-0 pb-2 mr-3"><a class="text-white" href="#"><i class="fab fa-twitter"></i>Twitter</a></div>
+          <div class="col-auto pt-0 pb-2 mr-3"><a class="text-white" href="#"><i class="fab fa-mastodon"></i>Mastodon</a></div>
+          <div class="col-auto pt-0 pb-2 mr-3"><a class="text-white" href="#"><i class="fab fa-telegram"></i>Telegram</a></div>
+          <div class="col-auto pt-0 pb-2 mr-3"><a class="text-white" href="#"><i class="fab fa-facebook"></i>Facebook</a></div>
+          <div class="col-auto pt-0 pb-2 mr-3"><a class="text-white" href="#"><i class="fab fa-reddit"></i>Reddit</a></div>
+          <div class="col-auto pt-0 pb-2 mr-3"><a class="text-white" href="#"><i class="fab fa-whatsapp"></i>WhatsApp</a></div>
+          <div class="col-auto pt-0 pb-2 mr-3"><a class="text-white" href="#"><i class="fab fa-tumblr"></i>Tumblr</a></div>
+      </div>
+      <p class="text-white small m-0">{{ _("These links are not an endorsement of social media. They are provided for your convenience.") }}</p>
     </div>
   </div>
 </div>
