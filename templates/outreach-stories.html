@@ -7,7 +7,7 @@
 {% for id, item in bag('story-categories').items() %}
 <div class="row">
   <div class="container text-center">
-    <a name="{{ id }}" />
+    <a name="{{ id }}" class="anchor"></a>
     <h2 class="text-primary text-center mx-auto my-3">{{ item.title }}</h2>
     <p>{{ item.description }}</p>
   </div>
