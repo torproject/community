@@ -13,6 +13,9 @@
     <div class="col-lg-3 px-3">
       <img class="mb-4" src="{{ this.attachments.images.get('portrait.png')|url }}" />
       <p class="font-italic">{{ _("{} is a pseudonym. This is an anonymous story submitted by a Tor user.").format(this.title) }}</p>
+      {%- for cat in this.category %}
+        <a class="btn btn-outline-primary small mt-3" href="../#{{ cat }}">{{ cat }}</a>
+      {%- endfor %}
     </div>
     <div class="col-lg-9" id="story-full">
       {{ this.body }}
