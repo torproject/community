@@ -26,28 +26,14 @@
     <div class="col">
       <p class="text-white" id="share-story-title">{{ _("Share this story on social media") }}</p>
       <div class="row mb-2" id="share-story-links">
-          <div class="col-auto pt-0 pb-2 mr-3"><a class="text-white copy-link" href="#"><i class="fas fa-link"></i>Copy link</a></div>
-          <div class="col-auto pt-0 pb-2 mr-3">
-            <a class="text-white" target="blank" rel="noreferrer" href="https://twitter.com/intent/tweet?url={{ share_url|urlencode }}&text={{ share_text|urlencode }}"><i class="fab fa-twitter"></i>Twitter</a>
-          </div>
-          <div class="col-auto pt-0 pb-2 mr-3">
-            <a class="text-white mastodon-share" target="blank" rel="noreferrer" href="https://mastodonshare.com/?url={{ share_url|urlencode }}&text={{ share_text|urlencode }}"><i class="fab fa-mastodon"></i>Mastodon</a>
-          </div>
-          <div class="col-auto pt-0 pb-2 mr-3">
-            <a class="text-white" target="blank" rel="noreferrer" href="https://t.me/share/url?url={{ share_url|urlencode }}&text={{ share_text|urlencode }}"><i class="fab fa-telegram"></i>Telegram</a>
-          </div>
-          <div class="col-auto pt-0 pb-2 mr-3">
-            <a class="text-white" target="blank" rel="noreferrer" href="http://www.facebook.com/share.php?u={{ share_url|urlencode }}"><i class="fab fa-facebook"></i>Facebook</a>
-          </div>
-          <div class="col-auto pt-0 pb-2 mr-3">
-            <a class="text-white reddit-share" target="blank" rel="noreferrer" href="https://www.reddit.com/r/privacy/submit?title={{ share_title|urlencode }}&url={{ share_url|urlencode }}"><i class="fab fa-reddit"></i>Reddit</a>
-          </div>
-          <div class="col-auto pt-0 pb-2 mr-3">
-            <a class="text-white" target="blank" rel="noreferrer" href="https://api.whatsapp.com/send?text={{ share_message|urlencode }}"><i class="fab fa-whatsapp"></i>WhatsApp</a>
-          </div>
-          <div class="col-auto pt-0 pb-2 mr-3">
-            <a class="text-white" target="blank" rel="noreferrer" href="https://tumblr.com/widgets/share/tool?canonicalUrl={{ share_url|urlencode }}"><i class="fab fa-tumblr"></i>Tumblr</a>
-          </div>
+          <a class="col-auto pt-0 pb-2 mr-3 text-white copy-link" href="#"><i class="fas fa-link"></i>Copy link</a>
+            <a class="text-white col-auto pt-0 pb-2 mr-3" target="blank" rel="noreferrer" href="https://twitter.com/intent/tweet?url={{ share_url|urlencode }}&text={{ share_text|urlencode }}"><i class="fab fa-twitter"></i>Twitter</a>
+            <a class="col-auto pt-0 pb-2 mr-3 text-white mastodon-share" target="blank" rel="noreferrer" href="https://mastodonshare.com/?url={{ share_url|urlencode }}&text={{ share_text|urlencode }}"><i class="fab fa-mastodon"></i>Mastodon</a>
+            <a class="col-auto pt-0 pb-2 mr-3 text-white" target="blank" rel="noreferrer" href="https://t.me/share/url?url={{ share_url|urlencode }}&text={{ share_text|urlencode }}"><i class="fab fa-telegram"></i>Telegram</a>
+            <a class="col-auto pt-0 pb-2 mr-3 text-white" target="blank" rel="noreferrer" href="http://www.facebook.com/share.php?u={{ share_url|urlencode }}"><i class="fab fa-facebook"></i>Facebook</a>
+            <a class="col-auto pt-0 pb-2 mr-3 text-white reddit-share" target="blank" rel="noreferrer" href="https://www.reddit.com/r/privacy/submit?title={{ share_title|urlencode }}&url={{ share_url|urlencode }}"><i class="fab fa-reddit"></i>Reddit</a>
+            <a class="col-auto pt-0 pb-2 mr-3 text-white" target="blank" rel="noreferrer" href="https://api.whatsapp.com/send?text={{ share_message|urlencode }}"><i class="fab fa-whatsapp"></i>WhatsApp</a>
+            <a class="col-auto pt-0 pb-2 mr-3 text-white" target="blank" rel="noreferrer" href="https://tumblr.com/widgets/share/tool?canonicalUrl={{ share_url|urlencode }}"><i class="fab fa-tumblr"></i>Tumblr</a>
       </div>
       <p class="text-white small m-0">{{ _("These links are not an endorsement of social media. They are provided for your convenience.") }}</p>
     </div>
