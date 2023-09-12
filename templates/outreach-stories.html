@@ -4,15 +4,17 @@
     {{ this.body }}
   </div>
 </div>
+{% for id, item in bag('story-categories').items() %}
 <div class="row">
   <div class="container text-center">
-    <h2 class="text-primary text-center mx-auto my-3">Consumer privacy</h2>
-    <p>These real people using Tor to improve their privacy and protect themselves from companies and governments snooping on their data and learning about their behavior.</p>
+    <a name="{{ id }}" />
+    <h2 class="text-primary text-center mx-auto my-3">{{ item.title }}</h2>
+    <p>{{ item.description }}</p>
   </div>
 </div>
 <div class="container py-3 story-cards">
   <div class="row flex-nowrap">
-{% for child in this.children.filter(F.category == "consumer-privacy").all() %}
+{% for child in this.children.filter(F.category.contains(id)).all() %}
       <div class="col mx-auto my-3">
         <div class="card h-100 p-3">
             <img class="mx-auto" src="{{ child.attachments.images.get('portrait.png')|url }}" />
@@ -24,3 +26,4 @@
 {% endfor %}
   </div>
 </div>
+{% endfor %}
