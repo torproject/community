@@ -1,4 +1,13 @@
 {% include 'breadcrumb.html' %}
+{% set share_url = this.path|url(alt=this.alt,external=true) %}
+{% set share_title = _("{}'s Story").format(this.title) %}
+{% set share_text = _("Here's the story of {} showing the importance of encryption.").format(this.title) %}
+{% set share_message = _("Check out this story about the importance of encryption: {}").format(share_url) %}
+<meta property="og:url" content="{{ share_url }}" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="{{ share_title }}" />
+<meta property="og:description" content="{{ share_text }}" />
+<meta property="og:image" content="{{ this.attachments.images.get('portrait.png')|url(external=true) }}" />
 <div class="container">
   <div class="row py-5">
     <div class="col-lg-3 px-3">
@@ -14,16 +23,64 @@
     <div class="col">
       <p class="text-white" id="share-story-title">{{ _("Share this story on social media") }}</p>
       <div class="row mb-2" id="share-story-links">
-          <div class="col-auto pt-0 pb-2 mr-3"><a class="text-white" href="#"><i class="fas fa-link"></i>Copy link</a></div>
-          <div class="col-auto pt-0 pb-2 mr-3"><a class="text-white" href="#"><i class="fab fa-twitter"></i>Twitter</a></div>
-          <div class="col-auto pt-0 pb-2 mr-3"><a class="text-white" href="#"><i class="fab fa-mastodon"></i>Mastodon</a></div>
-          <div class="col-auto pt-0 pb-2 mr-3"><a class="text-white" href="#"><i class="fab fa-telegram"></i>Telegram</a></div>
-          <div class="col-auto pt-0 pb-2 mr-3"><a class="text-white" href="#"><i class="fab fa-facebook"></i>Facebook</a></div>
-          <div class="col-auto pt-0 pb-2 mr-3"><a class="text-white" href="#"><i class="fab fa-reddit"></i>Reddit</a></div>
-          <div class="col-auto pt-0 pb-2 mr-3"><a class="text-white" href="#"><i class="fab fa-whatsapp"></i>WhatsApp</a></div>
-          <div class="col-auto pt-0 pb-2 mr-3"><a class="text-white" href="#"><i class="fab fa-tumblr"></i>Tumblr</a></div>
+          <div class="col-auto pt-0 pb-2 mr-3"><a class="text-white copy-link" href="#"><i class="fas fa-link"></i>Copy link</a></div>
+          <div class="col-auto pt-0 pb-2 mr-3">
+            <a class="text-white" target="blank" rel="noreferrer" href="https://twitter.com/intent/tweet?url={{ share_url }}&text={{ share_text|urlencode }}"><i class="fab fa-twitter"></i>Twitter</a>
+          </div>
+          <div class="col-auto pt-0 pb-2 mr-3">
+            <a class="text-white mastodon-share" target="blank" rel="noreferrer" href="https://mastodonshare.com/?url={{ share_url }}&text={{ share_text|urlencode }}"><i class="fab fa-mastodon"></i>Mastodon</a>
+          </div>
+          <div class="col-auto pt-0 pb-2 mr-3">
+            <a class="text-white" target="blank" rel="noreferrer" href="https://t.me/share/url?url={{ share_url }}&text={{ share_text|urlencode }}"><i class="fab fa-telegram"></i>Telegram</a>
+          </div>
+          <div class="col-auto pt-0 pb-2 mr-3">
+            <a class="text-white" target="blank" rel="noreferrer" href="http://www.facebook.com/share.php?u={{ share_url }}"><i class="fab fa-facebook"></i>Facebook</a>
+          </div>
+          <div class="col-auto pt-0 pb-2 mr-3">
+            <a class="text-white reddit-share" target="blank" rel="noreferrer" href="https://www.reddit.com/r/privacy/submit?title={{ share_title|urlencode }}&url={{ share_url }}"><i class="fab fa-reddit"></i>Reddit</a>
+          </div>
+          <div class="col-auto pt-0 pb-2 mr-3">
+            <a class="text-white" target="blank" rel="noreferrer" href="https://api.whatsapp.com/send?text={{ share_message|urlencode }}"><i class="fab fa-whatsapp"></i>WhatsApp</a>
+          </div>
+          <div class="col-auto pt-0 pb-2 mr-3">
+            <a class="text-white" target="blank" rel="noreferrer" href="https://tumblr.com/widgets/share/tool?canonicalUrl={{ share_url|urlencode }}"><i class="fab fa-tumblr"></i>Tumblr</a>
+          </div>
       </div>
       <p class="text-white small m-0">{{ _("These links are not an endorsement of social media. They are provided for your convenience.") }}</p>
     </div>
   </div>
 </div>
+<script type="text/javascript">
+// copy current page link to clipboard
+const copy_link = document.querySelector('.copy-link');
+copy_link.addEventListener('click', (e) => {
+  e.preventDefault();
+  let url = '{{ share_url }}'
+  navigator.clipboard.writeText(url).then(function() {});
+});
+// share to Mastodon, prompt for user's instance
+const mastodon_link = document.querySelector('.mastodon-share');
+mastodon_link.addEventListener('click', (e) => {
+  let instance = window.prompt(
+    'Please enter your Mastodon instance',
+    'mastodon.social'
+  );
+  if (!instance) {
+    e.preventDefault();
+  } else {
+    mastodon_link.href = 'https://' + instance + '/share?url={{ share_url|urlencode }}';
+  }
+});
+// share to Reddit, prompt for subreddit
+const reddit_link = document.querySelector('.reddit-share');
+reddit_link.addEventListener('click', (e) => {
+  let subreddit = window.prompt(
+    'Please enter the name of the subreddit'
+  );
+  if (!subreddit) {
+    e.preventDefault();
+  } else {
+    reddit_link.href = 'https://www.reddit.com/r/' + subreddit + '/submit?title={{ share_title|urlencode }}&url={{ share_url }}';
+  }
+});
+</script>
