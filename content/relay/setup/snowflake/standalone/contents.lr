@@ -49,7 +49,7 @@ Please login using a user account with `sudo` rights or directly with `root` (in
 If you are running Ubuntu or Debian, you can install Go by executing `sudo apt install golang`.
 If you are using Fedora, Red Hat or Amazon Linux with `sudo yum install golang` or `sudo dnf install golang`. 
 Otherwise visit https://golang.org/dl/.
-You will need Go 1.20 or newer to run the Snowflake proxy.
+You will need Go 1.21 or newer to run the Snowflake proxy.
 You can check your installed version using the command `go version`.
 
 2. Second you need the git client to download the Snowflake source code.
