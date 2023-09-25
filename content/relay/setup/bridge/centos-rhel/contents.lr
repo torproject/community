@@ -145,7 +145,7 @@ To confirm your bridge is running with no issues, you should see something like 
 [notice] Self-testing indicates your ORPort is reachable from the outside. Excellent. Publishing server descriptor.
 ```
 
-### 9 Final Notes
+### 9. Final Notes
 
 If you are having trouble setting up your bridge, have a look at [our help section](../../../getting-help/).
 If your bridge is now running, check out the [post-install notes](../post-install/).
