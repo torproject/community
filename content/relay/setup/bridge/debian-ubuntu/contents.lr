@@ -72,13 +72,47 @@ Nickname PickANickname
 
 Don't forget to change the `ORPort`, `ServerTransportListenAddr`, `ContactInfo`, and `Nickname` options.
 
-* If you decide to use a fixed obfs4 port smaller than 1024 (for example 80 or 443), you will need to give obfs4 `CAP_NET_BIND_SERVICE` capabilities to bind the port with a non-root user:
+Note that both Tor's OR port and its obfs4 port must be reachable. If your bridge is behind a firewall or NAT, make sure to open both ports. You can use our [reachability test](https://bridges.torproject.org/scan/) to see if your obfs4 port is reachable from the Internet.
 
-`sudo setcap cap_net_bind_service=+ep /usr/bin/obfs4proxy`
+#### (Optional) Configure systemd to allow obfs4 binding on privileged ports
 
-To work around systemd hardening, you will also need to set `NoNewPrivileges=no` in `/lib/systemd/system/tor@default.service` and `/lib/systemd/system/tor@.service` and then run `systemctl daemon-reload`. For more details, see [ticket 18356](https://gitlab.torproject.org/tpo/core/tor/-/issues/18356).
+If you decide to use a fixed obfs4 port smaller than 1024 (for example 80 or 443), you will need to configure systemd and give obfs4 `CAP_NET_BIND_SERVICE` capabilities to bind the port with a non-root user:
 
-* Note that both Tor's OR port and its obfs4 port must be reachable. If your bridge is behind a firewall or NAT, make sure to open both ports. You can use our [reachability test](https://bridges.torproject.org/scan/) to see if your obfs4 port is reachable from the Internet.
+```
+sudo setcap cap_net_bind_service=+ep /usr/bin/obfs4proxy
+```
+
+To work around systemd hardening, you will also need to edit and change the configuration.
+
+Run the command:
+
+```
+sudo systemctl edit tor@.service tor@default.service
+```
+
+In the editor, enter the following text, then save and quit.
+
+```
+[Service]
+NoNewPrivileges=no
+```
+
+In the second editor that appears, enter the same text, then save and quit.
+
+```
+[Service]
+NoNewPrivileges=no
+```
+
+If everything worked correctly, you will now have two files `/etc/systemd/system/tor@.service.d/override.conf` and `/etc/systemd/system/tor@default.service.d/override.conf` containing the text you entered. 
+
+Now restart tor service:
+
+```
+sudo service tor restart
+```
+There is no need to run `systemctl daemon-reload` because `systemctl edit` does it automatically.
+For more details, see [ticket 18356](https://gitlab.torproject.org/tpo/core/tor/-/issues/18356).
 
 ### 6. Restart Tor
 
