@@ -105,6 +105,6 @@ subtitle: How to deploy an obfs4 bridge on Void Linux
 ---
 _template: layout.html
 ---
-section: bridge
+section: Bridge
 ---
 section_id: bridge

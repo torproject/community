@@ -97,6 +97,6 @@ subtitle: How to deploy an obfs4 bridge on OpenSUSE
 ---
 _template: layout.html
 ---
-section: bridge
+section: Bridge
 ---
 section_id: bridge

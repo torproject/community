@@ -79,7 +79,7 @@ Correct time settings are essential for Tor relays. It is recommended that you u
 ---
 html: two-columns-page.html
 ---
-section: relay operations
+section: Relay Operations
 ---
 section_id: relay-operations
 ---
