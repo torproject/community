@@ -27,4 +27,4 @@ for country in isp_list.copy():
         isp_list[country][index]["cw_fraction"] = cw_fraction
 
 with open("databags/good-bad-isps.json", "w") as file:
-    json.dump(isp_list, file)
+    json.dump(isp_list, file, indent=2)
