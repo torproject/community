@@ -105,7 +105,7 @@ These hosts already have many Tor nodes being hosted there.
 | [Creanova](https://creanova.org) | AS51765 | Yes | Yes | No | - | 12/19/2018 |
 | [TeliaSonera Finland](https://www.sonera.fi/) | AS1759 | Yes | Yes | No | - | 03/26/2016 |
 | [Privex](https://www.privex.io/tor-exit-policy/) | AS210083 | Yes | Yes | No | All node types permitted in Sweden, relays/bridges permitted in other regions. Tor friendly hosting provider who runs 3 relays and an exit themselves. Requires cryptocurrency to buy a server. | 06/2022 |
-
+| [Njalla](https://njal.la/) | AS39287 | Yes | Yes | Yes | Privacy-focused, own domains on users' behalf, ensuring anonymity from central entities like ICANN, accept cryptocurrencies, and forward all abuse reports. | 30/10/2023 |
 
 ### Germany
 
