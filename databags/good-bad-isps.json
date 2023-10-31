@@ -20,7 +20,7 @@
       "exit": "Yes",
       "comment": "",
       "last_updated": "04/2023",
-      "cw_fraction": "0.33%"
+      "cw_fraction": "0.36%"
     },
     {
       "name": "A1(former Telekom Austria)",
@@ -31,7 +31,7 @@
       "exit": "No",
       "comment": "Does not like Abuse (in any form) at all. Seems to give out customer data at alleged abuse. Not recommended but cheap.",
       "last_updated": "12/2011",
-      "cw_fraction": "0.0%"
+      "cw_fraction": "0.01%"
     }
   ],
   "Bulgaria": [
@@ -44,7 +44,7 @@
       "exit": "Yes",
       "comment": "They don't collect any personal info and you can pay in bitcoin.",
       "last_updated": "01/11/2016",
-      "cw_fraction": "0.07%"
+      "cw_fraction": "0.06%"
     },
     {
       "name": "G-Core Labs",
@@ -55,7 +55,7 @@
       "exit": "No",
       "comment": "They don't allow exits and will suspend your active services and restrict your access to the account if they receive abuse messages. KVM VPS. IPv4+IPv6 native support. * Gnu/Linux, FreeBSD and Windows server supported. Unmetered traffic.",
       "last_updated": "06/2022",
-      "cw_fraction": "0.14%"
+      "cw_fraction": "0.39%"
     }
   ],
   "Canada": [
@@ -101,7 +101,7 @@
       "exit": "No",
       "comment": "They allow running Tor relay but not Tor Exit.",
       "last_updated": "-",
-      "cw_fraction": "0.12%"
+      "cw_fraction": "0.14%"
     }
   ],
   "Chile": [
@@ -140,7 +140,7 @@
       "exit": "Yes",
       "comment": "You can run anything you want as long (tor nodes are specifically allowed) as it's not a spam relay, botnet controller, they are pretty flexible regarding the packages they offer and will give a few days to test them before deciding. IPv6 is available (you have to ask) and the customer support is really helpful and will go the extra mile to help you. You will also be warned first if you do something wrong so you have a chance to fix it and warned again and again... The servers are pretty fast and there's usually discount codes available. They don't collect any personal info and you can pay in crypto.",
       "last_updated": "06/2022",
-      "cw_fraction": "0.08%"
+      "cw_fraction": "0.07%"
     }
   ],
   "Czech Republic": [
@@ -164,7 +164,7 @@
       "exit": "Yes",
       "comment": "",
       "last_updated": "04/2023",
-      "cw_fraction": "0.33%"
+      "cw_fraction": "0.36%"
     }
   ],
   "France": [
@@ -177,7 +177,7 @@
       "exit": "Yes",
       "comment": "The account holder is responsible for all the traffic going through theirs servers.",
       "last_updated": "01/28/2019",
-      "cw_fraction": "2.4%"
+      "cw_fraction": "2.36%"
     },
     {
       "name": "Gandi VPS",
@@ -199,7 +199,7 @@
       "exit": "No",
       "comment": "Unmetered bandwidth @ 100mbps - \"I will gladly explain this situation for you. Running a Tor exit node is strictly forbidden and can lead to the suspension and even termination of your server and account.\" Locations: FR,CA",
       "last_updated": "09/27/2021",
-      "cw_fraction": "16.56%"
+      "cw_fraction": "17.03%"
     },
     {
       "name": "Digicube",
@@ -221,7 +221,7 @@
       "exit": "Yes",
       "comment": "VPS uses OVH AS. You can build ANY kind tor relays.",
       "last_updated": "09/27/2021",
-      "cw_fraction": "16.56%"
+      "cw_fraction": "17.03%"
     }
   ],
   "Finland": [
@@ -234,7 +234,7 @@
       "exit": "No",
       "comment": "-",
       "last_updated": "12/19/2018",
-      "cw_fraction": "0.03%"
+      "cw_fraction": "0.04%"
     },
     {
       "name": "TeliaSonera Finland",
@@ -257,6 +257,17 @@
       "comment": "All node types permitted in Sweden, relays/bridges permitted in other regions. Tor friendly hosting provider who runs 3 relays and an exit themselves. Requires cryptocurrency to buy a server.",
       "last_updated": "06/2022",
       "cw_fraction": "0.04%"
+    },
+    {
+      "name": "Njalla",
+      "url": "https://njal.la/",
+      "asn": "AS39287",
+      "bridge": "Yes",
+      "relay": "Yes",
+      "exit": "Yes",
+      "comment": "Privacy-focused, own domains on users' behalf, ensuring anonymity from central entities like ICANN, accept cryptocurrencies, and forward all abuse reports.",
+      "last_updated": "30/10/2023",
+      "cw_fraction": "0.0%"
     }
   ],
   "Germany": [
@@ -269,7 +280,7 @@
       "exit": "Yes",
       "comment": "\"Relays only allowed on dedicated Servers Prime64 and Pro64, Exit nodes only allowed on Prime64 and Pro64 with Pro-Option, own subnet, RIPE entry along with publicly visible abuse and police contact.\"",
       "last_updated": "03/2021",
-      "cw_fraction": "0.19%"
+      "cw_fraction": "0.21%"
     },
     {
       "name": "Keyweb",
@@ -280,7 +291,7 @@
       "exit": "Yes",
       "comment": "\"Everything that is in accordance with current jurisprudence is permitted on our servers.\"",
       "last_updated": "03/2021",
-      "cw_fraction": "0.07%"
+      "cw_fraction": "0.09%"
     },
     {
       "name": "Privex",
@@ -313,7 +324,7 @@
       "exit": "No",
       "comment": "-",
       "last_updated": "2018-10-25",
-      "cw_fraction": "1.0%"
+      "cw_fraction": "0.96%"
     },
     {
       "name": "linevast",
@@ -346,7 +357,7 @@
       "exit": "Yes",
       "comment": "Offers good dedicated root servers for a good price. Unmetered bandwidth on dedicated servers, 20tb on vps. \"It is not a Problem, however, abuse reports can lead to a server lock\" Locations: DE,FI",
       "last_updated": "09/27/2021",
-      "cw_fraction": "9.47%"
+      "cw_fraction": "10.06%"
     },
     {
       "name": "Contabo",
@@ -357,7 +368,7 @@
       "exit": "No",
       "comment": "\"The Provider is entitled to immediately block any webspace packages and servers that are being used to operate the \u201cTOR\u201d service, insofar as the Provider has become aware that the server or package is being used unlawfully.\"",
       "last_updated": "07/2022",
-      "cw_fraction": "0.81%"
+      "cw_fraction": "0.98%"
     },
     {
       "name": "Strato",
@@ -368,7 +379,7 @@
       "exit": "No",
       "comment": "-",
       "last_updated": "03/2021",
-      "cw_fraction": "0.47%"
+      "cw_fraction": "0.66%"
     },
     {
       "name": "PraHost",
@@ -390,7 +401,7 @@
       "exit": "Yes",
       "comment": "Only allowed on jiffybox",
       "last_updated": "03/2021",
-      "cw_fraction": "0.02%"
+      "cw_fraction": "0.03%"
     },
     {
       "name": "NetCologne",
@@ -401,7 +412,7 @@
       "exit": "Yes",
       "comment": "-",
       "last_updated": "-",
-      "cw_fraction": "0.0%"
+      "cw_fraction": "0.01%"
     },
     {
       "name": "Signaltransmitter",
@@ -412,7 +423,7 @@
       "exit": "Yes",
       "comment": "\"In principle, we do not limit our services apart from mining bitcoins\"",
       "last_updated": "03/2021",
-      "cw_fraction": "1.0%"
+      "cw_fraction": "0.96%"
     },
     {
       "name": "Netcup",
@@ -423,7 +434,7 @@
       "exit": "Yes",
       "comment": "40-120TB bandwidth - Tor exit nodes allowed on VPS and rootservers - \"Yes, it is. Everything is allowed that the T&Cs do not exclude.\"",
       "last_updated": "09/27/2021",
-      "cw_fraction": "5.38%"
+      "cw_fraction": "4.94%"
     },
     {
       "name": "Onyxhosting",
@@ -511,7 +522,7 @@
       "exit": "Yes",
       "comment": "\"Usually this leads to abuse mails, which only cause trouble \u2013 but basically we have nothing against it\"",
       "last_updated": "03/2021",
-      "cw_fraction": "0.0%"
+      "cw_fraction": "0.02%"
     },
     {
       "name": "UltraVPS",
@@ -533,7 +544,7 @@
       "exit": "No",
       "comment": "They don't allow exits and will suspend your active services and restrict your access to the account if they receive abuse messages. KVM VPS. IPv4+IPv6 native support. * Gnu/Linux, FreeBSD and Windows server supported. Unmetered traffic.",
       "last_updated": "06/2022",
-      "cw_fraction": "0.14%"
+      "cw_fraction": "0.39%"
     },
     {
       "name": "Venocix",
@@ -544,7 +555,7 @@
       "exit": "?",
       "comment": "Running relay since 3 months without problems. Traffic is \"fair use\" and speed got limited after 10TB of traffic.",
       "last_updated": "07/2022",
-      "cw_fraction": "0.04%"
+      "cw_fraction": "0.07%"
     },
     {
       "name": "V.PS",
@@ -568,7 +579,7 @@
       "exit": "No",
       "comment": "-",
       "last_updated": "-",
-      "cw_fraction": "0.01%"
+      "cw_fraction": "0.02%"
     },
     {
       "name": "G-Core Labs",
@@ -579,7 +590,7 @@
       "exit": "No",
       "comment": "They don't allow exits and will suspend your active services and restrict your access to the account if they receive abuse messages. KVM VPS. IPv4+IPv6 native support. * Gnu/Linux, FreeBSD and Windows server supported. Unmetered traffic.",
       "last_updated": "06/2022",
-      "cw_fraction": "0.14%"
+      "cw_fraction": "0.39%"
     }
   ],
   "Hungary": [
@@ -592,7 +603,7 @@
       "exit": "Yes",
       "comment": "",
       "last_updated": "04/2023",
-      "cw_fraction": "0.33%"
+      "cw_fraction": "0.36%"
     },
     {
       "name": "ServerAstra",
@@ -603,7 +614,7 @@
       "exit": "Yes",
       "comment": "They only say you should answer abuse requests in 24h. ISP has re-confirmed by e-mail that exit nodes are acceptable, with \"strict\" exit node policies.",
       "last_updated": "2014-10-15",
-      "cw_fraction": "0.14%"
+      "cw_fraction": "0.12%"
     },
     {
       "name": "G-Core Labs",
@@ -614,7 +625,7 @@
       "exit": "No",
       "comment": "They don't allow exits and will suspend your active services and restrict your access to the account if they receive abuse messages. KVM VPS. IPv4+IPv6 native support. * Gnu/Linux, FreeBSD and Windows server supported. Unmetered traffic.",
       "last_updated": "06/2022",
-      "cw_fraction": "0.14%"
+      "cw_fraction": "0.39%"
     },
     {
       "name": "ATW",
@@ -638,7 +649,7 @@
       "exit": "Yes",
       "comment": "-",
       "last_updated": "-",
-      "cw_fraction": "0.18%"
+      "cw_fraction": "0.21%"
     },
     {
       "name": "FlokiNET",
@@ -649,7 +660,7 @@
       "exit": "Yes",
       "comment": "Sponsor enn.lu and saveyourprivacy exit nodes",
       "last_updated": "-",
-      "cw_fraction": "0.62%"
+      "cw_fraction": "0.56%"
     },
     {
       "name": "orangewebsite",
@@ -708,7 +719,7 @@
       "exit": "Yes",
       "comment": "TOS generically indicate that the operator is responsible for all the activities on the machine. [Read more](https://balist.es/blog/2016/04/18/running-a-tor-exit-node-on-aruba-arubacloud-a-detailed-account/)",
       "last_updated": "-",
-      "cw_fraction": "0.02%"
+      "cw_fraction": "0.03%"
     },
     {
       "name": "SelfServer by Enter",
@@ -741,7 +752,7 @@
       "exit": "No",
       "comment": "They don't allow exits and will suspend your active services and restrict your access to the account if they receive abuse messages. KVM VPS. IPv4+IPv6 native support. * Gnu/Linux, FreeBSD and Windows server supported. Unmetered traffic.",
       "last_updated": "06/2022",
-      "cw_fraction": "0.14%"
+      "cw_fraction": "0.39%"
     }
   ],
   "Latvia": [
@@ -802,7 +813,7 @@
       "exit": "Yes",
       "comment": "New Tor rules [here](https://buyvm.net/acceptable-use-policy/#3). All relays are fine if you follow the steps. Notices are ignored. Unmetered bandwidth.",
       "last_updated": "09/27/2021",
-      "cw_fraction": "2.49%"
+      "cw_fraction": "2.36%"
     },
     {
       "name": "G-Core Labs",
@@ -813,7 +824,7 @@
       "exit": "No",
       "comment": "They don't allow exits and will suspend your active services and restrict your access to the account if they receive abuse messages. KVM VPS. IPv4+IPv6 native support. * Gnu/Linux, FreeBSD and Windows server supported. Unmetered traffic.",
       "last_updated": "06/2022",
-      "cw_fraction": "0.14%"
+      "cw_fraction": "0.39%"
     }
   ],
   "Mexico": [],
@@ -838,7 +849,7 @@
       "exit": "No",
       "comment": "Unmetered bandwidth @ 100mbps \"Tor exit relay is strictly forbidden on our company's servers\"",
       "last_updated": "04/2023",
-      "cw_fraction": "0.1%"
+      "cw_fraction": "0.11%"
     },
     {
       "name": "Trabia",
@@ -849,7 +860,7 @@
       "exit": "Yes",
       "comment": "-",
       "last_updated": "01/05/23",
-      "cw_fraction": "0.11%"
+      "cw_fraction": "0.12%"
     },
     {
       "name": "G-Core Labs",
@@ -860,7 +871,7 @@
       "exit": "No",
       "comment": "They don't allow exits and will suspend your active services and restrict your access to the account if they receive abuse messages. KVM VPS. IPv4+IPv6 native support. * Gnu/Linux, FreeBSD and Windows server supported. Unmetered traffic.",
       "last_updated": "06/2022",
-      "cw_fraction": "0.14%"
+      "cw_fraction": "0.39%"
     }
   ],
   "Netherlands": [
@@ -873,7 +884,7 @@
       "exit": "Yes",
       "comment": "Use the Netherlands server for exit nodes, middle nodes can be ran on all servers",
       "last_updated": "05/25/22",
-      "cw_fraction": "0.25%"
+      "cw_fraction": "0.22%"
     },
     {
       "name": "XS4ALL",
@@ -895,7 +906,7 @@
       "exit": "No",
       "comment": "-",
       "last_updated": "05/01/16",
-      "cw_fraction": "0.06%"
+      "cw_fraction": "0.07%"
     },
     {
       "name": "Ziggo",
@@ -917,7 +928,7 @@
       "exit": "Yes",
       "comment": "Can pay with Bitcoin. While their AUP doesn't allow tor exit nodes (see [here](https://www.liteserver.nl/en/acceptable-usage-policy/)), they make an exception if your exit-node has a reduced exit policy. And you must leave a note to them that you are running a exit-node. \"We allow tor exit nodes as long you run a limited exit policy (block SMTP) to avoid abuse.",
       "last_updated": "12/26/2018",
-      "cw_fraction": "0.5%"
+      "cw_fraction": "0.41%"
     },
     {
       "name": "i3D",
@@ -950,7 +961,7 @@
       "exit": "No",
       "comment": "-",
       "last_updated": "02/06/2019",
-      "cw_fraction": "0.27%"
+      "cw_fraction": "0.25%"
     },
     {
       "name": "LeaseWeb",
@@ -961,7 +972,7 @@
       "exit": "Yes",
       "comment": "-",
       "last_updated": "-",
-      "cw_fraction": "0.29%"
+      "cw_fraction": "0.25%"
     },
     {
       "name": "Novogara",
@@ -983,7 +994,7 @@
       "exit": "No",
       "comment": "ISP has confirmed by e-mail that exit nodes are NOT acceptable.",
       "last_updated": "2014-10-15",
-      "cw_fraction": "0.01%"
+      "cw_fraction": "0.02%"
     },
     {
       "name": "DirectVPS",
@@ -1049,7 +1060,7 @@
       "exit": "Yes",
       "comment": "You need to host a page on port 80 explaining that the server is a Tor Exit and use their reduced exit policy https://incognet.io/tor-exits",
       "last_updated": "04/2023",
-      "cw_fraction": "0.51%"
+      "cw_fraction": "0.44%"
     },
     {
       "name": "Freedom Internet",
@@ -1060,7 +1071,7 @@
       "exit": "?",
       "comment": "",
       "last_updated": "2022-06-05",
-      "cw_fraction": "0.03%"
+      "cw_fraction": "0.06%"
     },
     {
       "name": "G-Core Labs",
@@ -1071,7 +1082,7 @@
       "exit": "No",
       "comment": "They don't allow exits and will suspend your active services and restrict your access to the account if they receive abuse messages. KVM VPS. IPv4+IPv6 native support. * Gnu/Linux, FreeBSD and Windows server supported. Unmetered traffic.",
       "last_updated": "06/2022",
-      "cw_fraction": "0.14%"
+      "cw_fraction": "0.39%"
     },
     {
       "name": "VPSslim",
@@ -1130,7 +1141,7 @@
       "exit": "Yes",
       "comment": "Check the requirements for running a Tor exit node with them first https://terrahost.no/avtalebetingelser. May require a photo of an ID card or passport for account creation. Unmetered traffic.",
       "last_updated": "06/2022",
-      "cw_fraction": "0.94%"
+      "cw_fraction": "0.89%"
     }
   ],
   "Poland": [
@@ -1264,7 +1275,7 @@
       "exit": "No",
       "comment": "They don't allow exits and will suspend your active services and restrict your access to the account if they receive abuse messages. KVM VPS. IPv4+IPv6 native support. * Gnu/Linux, FreeBSD and Windows server supported. Unmetered traffic.",
       "last_updated": "06/2022",
-      "cw_fraction": "0.14%"
+      "cw_fraction": "0.39%"
     },
     {
       "name": "HOSTIKO",
@@ -1288,7 +1299,7 @@
       "exit": "Yes",
       "comment": "",
       "last_updated": "04/2023",
-      "cw_fraction": "0.33%"
+      "cw_fraction": "0.36%"
     },
     {
       "name": "Voxility",
@@ -1299,7 +1310,7 @@
       "exit": "?",
       "comment": "Read more [2015 tor-talk thread](https://lists.torproject.org/pipermail/tor-relays/2015-April/006867.html%7CApril)",
       "last_updated": "04/2015",
-      "cw_fraction": "0.08%"
+      "cw_fraction": "0.06%"
     },
     {
       "name": "JavaPipe",
@@ -1332,7 +1343,7 @@
       "exit": "No",
       "comment": "They don't allow exits and will suspend your active services and restrict your access to the account if they receive abuse messages. KVM VPS. IPv4+IPv6 native support. * Gnu/Linux, FreeBSD and Windows server supported. Unmetered traffic.",
       "last_updated": "06/2022",
-      "cw_fraction": "0.14%"
+      "cw_fraction": "0.39%"
     },
     {
       "name": "iHostArt",
@@ -1367,7 +1378,7 @@
       "exit": "No",
       "comment": "-",
       "last_updated": "2016/05",
-      "cw_fraction": "0.06%"
+      "cw_fraction": "0.07%"
     },
     {
       "name": "PRQ",
@@ -1400,7 +1411,7 @@
       "exit": "Yes",
       "comment": "Previously provided connectivity for ThePirateBay, OpenBitTorrent tracker et al.  Handles abuse according to \"Swedish praxis\".",
       "last_updated": "-",
-      "cw_fraction": "0.06%"
+      "cw_fraction": "0.07%"
     },
     {
       "name": "Yourserver",
@@ -1422,7 +1433,7 @@
       "exit": "Yes",
       "comment": "They run an exit node themselves and write on their dedicated server page \"It is perfect for [...] TOR Exit Nodes\"",
       "last_updated": "04/2021",
-      "cw_fraction": "0.03%"
+      "cw_fraction": "0.02%"
     }
   ],
   "Switzerland": [
@@ -1494,7 +1505,7 @@
       "exit": "Yes",
       "comment": "free speech hoster, allows anything but spam/scam. Abuse always forwarded.",
       "last_updated": "10/08/2015",
-      "cw_fraction": "0.05%"
+      "cw_fraction": "0.06%"
     },
     {
       "name": "Colocall",
@@ -1516,7 +1527,7 @@
       "exit": "No",
       "comment": "They don't allow exits and will suspend your active services and restrict your access to the account if they receive abuse messages. KVM VPS. IPv4+IPv6 native support. * Gnu/Linux, FreeBSD and Windows server supported. Unmetered traffic.",
       "last_updated": "06/2022",
-      "cw_fraction": "0.14%"
+      "cw_fraction": "0.39%"
     },
     {
       "name": "Virtual Systems",
@@ -1608,7 +1619,7 @@
       "exit": "No",
       "comment": "Expensive bandwidth, you WILL be charged extra after reaching 15GB.",
       "last_updated": "09/27/2021",
-      "cw_fraction": "0.03%"
+      "cw_fraction": "0.04%"
     },
     {
       "name": "AmeriNOC",
@@ -1652,7 +1663,7 @@
       "exit": "Yes",
       "comment": "New Tor rules [here](https://buyvm.net/acceptable-use-policy/#3). All relays are fine if you follow the steps. Notices are ignored. Unmetered bandwidth.",
       "last_updated": "09/27/2021",
-      "cw_fraction": "2.49%"
+      "cw_fraction": "2.36%"
     },
     {
       "name": "Catalyst Host",
@@ -1685,7 +1696,7 @@
       "exit": "No",
       "comment": "To run an exit, you must be on a commercial subscription and must contact them first.",
       "last_updated": "3/2022",
-      "cw_fraction": "0.05%"
+      "cw_fraction": "0.08%"
     },
     {
       "name": "ChunkHost",
@@ -1718,7 +1729,7 @@
       "exit": "Yes",
       "comment": "AUP [here](https://dataideas.com/acceptable-use-policy.html). Notices are ignored. Unmetered bandwidth.",
       "last_updated": "04/13/2023",
-      "cw_fraction": "0.19%"
+      "cw_fraction": "0.18%"
     },
     {
       "name": "Datawagon",
@@ -1729,7 +1740,7 @@
       "exit": "Yes",
       "comment": "Customers are forwarded abuse complaints to handle themselves",
       "last_updated": "03/06/19",
-      "cw_fraction": "0.18%"
+      "cw_fraction": "0.2%"
     },
     {
       "name": "DreamHost",
@@ -1740,7 +1751,7 @@
       "exit": "?",
       "comment": "-",
       "last_updated": "11/29/17",
-      "cw_fraction": "0.05%"
+      "cw_fraction": "0.04%"
     },
     {
       "name": "Evolucix",
@@ -1773,7 +1784,7 @@
       "exit": "No",
       "comment": "They are symphathetic, but do not want their IP space \"polluted\" by Tor abuse requests.",
       "last_updated": "10/2020",
-      "cw_fraction": "0.94%"
+      "cw_fraction": "0.76%"
     },
     {
       "name": "HostGator",
@@ -1795,7 +1806,7 @@
       "exit": "No",
       "comment": "-",
       "last_updated": "05/01/16",
-      "cw_fraction": "0.01%"
+      "cw_fraction": "0.05%"
     },
     {
       "name": "HostUS",
@@ -1828,7 +1839,7 @@
       "exit": "Yes",
       "comment": "You need to host a page on port 80 explaining that the server is a Tor Exit and use their reduced exit policy https://incognet.io/tor-exits",
       "last_updated": "04/2023",
-      "cw_fraction": "0.51%"
+      "cw_fraction": "0.44%"
     },
     {
       "name": "Linode",
@@ -1839,7 +1850,7 @@
       "exit": "Yes",
       "comment": "\"We allow Tor exits as long as they have a reduced exit policy.\" - I've used 10TB this month in total for all 3 of my exit nodes spread out in different locations. I've recieved 0 notices from Linode while using the free 100$ credits you get. I allow ports 53,80,443. My DE exit node is now the [2nd fastest](https://i.imgur.com/Owj6HkD.png) Linode relay, with UK third. I would recommend this host to use the free credits, but wouldn't really recommend paying as bandwidth is limited. Locations: US,CA,GB,DE,SG,JP,IN,AU",
       "last_updated": "10/07/2021",
-      "cw_fraction": "0.19%"
+      "cw_fraction": "0.24%"
     },
     {
       "name": "Luna Node",
@@ -1861,7 +1872,7 @@
       "exit": "No",
       "comment": "Offers generous free tier - 10TB free outbound bandwidth, I have ran a non exit relay for a few months with no problems, [as well as others](https://metrics.torproject.org/rs.html#search/as:AS31898). Note that they will terminate your account if you're suspicious and not provide reason, even on support chat, I've gotten an account banned simply for running a smokeping instance. (Pinging ip addresses to test network stability). Locations: US,CA,GB,DE,CH,NL,SA,UAE,BR,CL,JP,KR,AU,IN",
       "last_updated": "10/10/2021",
-      "cw_fraction": "1.27%"
+      "cw_fraction": "1.28%"
     },
     {
       "name": "OVHcloud",
@@ -1872,7 +1883,7 @@
       "exit": "No",
       "comment": "Unmetered bandwidth in non asia locations. - \"I will gladly explain this situation for you. Running a Tor exit node is strictly forbidden and can lead to the suspension and even termination of your server and account.\" Locations: US,CA,FR,DE,PL,GB,SG",
       "last_updated": "09/27/2021",
-      "cw_fraction": "16.56%"
+      "cw_fraction": "17.03%"
     },
     {
       "name": "Oplink.net",
@@ -1894,7 +1905,7 @@
       "exit": "Yes",
       "comment": "Very Exit friendly. Standard Tor response will resolve abuse issues.",
       "last_updated": "10/07/15",
-      "cw_fraction": "1.12%"
+      "cw_fraction": "0.51%"
     },
     {
       "name": "PulseServers",
@@ -1905,7 +1916,7 @@
       "exit": "Yes",
       "comment": "Exit-friendly.",
       "last_updated": "05/01/16",
-      "cw_fraction": "16.56%"
+      "cw_fraction": "17.03%"
     },
     {
       "name": "RamNode",
@@ -1960,7 +1971,7 @@
       "exit": "No",
       "comment": "The [acceptable use policy](https://www.astound.com/policies-disclaimers/acceptable-use-policy/) disallows \"servers\" and \"proxies\".",
       "last_updated": "04/13/23",
-      "cw_fraction": ""
+      "cw_fraction": "0.0%"
     },
     {
       "name": "SolarVPS",
@@ -2004,7 +2015,7 @@
       "exit": "No",
       "comment": "-",
       "last_updated": "-",
-      "cw_fraction": "0.14%"
+      "cw_fraction": "0.17%"
     },
     {
       "name": "PhoenixNap (Secured Servers)",
@@ -2026,7 +2037,7 @@
       "exit": "No",
       "comment": "When asked directly they will claim they do support Tor exits but will pull the rug out from under you later on. This has happened to at least two exit operators.",
       "last_updated": "-",
-      "cw_fraction": "0.17%"
+      "cw_fraction": "0.15%"
     },
     {
       "name": "ChicagoVPS",
@@ -2037,7 +2048,7 @@
       "exit": "No",
       "comment": "Tor bridge/relay is allowed on the whole VPS range. Any VPS running Exit nodes will be suspended without prior notice.",
       "last_updated": "15/01/15",
-      "cw_fraction": "0.1%"
+      "cw_fraction": "0.19%"
     },
     {
       "name": "Xmission",
@@ -2059,7 +2070,7 @@
       "exit": "Yes",
       "comment": "Only offers colocation, no cheap VPS option.",
       "last_updated": "1/14/19",
-      "cw_fraction": "0.0%"
+      "cw_fraction": ""
     },
     {
       "name": "Universal Hosting",
@@ -2103,7 +2114,7 @@
       "exit": "No",
       "comment": "They don't allow exits and will suspend your active services and restrict your access to the account if they receive abuse messages. KVM VPS. IPv4+IPv6 native support. * Gnu/Linux, FreeBSD and Windows server supported. Unmetered traffic.",
       "last_updated": "06/2022",
-      "cw_fraction": "0.14%"
+      "cw_fraction": "0.39%"
     },
     {
       "name": "Tornado VPS",
@@ -2114,7 +2125,7 @@
       "exit": "Yes",
       "comment": "Allows exits [with a reduced exit policy](https://tornadovps.com/faq).",
       "last_updated": "05/15/2023",
-      "cw_fraction": "0.03%"
+      "cw_fraction": "0.02%"
     },
     {
       "name": "ReliableSite",
@@ -2125,7 +2136,7 @@
       "exit": "No",
       "comment": "While not mentioned in the AUP, has said they \"disallow\" Tor even if you announce your own IP ranges.",
       "last_updated": "06/27/2023",
-      "cw_fraction": "0.32%"
+      "cw_fraction": "0.3%"
     }
   ]
 }
