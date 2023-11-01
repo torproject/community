@@ -79,3 +79,24 @@ Reboots and tor daemon restarts are fine.
 # Tor Version
 
 For security reasons, Tor relays should not downgrade their tor version from a supported to an unsupported version of tor. Some unsupported versions are insecure. Relays that attempt to downgrade to an insecure version will be rejected from the network automatically.
+
+# In Summary
+
+Bridge relay:
+* At least 1 Mbit/s of upstream and downstream bandwidth.
+
+Guard/Middle relay:
+* Able to handle at least 7000 concurrent connections.
+* Have at least 10 Mbit/s (16 Mbit/s recommended) of upstream and downstream bandwidth.
+* Must be able to donate at least 100 GByte of traffic a month (ideally 2 TB or more).
+* At least 512 MB of RAM if the relay is slower than 40 Mbps or 1 GB of RAM if faster than 40 Mbps.
+* An IPv4 address (can be dynamic or static (preferred) as long as it stays the same for at least 3 hours).
+* At least 200 MB of disk storage.
+* Ideal uptime is 24/7 but relays should be up for more than 2 hours a day.
+
+Exit relay:
+Similar requirements to a Guard/Middle relay plus
+* At least 1.5 GB of RAM recommended.
+* Should be able to handle around 100,000 concurrent connections if faster than 100 Mbit/s.
+* In a position to handle legal notices and potential law enforcement inquiry.
+Do not run an exit relay from your home.
