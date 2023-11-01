@@ -10,7 +10,7 @@ If you are using a firewall, open a hole in your firewall so incoming connection
 
 Also, make sure you allow all outgoing connections too, so your relay can reach the other Tor relays, clients and destinations.
 
-You can find the specific ORPort TCP port number in the [Setup page](/relay/setup) (in the OS specific sections).
+You can find the specific ORPort TCP port number in the [Setup page](../../setup) (in the OS specific sections).
 
 # 2. Verify that your relay works
 
