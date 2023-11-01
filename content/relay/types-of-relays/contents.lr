@@ -78,5 +78,5 @@ A bridge isn't likely to receive any abuse complaints, and since bridges are not
 Bridges are a great option if you can only run a Tor node from your home network, have only one static IP, and don't have a large amount of bandwidth to donate -- we recommend giving your bridge at least 1 Mbit/sec of bandwidth.
 
 
-Please see the [relay requirements](https://community.torproject.org/relay/relays-requirements/) page to learn about the technical requirements for each relay type.
+Please see the [relay requirements](../relays-requirements/) page to learn about the technical requirements for each relay type.
 
