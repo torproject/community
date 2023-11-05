@@ -1,4 +1,5 @@
 import json
+from datetime import datetime
 import requests
 
 resp = requests.get("https://onionoo.torproject.org/details",
@@ -15,16 +16,18 @@ for relay in onionoo_data['relays']:
         asn_cw[asn] += relay["consensus_weight_fraction"] * 100
 
 
-with open("databags/good-bad-isps.json", "r") as file:
+with open("databags/good-bad-isps.json", "r", encoding="utf-8") as file:
     isp_list = json.load(file)
 
-for country in isp_list.copy():
-    for index, isp in enumerate(isp_list[country]):
+isp_list['metrics_date'] = datetime.today().strftime('%Y-%m-%d')
+
+for country in isp_list["isps"].copy():
+    for index, isp in enumerate(isp_list["isps"][country]):
         if isp["asn"] in asn_cw:
             cw_fraction = f"{round(asn_cw[isp['asn']], 2)}%"
         else:
             cw_fraction = ""
-        isp_list[country][index]["cw_fraction"] = cw_fraction
+        isp_list["isps"][country][index]["cw_fraction"] = cw_fraction
 
-with open("databags/good-bad-isps.json", "w") as file:
+with open("databags/good-bad-isps.json", "w", encoding="utf-8") as file:
     json.dump(isp_list, file, indent=2)

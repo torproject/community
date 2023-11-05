@@ -5,7 +5,8 @@
   <div class="col-sm-12 col-xs-12 col-md-8 col-lg-8 pt-3 mt-5 mr-auto {{ bag('alternatives', this.alt, 'direction') }}">
     <div class="col-10">
       {{ this.body }}
-			{% for id, items in bag('good-bad-isps').items() %}
+			The Consenus Weight metrics displayed here where last updated on {{ bag('good-bad-isps.metrics_date') }}. They get automatically updated when the website is built.
+			{% for id, items in bag('good-bad-isps.isps').items() %}
 			<h3>{{ id }}</h3>
 			<table>
 				<thead>
@@ -17,7 +18,7 @@
 						<th><strong>Exit</strong></th>
 						<th><strong>Comments</strong></th>
 						<th><strong>Last Updated</strong></th>
-						<th><strong>Consenus Weight</strong></th>
+						<th><strong>Consensus Weight</strong></th>
 					</tr>
 				</thead>
 				{% for item in items %}
@@ -58,7 +59,7 @@
       <ul class="list-group list-group-flush">
         <!--li class="list-group-item"><a><span class="card-text text-muted">Contributors to this page: <a href="#" title="#">cypherpunk</a></span></li-->
         <li class="list-group-item">
-          <a href="{{ this.parent|url }}">{{ _("Back to previous page: ") }} {{ this.parent.title }}</a> - <a href="https://gitlab.torproject.org/tpo/web/community/-/edit/main/content{{ this.path }}/contents.lr">{{ _("Edit this page") }}</a>
+					<a href="{{ this.parent|url }}">{{ _("Back to previous page: ") }} {{ this.parent.title }}</a> - <a href="https://gitlab.torproject.org/tpo/web/community/-/edit/main/content{{ this.path }}/contents.lr">{{ _("Edit this page") }}</a> - <a href="https://gitlab.torproject.org/tpo/web/community/-/edit/main/databags/good-bad-isps.json">{{ _("Edit ISP list") }}</a>
         </li>
       </ul>
     </div>
