@@ -1,6 +1,6 @@
 ---
 variables:
-  LEKTOR_BUILD_FLAGS: scss
+  LEKTOR_BUILD_FLAGS: scss generate-cw-fractions
   SITE_URL: community.torproject.org
   STAGING_URL: community.staging.torproject.net
   TRANSLATION_BRANCH: communitytpo-contentspot
