@@ -1,0 +1,83 @@
+{% include 'breadcrumb.html' %}
+
+<style>
+td.isp-comment p {
+  font-size: 1rem;
+  line-height: 1.15rem;
+}
+</style>
+
+<div class="row">
+  {% include 'sidenav.html' %}
+  <div class="col-sm-12 col-xs-12 col-md-8 col-lg-8 pt-3 mt-5 mr-auto {{ bag('alternatives', this.alt, 'direction') }}">
+    <div class="col-10">
+      {{ this.body }}
+      {% for id, items in bag('good-bad-isps.isps').items() %}
+      {% if items|length %}
+      <h3>{{ id }}</h3>
+      <table>
+          <thead>
+              <tr>
+                  <th><strong>Company/ISP</strong></th>
+                  <th><strong>ASN</strong></th>
+                  <th><strong>Bridges</strong></th>
+                  <th><strong>Relay</strong></th>
+                  <th><strong>Exit</strong></th>
+                  <th><strong>Comments</strong></th>
+                  <th><strong>Last Updated</strong></th>
+                  <th><strong>Consensus Weight</strong></th>
+              </tr>
+          </thead>
+          {% for item in items %}
+          <tbody>
+              <tr>
+                  <td><a href="{{ item.url }}">{{ item.name }}</a></td>
+                  <td><a href="https://metrics.torproject.org/rs.html#search/as:{{ item.asn }}">{{ item.asn }}</a></td>
+                  <td>{{ item.bridge }}</td>
+                  <td>{{ item.relay }}</td>
+                  <td>{{ item.exit }}</td>
+                  <td class="isp-comment">{{ item.comment|markdown }}</td>
+                  <td>{{ item.last_updated }}</td>
+                  <td>{{ item.cw_fraction or 'n/a' }}</td>
+                  </tr>
+          </tbody>
+          {% endfor %}
+      </table>
+  {% endif %}
+      {% endfor %}
+
+      {% if bag('good-bad-isps.metrics_date') %}
+      <p>The Consenus Weight metrics displayed here were last updated on {{ bag('good-bad-isps.metrics_date') }}.</p>
+      {% endif %}
+    </div>
+    <div class="row">
+    {% for child in this.children|sort(attribute='key') %}
+        <div class="col-sm-6 col-md-6 col-sm-12 col-xl-6 py-3">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h4 class="card-title text-primary"><a href="{{ child.path|url(alt=this.alt) }}">{{ _(child.title) }}</a></h4>
+                    <p class="card-text">{% if child.subtitle %}{{ _(child.subtitle) }}{% endif %}</p>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+    </div>
+
+    {% if this.path == "/training/code-of-conduct" %}
+      {{ render_text("https://gitweb.torproject.org/community/policies.git/plain/code_of_conduct.txt")|safe }}
+    {% endif %}
+
+    <div class="card mt-5">
+      <ul class="list-group list-group-flush">
+        <!--li class="list-group-item"><a><span class="card-text text-muted">Contributors to this page: <a href="#" title="#">cypherpunk</a></span></li-->
+        <li class="list-group-item">
+					<a href="{{ this.parent|url }}">{{ _("Back to previous page: ") }} {{ this.parent.title }}</a> - <a href="https://gitlab.torproject.org/tpo/web/community/-/edit/main/content{{ this.path }}/contents.lr">{{ _("Edit this page") }}</a> - <a href="https://gitlab.torproject.org/tpo/web/community/-/edit/main/databags/good-bad-isps.json">{{ _("Edit ISP list") }}</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+

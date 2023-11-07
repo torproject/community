@@ -1,0 +1,2145 @@
+{
+  "isps": {
+    "Austria": [
+      {
+        "name": "UPC Austria GmbH",
+        "url": "https://www.upc.at/",
+        "asn": "-",
+        "bridge": "-",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "(ISP) does not care what their customers do at all (unless you have a business connection)",
+        "last_updated": "12/2011",
+        "cw_fraction": ""
+      },
+      {
+        "name": "M247 Europe",
+        "url": "https://m247.com/",
+        "asn": "AS9009",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "",
+        "last_updated": "04/2023",
+        "cw_fraction": "0.34%"
+      },
+      {
+        "name": "A1(former Telekom Austria)",
+        "url": "https://a1.net",
+        "asn": "AS8447",
+        "bridge": "-",
+        "relay": "Yes",
+        "exit": "No",
+        "comment": "Does not like Abuse (in any form) at all. Seems to give out customer data at alleged abuse. Not recommended but cheap.",
+        "last_updated": "12/2011",
+        "cw_fraction": "0.02%"
+      }
+    ],
+    "Bulgaria": [
+      {
+        "name": "VPS.BG",
+        "url": "https://www.vpsbg.eu/en/",
+        "asn": "AS34224",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "They don't collect any personal info and you can pay in bitcoin.",
+        "last_updated": "01/11/2016",
+        "cw_fraction": "0.06%"
+      },
+      {
+        "name": "G-Core Labs",
+        "url": "https://gcorelabs.com",
+        "asn": "AS199524",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "No",
+        "comment": "They don't allow exits and will suspend your active services and restrict your access to the account if they receive abuse messages. KVM VPS. IPv4+IPv6 native support. * Gnu/Linux, FreeBSD and Windows server supported. Unmetered traffic.",
+        "last_updated": "06/2022",
+        "cw_fraction": "0.56%"
+      }
+    ],
+    "Canada": [
+      {
+        "name": "TekSavvy",
+        "url": "https://www.teksavvy.ca",
+        "asn": "AS5645",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "?",
+        "comment": "has a server-friendly Internet Use Policy (e.g., running a Tor relay) and has taken a stand in favor of net neutrality",
+        "last_updated": "2008/12",
+        "cw_fraction": "0.0%"
+      },
+      {
+        "name": "oneprovider",
+        "url": "https://oneprovider.com/",
+        "asn": "-",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "They are reselling dedicated servers in many locations around the world. Abuse handling differs depending on the provider from which they resell.",
+        "last_updated": "2016/06",
+        "cw_fraction": ""
+      },
+      {
+        "name": "Vid\u00e9otron Ltee",
+        "url": "https://videotron.com/",
+        "asn": "AS5769",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "?",
+        "comment": "No mention of Tor in ToS, relays and bridges seem allowed.",
+        "last_updated": "-",
+        "cw_fraction": "0.0%"
+      },
+      {
+        "name": "Servarica",
+        "url": "https://servarica.com/",
+        "asn": "AS26832",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "No",
+        "comment": "They allow running Tor relay but not Tor Exit.",
+        "last_updated": "-",
+        "cw_fraction": "0.11%"
+      }
+    ],
+    "Chile": [
+      {
+        "name": "VTR",
+        "url": "https://vtr.com/",
+        "asn": "AS22047",
+        "bridge": "No",
+        "relay": "Yes",
+        "exit": "No",
+        "comment": "Middle relay is running in VTR network",
+        "last_updated": "2022",
+        "cw_fraction": "0.0%"
+      }
+    ],
+    "Costa Rica": [
+      {
+        "name": "RackNation",
+        "url": "https://www.racknation.cr",
+        "asn": "AS52423",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "Currently some Guard / Middle and exit nodes are running in RackNation network",
+        "last_updated": "2022",
+        "cw_fraction": "0.01%"
+      }
+    ],
+    "Croatia": [
+      {
+        "name": "MAXKO Hosting",
+        "url": "https://www.maxko-hosting.com/",
+        "asn": "AS211619",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "You can run anything you want as long (tor nodes are specifically allowed) as it's not a spam relay, botnet controller, they are pretty flexible regarding the packages they offer and will give a few days to test them before deciding. IPv6 is available (you have to ask) and the customer support is really helpful and will go the extra mile to help you. You will also be warned first if you do something wrong so you have a chance to fix it and warned again and again... The servers are pretty fast and there's usually discount codes available. They don't collect any personal info and you can pay in crypto.",
+        "last_updated": "06/2022",
+        "cw_fraction": "0.07%"
+      }
+    ],
+    "Czech Republic": [
+      {
+        "name": "T-Systems",
+        "url": "https://www.t-mobile.cz/",
+        "asn": "-",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "?",
+        "comment": "-",
+        "last_updated": "-",
+        "cw_fraction": ""
+      },
+      {
+        "name": "M247 Europe",
+        "url": "https://m247.com/",
+        "asn": "AS9009",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "",
+        "last_updated": "04/2023",
+        "cw_fraction": "0.34%"
+      }
+    ],
+    "France": [
+      {
+        "name": "Online.net",
+        "url": "https://www.online.net/",
+        "asn": "AS12876",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "The account holder is responsible for all the traffic going through theirs servers.",
+        "last_updated": "01/28/2019",
+        "cw_fraction": "2.14%"
+      },
+      {
+        "name": "Gandi VPS",
+        "url": "https://www.gandi.net/",
+        "asn": "AS29169",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "No",
+        "comment": "They don't allow exit nodes according to the [relay mailinglist](https://lists.torproject.org/pipermail/tor-relays/2022-November/020868.html)",
+        "last_updated": "11/2022",
+        "cw_fraction": "0.01%"
+      },
+      {
+        "name": "OVH Kimsufi",
+        "url": "https://www.kimsufi.com/",
+        "asn": "AS16276",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "No",
+        "comment": "Unmetered bandwidth @ 100mbps - \"I will gladly explain this situation for you. Running a Tor exit node is strictly forbidden and can lead to the suspension and even termination of your server and account.\" Locations: FR,CA",
+        "last_updated": "09/27/2021",
+        "cw_fraction": "15.92%"
+      },
+      {
+        "name": "Digicube",
+        "url": "https://www.digicube.fr/",
+        "asn": "-",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "-",
+        "last_updated": "-",
+        "cw_fraction": ""
+      },
+      {
+        "name": "Pulse Servers",
+        "url": "https://www.pulseservers.com/",
+        "asn": "AS16276",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "VPS uses OVH AS. You can build ANY kind tor relays.",
+        "last_updated": "09/27/2021",
+        "cw_fraction": "15.92%"
+      }
+    ],
+    "Finland": [
+      {
+        "name": "Creanova",
+        "url": "https://creanova.org",
+        "asn": "AS51765",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "No",
+        "comment": "-",
+        "last_updated": "12/19/2018",
+        "cw_fraction": "0.03%"
+      },
+      {
+        "name": "TeliaSonera Finland",
+        "url": "https://www.sonera.fi/",
+        "asn": "AS1759",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "No",
+        "comment": "-",
+        "last_updated": "03/26/2016",
+        "cw_fraction": "0.0%"
+      },
+      {
+        "name": "Privex",
+        "url": "https://www.privex.io/tor-exit-policy/",
+        "asn": "AS210083",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "No",
+        "comment": "All node types permitted in Sweden, relays/bridges permitted in other regions. Tor friendly hosting provider who runs 3 relays and an exit themselves. Requires cryptocurrency to buy a server.",
+        "last_updated": "06/2022",
+        "cw_fraction": "0.04%"
+      },
+      {
+        "name": "Njalla",
+        "url": "https://njal.la/",
+        "asn": "AS39287",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "Privacy-focused, own domains on users' behalf, ensuring anonymity from central entities like ICANN, accept cryptocurrencies, and forward all abuse reports.",
+        "last_updated": "30/10/2023",
+        "cw_fraction": "0.0%"
+      }
+    ],
+    "Germany": [
+      {
+        "name": "EUServ",
+        "url": "https://euserv.de",
+        "asn": "AS35366",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "\"Relays only allowed on dedicated Servers Prime64 and Pro64, Exit nodes only allowed on Prime64 and Pro64 with Pro-Option, own subnet, RIPE entry along with publicly visible abuse and police contact.\"",
+        "last_updated": "03/2021",
+        "cw_fraction": "0.21%"
+      },
+      {
+        "name": "Keyweb",
+        "url": "https://www.keyweb.de",
+        "asn": "AS31103",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "\"Everything that is in accordance with current jurisprudence is permitted on our servers.\"",
+        "last_updated": "03/2021",
+        "cw_fraction": "0.1%"
+      },
+      {
+        "name": "Privex",
+        "url": "https://www.privex.io/tor-exit-policy/",
+        "asn": "AS210083",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "No",
+        "comment": "All node types permitted in Sweden, relays/bridges permitted in other regions. Tor friendly hosting provider who runs 3 relays and an exit themselves. Requires cryptocurrency to buy a server.",
+        "last_updated": "06/2022",
+        "cw_fraction": "0.04%"
+      },
+      {
+        "name": "Afterburst",
+        "url": "https://afterburst.com",
+        "asn": "AS29761, AS8100",
+        "bridge": "-",
+        "relay": "Yes",
+        "exit": "No",
+        "comment": "-",
+        "last_updated": "-",
+        "cw_fraction": ""
+      },
+      {
+        "name": "myLoc Managed IT",
+        "url": "https://myloc.de",
+        "asn": "AS24961",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "No",
+        "comment": "-",
+        "last_updated": "2018-10-25",
+        "cw_fraction": "0.93%"
+      },
+      {
+        "name": "linevast",
+        "url": "https://www.linevast.de",
+        "asn": "AS201206",
+        "bridge": "No",
+        "relay": "No",
+        "exit": "No",
+        "comment": "",
+        "last_updated": "03/2021",
+        "cw_fraction": ""
+      },
+      {
+        "name": "Server4You",
+        "url": "https://www.server4you.de",
+        "asn": "AS131914",
+        "bridge": "No",
+        "relay": "No",
+        "exit": "No",
+        "comment": "-",
+        "last_updated": "03/2021",
+        "cw_fraction": ""
+      },
+      {
+        "name": "Hetzner",
+        "url": "https://hetzner.de",
+        "asn": "AS24940",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "Offers good dedicated root servers for a good price. Unmetered bandwidth on dedicated servers, 20tb on vps. \"It is not a Problem, however, abuse reports can lead to a server lock\" Locations: DE,FI",
+        "last_updated": "09/27/2021",
+        "cw_fraction": "9.81%"
+      },
+      {
+        "name": "Contabo",
+        "url": "https://contabo.de",
+        "asn": "AS51167",
+        "bridge": "No",
+        "relay": "No",
+        "exit": "No",
+        "comment": "\"The Provider is entitled to immediately block any webspace packages and servers that are being used to operate the \u201cTOR\u201d service, insofar as the Provider has become aware that the server or package is being used unlawfully.\"",
+        "last_updated": "07/2022",
+        "cw_fraction": "0.99%"
+      },
+      {
+        "name": "Strato",
+        "url": "https://strato.de",
+        "asn": "AS6724",
+        "bridge": "No",
+        "relay": "No",
+        "exit": "No",
+        "comment": "-",
+        "last_updated": "03/2021",
+        "cw_fraction": "0.61%"
+      },
+      {
+        "name": "PraHost",
+        "url": "https://www.prahost.com",
+        "asn": "-",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "\"If there is any abuse notice received, you need to solve it in given time, else your IP will be blocked until you take any action\"",
+        "last_updated": "03/2021",
+        "cw_fraction": ""
+      },
+      {
+        "name": "DomainFactory",
+        "url": "https://www.df.eu/de/cloud-hosting/cloud-server",
+        "asn": "AS34011",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "Only allowed on jiffybox",
+        "last_updated": "03/2021",
+        "cw_fraction": "0.03%"
+      },
+      {
+        "name": "NetCologne",
+        "url": "https://www.netcologne.de",
+        "asn": "AS8422",
+        "bridge": "-",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "-",
+        "last_updated": "-",
+        "cw_fraction": "0.01%"
+      },
+      {
+        "name": "Signaltransmitter",
+        "url": "https://signaltransmitter.de",
+        "asn": "AS24961",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "\"In principle, we do not limit our services apart from mining bitcoins\"",
+        "last_updated": "03/2021",
+        "cw_fraction": "0.93%"
+      },
+      {
+        "name": "Netcup",
+        "url": "https://www.netcup.de",
+        "asn": "AS197540",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "40-120TB bandwidth - Tor exit nodes allowed on VPS and rootservers - \"Yes, it is. Everything is allowed that the T&Cs do not exclude.\"",
+        "last_updated": "09/27/2021",
+        "cw_fraction": "5.2%"
+      },
+      {
+        "name": "Onyxhosting",
+        "url": "https://onyxhosting.de",
+        "asn": "-",
+        "bridge": "No",
+        "relay": "No",
+        "exit": "No",
+        "comment": "-",
+        "last_updated": "03/2021",
+        "cw_fraction": ""
+      },
+      {
+        "name": "IP-Projects",
+        "url": "https://www.ip-projects.de",
+        "asn": "AS48314",
+        "bridge": "No",
+        "relay": "No",
+        "exit": "No",
+        "comment": "-",
+        "last_updated": "03/2021",
+        "cw_fraction": "0.03%"
+      },
+      {
+        "name": "Lansol",
+        "url": "https://www.lansol.de",
+        "asn": "-",
+        "bridge": "No",
+        "relay": "No",
+        "exit": "No",
+        "comment": "-",
+        "last_updated": "03/2021",
+        "cw_fraction": ""
+      },
+      {
+        "name": "delta.networks",
+        "url": "https://www.delta-networks.de",
+        "asn": "AS9937",
+        "bridge": "No",
+        "relay": "No",
+        "exit": "No",
+        "comment": "-",
+        "last_updated": "03/2021",
+        "cw_fraction": ""
+      },
+      {
+        "name": "VPS2Day",
+        "url": "https://www.vps2day.com",
+        "asn": "AS58329",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "No",
+        "comment": "Exit nodes prohibited due to terms of service",
+        "last_updated": "03/2021",
+        "cw_fraction": ""
+      },
+      {
+        "name": "Serverprofis",
+        "url": "https://www.serverprofis.de",
+        "asn": "AS5539",
+        "bridge": "No",
+        "relay": "No",
+        "exit": "No",
+        "comment": "-",
+        "last_updated": "03/2021",
+        "cw_fraction": ""
+      },
+      {
+        "name": "manitu",
+        "url": "https://www.manitu.de",
+        "asn": "AS34240",
+        "bridge": "No",
+        "relay": "No",
+        "exit": "No",
+        "comment": "\"I'm sorry - even if the network has great added value for specific purposes, we have decided to prohibit Tor services on our network\"",
+        "last_updated": "03/2021",
+        "cw_fraction": ""
+      },
+      {
+        "name": "active-servers",
+        "url": "https://www.active-servers.com",
+        "asn": "AS197071",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "\"Usually this leads to abuse mails, which only cause trouble \u2013 but basically we have nothing against it\"",
+        "last_updated": "03/2021",
+        "cw_fraction": "0.02%"
+      },
+      {
+        "name": "UltraVPS",
+        "url": "https://www.ultravps.eu",
+        "asn": "AS29141",
+        "bridge": "No",
+        "relay": "No",
+        "exit": "No",
+        "comment": "\"We are not the right host for your project\"",
+        "last_updated": "03/2021",
+        "cw_fraction": "0.0%"
+      },
+      {
+        "name": "G-Core Labs",
+        "url": "https://gcorelabs.com",
+        "asn": "AS199524",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "No",
+        "comment": "They don't allow exits and will suspend your active services and restrict your access to the account if they receive abuse messages. KVM VPS. IPv4+IPv6 native support. * Gnu/Linux, FreeBSD and Windows server supported. Unmetered traffic.",
+        "last_updated": "06/2022",
+        "cw_fraction": "0.56%"
+      },
+      {
+        "name": "Venocix",
+        "url": "https://venocix.de/",
+        "asn": "AS44486",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "?",
+        "comment": "Running relay since 3 months without problems. Traffic is \"fair use\" and speed got limited after 10TB of traffic.",
+        "last_updated": "07/2022",
+        "cw_fraction": "0.03%"
+      },
+      {
+        "name": "V.PS",
+        "url": "https://v.ps/",
+        "asn": "-",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "No",
+        "comment": "Exit nodes are not allowed",
+        "last_updated": "04/2023",
+        "cw_fraction": ""
+      }
+    ],
+    "Hong Kong": [
+      {
+        "name": "HostHatch",
+        "url": "https://hosthatch.com/",
+        "asn": "AS63473",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "No",
+        "comment": "-",
+        "last_updated": "-",
+        "cw_fraction": "0.01%"
+      },
+      {
+        "name": "G-Core Labs",
+        "url": "https://gcorelabs.com",
+        "asn": "AS199524",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "No",
+        "comment": "They don't allow exits and will suspend your active services and restrict your access to the account if they receive abuse messages. KVM VPS. IPv4+IPv6 native support. * Gnu/Linux, FreeBSD and Windows server supported. Unmetered traffic.",
+        "last_updated": "06/2022",
+        "cw_fraction": "0.56%"
+      }
+    ],
+    "Hungary": [
+      {
+        "name": "M247 Europe",
+        "url": "https://m247.com/",
+        "asn": "AS9009",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "",
+        "last_updated": "04/2023",
+        "cw_fraction": "0.34%"
+      },
+      {
+        "name": "ServerAstra",
+        "url": "https://serverastra.com/",
+        "asn": "AS56322",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "They only say you should answer abuse requests in 24h. ISP has re-confirmed by e-mail that exit nodes are acceptable, with \"strict\" exit node policies.",
+        "last_updated": "2014-10-15",
+        "cw_fraction": "0.09%"
+      },
+      {
+        "name": "G-Core Labs",
+        "url": "https://gcorelabs.com",
+        "asn": "AS199524",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "No",
+        "comment": "They don't allow exits and will suspend your active services and restrict your access to the account if they receive abuse messages. KVM VPS. IPv4+IPv6 native support. * Gnu/Linux, FreeBSD and Windows server supported. Unmetered traffic.",
+        "last_updated": "06/2022",
+        "cw_fraction": "0.56%"
+      },
+      {
+        "name": "ATW",
+        "url": "https://atw.hu/",
+        "asn": "AS41075",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "?",
+        "comment": "Unmetered bandwidth",
+        "last_updated": "04/2023",
+        "cw_fraction": "0.03%"
+      }
+    ],
+    "Iceland": [
+      {
+        "name": "1984Hosting",
+        "url": "https://1984hosting.com/",
+        "asn": "AS44925",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "-",
+        "last_updated": "-",
+        "cw_fraction": "0.2%"
+      },
+      {
+        "name": "FlokiNET",
+        "url": "https://flokinet.is/",
+        "asn": "AS200651",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "Sponsor enn.lu and saveyourprivacy exit nodes",
+        "last_updated": "-",
+        "cw_fraction": "0.55%"
+      },
+      {
+        "name": "orangewebsite",
+        "url": "https://www.orangewebsite.com/vps.php",
+        "asn": "",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes?",
+        "comment": "-",
+        "last_updated": "-",
+        "cw_fraction": ""
+      }
+    ],
+    "Israel": [
+      {
+        "name": "BlueVPS",
+        "url": "https://bluevps.com/",
+        "asn": "AS61102",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "They do not explicitly prohibit tor exits, but the upstream providers may cut off your internet given too many complaints.  This can be resolved by contacting support and getting a new IP.  Cheap with unmetered bandwidth, IPv4+IPv6, but network is highly unreliable.  Accepts crypto.",
+        "last_updated": "2022/07",
+        "cw_fraction": "0.0%"
+      }
+    ],
+    "Italy": [
+      {
+        "name": "Fastweb",
+        "url": "https://fastweb.it/",
+        "asn": "-",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "-",
+        "last_updated": "-",
+        "cw_fraction": ""
+      },
+      {
+        "name": "Prometeus",
+        "url": "https://www.prometeus.net/sito/",
+        "asn": "AS34971",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "No",
+        "comment": "-",
+        "last_updated": "-",
+        "cw_fraction": "0.0%"
+      },
+      {
+        "name": "ArubaCloud /Aruba",
+        "url": "https://cloud.it/",
+        "asn": "AS31034",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "TOS generically indicate that the operator is responsible for all the activities on the machine. [Read more](https://balist.es/blog/2016/04/18/running-a-tor-exit-node-on-aruba-arubacloud-a-detailed-account/)",
+        "last_updated": "-",
+        "cw_fraction": "0.03%"
+      },
+      {
+        "name": "SelfServer by Enter",
+        "url": "https://selfserver.it/",
+        "asn": "-",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "Uncomfortable due to old CentOS 6.10, NATed IPv4-only networking, ports other than the well-known are filtered. Abuse complaints need to go through their support service",
+        "last_updated": "11/2018",
+        "cw_fraction": ""
+      },
+      {
+        "name": "Revolution Hosting",
+        "url": "https://rhosting.it/",
+        "asn": "AS60798",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "No",
+        "comment": "Exit nodes are allowed but they will be immediately terminated if any abuse complaint is issued. KVM VPS. IPv4+IPv6 native support. * Gnu/Linux, FreeBSD and Windows server supported. Coingate supported.",
+        "last_updated": "12/2020",
+        "cw_fraction": ""
+      },
+      {
+        "name": "G-Core Labs",
+        "url": "https://gcorelabs.com",
+        "asn": "AS199524",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "No",
+        "comment": "They don't allow exits and will suspend your active services and restrict your access to the account if they receive abuse messages. KVM VPS. IPv4+IPv6 native support. * Gnu/Linux, FreeBSD and Windows server supported. Unmetered traffic.",
+        "last_updated": "06/2022",
+        "cw_fraction": "0.56%"
+      }
+    ],
+    "Latvia": [
+      {
+        "name": "Yourserver",
+        "url": "https://www.yourserver.se/",
+        "asn": "-",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "?",
+        "comment": "Support team will allow relay/exit but TOR Traffic is throttled to 5Mbps speed. If your Exit relay receive too much complaints, they will ask to you to stop or otherwise they will suspend.",
+        "last_updated": "2015/03/06",
+        "cw_fraction": ""
+      },
+      {
+        "name": "Dataclub",
+        "url": "https://www.dataclub.eu/",
+        "asn": "AS203557",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "Your Exit should use Reduced Exit Policy. IPv6 is optional. Unmetered traffic.",
+        "last_updated": "06/2022",
+        "cw_fraction": ""
+      }
+    ],
+    "Lithuania": [
+      {
+        "name": "Baltic Servers",
+        "url": "https://www.balticservers.com",
+        "asn": "AS59642",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "All abuse mails they got yielded support tickets",
+        "last_updated": "-",
+        "cw_fraction": ""
+      },
+      {
+        "name": "Time4VPS",
+        "url": "https://www.time4vps.com/",
+        "asn": "AS62282",
+        "bridge": "No",
+        "relay": "No",
+        "exit": "No",
+        "comment": "\"To not use Time4VPS services for any of the following: [...] Hosting public Proxy or Tor services;\"",
+        "last_updated": "07/2022",
+        "cw_fraction": ""
+      }
+    ],
+    "Luxembourg": [
+      {
+        "name": "BuyVM.net",
+        "url": "https://buyvm.net",
+        "asn": "AS53667",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "New Tor rules [here](https://buyvm.net/acceptable-use-policy/#3). All relays are fine if you follow the steps. Notices are ignored. Unmetered bandwidth.",
+        "last_updated": "09/27/2021",
+        "cw_fraction": "2.35%"
+      },
+      {
+        "name": "G-Core Labs",
+        "url": "https://gcorelabs.com",
+        "asn": "AS199524",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "No",
+        "comment": "They don't allow exits and will suspend your active services and restrict your access to the account if they receive abuse messages. KVM VPS. IPv4+IPv6 native support. * Gnu/Linux, FreeBSD and Windows server supported. Unmetered traffic.",
+        "last_updated": "06/2022",
+        "cw_fraction": "0.56%"
+      }
+    ],
+    "Mexico": [],
+    "Moldova": [
+      {
+        "name": "MivoCloud",
+        "url": "https://www.mivocloud.com/",
+        "asn": "-",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "No",
+        "comment": "-",
+        "last_updated": "09/13/16",
+        "cw_fraction": ""
+      },
+      {
+        "name": "AlexHost",
+        "url": "https://alexhost.md/",
+        "asn": "AS200019",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "No",
+        "comment": "Unmetered bandwidth @ 100mbps \"Tor exit relay is strictly forbidden on our company's servers\"",
+        "last_updated": "04/2023",
+        "cw_fraction": "0.1%"
+      },
+      {
+        "name": "Trabia",
+        "url": "https://www.trabia.com/",
+        "asn": "AS43289",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "-",
+        "last_updated": "01/05/23",
+        "cw_fraction": "0.12%"
+      },
+      {
+        "name": "G-Core Labs",
+        "url": "https://gcorelabs.com",
+        "asn": "AS199524",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "No",
+        "comment": "They don't allow exits and will suspend your active services and restrict your access to the account if they receive abuse messages. KVM VPS. IPv4+IPv6 native support. * Gnu/Linux, FreeBSD and Windows server supported. Unmetered traffic.",
+        "last_updated": "06/2022",
+        "cw_fraction": "0.56%"
+      }
+    ],
+    "Netherlands": [
+      {
+        "name": "100UP",
+        "url": "https://100up.org/",
+        "asn": "AS49581",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "Use the Netherlands server for exit nodes, middle nodes can be ran on all servers",
+        "last_updated": "05/25/22",
+        "cw_fraction": "0.11%"
+      },
+      {
+        "name": "XS4ALL",
+        "url": "https://www.xs4all.nl/en/",
+        "asn": "AS3265",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "Abuse can result in temporary blocks, therefore they recommend to use an dedicated IP address for exit nodes",
+        "last_updated": "06/16/15",
+        "cw_fraction": "0.0%"
+      },
+      {
+        "name": "HostHatch",
+        "url": "https://hosthatch.com/",
+        "asn": "AS42708",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "No",
+        "comment": "-",
+        "last_updated": "05/01/16",
+        "cw_fraction": "0.04%"
+      },
+      {
+        "name": "Ziggo",
+        "url": "https://www.ziggo.nl/",
+        "asn": "33915",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "-",
+        "last_updated": "05/24/2016",
+        "cw_fraction": ""
+      },
+      {
+        "name": "LiteServer",
+        "url": "https://www.liteserver.nl/",
+        "asn": "AS60404",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "Can pay with Bitcoin. While their AUP doesn't allow tor exit nodes (see [here](https://www.liteserver.nl/en/acceptable-usage-policy/)), they make an exception if your exit-node has a reduced exit policy. And you must leave a note to them that you are running a exit-node. \"We allow tor exit nodes as long you run a limited exit policy (block SMTP) to avoid abuse.",
+        "last_updated": "12/26/2018",
+        "cw_fraction": "0.39%"
+      },
+      {
+        "name": "i3D",
+        "url": "https://www.i3d.net/",
+        "asn": "AS49544",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "Allows also exits, if abuse is handled properly",
+        "last_updated": "08/13/2017",
+        "cw_fraction": "0.03%"
+      },
+      {
+        "name": "KoDDoS",
+        "url": "https://koddos.net",
+        "asn": "AS206264",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "Bitcoin accepted.",
+        "last_updated": "10/12/2017",
+        "cw_fraction": "0.01%"
+      },
+      {
+        "name": "Worldstream",
+        "url": "https://www.worldstream.nl",
+        "asn": "AS49981",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "No",
+        "comment": "-",
+        "last_updated": "02/06/2019",
+        "cw_fraction": "0.25%"
+      },
+      {
+        "name": "LeaseWeb",
+        "url": "https://www.leaseweb.com/",
+        "asn": "AS60781",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "-",
+        "last_updated": "-",
+        "cw_fraction": "0.37%"
+      },
+      {
+        "name": "Novogara",
+        "url": "https://www.novogara.com",
+        "asn": "AS202425",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "Explicitly allows Tor exit nodes and forwards abuse/DCMA, but their network isn't the most stable. You need to email them for a custom offer. They also accept Bitcoin/UKash/CashU",
+        "last_updated": "-",
+        "cw_fraction": "0.08%"
+      },
+      {
+        "name": "Netrouting",
+        "url": "https://netrouting.nl/",
+        "asn": "AS47869",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "No",
+        "comment": "ISP has confirmed by e-mail that exit nodes are NOT acceptable.",
+        "last_updated": "2014-10-15",
+        "cw_fraction": "0.01%"
+      },
+      {
+        "name": "DirectVPS",
+        "url": "https://directvps.nl/",
+        "asn": "",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "?",
+        "comment": "-",
+        "last_updated": "-",
+        "cw_fraction": ""
+      },
+      {
+        "name": "Versio",
+        "url": "https://versio.nl/",
+        "asn": "-",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "No",
+        "comment": "-",
+        "last_updated": "2013",
+        "cw_fraction": ""
+      },
+      {
+        "name": "SnelServer",
+        "url": "https://www.snelserver.com/",
+        "asn": "AS62370",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "Abuse complaints must be responded to within 24 hours or the system automatically suspends your account until you do.",
+        "last_updated": "2014",
+        "cw_fraction": ""
+      },
+      {
+        "name": "ChmuraNet",
+        "url": "https://www.chmuranet.com/",
+        "asn": "-",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "Allows anonymous users to run tor exits. Abuse issues will be forwarded. Make sure to tell them that you're running an exit",
+        "last_updated": "09/2014",
+        "cw_fraction": ""
+      },
+      {
+        "name": "NiceVPS.net",
+        "url": "https://nicevps.net",
+        "asn": "-",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "Privacy registration with optional email, cryptocurrencies accepted, [Tor onion link](https://nicevpsb7u3vqpo5zhyahmvfi5tihon4gnh676ucmzpcyxwodeztr4yd.onion)",
+        "last_updated": "06/11/21",
+        "cw_fraction": ""
+      },
+      {
+        "name": "IncogNET",
+        "url": "https://incognet.io/",
+        "asn": "AS210630",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "You need to host a page on port 80 explaining that the server is a Tor Exit and use their reduced exit policy https://incognet.io/tor-exits",
+        "last_updated": "04/2023",
+        "cw_fraction": "0.47%"
+      },
+      {
+        "name": "Freedom Internet",
+        "url": "https://www.freedom.nl/",
+        "asn": "AS206238",
+        "bridge": "?",
+        "relay": "Yes",
+        "exit": "?",
+        "comment": "",
+        "last_updated": "2022-06-05",
+        "cw_fraction": "0.06%"
+      },
+      {
+        "name": "G-Core Labs",
+        "url": "https://gcorelabs.com",
+        "asn": "AS199524",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "No",
+        "comment": "They don't allow exits and will suspend your active services and restrict your access to the account if they receive abuse messages. KVM VPS. IPv4+IPv6 native support. * Gnu/Linux, FreeBSD and Windows server supported. Unmetered traffic.",
+        "last_updated": "06/2022",
+        "cw_fraction": "0.56%"
+      },
+      {
+        "name": "VPSslim",
+        "url": "https://www.vpsslim.com",
+        "asn": "AS207083",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "Don't pull over 2TB tx+rx bandwidth per day or the VPS will be locked (easily resolved by opening a ticket).  Use of AccountingMax highly recommended.  Extremely cheap with IPv4+IPv6, and unmetered fair use gigabit internet.  Accepts crypto.",
+        "last_updated": "2022/07",
+        "cw_fraction": "0.06%"
+      },
+      {
+        "name": "V.PS",
+        "url": "https://v.ps/",
+        "asn": "-",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "No",
+        "comment": "Exit nodes are not allowed",
+        "last_updated": "04/2023",
+        "cw_fraction": ""
+      }
+    ],
+    "New Zealand and Australia": [
+      {
+        "name": "HostHatch",
+        "url": "https://hosthatch.com/",
+        "asn": "AS36351",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "No",
+        "comment": "-",
+        "last_updated": "05/2023",
+        "cw_fraction": ""
+      },
+      {
+        "name": "Rimu hosting",
+        "url": "https://rimuhosting.com",
+        "asn": "AS45671",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "Have servers in N.Z.; Sydney; London; and Dallas. Locations may vary, but quite happy with the specific Oz/NZ query.",
+        "last_updated": "-",
+        "cw_fraction": ""
+      }
+    ],
+    "Norway": [
+      {
+        "name": "Terrahost",
+        "url": "https://terrahost.no/",
+        "asn": "AS56655",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "Check the requirements for running a Tor exit node with them first https://terrahost.no/avtalebetingelser. May require a photo of an ID card or passport for account creation. Unmetered traffic.",
+        "last_updated": "06/2022",
+        "cw_fraction": "0.83%"
+      }
+    ],
+    "Poland": [
+      {
+        "name": "cyber_Folks",
+        "url": "https://cyberfokls.pl/",
+        "asn": "-",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "No",
+        "comment": "They had unpleasant experiences with exit relays so they don't allow it",
+        "last_updated": "03/02/2022",
+        "cw_fraction": ""
+      },
+      {
+        "name": "Hitme.pl",
+        "url": "https://hitme.pl/",
+        "asn": "AS50840",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "No",
+        "comment": "They block accounts if you receive an abuse report",
+        "last_updated": "29/03/2021",
+        "cw_fraction": "0.01%"
+      },
+      {
+        "name": "HOSTEAM ",
+        "url": "https://hosteam.pl/pl",
+        "asn": "AS51290",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "?",
+        "comment": "-",
+        "last_updated": "04/2023",
+        "cw_fraction": "0.06%"
+      },
+      {
+        "name": "Hostowisko.pl",
+        "url": "http://www.hostowisko.pl/",
+        "asn": "-",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "?",
+        "comment": "-",
+        "last_updated": "27/08/2013",
+        "cw_fraction": ""
+      },
+      {
+        "name": "Exone",
+        "url": "https://www.exone.pl/",
+        "asn": "-",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "?",
+        "comment": "-",
+        "last_updated": "28/08/2013",
+        "cw_fraction": ""
+      },
+      {
+        "name": "e24cloud",
+        "url": "https://www.e24cloud.com/en",
+        "asn": "AS31229",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "?",
+        "comment": "-",
+        "last_updated": "01/10/2013",
+        "cw_fraction": ""
+      },
+      {
+        "name": "hostinger.pl",
+        "url": "https://www.hostinger.pl",
+        "asn": "",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "",
+        "last_updated": "02/10/2013",
+        "cw_fraction": ""
+      },
+      {
+        "name": "statnet.pl",
+        "url": "https://www.statnet.pl/",
+        "asn": "-",
+        "bridge": "No",
+        "relay": "No",
+        "exit": "No",
+        "comment": "Used to allow Tor-relays, but now is blocking Tor activity",
+        "last_updated": "12/06/2017",
+        "cw_fraction": ""
+      },
+      {
+        "name": "IQ PL",
+        "url": "https://www.iq.pl/",
+        "asn": "AS47544",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "They allow running exit node on collocated dedicated server",
+        "last_updated": "-",
+        "cw_fraction": "0.04%"
+      },
+      {
+        "name": "Slask DataCenter",
+        "url": "https://sldc.eu/",
+        "asn": "-",
+        "bridge": "?",
+        "relay": "No",
+        "exit": "No",
+        "comment": "They don't allow Tor traffic on their servers (anymore?)",
+        "last_updated": "03/02/2022",
+        "cw_fraction": ""
+      },
+      {
+        "name": "Remote Admin",
+        "url": "https://remoteadmin.store/",
+        "asn": "AS212663",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "You can install any software you want until it's legal and complies with polish law. They ask to properly and responsibly configure exit node to minimize abuse and they reserve rights to suspend your service if requested by law enforcement.",
+        "last_updated": "03/02/2022",
+        "cw_fraction": "0.03%"
+      },
+      {
+        "name": "G-Core Labs",
+        "url": "https://gcorelabs.com",
+        "asn": "AS199524",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "No",
+        "comment": "They don't allow exits and will suspend your active services and restrict your access to the account if they receive abuse messages. KVM VPS. IPv4+IPv6 native support. * Gnu/Linux, FreeBSD and Windows server supported. Unmetered traffic.",
+        "last_updated": "06/2022",
+        "cw_fraction": "0.56%"
+      },
+      {
+        "name": "HOSTIKO",
+        "url": "https://hostiko.com.ua/",
+        "asn": "AS199785",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "Allow payment with crypto. Also servers in Germany and Ukraine",
+        "last_updated": "04/2023",
+        "cw_fraction": ""
+      }
+    ],
+    "Romania": [
+      {
+        "name": "M247 Europe",
+        "url": "https://m247.com/",
+        "asn": "AS9009",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "",
+        "last_updated": "04/2023",
+        "cw_fraction": "0.34%"
+      },
+      {
+        "name": "Voxility",
+        "url": "https://www.voxility.com/",
+        "asn": "AS3223",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "?",
+        "comment": "Read more [2015 tor-talk thread](https://lists.torproject.org/pipermail/tor-relays/2015-April/006867.html%7CApril)",
+        "last_updated": "04/2015",
+        "cw_fraction": "0.06%"
+      },
+      {
+        "name": "JavaPipe",
+        "url": "https://javapipe.com/",
+        "asn": "-",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "?",
+        "comment": "-",
+        "last_updated": "04/2016",
+        "cw_fraction": ""
+      },
+      {
+        "name": "MilesWeb",
+        "url": "https://www.milesweb.com/",
+        "asn": "-",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "No",
+        "comment": "Plans in Romania and also have data centers in USA and UK with 24x7 free support.",
+        "last_updated": "03/2017",
+        "cw_fraction": ""
+      },
+      {
+        "name": "G-Core Labs",
+        "url": "https://gcorelabs.com",
+        "asn": "AS199524",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "No",
+        "comment": "They don't allow exits and will suspend your active services and restrict your access to the account if they receive abuse messages. KVM VPS. IPv4+IPv6 native support. * Gnu/Linux, FreeBSD and Windows server supported. Unmetered traffic.",
+        "last_updated": "06/2022",
+        "cw_fraction": "0.56%"
+      },
+      {
+        "name": "iHostArt",
+        "url": "https://ihostart.com/",
+        "asn": "-",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "-",
+        "last_updated": "04/2023",
+        "cw_fraction": ""
+      }
+    ],
+    "Sweden": [
+      {
+        "name": "Dataclub",
+        "url": "https://www.dataclub.eu/",
+        "asn": "-",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "Your Exit should use Reduced Exit Policy. IPv6 is optional. Unmetered traffic.",
+        "last_updated": "06/2022",
+        "cw_fraction": ""
+      },
+      {
+        "name": "HostHatch",
+        "url": "https://hosthatch.com",
+        "asn": "AS42708",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "No",
+        "comment": "-",
+        "last_updated": "2016/05",
+        "cw_fraction": "0.04%"
+      },
+      {
+        "name": "PRQ",
+        "url": "https://prq.se/?p=dedicated&intl=1",
+        "asn": "AS33837",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "-",
+        "last_updated": "-",
+        "cw_fraction": "0.0%"
+      },
+      {
+        "name": "Privex",
+        "url": "https://www.privex.io/tor-exit-policy/",
+        "asn": "AS210083",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "Tor friendly hosting provider who runs 3 relays and an exit themselves. Requires cryptocurrency to buy a server.",
+        "last_updated": "06/2022",
+        "cw_fraction": "0.04%"
+      },
+      {
+        "name": "Portlane",
+        "url": "http://www.portlane.com/",
+        "asn": "AS42708",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "Previously provided connectivity for ThePirateBay, OpenBitTorrent tracker et al.  Handles abuse according to \"Swedish praxis\".",
+        "last_updated": "-",
+        "cw_fraction": "0.04%"
+      },
+      {
+        "name": "Yourserver",
+        "url": "https://www.yourserver.se/",
+        "asn": "-",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "?",
+        "comment": "Support team will allow relay/exit but TOR Traffic is throttled to 5Mbps speed. If your Exit relay receive too much complaints, they will ask to you to stop or otherwise they will suspend.",
+        "last_updated": "2015/03/06",
+        "cw_fraction": ""
+      },
+      {
+        "name": "Svea Hosting",
+        "url": "https://svea.net/",
+        "asn": "AS41634",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "They run an exit node themselves and write on their dedicated server page \"It is perfect for [...] TOR Exit Nodes\"",
+        "last_updated": "04/2021",
+        "cw_fraction": "0.03%"
+      }
+    ],
+    "Switzerland": [
+      {
+        "name": "Solar Communications Gmbh",
+        "url": "https://solarcom.ch/",
+        "asn": "AS197988",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "No",
+        "comment": "\"We allow to place Tor routers, but don't allow to place Tor exit nodes.\" This applies to all their partners, who actually sell Solar's services to the public, namely: [Server & cloud](https://server-cloud.com), [CoinsHost](https://coinshost.com), [Incloudibly](https://incloudibly.net), [Cloudcom](https://cloudc.me), [AtomDrive](https://atomdrive.net). Cryptocurrencies are accepted.",
+        "last_updated": "12/04/2015",
+        "cw_fraction": ""
+      },
+      {
+        "name": "fsit",
+        "url": "https://www.fsit.ch/",
+        "asn": "AS59891",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "-",
+        "last_updated": "11/2015",
+        "cw_fraction": ""
+      },
+      {
+        "name": "Swiss Made Host",
+        "url": "https://swissmade.host/en/",
+        "asn": "-",
+        "bridge": "No",
+        "relay": "No",
+        "exit": "No",
+        "comment": "\"Tor is not welcome on our network.\"",
+        "last_updated": "10/2020",
+        "cw_fraction": ""
+      },
+      {
+        "name": "NiceVPS.net",
+        "url": "https://nicevps.net",
+        "asn": "-",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "Privacy registration with optional email, cryptocurrencies accepted, [Tor onion link](https://nicevpsb7u3vqpo5zhyahmvfi5tihon4gnh676ucmzpcyxwodeztr4yd.onion)",
+        "last_updated": "06/11/21",
+        "cw_fraction": ""
+      }
+    ],
+    "Slovenia": [
+      {
+        "name": "Tus Hosting",
+        "url": "http://www.tushosting.si/",
+        "asn": "-",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "They just simply forward DMCA notices to us to handle (or ignore) them",
+        "last_updated": "-",
+        "cw_fraction": ""
+      }
+    ],
+    "Ukraine": [
+      {
+        "name": "UrDN",
+        "url": "https://urdn.com.ua",
+        "asn": "AS207656",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "free speech hoster, allows anything but spam/scam. Abuse always forwarded.",
+        "last_updated": "10/08/2015",
+        "cw_fraction": "0.12%"
+      },
+      {
+        "name": "Colocall",
+        "url": "https://www.colocall.net/",
+        "asn": "AS15497",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "-",
+        "last_updated": "-",
+        "cw_fraction": "0.0%"
+      },
+      {
+        "name": "G-Core Labs",
+        "url": "https://gcorelabs.com",
+        "asn": "AS199524",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "No",
+        "comment": "They don't allow exits and will suspend your active services and restrict your access to the account if they receive abuse messages. KVM VPS. IPv4+IPv6 native support. * Gnu/Linux, FreeBSD and Windows server supported. Unmetered traffic.",
+        "last_updated": "06/2022",
+        "cw_fraction": "0.56%"
+      },
+      {
+        "name": "Virtual Systems",
+        "url": "https://vsys.host/",
+        "asn": "AS30860",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "Allow payment with crypto",
+        "last_updated": "04/2023",
+        "cw_fraction": "0.08%"
+      },
+      {
+        "name": "HOSTIKO",
+        "url": "https://hostiko.com.ua/",
+        "asn": "AS199785",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "Allow payment with crypto. Also servers in Germany and Poland",
+        "last_updated": "04/2023",
+        "cw_fraction": ""
+      }
+    ],
+    "United Kingdom": [
+      {
+        "name": "Gigatux",
+        "url": "https://www.gigatux.com",
+        "asn": "-",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "They actually run their own relay named Gigatux.  They also offer servers in the US, Germany, and Israel.",
+        "last_updated": "-",
+        "cw_fraction": ""
+      },
+      {
+        "name": "Clustered.net",
+        "url": "https://www.clustered.net",
+        "asn": "-",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "-",
+        "last_updated": "-",
+        "cw_fraction": ""
+      },
+      {
+        "name": "Bitfolk",
+        "url": "https://bitfolk.com/",
+        "asn": "-",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "They are very knowledgable and understand Tor and its uses. They are hot on spam and abuse so advise changing the default exit (good idea in the UK anyhow). Any DMCA notices received were simply forwarded on without agro",
+        "last_updated": "-",
+        "cw_fraction": ""
+      },
+      {
+        "name": "RapidSwitch",
+        "url": "https://rapidswitch.com/",
+        "asn": "-",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "?",
+        "comment": "-",
+        "last_updated": "07/2014",
+        "cw_fraction": ""
+      },
+      {
+        "name": "Hostworld",
+        "url": "https://hostworld.uk/",
+        "asn": "-",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "They are very responsive and understand the uses of Tor. They have a strict policy with abuse/spam and will not refund under their money back guarantee if abuse has been noticed. IPv4+IPv6 native support. Unmetered traffic.",
+        "last_updated": "06/2022",
+        "cw_fraction": ""
+      }
+    ],
+    "US": [
+      {
+        "name": "Amazon Web Services (AWS)",
+        "url": "https://aws.amazon.com",
+        "asn": "AS16509",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "No",
+        "comment": "Expensive bandwidth, you WILL be charged extra after reaching 15GB.",
+        "last_updated": "09/27/2021",
+        "cw_fraction": "0.07%"
+      },
+      {
+        "name": "AmeriNOC",
+        "url": "https://www.amerinoc.com/",
+        "asn": "-",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "-",
+        "last_updated": "-",
+        "cw_fraction": ""
+      },
+      {
+        "name": "Arvixe",
+        "url": "https://www.arvixe.com/vps_virtual_private_servers_hosting/",
+        "asn": "-",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "-",
+        "last_updated": "06/19/13",
+        "cw_fraction": ""
+      },
+      {
+        "name": "Lumen (CenturyLink)",
+        "url": "http://www.lumen.com",
+        "asn": "AS209 / AS3356",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "?",
+        "comment": "[Home TOS doesn't explicitly ban \"servers\"](https://www.centurylink.com/legal/docs/Internet_Subscriber_Agreement_LQ_ENG.pdf), but unsure about exits.",
+        "last_updated": "4/27/2023",
+        "cw_fraction": ""
+      },
+      {
+        "name": "BuyVM.net",
+        "url": "https://buyvm.net",
+        "asn": "AS53667",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "New Tor rules [here](https://buyvm.net/acceptable-use-policy/#3). All relays are fine if you follow the steps. Notices are ignored. Unmetered bandwidth.",
+        "last_updated": "09/27/2021",
+        "cw_fraction": "2.35%"
+      },
+      {
+        "name": "Catalyst Host",
+        "url": "https://catalysthost.com/",
+        "asn": "-",
+        "bridge": "?",
+        "relay": "No",
+        "exit": "No",
+        "comment": "\"If you are interested in hosting either, you can ask us about a dedicated server.\"",
+        "last_updated": "10/01/14",
+        "cw_fraction": ""
+      },
+      {
+        "name": "Cloudvider",
+        "url": "https://www.clouvider.co.uk/",
+        "asn": "AS62240",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "No",
+        "comment": "Prohibited Uses: to run a Tor Exit Node. They will cancel your account and claim it is a ToS violation, which requires you to pay out a 60-day notice.",
+        "last_updated": "11/2022",
+        "cw_fraction": "0.15%"
+      },
+      {
+        "name": "Comcast",
+        "url": "https://comcast.net/",
+        "asn": "AS7922",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "No",
+        "comment": "To run an exit, you must be on a commercial subscription and must contact them first.",
+        "last_updated": "3/2022",
+        "cw_fraction": "0.1%"
+      },
+      {
+        "name": "ChunkHost",
+        "url": "https://chunkhost.com",
+        "asn": "-",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "?",
+        "comment": "Questionable DMCA handling",
+        "last_updated": "01/01/12",
+        "cw_fraction": ""
+      },
+      {
+        "name": "Cyberonic",
+        "url": "https://www.cyberonic.com",
+        "asn": "-",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "?",
+        "comment": "-",
+        "last_updated": "-",
+        "cw_fraction": ""
+      },
+      {
+        "name": "Data Ideas (AlienData)",
+        "url": "https://dataideas.com/",
+        "asn": "AS398355",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "AUP [here](https://dataideas.com/acceptable-use-policy.html). Notices are ignored. Unmetered bandwidth.",
+        "last_updated": "04/13/2023",
+        "cw_fraction": "0.17%"
+      },
+      {
+        "name": "Datawagon",
+        "url": "https://datawagon.net",
+        "asn": "AS27176",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "Customers are forwarded abuse complaints to handle themselves",
+        "last_updated": "03/06/19",
+        "cw_fraction": "0.24%"
+      },
+      {
+        "name": "DreamHost",
+        "url": "https://www.dreamhost.com/",
+        "asn": "AS26347",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "?",
+        "comment": "-",
+        "last_updated": "11/29/17",
+        "cw_fraction": "0.02%"
+      },
+      {
+        "name": "Evolucix",
+        "url": "https://www.evolucix.com",
+        "asn": "-",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "No(?)",
+        "comment": "-",
+        "last_updated": "-",
+        "cw_fraction": ""
+      },
+      {
+        "name": "Future Hosting",
+        "url": "https://www.futurehosting.com/",
+        "asn": "-",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "No",
+        "comment": "-",
+        "last_updated": "09/01/14",
+        "cw_fraction": ""
+      },
+      {
+        "name": "Hivelocity",
+        "url": "https://www.hivelocity.net/",
+        "asn": "AS29802",
+        "bridge": "No",
+        "relay": "No",
+        "exit": "No",
+        "comment": "They are symphathetic, but do not want their IP space \"polluted\" by Tor abuse requests.",
+        "last_updated": "10/2020",
+        "cw_fraction": "0.8%"
+      },
+      {
+        "name": "HostGator",
+        "url": "https://www.hostgator.com/",
+        "asn": "-",
+        "bridge": "No",
+        "relay": "No",
+        "exit": "No",
+        "comment": "-",
+        "last_updated": "-",
+        "cw_fraction": ""
+      },
+      {
+        "name": "HostHatch",
+        "url": "https://hosthatch.com",
+        "asn": "AS46562",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "No",
+        "comment": "-",
+        "last_updated": "05/01/16",
+        "cw_fraction": "0.03%"
+      },
+      {
+        "name": "HostUS",
+        "url": "https://hostus.us/",
+        "asn": "AS25926",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "No",
+        "comment": "-",
+        "last_updated": "10/16/14",
+        "cw_fraction": ""
+      },
+      {
+        "name": "IPXcore",
+        "url": "https://ipxcore.com/",
+        "asn": "-",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "No",
+        "comment": "-",
+        "last_updated": "-",
+        "cw_fraction": ""
+      },
+      {
+        "name": "IncogNET",
+        "url": "https://incognet.io/",
+        "asn": "AS210630",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "You need to host a page on port 80 explaining that the server is a Tor Exit and use their reduced exit policy https://incognet.io/tor-exits",
+        "last_updated": "04/2023",
+        "cw_fraction": "0.47%"
+      },
+      {
+        "name": "Linode",
+        "url": "https://www.linode.com/",
+        "asn": "AS63949",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "\"We allow Tor exits as long as they have a reduced exit policy.\" - I've used 10TB this month in total for all 3 of my exit nodes spread out in different locations. I've recieved 0 notices from Linode while using the free 100$ credits you get. I allow ports 53,80,443. My DE exit node is now the [2nd fastest](https://i.imgur.com/Owj6HkD.png) Linode relay, with UK third. I would recommend this host to use the free credits, but wouldn't really recommend paying as bandwidth is limited. Locations: US,CA,GB,DE,SG,JP,IN,AU",
+        "last_updated": "10/07/2021",
+        "cw_fraction": "0.31%"
+      },
+      {
+        "name": "Luna Node",
+        "url": "https://www.lunanode.com/index.php",
+        "asn": "AS16276 / AS174",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "No",
+        "comment": "-",
+        "last_updated": "05/01/14",
+        "cw_fraction": ""
+      },
+      {
+        "name": "Oracle Cloud",
+        "url": "https://www.oracle.com/cloud/free/",
+        "asn": "AS31898",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "No",
+        "comment": "Offers generous free tier - 10TB free outbound bandwidth, I have ran a non exit relay for a few months with no problems, [as well as others](https://metrics.torproject.org/rs.html#search/as:AS31898). Note that they will terminate your account if you're suspicious and not provide reason, even on support chat, I've gotten an account banned simply for running a smokeping instance. (Pinging ip addresses to test network stability). Locations: US,CA,GB,DE,CH,NL,SA,UAE,BR,CL,JP,KR,AU,IN",
+        "last_updated": "10/10/2021",
+        "cw_fraction": "1.24%"
+      },
+      {
+        "name": "OVHcloud",
+        "url": "https://www.ovh.com/us/index.xml",
+        "asn": "AS16276",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "No",
+        "comment": "Unmetered bandwidth in non asia locations. - \"I will gladly explain this situation for you. Running a Tor exit node is strictly forbidden and can lead to the suspension and even termination of your server and account.\" Locations: US,CA,FR,DE,PL,GB,SG",
+        "last_updated": "09/27/2021",
+        "cw_fraction": "15.92%"
+      },
+      {
+        "name": "Oplink.net",
+        "url": "https://www.oplink.net",
+        "asn": "AS40156",
+        "bridge": "No",
+        "relay": "No",
+        "exit": "No",
+        "comment": "Specifically Prohibited Abuse: hosting of any Tor exit relays or nodes.",
+        "last_updated": "11/2022",
+        "cw_fraction": ""
+      },
+      {
+        "name": "Psychz Networks",
+        "url": "https://www.psychz.net/",
+        "asn": "AS40676",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "Very Exit friendly. Standard Tor response will resolve abuse issues.",
+        "last_updated": "10/07/15",
+        "cw_fraction": "0.59%"
+      },
+      {
+        "name": "PulseServers",
+        "url": "https://www.pulseservers.com",
+        "asn": "AS16276",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "Exit-friendly.",
+        "last_updated": "05/01/16",
+        "cw_fraction": "15.92%"
+      },
+      {
+        "name": "RamNode",
+        "url": "https://ramnode.com/",
+        "asn": "AS3842",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "No",
+        "comment": "-",
+        "last_updated": "11/03/14",
+        "cw_fraction": "0.0%"
+      },
+      {
+        "name": "Server Complete",
+        "url": "https://servercomplete.com/",
+        "asn": "-",
+        "bridge": "?",
+        "relay": "?",
+        "exit": "No",
+        "comment": "-",
+        "last_updated": "11/03/14",
+        "cw_fraction": ""
+      },
+      {
+        "name": "IBM Cloud",
+        "url": "https://www.ibm.com/cloud",
+        "asn": "AS36351",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "?",
+        "comment": "-",
+        "last_updated": "-",
+        "cw_fraction": ""
+      },
+      {
+        "name": "VPSWebServer.com",
+        "url": "https://www.vpswebserver.com",
+        "asn": "-",
+        "bridge": "Yes",
+        "relay": "No",
+        "exit": "?",
+        "comment": "-",
+        "last_updated": "-",
+        "cw_fraction": ""
+      },
+      {
+        "name": "Astound Broadband",
+        "url": "https://www.astound.com/",
+        "asn": "AS11404",
+        "bridge": "No",
+        "relay": "No",
+        "exit": "No",
+        "comment": "The [acceptable use policy](https://www.astound.com/policies-disclaimers/acceptable-use-policy/) disallows \"servers\" and \"proxies\".",
+        "last_updated": "04/13/23",
+        "cw_fraction": ""
+      },
+      {
+        "name": "SolarVPS",
+        "url": "https://solarvps.com",
+        "asn": "-",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "-",
+        "last_updated": "-",
+        "cw_fraction": ""
+      },
+      {
+        "name": "SeedVPS",
+        "url": "https://www.seedvps.com",
+        "asn": "-",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "No",
+        "comment": "-",
+        "last_updated": "-",
+        "cw_fraction": ""
+      },
+      {
+        "name": "VPS6.NET",
+        "url": "https://vps6.net/",
+        "asn": "-",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "No",
+        "comment": "-",
+        "last_updated": "-",
+        "cw_fraction": ""
+      },
+      {
+        "name": "DigitalOcean",
+        "url": "https://digitalocean.com/",
+        "asn": "AS14061",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "No",
+        "comment": "-",
+        "last_updated": "-",
+        "cw_fraction": "0.43%"
+      },
+      {
+        "name": "PhoenixNap (Secured Servers)",
+        "url": "https://www.phoenixnap.com/",
+        "asn": "AS12189",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "No",
+        "comment": "-",
+        "last_updated": "08/01/14",
+        "cw_fraction": ""
+      },
+      {
+        "name": "Vultr",
+        "url": "https://vultr.com",
+        "asn": "AS20473",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "No",
+        "comment": "When asked directly they will claim they do support Tor exits but will pull the rug out from under you later on. This has happened to at least two exit operators.",
+        "last_updated": "-",
+        "cw_fraction": "0.21%"
+      },
+      {
+        "name": "ChicagoVPS",
+        "url": "https://chicagovps.net/",
+        "asn": "AS36352",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "No",
+        "comment": "Tor bridge/relay is allowed on the whole VPS range. Any VPS running Exit nodes will be suspended without prior notice.",
+        "last_updated": "15/01/15",
+        "cw_fraction": "0.23%"
+      },
+      {
+        "name": "Xmission",
+        "url": "https://www.xmission.com/",
+        "asn": "AS6315",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "-",
+        "last_updated": "01/28/15",
+        "cw_fraction": "0.0%"
+      },
+      {
+        "name": "MonkeyBrains",
+        "url": "https://monkeybrains.net",
+        "asn": "AS32329",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "Only offers colocation, no cheap VPS option.",
+        "last_updated": "1/14/19",
+        "cw_fraction": ""
+      },
+      {
+        "name": "Universal Hosting",
+        "url": "https://universal-hosting.com",
+        "asn": "-",
+        "bridge": "No",
+        "relay": "No",
+        "exit": "No",
+        "comment": "Charges, and suspends customers. [More info](https://universal-hosting.com/abuse)",
+        "last_updated": "9/14/2021",
+        "cw_fraction": ""
+      },
+      {
+        "name": "Spectrum",
+        "url": "https://www.spectrum.com/",
+        "asn": "AS12271",
+        "bridge": "No",
+        "relay": "No",
+        "exit": "No",
+        "comment": "-",
+        "last_updated": "01/19/22",
+        "cw_fraction": ""
+      },
+      {
+        "name": "Microsoft Azure",
+        "url": "https://azure.microsoft.com",
+        "asn": "AS8075",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "No",
+        "comment": "Expensive bandwidth, you WILL be charged extra after reaching 15GB.",
+        "last_updated": "06/2022",
+        "cw_fraction": "0.01%"
+      },
+      {
+        "name": "G-Core Labs",
+        "url": "https://gcorelabs.com",
+        "asn": "AS199524",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "No",
+        "comment": "They don't allow exits and will suspend your active services and restrict your access to the account if they receive abuse messages. KVM VPS. IPv4+IPv6 native support. * Gnu/Linux, FreeBSD and Windows server supported. Unmetered traffic.",
+        "last_updated": "06/2022",
+        "cw_fraction": "0.56%"
+      },
+      {
+        "name": "Tornado VPS",
+        "url": "https://tornadovps.com/",
+        "asn": "AS47066",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "Allows exits [with a reduced exit policy](https://tornadovps.com/faq).",
+        "last_updated": "05/15/2023",
+        "cw_fraction": "0.02%"
+      },
+      {
+        "name": "ReliableSite",
+        "url": "https://reliablesite.net/",
+        "asn": "AS23470",
+        "bridge": "No",
+        "relay": "No",
+        "exit": "No",
+        "comment": "While not mentioned in the AUP, has said they \"disallow\" Tor even if you announce your own IP ranges.",
+        "last_updated": "06/27/2023",
+        "cw_fraction": "0.65%"
+      }
+    ]
+  },
+  "metrics_date": "2023-11-07"
+}
