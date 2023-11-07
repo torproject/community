@@ -23,7 +23,7 @@ setup(
     packages=find_packages(),
     py_modules=['lektor_community_good_bad_isps'],
     # url='[link to your repository]',
-    version='0.4.3',
+    version='0.1',
     classifiers=[
         'Framework :: Lektor',
         'Environment :: Plugins',
