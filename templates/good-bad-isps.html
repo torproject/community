@@ -14,7 +14,8 @@ td.isp-comment p {
       {{ this.body }}
       {% for id, items in bag('good-bad-isps.isps').items() %}
       {% if items|length %}
-      <h3>{{ id }}</h3>
+      <a name="{{ id|lower }}" class="anchor"></a>
+      <h3 class="anchored-title"><a href="#{{ id|lower }}">{{ id }}&nbsp;<i class="fas fa-link"></i></a></h3>
       <table>
           <thead>
               <tr>
