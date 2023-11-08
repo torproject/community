@@ -1009,6 +1009,16 @@
         "exit": "No",
         "comment": "Exit nodes are not allowed",
         "last_updated": "04/2023"
+      },
+      {
+        "name": "HostSlick",
+        "url": "https://hostslick.com",
+        "asn": "AS208046",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "They allow exits. Have been running multiple for a few months without problems",
+        "last_updated": "11/2023"
       }
     ],
     "New Zealand and Australia": [
