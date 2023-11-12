@@ -142,6 +142,6 @@ Finally, using the rendezvous point, a Tor circuit is formed between you and you
 This was just a high-level overview of the Tor Onion Services protocol.
 Here are some more resources if you want to learn more:
 
-- The [Tor design paper](https://svn.torproject.org/svn/projects/design-paper/tor-design.pdf) describing the original design.
-- The [Tor v3 Onion Services](https://gitweb.torproject.org/torspec.git/tree/rend-spec-v3.txt) protocol specification.
+- The [Tor design paper](https://spec.torproject.org/tor-design) describing the original design.
+- The [Tor v3 Onion Services](https://spec.torproject.org/rend-spec-v3) protocol specification.
 - Presentations about Onion Services: [Understanding Tor Onion Services and Their Use Cases - HOPE XI 2016](https://www.youtube.com/watch?v=VmsFxBEN3fc), [DEF CON 25 - Roger Dingledine - Next Generation Tor Onion Services](https://www.youtube.com/watch?v=Di7qAVidy1Y).
