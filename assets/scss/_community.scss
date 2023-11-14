@@ -173,23 +173,29 @@ a.anchor {
     }
 }
 
-#share-story {
-    #share-story-title {
-        font-weight: 700;
+#share-story-links {
+    a {
+        font-size: 1.1rem;
+        white-space: nowrap;
     }
+    .fab, .fas {
+        font-size: 1.3rem;
+        padding-right: 0.5rem;
+    }
+    span {
+        display: none;
+    }
+}
+
+@include media-breakpoint-up(lg) {
     #share-story-links {
+        span {
+            display: inline;
+        }
         a {
-            font-size: 1.2rem;
-            white-space: nowrap;
-        }
-        .fab, .fas {
-            font-size: 1.5rem;
-            padding-right: 0.5rem;
+            width: 100% !important;
+            margin: 0 1rem;
         }
     }
 }
-@include media-breakpoint-up(md) {
-    #share-story-links {
-        max-width: 700px;
-    }
-}
+
