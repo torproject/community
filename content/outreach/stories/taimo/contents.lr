@@ -1,0 +1,18 @@
+---
+_model: story
+---
+html: outreach-story.html
+---
+section: Stories
+---
+section_id: stories
+---
+title: Taimo
+---
+category: online-safety
+---
+summary: The risks I face from not using Tor are not immediate, and mostly focus around the government consolidating information on it's population and the potential for this to go wrong.
+---
+body:
+
+The risks I face from not using Tor are not immediate, and mostly focus around the government consolidating information on it's population and the potential for this to go wrong. The biggest threat from this I see is not actively from the government themselves, who are simply misguided, but any access from third party black hat hackers who could get access to the database and themselves use it maliciously.

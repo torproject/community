@@ -1,0 +1,18 @@
+---
+_model: story
+---
+html: outreach-story.html
+---
+section: Stories
+---
+section_id: stories
+---
+title: Plinio
+---
+category: anti-censorship
+---
+summary: I am a software developer and programming teacher and I live in Cuba.
+---
+body:
+
+I am a software developer and programming teacher and I live in Cuba. There are many sites with information that I need to be able to do my work that are blocked due to absurd laws. Even there are sites that use services and resources that are also blocked for my country. I use my browser with SwitchyProxy Omega in auto switch mode to be able to redirect blocked requests to the network and thus have a decent navigation.

@@ -1,0 +1,18 @@
+---
+_model: story
+---
+html: outreach-story.html
+---
+section: Stories
+---
+section_id: stories
+---
+title: Branka
+---
+category: healthcare
+---
+summary: I'm a doctor in a very political town. I have patients who work on legislation that can mean billions of dollars to major telecom, social media, and search concerns.
+---
+body:
+
+I'm a doctor in a very political town. I have patients who work on legislation that can mean billions of dollars to major telecom, social media, and search concerns. When I have to do research on diseases and treatment or look into aspects of my patients' histories, I am well aware that my search histories might be correlated to patient visits and leak information about their health, families, and personal lives. I use Tor to do much of my research when I think there is a risk of correlating it to patient visits.
