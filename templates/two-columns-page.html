@@ -28,6 +28,10 @@
         <!--li class="list-group-item"><a><span class="card-text text-muted">Contributors to this page: <a href="#" title="#">cypherpunk</a></span></li-->
         <li class="list-group-item">
           <a href="{{ this.parent|url }}">{{ _("Back to previous page: ") }} {{ this.parent.title }}</a> - <a href="https://gitlab.torproject.org/tpo/web/community/-/edit/main/content{{ this.path }}/contents.lr">{{ _("Edit this page") }}</a>
+           {% if this.alt != "en" %} - 
+             <a href="https://hosted.weblate.org/zen/tor/community-portal/{{ this.alt }}/?q=+location%3A%22content{{ this.path|safe }}%2Fcontents%22&sort_by=-priority%2Cposition&checksum=">{{ _("Improve this translation") }}</a>
+           {% endif %}
+
         </li>
       </ul>
     </div>
