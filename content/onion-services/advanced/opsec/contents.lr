@@ -16,7 +16,7 @@ html: two-columns-page.html
 ---
 body: 
 
-Onion services operators need to practice proper [operational security](https://trac.torproject.org/projects/tor/wiki/doc/OperationalSecurity) and system administration to maintain security. 
+Onion services operators need to practice proper [operational security](https://gitlab.torproject.org/legacy/trac/-/wikis/doc/OperationalSecurity) and system administration to maintain security. 
 For some security suggestions please make sure you read over Riseup's ["Tor Hidden (Onion) Services Best Practices" document](https://riseup.net/en/security/network-security/tor/onionservices-best-practices).
 Also, here are some more anonymity issues you should keep in mind:
 
