@@ -81,7 +81,7 @@ You will need to add the following two lines to your `torrc` file:
 
 ```
 HiddenServiceDir /var/lib/tor/my-website/
-HiddenServicePort 80 unix:/var/run/tor-my-website.sock
+HiddenServicePort 80 unix:/var/run/tor/my-website.sock
 ```
 
 ## Step 3: Restart Tor and check that it worked
@@ -129,7 +129,7 @@ For example, in Nginx and using Tor with Unix sockets, the configuration would l
 
 ```
 server {
-        listen unix:/var/run/tor-my-website.sock;
+        listen unix:/var/run/tor/my-website.sock;
         server_name <your-onion-address>.onion;
         access_log /var/log/nginx/my-website.log;
         index index.html;
