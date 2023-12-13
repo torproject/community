@@ -28,29 +28,7 @@ You can click ```Edit this page``` and submit your content changes in a [Pull Re
 
 ### (Advanced) Compiling a local version of the website
 
-1. Download and install Lektor: https://www.getlektor.com/downloads/
-
-2. Install the lektor-i18n plugin and its [dependencies](https://github.com/numericube/lektor-i18n-plugin#prerequisites).
-
-3. Clone the repository:
-
-```git clone https://gitlab.torproject.org/tpo/web/community.git```
-
-4. Init the building blocks submodule: 
-
-```$ cd community/lego && git submodule update --init --recursive```
-
-5. Translations for the website are imported by Jenkins when building the page, but if you want to test them, download the correct branch of the translations repo to the ./i18n/ folder.
-
-6. Finally:
-
-To run a local continuous builder: ```$ lektor server```
-
-To just build the website once: ```$ lektor build -O <folder>```
-
-#### How to develop on the website
-
-Check our [wiki pages](https://gitlab.torproject.org/tpo/web/wiki/-/wikis/How-to-develop-on-the-website).
+See this guide on our wiki: https://gitlab.torproject.org/tpo/web/team/-/wikis/documentation/Compiling-a-local-version-of-the-website
 
 ### Translations
 
