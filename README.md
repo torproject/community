@@ -42,6 +42,48 @@ If you want to contribute to the Community portal, we will be happy to help you.
 
 Instructions for maintaining specific sections of the website.
 
+#### Adding user stories
+
+User stories are located under `content/outreach/stories`.
+
+To add a new user story, add a new directory with the story's pseudonymous name. In that directory two files are required, `portrait.png` and `contents.lr` containing the story text.
+
+For the portrait, generate one manually from the [CC0](https://creativecommons.org/public-domain/cc0/) [OpenPeeps illustration library](https://www.openpeeps.com/). A portrait from another story may also be re-used.
+
+For the story content, the `contents.lr` file should be formatted as follows:
+
+```
+---
+_model: story
+---
+html: outreach-story.html
+---
+section: Stories
+---
+section_id: stories
+---
+title: <title>
+---
+category:
+
+<category>
+---
+summary: <summary>
+---
+body:
+
+<body>
+```
+
+Replace the placeholders as follows:
+
+ - `<title>`: Capitalized pseudonymn for this story
+ - `category`: one or more of `activism`, `anti-censorship`, `civic-participation`, `encryption`, `freedom-of-information`, `healthcare`, `lgbtqia`, `online-safety`, `preace-of-mind`, `press-freedom`, `privacy` (as defined in `databags/story-categories.ini`), one category per line
+ - `<summary>`: text shown on the index page below the portrait (one or two short phrases)
+ - `<body>`: full story content (the first paragraph will be automatically "featured")
+
+These steps can be done directly in the GitLab Web IDE: simply create a new branch, enter the editor environment, create the directory, add/edit the needed files and finally, create and push a new commit. GitLab will then offer the option to create a merge request. Once the MR is created, a "review app" will be deployed allowing to preview the changes.
+
 #### Adding training guides for training resources
 
 Each training resource can optionally have a training guide. You can create a training guide for a particular resource by creating a new lektor contents file with the path `content/training/resources/<resource name>-guide/contents.lr`. So to create a guide for a resource called `all-about-tor`, you would create `content/training/resources/all-about-tor-guide/contents.lr`. Here's an example contents file for a training guide:
