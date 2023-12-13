@@ -343,11 +343,11 @@
         "name": "Strato",
         "url": "https://strato.de",
         "asn": "AS6724",
-        "bridge": "No",
-        "relay": "No",
+        "bridge": "Yes",
+        "relay": "Yes",
         "exit": "No",
-        "comment": "-",
-        "last_updated": "03/2021"
+        "comment": "Support says all allowed, however they do not want illegal activities running on their servers.",
+        "last_updated": "12/2023"
       },
       {
         "name": "PraHost",
