@@ -32,7 +32,7 @@ See this guide on our wiki: https://gitlab.torproject.org/tpo/web/team/-/wikis/d
 
 ### Translations
 
-To help us to translate, please join the Tor Project team in [Transifex](https://www.transifex.com/).
+To help us to translate, please join the [Tor Project team](https://hosted.weblate.org/projects/tor/) on Weblate.
 
 ### Getting help
 
