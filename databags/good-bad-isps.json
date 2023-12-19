@@ -1959,6 +1959,16 @@
         "exit": "No",
         "comment": "While not mentioned in the AUP, has said they \"disallow\" Tor even if you announce your own IP ranges.",
         "last_updated": "06/27/2023"
+      },
+      {
+        "name": "GoDaddy",
+        "url": "https://godaddy.com/",
+        "asn": "AS398101",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "At least with a reduced exit policy alongside blocking SSH, very Tor Exit friendly on VPS. Unmetered bandwidth.",
+        "last_updated": "12/19/2023"
       }
     ]
   }
