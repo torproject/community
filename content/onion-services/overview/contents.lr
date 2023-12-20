@@ -64,7 +64,7 @@ Let's imagine that your local newspaper decides to set up an Onion Service (usin
 As the first step in the protocol, the Onion Service will contact a bunch of Tor relays and ask them to act as its _introduction points_ by establishing long-term circuits to them.
 These circuits are anonymized circuits, so the server does not reveal the service location to the introduction points.
 
-The Onion Service will hide and protect itself behind the Tor network by only allowing access through three introduction points that it connects to through a two-hop Tor circuit.
+The Onion Service will hide and protect itself behind the Tor network by only allowing access through three introduction points that it connects to through a three-hop Tor circuit.
 
 <img class="col-lg-8" src="../../static/images/onion-services/overview/onion-service-01.png" alt="Onion Services: Step 1">
 
