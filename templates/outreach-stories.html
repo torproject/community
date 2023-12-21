@@ -18,7 +18,7 @@
 {% for child in this.children.filter(F.category.contains(id)).all() %}
       <div class="col mx-auto my-3">
         <div class="card h-100 p-3">
-            <img class="mx-auto" src="{{ child.attachments.images.get('portrait.png')|url }}" />
+            <img class="story-portrait mx-auto" src="{{ child.attachments.images.get('portrait.png')|url }}" />
             <h4 class="card-title my-3 text-center"><a href="{{ child.path|url(alt=this.alt) }}">{{ child.title }}</a></h4>
             <div class="card-text ml-3 text-left">{% if child.summary %}<p>{{ child.summary }}</p>{% else %}{{ child.body }}{% endif %}</div>
             <div class="card-btn mt-auto"><a class="btn btn-outline-primary mx-auto my-0 w-100" href="{{ child.path|url(alt=this.alt) }}">{{ _('View and share') }}</a></div>

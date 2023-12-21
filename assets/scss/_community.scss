@@ -138,7 +138,6 @@ a.anchor {
     }
     img {
         display: block;
-        max-width: 220px;
     }
     .card-title {
         font-size: 1.8rem;
@@ -186,6 +185,10 @@ a.anchor {
     span {
         display: none;
     }
+}
+
+img.story-portait {
+    max-width: 220px;
 }
 
 @include media-breakpoint-up(lg) {
