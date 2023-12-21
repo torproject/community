@@ -48,7 +48,7 @@ User stories are located under `content/outreach/stories`.
 
 To add a new user story, add a new directory with the story's pseudonymous name. In that directory two files are required, `portrait.png` and `contents.lr` containing the story text.
 
-For the portrait, generate one manually from the [CC0](https://creativecommons.org/public-domain/cc0/) [OpenPeeps illustration library](https://www.openpeeps.com/). A portrait from another story may also be re-used.
+For the portrait, generate one manually from the [CC0](https://creativecommons.org/public-domain/cc0/) [OpenPeeps illustration library](https://www.openpeeps.com/). It should be resized to a 220px-sided square. A portrait from another story may also be re-used.
 
 For the story content, the `contents.lr` file should be formatted as follows:
 
