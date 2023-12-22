@@ -22,7 +22,7 @@
       {{ this.body }}
       <p class="font-italic">{{ _("{} is a pseudonym. This is an anonymous story submitted by a Tor user.").format(this.title) }}</p>
       {%- for cat in this.category %}
-      <a class="btn btn-outline-primary small mt-3" href="../#{{ cat }}">{{ cat }}</a>
+      <a class="btn btn-outline-primary small mt-3" href="../#{{ cat }}">{{ bag('story-categories')[cat].title }}</a>
       {%- endfor %}
     </div>
   </div>
