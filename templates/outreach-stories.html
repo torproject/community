@@ -5,6 +5,13 @@
     {{ this.body }}
   </div>
 </div>
+<div class="row">
+  <div class="container d-flex justify-content-center flex-wrap my-3">
+{% for id, item in bag('story-categories').items() %}
+  <div class="p-2"><a class="btn btn-outline-primary" href="#{{ id }}">{{ item.title }}</a></div>
+{% endfor %}
+  </div>
+</div>
 {% for id, item in bag('story-categories').items() %}
 <div class="row">
   <div class="container text-center">
