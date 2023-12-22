@@ -6,7 +6,7 @@
   </div>
 </div>
 <div class="row">
-  <div class="container d-flex justify-content-center flex-wrap my-3">
+  <div class="container d-flex justify-content-center flex-wrap mb-3">
 {% for id, item in bag('story-categories').items() %}
   <div class="p-2"><a class="btn btn-outline-primary" href="#{{ id }}">{{ item.title }}</a></div>
 {% endfor %}
