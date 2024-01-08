@@ -85,7 +85,7 @@ Don't forget to change the `ORPort`, `ServerTransportListenAddr`, `ContactInfo`,
 
 * Note that both Tor's OR port and its obfs4 port must be reachable. If your bridge is behind a firewall or NAT, make sure to open both ports. You can use our [reachability test](https://bridges.torproject.org/scan/) to see if your obfs4 port is reachable from the Internet.
 
-### 5. Disable SeLinux
+### 6. Disable SeLinux
 
 Check wether SeLinux is set to "Enforcing".
 
@@ -98,14 +98,39 @@ If set to "Enforcing", change Status to "Permissive".
 ```
 # setenforce 0
 ```
+To make the Changes Permanent:
+```
+# nano /etc/selinux/config
+```
+and change SELINUX=enforcing to SELINUX=permissive
 
-### 6. Restart Tor
+### 7. Open Ports in Fedora firewall 
+
+For the obfs4 and ORPort which you have chosen in the torrc file.
+```
+# firewall-cmd --add-port XXX/tcp --permanent
+```
+after you did it for both ports, run:
+```
+# firewall-cmd --reload
+```
+
+#### (Optional) Configure systemd to allow obfs4 binding on privileged ports
+
+If you decide to use a fixed obfs4 port smaller than 1024 (for example 80 or 443), you will need to configure systemd and give obfs4 `CAP_NET_BIND_SERVICE` capabilities to bind the port with a non-root user:
+
+```
+# setcap cap_net_bind_service=+ep /usr/bin/obfs4proxy
+```
+
+
+### 8. Restart Tor
 
 ```
 # systemctl enable --now tor
 ```
 
-### 7. Monitor your logs
+### 9. Monitor your logs
 
 To confirm your bridge is running with no issues, you should see something like this (usually in `/var/log/tor/log` or `/var/log/syslog`):
 ```
@@ -118,7 +143,7 @@ To confirm your bridge is running with no issues, you should see something like 
 [notice] Self-testing indicates your ORPort is reachable from the outside. Excellent. Publishing server descriptor.
 ```
 
-### 8. Final Notes
+### 10. Final Notes
 
 If you are having trouble setting up your bridge, have a look at [our help section](../../../getting-help/).
 If your bridge is now running, check out the [post-install notes](../post-install/).
