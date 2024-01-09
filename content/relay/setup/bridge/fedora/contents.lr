@@ -87,13 +87,13 @@ Don't forget to change the `ORPort`, `ServerTransportListenAddr`, `ContactInfo`,
 
 ### 6. Disable SeLinux
 
-Check wether SeLinux is set to "Enforcing".
+Check wether SeLinux is set to "Enforcing":
 
 ```
 # getenforce
 ```
 
-If set to "Enforcing", change Status to "Permissive".
+If set to "Enforcing", change Status to "Permissive":
 
 ```
 # setenforce 0
@@ -102,14 +102,15 @@ To make the changes permanent:
 ```
 # nano /etc/selinux/config
 ```
-and change SELINUX=enforcing to SELINUX=permissive
+And change SELINUX=enforcing to SELINUX=permissive.
 
 ### 7. Open Ports in Fedora firewall 
 
-For the obfs4 and ORPort which you have chosen in the torrc file.
+For the obfs4 and ORPort which you have chosen in the torrc file:
 ```
 # firewall-cmd --add-port XXX/tcp --permanent
 ```
+
 After you did it for both ports, run:
 ```
 # firewall-cmd --reload
