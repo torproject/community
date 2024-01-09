@@ -98,7 +98,7 @@ If set to "Enforcing", change Status to "Permissive".
 ```
 # setenforce 0
 ```
-To make the Changes Permanent:
+To make the changes permanent:
 ```
 # nano /etc/selinux/config
 ```
