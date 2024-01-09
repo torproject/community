@@ -110,7 +110,7 @@ For the obfs4 and ORPort which you have chosen in the torrc file.
 ```
 # firewall-cmd --add-port XXX/tcp --permanent
 ```
-after you did it for both ports, run:
+After you did it for both ports, run:
 ```
 # firewall-cmd --reload
 ```
