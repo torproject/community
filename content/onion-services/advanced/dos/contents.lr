@@ -21,7 +21,7 @@ All these approaches can be combined.
 However there is no single one-size-fits-all solution for this problem at the moment.
 Defending a site under attack requires creativity and a custom-tailored approach.
 
-Here are a few tips:
+An overview of implemented defenses at the tor daemon is given in the [Overview](https://spec.torproject.org/dos-spec/overview.html) section from the [Denial-of-service prevention mechanisms in Tor](https://spec.torproject.org/dos-spec/index.html) specification, and here we give some practical tips.
 
 ### Rate limiting at the Introduction Points
 
@@ -36,11 +36,11 @@ Since [Proposal 305](https://gitlab.torproject.org/tpo/core/torspec/-/blob/main/
 * `HiddenServiceEnableIntroDoSRatePerSec`: The allowed client introduction rate per second at the introduction point.
    If this option is 0, it is considered infinite and thus if HiddenServiceEnableIntroDoSDefense is set, it then effectively disables the defenses.
 
-For more information on how they work, check the `tor(1)` manpage and the `[EST_INTRO_DOS_EXT]` section of the [Onion Services v3 specification](https://gitlab.torproject.org/tpo/core/torspec/-/blob/main/rend-spec-v3.txt).
+For more information on how they work, check the `tor(1)` manpage and the [Denial-of-Service defense extension (DOS_PARAMS)](https://spec.torproject.org/rend-spec/introduction-protocol.html#EST_INTRO_DOS_EXT) section of the [Onion Services v3 specification](https://spec.torproject.org/rend-spec/index.html).
 
 ### Proof of Work (PoW) before establishing Rendezvous Circuits
 
-With the implementation of [Proposal 327](https://gitlab.torproject.org/tpo/core/torspec/-/blob/main/proposals/327-pow-over-intro.txt), a Proof of Work (PoW) defense mechanism can be configured for each Onion Service with the following `torrc` options:
+A [Proof of Work (PoW)](https://spec.torproject.org/hspow-spec/index.html) defense mechanism is explained in length at the [PoW FAQ](https://gitlab.torproject.org/tpo/onion-services/onion-support/-/wikis/Documentation/PoW-FAQ), and can be configured for each Onion Service with the following `torrc` options:
 
 * `HiddenServicePoWDefensesEnabled`: Enable proof-of-work based service DoS mitigation.
    When enabled, tor will include parameters for an optional client puzzle in the encrypted portion of this hidden service's descriptor.
