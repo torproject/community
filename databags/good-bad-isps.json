@@ -821,6 +821,16 @@
         "last_updated": "06/16/15"
       },
       {
+        "name": "Crazy RDP",
+        "url": "https://www.crazyrdp.com",
+        "asn": "AS394711",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "No",
+        "comment": "Officially exits nodes are allowed according to the terms. However, at the first abuse report, service is terminated without refund",
+        "last_updated": "01/14/23"
+      },
+      {
         "name": "HostHatch",
         "url": "https://hosthatch.com/",
         "asn": "AS42708",
