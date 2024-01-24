@@ -1,6 +1,6 @@
 {% include 'breadcrumb.html' %}
 {% set share_url = this.path|url(alt=this.alt,external=true) %}
-{% set share_text = _("Find out how Tor helps internet users like {} reclaim their privacy and anonymity: {}").format(this.title, share_url) %}
+{% set share_text = _("Find out how Tor helps internet users like {} reclaim their privacy and anonymity.").format(this.title) %}
 <meta property="og:url" content="{{ share_url }}" />
 <meta property="og:type" content="article" />
 <meta property="og:title" content="{{ share_title }}" />
@@ -44,7 +44,7 @@ mastodon_link.addEventListener('click', (e) => {
   if (!instance) {
     e.preventDefault();
   } else {
-    mastodon_link.href = 'https://' + instance + '/share?url={{ share_url|urlencode }}';
+    mastodon_link.href = 'https://' + instance + '/share?url={{ share_url|urlencode }}&text={{ share_text|urlencode }} ';
   }
 });
 </script>
