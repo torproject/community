@@ -28,7 +28,7 @@ Paste the entire bridge line into Tor Browser:
 Bridge obfs4 <IP ADDRESS>:<PORT> <FINGERPRINT> cert=<CERTIFICATE> iat-mode=0
 ```
 
-You'll need to replace `<IP ADDRESS>`, `<PORT>`, and `<FINGERPRINT>` with the actual values, which you can find in the tor log. Make sure to use `<FINGERPRINT>`, not `<HASHED FINGERPRINT>`; and that `<PORT>` is the obfs4 port you chose - and not the OR port.
+You'll need to replace `<IP ADDRESS>`, `<PORT>`, and `<FINGERPRINT>` with the actual values, which you can find in the tor log. Make sure to use your server's identity key fingerprint for `<FINGERPRINT>`, not `<HASHED FINGERPRINT>` or the ed25519 key; and that `<PORT>` is the obfs4 port you chose - and not the OR port.
 
 Finally, you can monitor your obfs4 bridge's usage on [Relay Search](https://metrics.torproject.org/rs.html#search).
 Just enter your bridge's `<HASHED FINGERPRINT>` in the form and click "Search". After having set up the bridge, it takes approximately three hours for the bridge to show up in Relay Search.
