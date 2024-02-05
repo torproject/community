@@ -55,5 +55,5 @@ sudo journalctl -u snowflake-proxy
 
 ### 4. Enable Automatic Software Updates
 
-One of the most important things to keep your snowflake proxy secure is to install security updates timely and ideally automatically so you can not forget about it. Follow the instructions to enable [automatic software updates](relay/setup/guard/debian-ubuntu/updates/) for your operating system.
+One of the most important things to keep your snowflake proxy secure is to install security updates timely and ideally automatically so you can not forget about it. Follow the instructions to enable [automatic software updates](/relay/setup/guard/debian-ubuntu/updates/) for your operating system.
 
