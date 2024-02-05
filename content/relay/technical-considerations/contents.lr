@@ -28,7 +28,7 @@ For more information on hosting providers and their policies on allowing Tor rel
 * What virtualization / hypervisor (if any) does the provider use? Anything but OpenVZ should be fine.
 * Does the hoster start to throttle bandwidth after a certain amount of traffic?
 * How well connected is the autonomous system of the hoster?
-  To answer this question you can use the AS rank of the autonomous systems if you want to compare: (a lower value is better) <http://as-rank.caida.org/>
+  To answer this question you can use the AS rank of the autonomous systems if you want to compare: (a lower value is better) <https://asrank.caida.org/>
 
 ## If you plan to run exit relays
 
