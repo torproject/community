@@ -1,0 +1,49 @@
+_model: page
+---
+color: primary
+---
+title: FreeBSD
+---
+key: 5
+---
+html: two-columns-page.html
+---
+subtitle: How to run a standalone Snowflake proxy on FreeBSD
+---
+section_id: snowflake-operations
+---
+section: Snowflake operations
+---
+body:
+
+### 1. Installation
+
+Install the Snowflake proxy package using FreeBSD's package manager:
+```
+# pkg install snowflake-tor
+```
+
+### 2. Enable Snowflake's proxy daemon to start on boot
+
+To ensure the Snowflake proxy service automatically starts on system boot, enable it using the `sysrc` command:
+```
+# sysrc snowflake_enable=YES
+```
+
+It will keep its same defaults, and allow the proxy service to run.
+
+### 3. Start the service
+
+After installation and configuration, start the Snowflake service manually for the first time with:
+
+```
+# service snowflake start
+```
+
+### Getting help
+
+If you have any issues or need further assistance with the Snowflake proxy commands, you can access the help documentation by running:
+```
+snowflake-proxy --help
+```
+

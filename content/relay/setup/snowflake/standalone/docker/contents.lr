@@ -1,0 +1,68 @@
+_model: page
+---
+color: primary
+---
+title: Docker setup
+---
+key: 2
+---
+html: two-columns-page.html
+---
+subtitle: How to run a standalone Snowflake proxy with Docker
+---
+section_id: snowflake-operations
+---
+section: Snowflake operations
+---
+body:
+
+This guide will help you set up a standalone [Snowflake](https://snowflake.torproject.org) proxy using Docker to help censored users connect to the Tor network.
+We have a [Docker image](https://hub.docker.com/r/thetorproject/snowflake-proxy) to ease the setup of a Snowflake proxy.
+
+### 1. Install Docker
+
+The instructions in this step are for Debian-based systems, but you can find [Docker instructions](https://docs.docker.com/get-docker/) for other supported platforms.
+
+Open a terminal and run these commands:
+```
+$ sudo apt install curl sudo
+$ curl -fsSL https://get.docker.com -o get-docker.sh
+$ sudo sh ./get-docker.sh
+```
+
+### 2. Download the docker compose file
+
+Download the [docker-compose.yml](https://gitlab.torproject.org/tpo/anti-censorship/docker-snowflake-proxy/raw/main/docker-compose.yml) configuration file.
+Run the command to download it:
+```
+$ wget https://gitlab.torproject.org/tpo/anti-censorship/docker-snowflake-proxy/raw/main/docker-compose.yml
+```
+Then, deploy the proxy by running:
+```
+docker compose up -d snowflake-proxy
+```
+This command starts the Snowflake proxy in detached mode.
+You should now see the output:
+```
+Creating snowflake-proxy ... done
+```
+and your proxy is up and running!
+
+### 3. Checking your Docker logs
+
+To access your Snowflake proxy logs, first find the container ID number.
+Run the command:
+```
+$ docker ps
+```
+Your Snowflake container ID is on the same line of `thetorproject/snowflake-proxy:latest`.
+Replace the container ID below with yours and run the command:
+```
+$ docker logs -f 42fb82372340
+```
+
+### 4. Automatic updates with Watchtower
+
+The [docker-compose.yml](https://gitlab.torproject.org/tpo/anti-censorship/docker-snowflake-proxy/raw/main/docker-compose.yml) file contains a `watchtower` container, configured to automatically check for updates to the snowflake docker container every day, download them and run them.
+So if you are using that, your snowflake proxy will stay updated automatically!
+Otherwise, you will need to periodically pull the latest container and restart it manually.

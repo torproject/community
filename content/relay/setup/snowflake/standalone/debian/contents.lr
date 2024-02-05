@@ -1,0 +1,59 @@
+_model: page
+---
+color: primary
+---
+title: Debian
+---
+key: 4
+---
+html: two-columns-page.html
+---
+subtitle: How to run a standalone Snowflake proxy on Debian
+---
+section_id: snowflake-operations
+---
+section: Snowflake operations
+---
+body:
+
+This guide will walk you through the installation, operation, and maintenance of [Snowflake](https://snowflake.torproject.org) proxy to contribute to the Tor Project's anti-censorship efforts.
+Snowflake proxy can be easily installed as a package on Debian-based systems (Debian 12 - bookworm).
+ 
+### 1. Installation
+
+Open your terminal and execute the following command:
+
+```
+sudo apt install snowflake-proxy
+```
+
+### 2. Operating snowflake proxy
+
+The snowflake proxy service should start automatically after installation.
+You can manage the service with systemd commands:
+
+```
+sudo systemctl start snowflake-proxy
+```
+
+To enable snowflake proxy to automatically start on on boot:
+```
+sudo systemctl enable snowflake-proxy
+```
+
+To check the current status of your snowflake proxy:
+```
+sudo systemctl status snowflake-proxy
+```
+
+### 3. Monitoring logs
+
+Keeping an eye on the operation logs can help troubleshoot issues or confirm the proxy's activity:
+```
+sudo journalctl -u snowflake-proxy
+```
+
+### 4. Enable Automatic Software Updates
+
+One of the most important things to keep your snowflake proxy secure is to install security updates timely and ideally automatically so you can not forget about it. Follow the instructions to enable [automatic software updates](relay/setup/guard/debian-ubuntu/updates/) for your operating system.
+

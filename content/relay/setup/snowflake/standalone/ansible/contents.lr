@@ -122,7 +122,3 @@ The playbook below has a limit of 300 concurrent clients:
 ```
 
 **Note:** This Ansible role variable isn't available for FreeBSD.
----
-_hidden: no
----
-_discoverable: no

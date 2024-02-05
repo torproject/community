@@ -6,7 +6,7 @@ title: Standalone Snowflake proxy
 ---
 body:
 
-This guide will help you set up a standalone Snowflake proxy on a server to help censored users connect to the Tor network.
+This guide will help you set up a standalone Snowflake proxy to help censored users connect to the Tor network.
 The only requirements are internet connectivity, however one of the main advantages of standalone Snowflake proxies is that they can be installed on servers and offer a higher bandwidth and more reliable option for users behind restrictive NATs and firewalls.
 Therefore, we especially recommend:
 1. 24/7 Internet connectivity
@@ -15,93 +15,8 @@ The properties you are looking for are address-independent mapping and either ad
 3. A server behind no or unrestricted NAT, with incoming UDP on the whole port range of `cat /proc/sys/net/ipv4/ip_local_port_range` open (or the range set using the optional `-ephemeral-ports-range` flag).
 
 There are several ways to setup and run a standalone snowflake proxy.
-
-### Docker setup
-
-You must first have [Docker](https://docs.docker.com/engine/install/) and [docker-compose](https://docs.docker.com/compose/install/) installed.
-
-We have a [Docker image](https://hub.docker.com/r/thetorproject/snowflake-proxy) to ease the setup of a snowflake proxy.
-First [download docker-compose.yml](https://gitlab.torproject.org/tpo/anti-censorship/docker-snowflake-proxy/raw/main/docker-compose.yml).
-Then, deploy the proxy by running:
-```
-docker-compose up -d snowflake-proxy
-```
-
-You should now see the output:
-```
-Creating snowflake-proxy ... done
-```
-and your proxy is up and running!
-
-The [docker-compose.yml](https://gitlab.torproject.org/tpo/anti-censorship/docker-snowflake-proxy/raw/main/docker-compose.yml) contains a `watchtower` container, configured to automatically check for updates to the snowflake docker container every day, download them and run them.
-So if you are using that, your snowflake proxy will stay updated automatically!
-Otherwise, you will need to periodically pull the latest container and restart it manually.
-
-### Ansible
-
-There is now an [Ansible role](https://galaxy.ansible.com/nvjacobo/snowflake) to install a Snowflake proxy on Debian, Fedora, Arch Linux, FreeBSD and Ubuntu created by Jacobo Nájera.
-Follow the guide to run a [Snowflake with Ansible](/relay/setup/snowflake/standalone/ansible).
-
-### Compiling and running from source
-
-1. First you will need to install and configure the Go compiler to build the standalone proxy from source code.
-Please login using a user account with `sudo` rights or directly with `root` (in the later case omit the `sudo` part in the following commands).
-If you are running Ubuntu or Debian, you can install Go by executing `sudo apt install golang`.
-If you are using Fedora, Red Hat or Amazon Linux with `sudo yum install golang` or `sudo dnf install golang`. 
-Otherwise visit https://golang.org/dl/.
-You will need Go 1.21 or newer to run the Snowflake proxy.
-You can check your installed version using the command `go version`.
-
-2. Second you need the git client to download the Snowflake source code.
-Please login using a user account with `sudo` rights or directly with `root` (in the later case omit the `sudo` part of the following commands).
-If you are running Ubuntu or Debian, you can install git by executing `sudo apt install git`.
-If you are using Fedora, Red Hat or Amazon Linux with `sudo yum install git` or `sudo dnf install git`.
-Otherwise consult the documentation for your operating system.
-
-3. Please execute the following steps with the user account under which the proxy should be executed.
-Don't use `root`.
-It's recommended to create a separate `snowflake` account with restricted rights on the system.
-
-4. Clone the [source code](#source-code).
-   ```
-   git clone https://gitlab.torproject.org/tpo/anti-censorship/pluggable-transports/snowflake.git
-   ```
-5. Build the Snowflake proxy.
-   ```
-   cd snowflake/proxy
-   go build
-   ```
-
-6. Run the Snowflake proxy.
-   ```
-   nohup ./proxy &
-   ```
-   If you want to save the proxy output to a logfile, you can use:
-   ```
-   nohup ./proxy >snowflake.log 2>&1 &
-   ```
-
-7. Make sure the proxy is started after a reboot of the system:
-   ```
-   crontab -e
-   ```
-   Enter the following line (example, adapt paths to your situation)
-   ```
-   @reboot nohup /home/snowflake/snowflake/proxy/proxy > /home/snowflake/snowflake/proxy/snowflake.log 2>&1 &
-   ```
-   Please verify if this is working by rebooting the system and checking the log.
-   On some Linux installations this might not work.
-
-To keep your snowflake proxy updated, execute the following commands every few weeks (login with the user account you used during installing the proxy):
-
-```
-kill -9 $(pidof proxy)
-cd snowflake/
-git pull
-cd proxy
-go build
-nohup ./proxy >snowflake.log 2>&1 &
-```
+Please choose your preferred platform below.
+If you need help to install and operate your Snowflake proxy, visit the [Tor Forum](https://forum.torproject.org/tag/snowflake).
 
 ---
 key: 1

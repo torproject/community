@@ -1,0 +1,96 @@
+_model: page
+---
+color: primary
+---
+title: Compile Snowflake proxy from the source
+---
+key: 3
+---
+html: two-columns-page.html
+---
+subtitle: How to compile and run a standalone Snowflake proxy from the source
+---
+section_id: snowflake-operations
+---
+section: Snowflake operations
+---
+body:
+
+This guide will walk you through the installation, operation, and maintenance of [Snowflake](https://snowflake.torproject.org) proxy on Linux-based systems.
+Running a Snowflake proxy is an easy way to contribute to the Tor Project's anti-censorship efforts.
+
+### 1. Install Go
+
+First you will need to install and configure the Go compiler to build the standalone proxy from source code.
+Please login using a user account with `sudo` rights or directly with `root` (in the later case omit the `sudo` part in the following commands).
+
+If you are running Ubuntu or Debian, you can install Go by executing `sudo apt install golang`.
+If you are using Fedora, Red Hat or Amazon Linux with `sudo yum install golang` or `sudo dnf install golang`. 
+
+You will need **Go 1.21** or newer to run the Snowflake proxy.
+Please check your Go version by using the command `go version`.
+Otherwise download [Go binary](https://golang.org/dl/) from the official website and follow its [installation instructions](https://go.dev/doc/install).
+
+### 2. Install git and clone Snowflake repository
+
+Second you need the git client to download the Snowflake source code.
+
+If you are running Ubuntu or Debian, you can install git by executing `sudo apt install git`.
+If you are using Fedora, Red Hat or Amazon Linux with `sudo yum install git` or `sudo dnf install git`.
+Otherwise consult the documentation for your operating system.
+
+Please execute the following steps with the user account under which the proxy should be executed.
+Don't use `root`.
+
+It's recommended to create a separate `snowflake` account with restricted rights on the system.
+
+Open your terminal and clone the source code:
+```
+git clone https://gitlab.torproject.org/tpo/anti-censorship/pluggable-transports/snowflake.git
+```
+
+### 3. Build Snowflake proxy
+
+After you cloned the repository, you can build Snowflake proxy binary by running the command:
+```
+cd snowflake/proxy
+go build
+```
+
+### 4. Run the Snowflake proxy
+
+After your proxy finished to compile, you can run it with the command:
+```
+nohup ./proxy &
+```
+Note: The command `nohup` allows the program to run in the background even after the terminal is closed, and `&` puts the command in the background immediately.
+
+If you want to save the proxy output to a logfile, for example, to see your proxy usage, you can use:
+```
+nohup ./proxy >snowflake.log 2>&1 &
+```
+
+### 5. Make sure the proxy is started after a reboot of the system
+
+Edit your crontab by running the command:
+```
+crontab -e
+```
+Enter the following line (example, adapt paths to your situation)
+```
+@reboot nohup /home/snowflake/snowflake/proxy/proxy > /home/snowflake/snowflake/proxy/snowflake.log 2>&1 &
+```
+Please verify if this is working by rebooting the system and checking the log.
+Note: On some Linux installations this might not work.
+
+### 6. Keep your Snowflake proxy updated
+
+To keep your snowflake proxy updated, execute the following commands every few weeks (login with the user account you used during installing the proxy):
+```
+kill -9 $(pidof proxy)
+cd snowflake/
+git pull
+cd proxy
+go build
+nohup ./proxy >snowflake.log 2>&1 &
+```
