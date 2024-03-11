@@ -8,7 +8,7 @@
 <div class="row">
   <div class="container d-flex justify-content-center flex-wrap mb-3">
 {% for id, item in bag('story-categories').items() %}
-  <div class="p-2"><a class="btn btn-outline-primary" href="#{{ id }}">{{ item.title }}</a></div>
+  <div class="p-2"><a class="btn btn-outline-primary" href="#{{ id }}">{{ _(item.title) }}</a></div>
 {% endfor %}
   </div>
 </div>
@@ -16,7 +16,7 @@
 <div class="row">
   <div class="container text-center">
     <a name="{{ id }}" class="anchor"></a>
-    <h2 class="text-primary text-center mx-auto my-3">{{ item.title }}</h2>
+    <h2 class="text-primary text-center mx-auto my-3">{{ _(item.title) }}</h2>
   </div>
 </div>
 <div class="container py-3 story-cards">
