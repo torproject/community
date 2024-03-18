@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 import os
 import re
+import warnings
 
 import json
 from datetime import datetime
@@ -32,6 +33,9 @@ class CommunityGoodBadIspsPlugin(Plugin):
 
         for relay in onionoo_data['relays']:
             if relay["running"]:
+                if "as" not in relay.keys():
+                    warnings.warn("Missing 'as' key for relay %s" % relay["nickname"])
+                    break
                 asn = relay["as"]
                 if asn not in asn_cw:
                     asn_cw[asn] = 0
