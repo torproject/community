@@ -11,14 +11,22 @@ include:
       - lektor.yml
       - static-shim-deploy.yml
 
-# retrieve latest tpo/community/policies build artifact
-# and place files under public/policies such that they
-# are deployed to community.tpo/policies
+# retrieve latest tpo/community/{onion-services/ecosystem,policies} build
+# artifacts and place files under public/{onion-services/ecosystem,policies}
+# such that they are deployed to community.tpo/{onion-services/ecosystem,policies}
 .lektor:
   scripts:
     post-build:
+      # policies
       - mkdir public/policies
       - wget -q https://gitlab.torproject.org/api/v4/projects/1972/jobs/artifacts/main/download\?job\=build -O policies.zip
       - unzip policies.zip -d public/policies
       - mv public/policies/public/* public/policies
       - rmdir public/policies/public
+
+      # ecosystem
+      - mkdir public/onion-services/ecosystem
+      - wget -q https://gitlab.torproject.org/api/v4/projects/2439/jobs/artifacts/main/download\?job\=build -O ecosystem.zip
+      - unzip ecosystem.zip -d public/onion-services/ecosystem
+      - mv public/onion-services/ecosystem/public/* public/onion-services/ecosystem
+      - rmdir public/onion-services/ecosystem/public
