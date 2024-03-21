@@ -47,14 +47,14 @@ Tor Browser would know how to verify such a self-created chain.
 This will mean that you don't need to involve a third-party in making it, so no third-party will know that your onion exists.
 
 4. Some websites have a complex setup, and are serving HTTP and HTTPS content.
-In that case, just using Onion Services over HTTP could leak [secure cookies](https://github.com/alecmuffett/eotk/blob/master/docs.d/security-advisories.d/001-torbrowser.md).
+In that case, just using Onion Services over HTTP could leak [secure cookies](https://community.torproject.org/onion-services/ecosystem/apps/web/onionspray/security/advisories/001-torbrowser/).
 We wrote about [Tor Browser security expectations](https://blog.torproject.org/tor-brower-onion-services-challenges-opportunities), and how we're working on Onion Services usability and adoption.
 There are some alternatives you might want to try to address this problem:
 
  * To avoid using an HTTPS certificate for your onion, the easiest answer is to write all your content so it uses only relative links.
 This way the content will work smoothly, independently of what website name it's being served from.
  * Another option is to use webserver rules to rewrite absolute links on the fly.
- * Or use a reverse proxy in the middle (more specifically EOTK with an HTTPS certificate).
+ * Or use a reverse proxy in the middle (more specifically [Onionspray](https://community.torproject.org/onion-services/ecosystem/apps/web/onionspray/) with an HTTPS certificate).
 
 5. Related to the previous point, some protocols, frameworks, and infrastructures use SSL as a technical requirement; they won't work if they don't see an "https://" link.
 In that case, your Onion Service will need to use an HTTPS certificate in order to function.
@@ -76,4 +76,4 @@ In the nearby future, we hope that [Let's Encrypt](https://letsencrypt.org/) CA 
  * [DigiCert: Get TLS certificate with Extended Validation (EV) for your onion site (2015)](https://www.digicert.com/blog/onion-officially-recognized-special-use-domain/)
  * [HARICA: Get a TLS certificate with Domain Validation (DV) for your onion site (2021)](https://blog.torproject.org/tls-certificate-for-onion-site)
  * [The ".onion" Special-Use Domain Name - IETF RFC 7686](https://tools.ietf.org/html/rfc7686)
- * [EOTK - Enterprise Onion Toolkit](https://github.com/alecmuffett/eotk)
+ * [Onionspray](https://community.torproject.org/onion-services/ecosystem/apps/web/onionspray/)
