@@ -204,6 +204,16 @@
         "exit": "Yes",
         "comment": "VPS uses OVH AS. You can build ANY kind tor relays.",
         "last_updated": "09/27/2021"
+      },
+      {
+        "name": "Infomaniak",
+        "url": "https://www.infomaniak.com/fr",
+        "asn": "AS16276",
+        "bridge": "No",
+        "relay": "No",
+        "exit": "No",
+        "comment": "ToS forbid setting up Tor relays, including middle relays.",
+        "last_updated": "04/06/2024"
       }
     ],
     "Finland": [
