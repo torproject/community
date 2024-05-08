@@ -130,10 +130,12 @@ This is a very low traffic mailing list and you will get information about new s
 
 ## Setting up outage notifications
 
-Once you set up your relay it will likely run without much work from your side.
-If something goes wrong it is good to get notified automatically.
-We recommend you use one of the free services that allow you to check your relay's ORPorts for reachability and send you an email should they become unreachable for whatever reason.
+Once you have set up your relay, it will likely run without much work from your side.
+If something goes wrong, it is good to get notified automatically.
+We recommend using [Tor Weather](https://weather.torproject.org/), a notification service developed by the Tor Project.
+It helps relay operators get notified when their relays or bridges are offline, as well as for other incidents.
 
+Another option is to use one of the free services that allow you to check your relay's ORPorts for reachability and send you an email should they become unreachable for any reason.
 [UptimeRobot](https://uptimerobot.com/) is one of these services that allow you to monitor TCP listeners on arbitrary ports.
 This service can check your configured ports once every 5 minutes and send you an email should your tor process die or become unreachable.
 This checks only for the listener but does not speak the Tor protocol.
