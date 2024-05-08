@@ -144,10 +144,12 @@ After having set up the bridge, it takes approximately three hours for the bridg
 
 #### 8. Final notes
 
-By default, your WebTunnel bridge will be distributed via the [Bridges website](https://bridges.torproject.org).
+Your WebTunnel bridge will by default be automatically distributed via the [Bridges website](https://bridges.torproject.org), also known as the `HTTPS` distributor.
+This default applies applies unless an operator explicitly configures the `BridgeDistribution` setting in the torrc file to a different option.
+If set to any option other than `HTTPS`, the bridge will not be distributed to users.
 If you are having trouble setting up your bridge, have a look at our [help section](relay/getting-help).
 
-If your bridge is now running, you can test it by copying and pasting your bridge line into Tor Browser (Alpha).
+If your bridge is now running, you can test it by copying and pasting your bridge line into Tor Browser.
 To build your WebTunnel bridge line, you need to copy your bridge `FINGERPRINT`, but don't confuse it with your hashed fingerprint, which is the fingerprint that you will find on the Tor Relay Search website.
 If you copy the hashed fingerprint instead of your bridge fingerprint, you won't be able to connect.
 You can find your bridge fingerprint in the `/var/lib/tor/fingerprint` file.
