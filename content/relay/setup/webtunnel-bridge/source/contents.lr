@@ -145,7 +145,7 @@ After having set up the bridge, it takes approximately three hours for the bridg
 #### 8. Final notes
 
 Your WebTunnel bridge will by default be automatically distributed via the [Bridges website](https://bridges.torproject.org), also known as the `HTTPS` distributor.
-This default applies applies unless an operator explicitly configures the `BridgeDistribution` setting in the torrc file to a different option.
+This default applies unless an operator explicitly configures the `BridgeDistribution` setting in the torrc file to a different option.
 If set to any option other than `HTTPS`, the bridge will not be distributed to users.
 If you are having trouble setting up your bridge, have a look at our [help section](relay/getting-help).
 
