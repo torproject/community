@@ -33,18 +33,20 @@ Tor User -> Bridge Relay -> Middle Relay -> Exit Relay -> Destination (i.e examp
 
 (also known as non-exit relays)
 
-A guard relay is the first relay (hop) in the chain of 3 relays that make up a Tor circuit.
+A guard relay is the first relay (hop) in a Tor circuit.
 A middle relay is a relay that acts as the second hop in the Tor circuit.
 To become a guard relay, the relay has to be stable and fast (at least 2MByte/s of upstream and downstream bandwidth) otherwise it will remain a middle relay.
 
 Guard and middle relays usually do not receive abuse complaints.
-All relays will be listed in the public list of Tor relays, so they may be blocked by certain services that don't understand how Tor works or deliberately want to censor Tor users.
-If you are running a relay from home and have one static IP, you may want to consider running a bridge instead so that your non-Tor traffic doesn't get blocked as though it's coming from Tor.
-If you have a dynamic IP address or multiple static IPs, this isn't as much of an issue.
+However, all relays are listed in the public Tor relay directory, and as a result, they may be blocked by certain services.
+These include services that either misunderstand how Tor works or deliberately want to censor Tor users, for example, online banking and streaming services.
 
-A non-exit Tor relay requires minimal maintenance efforts and bandwidth usage can be highly customized in the Tor configuration (will be covered in more detail later in this guide).
+A non-exit Tor relay requires minimal maintenance efforts and bandwidth usage can be highly customized in the Tor configuration.
 The so called "exit policy" of the relay decides if it is a relay allowing clients to exit or not.
 A non-exit relay does not allow exiting in its exit policy.
+
+**Important:** If you are running a relay from home with a single static IP address and are concerned about your IP being blocked by certain online services, consider running a bridge or a Tor [snowflake proxy](/relay/setup/snowflake/) instead.
+This alternative can help prevent your non-Tor traffic from being mistakenly blocked as though it's coming from a Tor relay.
 
 # Exit relay
 
@@ -57,7 +59,7 @@ Any abuse complaints about the exit will go directly to you (via your hosting pr
 Generally, most complaints can be handled pretty easily through template letters, which we'll discuss further in the legal considerations section.
 
 Because of the legal exposure that comes with running an exit relay, you should not run a Tor exit relay from your home.
-Ideal exit relay operators are affiliated with some institution, like a university, a library, a hackerspace or a privacy related organization.
+Ideal exit relay operators are affiliated with some institution, like a [relay association](/relay/community-resources/relay-associations/), a university, a library, a hackerspace or a privacy related organization.
 An institution can not only provide greater bandwidth for the exit, but is better positioned to handle abuse complaints or the rare law enforcement inquiry.
 
 If you are considering running an exit relay, please read the [section on legal considerations](/relay/community-resources) for exit relay operators.
@@ -79,4 +81,3 @@ Bridges are a great option if you can only run a Tor node from your home network
 
 
 Please see the [relay requirements](../relays-requirements/) page to learn about the technical requirements for each relay type.
-
