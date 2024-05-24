@@ -570,8 +570,8 @@
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
-        "comment": "They only say you should answer abuse requests in 24h. ISP has re-confirmed by e-mail that exit nodes are acceptable, with \"strict\" exit node policies.",
-        "last_updated": "2014-10-15"
+        "comment": "They only say you should answer abuse requests in 24h. ISP has re-confirmed by e-mail that exit nodes are acceptable, with \"strict\" exit node policies. 4TB included traffic, extendable.",
+        "last_updated": "05/2024"
       },
       {
         "name": "G-Core Labs",
@@ -602,8 +602,8 @@
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
-        "comment": "-",
-        "last_updated": "-"
+        "comment": "Free speech hoster. Only IPv4 AFAIK.",
+        "last_updated": "05/2024"
       },
       {
         "name": "FlokiNET",
@@ -1397,14 +1397,14 @@
     ],
     "Ukraine": [
       {
-        "name": "UrDN",
+        "name": "Ukrainian Data Network",
         "url": "https://urdn.com.ua",
         "asn": "AS207656",
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
-        "comment": "free speech hoster, allows anything but spam/scam. Abuse always forwarded.",
-        "last_updated": "10/08/2015"
+        "comment": "free speech hoster, allows anything but spam/scam. Abuse always forwarded. IPv4 & IPv6. Accepts crypto. No strict data cap, 20TB is considered reasonable",
+        "last_updated": "05/2024"
       },
       {
         "name": "Colocall",
