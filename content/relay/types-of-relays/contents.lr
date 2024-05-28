@@ -45,7 +45,7 @@ A non-exit Tor relay requires minimal maintenance efforts and bandwidth usage ca
 The so called "exit policy" of the relay decides if it is a relay allowing clients to exit or not.
 A non-exit relay does not allow exiting in its exit policy.
 
-**Important:** If you are running a relay from home with a single static IP address and are concerned about your IP being blocked by certain online services, consider running a bridge or a Tor [snowflake proxy](/relay/setup/snowflake/) instead.
+**Important:** If you are running a relay from home with a single static IP address and are concerned about your IP being blocked by certain online services, consider running a bridge or a Tor [snowflake proxy](../setup/snowflake/) instead.
 This alternative can help prevent your non-Tor traffic from being mistakenly blocked as though it's coming from a Tor relay.
 
 # Exit relay
@@ -56,13 +56,13 @@ The services Tor clients are connecting to (website, chat service, email provide
 Exit relays have the greatest legal exposure and liability of all the relays.
 For example, if a user downloads copyrighted material while using your exit relay, you, the operator may receive a [DMCA notice](https://www.dmca.com/Solutions/view.aspx?ID=712f28a5-93f2-467b-ba92-3d58c8345a32&?ref=sol08a2).
 Any abuse complaints about the exit will go directly to you (via your hosting provider, depending on the WHOIS records).
-Generally, most complaints can be handled pretty easily through [template letters](/relay/community-resources/tor-abuse-templates/).
+Generally, most complaints can be handled pretty easily through [template letters](../community-resources/tor-abuse-templates/).
 
 Because of the legal exposure that comes with running an exit relay, you should not run a Tor exit relay from your home.
-Ideal exit relay operators are affiliated with some institution, like a [relay association](/relay/community-resources/relay-associations/), a university, a library, a hackerspace or a privacy related organization.
+Ideal exit relay operators are affiliated with some institution, like a [relay association](../community-resources/relay-associations/), a university, a library, a hackerspace or a privacy related organization.
 An institution can not only provide greater bandwidth for the exit, but is better positioned to handle abuse complaints or the rare law enforcement inquiry.
 
-If you are considering running an exit relay, please read the [section on legal considerations](/relay/community-resources) for exit relay operators.
+If you are considering running an exit relay, please read the [section on legal considerations](../community-resources) for exit relay operators.
 
 # Bridge
 
