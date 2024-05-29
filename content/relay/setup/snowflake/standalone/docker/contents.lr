@@ -25,9 +25,9 @@ The instructions in this step are for Debian-based systems, but you can find [Do
 
 Open a terminal and run these commands:
 ```
-$ sudo apt install curl sudo
+$ sudo apt install curl
 $ curl -fsSL https://get.docker.com -o get-docker.sh
-$ sudo sh ./get-docker.sh
+$ sudo sh get-docker.sh
 ```
 
 ### 2. Download the docker compose file
