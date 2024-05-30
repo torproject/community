@@ -158,7 +158,7 @@ Remember to copy only the fingerprint and do not include the bridge nickname.
 Finally, you can replace the URL contents with your domain and secret path.
 You can find this in your torrc line under `ServerTransportOptions`.
 
-Now, just replace the content below to create your WebTunnel bridge line:
+Now, just replace the content below to create your WebTunnel bridge line. 10.0.0.2:443 is just a random IP address that's never used. It's just there because the pluggable transport specification requires an IP address there.
 
 ```
 webtunnel 10.0.0.2:443 FINGERPRINT url=https://yourdomain/path
