@@ -1484,9 +1484,9 @@
         "asn": "-",
         "bridge": "Yes",
         "relay": "Yes",
-        "exit": "Yes",
-        "comment": "They are very responsive and understand the uses of Tor. They have a strict policy with abuse/spam and will not refund under their money back guarantee if abuse has been noticed. IPv4+IPv6 native support. Unmetered traffic.",
-        "last_updated": "06/2022"
+        "exit": "No",
+        "comment": "They are very responsive and understand the uses of Tor but do not allow Exit nodes. They have a strict policy with abuse/spam and will not refund under their money back guarantee if abuse has been noticed. IPv4+IPv6 native support. Unmetered traffic.",
+        "last_updated": "02/20/2024"
       }
     ],
     "US": [
@@ -1767,8 +1767,8 @@
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
-        "comment": "Exit-friendly.",
-        "last_updated": "05/01/16"
+        "comment": "Exit-friendly, Staff are responsive, Unmetered traffic",
+        "last_updated": "02/20/2024"
       },
       {
         "name": "RamNode",
@@ -1884,11 +1884,11 @@
         "name": "ChicagoVPS",
         "url": "https://chicagovps.net/",
         "asn": "AS36352",
-        "bridge": "Yes",
-        "relay": "Yes",
+        "bridge": "No",
+        "relay": "No",
         "exit": "No",
-        "comment": "Tor bridge/relay is allowed on the whole VPS range. Any VPS running Exit nodes will be suspended without prior notice.",
-        "last_updated": "15/01/15"
+        "comment": "Support says that Exit, Middle, and Bridge relays are not allowed.",
+        "last_updated": "02/20/2024"
       },
       {
         "name": "Xmission",
