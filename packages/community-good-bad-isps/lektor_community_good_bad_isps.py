@@ -35,6 +35,9 @@ class CommunityGoodBadIspsPlugin(Plugin):
                 if "as" not in relay.keys():
                     warnings.warn("Missing 'as' key for relay %s" % relay["nickname"])
                     break
+                if "consensus_weight_fraction" not in relay.keys():
+                    warnings.warn("Missing 'consensus_weight_fraction' key for relay %s" % relay["nickname"])
+                    break
                 asn = relay["as"]
                 if asn not in asn_cw:
                     asn_cw[asn] = 0
