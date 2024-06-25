@@ -442,7 +442,7 @@
       {
         "name": "delta.networks",
         "url": "https://www.delta-networks.de",
-        "asn": "AS9937",
+        "asn": "AS197071",
         "bridge": "No",
         "relay": "No",
         "exit": "No",
@@ -1989,6 +1989,16 @@
         "exit": "Yes",
         "comment": "At least with a reduced exit policy alongside blocking SSH, very Tor Exit friendly on VPS. Unmetered bandwidth.",
         "last_updated": "12/19/2023"
+      },
+      {
+        "name": "Snowcore",
+        "url": "https://snowcore.io/",
+        "asn": "AS215450",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "Support states that all kinds of Tor nodes are allowed as long as they comply with their [fair-use policy](https://snowcore.io/legal/fair-use). They ask to notify them before running an exit node.",
+        "last_updated": "05/16/2024"
       }
     ]
   }
