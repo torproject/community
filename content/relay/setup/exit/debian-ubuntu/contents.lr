@@ -1,0 +1,64 @@
+_model: page
+---
+color: primary
+---
+title: Debian/Ubuntu
+---
+body:
+
+### 1. Package installation
+
+The following commands install `unbound`, backup your DNS configuration, and tell the system to use the local resolver:
+
+```
+# apt install unbound
+# cp /etc/resolv.conf /etc/resolv.conf.backup
+# echo nameserver 127.0.0.1 > /etc/resolv.conf
+```
+
+### 2. Lock changes in
+
+To avoid unwanted configuration changed (for example by the DHCP client):
+
+```
+# chattr +i /etc/resolv.conf
+```
+
+### 3. QNAME minimisation
+
+The latest versions of `unbound` have `qname-minimisation` enabled by default. However, it is advisable to verify this setting, as older versions did not enable it automatically.
+
+To check and configure it, open the unbound configuration file, located at `/etc/unbound/unbound.conf`, look for the following entry and change it if necessary:
+
+```
+server:
+    ...
+    qname-minimisation: yes
+    ...
+```
+
+If the setting is missing, it should still be enabled by default.
+The Unbound resolver you just installed also does DNSSEC validation.
+
+### 4. Start the service
+
+To enable and start the `unbound` service, run:
+
+```
+# systemctl enable --now unbound
+```
+
+If you are running **systemd-resolved** with its stub listener, you may need to do a bit more than just that. Please refer to the [resolved.conf manpage](https://www.freedesktop.org/software/systemd/man/resolved.conf.html).
+
+---
+html: two-columns-page.html
+---
+key: 01
+---
+section: Exit relay
+---
+section_id: relay-operations
+---
+subtitle: How to install Unbound on Debian/Ubuntu
+---
+_discoverable: yes

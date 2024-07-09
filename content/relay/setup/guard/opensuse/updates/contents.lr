@@ -1,0 +1,51 @@
+_model: page
+---
+color: primary
+---
+title: openSUSE
+---
+body:
+
+### 1. Install the required packages
+
+Ensure you update the packages database before installing the package, then call `zypper` to install it:
+```
+# zypper refresh
+# zypper install  yast2-online-update-configuration
+```
+
+### 2. Start the configuration tool
+
+If you are running openSUSE on a GUI, YaST2 counts with the same module. Otherwise, run the following command to use the CLI tool:
+```
+yast2 online_update_configuration
+```
+
+### 3. Configure online updates
+
+Enable the following settings:
+
+```
+    Automatic Online Update
+    Interval: Daily
+
+    Skip Interactive Patches
+    Agree with Licenses
+    Use delta rpms
+```
+
+Confirm that you have checked the three options above, select OK, and exit.
+
+The official openSUSE documentation can be found [here](https://doc.opensuse.org/documentation/leap/startup/html/book-startup/cha-onlineupdate-you.html#sec-onlineupdate-you-automatically).
+---
+html: two-columns-page.html
+---
+key: 1
+---
+section: Automatic Updates
+---
+section_id: automatic-updates
+---
+_slug: updates
+---
+_discoverable: no

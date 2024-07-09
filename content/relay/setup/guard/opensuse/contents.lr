@@ -2,29 +2,25 @@ _model: page
 ---
 color: primary
 ---
-title: Debian/Ubuntu
+title: openSUSE
 ---
 body:
 
 ### 1. Enable Automatic Software Updates
 
-One of the most important things to keep your relay secure is to install security updates timely and ideally automatically so you can not forget about it.
+One of the most important things to keep your relay secure is to install security updates timely and, ideally, automatically, so you cannot forget about them.
 Follow the instructions to enable [automatic software updates](updates) for your operating system.
 
-### 2. Configure Tor Project's Repository
+### 2. Package installation
 
-Configuring the Tor Project's package repository for Debian/Ubuntu is documented **[here](https://support.torproject.org/apt/tor-deb-repo/)**. Please follow those instructions before proceeding.
-
-### 3. Package installation
-
-Ensure you update the packages database before installing the package, then call `apt` to install it:
+Ensure you update the packages database before installing the package, then call `zypper` to install it:
 
 ```
-# apt update
-# apt install tor
+# zypper refresh
+# zypper install tor
 ```
 
-### 4. Configuration file
+### 3. Configuration file
 
 Put the configuration file `/etc/tor/torrc` in place
 
@@ -36,27 +32,27 @@ ExitRelay   0
 SocksPort   0
 ```
 
-### 5. Restart the service
+### 4. Restart the service
 
 Restart the `tor` daemon, so your configuration changes take effect:
 
 ```
-# systemctl restart tor@default
+# systemctl restart tor
 ```
 
-### 6. Final Notes
+### 5. Final Notes
 
 If you are having trouble setting up your relay, have a look at our [help section](../../../getting-help/).
 If your relay is now running, check out the [post-install](../../post-install/) notes.
 ---
 html: two-columns-page.html
 ---
-key: 03
+key: 11
 ---
 section: Middle/Guard relay
 ---
 section_id: relay-operations
 ---
-subtitle: How to deploy a Middle/Guard relay on Debian/Ubuntu
+subtitle: How to deploy a Middle/Guard relay on openSUSE
 ---
 _discoverable: yes

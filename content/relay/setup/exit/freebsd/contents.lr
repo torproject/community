@@ -1,0 +1,63 @@
+_model: page
+---
+color: primary
+---
+title: FreeBSD
+---
+body:
+
+### 1. Package installation
+
+FreeBSD ships unbound in the base system but the one in ports is usually following upstream more closely. Install the unbound package, backup your DNS configuration, and tell the system to use the local resolver:
+
+```
+# pkg install unbound
+# cp /etc/resolv.conf /etc/resolv.conf.backup
+# echo nameserver 127.0.0.1 > /etc/resolv.conf
+```
+
+### 2. Lock changes in
+
+To avoid unwanted configuration changes (for example by the DHCP client):
+
+```
+# chflags schg /etc/resolv.conf
+```
+
+### 3. QNAME minimisation
+
+The latest versions of `unbound` have `qname-minimisation` enabled by default. However, it is advisable to verify this setting, as older versions did not enable it automatically.
+
+To check and configure it, open the unbound configuration file, located at `/usr/local/etc/unbound/unbound.conf`, look for the following entry and change it if necessary:
+
+```
+server:
+	...
+	qname-minimisation: yes
+	...
+```
+
+If the setting is missing, it should still be enabled by default.
+The Unbound resolver you just installed also does DNSSEC validation.
+
+### 4. Start the service
+
+To enable and start the `unbound` service, run:
+
+```
+# sysrc unbound_enable=YES
+# service unbound start
+```
+
+---
+html: two-columns-page.html
+---
+key: 03
+---
+section: Exit relay
+---
+section_id: relay-operations
+---
+subtitle: How to install Unbound on FreeBSD
+---
+_discoverable: yes
