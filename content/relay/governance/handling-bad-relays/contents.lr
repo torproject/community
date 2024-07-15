@@ -1,0 +1,26 @@
+_model: page
+---
+color: primary
+---
+title: Handling Bad Relays
+---
+html: two-columns-page.html
+---
+_template: layout.html
+---
+key: 1
+---
+section: Governance
+---
+section_id: governance
+---
+body:
+
+Having [processes to handle bad relays](https://gitlab.torproject.org/tpo/network-health/team/-/wikis/Bad-relay-work) in open networks like the Tor network is crucial to maintaining user privacy and security.
+Malicious actors may attempt to join the network to attack Tor users.
+To counter these threats, the Network Health team within the Tor Project actively detects and prevents such malicious efforts. 
+They collaborate with Tor [Directory Authorities](/relay/governance/policies-and-proposals/directory-authority) to take action against identified bad relays.
+
+While we strive for transparency at the Tor Project, hunting bad relays is one of the few areas where we are in [need to find a balance between secrecy and openness](https://lists.torproject.org/pipermail/tor-talk/2014-July/034219.html).
+
+The following resources are available to help users of the Tor network understand how we handle bad relay work.

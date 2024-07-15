@@ -1,0 +1,27 @@
+_model: page
+---
+color: primary
+---
+title: Rejected Fingerprints
+---
+html: two-columns-page.html
+---
+_template: layout.html
+---
+key: 2
+---
+section: Governance
+---
+section_id: governance
+---
+body:
+
+We publish all rejected fingerprints associated with attacks on a monthly basis, typically for the preceding month.
+However, occasional delays may occur, particularly in cases of ongoing attacks or other rare circumstances.
+These delays are necessary to prevent attackers from gaining insights into our methods of detecting malicious relays.
+
+In April 2021, we started publishing the list of rejected fingerprints. Nevertheless, volunteers are allowed to explore historical data and document rejected fingerprints from the past if desired.
+
+> You can view the [rejected fingerprints for 2021 - 2024](https://gitlab.torproject.org/tpo/network-health/team/-/wikis/Rejected-fingerprints-found-in-attacks).
+
+The documentation of these fingerprints serves as a valuable resource for understanding and mitigating attacks on the Tor network, fostering a safer and more secure environment for all users.

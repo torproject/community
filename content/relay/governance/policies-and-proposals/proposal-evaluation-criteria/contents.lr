@@ -1,0 +1,52 @@
+_model: page
+---
+color: primary
+---
+title: Evaluation Criteria for Proposals
+---
+html: two-columns-page.html
+---
+_template: layout.html
+---
+key: 2
+---
+section: Governance
+---
+section_id: governance
+---
+body:
+
+The [evaluation criteria for proposals](https://community.torproject.org/policies/relays/evaluation-criteria-for-solution-to-combat-malicious-relays/) are built on some important goals: keeping it easy to set up relays, protecting the network from bad actors, respecting human rights, and following Tor's values of transparency and accountability. 
+These criteria help us keep the Tor network inclusive, safe, and principled.
+
+We recognize the potential conflicts between our goals for relay operators and our broader goals of user privacy and security. 
+Though before we set any goals or policies, we try to verify that one set of goals does not negatively impact the other.
+For example, we want to keep the barrier for running relays low and build a transparent network. 
+But, on the other hand, a small increase in the entry requirements for running relays could also make the network more secure by keeping out bad actors. 
+That's why we created the evaluation criteria; to carefully examine these security concerns without overloading relay operators. 
+This process helps us maintain a strong and reliable network, with a community of operators who are invested in transparency.
+
+The criteria for reviewing proposals go beyond looking at technical feasibility, because we prioritize will-it-work over can-it-work. 
+For instance, while a proposal might be technically sound, our evaluation criteria go deeper to assess its practicality for relay operators and potential impact on the network's overall health ("will-it-work"). 
+This helps us make sure we don't overburden operators or introduce unintended privacy risks.
+
+A [past proposal](https://lists.torproject.org/pipermail/tor-relays/2020-July/018643.html) suggested requiring physical addresses for verification from relay operators. 
+Rather, following our evaluation criteria, we explored [alternative verification methods](https://lists.torproject.org/pipermail/tor-relays/2023-October/021358.html) that could be less intrusive for the operator community.
+
+Keeping user information private and the network secure can be tricky when we also want to be open and accountable, but our evaluation criteria check that we’re on the right path. 
+These criteria serve as a rulebook for any improvements to the relays and processes for people who run them. 
+One key way we’re delivering this transparency is by making all proposed network health enhancements public knowledge, easy to find, and clear to understand.
+
+On top of that, we establish clear and publicly accessible rules and policies to govern specific situations and behaviours. These rules and policies outline what a violation is, and the corresponding actions we take. 
+For example, our [criteria for rejecting bad relays](https://gitlab.torproject.org/tpo/network-health/team/-/wikis/Criteria-for-rejecting-bad-relays) policy defines what qualifies as a malicious relay, and details the steps we take to identify and remove them. 
+By making the policy public, the Tor community can hold us accountable for its enforcement. 
+Users and operators can monitor how the policy is applied and raise concerns if they believe relays are being unfairly targeted. 
+
+While transparency is a core value, we recognize the potential challenges. We keep our methods for finding suspicious activity as open as we can, even though it might give attackers some insights.
+We try to extend our commitment to transparency and accountability across all our processes. 
+By being open about our decision-making and actions, we aim to foster trust with the Tor community so they can rely on us to safeguard their privacy and security.
+
+Every proposal is carefully reviewed to check that it aligns with all our community values, as outlined in Tor's [Code of Conduct](https://community.torproject.org/policies/code_of_conduct/) and [Social Contract](https://community.torproject.org/policies/social_contract/).
+Additionally, we evaluate proposals based on how well they meet our [established criteria](https://community.torproject.org/policies/relays/evaluation-criteria-for-solution-to-combat-malicious-relays/) for supporting the relay operator community and achieving Tor's overall goals.
+
+If you’re interested in [submitting a proposal](/relay/governance/policies-and-proposals/proposals), please review [our policies](https://community.torproject.org/policies/) to understand the principles that govern relays and the relay operator community.

@@ -1,0 +1,25 @@
+section: Governance
+---
+section_id: governance
+---
+color: primary
+---
+_template: layout.html
+---
+title: Governance
+---
+subtitle: The processes and policies that govern relays on the Tor network.
+---
+key: 8
+---
+html: two-columns-page.html
+---
+body:
+
+The Tor network operates on principles of openness, inclusivity, and decentralization. 
+As a global community-driven project, it is imperative to establish transparent and effective governance mechanisms to ensure the integrity, security, and reliability of the network. 
+
+This section provides insight into the processes, policies, and structures that govern the operation and use of Tor relays.
+
+Effective governance of relays is crucial for upholding the trust of users and ensuring the continued robustness of the Tor network. 
+By transparently documenting these processes, Tor aims to foster a community-driven approach to network security, enabling collaboration among developers, operators, and users.

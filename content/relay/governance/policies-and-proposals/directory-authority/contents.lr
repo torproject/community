@@ -1,0 +1,25 @@
+_model: page
+---
+color: primary
+---
+title: Directory Authorities
+---
+html: two-columns-page.html
+---
+_template: layout.html
+---
+key: 3
+---
+section: Governance
+---
+section_id: governance
+---
+body:
+
+# Directory Authorities
+Directory Authorities are important components within the Tor network that serve as trusted entities responsible for managing and maintaining the list of Tor relays. 
+
+They are a set of specialized servers within the Tor network that collectively generate and distribute a signed document (known as the consensus) containing information about all known Tor relays. 
+These authorities are operated by trusted organizations or individuals with a strong commitment to the principles of privacy, security, and network neutrality.
+
+> [Read our directory authority policy](https://gitlab.torproject.org/tpo/core/torspec/-/blob/HEAD/attic/authority-policy.txt).
