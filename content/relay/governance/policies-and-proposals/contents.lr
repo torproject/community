@@ -1,0 +1,22 @@
+_model: page
+---
+color: primary
+---
+title: Policies and Proposals
+---
+html: two-columns-page.html
+---
+_template: layout.html
+---
+key: 3
+---
+section: Governance
+---
+section_id: governance
+---
+body:
+
+Policies refer to the rules, guidelines, and best practices that govern the operation of Tor relays and relay operators. 
+These policies cover various aspects of relay operation, including security, performance, privacy, Tor's network health, and community.
+
+By following these policies and actively participating in the proposal process, relay operators can contribute to the security, reliability, and integrity of the Tor network.

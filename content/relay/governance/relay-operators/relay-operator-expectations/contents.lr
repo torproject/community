@@ -1,0 +1,28 @@
+_model: page
+---
+color: primary
+---
+title: Expectations for Relay Operators
+---
+html: two-columns-page.html
+---
+_template: layout.html
+---
+key: 2
+---
+section: Governance
+---
+section_id: governance
+---
+body:
+
+Relay operators play a crucial role in the health, safety, and sustainability of the Tor network. 
+While they generously invest their time, energy, and resources to support the network, it is essential to have clear expectations to ensure the integrity and security of the entire system.
+
+These expectations help maintain user trust, and network functionality. 
+Operators must prioritize user anonymity and security, maintain good operational practices, and align their activities with Tor's values and mission. 
+This mutual commitment between the Tor Project and relay operators is vital for the Tor network's continuous success.
+
+> See the [full expectations for relay operators](https://community.torproject.org/policies/relays/expectations-for-relay-operators/). 
+
+If questions about adherence to these expectations come up, our [community policies](https://community.torproject.org/policies/) provide a framework for decision-making and enforcement within the Tor community.

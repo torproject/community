@@ -1,0 +1,32 @@
+_model: page
+---
+color: primary
+---
+title: New policies and proposals for the Tor relay operator community
+---
+html: two-columns-page.html
+---
+_template: layout.html
+---
+key: 1
+---
+section: Governance
+---
+section_id: governance
+---
+body:
+
+Historically, the management of the Tor relay operator community was informal, depending on interactions among [relay operators](/relay/governance/relay-operators/becoming-relay-operator), [Directory Authorities](/relay/governance/policies-and-proposals/directory-authority), and Tor Project staff during meetups.
+However, as the community has grown and become more diverse, a structured process is necessary to evaluate and implement proposals systematically.
+
+The proposals for relay operators are focused on operational, policy, and community-related aspects specific to the relay operator community, contrasting with the technical specifications covered by [Tor specifications](https://spec.torproject.org/) (aka torspec).
+Topics include security measures against malicious relays, expectations for relay operators, sustainability, and guidelines for investigating and removing malicious actors.
+
+The proposals undergo a thorough review process involving drafting, community consensus, and final approval by the proposal editors, ensuring they align with the Tor Project's policies and operational goals.
+Learn more about the [process for new policies and proposals for the Tor relay operator community](https://community.torproject.org/policies/relays/001-community-relay-operator-process/).
+
+The following are sample proposal formats you can use to get started.
+
+- [[tor-relays] Proposal: Restrict ContactInfo to Mandatory Email Address](https://lists.torproject.org/pipermail/tor-relays/2023-October/021358.html)
+- [[tor-relays] Process for new policies and proposals for the Tor relay operator community](https://community.torproject.org/policies/relays/001-community-relay-operator-process/) 
+- [Expectations for relay operators](https://community.torproject.org/policies/relays/expectations-for-relay-operators/)

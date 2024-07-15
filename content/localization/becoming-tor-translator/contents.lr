@@ -27,7 +27,7 @@ To communicate with other translators, please join the [Tor localization mailing
 
 Most of our localization efforts are hosted on [weblate](https://hosted.weblate.org/projects/tor/), a third-party translation platform.
 
-You can submit anonymous suggestions, but it is better to create an account so you can comment and discuss with other translators, or review their contributions.
+You can submit anonymous suggestions, but it is better to create an account, so you can comment and discuss with other translators, or review their contributions.
 
 Remember that the username and email address you choose will be publicly visible on the translation platform since they will be associated with the changes you make.
 We encourage the use of pseudonymous accounts.
@@ -46,16 +46,21 @@ The page includes guidelines, resources, and priorities that will help you make 
 1. Go to [Notifications](https://hosted.weblate.org/accounts/profile/#notifications) and select `Tor Project` from watched projects.
    Other projects we recommend are Guardian Project and Onionshare:
    ![Watch Tor Project in Weblate](/static/images/localization/watch-projects.png#fullwidth).
-1. Make sure to also select [notifications for your watched projects](https://hosted.weblate.org/accounts/profile/#notifications).
+1. Make sure to also select notifications for your watched projects.
 1. Now you will see the Tor Project translations on your [weblate dashboard](https://hosted.weblate.org/): 
   ![Weblate dashboard](/static/images/localization/weblate-dashboard.png#fullwidth).
+1. To start translating a new resource, you first need to agree to its 'Contributor Agreement'. Each resource has its own Contributor Agreement.
 
 # What to translate first?
 
+If there are already Tor resources released to your language, please start by updating those.
 You can see the translations with more priority at our [translation statistics page](https://tpo.pages.torproject.net/community/l10n/stats.html#high-priority-translations).
-
 
 #IRC channel
 
 We hang out in the #tor-l10n channel on the oftc IRC network. Please [join us to talk about localization](https://support.torproject.org/get-in-touch/#irc-help) (l10n)!
 You can also use Element https://element.io/ to connect: #tor-l10n:matrix.org.
+
+# [Tor Monthly Localization Hangouts](../hangouts/)
+
+We meet on our irc channel every 3rd Friday of the month. Come over to hang out with other translators, ask questions, or simply translate together.

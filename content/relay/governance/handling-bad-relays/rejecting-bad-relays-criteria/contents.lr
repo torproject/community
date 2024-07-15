@@ -1,0 +1,35 @@
+_model: page
+---
+color: primary
+---
+title: Criteria for Rejecting Bad Relays
+---
+html: two-columns-page.html
+---
+_template: layout.html
+---
+key: 1
+---
+section: Governance
+---
+section_id: governance
+---
+body:
+
+The Tor network relies on the contributions of volunteer relay operators to maintain its integrity and security.
+However, there are instances where relays may be misconfigured or actively harmful to users.
+The Network Health team is responsible for identifying and addressing these issues.
+For more details on how we address these issues, you can reference our [criteria for rejecting bad relays](https://gitlab.torproject.org/tpo/network-health/team/-/wikis/Criteria-for-rejecting-bad-relays) guide.
+
+In cases of misconfigured exit relays, which can cause usability issues for users, efforts are made to contact the operator to rectify the problem.
+If direct communication isn't possible, the relay may be labeled as a "BadExit," indicating that it should no longer handle exit traffic while still remaining within the network.
+
+Relays are considered malicious if they engage in behaviors such as DNS poisoning, SSL stripping, or sniffing user traffic.
+In such cases, the relays are swiftly removed from the network to protect users.
+Unlike misconfigured relays, malicious relays are not contacted before removal.
+
+Corner cases may arise where the intention behind a relay's behavior is unclear.
+In such instances, communication with the operator is essential to determine the appropriate course of action.
+
+We encourage users to [report bad relays](https://gitlab.torproject.org/tpo/network-health/team/-/wikis/Criteria-for-rejecting-bad-relays#reporting-bad-relays) to the Bad Relays mailing list, providing detailed information to aid in investigation and resolution.
+This collaborative effort helps maintain the integrity and security of the Tor network for all users.
