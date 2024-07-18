@@ -52,7 +52,22 @@ to both relays. To find your relay's fingerprint you can look into the log files
 Instead of doing so manually, for big operators we recommend to automate the MyFamily setting via a configuration management solution.
 Manually managing MyFamily for big relay groups is error-prone and can put Tor clients at risk.
 
-# 6. Optional: Limiting bandwidth usage (and traffic)
+# 6. Add firewall rules to protect against DDoS attacks
+
+Configuring your firewall to stop too many concurrent connections has been shown to significantly help deal with DDoS attacks against relays.
+
+Consider implementing one of the following mechanisms:
+
+- https://github.com/toralf/torutils: If you would like a script to deploy.
+- https://github.com/Enkidu-6/tor-ddos: A simple set of scripts to deploy.
+- https://github.com/steinex/tor-ddos: If you would like a more simpler approach without scripts and ipset.
+
+**Note:** These are community provided resources.
+You should check them carefully before applying them to your system.
+Additionally, be aware that these rules have been shown to work for particular attacks that have happened in the past. 
+Attacks are constantly evolving and will often need new rules, so please stay connected to update these as necessary, either by subscribing to the relevant project or by subscribing to the [tor-relays](https://lists.torproject.org/cgi-bin/mailman/listinfo/tor-relays) mailing list.
+
+# 7. Optional: Limiting bandwidth usage (and traffic)
 
 Tor will not limit its bandwidth usage by default, but supports multiple ways to restrict the used bandwidth and the amount of traffic.
 This can be handy if you want to ensure that your Tor relay does not exceed a certain amount of bandwidth or total traffic per day/week/month.
@@ -69,7 +84,7 @@ Having a fast relay for some time of the month is preferred over a slow relay fo
 
 Also see the bandwidth entry in the [FAQ](https://support.torproject.org/relay-operators/bandwidth-shaping/).
 
-# 7. Check IPv6 availability
+# 8. Check IPv6 availability
 
 We encourage everyone to enable IPv6 on their relays. This is especially valuable on exit and guard relays.
 
@@ -108,7 +123,7 @@ IPv6Exit 1
 
 **Note: Tor requires IPv4 connectivity, you can not run a Tor relay on IPv6-only.**
 
-# 8. Maintaining a relay
+# 9. Maintaining a relay
 
 ## Backup Tor Identity Keys
 
