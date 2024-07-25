@@ -486,8 +486,8 @@
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
-        "comment": "\"Usually this leads to abuse mails, which only cause trouble – but basically we have nothing against it\"",
-        "last_updated": "03/2021"
+        "comment": "\"Running Tor nodes in the main network (AS) is not prohibited but network speed is limitted to 1MB/s\"",
+        "last_updated": "07/2024"
       },
       {
         "name": "UltraVPS",
