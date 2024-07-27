@@ -28,7 +28,7 @@ From the Tor folder on your desktop, select all `.dll`'s and `.exe`'s and cut/pa
 
 Open up the Data folder on your desktop. Inside that Tor folder, select both `geoip` and `geoip6` and cut/paste them into the `C:\Users\<user>\AppData\Roaming\tor\` folder.
 
-Navigate to `C:\Users\<user>\Desktop\Tor Browser\Browser\TorBrowser\Tor\PluggableTransports`. Select `obfs4proxy.exe` and cut/paste it into the `C:\Users\<user>\AppData\Roaming\tor\` folder.
+Navigate to `C:\Users\<user>\Desktop\Tor Browser\Browser\TorBrowser\Tor\PluggableTransports`. Select `lyrebird.exe` and cut/paste it into the `C:\Users\<user>\AppData\Roaming\tor\` folder.
 
 ### 3. Create and edit your Tor config file
 
@@ -48,7 +48,7 @@ BridgeRelay 1
 # Avoid port 9001 because it's commonly associated with Tor and censors may be scanning the Internet for this port.
 ORPort TODO1
 
-ServerTransportPlugin obfs4 exec C:\Users\<user>\AppData\Roaming\tor\obfs4proxy.exe
+ServerTransportPlugin obfs4 exec C:\Users\<user>\AppData\Roaming\tor\lyrebird.exe
 
 # Replace "TODO2" with an obfs4 port of your choice.
 # This port must be externally reachable and must be different from the one specified for ORPort.
