@@ -16,7 +16,7 @@ html: two-columns-page.html
 ---
 body:
 
-"Vanity" onion addresses are a partial workaround for the difficulty of memorizing the 56-char long onion addresses.
+"Vanity" onion addresses are a partial workaround for the difficulty of memorizing the 56-character-long onion addresses.
 
 A vanity address is an onion address that starts with a pre-chosen number of characters, usually a meaningful name related to a specific Onion Service.
 
@@ -26,23 +26,23 @@ For instance, one might try to generate an onion address for the `mysitename` we
 
 This has some advantages:
 
-* It's easy for Onion Services users to know about which site they're about to access.
+* It is easy for Onion Services users to know which site they are about to access.
 
 * It has some branding appeal to site owners.
 
-* It's easy for Onion Services operators to debug their logs and know which services have errors without recurring to a table or to memorize some random characters from a regular onion address.
+* It is easy for Onion Services operators to debug their logs and know which services have errors without recurring to a table or to memorize some random characters from a regular onion address.
 
 But it also has some disadvantages:
 
-* An attacker wishing to impersonate an existing onionsite by creating a fake version of it might use vanity addresses as an additional way to convince users that their address is the correct.
+* An attacker wishing to impersonate an existing onionsite by creating a fake version of it might use vanity addresses as an additional way to convince users that their address is the right one.
 If the legitimate site does not use a vanity address, users might think that the fake site is the valid one because it has a nicer address.
 
-* It's relatively easy for anybody with average computing resources to create other keys beginning with `mysitename` (although they are very unlikely to come up with the exact key from the example above).
-So, in a sense, vanity keys might be confusing and offer a false sense of identity: users can easily be mistaken into accessing an impersonating onion service just because it starts with `mysitename`.
+* It is relatively easy for anybody with average computing resources to create other keys beginning with `mysitename` (although they are very unlikely to come up with the exact key from the example above).
+So, in a sense, vanity keys might be confusing and offer a false sense of identity; users can easily be mistaken into accessing an impersonating onion service just because it starts with `mysitename`.
 
 * It consumes resources (time and energy): the bigger the vanity name, the longer (and more computing power) it takes.
 
-The long term solution involves a better onion naming scheme, with [existing proposals for that](http://gitlab.torproject.org/tpo/onion-services/onion-support/-/wikis/Documentation/Onion-Services-UX-Proposals), that can make vanity addresses only as a way to help system administrators to group onion addresses.
+The long-term solution involves a better onion naming scheme, and vanity addresses would remain only as a way to help system administrators group onion addresses.
 For example, when running many [Onionbalance](https://onionbalance.readthedocs.io/en/latest/) backends.
 
 ## Vanity address generation
@@ -55,15 +55,21 @@ For example, when running many [Onionbalance](https://onionbalance.readthedocs.i
 
 **Step 3.** Run the generator
 
-    $ ./mkp224o -d onions mysitename
+```
+$ ./mkp224o -d onions mysitename
+```
 
-This will create a new folder `onions` and folders for each of the discovered onion addresses and their respective keys.
-For more options, refer to:
+This will create the `onions` directory and others needed for each of the discovered onion addresses with their respective keys.
+To know what else the tool can do, refer to its help by executing the following command:
 
-    $ ./mkp224o -h
+```
+$ ./mkp224o -h
+```
+
+Additionally, if you are looking for a more advanced tool, see [Onionmine](https://community.torproject.org/onion-services/ecosystem/apps/web/onionmine/), a handy wrapper for `mkp224o` that can also handle TLS certificate generation for Onion Services.
 
 ## Read more
 
 * [Tips when mining Onion Addresses](https://community.torproject.org/onion-services/ecosystem/apps/web/onionspray/guides/mining/)
 * [mkp224o FAQ](https://github.com/cathugger/mkp224o#faq-and-other-useful-info)
-* [Onion Services UX Proposals](https://gitlab.torproject.org/tpo/onion-services/onion-support/-/wikis/Documentation/Onion-Services-UX-Proposals)
+* [Onion Services UX Proposals](https://community.torproject.org/onion-services/ecosystem/research/proposals/usability/)
