@@ -30,6 +30,16 @@
         "exit": "No",
         "comment": "Does not like Abuse (in any form) at all. Seems to give out customer data at alleged abuse. Not recommended but cheap.",
         "last_updated": "12/2011"
+      },
+      {
+        "name": "Alwyzon (Hohl IT e.U.)",
+        "url": "https://www.alwyzon.com/",
+        "asn": "AS40994",
+        "bridge": "-",
+        "relay": "No",
+        "exit": "No",
+        "comment": "The following activities are expressively prohibited: to host Tor entry, relay or exit nodes.",
+        "last_updated": "08/2024"
       }
     ],
     "Bulgaria": [
@@ -256,6 +266,16 @@
         "exit": "Yes",
         "comment": "Privacy-focused, own domains on users' behalf, ensuring anonymity from central entities like ICANN, accept cryptocurrencies, and forward all abuse reports.",
         "last_updated": "30/10/2023"
+      },
+      {
+        "name": "Magna Capax Finland Oy (PulsedMedia)",
+        "url": "https://pulsedmedia.com/",
+        "asn": "AS203003",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "No",
+        "comment": "Fair use traffic, \"typically ~100TB/Month or ~300Mbps 95th Percentile is completely fine on 1Gbps, and 900TB/~3Gbps on 10Gbps Unmetered Servers\", IPv4 only AFAIK",
+        "last_updated": "08/2024"
       }
     ],
     "Germany": [
@@ -331,7 +351,7 @@
       },
       {
         "name": "Hetzner",
-        "url": "https://hetzner.de",
+        "url": "https://hetzner.com",
         "asn": "AS24940",
         "bridge": "Yes",
         "relay": "Yes",
@@ -406,7 +426,7 @@
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
-        "comment": "40-120TB bandwidth - Tor exit nodes allowed on VPS and rootservers - \"Yes, it is. Everything is allowed that the T&Cs do not exclude.\"",
+        "comment": "40-120TB bandwidth - Tor exit nodes allowed on VPS and rootservers - \"Yes, it is. Everything is allowed that the T&Cs do not exclude.\" Locations: DE,AT",
         "last_updated": "09/27/2021"
       },
       {
@@ -488,6 +508,16 @@
         "exit": "Yes",
         "comment": "\"Running Tor nodes in the main network (AS) is not prohibited but network speed is limitted to 1MB/s\"",
         "last_updated": "07/2024"
+      },
+      {
+        "name": "dataforest GmbH",
+        "url": "https://dataforest.net",
+        "asn": "AS58212",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "No",
+        "comment": "-",
+        "last_updated": "08/2024"
       },
       {
         "name": "UltraVPS",
@@ -1065,14 +1095,14 @@
     ],
     "Norway": [
       {
-        "name": "Terrahost",
-        "url": "https://terrahost.no/",
+        "name": "Gigahost (former Terrahost)",
+        "url": "https://gigahost.no/",
         "asn": "AS56655",
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
-        "comment": "Check the requirements for running a Tor exit node with them first https://terrahost.no/avtalebetingelser. May require a photo of an ID card or passport for account creation. Unmetered traffic.",
-        "last_updated": "06/2022"
+        "comment": "Check the requirements for running a Tor exit node with them first https://gigahost.no/avtalebetingelser. May require a photo of an ID card or passport for account creation. Unmetered traffic. Locations: NO,NL",
+        "last_updated": "08/2024"
       }
     ],
     "Poland": [
@@ -1097,7 +1127,7 @@
         "last_updated": "29/03/2021"
       },
       {
-        "name": "HOSTEAM ",
+        "name": "HOSTEAM",
         "url": "https://hosteam.pl/pl",
         "asn": "AS51290",
         "bridge": "Yes",
@@ -1205,6 +1235,16 @@
         "exit": "Yes",
         "comment": "Allow payment with crypto. Also servers in Germany and Ukraine",
         "last_updated": "04/2023"
+      },
+      {
+        "name": "MEVSPACE",
+        "url": "https://mevspace.com/",
+        "asn": "AS201814",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "No",
+        "comment": "-",
+        "last_updated": "08/2024"
       }
     ],
     "Romania": [
@@ -1255,18 +1295,18 @@
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
-        "comment": "They don't allow exits and will suspend your active services and restrict your access to the account if they receive abuse messages. KVM VPS. IPv4+IPv6 native support. * Gnu/Linux, FreeBSD and Windows server supported. Unmetered traffic.",
+        "comment": "They don't allow exits and will suspend your active services and restrict your access to the account if they receive abuse messages. KVM VPS. IPv4+IPv6 native support. * Gnu/Linux, FreeBSD and Windows server supported.",
         "last_updated": "06/2022"
       },
       {
         "name": "iHostArt",
         "url": "https://ihostart.com/",
-        "asn": "-",
+        "asn": "AS215740",
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
         "comment": "-",
-        "last_updated": "04/2023"
+        "last_updated": "08/2024"
       }
     ],
     "Sweden": [
@@ -1497,6 +1537,16 @@
         "exit": "No",
         "comment": "They are very responsive and understand the uses of Tor but do not allow Exit nodes. They have a strict policy with abuse/spam and will not refund under their money back guarantee if abuse has been noticed. IPv4+IPv6 native support. Unmetered traffic.",
         "last_updated": "02/20/2024"
+      },
+      {
+        "name": "Clouvider",
+        "url": "https://www.clouvider.com/",
+        "asn": "AS62240",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "No",
+        "comment": "Prohibited Uses: to run a Tor Exit Node. They will cancel your account and claim it is a ToS violation, which requires you to pay out a 60-day notice. Locations: UK,NL,DE,US",
+        "last_updated": "11/2022"
       }
     ],
     "US": [
@@ -1561,16 +1611,6 @@
         "last_updated": "10/01/14"
       },
       {
-        "name": "Cloudvider",
-        "url": "https://www.clouvider.co.uk/",
-        "asn": "AS62240",
-        "bridge": "Yes",
-        "relay": "Yes",
-        "exit": "No",
-        "comment": "Prohibited Uses: to run a Tor Exit Node. They will cancel your account and claim it is a ToS violation, which requires you to pay out a 60-day notice.",
-        "last_updated": "11/2022"
-      },
-      {
         "name": "Comcast",
         "url": "https://comcast.net/",
         "asn": "AS7922",
@@ -1589,6 +1629,16 @@
         "exit": "?",
         "comment": "Questionable DMCA handling",
         "last_updated": "01/01/12"
+      },
+      {
+        "name": "Crunchbits",
+        "url": "https://crunchbits.com/",
+        "asn": "AS400304",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "?",
+        "comment": "-",
+        "last_updated": "08/2024"
       },
       {
         "name": "Cyberonic",
@@ -1731,6 +1781,16 @@
         "last_updated": "05/01/14"
       },
       {
+        "name": "Microtronix ESolutions",
+        "url": "https://www.microtronixdc.com/",
+        "asn": "AS400175",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "?",
+        "comment": "-",
+        "last_updated": "08/2024"
+      },
+      {
         "name": "Oracle Cloud",
         "url": "https://www.oracle.com/cloud/free/",
         "asn": "AS31898",
@@ -1754,11 +1814,11 @@
         "name": "Oplink.net",
         "url": "https://www.oplink.net",
         "asn": "AS40156",
-        "bridge": "No",
-        "relay": "No",
+        "bridge": "Yes",
+        "relay": "Yes",
         "exit": "No",
-        "comment": "Specifically Prohibited Abuse: hosting of any Tor exit relays or nodes.",
-        "last_updated": "11/2022"
+        "comment": "Specifically Prohibited Abuse: TOR exit nodes. (TOR relays are allowed)",
+        "last_updated": "08/2024"
       },
       {
         "name": "Psychz Networks",
@@ -1891,8 +1951,8 @@
         "last_updated": "-"
       },
       {
-        "name": "ChicagoVPS",
-        "url": "https://chicagovps.net/",
+        "name": "ColoCrossing (former HostPapa, ChicagoVPS)",
+        "url": "https://www.colocrossing.com/",
         "asn": "AS36352",
         "bridge": "No",
         "relay": "No",
