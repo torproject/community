@@ -50,15 +50,8 @@ and your proxy is up and running!
 
 ### 3. Checking your Docker logs
 
-To access your Snowflake proxy logs, first find the container ID number.
-Run the command:
 ```
-$ docker ps
-```
-Your Snowflake container ID is on the same line of `thetorproject/snowflake-proxy:latest`.
-Replace the container ID below with yours and run the command:
-```
-$ docker logs -f 42fb82372340
+$ docker logs -f snowflake-proxy
 ```
 
 ### 4. Automatic updates with Watchtower
