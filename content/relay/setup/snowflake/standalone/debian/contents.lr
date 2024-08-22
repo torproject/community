@@ -16,6 +16,9 @@ section: Snowflake operations
 ---
 body:
 
+⚠️ Packages might be outdated and so this setup might not work. It is recommended to use another setup method, e.g. Docker.
+<!-- https://forum.torproject.org/t/will-we-get-an-updated-snowflake-proxy-package-somewhere/10222/2 -->
+
 This guide will walk you through the installation, operation, and maintenance of [Snowflake](https://snowflake.torproject.org) proxy to contribute to the Tor Project's anti-censorship efforts.
 Snowflake proxy can be easily installed as a package on Debian-based systems (Debian 12 - bookworm).
  
