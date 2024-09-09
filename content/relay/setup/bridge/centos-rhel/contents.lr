@@ -53,7 +53,7 @@ Please note that when you are installing the first package from the EPEL reposit
 Please ensure the key matches with the one available on the [Fedora Project website](https://getfedora.org/keys/).
 This will also happens when installing packages from Tor's repository for the first time - again you must ensure the key matches.
 
-### 5. Build obfs4proxy and move it into place.
+### 5. Build lyrebird (obfs4proxy) and move it into place.
 
 Heavily outdated versions of git can make `go get` fail, so try upgrading to a more recent git version if you're running into this problem.
 
@@ -65,10 +65,11 @@ Install the golang package and other dependencies:
 Now build the binary, and move it to a proper directory:
 
 ```
-export GOPATH='mktemp -d'
-go get gitlab.com/yawning/obfs4.git/obfs4proxy
-sudo cp $GOPATH/bin/obfs4proxy /usr/local/bin/
-# chcon --reference=/usr/bin/tor /usr/local/bin/obfs4proxy
+git clone https://gitlab.torproject.org/tpo/anti-censorship/pluggable-transports/lyrebird
+cd lyrebird
+make build
+sudo cp .//lyrebird /usr/local/bin/
+# chcon --reference=/usr/bin/tor /usr/local/bin/lyrebird
 ```
 
 ### 6. Edit your Tor config file, usually located at `/etc/tor/torrc` and replace its content with:
@@ -83,7 +84,7 @@ BridgeRelay 1
 # censors may be scanning the Internet for this port.
 ORPort TODO1
 
-ServerTransportPlugin obfs4 exec /usr/local/bin/obfs4proxy
+ServerTransportPlugin obfs4 exec /usr/local/bin/lyrebird
 
 # Replace "TODO2" with an obfs4 port of your choice.  This port must be
 # externally reachable and must be different from the one specified for ORPort.
