@@ -17,15 +17,16 @@ Follow the instructions to enable [automatic software updates](../../guard/cento
 # zypper install tor
 ```
 
-### 3. Build obfs4proxy and move it into place
+### 3. Build lyrebird (obfs4proxy) and move it into place
 
-Heavily outdated versions of git can make `go get` fail, so try upgrading to a more recent git version if you're running into this problem.
+Heavily outdated versions of git can make `go install` fail, so try upgrading to a more recent git version if you're running into this problem.
 
 ```
 # zypper install go git
-# export GOPATH='mktemp -d'
-# go get gitlab.com/yawning/obfs4.git/obfs4proxy
-# cp $GOPATH/bin/obfs4proxy /usr/local/bin/.
+git clone https://gitlab.torproject.org/tpo/anti-censorship/pluggable-transports/lyrebird
+cd lyrebird
+make build
+sudo cp .//lyrebird /usr/local/bin/
 ```
 
 ### 4. Edit your Tor config file, usually located at `/usr/local/etc/tor` and replace its content with:
@@ -39,7 +40,7 @@ BridgeRelay 1
 # censors may be scanning the Internet for this port.
 ORPort TODO1
 
-ServerTransportPlugin obfs4 exec /usr/local/bin/obfs4proxy
+ServerTransportPlugin obfs4 exec /usr/local/bin/lyrebird
 
 # Replace "TODO2" with an obfs4 port of your choice.  This port must be
 # externally reachable and must be different from the one specified for ORPort.

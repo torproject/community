@@ -23,13 +23,13 @@ To install the `tor` package on Void Linux, considering you are already on an up
 
 We are opting here to install and use `obfs4` as pluggable transport, so we are going to install `obfs4proxy`.
 
-Once we can rely on an official `opbfs4proxy` package provided by the Void Linux's maintainers, this is how we install it:
+Once we can rely on an official `obfs4proxy` package provided by the Void Linux's maintainers, this is how we install it:
 
 ```
 # xbps-install -S obfs4proxy
 ```
 
-  * For more information on installing or building `obfs4proxy` from source, please refer to its [official documentation](https://gitlab.com/yawning/obfs4/-/blob/master/README.md).
+  * For more information on installing or building `lyrebird` from source, please refer to its [official documentation](https://gitlab.torproject.org/tpo/anti-censorship/pluggable-transports/lyrebird#installation).
 
 ### 4. Edit your Tor config file, usually located at `/etc/tor/torrc` and replace its content with:
 
