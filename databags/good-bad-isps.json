@@ -1947,8 +1947,8 @@
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
-        "comment": "When asked directly they will claim they do support Tor exits but will pull the rug out from under you later on. This has happened to at least two exit operators.",
-        "last_updated": "-"
+        "comment": "As of 10/01/2024 Vultr don't allow exit relays per their 'Acceptable Use Policy'",
+        "last_updated": "10/01/2024"
       },
       {
         "name": "ColoCrossing (former HostPapa, ChicagoVPS)",
