@@ -1,0 +1,36 @@
+_model: page
+---
+color: primary
+---
+title: Resolving Information Leaks
+---
+html: two-columns-page.html
+---
+_template: layout.html
+---
+key: 2
+---
+section: Threat Model
+---
+section_id: threat-model
+---
+body:
+
+# Resolving Information Leaks
+
+Tor’s protocol has various information leaks, and while not all have been addressed yet, we focus on mitigating the most severe threats. 
+These include cryptographic tagging, manipulation of cell headers, and dropped cells. Tor’s new project, the [Arti](https://gitlab.torproject.org/tpo/core/arti) client, resolves these critical vulnerabilities.
+
+We also take action against bandwidth inflation attacks by detecting and removing the malicious relays responsible. 
+A **bandwidth inflation attack** happens when a malicious relay in the Tor network falsely reports a higher bandwidth capacity than it actually has. 
+Tor relays are ranked based on their reported and measured bandwidth, and relays with higher bandwidth are more likely to be chosen by users to route their traffic. 
+
+In a bandwidth inflation attack, the attacker manipulates the system by making their relay appear faster or more capable than it really is. 
+This gives the malicious relay a greater chance of being used in the network. 
+To counter this, Tor detects and removes relays that falsely inflate their bandwidth, protecting users from these harmful relays.
+
+Another emerging threat comes from passive application-layer traffic patterns. 
+This means that an attacker could monitor traffic and, based on the size, timing, or frequency of data packets, make educated guesses about the content or nature of the user's activity without directly interacting with or altering the data.
+
+To tackle this, we port a traffic analysis framework and simulator to Arti, which will help in identifying and reducing these risks. 
+By focusing on the most serious issues, Tor continues to enhance the security and reliability of the network.

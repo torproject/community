@@ -1,0 +1,39 @@
+_model: page
+---
+color: primary
+---
+title: Mitigating Attacks on the Tor Project
+---
+html: two-columns-page.html
+---
+_template: layout.html
+---
+key: 4
+---
+section: Threat Model
+---
+section_id: threat-model
+---
+body:
+
+# Mitigating Attacks on the Tor Project
+
+Tor’s open environment allows anyone to contribute by writing code or engaging in discussions. 
+While this openness makes participation easy, it also presents opportunities for adversaries to disrupt the project. 
+To address these threats, we do a few key things.
+
+First, we keep discussions public and transparent. This openness helps to build trust within the community and between contributors and the Tor Project itself. 
+By having important conversations in the open, any attempts to harm the project are more easily noticed and stopped. 
+Regular communication and clear policies also help to prevent confusion and keep everyone aligned toward the same goals. 
+Transparency is key, as it makes it harder for adversaries to exploit gaps in communication or processes.
+
+When it comes to defending against attacks on staff or specific systems, we rely on teamwork, among other things. 
+Handling malicious relays, for example, is a group effort. 
+This means that targeting or intimidating one person won’t stop the work from getting done. 
+The community and staff work together to identify and remove bad relays, so the network stays secure.
+
+To protect our infrastructure, Tor takes extra precautions. Databases are only accessible internally, and the information is shared through secure systems designed to prevent disruption. 
+In addition, Tor plans to share database dumps publicly so researchers can help verify the data and its integrity, adding an extra layer of protection against manipulation.
+
+Though defending against targeted attacks is challenging, our approach—combining transparency, teamwork, 
+and secure infrastructure—helps the project remain strong and resilient in the face of threats.

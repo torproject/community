@@ -1,0 +1,77 @@
+_model: page
+---
+color: primary
+---
+title: How Attackers Work
+---
+html: two-columns-page.html
+---
+_template: layout.html
+---
+key: 1
+---
+section: Threat Model
+---
+section_id: threat-model
+---
+body:
+
+As Tor offers protection, it also faces numerous threats from attackers who aim to undermine its security. 
+These attackers can attempt to breach Tor users' privacy through a range of tactics, ranging from complex technical trickery to simple lies. 
+Whether you're a regular Tor user or just interested in online privacy, understanding these concerns is critical to your online safety.
+
+### 1. Traffic Analysis: Watching how data moves
+Imagine you’re sending a secret letter through a series of friends. 
+Each friend passes the letter to the next, and the final friend delivers it to the recipient. 
+Even though the letter is sealed, someone watching can guess who you’re writing to by seeing who you gave the letter to and who received it at the other end.
+
+Attackers use a similar method called **traffic analysis**. 
+They don’t need to read your messages—they can try to figure out who’s talking to whom just by watching how data moves through the Tor network. 
+If an attacker sees data going into the Tor network from your computer and sees similar data coming out on the other side, they might guess that the data is connected, even though it’s encrypted.
+
+For instance, an attacker might keep watch of your internet connection (perhaps through your Internet Service Provider). 
+Through this, they can notice that you send a specific amount of data into the Tor network at a certain time, or the data exiting the Tor network with similar timing and size. 
+By comparing these patterns, they can guess which Tor user is connected to which website or service, even if the data itself is encrypted.
+
+### 2. Malicious Relays: Bad friends in the chain
+
+![An image showing positions of bad relays on the Tor network](/static/images/threat-model/network.png "title='Bad Relays on the Tor Network' class='img-fluid'")
+
+The Tor network relies on volunteers to run [relays](/content/relay/) (like the friends in our secret letter example). 
+Some relays receive data, some pass it along, and others send it out of the network. 
+But what if one of these relays is operated by someone with bad intentions?
+
+A [**malicious relay**](/content/relay/governance/handling-bad-relays/) is like a friend in the chain who secretly opens the letter and reads it or even changes it before passing it on.
+
+If an attacker runs an exit relay (the last relay before your data leaves the Tor network), they could try to spy on your data if it’s not properly encrypted. 
+To prevent this from happening, always use HTTPS websites, which encrypt your traffic end-to-end, and avoid transmitting sensitive information over unencrypted connections while using Tor.
+
+### 3. Deanonymization: Revealing your identity
+Deanonymization is when someone figures out who you really are, even though you’re trying to stay anonymous. 
+Attackers can use different tricks to do this.
+
+Imagine someone knocks on your door, and as soon as you open it, they quickly take a picture of you. 
+They didn’t need to follow you around all day to figure out where you live—they just needed to catch you at the right moment. 
+Attackers might do something similar by observing patterns in your online activity by running [bad relays](/content/relay/governance/handling-bad-relays/) and deploying DDoS attacks to get more traffic routed over their own relays.
+
+### 4. DDoS Attacks: Overloading the network
+A Distributed Denial of Service (DDoS) attack is when an attacker sends so much traffic to a website or network that it gets overwhelmed and stops working. 
+It’s like flooding a store with so many customers that no one can get through the door.
+
+![An image showing a sample of how DDoS is carried out](/static/images/threat-model/client-side.png "title='DDoS attack on Tor' class='img-fluid'")
+
+If an attacker doesn’t want people to use Tor, they might send a huge amount of traffic to Tor’s relays, making it hard or impossible for real users to connect.
+
+### 5. Working with ISPs: Spying through your internet provider
+Internet Service Providers (ISPs) are the companies that connect you to the internet. 
+In some cases, attackers might work with ISPs to monitor or control what you do online. 
+Imagine your mail carrier (ISP) could choose specific sorting facilities they control, not to open your letters, but to monitor where they go and when. 
+Similarly, local adversaries can manipulate your Tor traffic to ensure it passes through their controlled Guards or Bridges (the first connection points in the Tor network). 
+While they can't read your traffic, this increases their chances of tracking your activity and potentially identifying you through traffic patterns.
+In some countries, ISPs might be forced to monitor or block Tor traffic, making it harder for you to use the network.
+
+
+Tor offers a powerful tool for online privacy, but it's important to understand that it's not invincible. 
+People who want to break Tor's protections use many different methods. 
+To stay safe online, it's essential to be aware of these threats. 
+By understanding how Tor works and the risks involved, you can make informed choices to protect your privacy.

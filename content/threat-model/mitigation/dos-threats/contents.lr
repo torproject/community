@@ -1,0 +1,30 @@
+_model: page
+---
+color: primary
+---
+title: Addressing Denial of Service (DoS) Threats
+---
+html: two-columns-page.html
+---
+_template: layout.html
+---
+key: 3
+---
+section: Threat Model
+---
+section_id: threat-model
+---
+body:
+
+# Addressing Denial of Service (DoS) Threats
+
+Mitigating all possible **Denial of Service (DoS)** attacks in the Tor network is a complex task. 
+The current C-Tor implementation includes an anti-DoS system that defends against the most critical vulnerabilities. 
+However, this system can't handle all the types of DoS attacks the network faces, and redesigning it is beyond the scope of C-Tor. 
+To fill these gaps, the remaining DoS vulnerabilities are addressed in the new Rust-based implementation, [Arti](https://gitlab.torproject.org/tpo/core/arti).
+
+A key part of defending against DoS threats involves collaboration with the [relay operator community](https://community.torproject.org/relay/governance/relay-operators/) and [Directory Authorities](https://community.torproject.org/relay/governance/policies-and-proposals/directory-authority/). 
+These groups have played a crucial role in identifying and understanding DoS attacks in the real world. 
+Their input has been proved essential in testing potential fixes and workarounds, especially in cases where the current anti-DoS system has limitations that prevent direct solutions. 
+
+We hope that by working together, we can reduce both the short- and long-term impacts of these attacks.

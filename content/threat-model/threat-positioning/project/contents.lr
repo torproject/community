@@ -1,0 +1,39 @@
+_model: page
+---
+color: primary
+---
+title: Threats to The Tor Project
+---
+html: two-columns-page.html
+---
+_template: layout.html
+---
+key: 4
+---
+section: Threat Model
+---
+section_id: threat-model
+---
+body:
+
+In any open-source project like Tor, it's essential to be aware of potential adversaries who exploit the transparency and openness of our workflows and communication channels. 
+These adversaries may aim to weaken our network and disrupt our community by infiltrating discussions, shaping decisions, or attacking the infrastructure that supports our project. 
+
+## How project adversaries can attack Tor
+
+![An image showing positions of bad actors in the Tor community](/static/images/threat-model/project.png "title='Tor Community with bad actors' class='img-fluid'")
+
+Project adversaries are individuals or groups who take advantage of our open system to disrupt or manipulate the Tor network and its community. 
+Their tactics may include:
+
+1. **Infiltrating communication channels**: 
+    These attackers may join mailing lists, forums, or other community spaces to influence discussions, steer proposals, and create division.
+2. **Spreading fear, uncertainty, and doubt**: 
+    They may attempt to erode trust in Tor by sharing misleading or harmful information on both internal and external platforms.
+3. **Interfering with governance**: 
+    They may also attempt to disrupt proposal processes, particularly those related to community governance and the Tor development roadmap, to weaken the project's direction.
+4. **Targeting key staff**: 
+    Individuals working on attack detection or mitigation may face direct intimidation, bribery attempts, or indirect attacks on the infrastructure they rely on.
+5. **Attacking infrastructure related to bad-relay work:**
+    The infrastructure supporting the detection and mitigation of malicious relays is a key target for adversaries. 
+    By attacking this infrastructure, they might aim to undermine the detection systems and allow their malicious relays to operate undetected, ultimately weakening the network's defenses.

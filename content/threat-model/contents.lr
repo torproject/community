@@ -1,0 +1,30 @@
+section: Threat Model
+---
+section_id: threat-model
+---
+color: primary
+---
+_template: layout.html
+---
+_discoverable: no
+---
+title: Threat Model
+---
+subtitle: How we mitigate threats to Tor
+---
+cta: Learn about threats
+---
+key: 7
+---
+html: threat-model.html
+---
+body:
+
+The Tor network, designed to safeguard privacy and enable anonymous communication, is constantly under threat from adversaries who seek to exploit its vulnerabilities. 
+As an open and decentralized system, Tor relies on a global network of volunteer-operated relays, making it both resilient and a target for various forms of attacks. 
+These threats range from malicious relays attempting to disrupt traffic or compromise user anonymity, to sophisticated surveillance tactics aimed at deanonymizing users or undermining the network’s integrity.
+
+To defend against these threats, it is important to understand the types of attackers the network faces, their capabilities, and their objectives. 
+A comprehensive threat model helps to identify potential vulnerabilities, assess the risks, and design appropriate mitigation strategies to protect both users and the network itself. 
+
+In this section, we provide a detailed overview of the adversaries targeting Tor, their methods of attack, and the systems in place to counter them, helping Tor continue to serve as a secure platform for privacy-conscious users.
