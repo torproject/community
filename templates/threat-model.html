@@ -1,0 +1,26 @@
+<div class="container py-5">
+    <div class="row py-5">
+      <div class="col-lg-7">
+        {{ this.body }}
+      </div>
+      <div class="col-lg-5">
+        <img src="{{ ('/static/images/home/png/'+ this.path + '.png')|url }}" class="img-fluid" alt="{{ this.title }}" />
+      </div>
+    </div>
+    <div class="row">
+      {% for child in this.children|sort(attribute='key') %}
+        <div class="col-sm-6 col-md-6 col-sm-12 col-xl-6 py-3">
+          <div class="card h-100">
+            <div class="card-body">
+              <div class="card-body">
+                <h4 class="card-title text-primary">
+                  <a href="{{ child.path|url(alt=this.alt) }}">{{ child.title }}</a>
+                </h4>
+                <p class="card-text">{{ child.subtitle }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>

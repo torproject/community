@@ -1,0 +1,34 @@
+_model: page
+---
+color: primary
+---
+title: Mitigating Malicious Relays
+---
+html: two-columns-page.html
+---
+_template: layout.html
+---
+key: 1
+---
+section: Threat Model
+---
+section_id: threat-model
+---
+body:
+
+# Mitigating Malicious Relays
+
+The open nature of the Tor network means that preventing malicious or misconfigured relays from joining is nearly impossible. 
+To address this, we take a multi-faceted approach to detect and mitigate these threats.
+
+We’ve set up systems to constantly perform automatic network scans to detect any signs of malicious activity. 
+This helps identify relays that may be intentionally tampering with traffic or undermining the network’s security. 
+Additionally, our network health team carries out investigations to discover new or unknown attacks that might bypass automated systems.
+
+Beyond technical measures, Tor emphasizes community-building. A trusted and tight-knit community can make it more difficult for attackers to operate. 
+Community members can help identify malicious relays by reporting suspicious behavior through channels such as emails or other reporting systems.
+Building trust within the relay operator community is a long-term effort, that is supported by regular meet-ups, open discussions, and transparent processes aimed at improving the network’s health.
+
+We also stay engaged with third-party applications and tools that can aid in the fight against malicious relays. 
+For example, implementing features like HTTPS-only mode in Tor Browser strengthens overall security and helps reduce the risks posed by malicious exit relays. 
+This combination of technical, social, and external improvements forms Tor’s strategy for mitigating threats stemming from malicious relays and keeping the network safe.

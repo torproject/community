@@ -1,0 +1,45 @@
+_model: page
+---
+color: primary
+---
+title: Local Attackers on the Tor Network
+---
+html: two-columns-page.html
+---
+_template: layout.html
+---
+key: 2
+---
+section: Threat Model
+---
+section_id: threat-model
+---
+body:
+
+These attackers include entities like your WiFi router administrator, Internet Service Provider (ISP), hosting provider, or Virtual Private Network (VPN) service. 
+Their proximity to your connection path gives them unique opportunities to gather information or manipulate your traffic in ways that more distant adversaries cannot. 
+Although, the ISPs or hosting providers that manage the Tor relays you use to connect to the Tor network, as well as any other ISPs and routers along your path to the network, are also considered local adversaries.
+
+## How Local Adversaries attack the network
+
+![An image showing positions of local threats on the Tor network](/static/images/threat-model/local.png "title='Local Threats' class='img-fluid'")
+
+Local adversaries may not have the broad capabilities of those who control or monitor different relays in the network, but they are still dangerous because they can focus on the specific connections that pass through their systems. 
+Some of the key ways they can attack the Tor users include:
+
+1. **Controlling Traffic Routes:**
+    Local adversaries can manipulate the routing of your Tor traffic to ensure it only passes through Guards or Bridges (the first point of connection in the Tor network) that they control. 
+    By doing this, they increase their chances of monitoring your traffic and potentially deanonymizing you. This manipulation can be subtle and difficult for users to detect, making it a potent threat.
+2. **Exploiting Information Leaks:**
+    Your Tor usage can leak data that local adversaries might want to exploit. 
+    For example, these leaks might reveal patterns in your traffic that could make it easier for an attacker to deanonymize you or link your activities back to you. 
+    Local adversaries are in a unique position to take advantage of these leaks because they can closely monitor your connection to the Tor network.
+
+## Examples of Local Adversary Attacks
+These local adversaries can execute a variety of attacks, including:
+
+- **NetFlow Analysis:** An ISP or hosting provider could perform [NetFlow analysis](https://gitlab.torproject.org/tpo/network-health/team/-/issues/42), a technique that monitors traffic flows in a network. 
+    By analyzing these flows, they might identify patterns that confirm whether specific traffic belongs to a particular user, thus aiding in deanonymization attempts.
+- **Covert Channel Exploits:** If a local adversary additionally operates an exit relay (the final node in the Tor circuit before traffic exits to the internet), they could exploit certain vulnerabilities, such as dropped cells, to leak your information or deanonymize you secretly.
+    A dropped cell refers to a piece of data (called a cell) that is intentionally discarded or ignored by a node in the network, and when a cell is dropped, it means the data doesn't move forward in the network.
+    This method, known as a dropped cells covert channel vector, could allow the attacker to deanonymize you, or gather information about your activities on the Tor network.

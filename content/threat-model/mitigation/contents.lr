@@ -1,0 +1,25 @@
+_model: page
+---
+color: primary
+---
+title: Network Threats Mitigation
+---
+html: two-columns-page.html
+---
+_template: layout.html
+---
+key: 4
+---
+section: Threat Model
+---
+section_id: threat-model
+---
+body:
+
+# Network threat mitigation systems
+
+As a privacy-focused network, Tor is constantly exposed to a wide range of threats that aim to undermine its security and functionality. 
+To fight against these threats, Tor employs a variety of threat mitigation systems designed to protect the network from malicious activity, both technical and social in nature. 
+
+These systems are crucial in preserving the safety and reliability of the Tor network, allowing it to continue operating as a secure tool for users around the world. 
+By combining technical safeguards, community collaboration, and continuous innovation, Tor actively works to detect and address threats before they can cause harm.

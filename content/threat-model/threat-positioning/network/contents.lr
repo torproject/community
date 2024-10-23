@@ -1,0 +1,79 @@
+_model: page
+---
+color: primary
+---
+title: Network Attackers on the Tor Network
+---
+html: two-columns-page.html
+---
+_template: layout.html
+---
+key: 3
+---
+section: Threat Model
+---
+section_id: threat-model
+---
+body:
+
+Network attackers pose a significant threat to the security and reliability of the network. 
+These attackers are those who run or compromise relays within the network, or manipulate traffic to exploit weaknesses in the Tor protocol. 
+Their goal may be to deanonymize users, degrade network performance, or damage Tor’s reputation.
+
+## How Network Adversaries attack Tor
+
+![An image showing positions of bad relays on the Tor network](/static/images/threat-model/network.png "title='Bad Relays on the Tor Network' class='img-fluid'")
+
+Network adversaries can carry out a variety of attacks, which can generally fall into three broad categories: 
+running malicious relays that risks user safety and security, manipulating Tor’s protocol to leak information, and performing denial of service (DoS) attacks.
+
+### 1. Running Malicious Relays
+
+Network attackers often run relays that are configured to harm the network or users in some way. 
+[Malicious relays](/relay/governance/handling-bad-relays/) can be designed to:
+
+- Spy on traffic passing through them.
+- Disrupt communication between Tor users and the network.
+- Collect data that can be used to deanonymize users.
+
+Malicious relays may also be purposefully misconfigured to introduce vulnerabilities into the network. 
+These relays might not follow proper protocol, resulting in traffic that leaks information, making it easier to track users. 
+
+An attacker could operate a malicious exit relay—the final node where traffic exits the Tor network and reaches the open internet—
+intentionally designed to steal sensitive data like cryptocurrencies, hijack online accounts, log user activity, or exploit vulnerabilities in Tor's protocol. 
+This allows the attacker to intercept and manipulate traffic, posing significant risks to users relying on Tor for secure, anonymous browsing.
+
+Tor actively works to detect and remove these relays, but attackers often attempt to bypass detection 
+by concealing the true nature of their relays, such as lying about key relay properties or frustrating Tor’s scanning efforts.
+
+### 2. Exploiting Information Leaks
+
+Tor’s protocol, while designed to protect user anonymity, has known information leaks or "[side channels](https://gitlab.torproject.org/tpo/core/torspec/-/blob/main/proposals/344-protocol-info-leaks.txt)" that attackers can exploit. 
+A network adversary running relays can take advantage of these leaks to:
+
+- Deanonymize users directly by correlating traffic patterns between the entry and exit points of the Tor network.
+- Assist other deanonymization attempts by providing additional data that makes it easier to confirm which traffic belongs to a specific user.
+
+These information leaks are detailed in [*Proposal 344*](https://gitlab.torproject.org/tpo/core/torspec/-/blob/main/proposals/344-protocol-info-leaks.txt), which highlights the severity of each one. 
+While not all require running relays to exploit, network adversaries who operate relays are in a better position to see more traffic and perform traffic analysis, making their attacks more effective.
+
+### 3. Denial of Service (DoS) Attacks
+
+Network adversaries can also use DoS attacks to degrade the performance of the Tor network, making it slow or unreliable. 
+These attacks might:
+
+- Exploit vulnerabilities in the Tor protocol to generate large amounts of traffic, overwhelming the network.
+- Use external services to flood the network with traffic, causing congestion.
+
+The goal of a DoS attack is often to discourage users from using Tor by making it so slow or unusable that they switch to less secure alternatives. 
+A DoS attack can also frustrate volunteers running relays, potentially leading them to shut down their relays, which weakens the network and makes it more vulnerable to further attacks.
+
+
+The presence of malicious or misconfigured relays, along with the potential for DoS attacks, can severely undermine Tor’s security, reliability, and reputation. 
+If users perceive the network as unsafe or slow, they may stop using it, reducing the overall anonymity of the network (since more users make it harder to track individual traffic). 
+
+As the Tor project relies on volunteers for relays and external funding, 
+frequent attacks could discourage operators and impact funding, both critical for keeping the network operational.
+
+While Tor has systems in place to detect and remove these threats, attackers are constantly evolving their tactics to avoid detection and weaken the network. 
+A deeper understanding of these threats and continuous vigilance are essential to maintaining the security and usability of the Tor network.

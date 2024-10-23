@@ -1,0 +1,44 @@
+_model: page
+---
+color: primary
+---
+title: Client-side Attackers on the Tor Network
+---
+html: two-columns-page.html
+---
+_template: layout.html
+---
+key: 1
+---
+section: Threat Model
+---
+section_id: threat-model
+---
+body:
+
+The Tor network is designed to protect users' privacy by routing their internet traffic through a series of relays, making it difficult to trace their online activities. 
+However, the network faces various threats, even from people who just use a Tor client. 
+These client-side attackers, while limited in their capabilities compared to more sophisticated attackers, can still pose significant risks to the network's performance and reliability.
+
+A Tor client is software that lets you use the Tor network. 
+The most common Tor client is the Tor Browser, which is similar to a regular web browser but with built-in privacy protections.
+
+## Understanding Client-side Adversaries
+
+Client-side attackers are individuals or entities that use a Tor client to carry out attacks on the network. 
+Unlike more advanced attackers, they do not control any relays or infrastructure within the Tor network. 
+Instead, they rely on their access to the internet and a Tor client to execute their attacks.
+
+### Denial of Service (DoS) attacks
+
+One of the primary threats posed by client-side attackers is the ability to perform a Denial of Service (DoS) attack.
+
+A Denial of Service (DoS) attack is a tactic where an attacker attempts to make a service, in this case, the Tor network, hard to use for its intended users. 
+Client-side attackers can execute DoS attacks to degrade the performance of the Tor network, causing disruptions that impact all users.
+
+![An image showing positions of client-side threats on the Tor network](/static/images/threat-model/client-side.png "title='Client Threats' class='img-fluid'")
+
+They could flood the network with an overwhelming amount of traffic using external services, or exploiting the Tor protocol itself. 
+This traffic might not necessarily come from a single client but could be distributed across many clients in a coordinated attack.
+The result is a significantly slowed network, making it difficult for legitimate users to connect or use Tor effectively. 
+This disruption can also frustrate relay operators, sometimes leading them to shut down their relays, which inadvertently weakens the network—a potential goal of the attacker.

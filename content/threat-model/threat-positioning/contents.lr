@@ -1,0 +1,29 @@
+_model: page
+---
+color: primary
+---
+title: Threat Positioning on the Tor Network
+---
+html: two-columns-page.html
+---
+_template: layout.html
+---
+key: 2
+---
+section: Threat Model
+---
+section_id: threat-model
+---
+body:
+
+The Tor network helps maintain online privacy and anonymity, but it is not immune to attacks. 
+Understanding how attackers can position themselves as local clients or within the Tor network is crucial to safeguarding its users and ensuring the network remains secure.
+
+![An image showing positions of bad actors on the Tor network](/static/images/threat-model/threat-position.png "title='Threats to Tor' class='img-fluid'")
+
+Attackers can just use a Tor client or be an ISP/WiFi operator. 
+They might also be part of the Network, or our community and engage in mailing list discussions, proposal work etc.
+
+This section explores the different ways attackers might position themselves on or around the Tor network. 
+We will examine the strategies they use, the risks they pose, and how these threats can be mitigated. 
+By understanding these tactics, we can better protect the Tor network and its users from potential attacks.
