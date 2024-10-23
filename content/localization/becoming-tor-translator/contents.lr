@@ -45,10 +45,10 @@ The page includes guidelines, resources, and priorities that will help you make 
 1. On the next page, select the languages you will translate to from the menu, and save.
 1. Go to [Notifications](https://hosted.weblate.org/accounts/profile/#notifications) and select `Tor Project` from watched projects.
    Other projects we recommend are Guardian Project and Onionshare:
-   ![Watch Tor Project in Weblate](/static/images/localization/watch-projects.png#fullwidth).
+   ![Watch Tor Project in Weblate](/static/images/localization/watch-projects.png "class='img-fluid'").
 1. Make sure to also select [notifications for your watched projects](https://hosted.weblate.org/accounts/profile/#notifications).
 1. Now you will see the Tor Project translations on your [weblate dashboard](https://hosted.weblate.org/): 
-  ![Weblate dashboard](/static/images/localization/weblate-dashboard.png#fullwidth).
+  ![Weblate dashboard](/static/images/localization/weblate-dashboard.png "class='img-fluid'").
 
 # What to translate first?
 
