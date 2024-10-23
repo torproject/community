@@ -28,3 +28,7 @@ To defend against these threats, it is important to understand the types of atta
 A comprehensive threat model helps to identify potential vulnerabilities, assess the risks, and design appropriate mitigation strategies to protect both users and the network itself. 
 
 In this section, we provide a detailed overview of the adversaries targeting Tor, their methods of attack, and the systems in place to counter them, helping Tor continue to serve as a secure platform for privacy-conscious users.
+
+**Note**: This threat model documentation is incomplete and a work-in-progress at this point.
+It mainly covers elements we worked on during a project on improving network health.
+Large parts, e.g. related to onion services, are still missing.
