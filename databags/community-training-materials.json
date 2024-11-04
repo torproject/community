@@ -26,7 +26,7 @@
     "languages": {
       "es": "Español"
     },
-    "link" : "https://gitweb.torproject.org/community/training.git/plain/2019/all-about-tor/all-about-tor-full-pack+es.odp"
+    "link" : "https://gitlab.torproject.org/tpo/community/training/-/raw/master/2019/all-about-tor/all-about-tor-full-pack.es.odp?ref_type=heads&inline=false"
   },
   "tor network workshop": {
     "author": "Tor Project",
