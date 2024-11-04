@@ -2,4 +2,4 @@
 ./lego/packages/lektor-md-tag
 ./lego/packages/txt-to-html
 ./lego/packages/xml-to-html
-./packages/lektor-scss
+./lego/packages/scss
