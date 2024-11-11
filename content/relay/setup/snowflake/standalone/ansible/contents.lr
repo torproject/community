@@ -20,7 +20,7 @@ body:
 
 This Ansible role will install, configure, and operate Snowflake standalone proxy.
 
-- Support for Ubuntu, Debian, Debian, Arch Linux, Fedora and FreeBSD.
+- Support for Ubuntu, Debian, Arch Linux, Fedora and FreeBSD.
 - Systemd unit to manage Snowflake service on GNU/Linux and rc script for FreeBSD.
 
 ### Requirements
