@@ -67,11 +67,21 @@
       </div>
       {% endif %}
     {% endfor %}
+  <div class="row py-5 text-center mx-auto">
+    <h2 class="display-4 text-primary text-center mx-auto">{{ _('Learn more') }}</h2>
+    <p class="text-center">
+      {{ _('Are you interested in learning more about Onion Services?') }}
+      {{ _('The Onion Services Ecosystem documentation is directed to everyone: from those who wants to understand and use the technology to the ones interested with advanced topics such as the current research.') }}
+    </p>
+    <a class="btn btn-lg btn-outline-primary mx-auto my-3" href="https://onionservices.torproject.org">
+          {{ _('Check our extensive documentation') }}<i class="ml-3 pt-2 fas fa-arrow-right"></i>
+    </a>
+  </div>
   </div>
     <div class="row py-5 text-center mx-auto">
-    <h2 class="display-4 text-primary text-center mx-auto my-3">{{ _('Learn More') }}</h2>
+    <h2 class="display-4 text-primary text-center mx-auto my-3">{{ _('Talk') }}</h2>
     <p class="text-center">
-      {{ _('Are you interested in learning more about onion services? Join our forum to speak with other onion service operators. Alternatively, you can subscribe to the')}} <a href="https://lists.torproject.org/cgi-bin/mailman/listinfo/tor-onions" target="_blank">{{ _('tor-onions') }}</a> {{ _('mailing list.') }}
+      {{ _('Join our forum to speak with other onion service operators. Alternatively, you can subscribe to the')}} <a href="https://lists.torproject.org/cgi-bin/mailman/listinfo/tor-onions" target="_blank">{{ _('tor-onions') }}</a> {{ _('mailing list.') }}
     </p>
     <a class="btn btn-lg btn-outline-primary mx-auto my-3" href="https://forum.torproject.org/c/support/onion-services/">
           {{ _('Tor forum') }}<i class="ml-3 pt-2 fas fa-arrow-right"></i>
