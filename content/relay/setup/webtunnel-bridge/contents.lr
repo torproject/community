@@ -98,7 +98,7 @@ location = /$PATH {
 
         proxy_redirect     off;
         access_log  off;
-        error_log off;
+        error_log /dev/null;
 }
 ```
 
