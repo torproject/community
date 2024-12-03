@@ -1701,6 +1701,16 @@
         "last_updated": "09/01/14"
       },
       {
+        "name": "GreenCloud",
+        "url": "https://greencloudvps.com/",
+        "asn": "-",
+        "bridge": "No",
+        "relay": "No",
+        "exit": "No",
+        "comment": "[from the [TOS](https://greencloudvps.com/terms-of-service.php):] Any user may not: [...] c) Run TOR in any shape",
+        "last_updated": "12/2024"
+      },
+      {
         "name": "Hivelocity",
         "url": "https://www.hivelocity.net/",
         "asn": "AS29802",
