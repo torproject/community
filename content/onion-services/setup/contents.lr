@@ -59,7 +59,7 @@ By default, the web server will be running on `localhost:80` at the end of the i
 If you get an error message, something has gone wrong and you cannot continue until you've figured out why this didn't work.
 
 Once your web server is set up, make sure it works: open your browser and go to http://localhost/.
-Then try putting a file in the main html directory, and make sure it shows up when you access the site.
+Then try putting a file in the main HTML directory, and make sure it shows up when you access the site.
 
 ## Step 2: Configure your Tor Onion Service
 
@@ -104,7 +104,7 @@ The `hostname` file in your Onion Service configuration directory contains the h
 The other files are your Onion Service keys, so it is imperative that these are kept private.
 If your keys leak, other people can impersonate your Onion Service, deeming it compromised, useless, and dangerous to visit.
 
-Now you can connect to your Onion Service using Tor Browser, and you should get the html page you setup back in **Step 1**.
+Now you can connect to your Onion Service using Tor Browser, and you should get the HTML page you set up back in **Step 1**.
 If it doesn't work, look in your logs for some hints, and keep playing with it until it works.
 
 It is important to note that an Onion Service configured like this will be readable by anybody who knows or discovers the address.
@@ -149,8 +149,8 @@ Or in Apache with Tor service listening on port 80:
 
 ## Step 6: Security advice and more tips
 
-The default version of Onion Services is version 3 and it has 56 characters long.
-Onion services version 2 is being deprecated and will be retired soon from the Tor network, after 0.4.6.x Tor release, in July 2021.
+The default version of Onion Services is version 3 and its address is 56 characters long, without the `http://` and `.onion` parts.
+Onion services version 2 is deprecated and is no longer supported since the 0.4.6.1-alpha Tor release, in 2021.
 Please read the blog post [Onion Service version deprecation timeline](https://blog.torproject.org/v2-deprecation-timeline) for more information.
 
 Some onionsite operators may not want to disclose their Onion Service location.
