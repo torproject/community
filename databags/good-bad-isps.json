@@ -748,8 +748,8 @@
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
-        "comment": "Your Exit should use Reduced Exit Policy. IPv6 is optional. Unmetered traffic.",
-        "last_updated": "06/2022"
+        "comment": "Your Exit should use Reduced Exit Policy. IPv6 is optional. Unmetered traffic. Account creation email includes cleartext password, may not have good security practices.",
+        "last_updated": "12/07/2024"
       }
     ],
     "Lithuania": [
