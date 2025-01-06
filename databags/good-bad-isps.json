@@ -748,8 +748,8 @@
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
-        "comment": "Your Exit should use Reduced Exit Policy. IPv6 is optional. Unmetered traffic.",
-        "last_updated": "06/2022"
+        "comment": "Your Exit should use Reduced Exit Policy. IPv6 is optional. Unmetered traffic. Account creation email includes cleartext password, may not have good security practices.",
+        "last_updated": "12/07/2024"
       }
     ],
     "Lithuania": [
@@ -939,6 +939,16 @@
         "exit": "Yes",
         "comment": "-",
         "last_updated": "-"
+      },
+      {
+        "name": "Naranjatech",
+        "url": "https://naranja.tech/",
+        "asn": "AS41608",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "No",
+        "comment": "(non-exit) Tor relays explicitly allowed in the [AUP](https://naranja.tech/acceptable-usage-policy/)",
+        "last_updated": "2025/01"
       },
       {
         "name": "Novogara",
@@ -1229,12 +1239,12 @@
       {
         "name": "HOSTIKO",
         "url": "https://hostiko.com.ua/",
-        "asn": "AS199785",
+        "asn": "AS214379",
         "bridge": "Yes",
         "relay": "Yes",
-        "exit": "Yes",
-        "comment": "Allow payment with crypto. Also servers in Germany and Ukraine",
-        "last_updated": "04/2023"
+        "exit": "No",
+        "comment": "Allow payment with crypto. Also servers in Germany and Ukraine - \"... we allow TOR relays. We do not allow Tor Exit Nodes.\"",
+        "last_updated": "12/2024"
       },
       {
         "name": "MEVSPACE",
@@ -1479,12 +1489,12 @@
       {
         "name": "HOSTIKO",
         "url": "https://hostiko.com.ua/",
-        "asn": "AS199785",
+        "asn": "AS214379",
         "bridge": "Yes",
         "relay": "Yes",
-        "exit": "Yes",
-        "comment": "Allow payment with crypto. Also servers in Germany and Poland",
-        "last_updated": "04/2023"
+        "exit": "No",
+        "comment": "Allow payment with crypto. Also servers in Germany and Poland - \"... we allow TOR relays. We do not allow Tor Exit Nodes.\"",
+        "last_updated": "12/2024"
       }
     ],
     "United Kingdom": [
@@ -1699,6 +1709,16 @@
         "exit": "No",
         "comment": "-",
         "last_updated": "09/01/14"
+      },
+      {
+        "name": "GreenCloud",
+        "url": "https://greencloudvps.com/",
+        "asn": "-",
+        "bridge": "No",
+        "relay": "No",
+        "exit": "No",
+        "comment": "[from the [TOS](https://greencloudvps.com/terms-of-service.php):] Any user may not: [...] c) Run TOR in any shape",
+        "last_updated": "12/2024"
       },
       {
         "name": "Hivelocity",
