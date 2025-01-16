@@ -941,6 +941,16 @@
         "last_updated": "-"
       },
       {
+        "name": "Naranjatech",
+        "url": "https://naranja.tech/",
+        "asn": "AS41608",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "No",
+        "comment": "(non-exit) Tor relays explicitly allowed in the [AUP](https://naranja.tech/acceptable-usage-policy/)",
+        "last_updated": "2025/01"
+      },
+      {
         "name": "Novogara",
         "url": "https://www.novogara.com",
         "asn": "AS202425",
