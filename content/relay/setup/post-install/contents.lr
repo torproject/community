@@ -150,9 +150,8 @@ If something goes wrong, it is good to get notified automatically.
 We recommend using [Tor Weather](https://weather.torproject.org/), a notification service developed by the Tor Project.
 It helps relay operators get notified when their relays or bridges are offline, as well as for other incidents.
 
-Another option is to use one of the free services that allow you to check your relay's ORPorts for reachability and send you an email should they become unreachable for any reason.
+Another option is to use one of the free services that allow you to check your relay's ORPorts for reachability and send you an email should they become unreachable.
 [UptimeRobot](https://uptimerobot.com/) is one of these services that allow you to monitor TCP listeners on arbitrary ports.
-This service can check your configured ports once every 5 minutes and send you an email should your tor process die or become unreachable.
 This checks only for the listener but does not speak the Tor protocol.
 
 A good way to monitor a relay for its health state is to have a look at its bandwidth graphs.
