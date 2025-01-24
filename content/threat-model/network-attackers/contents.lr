@@ -32,16 +32,13 @@ The attackers we are primarily focused on include:
     Using a Tor client, these attackers might aim to degrade the network's performance by jamming it with traffic.
 
 - **Local attackers:**
-    Local attackers, like ISPs or compromised Wi-Fi networks, can monitor and manipulate a user’s traffic, 
-    or disrupt their connection to the Tor network.
+    Local attackers, like ISPs or compromised Wi-Fi networks, can monitor and manipulate a user’s traffic, or disrupt their connection to the Tor network.
     
 - **Network attackers:**
-    Operating within the Tor Network, they can influence the network by injecting or 
-    manipulating traffic through the relays they run, potentially compromising the anonymity of users. 
+    Operating within the Tor Network, they can influence the network by injecting or manipulating traffic through the relays they run, potentially compromising the anonymity of users. 
     
 - **Project attackers:**
-    Project attackers focus on The Tor Project itself, trying to introduce vulnerabilities or 
-    disrupt operations by targeting Tor software, infrastructure, or key personnel.
+    Project attackers focus on The Tor Project itself, trying to introduce vulnerabilities or disrupt operations by targeting Tor software, infrastructure, or key personnel.
 
 ## Goals of attackers
 
@@ -55,7 +52,7 @@ If attackers succeed in deanonymizing users, they can strip away this protection
 
 ### 2. Exploiting Tor Users
 Attackers may seek to exploit Tor users by stealing assets like cryptocurrencies (e.g., Bitcoin) or siphoning off private and confidential information.
-By  watching and intercepting traffic, these attackers can aim to profit financially or gather sensitive data that can be used for malicious purposes.
+By watching and intercepting traffic, these attackers can aim to profit financially or gather sensitive data that can be used for malicious purposes.
 
 ### 3. Disrupting the Network
 Another goal may be to disrupt the Tor network, making it unreliable or slowing it down. 
