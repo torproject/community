@@ -66,7 +66,7 @@ To know what else the tool can do, refer to its help by executing the following 
 $ ./mkp224o -h
 ```
 
-Additionally, if you are looking for a more advanced tool, see [Onionmine](https://community.torproject.org/onion-services/ecosystem/apps/web/onionmine/), a handy wrapper for `mkp224o` that can also handle TLS certificate generation for Onion Services.
+Additionally, if you are looking for a more advanced tool, see [Onionmine](https://onionservices.torproject.org/apps/web/onionmine/), a handy wrapper for `mkp224o` that can also handle TLS certificate generation for Onion Services.
 
 ## Read more
 
