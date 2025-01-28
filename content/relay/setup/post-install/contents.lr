@@ -172,7 +172,7 @@ Note: **Do not make your private monitoring data graphs public since this could 
 
 Some practical advice:
 
-* If you want to publish traffic statistics, you should aggregate all your relays' traffic over at least a week, then round that to the nearest 10 TiB (terabytes).
+* If you want to publish traffic statistics, you should aggregate your relays' traffic over at least a day or use bigger aggregation windows for bandwidth if feasable and combine graphs/statistics for multiple relays where possible.
 * Reporting individual relays is worse than reporting totals for groups of relays. In future, tor will securely aggregate bandwidth statistics, so any individual relay bandwidth reporting will be less secure than tor's statistics.
 * Smaller periods are worse.
 * Numbers are worse than graphs.
