@@ -1,0 +1,123 @@
+_model: page
+---
+html: two-columns-page.html
+---
+key: 1
+---
+section: Relay operations
+---
+section_id: relay-operations
+---
+title: Learn how to configure your relays' FamilyID
+---
+color: primary
+---
+body:
+
+In Tor, when multiple relays have the same operator(s), they should declare that they are members of a "family".
+
+In Tor's current design, to set up relays as members of a family, every relay needs to list _every other member of the family_ in its configuration, and publish that list to clients as well.
+These lists can be unpleasant to maintain, and expensive to download.
+
+The Happy Families design is a new feature in Tor 0.4.9.1-alpha that will (eventually) provide a simpler way to configure relay families, and will also save a lot of traffic when clients are fetching network directory information.
+
+(Unfortunately, moving to happy families will create _additional_ work while the transition is going on. We think that it will be worth it in the long run.)
+
+You should read this if you are a relay operator who needs to configure a family on the Tor network.
+
+## The basic idea
+
+In the Happy Families design, every relay family is identified by a secret family signing key shared by all family members.
+The family members use this key to sign certificates proving that they belong to the family.
+
+So what you'll need to do is:
+
+1. Generate a single key for your family.
+2. Copy that key to every relay.
+3. Configure your relays to use that key.
+
+## In more detail
+
+## Generating the family key
+
+First, you will need to wait until all of your relays are running 0.4.9.1-alpha or later.
+
+Then, to generate a family key, run:
+
+```shell
+tor --keygen-family MyKey
+```
+
+This will create a file called `MyKey.secret_family_key`; it will also write something like this result to standard output:
+
+```shell
+# Generated MyKey.secret_family_key
+FamilyId wweKJrJxUDs1EdtFFHCDtvVgTKftOC/crUl1mYJv830
+```
+
+Save that `FamilyID` line; you're going to need it!
+(Don't use the one from this example—that isn't your family ID.)
+
+## Configuring your relay
+
+Copy the `MyKey.secret_family_key` file (or whatever you called it) into the `KeyDir` of every one of your relay.
+(By default, this is the `keys` subdirectory of your `DataDir`.)
+The file name needs to end with `.secret_family_key`.
+
+Then, add the `FamilyId` line to your `torrc`.
+
+If your relay is running, you'll have to tell it to reload its configuration (typically with a `SIGHUP`.)
+
+## Did it work?
+
+If you did this right, you should see a `family-cert` entry in your relay's descriptor, looking something like this:
+
+```text
+family-cert
+-----BEGIN FAMILY CERT-----
+AQwAB2K5AXJrxBpgTXDIvHKFShmCCD2yLnDaBf2lWaInBhR2R56HAQAgBAAjv69J
+jy+7BSRh1GnGF7Zxm+AMXvJYWkUCWY+5KU8Bymkz5N4D/QNs4K6bOjLokAwD4raT
+J34t8b7uxHXuFS2F2VN5Ygr3//vGsB00jideQ5Cj9aX+BLSZ2FjC6GK2XAo=
+-----END FAMILY CERT-----
+```
+
+Once enough of the directory authorities are running 0.4.9.1-alpha or later, they'll include a corresponding entry in your relays' microdescriptors, which will look something like:
+
+```text
+family-ids ed25519:wweKJrJxUDs1EdtFFHCDtvVgTKftOC/crUl1mYJv830
+```
+
+## NOTE: You still need to configure MyFamily!
+
+Unfortunately, you will still need to configure the `MyFamily` option as you did before: until clients all support Happy Families, they will need to look at the legacy family lists.
+
+We're going to try to keep this transitional period as short as is reasonable.
+
+We'll announce once it is no longer necessary to include `MyFamily`.
+
+## Additional info: How to transition family keys
+
+If one of your relays is compromised, or if you accidentally leak a family key, you'll need to change the key.
+(If you don't, an adversary's relay could falsely claim to be a member of your family.)
+
+To do this, we recommend a step-wise process.
+
+1. Generate a new family key as above.
+   Give it a different filename from the old key.
+2. Copy the new family key to every one of your relays, without replacing the old family key.
+3. Add the new `FamilyID` line to all of your relays' configurations, without removing the old one.
+   At this point, your relays will all be members of _two_ families.
+4. Wait for a few days, to give the new family information time to propagate.
+5. Remove the old `FamilyID` lines from your relays' configurations.
+   Optionally, remove the old family keys as well.
+
+## Additional info: Expected savings from this transition
+
+We plan to remove `MyFamily` and legacy TAP onion keys at the same time.
+When we do, we estimate that the resulting network's microdescriptors will be something around 10% of their current size.
+
+(This might not be a permanent savings, unfortunately: when we transition to postquantum cryptography, we might have to make microdescriptors bigger again. But at least this change will free the room to do so.)
+
+
+---
+seo_slug: happy-families
