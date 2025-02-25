@@ -19,7 +19,7 @@ In Tor, when multiple relays have the same operator(s), they should declare that
 In Tor's current design, to set up relays as members of a family, every relay needs to list _every other member of the family_ in its configuration, and publish that list to clients as well.
 These lists can be unpleasant to maintain, and expensive to download.
 
-The Happy Families design is a new feature in Tor 0.4.9.1-alpha that will (eventually) provide a simpler way to configure relay families, and will also save a lot of traffic when clients are fetching network directory information.
+The Happy Families design is a new feature in Tor 0.4.9.2-alpha that will (eventually) provide a simpler way to configure relay families, and will also save a lot of traffic when clients are fetching network directory information.
 
 (Unfortunately, moving to happy families will create _additional_ work while the transition is going on. We think that it will be worth it in the long run.)
 
@@ -40,7 +40,7 @@ So what you'll need to do is:
 
 ## Generating the family key
 
-First, you will need to wait until all of your relays are running 0.4.9.1-alpha or later.
+First, you will need to wait until all of your relays are running 0.4.9.2-alpha or later.
 
 Then, to generate a family key, run:
 
@@ -81,7 +81,7 @@ J34t8b7uxHXuFS2F2VN5Ygr3//vGsB00jideQ5Cj9aX+BLSZ2FjC6GK2XAo=
 -----END FAMILY CERT-----
 ```
 
-Once enough of the directory authorities are running 0.4.9.1-alpha or later, they'll include a corresponding entry in your relays' microdescriptors, which will look something like:
+Once enough of the directory authorities are running 0.4.9.2-alpha or later, they'll include a corresponding entry in your relays' microdescriptors, which will look something like:
 
 ```text
 family-ids ed25519:wweKJrJxUDs1EdtFFHCDtvVgTKftOC/crUl1mYJv830
