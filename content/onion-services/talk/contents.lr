@@ -53,15 +53,13 @@ Censorship technologies are being deployed by different actors, like governments
 
 To protect freedom of speech and freedom of opinion in censored spaces, major media organizations have made their websites available over Onion Services in the last few years.
 
-That's the case of NY Times, ProPublica, Deutsche Welle, BBC, The Markup and other newsrooms.
+That's the case of ProPublica, Deutsche Welle, BBC, The Markup and other newsrooms.
 
 The project [Secure The News](https://securethe.news/), developed by [Freedom of the Press Foundation](https://freedom.press/news/onions-side-tracking-tor-availability-reader-privacy-major-news-sites/), tracks how secure news organizations’s websites are. One of its metrics is the adoption of Onion Services .
 
 Read the news organizations announcement about their onion site:
 
  * "We launched this in part because we do a lot of reporting, writing, and coding about issues like media censorship, digital privacy and surveillance, and breaches of private medical information. Readers use our interactive databases to see data that reveals a lot about themselves, such as whether their doctor receives payments from drug companies. Our readers should never need to worry that somebody else is watching what they’re doing on our site. So we made our site available as a Tor hidden service (Onion Service) to give readers a way to browse our site while leaving behind less of a digital trail." [ProPublica](https://www.propublica.org/nerds/a-more-secure-and-anonymous-propublica-using-tor-hidden-services)
-
- * "Some readers choose to use Tor to access our journalism because they're technically blocked from accessing our website; or because they worry about local network monitoring; or because they care about online privacy; or simply because that is the method that they prefer." [New York Times](https://open.nytimes.com/https-open-nytimes-com-the-new-york-times-as-a-tor-onion-service-e0d0b67b7482)
 
  * "DW is a global advocate for freedom of opinion and freedom of speech. […] It is therefore a logical step for us to also use Tor to reach people in censored markets who previously had limited or no access to free media." [Deutsche Welle](https://www.dw.com/en/dw-websites-accessible-via-tor-protocol/a-51338328)
 
