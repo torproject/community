@@ -1,113 +1,92 @@
 {
-  "all-about-tor": {
-    "name": "All About Tor",
+  "understanding-how-tor-works": {
+    "name": "Understanding How Tor Works",
     "author": "Tor Project",
-    "link": "https://community.torproject.org/training/resources/all-about-tor",
-    "description": "Full set of slides for Tor Trainings: how the Tor network works, censorship circumvention, Tor Browser installation, and OnionShare.",
-    "date": "2023",
-    "cover": "/static/images/training/all-about-tor.png",
-    "topics": ["Tor network","Tor Browser"],
+    "link": "https://docs.google.com/presentation/d/1VBQtnWy6vApJD1RNu6Pa6xI_XdvyAZPhEpc9c2PvktQ/edit",
+    "description": "Overview of the origins of Tor, Tor vs. VPN, relays, bridges.",
+    "date": "March 2025",
+    "cover": "/static/images/training/covers/understanding-how-tor-works.png",
+    "topics": ["Tor network"],
     "languages": {
       "en": "English"
     },
     "formats": {
-      "ODP": "https://gitlab.torproject.org/tpo/community/training/-/blob/master/2023/All_About_Tor.odp",
-      "PDF": "https://gitlab.torproject.org/tpo/community/training/-/blob/master/2023/All_About_Tor.pdf",
-      "Google Slides": "https://docs.google.com/presentation/d/1BKpeDXqHib4zOQeGRBeFYWVYUtFNSwd-FLCY63TMDG8/edit"
+      "Google Slides": "https://docs.google.com/presentation/d/1VBQtnWy6vApJD1RNu6Pa6xI_XdvyAZPhEpc9c2PvktQ/edit"
     }
   },
-  "todo sobre tor": {
-    "name": "Todo sobre Tor",
+  "tor-browser-deep-dive": {
+    "name": "Tor Browser Deep Dive",
     "author": "Tor Project",
-    "description": "Un conjunto completo de diapositivas para los entrenamientos de Tor",
-    "date": "2019",
-    "cover": "/static/images/training/todo-sobre-tor.png",
-    "topics": [],
-    "languages": {
-      "es": "Español"
-    },
-    "link" : "https://gitlab.torproject.org/tpo/community/training/-/raw/master/2019/all-about-tor/all-about-tor-full-pack.es.odp?ref_type=heads&inline=false"
-  },
-  "tor network workshop": {
-    "author": "Tor Project",
-    "name": "The Tor network",
-    "description": "Learn about the Tor network and how to run a relay",
-    "date": "2019",
-    "cover": "/static/images/training/the-tor-network.png",
-    "topics": [],
+    "link": "https://docs.google.com/presentation/d/1IPITBmJnD46qAfZAbh9JpWBf0eMz0GmDyOKz73k4syI/edit",
+    "description": "Mechanisms of Tor Browser for Desktop, and overview of Tor for mobile.",
+    "date": "March 2025",
+    "cover": "/static/images/training/covers/tor-browser-deep-dive.png",
+    "topics": ["Tor Browser"],
     "languages": {
       "en": "English"
     },
-    "link": "https://community.torproject.org/training/resources/tor-relay-workshop/"
+    "formats": {
+      "Google Slides": "https://docs.google.com/presentation/d/1IPITBmJnD46qAfZAbh9JpWBf0eMz0GmDyOKz73k4syI/edit"
+    }
   },
-  "Private bridges workshop": {
+  "about-onion-services": {
+    "name": "About Onion Services",
     "author": "Tor Project",
-    "name": "Running Tor bridges",
-    "description": "Learn how to run a private unlisted Tor bridge",
-    "date": "2021",
-    "cover": "/static/images/training/running-tor-bridges.png",
-    "topics": [],
+    "link": "https://docs.google.com/presentation/d/19-7zW4aSnXOywzRJDf-cwJf-4OEjwkdzHk52HpB4g5U/edit",
+    "description": "Defining onion services, how they work, ecosystem of onion applications, and tools for onion service operators",
+    "date": "March 2025",
+    "cover": "/static/images/training/covers/about-onion-services.png",
+    "topics": ["Tor Browser"],
     "languages": {
       "en": "English"
     },
-    "link": "https://gitweb.torproject.org/community/training.git/plain/2021/private-bridges/private-bridges-workshop.odp"
+    "formats": {
+      "Google Slides": "https://docs.google.com/presentation/d/19-7zW4aSnXOywzRJDf-cwJf-4OEjwkdzHk52HpB4g5U/edit"
+    }
   },
-
-  "Introduction to Onion Services" :
-  {
+  "tails-workshop": {
+    "name": "A Tails Workshop",
     "author": "Tor Project",
-    "name": "Introduction to Onion Services",
-    "description": "Learn more about Onion Services and their benefits",
-    "date": "2022",
-    "cover": "/static/images/training/onion-services.png",
-    "topics": [],
+    "link": "https://docs.google.com/presentation/d/1kck5pEWPMHj85QQ-QM7OgqBOm_iedJ_iYCzt3GJJ2c8/edit",
+    "description": "Slide deck for Tails workshops, explaining Tails, its use, and how to use it.",
+    "date": "March 2025",
+    "cover": "/static/images/training/covers/tails-workshop.png",
+    "topics": ["Tor Browser"],
     "languages": {
       "en": "English"
     },
-    "link": "https://gitlab.torproject.org/tpo/community/training/-/raw/master/2022/onion-services/intro-onion-service-2022.odp?inline=false"
-  },
-  "how-to-bypass-internet-censorship": {
-    "name": "How to bypass internet censorship",
-    "author": "Totem Project",
-    "description": "An online course that teach how to use anti-censorship tools",
-    "link": "https://learn.totem-project.org/courses/course-v1:Totem+TP_CT_EN+001/about",
-    "cover": "/static/images/training/how-to-bypass-censorship.png",
-    "topics": [],
-    "languages": {
-      "multiple_languages": "Multiple languages"
+    "formats": {
+      "Google Slides": "https://docs.google.com/presentation/d/1kck5pEWPMHj85QQ-QM7OgqBOm_iedJ_iYCzt3GJJ2c8/edit"
     }
   },
-  "tails-tu-computadora-segura-en-cualquier-lugar": {
-    "name": "Tails: Tu computadora segura en cualquier lugar",
-    "author": "Tails",
-    "description": "Tails training slides to human rights defenders, journalists and activists in Latin America.",
-    "link": "https://tails.boum.org/contribute/how/promote/material/slides/Ciclo_Autodefensa_Digital_202204/Tails-Spanish.odp",
-    "cover": "/static/images/training/tails-logo.svg",
-    "topics": [],
+  "bypassing-censorship-with-tor": {
+    "name": "Bypassing Censorship With Tor",
+    "author": "Tor Project",
+    "link": "https://docs.google.com/presentation/d/1TA8Zd_vdp3Enifb6-ZUyNA_VcbMKVSw1Fs-6EhRddb4/edit",
+    "description": "Overview on Internet censorship and how to circumvent it with Tor.",
+    "date": "March 2025",
+    "cover": "/static/images/training/covers/bypassing-censorship-with-tor.png",
+    "topics": ["Tor Browser"],
     "languages": {
-      "es": "Español"
+      "en": "English"
+    },
+    "formats": {
+      "Google Slides": "https://docs.google.com/presentation/d/1TA8Zd_vdp3Enifb6-ZUyNA_VcbMKVSw1Fs-6EhRddb4/edit"
     }
   },
-  "orbot-tor-vpn-para-ios-android": {
-    "name": "Orbot: Tor VPN para iOS y Android",
-    "author": "The Guardian Project",
-    "description": "Orbot training slides that cover how Tor works, how to bypass the censorship using bridges, and what are pluggable transports.",
-    "link": "https://gitlab.com/guardianproject/pluto/-/blob/main/Orbot_Spanish.pdf",
-    "cover": "/static/images/training/orbot.png",
-    "topics": [],
+  "digital-device-security": {
+    "name": "Digital & Device Security Basics",
+    "author": "Tor Project",
+    "link": "https://docs.google.com/presentation/d/1oT28sHXl6fdnC_4OAvz1RB8jFeAaVo1iL_lEKZUaNGs/edit",
+    "description": "Large slide deck covering device, account, communication security.",
+    "date": "March 2025",
+    "cover": "/static/images/training/covers/digital-device-security.png",
+    "topics": ["Tor Browser"],
     "languages": {
-      "es": "Español"
-    }
-  },
-  "onion-browser-para-ios": {
-    "name": "Onion Browser: Tu conexión confiable a Tor desde iOS",
-    "author": "The Guardian Project",
-    "description": "Onion Browser training slides. This material covers how Tor works, bypassing censorship using bridges and pluggable transports.",
-    "link": "https://gitlab.com/guardianproject/pluto/-/blob/main/Onion_Browser.pdf",
-    "cover": "/static/images/training/onion-browser.png",
-    "topics": [],
-    "languages": {
-      "es": "Español"
+      "en": "English"
+    },
+    "formats": {
+      "Google Slides": "https://docs.google.com/presentation/d/1oT28sHXl6fdnC_4OAvz1RB8jFeAaVo1iL_lEKZUaNGs/edit"
     }
   }
 }
