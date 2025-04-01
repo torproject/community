@@ -2,16 +2,6 @@
   "isps": {
     "Austria": [
       {
-        "name": "UPC Austria GmbH",
-        "url": "https://www.upc.at/",
-        "asn": "-",
-        "bridge": "-",
-        "relay": "Yes",
-        "exit": "Yes",
-        "comment": "(ISP) does not care what their customers do at all (unless you have a business connection)",
-        "last_updated": "12/2011"
-      },
-      {
         "name": "M247 Europe",
         "url": "https://m247.com/",
         "asn": "AS9009",
@@ -22,8 +12,8 @@
         "last_updated": "04/2023"
       },
       {
-        "name": "A1(former Telekom Austria)",
-        "url": "https://a1.net",
+        "name": "A1 (formerly Telekom Austria)",
+        "url": "https://www.a1.net/",
         "asn": "AS8447",
         "bridge": "-",
         "relay": "Yes",
@@ -33,7 +23,7 @@
       },
       {
         "name": "Alwyzon (Hohl IT e.U.)",
-        "url": "https://www.alwyzon.com/",
+        "url": "https://www.alwyzon.com/en",
         "asn": "AS40994",
         "bridge": "-",
         "relay": "No",
@@ -45,7 +35,7 @@
     "Bulgaria": [
       {
         "name": "VPS.BG",
-        "url": "https://www.vpsbg.eu/en/",
+        "url": "https://www.vpsbg.eu/",
         "asn": "AS34224",
         "bridge": "Yes",
         "relay": "Yes",
@@ -54,8 +44,8 @@
         "last_updated": "01/11/2016"
       },
       {
-        "name": "G-Core Labs",
-        "url": "https://gcorelabs.com",
+        "name": "Gcore",
+        "url": "https://gcore.com/",
         "asn": "AS199524",
         "bridge": "Yes",
         "relay": "Yes",
@@ -67,7 +57,7 @@
     "Canada": [
       {
         "name": "TekSavvy",
-        "url": "https://www.teksavvy.ca",
+        "url": "https://www.teksavvy.com/",
         "asn": "AS5645",
         "bridge": "Yes",
         "relay": "Yes",
