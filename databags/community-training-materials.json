@@ -2,11 +2,11 @@
   "understanding-how-tor-works": {
     "name": "Understanding How Tor Works",
     "author": "Tor Project",
-    "link": "https://docs.google.com/presentation/d/1VBQtnWy6vApJD1RNu6Pa6xI_XdvyAZPhEpc9c2PvktQ/edit",
+    "link": "",
     "description": "Overview of the origins of Tor, Tor vs. VPN, relays, bridges.",
     "date": "March 2025",
     "cover": "/static/images/training/covers/understanding-how-tor-works.png",
-    "topics": ["Tor network"],
+    "topics": ["Tor Network"],
     "languages": {
       "en": "English"
     },
@@ -17,7 +17,7 @@
   "tor-browser-deep-dive": {
     "name": "Tor Browser Deep Dive",
     "author": "Tor Project",
-    "link": "https://docs.google.com/presentation/d/1IPITBmJnD46qAfZAbh9JpWBf0eMz0GmDyOKz73k4syI/edit",
+    "link": "",
     "description": "Mechanisms of Tor Browser for Desktop, and overview of Tor for mobile.",
     "date": "March 2025",
     "cover": "/static/images/training/covers/tor-browser-deep-dive.png",
@@ -32,11 +32,11 @@
   "about-onion-services": {
     "name": "About Onion Services",
     "author": "Tor Project",
-    "link": "https://docs.google.com/presentation/d/19-7zW4aSnXOywzRJDf-cwJf-4OEjwkdzHk52HpB4g5U/edit",
+    "link": "",
     "description": "Defining onion services, how they work, ecosystem of onion applications, and tools for onion service operators",
     "date": "March 2025",
     "cover": "/static/images/training/covers/about-onion-services.png",
-    "topics": ["Tor Browser"],
+    "topics": ["Onion Services"],
     "languages": {
       "en": "English"
     },
@@ -47,11 +47,11 @@
   "tails-workshop": {
     "name": "A Tails Workshop",
     "author": "Tor Project",
-    "link": "https://docs.google.com/presentation/d/1kck5pEWPMHj85QQ-QM7OgqBOm_iedJ_iYCzt3GJJ2c8/edit",
+    "link": "",
     "description": "Slide deck for Tails workshops, explaining Tails, its use, and how to use it.",
     "date": "March 2025",
     "cover": "/static/images/training/covers/tails-workshop.png",
-    "topics": ["Tor Browser"],
+    "topics": ["Tails"],
     "languages": {
       "en": "English"
     },
@@ -62,11 +62,11 @@
   "bypassing-censorship-with-tor": {
     "name": "Bypassing Censorship With Tor",
     "author": "Tor Project",
-    "link": "https://docs.google.com/presentation/d/1TA8Zd_vdp3Enifb6-ZUyNA_VcbMKVSw1Fs-6EhRddb4/edit",
+    "link": "",
     "description": "Overview on Internet censorship and how to circumvent it with Tor.",
     "date": "March 2025",
     "cover": "/static/images/training/covers/bypassing-censorship-with-tor.png",
-    "topics": ["Tor Browser"],
+    "topics": ["Tor Browser","Orbot","Onion Browser"],
     "languages": {
       "en": "English"
     },
@@ -77,11 +77,11 @@
   "digital-device-security": {
     "name": "Digital & Device Security Basics",
     "author": "Tor Project",
-    "link": "https://docs.google.com/presentation/d/1oT28sHXl6fdnC_4OAvz1RB8jFeAaVo1iL_lEKZUaNGs/edit",
-    "description": "Large slide deck covering device, account, communication security.",
+    "link": "",
+    "description": "Slide deck covering device, account, and communication security.",
     "date": "March 2025",
     "cover": "/static/images/training/covers/digital-device-security.png",
-    "topics": ["Tor Browser"],
+    "topics": ["Digital Security"],
     "languages": {
       "en": "English"
     },
