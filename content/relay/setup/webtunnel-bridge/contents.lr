@@ -11,7 +11,10 @@ The requirements for deploying a WebTunnel bridge are:
 1. A static IPv4 (preferably);
 2. The ability to expose TCP ports to the Internet (make sure that NAT doesn't get in the way);
 3. A self-hosted website, including a configurable web server (such as NGINX or Apache) and a domain under your control;
-4. A valid TLS certificate.
+4. A valid TLS certificate;
+5. At least 1 GB of memory RAM (4 GB recommended) to support the Tor process and WebTunnel transport. 
+
+For more details on system requirements, we recommend reading the [Tor relay requirements](/relay/relays-requirements) page.
 
 Deploying a WebTunnel bridge involves configuring both a web server and a Tor bridge with this pluggable transport.
 The first part of this guide provides detailed instructions for configuring your web server to support WebTunnel.
