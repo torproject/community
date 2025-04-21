@@ -128,8 +128,8 @@
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
-        "comment": "You can run anything you want as long (tor nodes are specifically allowed) as it's not a spam relay, botnet controller, they are pretty flexible regarding the packages they offer and will give a few days to test them before deciding. IPv6 is available (you have to ask) and the customer support is really helpful and will go the extra mile to help you. You will also be warned first if you do something wrong so you have a chance to fix it and warned again and again... The servers are pretty fast and there's usually discount codes available. They don't collect any personal info and you can pay in crypto.",
-        "last_updated": "06/2022"
+        "comment": "Tor exit relays are allowed and supported. MAXKO Hosting offers privacy-friendly VPS and dedicated servers in Croatia, Hungary, Bulgaria, and South Africa. They support anonymous and privacy-focused projects. All servers come with unmetered bandwidth, and services are automatically delivered via email within minutes after payment, with IPv6 included by default. Cryptocurrency is accepted and no personal information is required during signup. Support is excellent and available 24/7 via live chat. Use coupon TOR10 for 10% off your order.",
+        "last_updated": "04/2025"
       }
     ],
     "Czech Republic": [
@@ -1433,6 +1433,18 @@
         "exit": "Yes",
         "comment": "They just simply forward DMCA notices to us to handle (or ignore) them",
         "last_updated": "-"
+      }
+    ],
+    "South Africa": [
+      {
+        "name": "MAXKO Hosting",
+        "url": "https://www.maxko-hosting.com/",
+        "asn": "AS329325",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "Tor exit relays are allowed and supported. MAXKO Hosting offers privacy-friendly VPS and dedicated servers in Croatia, Hungary, Bulgaria, and South Africa. They support anonymous and privacy-focused projects. All servers come with unmetered bandwidth, and services are automatically delivered via email within minutes after payment, with IPv6 included by default. Cryptocurrency is accepted and no personal information is required during signup. Support is excellent and available 24/7 via live chat. Use coupon TOR10 for 10% off your order.",
+        "last_updated": "04/2025"
       }
     ],
     "Ukraine": [
