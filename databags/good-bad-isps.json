@@ -269,6 +269,15 @@
       }
     ],
     "Germany": [
+      { "name": "1337 Services GmbH",
+        "url": "https://rdp.sh",
+        "asn": "AS210558",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "",
+        "last_updated": "04/2025"
+      },
       {
         "name": "EUServ",
         "url": "https://euserv.de",
