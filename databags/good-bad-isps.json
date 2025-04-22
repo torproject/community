@@ -51,7 +51,7 @@
         "relay": "Yes",
         "exit": "No",
         "comment": "They don't allow exits and will suspend your active services and restrict your access to the account if they receive abuse messages. KVM VPS. IPv4+IPv6 native support. * Gnu/Linux, FreeBSD and Windows server supported. Unmetered traffic.",
-        "last_updated": "06/2022"
+        "last_updated": "05/2024"
       }
     ],
     "Canada": [
@@ -520,14 +520,14 @@
         "last_updated": "03/2021"
       },
       {
-        "name": "G-Core Labs",
-        "url": "https://gcorelabs.com",
+        "name": "Gcore",
+        "url": "https://gcore.com/",
         "asn": "AS199524",
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
         "comment": "They don't allow exits and will suspend your active services and restrict your access to the account if they receive abuse messages. KVM VPS. IPv4+IPv6 native support. * Gnu/Linux, FreeBSD and Windows server supported. Unmetered traffic.",
-        "last_updated": "06/2022"
+        "last_updated": "05/2024"
       },
       {
         "name": "Venocix",
@@ -562,14 +562,14 @@
         "last_updated": "-"
       },
       {
-        "name": "G-Core Labs",
-        "url": "https://gcorelabs.com",
+        "name": "Gcore",
+        "url": "https://gcore.com/",
         "asn": "AS199524",
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
         "comment": "They don't allow exits and will suspend your active services and restrict your access to the account if they receive abuse messages. KVM VPS. IPv4+IPv6 native support. * Gnu/Linux, FreeBSD and Windows server supported. Unmetered traffic.",
-        "last_updated": "06/2022"
+        "last_updated": "05/2024"
       }
     ],
     "Hungary": [
@@ -594,14 +594,14 @@
         "last_updated": "05/2024"
       },
       {
-        "name": "G-Core Labs",
-        "url": "https://gcorelabs.com",
+        "name": "Gcore",
+        "url": "https://gcore.com/",
         "asn": "AS199524",
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
         "comment": "They don't allow exits and will suspend your active services and restrict your access to the account if they receive abuse messages. KVM VPS. IPv4+IPv6 native support. * Gnu/Linux, FreeBSD and Windows server supported. Unmetered traffic.",
-        "last_updated": "06/2022"
+        "last_updated": "05/2024"
       },
       {
         "name": "ATW",
@@ -710,14 +710,14 @@
         "last_updated": "12/2020"
       },
       {
-        "name": "G-Core Labs",
-        "url": "https://gcorelabs.com",
+        "name": "Gcore",
+        "url": "https://gcore.com/",
         "asn": "AS199524",
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
         "comment": "They don't allow exits and will suspend your active services and restrict your access to the account if they receive abuse messages. KVM VPS. IPv4+IPv6 native support. * Gnu/Linux, FreeBSD and Windows server supported. Unmetered traffic.",
-        "last_updated": "06/2022"
+        "last_updated": "05/2024"
       }
     ],
     "Latvia": [
@@ -776,14 +776,14 @@
         "last_updated": "09/27/2021"
       },
       {
-        "name": "G-Core Labs",
-        "url": "https://gcorelabs.com",
+        "name": "Gcore",
+        "url": "https://gcore.com/",
         "asn": "AS199524",
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
         "comment": "They don't allow exits and will suspend your active services and restrict your access to the account if they receive abuse messages. KVM VPS. IPv4+IPv6 native support. * Gnu/Linux, FreeBSD and Windows server supported. Unmetered traffic.",
-        "last_updated": "06/2022"
+        "last_updated": "05/2024"
       }
     ],
     "Mexico": [],
@@ -819,14 +819,14 @@
         "last_updated": "01/05/23"
       },
       {
-        "name": "G-Core Labs",
-        "url": "https://gcorelabs.com",
+        "name": "Gcore",
+        "url": "https://gcore.com/",
         "asn": "AS199524",
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
         "comment": "They don't allow exits and will suspend your active services and restrict your access to the account if they receive abuse messages. KVM VPS. IPv4+IPv6 native support. * Gnu/Linux, FreeBSD and Windows server supported. Unmetered traffic.",
-        "last_updated": "06/2022"
+        "last_updated": "05/2024"
       }
     ],
     "Netherlands": [
@@ -1031,14 +1031,14 @@
         "last_updated": "2022-06-05"
       },
       {
-        "name": "G-Core Labs",
-        "url": "https://gcorelabs.com",
+        "name": "Gcore",
+        "url": "https://gcore.com/",
         "asn": "AS199524",
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
         "comment": "They don't allow exits and will suspend your active services and restrict your access to the account if they receive abuse messages. KVM VPS. IPv4+IPv6 native support. * Gnu/Linux, FreeBSD and Windows server supported. Unmetered traffic.",
-        "last_updated": "06/2022"
+        "last_updated": "05/2024"
       },
       {
         "name": "VPSslim",
@@ -1217,14 +1217,14 @@
         "last_updated": "03/02/2022"
       },
       {
-        "name": "G-Core Labs",
-        "url": "https://gcorelabs.com",
+        "name": "Gcore",
+        "url": "https://gcore.com/",
         "asn": "AS199524",
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
         "comment": "They don't allow exits and will suspend your active services and restrict your access to the account if they receive abuse messages. KVM VPS. IPv4+IPv6 native support. * Gnu/Linux, FreeBSD and Windows server supported. Unmetered traffic.",
-        "last_updated": "06/2022"
+        "last_updated": "05/2024"
       },
       {
         "name": "HOSTIKO",
@@ -1289,14 +1289,14 @@
         "last_updated": "03/2017"
       },
       {
-        "name": "G-Core Labs",
-        "url": "https://gcorelabs.com",
+        "name": "Gcore",
+        "url": "https://gcore.com/",
         "asn": "AS199524",
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
         "comment": "They don't allow exits and will suspend your active services and restrict your access to the account if they receive abuse messages. KVM VPS. IPv4+IPv6 native support. * Gnu/Linux, FreeBSD and Windows server supported.",
-        "last_updated": "06/2022"
+        "last_updated": "05/2024"
       },
       {
         "name": "iHostArt",
@@ -1469,14 +1469,14 @@
         "last_updated": "-"
       },
       {
-        "name": "G-Core Labs",
-        "url": "https://gcorelabs.com",
+        "name": "Gcore",
+        "url": "https://gcore.com/",
         "asn": "AS199524",
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
         "comment": "They don't allow exits and will suspend your active services and restrict your access to the account if they receive abuse messages. KVM VPS. IPv4+IPv6 native support. * Gnu/Linux, FreeBSD and Windows server supported. Unmetered traffic.",
-        "last_updated": "06/2022"
+        "last_updated": "05/2024"
       },
       {
         "name": "Virtual Systems",
@@ -1573,28 +1573,8 @@
         "last_updated": "09/27/2021"
       },
       {
-        "name": "AmeriNOC",
-        "url": "https://www.amerinoc.com/",
-        "asn": "-",
-        "bridge": "Yes",
-        "relay": "Yes",
-        "exit": "Yes",
-        "comment": "-",
-        "last_updated": "-"
-      },
-      {
-        "name": "Arvixe",
-        "url": "https://www.arvixe.com/vps_virtual_private_servers_hosting/",
-        "asn": "-",
-        "bridge": "Yes",
-        "relay": "Yes",
-        "exit": "Yes",
-        "comment": "-",
-        "last_updated": "06/19/13"
-      },
-      {
         "name": "Lumen (CenturyLink)",
-        "url": "http://www.lumen.com",
+        "url": "https://www.lumen.com/en-us/home.html",
         "asn": "AS209 / AS3356",
         "bridge": "Yes",
         "relay": "Yes",
@@ -1610,7 +1590,7 @@
         "relay": "Yes",
         "exit": "Yes",
         "comment": "New Tor rules [here](https://buyvm.net/acceptable-use-policy/#3). All relays are fine if you follow the steps. Notices are ignored. Unmetered bandwidth.",
-        "last_updated": "09/27/2021"
+        "last_updated": "04/2025"
       },
       {
         "name": "Catalyst Host",
@@ -1631,16 +1611,6 @@
         "exit": "No",
         "comment": "To run an exit, you must be on a commercial subscription and must contact them first.",
         "last_updated": "3/2022"
-      },
-      {
-        "name": "ChunkHost",
-        "url": "https://chunkhost.com",
-        "asn": "-",
-        "bridge": "Yes",
-        "relay": "Yes",
-        "exit": "?",
-        "comment": "Questionable DMCA handling",
-        "last_updated": "01/01/12"
       },
       {
         "name": "Crunchbits",
@@ -1673,16 +1643,6 @@
         "last_updated": "04/13/2023"
       },
       {
-        "name": "Datawagon",
-        "url": "https://datawagon.net",
-        "asn": "AS27176",
-        "bridge": "Yes",
-        "relay": "Yes",
-        "exit": "Yes",
-        "comment": "Customers are forwarded abuse complaints to handle themselves",
-        "last_updated": "03/06/19"
-      },
-      {
         "name": "DreamHost",
         "url": "https://www.dreamhost.com/",
         "asn": "AS26347",
@@ -1694,23 +1654,13 @@
       },
       {
         "name": "Evolucix",
-        "url": "https://www.evolucix.com",
+        "url": "https://evolucix.com/",
         "asn": "-",
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No(?)",
         "comment": "-",
         "last_updated": "-"
-      },
-      {
-        "name": "Future Hosting",
-        "url": "https://www.futurehosting.com/",
-        "asn": "-",
-        "bridge": "Yes",
-        "relay": "Yes",
-        "exit": "No",
-        "comment": "-",
-        "last_updated": "09/01/14"
       },
       {
         "name": "GreenCloud",
@@ -1751,16 +1701,6 @@
         "exit": "No",
         "comment": "-",
         "last_updated": "05/01/16"
-      },
-      {
-        "name": "HostUS",
-        "url": "https://hostus.us/",
-        "asn": "AS25926",
-        "bridge": "Yes",
-        "relay": "Yes",
-        "exit": "No",
-        "comment": "-",
-        "last_updated": "10/16/14"
       },
       {
         "name": "IPXcore",
@@ -1824,17 +1764,17 @@
       },
       {
         "name": "OVHcloud",
-        "url": "https://www.ovh.com/us/index.xml",
+        "url": "https://www.ovhcloud.com/en/",
         "asn": "AS16276",
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
-        "comment": "Unmetered bandwidth in non asia locations. - \"I will gladly explain this situation for you. Running a Tor exit node is strictly forbidden and can lead to the suspension and even termination of your server and account.\" Locations: US,CA,FR,DE,PL,GB,SG",
+        "comment": "Unmetered bandwidth in non Asia locations. - \"I will gladly explain this situation for you. Running a Tor exit node is strictly forbidden and can lead to the suspension and even termination of your server and account.\" Locations: US,CA,FR,DE,PL,GB,SG",
         "last_updated": "09/27/2021"
       },
       {
         "name": "Oplink.net",
-        "url": "https://www.oplink.net",
+        "url": "https://oplink.net/",
         "asn": "AS40156",
         "bridge": "Yes",
         "relay": "Yes",
@@ -1873,31 +1813,11 @@
         "last_updated": "11/03/14"
       },
       {
-        "name": "Server Complete",
-        "url": "https://servercomplete.com/",
-        "asn": "-",
-        "bridge": "?",
-        "relay": "?",
-        "exit": "No",
-        "comment": "-",
-        "last_updated": "11/03/14"
-      },
-      {
         "name": "IBM Cloud",
         "url": "https://www.ibm.com/cloud",
         "asn": "AS36351",
         "bridge": "Yes",
         "relay": "Yes",
-        "exit": "?",
-        "comment": "-",
-        "last_updated": "-"
-      },
-      {
-        "name": "VPSWebServer.com",
-        "url": "https://www.vpswebserver.com",
-        "asn": "-",
-        "bridge": "Yes",
-        "relay": "No",
         "exit": "?",
         "comment": "-",
         "last_updated": "-"
@@ -1913,14 +1833,14 @@
         "last_updated": "04/13/23"
       },
       {
-        "name": "SolarVPS",
-        "url": "https://solarvps.com",
+        "name": "VPSCheap (formerly SolarVPS)",
+        "url": "https://vpscheap.net/",
         "asn": "-",
-        "bridge": "Yes",
-        "relay": "Yes",
-        "exit": "Yes",
-        "comment": "-",
-        "last_updated": "-"
+        "bridge": "?",
+        "relay": "?",
+        "exit": "?",
+        "comment": "Operating VPN or proxy services on any of their Services is prohibited: https://vpscheap.net/acceptable-usage-policy",
+        "last_updated": "04/25"
       },
       {
         "name": "SeedVPS",
@@ -1933,18 +1853,8 @@
         "last_updated": "-"
       },
       {
-        "name": "VPS6.NET",
-        "url": "https://vps6.net/",
-        "asn": "-",
-        "bridge": "Yes",
-        "relay": "Yes",
-        "exit": "No",
-        "comment": "-",
-        "last_updated": "-"
-      },
-      {
         "name": "DigitalOcean",
-        "url": "https://digitalocean.com/",
+        "url": "https://www.digitalocean.com/",
         "asn": "AS14061",
         "bridge": "Yes",
         "relay": "Yes",
@@ -1953,8 +1863,8 @@
         "last_updated": "-"
       },
       {
-        "name": "PhoenixNap (Secured Servers)",
-        "url": "https://www.phoenixnap.com/",
+        "name": "PhoenixNAP (Secured Servers)",
+        "url": "https://phoenixnap.com/",
         "asn": "AS12189",
         "bridge": "Yes",
         "relay": "Yes",
@@ -1964,7 +1874,7 @@
       },
       {
         "name": "Vultr",
-        "url": "https://vultr.com",
+        "url": "https://www.vultr.com/",
         "asn": "AS20473",
         "bridge": "Yes",
         "relay": "Yes",
@@ -1973,7 +1883,7 @@
         "last_updated": "10/01/2024"
       },
       {
-        "name": "ColoCrossing (former HostPapa, ChicagoVPS)",
+        "name": "ColoCrossing (formerly HostPapa and ChicagoVPS)",
         "url": "https://www.colocrossing.com/",
         "asn": "AS36352",
         "bridge": "No",
@@ -1984,7 +1894,7 @@
       },
       {
         "name": "Xmission",
-        "url": "https://www.xmission.com/",
+        "url": "https://xmission.com/",
         "asn": "AS6315",
         "bridge": "Yes",
         "relay": "Yes",
@@ -1994,7 +1904,7 @@
       },
       {
         "name": "MonkeyBrains",
-        "url": "https://monkeybrains.net",
+        "url": "https://www.monkeybrains.net/",
         "asn": "AS32329",
         "bridge": "Yes",
         "relay": "Yes",
@@ -2003,14 +1913,14 @@
         "last_updated": "1/14/19"
       },
       {
-        "name": "Universal Hosting",
-        "url": "https://universal-hosting.com",
+        "name": "Nubinity (formerly Universal Hosting)",
+        "url": "https://www.nubinity.com/",
         "asn": "-",
-        "bridge": "No",
-        "relay": "No",
-        "exit": "No",
-        "comment": "Charges, and suspends customers. [More info](https://universal-hosting.com/abuse)",
-        "last_updated": "9/14/2021"
+        "bridge": "?",
+        "relay": "?",
+        "exit": "?",
+        "comment": "-",
+        "last_updated": "04/2025"
       },
       {
         "name": "Spectrum",
@@ -2024,7 +1934,7 @@
       },
       {
         "name": "Microsoft Azure",
-        "url": "https://azure.microsoft.com",
+        "url": "https://azure.microsoft.com/en-us/",
         "asn": "AS8075",
         "bridge": "Yes",
         "relay": "Yes",
@@ -2033,14 +1943,14 @@
         "last_updated": "06/2022"
       },
       {
-        "name": "G-Core Labs",
-        "url": "https://gcorelabs.com",
+        "name": "Gcore",
+        "url": "https://gcore.com/",
         "asn": "AS199524",
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
         "comment": "They don't allow exits and will suspend your active services and restrict your access to the account if they receive abuse messages. KVM VPS. IPv4+IPv6 native support. * Gnu/Linux, FreeBSD and Windows server supported. Unmetered traffic.",
-        "last_updated": "06/2022"
+        "last_updated": "05/2024"
       },
       {
         "name": "Tornado VPS",
@@ -2054,7 +1964,7 @@
       },
       {
         "name": "ReliableSite",
-        "url": "https://reliablesite.net/",
+        "url": "https://www.reliablesite.net/",
         "asn": "AS23470",
         "bridge": "No",
         "relay": "No",
@@ -2081,16 +1991,6 @@
         "exit": "Yes",
         "comment": "Support states that all kinds of Tor nodes are allowed as long as they comply with their [fair-use policy](https://snowcore.io/legal/fair-use). They ask to notify them before running an exit node.",
         "last_updated": "05/16/2024"
-      },
-      {
-        "name": "xorserv",
-        "url": "https://xor.st/",
-        "asn": "AS215898",
-        "bridge": "Yes",
-        "relay": "Yes",
-        "exit": "Yes",
-        "comment": "VPS are rarely in stock. Only offer unmetered servers",
-        "last_updated": "06/26/2024"
       }
     ]
   }
