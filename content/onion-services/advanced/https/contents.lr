@@ -54,7 +54,9 @@ There are some alternatives you might want to try to address this problem:
  * To avoid using an HTTPS certificate for your onion, the easiest answer is to write all your content so it uses only relative links.
 This way the content will work smoothly, independently of what website name it's being served from.
  * Another option is to use webserver rules to rewrite absolute links on the fly.
- * Or use a reverse proxy in the middle (more specifically [Onionspray](https://community.torproject.org/onion-services/ecosystem/apps/web/onionspray/) with an HTTPS certificate).
+ * Or use a reverse proxy in the middle (more specifically [Onionspray][] with an HTTPS certificate).
+
+[Onionspray]: https://onionservices.torproject.org/apps/web/onionspray/
 
 5. Related to the previous point, some protocols, frameworks, and infrastructures use SSL as a technical requirement; they won't work if they don't see an "https://" link.
 In that case, your Onion Service will need to use an HTTPS certificate in order to function.
@@ -76,4 +78,4 @@ In the nearby future, we hope that [Let's Encrypt](https://letsencrypt.org/) CA 
  * [DigiCert: Get TLS certificate with Extended Validation (EV) for your onion site (2015)](https://www.digicert.com/blog/onion-officially-recognized-special-use-domain/)
  * [HARICA: Get a TLS certificate with Domain Validation (DV) for your onion site (2021)](https://blog.torproject.org/tls-certificate-for-onion-site)
  * [The ".onion" Special-Use Domain Name - IETF RFC 7686](https://tools.ietf.org/html/rfc7686)
- * [Onionspray](https://community.torproject.org/onion-services/ecosystem/apps/web/onionspray/)
+ * [Onionspray][]
