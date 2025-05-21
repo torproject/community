@@ -214,7 +214,7 @@ It has also been reviewed by someone who works in Abuse at a major ISP.
 
 ## Other Template Sets
 
- * [DMCA Response template for Tor node maintainer to ISP](/relay/community-resources/eff-tor-legal-faq/) as written by the [EFF](http://www.eff.org).
+ * [DMCA Response template for Tor node maintainer to ISP](../eff-tor-legal-faq/) as written by the [EFF](http://www.eff.org).
  * Torservers [response template emails](https://www.torservers.net/wiki/abuse/templates).
 ---
 html: two-columns-page.html
