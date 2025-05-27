@@ -52,6 +52,16 @@
         "exit": "No",
         "comment": "They don't allow exits and will suspend your active services and restrict your access to the account if they receive abuse messages. KVM VPS. IPv4+IPv6 native support. * Gnu/Linux, FreeBSD and Windows server supported. Unmetered traffic.",
         "last_updated": "05/2024"
+      },
+      {
+        "name": "BTHoster",
+        "url": "https://bthoster.com/",
+        "asn": "AS204428",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "No problem, all allowed",
+        "last_updated": "05/2025"
       }
     ],
     "Canada": [
@@ -1078,6 +1088,36 @@
         "exit": "Yes",
         "comment": "They allow exits. Have been running multiple for a few months without problems",
         "last_updated": "11/2023"
+      },
+      {
+        "name": "Aluy",
+        "url": "https://al.uy",
+        "asn": "AS211507",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "Tor fully allowed and supported as long as within a fair-use bandwidth.",
+        "last_updated": "05/2025"
+      },
+      {
+        "name": "Trivox",
+        "url": "https://trivox.sh",
+        "asn": "AS216078 ",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "?",
+        "comment": "Technically allowed but rather not on their subnets, they said",
+        "last_updated": "05/2025"
+      },
+      {
+        "name": "VPSVAULT.HOST",
+        "url": "https://vpsvault.host",
+        "asn": "AS215925 ",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "No problem, all allowed",
+        "last_updated": "05/2025"
       }
     ],
     "New Zealand and Australia": [
