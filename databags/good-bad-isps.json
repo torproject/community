@@ -699,16 +699,6 @@
         "last_updated": "-"
       },
       {
-        "name": "SelfServer by Enter",
-        "url": "https://selfserver.it/",
-        "asn": "-",
-        "bridge": "Yes",
-        "relay": "Yes",
-        "exit": "Yes",
-        "comment": "Uncomfortable due to old CentOS 6.10, NATed IPv4-only networking, ports other than the well-known are filtered. Abuse complaints need to go through their support service",
-        "last_updated": "11/2018"
-      },
-      {
         "name": "Revolution Hosting",
         "url": "https://rhosting.it/",
         "asn": "AS60798",
@@ -752,16 +742,6 @@
       }
     ],
     "Lithuania": [
-      {
-        "name": "Baltic Servers",
-        "url": "https://www.balticservers.com",
-        "asn": "AS59642",
-        "bridge": "Yes",
-        "relay": "Yes",
-        "exit": "Yes",
-        "comment": "All abuse mails they got yielded support tickets",
-        "last_updated": "-"
-      },
       {
         "name": "Time4VPS",
         "url": "https://www.time4vps.com/",
@@ -998,16 +978,6 @@
         "exit": "Yes",
         "comment": "Abuse complaints must be responded to within 24 hours or the system automatically suspends your account until you do.",
         "last_updated": "2014"
-      },
-      {
-        "name": "ChmuraNet",
-        "url": "https://www.chmuranet.com/",
-        "asn": "-",
-        "bridge": "Yes",
-        "relay": "Yes",
-        "exit": "Yes",
-        "comment": "Allows anonymous users to run tor exits. Abuse issues will be forwarded. Make sure to tell them that you're running an exit",
-        "last_updated": "09/2014"
       },
       {
         "name": "NiceVPS.net",
@@ -1430,18 +1400,6 @@
         "exit": "Yes",
         "comment": "Privacy registration with optional email, cryptocurrencies accepted, [Tor onion link](https://nicevpsb7u3vqpo5zhyahmvfi5tihon4gnh676ucmzpcyxwodeztr4yd.onion)",
         "last_updated": "06/11/21"
-      }
-    ],
-    "Slovenia": [
-      {
-        "name": "Tus Hosting",
-        "url": "http://www.tushosting.si/",
-        "asn": "-",
-        "bridge": "Yes",
-        "relay": "Yes",
-        "exit": "Yes",
-        "comment": "They just simply forward DMCA notices to us to handle (or ignore) them",
-        "last_updated": "-"
       }
     ],
     "South Africa": [
