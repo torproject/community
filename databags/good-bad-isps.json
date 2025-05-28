@@ -1651,16 +1651,6 @@
         "last_updated": "-"
       },
       {
-        "name": "Data Ideas (AlienData)",
-        "url": "https://dataideas.com/",
-        "asn": "AS398355",
-        "bridge": "Yes",
-        "relay": "Yes",
-        "exit": "Yes",
-        "comment": "AUP [here](https://dataideas.com/acceptable-use-policy.html). Notices are ignored. Unmetered bandwidth.",
-        "last_updated": "04/13/2023"
-      },
-      {
         "name": "DreamHost",
         "url": "https://www.dreamhost.com/",
         "asn": "AS26347",
