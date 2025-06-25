@@ -31,6 +31,21 @@ name = Français (fr)
 url_prefix = /fr/
 locale = fr
 
+[alternatives.ga]
+name = Gaeilge (ga)
+url_prefix = /ga/
+locale = ga
+
+[alternatives.ja]
+name = 日本語 (ja)
+url_prefix = /ja/
+locale = ja
+
+[alternatives.pt-BR]
+name = Português Br. (pt-BR)
+url_prefix = /pt-BR/
+locale = pt-BR
+
 [alternatives.ro]
 name = Română (ro)
 url_prefix = /ro/
@@ -41,8 +56,13 @@ name = Русский (ru)
 url_prefix = /ru/
 locale = ru
 
+[alternatives.sr]
+name = srpski (sr)
+url_prefix = /sr/
+locale = sr
+
 [alternatives.sw]
-name = Kiswahili
+name = Kiswahili (sw)
 url_prefix = /sw/
 locale = sw
 
@@ -50,3 +70,8 @@ locale = sw
 name = Türkçe (tr)
 url_prefix = /tr/
 locale = tr
+
+[alternatives.uk]
+name = українська (uk)
+url_prefix = /uk/
+locale = uk

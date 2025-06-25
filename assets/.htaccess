@@ -20,4 +20,4 @@ RewriteRule ^ga-IE/(.*) /ga$1 [R=302,L]
 # You can see them at https://dist.torproject.org/torbrowser/, pick the last alpha for the most languages
 # this languages are the translation priority for the community portal!
 RewriteRule ^(ar|ca|cs|da|el|ga|ga-IE|he|hu|id|is|it|ja|ka|ko|lt|mk|ms|nb-NO|nl|pl|pt-BR|pt-PT|sq|sv-SE|th|uk|vi|zh-CN|zh-TW)$ / [R=302,L]
-RewriteRule ^(ar|ca|cs|da|el|ga|ga-IE|he|hu|id|is|it|ja|ka|ko|lt|mk|ms|nb-NO|nl|pl|pt-BR|pt-PT|sq|sv-SE|th|uk|vi|zh-CN|zh-TW)/(.*) /$2 [R=302,L]
+RewriteRule ^(ar|ca|cs|da|el|he|hu|id|is|it|ka|ko|lt|mk|ms|nb-NO|nl|pl|pt-PT|sq|sv-SE|th|vi|zh-CN|zh-TW)/(.*) /$2 [R=302,L]
