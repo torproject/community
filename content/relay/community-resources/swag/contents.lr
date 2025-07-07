@@ -6,14 +6,12 @@ title: Swag
 ---
 body:
 
-**Important:** As part of our ongoing efforts to improve our internal processes, we have decided to **temporarily pause** the swag program for volunteers and relay operators.
-This pause will allow us to reorganize our workflow to better serve the community. We plan to relaunch the program in January 2025.
-Stay tuned for more updates as we approach the new year.
+The Tor Project values the dedication of volunteers who help keep the network strong and open for everyone.
+As a thank you, you can earn a Tor swag by contributing in one of these ways:
 
-You can get a Tor T-shirt for contributing to the Tor project. 
-There are two primary ways of contributing:
+* Operate a Tor bridge (webtunnel or obfs4) for at least 3 months.
 
-* Operate a fast Tor relay that's been running for the past two months: you are eligible if you allow exits to port 80 and you average 250 KBytes/s traffic, or if you're not an exit but you average 500 KBytes/s traffic.
+* Operate a Tor relay (exit or non-exit) for at least 6 months.
 
 * Help out in other ways. Maintain a translation. Run Tor trainings. 
 Write a good support program and get a lot of people to use it. 
