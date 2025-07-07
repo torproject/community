@@ -873,12 +873,12 @@
       {
         "name": "Ziggo",
         "url": "https://www.ziggo.nl/",
-        "asn": "33915",
+        "asn": "AS33915",
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
-        "comment": "-",
-        "last_updated": "05/24/2016"
+        "comment": "They are completely fine with tor relays. But they also have a short list of ports that cannot be used: 53, 135, 137, 139, 161, 162, 25/tcp, 138/tcp, 445/tcp, 1080/tcp.",
+        "last_updated": "2025-07-02"
       },
       {
         "name": "LiteServer",
@@ -1094,11 +1094,31 @@
         "name": "KPN",
         "url": "https://www.kpn.com",
         "asn": "AS1136",
-        "bridge": "?",
+        "bridge": "Yes",
         "relay": "Yes",
-        "exit": "?",
+        "exit": "Yes",
+        "comment": "Running Tor relays is completely allowed. They will only contact you if you violate the User Policy during the operation of the relay.",
+        "last_updated": "2025-07-02"
+      },
+      {
+        "name": "Odido",
+        "url": "https://www.odido.nl",
+        "asn": "AS13127",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "Tor relays are allowed, but they will not provide any support if you face issues.",
+        "last_updated": "2025-07-02"
+      },
+      {
+        "name": "Odido",
+        "url": "",
+        "asn": "AS50266",
+        "bridge": "",
+        "relay": "",
+        "exit": "",
         "comment": "",
-        "last_updated": "2025-05-27"
+        "last_updated": ""
       }
     ],
     "New Zealand and Australia": [
