@@ -22,4 +22,4 @@ body:
 
 In order for Tor to work for everyone, it needs to speak everyone's languages.
 Our volunteer translation team works hard to make this a reality, and we can always use more help.
-Our current translation priorities are translating [Tor Browser](https://torpat.ch/locales), Tor Browser documentation, and the [Tor Project website](https://torpat.ch/tpo-locales), but there are many other documents that we could use help translating as well.
+Our current translation priorities are translating [Tor Browser](https://hosted.weblate.org/projects/tor/tpo-web/), Tor Browser documentation, and the [Tor Project website](https://hosted.weblate.org/projects/tor/tpo-web/), but we aim to have all our websites and applications translated as well.
