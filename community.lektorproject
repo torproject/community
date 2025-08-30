@@ -5,73 +5,73 @@ url_style = relative
 locale = en_US
 
 [alternatives.en]
-name = English (en)
+name = English
 primary = yes
 url_prefix = /
 locale = en
 
 [alternatives.de]
-name = Deutsch (de)
+name = Deutsch
 url_prefix = /de/
 locale = de
 
 [alternatives.es]
-name = Español (es)
+name = Español
 primary = yes
 url_prefix = /es/
 locale = es
 
 [alternatives.fa]
-name = ﻑﺍﺮﺴﯾ (fa)
+name = ﻑﺍﺮﺴﯾ
 url_prefix = /fa/
 locale = fa
 
 [alternatives.fr]
-name = Français (fr)
+name = Français
 url_prefix = /fr/
 locale = fr
 
 [alternatives.ga]
-name = Gaeilge (ga)
+name = Gaeilge
 url_prefix = /ga/
 locale = ga
 
 [alternatives.ja]
-name = 日本語 (ja)
+name = 日本語
 url_prefix = /ja/
 locale = ja
 
 [alternatives.pt-BR]
-name = Português Br. (pt-BR)
+name = Português Br.
 url_prefix = /pt-BR/
 locale = pt-BR
 
 [alternatives.ro]
-name = Română (ro)
+name = Română
 url_prefix = /ro/
 locale = ro
 
 [alternatives.ru]
-name = Русский (ru)
+name = Русский
 url_prefix = /ru/
 locale = ru
 
 [alternatives.sr]
-name = srpski (sr)
+name = srpski
 url_prefix = /sr/
 locale = sr
 
 [alternatives.sw]
-name = Kiswahili (sw)
+name = Kiswahili
 url_prefix = /sw/
 locale = sw
 
 [alternatives.tr]
-name = Türkçe (tr)
+name = Türkçe
 url_prefix = /tr/
 locale = tr
 
 [alternatives.uk]
-name = українська (uk)
+name = українська
 url_prefix = /uk/
 locale = uk
