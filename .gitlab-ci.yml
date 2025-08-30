@@ -17,11 +17,9 @@ include:
 .lektor:
   scripts:
     post-build:
-      - apt install -yq unzip
-
       # policies
       - mkdir public/policies
-      - wget -q https://gitlab.torproject.org/api/v4/projects/1972/jobs/artifacts/main/download\?job\=build -O policies.zip
+      - curl -s https://gitlab.torproject.org/api/v4/projects/1972/jobs/artifacts/main/download\?job\=build -o policies.zip
       - unzip policies.zip -d public/policies
       - mv public/policies/public/* public/policies
       - rmdir public/policies/public

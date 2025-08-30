@@ -30,6 +30,26 @@
         "exit": "No",
         "comment": "The following activities are expressively prohibited: to host Tor entry, relay or exit nodes.",
         "last_updated": "08/2024"
+      },
+      {
+        "name": "HostHatch",
+        "url": "https://hosthatch.com",
+        "asn": "AS42708",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "No",
+        "comment": "Locations: US,UK,NL,JP,HK,AU,SE,NO,AT,CH",
+        "last_updated": "2016/05"
+      },
+      {
+        "name": "Netcup",
+        "url": "https://www.netcup.de",
+        "asn": "AS197540",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "40-120TB bandwidth - Tor exit nodes allowed on VPS and rootservers - \"Yes, it is. Everything is allowed that the T&Cs do not exclude.\" Locations: US,DE,AT,NL",
+        "last_updated": "09/27/2021"
       }
     ],
     "Bulgaria": [
@@ -62,6 +82,18 @@
         "exit": "Yes",
         "comment": "No problem, all allowed",
         "last_updated": "05/2025"
+      }
+    ],
+    "Brazil": [
+      {
+        "name": "Linode",
+        "url": "https://www.linode.com/",
+        "asn": "AS63949",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "\"We allow Tor exits as long as they have a reduced exit policy.\" - I've used 10TB this month in total for all 3 of my exit nodes spread out in different locations. I've recieved 0 notices from Linode while using the free 100$ credits you get. I allow ports 53,80,443. My DE exit node is now the [2nd fastest](https://i.imgur.com/Owj6HkD.png) Linode relay, with UK third. I would recommend this host to use the free credits, but wouldn't really recommend paying as bandwidth is limited. Locations: US,CA,GB,DE,SG,JP,IN,AU,BR,SE,NL,ES",
+        "last_updated": "10/07/2021"
       }
     ],
     "Canada": [
@@ -104,6 +136,16 @@
         "exit": "No",
         "comment": "They allow running Tor relay but not Tor Exit.",
         "last_updated": "-"
+      },
+      {
+        "name": "Linode",
+        "url": "https://www.linode.com/",
+        "asn": "AS63949",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "\"We allow Tor exits as long as they have a reduced exit policy.\" - I've used 10TB this month in total for all 3 of my exit nodes spread out in different locations. I've recieved 0 notices from Linode while using the free 100$ credits you get. I allow ports 53,80,443. My DE exit node is now the [2nd fastest](https://i.imgur.com/Owj6HkD.png) Linode relay, with UK third. I would recommend this host to use the free credits, but wouldn't really recommend paying as bandwidth is limited. Locations: US,CA,GB,DE,SG,JP,IN,AU,BR,SE,NL,ES",
+        "last_updated": "10/07/2021"
       }
     ],
     "Chile": [
@@ -436,7 +478,7 @@
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
-        "comment": "40-120TB bandwidth - Tor exit nodes allowed on VPS and rootservers - \"Yes, it is. Everything is allowed that the T&Cs do not exclude.\" Locations: DE,AT",
+        "comment": "40-120TB bandwidth - Tor exit nodes allowed on VPS and rootservers - \"Yes, it is. Everything is allowed that the T&Cs do not exclude.\" Locations: US,DE,AT,NL",
         "last_updated": "09/27/2021"
       },
       {
@@ -568,6 +610,16 @@
         "exit": "No",
         "comment": "Exit nodes are not allowed",
         "last_updated": "04/2023"
+      },
+      {
+        "name": "Linode",
+        "url": "https://www.linode.com/",
+        "asn": "AS63949",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "\"We allow Tor exits as long as they have a reduced exit policy.\" - I've used 10TB this month in total for all 3 of my exit nodes spread out in different locations. I've recieved 0 notices from Linode while using the free 100$ credits you get. I allow ports 53,80,443. My DE exit node is now the [2nd fastest](https://i.imgur.com/Owj6HkD.png) Linode relay, with UK third. I would recommend this host to use the free credits, but wouldn't really recommend paying as bandwidth is limited. Locations: US,CA,GB,DE,SG,JP,IN,AU,BR,SE,NL,ES",
+        "last_updated": "10/07/2021"
       }
     ],
     "Hong Kong": [
@@ -578,7 +630,7 @@
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
-        "comment": "-",
+        "comment": "Locations: US,UK,NL,JP,HK,AU,SE,NO,AT,CH",
         "last_updated": "-"
       },
       {
@@ -678,6 +730,18 @@
         "last_updated": "2022/07"
       }
     ],
+    "India": [
+      {
+        "name": "Linode",
+        "url": "https://www.linode.com/",
+        "asn": "AS63949",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "\"We allow Tor exits as long as they have a reduced exit policy.\" - I've used 10TB this month in total for all 3 of my exit nodes spread out in different locations. I've recieved 0 notices from Linode while using the free 100$ credits you get. I allow ports 53,80,443. My DE exit node is now the [2nd fastest](https://i.imgur.com/Owj6HkD.png) Linode relay, with UK third. I would recommend this host to use the free credits, but wouldn't really recommend paying as bandwidth is limited. Locations: US,CA,GB,DE,SG,JP,IN,AU,BR,SE,NL,ES",
+        "last_updated": "10/07/2021"
+      }
+    ],
     "Italy": [
       {
         "name": "Fastweb",
@@ -728,6 +792,28 @@
         "exit": "No",
         "comment": "They don't allow exits and will suspend your active services and restrict your access to the account if they receive abuse messages. KVM VPS. IPv4+IPv6 native support. * Gnu/Linux, FreeBSD and Windows server supported. Unmetered traffic.",
         "last_updated": "05/2024"
+      }
+    ],
+    "Japan": [
+      {
+        "name": "HostHatch",
+        "url": "https://hosthatch.com",
+        "asn": "AS42708",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "No",
+        "comment": "Locations: US,UK,NL,JP,HK,AU,SE,NO,AT,CH",
+        "last_updated": "2016/05"
+      },
+      {
+        "name": "Linode",
+        "url": "https://www.linode.com/",
+        "asn": "AS63949",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "\"We allow Tor exits as long as they have a reduced exit policy.\" - I've used 10TB this month in total for all 3 of my exit nodes spread out in different locations. I've recieved 0 notices from Linode while using the free 100$ credits you get. I allow ports 53,80,443. My DE exit node is now the [2nd fastest](https://i.imgur.com/Owj6HkD.png) Linode relay, with UK third. I would recommend this host to use the free credits, but wouldn't really recommend paying as bandwidth is limited. Locations: US,CA,GB,DE,SG,JP,IN,AU,BR,SE,NL,ES",
+        "last_updated": "10/07/2021"
       }
     ],
     "Latvia": [
@@ -867,18 +953,18 @@
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
-        "comment": "-",
+        "comment": "Locations: US,UK,NL,JP,HK,AU,SE,NO,AT,CH",
         "last_updated": "05/01/16"
       },
       {
         "name": "Ziggo",
         "url": "https://www.ziggo.nl/",
-        "asn": "33915",
+        "asn": "AS33915",
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
-        "comment": "-",
-        "last_updated": "05/24/2016"
+        "comment": "They are completely fine with tor relays. But they also have a short list of ports that cannot be used: 53, 135, 137, 139, 161, 162, 25/tcp, 138/tcp, 445/tcp, 1080/tcp.",
+        "last_updated": "2025-07-02"
       },
       {
         "name": "LiteServer",
@@ -939,6 +1025,16 @@
         "exit": "No",
         "comment": "(non-exit) Tor relays explicitly allowed in the [AUP](https://naranja.tech/acceptable-usage-policy/)",
         "last_updated": "2025/01"
+      },
+      {
+        "name": "Netcup",
+        "url": "https://www.netcup.de",
+        "asn": "AS197540",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "40-120TB bandwidth - Tor exit nodes allowed on VPS and rootservers - \"Yes, it is. Everything is allowed that the T&Cs do not exclude.\" Locations: US,DE,AT,NL",
+        "last_updated": "09/27/2021"
       },
       {
         "name": "Novogara",
@@ -1094,11 +1190,31 @@
         "name": "KPN",
         "url": "https://www.kpn.com",
         "asn": "AS1136",
-        "bridge": "?",
+        "bridge": "Yes",
         "relay": "Yes",
-        "exit": "?",
+        "exit": "Yes",
+        "comment": "Running Tor relays is completely allowed. They will only contact you if you violate the User Policy during the operation of the relay.",
+        "last_updated": "2025-07-02"
+      },
+      {
+        "name": "Odido",
+        "url": "https://www.odido.nl",
+        "asn": "AS13127",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "Tor relays are allowed, but they will not provide any support if you face issues.",
+        "last_updated": "2025-07-02"
+      },
+      {
+        "name": "Odido",
+        "url": "",
+        "asn": "AS50266",
+        "bridge": "",
+        "relay": "",
+        "exit": "",
         "comment": "",
-        "last_updated": "2025-05-27"
+        "last_updated": ""
       }
     ],
     "New Zealand and Australia": [
@@ -1109,7 +1225,7 @@
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
-        "comment": "-",
+        "comment": "Locations: US,UK,NL,JP,HK,AU,SE,NO,AT,CH",
         "last_updated": "05/2023"
       },
       {
@@ -1133,6 +1249,16 @@
         "exit": "Yes",
         "comment": "Check the requirements for running a Tor exit node with them first https://gigahost.no/avtalebetingelser. May require a photo of an ID card or passport for account creation. Unmetered traffic. Locations: NO,NL",
         "last_updated": "08/2024"
+      },
+      {
+        "name": "HostHatch",
+        "url": "https://hosthatch.com",
+        "asn": "AS42708",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "No",
+        "comment": "Locations: US,UK,NL,JP,HK,AU,SE,NO,AT,CH",
+        "last_updated": "2016/05"
       }
     ],
     "Poland": [
@@ -1339,6 +1465,28 @@
         "last_updated": "08/2024"
       }
     ],
+    "Singapore": [
+      {
+        "name": "HostHatch",
+        "url": "https://hosthatch.com",
+        "asn": "AS42708",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "No",
+        "comment": "Locations: US,UK,NL,JP,HK,AU,SE,NO,AT,CH",
+        "last_updated": "2016/05"
+      },
+      {
+        "name": "Linode",
+        "url": "https://www.linode.com/",
+        "asn": "AS63949",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "\"We allow Tor exits as long as they have a reduced exit policy.\" - I've used 10TB this month in total for all 3 of my exit nodes spread out in different locations. I've recieved 0 notices from Linode while using the free 100$ credits you get. I allow ports 53,80,443. My DE exit node is now the [2nd fastest](https://i.imgur.com/Owj6HkD.png) Linode relay, with UK third. I would recommend this host to use the free credits, but wouldn't really recommend paying as bandwidth is limited. Locations: US,CA,GB,DE,SG,JP,IN,AU,BR,SE,NL,ES",
+        "last_updated": "10/07/2021"
+      }
+    ],
     "Sweden": [
       {
         "name": "Dataclub",
@@ -1357,7 +1505,7 @@
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
-        "comment": "-",
+        "comment": "Locations: US,UK,NL,JP,HK,AU,SE,NO,AT,CH",
         "last_updated": "2016/05"
       },
       {
@@ -1409,6 +1557,16 @@
         "exit": "Yes",
         "comment": "They run an exit node themselves and write on their dedicated server page \"It is perfect for [...] TOR Exit Nodes\"",
         "last_updated": "04/2021"
+      },
+      {
+        "name": "Linode",
+        "url": "https://www.linode.com/",
+        "asn": "AS63949",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "\"We allow Tor exits as long as they have a reduced exit policy.\" - I've used 10TB this month in total for all 3 of my exit nodes spread out in different locations. I've recieved 0 notices from Linode while using the free 100$ credits you get. I allow ports 53,80,443. My DE exit node is now the [2nd fastest](https://i.imgur.com/Owj6HkD.png) Linode relay, with UK third. I would recommend this host to use the free credits, but wouldn't really recommend paying as bandwidth is limited. Locations: US,CA,GB,DE,SG,JP,IN,AU,BR,SE,NL,ES",
+        "last_updated": "10/07/2021"
       }
     ],
     "Switzerland": [
@@ -1515,6 +1673,16 @@
         "exit": "No",
         "comment": "Allow payment with crypto. Also servers in Germany and Poland - \"... we allow TOR relays. We do not allow Tor Exit Nodes.\"",
         "last_updated": "12/2024"
+      },
+      {
+        "name": "HostHatch",
+        "url": "https://hosthatch.com",
+        "asn": "AS42708",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "No",
+        "comment": "Locations: US,UK,NL,JP,HK,AU,SE,NO,AT,CH",
+        "last_updated": "2016/05"
       }
     ],
     "United Kingdom": [
@@ -1577,6 +1745,16 @@
         "exit": "No",
         "comment": "Prohibited Uses: to run a Tor Exit Node. They will cancel your account and claim it is a ToS violation, which requires you to pay out a 60-day notice. Locations: UK,NL,DE,US",
         "last_updated": "11/2022"
+      },
+      {
+        "name": "HostHatch",
+        "url": "https://hosthatch.com",
+        "asn": "AS42708",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "No",
+        "comment": "Locations: US,UK,NL,JP,HK,AU,SE,NO,AT,CH",
+        "last_updated": "2016/05"
       }
     ],
     "US": [
@@ -1707,7 +1885,7 @@
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
-        "comment": "-",
+        "comment": "Locations: US,UK,NL,JP,HK,AU,SE,NO,AT,CH",
         "last_updated": "05/01/16"
       },
       {
@@ -1737,7 +1915,7 @@
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
-        "comment": "\"We allow Tor exits as long as they have a reduced exit policy.\" - I've used 10TB this month in total for all 3 of my exit nodes spread out in different locations. I've recieved 0 notices from Linode while using the free 100$ credits you get. I allow ports 53,80,443. My DE exit node is now the [2nd fastest](https://i.imgur.com/Owj6HkD.png) Linode relay, with UK third. I would recommend this host to use the free credits, but wouldn't really recommend paying as bandwidth is limited. Locations: US,CA,GB,DE,SG,JP,IN,AU",
+        "comment": "\"We allow Tor exits as long as they have a reduced exit policy.\" - I've used 10TB this month in total for all 3 of my exit nodes spread out in different locations. I've recieved 0 notices from Linode while using the free 100$ credits you get. I allow ports 53,80,443. My DE exit node is now the [2nd fastest](https://i.imgur.com/Owj6HkD.png) Linode relay, with UK third. I would recommend this host to use the free credits, but wouldn't really recommend paying as bandwidth is limited. Locations: US,CA,GB,DE,SG,JP,IN,AU,BR,SE,NL,ES",
         "last_updated": "10/07/2021"
       },
       {
@@ -1919,6 +2097,16 @@
         "exit": "Yes",
         "comment": "Only offers colocation, no cheap VPS option.",
         "last_updated": "1/14/19"
+      },
+      {
+        "name": "Netcup",
+        "url": "https://www.netcup.de",
+        "asn": "AS197540",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "40-120TB bandwidth - Tor exit nodes allowed on VPS and rootservers - \"Yes, it is. Everything is allowed that the T&Cs do not exclude.\" Locations: US,DE,AT,NL",
+        "last_updated": "09/27/2021"
       },
       {
         "name": "Nubinity (formerly Universal Hosting)",
