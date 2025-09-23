@@ -37,11 +37,11 @@ By comparing these patterns, they can guess which Tor user is connected to which
 
 ![An image showing positions of bad relays on the Tor network](/static/images/threat-model/network.png "title='Bad Relays on the Tor Network' class='img-fluid'")
 
-The Tor network relies on volunteers to run [relays](/content/relay/) (like the friends in our secret letter example). 
+The Tor network relies on volunteers to run [relays](../../../relay/) (like the friends in our secret letter example). 
 Some relays receive data, some pass it along, and others send it out of the network. 
 But what if one of these relays is operated by someone with bad intentions?
 
-A [**malicious relay**](/content/relay/governance/handling-bad-relays/) is like a friend in the chain who secretly opens the letter and reads it or even changes it before passing it on.
+A [**malicious relay**](../../../relay/governance/handling-bad-relays/) is like a friend in the chain who secretly opens the letter and reads it or even changes it before passing it on.
 
 If an attacker runs an exit relay (the last relay before your data leaves the Tor network), they could try to spy on your data if it’s not properly encrypted. 
 To prevent this from happening, always use HTTPS websites, which encrypt your traffic end-to-end, and avoid transmitting sensitive information over unencrypted connections while using Tor.
@@ -52,7 +52,7 @@ Attackers can use different tricks to do this.
 
 Imagine someone knocks on your door, and as soon as you open it, they quickly take a picture of you. 
 They didn’t need to follow you around all day to figure out where you live—they just needed to catch you at the right moment. 
-Attackers might do something similar by observing patterns in your online activity by running [bad relays](/content/relay/governance/handling-bad-relays/) and deploying DDoS attacks to get more traffic routed over their own relays.
+Attackers might do something similar by observing patterns in your online activity by running [bad relays](../../../relay/governance/handling-bad-relays/) and deploying DDoS attacks to get more traffic routed over their own relays.
 
 ### 4. DDoS Attacks: Overloading the network
 A Distributed Denial of Service (DDoS) attack is when an attacker sends so much traffic to a website or network that it gets overwhelmed and stops working. 
