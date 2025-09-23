@@ -425,11 +425,11 @@
         "name": "Strato",
         "url": "https://strato.de",
         "asn": "AS6724",
-        "bridge": "Yes",
-        "relay": "Yes",
+        "bridge": "No",
+        "relay": "No",
         "exit": "No",
-        "comment": "Support says all allowed, however they do not want illegal activities running on their servers.",
-        "last_updated": "12/2023"
+        "comment": "In section 2.9 of their [ToS](https://www.strato.de/agb/) they state: \"(Our) servers shall not be used to provide any form of anonymization services\".",
+        "last_updated": "09/04/2025"
       },
       {
         "name": "PraHost",
