@@ -1609,6 +1609,16 @@
         "exit": "Yes",
         "comment": "Privacy registration with optional email, cryptocurrencies accepted, [Tor onion link](https://nicevpsb7u3vqpo5zhyahmvfi5tihon4gnh676ucmzpcyxwodeztr4yd.onion)",
         "last_updated": "06/11/21"
+      },
+      {
+        "name": "Init7 (Schweiz) AG",
+        "url": "https://init7.ch",
+        "asn": "AS13030",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "NOC: Hosting a Tor-Relay is no problem on Fiber7 plans. We do recommend using a static IP or even a subnet when hosting Tor-Exit-Nodes because they often end up on block lists because of the high traffic. That way you prevent your own traffic from being affected by those blocks.",
+        "last_updated": "09/04/25"
       }
     ],
     "South Africa": [
