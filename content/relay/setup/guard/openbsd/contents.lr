@@ -56,6 +56,11 @@ tor:\
     :tc=daemon:
 ```
 
+Now change the login class of the `_tor` user accordingly:
+```
+# usermod -L tor _tor
+```
+
 OpenBSD also stores a kernel-level file descriptor limit in the sysctl variable `kern.maxfiles`.
 
 Increase it from the default of 7030 to 16000:
