@@ -1670,9 +1670,9 @@
         "asn": "AS30860",
         "bridge": "Yes",
         "relay": "Yes",
-        "exit": "Yes",
-        "comment": "Allow payment with crypto",
-        "last_updated": "04/2023"
+        "exit": "No",
+        "comment": "Allow payment with crypto. \"While we do not have a strict policy explicitly forbidding the operation of Tor exit nodes [...] Tor exit nodes frequently generate abuse complaints [...] This typically results in the VPS being suspended within a few days \"",
+        "last_updated": "10/2025"
       },
       {
         "name": "HOSTIKO",
