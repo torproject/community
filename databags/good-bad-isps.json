@@ -1237,6 +1237,16 @@
         "exit": "Yes",
         "comment": "Have servers in N.Z.; Sydney; London; and Dallas. Locations may vary, but quite happy with the specific Oz/NZ query.",
         "last_updated": "-"
+      },
+      {
+        "name": "BinaryLane",
+        "url": "https://www.binarylane.com.au",
+        "asn": "133159",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "No",
+        "comment": "Servers are located in Sydney, Melbourne, Brisbane, Adelaide, Perth, and Singapore",
+        "last_updated": "10/2025"
       }
     ],
     "Norway": [
