@@ -259,13 +259,13 @@
       },
       {
         "name": "Infomaniak",
-        "url": "https://www.infomaniak.com/fr",
-        "asn": "AS16276",
-        "bridge": "No",
-        "relay": "No",
+        "url": "https://www.infomaniak.com/",
+        "asn": "AS29222",
+        "bridge": "Yes",
+        "relay": "Yes",
         "exit": "No",
-        "comment": "ToS forbid setting up Tor relays, including middle relays.",
-        "last_updated": "04/06/2024"
+        "comment": "the operation of Tor exit relays [...] is not permitted",
+        "last_updated": "10/2025"
       }
     ],
     "Finland": [
