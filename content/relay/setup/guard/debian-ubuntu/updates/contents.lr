@@ -16,7 +16,7 @@ apt-get install unattended-upgrades apt-listchanges
 
 # 2.  Edit the configuration file
 
-This assumes you will configure the Tor Project's package repository for Debian/Ubuntu, which is documented **[here](https://support.torproject.org/apt/tor-deb-repo/)**.
+This assumes you will configure the Tor Project's package repository for Debian/Ubuntu, which is documented **[here](https://support.torproject.org/little-t-tor/getting-started/installing/)**.
 
 Put the lines below into the configuration file `/etc/apt/apt.conf.d/50unattended-upgrades`, everything that was originally inside the generated file can be removed before you add the lines below.
 

@@ -50,7 +50,7 @@ In the past they have not reliably been updated. That means you could be missing
 
 1. Configure Tor package repository
 
-Enable the Torproject package repository by following the [instructions](https://support.torproject.org/apt/tor-deb-repo/).
+Enable the Torproject package repository by following the [instructions](https://support.torproject.org/little-t-tor/getting-started/installing/).
 
 2. Package installation
 
