@@ -50,10 +50,15 @@ class CommunityGoodBadIspsPlugin(Plugin):
 
         for country in isp_list["isps"].copy():
             for index, isp in enumerate(isp_list["isps"][country]):
-                if isp["asn"] in asn_cw:
-                    cw_fraction = f"{round(asn_cw[isp['asn']], 2)}%"
-                else:
+                cw_fraction = 0
+                for asn in isp["asn"]:
+                    if asn in asn_cw:
+                        cw_fraction += asn_cw[asn]
+
+                if cw_fraction == 0:
                     cw_fraction = ""
+                else:
+                    cw_fraction = f"{round(cw_fraction, 2)}%"
                 isp_list["isps"][country][index]["cw_fraction"] = cw_fraction
 
         with open(os.path.join(root, "databags/good-bad-isps.json"), "w", encoding="utf-8") as file:
