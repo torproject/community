@@ -11,22 +11,17 @@ body:
 A bad relay is one that either doesn't work properly or tampers with our users' connections.
 This can be either through maliciousness or misconfiguration.
 Ran into a misconfigured, malicious, or suspicious relay while using Tor?
-Please let us know by sending email to `bad-relays AT lists DOT torproject DOT org`.
+Please let us know by sending an email to `bad-relays AT lists DOT torproject DOT org`.
 Many bad relays are caught thanks to our wider community, so many thanks for all your help and vigilance.
 The description of bad relays as well as the criteria for rejecting them can be found in the [Network Health wiki](https://gitlab.torproject.org/tpo/network-health/team/-/wikis/Criteria-for-rejecting-bad-relays).
 
 Also, if your relay is stolen or goes missing, please report it as well, so we can blocklist it in case whoever took it puts it back online.
 
-The following are currently permitted yet do have some discussion for prohibition (as such, they should not be reported at this time):
-
-* Only allowing plain-text traffic (for instance, just port 80).
-There's no good reason to disallow its encrypted counterpart (like port 443), making these relays highly suspect for sniffing traffic. See [context](https://www.google.com/search?site:torproject.org+80+443+6667) and [spec](https://gitweb.torproject.org/torspec.git/tree/dir-spec.txt#n1969).
-
 ### How do I report a bad relay?
 
 If you encounter a bad relay then please let us know and write to `bad-relays AT lists DOT torproject DOT org`.
 
-You can check which exit you are using at any time by visiting [tor check](https://check.torproject.org/). Please include the following in your report:
+If you are using Tor Browser you can check which exit relay you got at any time by visiting [the circuit icon on the URL bar](https://support.torproject.org/tor-browser/features/managing-identities/). Also, there is more information about specific relays available on our metrics website via the [relay-search portal](https://metrics.torproject.org/rs.html). Please include the following in your report:
 
  1. The relay's IP address or fingerprint. The fingerprint is a forty-character hex string such as `203933ED4E55EF8A3C3518427D1A1ED6A4CC285E`.
  2. What kind of behavior did you see?
@@ -38,23 +33,20 @@ However, if you need help with anything Tor-related, please use the [Tor Forum](
 
 After a relay is reported and we've verified the behavior we'll attempt to contact the relay operator. Often we can sort things out but if not (or the relay lacks contact information) we'll flag it to prevent it from continuing to be used.
 
-We have three types of flags we can apply:
+We have two types of flags we can apply:
 
- * BadExit - Never used as an exit relay (for relays that appear to mess with exit traffic)
- * Invalid - Never used unless AllowInvalidNodes is set (by default this only allows for middle and rendezvous usage)
- * Reject - Dropped from the consensus entirely
+ * BadExit - Never use the relay as an exit relay (for relays that e.g. show broken DNS resolver configurations)
+ * MiddleOnly - Only use the relay in a middle position without any relevant flag, like the HSDir flag
 
-Which we use depends on the severity of the issue, and if it can still be safely used in certain situations.
+Additionally, we can drop relays from the consensus entirely. Which of those options we deploy depends on the severity of the issue, and if the relay can still be safely used in certain situations.
 
-### My relay was given the BadExit flag. What's up?
+### My relay was given the BadExit or MiddleOnly flag. What's up?
 
-In just about all cases we're unable to contact the operator to resolve the issue, so if your relay has been flagged as a BadExit then please let us know (see above for contact info) so we can work together to fix the issue.
+If your relay has been flagged as a BadExit or got the MiddleOnly flag then please let us know (see above for contact info) so we can work together to fix the underlying issue.
 
 ### Do you actively look for bad relays?
 
-Yes. For our automated issue detection see [exitmap](http://www.cs.kau.se/philwint/spoiled_onions/) and [sybilhunter](https://gitweb.torproject.org/user/phw/sybilhunter.git/).
-
-Other monitors include [tortunnel](https://github.com/moxie0/tortunnel), [SoaT](https://gitweb.torproject.org/torflow.git/tree/NetworkScanners/ExitAuthority/README.ExitScanning), [torscanner](https://code.google.com/p/torscanner/), and DetecTor.
+Yes. For our automated issue detection see e.g. [exitmap](https://gitlab.torproject.org/tpo/network-health/exitmap).
 ---
 html: two-columns-page.html
 ---
