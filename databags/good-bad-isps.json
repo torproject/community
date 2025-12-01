@@ -1869,6 +1869,16 @@
         "last_updated": "-"
       },
       {
+        "name": "Fourplex",
+        "url": "https://www.fourplex.net/",
+        "asn": "27284",
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "Exit Friendly using the required exit policy in the [FAQ](https://www.fourplex.net/faq/). Will resolve abuse complaints if you run an exit.",
+        "last_updated": "11/19/25"
+      },
+      {
         "name": "GreenCloud",
         "url": "https://greencloudvps.com/",
         "asn": "-",
