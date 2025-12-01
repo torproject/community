@@ -51,12 +51,12 @@ In that case, just using Onion Services over HTTP could leak [secure cookies](ht
 We wrote about [Tor Browser security expectations](https://blog.torproject.org/tor-brower-onion-services-challenges-opportunities), and how we're working on Onion Services usability and adoption.
 There are some alternatives you might want to try to address this problem:
 
- * To avoid using an HTTPS certificate for your onion, the easiest answer is to write all your content so it uses only relative links.
+   * To avoid using an HTTPS certificate for your onion, the easiest answer is to write all your content so it uses only relative links.
 This way the content will work smoothly, independently of what website name it's being served from.
- * Another option is to use webserver rules to rewrite absolute links on the fly.
- * Or use a reverse proxy in the middle (more specifically [Onionspray][] with an HTTPS certificate).
+   * Another option is to use webserver rules to rewrite absolute links on the fly.
+   * Or use a reverse proxy in the middle (more specifically [Onionspray][] with an HTTPS certificate).
 
-[Onionspray]: https://onionservices.torproject.org/apps/web/onionspray/
+   [Onionspray]: https://onionservices.torproject.org/apps/web/onionspray/
 
 5. Related to the previous point, some protocols, frameworks, and infrastructures use SSL as a technical requirement; they won't work if they don't see an "https://" link.
 In that case, your Onion Service will need to use an HTTPS certificate in order to function.
