@@ -4,7 +4,9 @@
       {
         "name": "M247 Europe",
         "url": "https://m247.com/",
-        "asn": "AS9009",
+        "asn": [
+          "AS9009"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -14,7 +16,9 @@
       {
         "name": "A1 (formerly Telekom Austria)",
         "url": "https://www.a1.net/",
-        "asn": "AS8447",
+        "asn": [
+          "AS8447"
+        ],
         "bridge": "-",
         "relay": "Yes",
         "exit": "No",
@@ -24,7 +28,9 @@
       {
         "name": "Alwyzon (Hohl IT e.U.)",
         "url": "https://www.alwyzon.com/en",
-        "asn": "AS40994",
+        "asn": [
+          "AS40994"
+        ],
         "bridge": "-",
         "relay": "No",
         "exit": "No",
@@ -34,7 +40,9 @@
       {
         "name": "HostHatch",
         "url": "https://hosthatch.com",
-        "asn": "AS42708",
+        "asn": [
+          "AS42708"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
@@ -44,7 +52,9 @@
       {
         "name": "Netcup",
         "url": "https://www.netcup.de",
-        "asn": "AS197540",
+        "asn": [
+          "AS197540"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -56,7 +66,9 @@
       {
         "name": "VPS.BG",
         "url": "https://www.vpsbg.eu/",
-        "asn": "AS34224",
+        "asn": [
+          "AS34224"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -66,7 +78,9 @@
       {
         "name": "Gcore",
         "url": "https://gcore.com/",
-        "asn": "AS199524",
+        "asn": [
+          "AS199524"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
@@ -76,7 +90,9 @@
       {
         "name": "BTHoster",
         "url": "https://bthoster.com/",
-        "asn": "AS204428",
+        "asn": [
+          "AS204428"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -88,7 +104,9 @@
       {
         "name": "Linode",
         "url": "https://www.linode.com/",
-        "asn": "AS63949",
+        "asn": [
+          "AS63949"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -100,7 +118,9 @@
       {
         "name": "TekSavvy",
         "url": "https://www.teksavvy.com/",
-        "asn": "AS5645",
+        "asn": [
+          "AS5645"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "?",
@@ -110,7 +130,9 @@
       {
         "name": "oneprovider",
         "url": "https://oneprovider.com/",
-        "asn": "-",
+        "asn": [
+          "-"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -120,7 +142,9 @@
       {
         "name": "Vidéotron Ltee",
         "url": "https://videotron.com/",
-        "asn": "AS5769",
+        "asn": [
+          "AS5769"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "?",
@@ -130,7 +154,9 @@
       {
         "name": "Servarica",
         "url": "https://servarica.com/",
-        "asn": "AS26832",
+        "asn": [
+          "AS26832"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
@@ -140,7 +166,9 @@
       {
         "name": "Linode",
         "url": "https://www.linode.com/",
-        "asn": "AS63949",
+        "asn": [
+          "AS63949"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -152,7 +180,9 @@
       {
         "name": "VTR",
         "url": "https://vtr.com/",
-        "asn": "AS22047",
+        "asn": [
+          "AS22047"
+        ],
         "bridge": "No",
         "relay": "Yes",
         "exit": "No",
@@ -164,7 +194,9 @@
       {
         "name": "RackNation",
         "url": "https://www.racknation.cr",
-        "asn": "AS52423",
+        "asn": [
+          "AS52423"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -176,7 +208,9 @@
       {
         "name": "MAXKO Hosting",
         "url": "https://www.maxko-hosting.com/",
-        "asn": "AS211619",
+        "asn": [
+          "AS211619"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -188,7 +222,9 @@
       {
         "name": "T-Systems",
         "url": "https://www.t-mobile.cz/",
-        "asn": "-",
+        "asn": [
+          "-"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "?",
@@ -198,7 +234,9 @@
       {
         "name": "M247 Europe",
         "url": "https://m247.com/",
-        "asn": "AS9009",
+        "asn": [
+          "AS9009"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -210,7 +248,9 @@
       {
         "name": "Online.net",
         "url": "https://www.online.net/",
-        "asn": "AS12876",
+        "asn": [
+          "AS12876"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -220,7 +260,9 @@
       {
         "name": "Gandi VPS",
         "url": "https://www.gandi.net/",
-        "asn": "AS29169",
+        "asn": [
+          "AS29169"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
@@ -230,7 +272,9 @@
       {
         "name": "OVH Kimsufi",
         "url": "https://www.kimsufi.com/",
-        "asn": "AS16276",
+        "asn": [
+          "AS16276"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
@@ -240,7 +284,9 @@
       {
         "name": "Digicube",
         "url": "https://www.digicube.fr/",
-        "asn": "-",
+        "asn": [
+          "-"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -250,7 +296,9 @@
       {
         "name": "Pulse Servers",
         "url": "https://www.pulseservers.com/",
-        "asn": "AS16276",
+        "asn": [
+          "AS16276"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -260,7 +308,9 @@
       {
         "name": "Infomaniak",
         "url": "https://www.infomaniak.com/",
-        "asn": "AS29222",
+        "asn": [
+          "AS29222"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
@@ -272,7 +322,9 @@
       {
         "name": "Creanova",
         "url": "https://creanova.org",
-        "asn": "AS51765",
+        "asn": [
+          "AS51765"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
@@ -282,7 +334,9 @@
       {
         "name": "TeliaSonera Finland",
         "url": "https://www.sonera.fi/",
-        "asn": "AS1759",
+        "asn": [
+          "AS1759"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
@@ -292,7 +346,9 @@
       {
         "name": "Privex",
         "url": "https://www.privex.io/tor-exit-policy/",
-        "asn": "AS210083",
+        "asn": [
+          "AS210083"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
@@ -302,7 +358,9 @@
       {
         "name": "Njalla",
         "url": "https://njal.la/",
-        "asn": "AS39287",
+        "asn": [
+          "AS39287"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -312,7 +370,9 @@
       {
         "name": "Magna Capax Finland Oy (PulsedMedia)",
         "url": "https://pulsedmedia.com/",
-        "asn": "AS203003",
+        "asn": [
+          "AS203003"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
@@ -324,7 +384,9 @@
       {
         "name": "1337 Services GmbH",
         "url": "https://rdp.sh",
-        "asn": "AS210558",
+        "asn": [
+          "AS210558"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -334,7 +396,9 @@
       {
         "name": "EUServ",
         "url": "https://euserv.de",
-        "asn": "AS35366",
+        "asn": [
+          "AS35366"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -344,7 +408,9 @@
       {
         "name": "Keyweb",
         "url": "https://www.keyweb.de",
-        "asn": "AS31103",
+        "asn": [
+          "AS31103"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -354,7 +420,9 @@
       {
         "name": "Privex",
         "url": "https://www.privex.io/tor-exit-policy/",
-        "asn": "AS210083",
+        "asn": [
+          "AS210083"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
@@ -364,7 +432,10 @@
       {
         "name": "Afterburst",
         "url": "https://afterburst.com",
-        "asn": "AS29761, AS8100",
+        "asn": [
+          "AS29761",
+          "8100"
+        ],
         "bridge": "-",
         "relay": "Yes",
         "exit": "No",
@@ -374,7 +445,9 @@
       {
         "name": "myLoc Managed IT",
         "url": "https://myloc.de",
-        "asn": "AS24961",
+        "asn": [
+          "AS24961"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
@@ -384,7 +457,9 @@
       {
         "name": "linevast",
         "url": "https://www.linevast.de",
-        "asn": "AS201206",
+        "asn": [
+          "AS201206"
+        ],
         "bridge": "No",
         "relay": "No",
         "exit": "No",
@@ -394,7 +469,9 @@
       {
         "name": "Server4You",
         "url": "https://www.server4you.de",
-        "asn": "AS131914",
+        "asn": [
+          "AS131914"
+        ],
         "bridge": "No",
         "relay": "No",
         "exit": "No",
@@ -404,7 +481,9 @@
       {
         "name": "Hetzner",
         "url": "https://hetzner.com",
-        "asn": "AS24940",
+        "asn": [
+          "AS24940"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -414,7 +493,9 @@
       {
         "name": "Contabo",
         "url": "https://contabo.de",
-        "asn": "AS51167",
+        "asn": [
+          "AS51167"
+        ],
         "bridge": "No",
         "relay": "No",
         "exit": "No",
@@ -424,7 +505,9 @@
       {
         "name": "Strato",
         "url": "https://strato.de",
-        "asn": "AS6724",
+        "asn": [
+          "AS6724"
+        ],
         "bridge": "No",
         "relay": "No",
         "exit": "No",
@@ -434,7 +517,9 @@
       {
         "name": "PraHost",
         "url": "https://www.prahost.com",
-        "asn": "-",
+        "asn": [
+          "-"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -444,7 +529,9 @@
       {
         "name": "DomainFactory",
         "url": "https://www.df.eu/de/cloud-hosting/cloud-server",
-        "asn": "AS34011",
+        "asn": [
+          "AS34011"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -454,7 +541,9 @@
       {
         "name": "NetCologne",
         "url": "https://www.netcologne.de",
-        "asn": "AS8422",
+        "asn": [
+          "AS8422"
+        ],
         "bridge": "-",
         "relay": "Yes",
         "exit": "Yes",
@@ -464,7 +553,9 @@
       {
         "name": "Signaltransmitter",
         "url": "https://signaltransmitter.de",
-        "asn": "AS24961",
+        "asn": [
+          "AS24961"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -474,7 +565,9 @@
       {
         "name": "Netcup",
         "url": "https://www.netcup.de",
-        "asn": "AS197540",
+        "asn": [
+          "AS197540"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -484,7 +577,9 @@
       {
         "name": "Onyxhosting",
         "url": "https://onyxhosting.de",
-        "asn": "-",
+        "asn": [
+          "-"
+        ],
         "bridge": "No",
         "relay": "No",
         "exit": "No",
@@ -494,7 +589,9 @@
       {
         "name": "IP-Projects",
         "url": "https://www.ip-projects.de",
-        "asn": "AS48314",
+        "asn": [
+          "AS48314"
+        ],
         "bridge": "No",
         "relay": "No",
         "exit": "No",
@@ -504,7 +601,9 @@
       {
         "name": "Lansol",
         "url": "https://www.lansol.de",
-        "asn": "-",
+        "asn": [
+          "-"
+        ],
         "bridge": "No",
         "relay": "No",
         "exit": "No",
@@ -514,7 +613,9 @@
       {
         "name": "delta.networks",
         "url": "https://www.delta-networks.de",
-        "asn": "AS197071",
+        "asn": [
+          "AS197071"
+        ],
         "bridge": "No",
         "relay": "No",
         "exit": "No",
@@ -524,7 +625,9 @@
       {
         "name": "VPS2Day",
         "url": "https://www.vps2day.com",
-        "asn": "AS58329",
+        "asn": [
+          "AS58329"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
@@ -534,7 +637,9 @@
       {
         "name": "Serverprofis",
         "url": "https://www.serverprofis.de",
-        "asn": "AS5539",
+        "asn": [
+          "AS5539"
+        ],
         "bridge": "No",
         "relay": "No",
         "exit": "No",
@@ -544,7 +649,9 @@
       {
         "name": "manitu",
         "url": "https://www.manitu.de",
-        "asn": "AS34240",
+        "asn": [
+          "AS34240"
+        ],
         "bridge": "No",
         "relay": "No",
         "exit": "No",
@@ -554,7 +661,9 @@
       {
         "name": "active-servers",
         "url": "https://www.active-servers.com",
-        "asn": "AS197071",
+        "asn": [
+          "AS197071"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -564,7 +673,9 @@
       {
         "name": "dataforest GmbH",
         "url": "https://dataforest.net",
-        "asn": "AS58212",
+        "asn": [
+          "AS58212"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
@@ -574,7 +685,9 @@
       {
         "name": "UltraVPS",
         "url": "https://www.ultravps.eu",
-        "asn": "AS29141",
+        "asn": [
+          "AS29141"
+        ],
         "bridge": "No",
         "relay": "No",
         "exit": "No",
@@ -584,7 +697,9 @@
       {
         "name": "Gcore",
         "url": "https://gcore.com/",
-        "asn": "AS199524",
+        "asn": [
+          "AS199524"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
@@ -594,7 +709,9 @@
       {
         "name": "Venocix",
         "url": "https://venocix.de/",
-        "asn": "AS44486",
+        "asn": [
+          "AS44486"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "?",
@@ -604,7 +721,9 @@
       {
         "name": "V.PS",
         "url": "https://v.ps/",
-        "asn": "-",
+        "asn": [
+          "-"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
@@ -614,7 +733,9 @@
       {
         "name": "Linode",
         "url": "https://www.linode.com/",
-        "asn": "AS63949",
+        "asn": [
+          "AS63949"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -626,7 +747,9 @@
       {
         "name": "HostHatch",
         "url": "https://hosthatch.com/",
-        "asn": "AS63473",
+        "asn": [
+          "AS63473"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
@@ -636,7 +759,9 @@
       {
         "name": "Gcore",
         "url": "https://gcore.com/",
-        "asn": "AS199524",
+        "asn": [
+          "AS199524"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
@@ -648,7 +773,9 @@
       {
         "name": "M247 Europe",
         "url": "https://m247.com/",
-        "asn": "AS9009",
+        "asn": [
+          "AS9009"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -658,7 +785,9 @@
       {
         "name": "ServerAstra",
         "url": "https://serverastra.com/",
-        "asn": "AS56322",
+        "asn": [
+          "AS56322"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -668,7 +797,9 @@
       {
         "name": "Gcore",
         "url": "https://gcore.com/",
-        "asn": "AS199524",
+        "asn": [
+          "AS199524"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
@@ -678,7 +809,9 @@
       {
         "name": "ATW",
         "url": "https://atw.hu/",
-        "asn": "AS41075",
+        "asn": [
+          "AS41075"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "?",
@@ -690,7 +823,9 @@
       {
         "name": "1984Hosting",
         "url": "https://1984hosting.com/",
-        "asn": "AS44925",
+        "asn": [
+          "AS44925"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -700,7 +835,9 @@
       {
         "name": "FlokiNET",
         "url": "https://flokinet.is/",
-        "asn": "AS200651",
+        "asn": [
+          "AS200651"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -710,7 +847,9 @@
       {
         "name": "orangewebsite",
         "url": "https://www.orangewebsite.com/vps.php",
-        "asn": "",
+        "asn": [
+          ""
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes?",
@@ -722,7 +861,9 @@
       {
         "name": "BlueVPS",
         "url": "https://bluevps.com/",
-        "asn": "AS61102",
+        "asn": [
+          "AS61102"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -734,7 +875,9 @@
       {
         "name": "Linode",
         "url": "https://www.linode.com/",
-        "asn": "AS63949",
+        "asn": [
+          "AS63949"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -746,7 +889,9 @@
       {
         "name": "Fastweb",
         "url": "https://fastweb.it/",
-        "asn": "-",
+        "asn": [
+          "-"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -756,7 +901,9 @@
       {
         "name": "Prometeus",
         "url": "https://www.prometeus.net/sito/",
-        "asn": "AS34971",
+        "asn": [
+          "AS34971"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
@@ -766,7 +913,9 @@
       {
         "name": "ArubaCloud /Aruba",
         "url": "https://cloud.it/",
-        "asn": "AS31034",
+        "asn": [
+          "AS31034"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -776,7 +925,9 @@
       {
         "name": "Revolution Hosting",
         "url": "https://rhosting.it/",
-        "asn": "AS60798",
+        "asn": [
+          "AS60798"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
@@ -786,7 +937,9 @@
       {
         "name": "Gcore",
         "url": "https://gcore.com/",
-        "asn": "AS199524",
+        "asn": [
+          "AS199524"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
@@ -798,7 +951,9 @@
       {
         "name": "HostHatch",
         "url": "https://hosthatch.com",
-        "asn": "AS42708",
+        "asn": [
+          "AS42708"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
@@ -808,7 +963,9 @@
       {
         "name": "Linode",
         "url": "https://www.linode.com/",
-        "asn": "AS63949",
+        "asn": [
+          "AS63949"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -820,7 +977,9 @@
       {
         "name": "Yourserver",
         "url": "https://www.yourserver.se/",
-        "asn": "-",
+        "asn": [
+          "-"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "?",
@@ -830,7 +989,9 @@
       {
         "name": "Dataclub",
         "url": "https://www.dataclub.eu/",
-        "asn": "AS203557",
+        "asn": [
+          "AS203557"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -842,7 +1003,9 @@
       {
         "name": "Time4VPS",
         "url": "https://www.time4vps.com/",
-        "asn": "AS62282",
+        "asn": [
+          "AS62282"
+        ],
         "bridge": "No",
         "relay": "No",
         "exit": "No",
@@ -854,7 +1017,9 @@
       {
         "name": "BuyVM.net",
         "url": "https://buyvm.net",
-        "asn": "AS53667",
+        "asn": [
+          "AS53667"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -864,7 +1029,9 @@
       {
         "name": "Gcore",
         "url": "https://gcore.com/",
-        "asn": "AS199524",
+        "asn": [
+          "AS199524"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
@@ -877,7 +1044,9 @@
       {
         "name": "MivoCloud",
         "url": "https://www.mivocloud.com/",
-        "asn": "-",
+        "asn": [
+          "-"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
@@ -887,7 +1056,9 @@
       {
         "name": "AlexHost",
         "url": "https://alexhost.md/",
-        "asn": "AS200019",
+        "asn": [
+          "AS200019"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
@@ -897,7 +1068,9 @@
       {
         "name": "Trabia",
         "url": "https://www.trabia.com/",
-        "asn": "AS43289",
+        "asn": [
+          "AS43289"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -907,7 +1080,9 @@
       {
         "name": "Gcore",
         "url": "https://gcore.com/",
-        "asn": "AS199524",
+        "asn": [
+          "AS199524"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
@@ -919,7 +1094,9 @@
       {
         "name": "100UP",
         "url": "https://100up.org/",
-        "asn": "AS49581",
+        "asn": [
+          "AS49581"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -929,7 +1106,9 @@
       {
         "name": "XS4ALL",
         "url": "https://www.xs4all.nl/en/",
-        "asn": "AS3265",
+        "asn": [
+          "AS3265"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -939,7 +1118,9 @@
       {
         "name": "Crazy RDP",
         "url": "https://www.crazyrdp.com",
-        "asn": "AS394711",
+        "asn": [
+          "AS394711"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
@@ -949,7 +1130,9 @@
       {
         "name": "HostHatch",
         "url": "https://hosthatch.com/",
-        "asn": "AS42708",
+        "asn": [
+          "AS42708"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
@@ -959,7 +1142,9 @@
       {
         "name": "Ziggo",
         "url": "https://www.ziggo.nl/",
-        "asn": "AS33915",
+        "asn": [
+          "AS33915"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -969,7 +1154,9 @@
       {
         "name": "LiteServer",
         "url": "https://www.liteserver.nl/",
-        "asn": "AS60404",
+        "asn": [
+          "AS60404"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -979,7 +1166,9 @@
       {
         "name": "i3D",
         "url": "https://www.i3d.net/",
-        "asn": "AS49544",
+        "asn": [
+          "AS49544"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -989,7 +1178,9 @@
       {
         "name": "KoDDoS",
         "url": "https://koddos.net",
-        "asn": "AS206264",
+        "asn": [
+          "AS206264"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -999,7 +1190,9 @@
       {
         "name": "Worldstream",
         "url": "https://www.worldstream.nl",
-        "asn": "AS49981",
+        "asn": [
+          "AS49981"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
@@ -1009,7 +1202,9 @@
       {
         "name": "LeaseWeb",
         "url": "https://www.leaseweb.com/",
-        "asn": "AS60781",
+        "asn": [
+          "AS60781"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -1019,7 +1214,9 @@
       {
         "name": "Naranjatech",
         "url": "https://naranja.tech/",
-        "asn": "AS41608",
+        "asn": [
+          "AS41608"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
@@ -1029,7 +1226,9 @@
       {
         "name": "Netcup",
         "url": "https://www.netcup.de",
-        "asn": "AS197540",
+        "asn": [
+          "AS197540"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -1039,7 +1238,9 @@
       {
         "name": "Novogara",
         "url": "https://www.novogara.com",
-        "asn": "AS202425",
+        "asn": [
+          "AS202425"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -1049,7 +1250,9 @@
       {
         "name": "Netrouting",
         "url": "https://netrouting.nl/",
-        "asn": "AS47869",
+        "asn": [
+          "AS47869"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
@@ -1059,7 +1262,9 @@
       {
         "name": "DirectVPS",
         "url": "https://directvps.nl/",
-        "asn": "",
+        "asn": [
+          ""
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "?",
@@ -1069,7 +1274,9 @@
       {
         "name": "Versio",
         "url": "https://versio.nl/",
-        "asn": "-",
+        "asn": [
+          "-"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
@@ -1079,7 +1286,9 @@
       {
         "name": "SnelServer",
         "url": "https://www.snelserver.com/",
-        "asn": "AS62370",
+        "asn": [
+          "AS62370"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -1089,7 +1298,9 @@
       {
         "name": "NiceVPS.net",
         "url": "https://nicevps.net",
-        "asn": "-",
+        "asn": [
+          "-"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -1099,7 +1310,9 @@
       {
         "name": "IncogNET",
         "url": "https://incognet.io/",
-        "asn": "AS210630",
+        "asn": [
+          "AS210630"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -1109,7 +1322,9 @@
       {
         "name": "Freedom Internet",
         "url": "https://www.freedom.nl/",
-        "asn": "AS206238",
+        "asn": [
+          "AS206238"
+        ],
         "bridge": "?",
         "relay": "Yes",
         "exit": "?",
@@ -1119,7 +1334,9 @@
       {
         "name": "Gcore",
         "url": "https://gcore.com/",
-        "asn": "AS199524",
+        "asn": [
+          "AS199524"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
@@ -1129,7 +1346,9 @@
       {
         "name": "VPSslim",
         "url": "https://www.vpsslim.com",
-        "asn": "AS207083",
+        "asn": [
+          "AS207083"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -1139,7 +1358,9 @@
       {
         "name": "V.PS",
         "url": "https://v.ps/",
-        "asn": "-",
+        "asn": [
+          "-"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
@@ -1149,7 +1370,9 @@
       {
         "name": "HostSlick",
         "url": "https://hostslick.com",
-        "asn": "AS208046",
+        "asn": [
+          "AS208046"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -1159,7 +1382,9 @@
       {
         "name": "Aluy",
         "url": "https://al.uy",
-        "asn": "AS211507",
+        "asn": [
+          "AS211507"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -1169,7 +1394,9 @@
       {
         "name": "Trivox",
         "url": "https://trivox.sh",
-        "asn": "AS216078 ",
+        "asn": [
+          "AS216078 "
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "?",
@@ -1179,7 +1406,9 @@
       {
         "name": "VPSVAULT.HOST",
         "url": "https://vpsvault.host",
-        "asn": "AS215925 ",
+        "asn": [
+          "AS215925 "
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -1189,7 +1418,9 @@
       {
         "name": "KPN",
         "url": "https://www.kpn.com",
-        "asn": "AS1136",
+        "asn": [
+          "AS1136"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -1199,7 +1430,9 @@
       {
         "name": "Odido",
         "url": "https://www.odido.nl",
-        "asn": "AS13127",
+        "asn": [
+          "AS13127"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -1209,7 +1442,9 @@
       {
         "name": "Odido",
         "url": "",
-        "asn": "AS50266",
+        "asn": [
+          "AS50266"
+        ],
         "bridge": "",
         "relay": "",
         "exit": "",
@@ -1221,7 +1456,9 @@
       {
         "name": "HostHatch",
         "url": "https://hosthatch.com/",
-        "asn": "AS36351",
+        "asn": [
+          "AS36351"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
@@ -1231,7 +1468,9 @@
       {
         "name": "Rimu hosting",
         "url": "https://rimuhosting.com",
-        "asn": "AS45671",
+        "asn": [
+          "AS45671"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -1241,7 +1480,9 @@
       {
         "name": "BinaryLane",
         "url": "https://www.binarylane.com.au",
-        "asn": "133159",
+        "asn": [
+          "133159"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
@@ -1253,7 +1494,9 @@
       {
         "name": "Gigahost (former Terrahost)",
         "url": "https://gigahost.no/",
-        "asn": "AS56655",
+        "asn": [
+          "AS56655"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -1263,7 +1506,9 @@
       {
         "name": "HostHatch",
         "url": "https://hosthatch.com",
-        "asn": "AS42708",
+        "asn": [
+          "AS42708"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
@@ -1275,7 +1520,9 @@
       {
         "name": "cyber_Folks",
         "url": "https://cyberfokls.pl/",
-        "asn": "-",
+        "asn": [
+          "-"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
@@ -1285,7 +1532,9 @@
       {
         "name": "Hitme.pl",
         "url": "https://hitme.pl/",
-        "asn": "AS50840",
+        "asn": [
+          "AS50840"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
@@ -1295,7 +1544,9 @@
       {
         "name": "HOSTEAM",
         "url": "https://hosteam.pl/pl",
-        "asn": "AS51290",
+        "asn": [
+          "AS51290"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "?",
@@ -1305,7 +1556,9 @@
       {
         "name": "Hostowisko.pl",
         "url": "http://www.hostowisko.pl/",
-        "asn": "-",
+        "asn": [
+          "-"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "?",
@@ -1315,7 +1568,9 @@
       {
         "name": "Exone",
         "url": "https://www.exone.pl/",
-        "asn": "-",
+        "asn": [
+          "-"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "?",
@@ -1325,7 +1580,9 @@
       {
         "name": "e24cloud",
         "url": "https://www.e24cloud.com/en",
-        "asn": "AS31229",
+        "asn": [
+          "AS31229"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "?",
@@ -1335,7 +1592,9 @@
       {
         "name": "hostinger.pl",
         "url": "https://www.hostinger.pl",
-        "asn": "",
+        "asn": [
+          ""
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -1345,7 +1604,9 @@
       {
         "name": "statnet.pl",
         "url": "https://www.statnet.pl/",
-        "asn": "-",
+        "asn": [
+          "-"
+        ],
         "bridge": "No",
         "relay": "No",
         "exit": "No",
@@ -1355,7 +1616,9 @@
       {
         "name": "IQ PL",
         "url": "https://www.iq.pl/",
-        "asn": "AS47544",
+        "asn": [
+          "AS47544"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -1365,7 +1628,9 @@
       {
         "name": "Slask DataCenter",
         "url": "https://sldc.eu/",
-        "asn": "-",
+        "asn": [
+          "-"
+        ],
         "bridge": "?",
         "relay": "No",
         "exit": "No",
@@ -1375,7 +1640,9 @@
       {
         "name": "Remote Admin",
         "url": "https://remoteadmin.store/",
-        "asn": "AS212663",
+        "asn": [
+          "AS212663"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -1385,7 +1652,9 @@
       {
         "name": "Gcore",
         "url": "https://gcore.com/",
-        "asn": "AS199524",
+        "asn": [
+          "AS199524"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
@@ -1395,7 +1664,9 @@
       {
         "name": "HOSTIKO",
         "url": "https://hostiko.com.ua/",
-        "asn": "AS214379",
+        "asn": [
+          "AS214379"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
@@ -1405,7 +1676,9 @@
       {
         "name": "MEVSPACE",
         "url": "https://mevspace.com/",
-        "asn": "AS201814",
+        "asn": [
+          "AS201814"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
@@ -1417,7 +1690,9 @@
       {
         "name": "M247 Europe",
         "url": "https://m247.com/",
-        "asn": "AS9009",
+        "asn": [
+          "AS9009"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -1427,7 +1702,9 @@
       {
         "name": "Voxility",
         "url": "https://www.voxility.com/",
-        "asn": "AS3223",
+        "asn": [
+          "AS3223"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "?",
@@ -1437,7 +1714,9 @@
       {
         "name": "JavaPipe",
         "url": "https://javapipe.com/",
-        "asn": "-",
+        "asn": [
+          "-"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "?",
@@ -1447,7 +1726,9 @@
       {
         "name": "MilesWeb",
         "url": "https://www.milesweb.com/",
-        "asn": "-",
+        "asn": [
+          "-"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
@@ -1457,7 +1738,9 @@
       {
         "name": "Gcore",
         "url": "https://gcore.com/",
-        "asn": "AS199524",
+        "asn": [
+          "AS199524"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
@@ -1467,7 +1750,9 @@
       {
         "name": "iHostArt",
         "url": "https://ihostart.com/",
-        "asn": "AS215740",
+        "asn": [
+          "AS215740"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -1479,7 +1764,9 @@
       {
         "name": "HostHatch",
         "url": "https://hosthatch.com",
-        "asn": "AS42708",
+        "asn": [
+          "AS42708"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
@@ -1489,7 +1776,9 @@
       {
         "name": "Linode",
         "url": "https://www.linode.com/",
-        "asn": "AS63949",
+        "asn": [
+          "AS63949"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -1501,7 +1790,9 @@
       {
         "name": "Dataclub",
         "url": "https://www.dataclub.eu/",
-        "asn": "-",
+        "asn": [
+          "-"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -1511,7 +1802,9 @@
       {
         "name": "HostHatch",
         "url": "https://hosthatch.com",
-        "asn": "AS42708",
+        "asn": [
+          "AS42708"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
@@ -1521,7 +1814,9 @@
       {
         "name": "PRQ",
         "url": "https://prq.se/?p=dedicated&intl=1",
-        "asn": "AS33837",
+        "asn": [
+          "AS33837"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -1531,7 +1826,9 @@
       {
         "name": "Privex",
         "url": "https://www.privex.io/tor-exit-policy/",
-        "asn": "AS210083",
+        "asn": [
+          "AS210083"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -1541,7 +1838,9 @@
       {
         "name": "Portlane",
         "url": "http://www.portlane.com/",
-        "asn": "AS42708",
+        "asn": [
+          "AS42708"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -1551,7 +1850,9 @@
       {
         "name": "Yourserver",
         "url": "https://www.yourserver.se/",
-        "asn": "-",
+        "asn": [
+          "-"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "?",
@@ -1561,7 +1862,9 @@
       {
         "name": "Svea Hosting",
         "url": "https://svea.net/",
-        "asn": "AS41634",
+        "asn": [
+          "AS41634"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -1571,7 +1874,9 @@
       {
         "name": "Linode",
         "url": "https://www.linode.com/",
-        "asn": "AS63949",
+        "asn": [
+          "AS63949"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -1583,7 +1888,9 @@
       {
         "name": "Solar Communications Gmbh",
         "url": "https://solarcom.ch/",
-        "asn": "AS197988",
+        "asn": [
+          "AS197988"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
@@ -1593,7 +1900,9 @@
       {
         "name": "fsit",
         "url": "https://www.fsit.ch/",
-        "asn": "AS59891",
+        "asn": [
+          "AS59891"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -1603,7 +1912,9 @@
       {
         "name": "Swiss Made Host",
         "url": "https://swissmade.host/en/",
-        "asn": "-",
+        "asn": [
+          "-"
+        ],
         "bridge": "No",
         "relay": "No",
         "exit": "No",
@@ -1613,7 +1924,9 @@
       {
         "name": "NiceVPS.net",
         "url": "https://nicevps.net",
-        "asn": "-",
+        "asn": [
+          "-"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -1623,7 +1936,9 @@
       {
         "name": "Init7 (Schweiz) AG",
         "url": "https://init7.ch",
-        "asn": "AS13030",
+        "asn": [
+          "AS13030"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -1635,7 +1950,9 @@
       {
         "name": "MAXKO Hosting",
         "url": "https://www.maxko-hosting.com/",
-        "asn": "AS329325",
+        "asn": [
+          "AS329325"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -1647,7 +1964,9 @@
       {
         "name": "Ukrainian Data Network",
         "url": "https://urdn.com.ua",
-        "asn": "AS207656",
+        "asn": [
+          "AS207656"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -1657,7 +1976,9 @@
       {
         "name": "Colocall",
         "url": "https://www.colocall.net/",
-        "asn": "AS15497",
+        "asn": [
+          "AS15497"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -1667,7 +1988,9 @@
       {
         "name": "Gcore",
         "url": "https://gcore.com/",
-        "asn": "AS199524",
+        "asn": [
+          "AS199524"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
@@ -1677,7 +2000,9 @@
       {
         "name": "Virtual Systems",
         "url": "https://vsys.host/",
-        "asn": "AS30860",
+        "asn": [
+          "AS30860"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
@@ -1687,7 +2012,9 @@
       {
         "name": "HOSTIKO",
         "url": "https://hostiko.com.ua/",
-        "asn": "AS214379",
+        "asn": [
+          "AS214379"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
@@ -1697,7 +2024,9 @@
       {
         "name": "HostHatch",
         "url": "https://hosthatch.com",
-        "asn": "AS42708",
+        "asn": [
+          "AS42708"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
@@ -1709,7 +2038,9 @@
       {
         "name": "Gigatux",
         "url": "https://www.gigatux.com",
-        "asn": "-",
+        "asn": [
+          "-"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -1719,7 +2050,9 @@
       {
         "name": "Clustered.net",
         "url": "https://www.clustered.net",
-        "asn": "-",
+        "asn": [
+          "-"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -1729,7 +2062,9 @@
       {
         "name": "Bitfolk",
         "url": "https://bitfolk.com/",
-        "asn": "-",
+        "asn": [
+          "-"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -1739,7 +2074,9 @@
       {
         "name": "RapidSwitch",
         "url": "https://rapidswitch.com/",
-        "asn": "-",
+        "asn": [
+          "-"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "?",
@@ -1749,7 +2086,9 @@
       {
         "name": "Hostworld",
         "url": "https://hostworld.uk/",
-        "asn": "-",
+        "asn": [
+          "-"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
@@ -1759,7 +2098,9 @@
       {
         "name": "Clouvider",
         "url": "https://www.clouvider.com/",
-        "asn": "AS62240",
+        "asn": [
+          "AS62240"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
@@ -1769,7 +2110,9 @@
       {
         "name": "HostHatch",
         "url": "https://hosthatch.com",
-        "asn": "AS42708",
+        "asn": [
+          "AS42708"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
@@ -1781,7 +2124,9 @@
       {
         "name": "Amazon Web Services (AWS)",
         "url": "https://aws.amazon.com",
-        "asn": "AS16509",
+        "asn": [
+          "AS16509"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
@@ -1791,7 +2136,10 @@
       {
         "name": "Lumen (CenturyLink)",
         "url": "https://www.lumen.com/en-us/home.html",
-        "asn": "AS209 / AS3356",
+        "asn": [
+          "AS209",
+          "AS3356"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "?",
@@ -1801,7 +2149,9 @@
       {
         "name": "BuyVM.net",
         "url": "https://buyvm.net",
-        "asn": "AS53667",
+        "asn": [
+          "AS53667"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -1811,7 +2161,9 @@
       {
         "name": "Catalyst Host",
         "url": "https://catalysthost.com/",
-        "asn": "-",
+        "asn": [
+          "-"
+        ],
         "bridge": "?",
         "relay": "No",
         "exit": "No",
@@ -1821,7 +2173,9 @@
       {
         "name": "Comcast",
         "url": "https://comcast.net/",
-        "asn": "AS7922",
+        "asn": [
+          "AS7922"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
@@ -1831,7 +2185,9 @@
       {
         "name": "Crunchbits",
         "url": "https://crunchbits.com/",
-        "asn": "AS400304",
+        "asn": [
+          "AS400304"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "?",
@@ -1841,7 +2197,9 @@
       {
         "name": "Cyberonic",
         "url": "https://www.cyberonic.com",
-        "asn": "-",
+        "asn": [
+          "-"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "?",
@@ -1851,7 +2209,9 @@
       {
         "name": "DreamHost",
         "url": "https://www.dreamhost.com/",
-        "asn": "AS26347",
+        "asn": [
+          "AS26347"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "?",
@@ -1861,7 +2221,9 @@
       {
         "name": "Evolucix",
         "url": "https://evolucix.com/",
-        "asn": "-",
+        "asn": [
+          "-"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No(?)",
@@ -1881,7 +2243,9 @@
       {
         "name": "GreenCloud",
         "url": "https://greencloudvps.com/",
-        "asn": "-",
+        "asn": [
+          "-"
+        ],
         "bridge": "No",
         "relay": "No",
         "exit": "No",
@@ -1891,7 +2255,9 @@
       {
         "name": "Hivelocity",
         "url": "https://www.hivelocity.net/",
-        "asn": "AS29802",
+        "asn": [
+          "AS29802"
+        ],
         "bridge": "No",
         "relay": "No",
         "exit": "No",
@@ -1901,7 +2267,9 @@
       {
         "name": "HostGator",
         "url": "https://www.hostgator.com/",
-        "asn": "-",
+        "asn": [
+          "-"
+        ],
         "bridge": "No",
         "relay": "No",
         "exit": "No",
@@ -1911,7 +2279,9 @@
       {
         "name": "HostHatch",
         "url": "https://hosthatch.com",
-        "asn": "AS46562",
+        "asn": [
+          "AS46562"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
@@ -1921,7 +2291,9 @@
       {
         "name": "IPXcore",
         "url": "https://ipxcore.com/",
-        "asn": "-",
+        "asn": [
+          "-"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
@@ -1931,7 +2303,9 @@
       {
         "name": "IncogNET",
         "url": "https://incognet.io/",
-        "asn": "AS210630",
+        "asn": [
+          "AS210630"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -1941,7 +2315,9 @@
       {
         "name": "Linode",
         "url": "https://www.linode.com/",
-        "asn": "AS63949",
+        "asn": [
+          "AS63949"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -1951,7 +2327,10 @@
       {
         "name": "Luna Node",
         "url": "https://www.lunanode.com/index.php",
-        "asn": "AS16276 / AS174",
+        "asn": [
+          "AS16276",
+          "AS174"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
@@ -1961,7 +2340,9 @@
       {
         "name": "Microtronix ESolutions",
         "url": "https://www.microtronixdc.com/",
-        "asn": "AS400175",
+        "asn": [
+          "AS400175"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "?",
@@ -1971,7 +2352,9 @@
       {
         "name": "Oracle Cloud",
         "url": "https://www.oracle.com/cloud/free/",
-        "asn": "AS31898",
+        "asn": [
+          "AS31898"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
@@ -1981,7 +2364,9 @@
       {
         "name": "OVHcloud",
         "url": "https://www.ovhcloud.com/en/",
-        "asn": "AS16276",
+        "asn": [
+          "AS16276"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
@@ -1991,7 +2376,9 @@
       {
         "name": "Oplink.net",
         "url": "https://oplink.net/",
-        "asn": "AS40156",
+        "asn": [
+          "AS40156"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
@@ -2001,7 +2388,9 @@
       {
         "name": "Psychz Networks",
         "url": "https://www.psychz.net/",
-        "asn": "AS40676",
+        "asn": [
+          "AS40676"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -2011,7 +2400,9 @@
       {
         "name": "PulseServers",
         "url": "https://www.pulseservers.com",
-        "asn": "AS16276",
+        "asn": [
+          "AS16276"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -2021,7 +2412,9 @@
       {
         "name": "RamNode",
         "url": "https://ramnode.com/",
-        "asn": "AS3842",
+        "asn": [
+          "AS3842"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
@@ -2031,7 +2424,9 @@
       {
         "name": "IBM Cloud",
         "url": "https://www.ibm.com/cloud",
-        "asn": "AS36351",
+        "asn": [
+          "AS36351"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "?",
@@ -2041,7 +2436,9 @@
       {
         "name": "Astound Broadband",
         "url": "https://www.astound.com/",
-        "asn": "AS11404",
+        "asn": [
+          "AS11404"
+        ],
         "bridge": "No",
         "relay": "No",
         "exit": "No",
@@ -2051,7 +2448,9 @@
       {
         "name": "VPSCheap (formerly SolarVPS)",
         "url": "https://vpscheap.net/",
-        "asn": "-",
+        "asn": [
+          "-"
+        ],
         "bridge": "?",
         "relay": "?",
         "exit": "?",
@@ -2061,7 +2460,9 @@
       {
         "name": "SeedVPS",
         "url": "https://www.seedvps.com",
-        "asn": "-",
+        "asn": [
+          "-"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
@@ -2071,7 +2472,9 @@
       {
         "name": "DigitalOcean",
         "url": "https://www.digitalocean.com/",
-        "asn": "AS14061",
+        "asn": [
+          "AS14061"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
@@ -2081,7 +2484,9 @@
       {
         "name": "PhoenixNAP (Secured Servers)",
         "url": "https://phoenixnap.com/",
-        "asn": "AS12189",
+        "asn": [
+          "AS12189"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
@@ -2091,7 +2496,9 @@
       {
         "name": "Vultr",
         "url": "https://www.vultr.com/",
-        "asn": "AS20473",
+        "asn": [
+          "AS20473"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
@@ -2101,7 +2508,9 @@
       {
         "name": "ColoCrossing (formerly HostPapa and ChicagoVPS)",
         "url": "https://www.colocrossing.com/",
-        "asn": "AS36352",
+        "asn": [
+          "AS36352"
+        ],
         "bridge": "No",
         "relay": "No",
         "exit": "No",
@@ -2111,7 +2520,9 @@
       {
         "name": "Xmission",
         "url": "https://xmission.com/",
-        "asn": "AS6315",
+        "asn": [
+          "AS6315"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -2121,7 +2532,9 @@
       {
         "name": "MonkeyBrains",
         "url": "https://www.monkeybrains.net/",
-        "asn": "AS32329",
+        "asn": [
+          "AS32329"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -2131,7 +2544,9 @@
       {
         "name": "Netcup",
         "url": "https://www.netcup.de",
-        "asn": "AS197540",
+        "asn": [
+          "AS197540"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -2141,7 +2556,9 @@
       {
         "name": "Nubinity (formerly Universal Hosting)",
         "url": "https://www.nubinity.com/",
-        "asn": "-",
+        "asn": [
+          "-"
+        ],
         "bridge": "?",
         "relay": "?",
         "exit": "?",
@@ -2151,7 +2568,9 @@
       {
         "name": "Spectrum",
         "url": "https://www.spectrum.com/",
-        "asn": "AS12271",
+        "asn": [
+          "AS12271"
+        ],
         "bridge": "No",
         "relay": "No",
         "exit": "No",
@@ -2161,7 +2580,9 @@
       {
         "name": "Microsoft Azure",
         "url": "https://azure.microsoft.com/en-us/",
-        "asn": "AS8075",
+        "asn": [
+          "AS8075"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
@@ -2171,7 +2592,9 @@
       {
         "name": "Gcore",
         "url": "https://gcore.com/",
-        "asn": "AS199524",
+        "asn": [
+          "AS199524"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "No",
@@ -2181,7 +2604,9 @@
       {
         "name": "Tornado VPS",
         "url": "https://tornadovps.com/",
-        "asn": "AS47066",
+        "asn": [
+          "AS47066"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -2191,7 +2616,9 @@
       {
         "name": "ReliableSite",
         "url": "https://www.reliablesite.net/",
-        "asn": "AS23470",
+        "asn": [
+          "AS23470"
+        ],
         "bridge": "No",
         "relay": "No",
         "exit": "No",
@@ -2201,7 +2628,9 @@
       {
         "name": "GoDaddy",
         "url": "https://godaddy.com/",
-        "asn": "AS398101",
+        "asn": [
+          "AS398101"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
@@ -2211,7 +2640,9 @@
       {
         "name": "Snowcore",
         "url": "https://snowcore.io/",
-        "asn": "AS215450",
+        "asn": [
+          "AS215450"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
