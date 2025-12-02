@@ -33,7 +33,11 @@ td.isp-comment p {
           <tbody>
               <tr>
                   <td><a href="{{ item.url }}">{{ item.name }}</a></td>
-                  <td><a href="https://metrics.torproject.org/rs.html#search/as:{{ item.asn }}">{{ item.asn }}</a></td>
+                  <td>
+                   {% for asn in item.asn %}
+                     <a href="https://metrics.torproject.org/rs.html#search/as:{{ asn|urlencode }}">{{ asn }}</a>{% if not loop.last %}, {% endif %}
+                   {% endfor %}
+                  </td>
                   <td>{{ item.bridge }}</td>
                   <td>{{ item.relay }}</td>
                   <td>{{ item.exit }}</td>

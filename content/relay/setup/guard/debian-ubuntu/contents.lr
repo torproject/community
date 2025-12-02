@@ -13,7 +13,7 @@ Follow the instructions to enable [automatic software updates](updates) for your
 
 ### 2. Configure Tor Project's Repository
 
-Configuring the Tor Project's package repository for Debian/Ubuntu is documented **[here](https://support.torproject.org/apt/tor-deb-repo/)**. Please follow those instructions before proceeding.
+Configuring the Tor Project's package repository for Debian/Ubuntu is documented **[here](https://support.torproject.org/little-t-tor/getting-started/installing/)**. Please follow those instructions before proceeding.
 
 ### 3. Package installation
 

@@ -45,7 +45,7 @@ $ sudo cp server /usr/local/bin/webtunnel
 
 #### 3. Install Tor
 
-On a Debian-like system, install Tor from the [Tor Debian repository](https://support.torproject.org/apt/tor-deb-repo/).
+On a Debian-like system, install Tor from the [Tor Debian repository](https://support.torproject.org/little-t-tor/getting-started/installing/).
 
 ```
 $ sudo apt install apt-transport-https lsb-release
