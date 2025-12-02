@@ -434,7 +434,7 @@
         "url": "https://afterburst.com",
         "asn": [
           "AS29761",
-          "8100"
+          "AS8100"
         ],
         "bridge": "-",
         "relay": "Yes",
@@ -2233,7 +2233,9 @@
       {
         "name": "Fourplex",
         "url": "https://www.fourplex.net/",
-        "asn": "27284",
+        "asn": [
+          "AS27284"
+        ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
