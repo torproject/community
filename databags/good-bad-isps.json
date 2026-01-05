@@ -1882,6 +1882,18 @@
         "exit": "Yes",
         "comment": "\"We allow Tor exits as long as they have a reduced exit policy.\" - I've used 10TB this month in total for all 3 of my exit nodes spread out in different locations. I've recieved 0 notices from Linode while using the free 100$ credits you get. I allow ports 53,80,443. My DE exit node is now the [2nd fastest](https://i.imgur.com/Owj6HkD.png) Linode relay, with UK third. I would recommend this host to use the free credits, but wouldn't really recommend paying as bandwidth is limited. Locations: US,CA,GB,DE,SG,JP,IN,AU,BR,SE,NL,ES",
         "last_updated": "10/07/2021"
+      },
+      {
+        "name": "R0cket.Cloud",
+        "url": "https://r0cket.cloud/",
+        "asn": [
+          "AS214503"
+        ],
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "r0cket.cloud is a Swedish-based provider that explicitly welcomes Tor exit nodes and requires no KYC verification for its services. They are a major infrastructure stakeholder already hosting a significant portion of the global Tor exit capacity on their own network. All abuse complaints are handled under Swedish jurisdiction to protect relay operators, and payments can be made anonymously via Monero or physical gold.",
+        "last_updated": "01/2026"
       }
     ],
     "Switzerland": [
