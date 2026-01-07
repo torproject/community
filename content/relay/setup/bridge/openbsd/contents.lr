@@ -21,26 +21,37 @@ Follow the instructions to enable [automatic software updates](../../guard/openb
 # pkg_add tor
 ```
 
-##### 2.1. Recommended steps to install Tor
-
-If you want to install a newer version of the `tor` package, you can use M:Tier's binary packages:
-
-```
-# ftp https://stable.mtier.org/openup
-```
-
-Right after fetching `openup` you can run it to sync M:Tier's repository and update your packages; it's an alternative to `pkg_add -u`.
-
-Here is how you proceed with these steps:
-
-```
-# ./openup
-```
-
-### 3. Install obfs4proxy
+### 3. Install the obfuscator
 
 ```
 # pkg_add obfs4proxy
+```
+
+#### 3.1 Lyrebird
+Because `obfs4proxy` is unmaintained, you might want to build
+[lyrebird](https://gitlab.torproject.org/tpo/anti-censorship/pluggable-transports/lyrebird)
+from source, which is a fork maintained by the Tor Project.
+
+The `go` package is a build dependency.
+```
+# pkg_add go
+```
+
+Clone the repository and `cd` to it.
+```
+$ git clone https://gitlab.torproject.org/tpo/anti-censorship/pluggable-transports/lyrebird.git
+$ cd ./lyrebird
+```
+
+Optionally checkout the latest version tag (e.g. `lyrebird-X.X.X`).
+```
+$ git checkout VERSION_TAG
+```
+
+Build the executable and install it in a location on your `PATH`.
+```
+$ make build
+# cp ./lyrebird /usr/local/bin/lyrebird
 ```
 
 ### 4. Edit your Tor config file, usually located at `/etc/tor/torrc` and replace its content with:
@@ -55,6 +66,8 @@ BridgeRelay 1
 ORPort TODO1
 
 ServerTransportPlugin obfs4 exec /usr/local/bin/obfs4proxy
+# Or if using Lyrebird:
+#  ServerTransportPlugin obfs4 exec /usr/local/bin/lyrebird
 
 # Replace "TODO2" with an obfs4 port of your choice.  This port must be
 # externally reachable and must be different from the one specified for ORPort.
