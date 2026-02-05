@@ -28,9 +28,7 @@ Follow the instructions to enable [automatic software updates](../../guard/openb
 ```
 
 #### 3.1 Lyrebird
-Because `obfs4proxy` is unmaintained, you might want to build
-[lyrebird](https://gitlab.torproject.org/tpo/anti-censorship/pluggable-transports/lyrebird)
-from source, which is a fork maintained by the Tor Project.
+Because `obfs4proxy` is unmaintained, you might want to build [lyrebird](https://gitlab.torproject.org/tpo/anti-censorship/pluggable-transports/lyrebird) from source, which is a fork maintained by the Tor Project.
 
 The `go` package is a build dependency.
 ```
