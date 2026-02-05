@@ -21,7 +21,9 @@ Also, if your relay is stolen or goes missing, please report it as well, so we c
 
 If you encounter a bad relay then please let us know and write to `bad-relays AT lists DOT torproject DOT org`.
 
-If you are using Tor Browser you can check which exit relay you got at any time by visiting [the circuit icon on the URL bar](https://support.torproject.org/tor-browser/features/managing-identities/). Also, there is more information about specific relays available on our metrics website via the [relay-search portal](https://metrics.torproject.org/rs.html). Please include the following in your report:
+If you are using Tor Browser you can check which exit relay you got at any time by visiting [the circuit icon on the URL bar](https://support.torproject.org/tor-browser/features/managing-identities/).
+Also, there is more information about specific relays available on our metrics website via the [relay-search portal](https://metrics.torproject.org/rs.html).
+Please include the following in your report:
 
  1. The relay's IP address or fingerprint. The fingerprint is a forty-character hex string such as `203933ED4E55EF8A3C3518427D1A1ED6A4CC285E`.
  2. What kind of behavior did you see?
@@ -31,14 +33,16 @@ However, if you need help with anything Tor-related, please use the [Tor Forum](
 
 ### What happens to bad relays?
 
-After a relay is reported and we've verified the behavior we'll attempt to contact the relay operator. Often we can sort things out but if not (or the relay lacks contact information) we'll flag it to prevent it from continuing to be used.
+After a relay is reported and we've verified the behavior we'll attempt to contact the relay operator.
+Often we can sort things out but if not (or the relay lacks contact information) we'll flag it to prevent it from continuing to be used.
 
 We have two types of flags we can apply:
 
  * BadExit - Never use the relay as an exit relay (for relays that e.g. show broken DNS resolver configurations)
  * MiddleOnly - Only use the relay in a middle position without any relevant flag, like the HSDir flag
 
-Additionally, we can drop relays from the consensus entirely. Which of those options we deploy depends on the severity of the issue, and if the relay can still be safely used in certain situations.
+Additionally, we can drop relays from the consensus entirely.
+Which of those options we deploy depends on the severity of the issue, and if the relay can still be safely used in certain situations.
 
 ### My relay was given the BadExit or MiddleOnly flag. What's up?
 
@@ -56,4 +60,4 @@ section: Community Resources
 ---
 section_id: bad-relays
 ---
-subtitle: Learn how to report relays that either doesn't work properly or tampers with our users' connections
+subtitle: Learn how to report relays that either don't work properly or tamper with our users' connections
