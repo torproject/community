@@ -67,8 +67,7 @@ A DoS attack can also frustrate volunteers running relays, potentially leading t
 The presence of malicious or misconfigured relays, along with the potential for DoS attacks, can severely undermine Tor’s security, reliability, and reputation. 
 If users perceive the network as unsafe or slow, they may stop using it, reducing the overall anonymity of the network (since more users make it harder to track individual traffic). 
 
-As the Tor project relies on volunteers for relays and external funding, 
-frequent attacks could discourage operators and impact funding, both critical for keeping the network operational.
+As the Tor project relies on volunteers for relays and external funding, frequent attacks could discourage operators and impact funding, both critical for keeping the network operational.
 
 While Tor has systems in place to detect and remove these threats, attackers are constantly evolving their tactics to avoid detection and weaken the network. 
 A deeper understanding of these threats and continuous vigilance are essential to maintaining the security and usability of the Tor network.
