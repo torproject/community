@@ -24,8 +24,7 @@ Their goal may be to deanonymize users, degrade network performance, or damage T
 
 ![An image showing positions of bad relays on the Tor network](/static/images/threat-model/network.png "title='Bad Relays on the Tor Network' class='img-fluid'")
 
-Network adversaries can carry out a variety of attacks, which can generally fall into three broad categories: 
-running malicious relays that risks user safety and security, manipulating Tor’s protocol to leak information, and performing denial of service (DoS) attacks.
+Network adversaries can carry out a variety of attacks, which can generally fall into three broad categories: running malicious relays that risks user safety and security, manipulating Tor’s protocol to leak information, and performing denial of service (DoS) attacks.
 
 ### 1. Running Malicious Relays
 
@@ -39,12 +38,10 @@ Network attackers often run relays that are configured to harm the network or us
 Malicious relays may also be purposefully misconfigured to introduce vulnerabilities into the network. 
 These relays might not follow proper protocol, resulting in traffic that leaks information, making it easier to track users. 
 
-An attacker could operate a malicious exit relay—the final node where traffic exits the Tor network and reaches the open internet—
-intentionally designed to steal sensitive data like cryptocurrencies, hijack online accounts, log user activity, or exploit vulnerabilities in Tor's protocol. 
+An attacker could operate a malicious exit relay—the final node where traffic exits the Tor network and reaches the open internet— intentionally designed to steal sensitive data like cryptocurrencies, hijack online accounts, log user activity, or exploit vulnerabilities in Tor's protocol. 
 This allows the attacker to intercept and manipulate traffic, posing significant risks to users relying on Tor for secure, anonymous browsing.
 
-Tor actively works to detect and remove these relays, but attackers often attempt to bypass detection 
-by concealing the true nature of their relays, such as lying about key relay properties or frustrating Tor’s scanning efforts.
+Tor actively works to detect and remove these relays, but attackers often attempt to bypass detection by concealing the true nature of their relays, such as lying about key relay properties or frustrating Tor’s scanning efforts.
 
 ### 2. Exploiting Information Leaks
 
@@ -67,13 +64,10 @@ These attacks might:
 
 The goal of a DoS attack is often to discourage users from using Tor by making it so slow or unusable that they switch to less secure alternatives. 
 A DoS attack can also frustrate volunteers running relays, potentially leading them to shut down their relays, which weakens the network and makes it more vulnerable to further attacks.
-
-
 The presence of malicious or misconfigured relays, along with the potential for DoS attacks, can severely undermine Tor’s security, reliability, and reputation. 
 If users perceive the network as unsafe or slow, they may stop using it, reducing the overall anonymity of the network (since more users make it harder to track individual traffic). 
 
-As the Tor project relies on volunteers for relays and external funding, 
-frequent attacks could discourage operators and impact funding, both critical for keeping the network operational.
+As the Tor project relies on volunteers for relays and external funding, frequent attacks could discourage operators and impact funding, both critical for keeping the network operational.
 
 While Tor has systems in place to detect and remove these threats, attackers are constantly evolving their tactics to avoid detection and weaken the network. 
 A deeper understanding of these threats and continuous vigilance are essential to maintaining the security and usability of the Tor network.
