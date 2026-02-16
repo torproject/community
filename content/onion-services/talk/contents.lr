@@ -82,7 +82,7 @@ Even though privacy aware users can adopt tools to protect their communications 
 
 As Edward Snowden points out in his book, **"Permanent Record"** (2019),
 
-    "You know what you're saying during a phone call, or what you're writing in an email. But you have hardly any control over the metadata you produce, because it is generated automatically. [...] In sum, metadata can tell your surveillant virtually everything they'd ever want or need to know about you, except what's actually going on inside your head."
+> You know what you're saying during a phone call, or what you're writing in an email. But you have hardly any control over the metadata you produce, because it is generated automatically. [...] In sum, metadata can tell your surveillant virtually everything they'd ever want or need to know about you, except what's actually going on inside your head.
 
 [Onionmx](https://github.com/ehloonion/onionmx) is a software that allows the delivery of emails entirely over Onion Services, obfuscating the metadata of who is talking with whom.
 E-mail providers like [Riseup](https://riseup.net/en/security/network-security/tor#riseups-tor-onion-services), [Systemli](https://www.systemli.org/service/onion.html) and [many others](https://github.com/ehloonion/onionmx/blob/master/sources/map.yml) protect their users privacy using onionmx.
@@ -107,10 +107,12 @@ It makes it possible to host files on your own computer and share (send and rece
 All the recipients of this communication need to have Tor Browser installed on their computer to open the onion address.
 OnionShare was developed after a human rights violation during the Snowden revelations in 2013,
 
-    "I first saw the need for this tool when I learned about how David Miranda, the partner of my colleague Glenn Greenwald, got detained for nine hours at a London airport while he was trying to fly home to Brazil.
-    Working on a journalism assignment for the Guardian, Miranda was carrying a USB stick with sensitive documents.
-    I knew that he could have securely sent the documents over the internet using a Tor Onion Service, one of the most underappreciated technologies on the internet, and avoided the risk of physically traveling with them.
-    I developed OnionShare to make this file sharing process over the Tor network more accessible to everyone." [OnionShare 2 release](https://blog.torproject.org/new-release-onionshare-2)
+> I first saw the need for this tool when I learned about how David Miranda, the partner of my colleague Glenn Greenwald, got detained for nine hours at a London airport while he was trying to fly home to Brazil.
+> Working on a journalism assignment for the Guardian, Miranda was carrying a USB stick with sensitive documents.
+> I knew that he could have securely sent the documents over the internet using a Tor Onion Service, one of the most underappreciated technologies on the internet, and avoided the risk of physically traveling with them.
+> I developed OnionShare to make this file sharing process over the Tor network more accessible to everyone.
+>
+> — [OnionShare 2 release announcement](https://blog.torproject.org/new-release-onionshare-2)
 
 ### Decentralization
 
