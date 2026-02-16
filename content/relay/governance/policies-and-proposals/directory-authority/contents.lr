@@ -22,4 +22,4 @@ Directory Authorities are important components within the Tor network that serve
 They are a set of specialized servers within the Tor network that collectively generate and distribute a signed document (known as the consensus) containing information about all known Tor relays.
 These authorities are operated by trusted organizations or individuals with a strong commitment to the principles of privacy, security, and network neutrality.
 
-> [Read our directory authority expectations](https://community.torproject.org/policies/dir-auth/dir_auth_expectations/) and what the Directory Authorities currently commit to [when dealing with bad relays](https://community.torproject.org/policies/dir-auth/bad-relays_status_quo/).
+**[Read our directory authority expectations](https://community.torproject.org/policies/dir-auth/dir_auth_expectations/) and what the Directory Authorities currently commit to [when dealing with bad relays](https://community.torproject.org/policies/dir-auth/bad-relays_status_quo/).**
