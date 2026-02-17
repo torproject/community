@@ -22,6 +22,6 @@ These delays are necessary to prevent attackers from gaining insights into our m
 
 In April 2021, we started publishing the list of rejected fingerprints. Nevertheless, volunteers are allowed to explore historical data and document rejected fingerprints from the past if desired.
 
-> You can view the [rejected fingerprints for 2021 - 2024](https://gitlab.torproject.org/tpo/network-health/team/-/wikis/Rejected-fingerprints-found-in-attacks).
+**You can view the [rejected fingerprints for 2021 - 2024](https://gitlab.torproject.org/tpo/network-health/team/-/wikis/Rejected-fingerprints-found-in-attacks).**
 
 The documentation of these fingerprints serves as a valuable resource for understanding and mitigating attacks on the Tor network, fostering a safer and more secure environment for all users.
