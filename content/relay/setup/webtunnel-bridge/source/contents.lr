@@ -11,7 +11,7 @@ This guide will help you set up a WebTunnel bridge compiled from the source to h
 #### 0. Configure your domain and web server
 
 Before you proceed with the instructions below, it's necessary to configure your domain and web server first.
-Refer to the first part of the [WebTunnel guide](/relay/setup/webtunnel) to see how to set up your web server.
+Refer to the first part of the [WebTunnel guide](../../webtunnel) to see how to set up your web server.
 
 #### 1. Install Golang
 
