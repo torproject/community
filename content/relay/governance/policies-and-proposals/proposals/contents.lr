@@ -23,10 +23,10 @@ The proposals for relay operators are focused on operational, policy, and commun
 Topics include security measures against malicious relays, expectations for relay operators, sustainability, and guidelines for investigating and removing malicious actors.
 
 The proposals undergo a thorough review process involving drafting, community consensus, and final approval by the proposal editors, ensuring they align with the Tor Project's policies and operational goals.
-Learn more about the [process for new policies and proposals for the Tor relay operator community](../../../policies/relays/001-community-relay-operator-process/).
+Learn more about the [process for new policies and proposals for the Tor relay operator community](https://community.torproject.org/policies/relays/001-community-relay-operator-process/).
 
 The following are sample proposal formats you can use to get started.
 
 - [[tor-relays] Proposal: Restrict ContactInfo to Mandatory Email Address](https://lists.torproject.org/pipermail/tor-relays/2023-October/021358.html)
-- [[tor-relays] Process for new policies and proposals for the Tor relay operator community](../../../policies/relays/001-community-relay-operator-process/) 
-- [Expectations for relay operators](../../../policies/relays/expectations-for-relay-operators/)
+- [[tor-relays] Process for new policies and proposals for the Tor relay operator community](https://community.torproject.org/policies/relays/001-community-relay-operator-process/) 
+- [Expectations for relay operators](https://community.torproject.org/policies/relays/expectations-for-relay-operators/)
