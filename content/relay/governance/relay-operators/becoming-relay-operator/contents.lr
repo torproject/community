@@ -24,15 +24,15 @@ Here's a step-by-step guide to help you get started:
     Before diving into becoming a relay operator, it's important that you have a basic understanding of how the Tor network functions.
     You can read through our documentation and try routing traffic through the Tor network using the Tor Browser.
 2. **Assess your resources**
-    To operate a Tor relay, there are [technical requirements and resources](../../relays-requirements/) that you’ll need. 
+    To operate a Tor relay, there are [technical requirements and resources](../../../relays-requirements/) that you’ll need. 
     If you decide to become a relay operator, make sure you meet the requirements, have some technical expertise, and some time to maintain the relay. 
 3. **Choose your relay type**
-    There are [three types of relays](../../types-of-relays/) in the Tor network: entry relays, middle relays, and exit relays.
+    There are [three types of relays](../../../types-of-relays/) in the Tor network: entry relays, middle relays, and exit relays.
     As a relay operator, you can either run an exit relay or a non-exit relay because you cannot operate middle relays alone.
     Decide which type of relay you want to operate based on your resources and preferences.
 4. **Set up your relay**
-    Once you've chosen the type of relay you want to operate, you'll need to [configure the relay](../../setup/) on an operating system you’re comfortable with managing.
-    You can follow the [instructions](../../setup/) carefully to ensure your relay is set up securely and correctly.
+    Once you've chosen the type of relay you want to operate, you'll need to [configure the relay](../../../setup/) on an operating system you’re comfortable with managing.
+    You can follow the [instructions](../../../setup/) carefully to ensure your relay is set up securely and correctly.
 5. **Configure Bandwidth and Security Settings**
     As a relay operator, you can configure the bandwidth limits for your relay to ensure it doesn't overwhelm your internet connection.
     Additionally, you'll want to configure security settings to protect your relay from potential attacks and abuse.
