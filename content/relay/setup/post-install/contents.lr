@@ -82,7 +82,7 @@ The following torrc configuration options can be used to restrict bandwidth and 
 
 Having a fast relay for some time of the month is preferred over a slow relay for the entire month.
 
-Also see the bandwidth entry in the [FAQ](../../performance/bandwidth-shaping/).
+Also see the bandwidth entry in the [FAQ](https://support.torproject.org/relays/performance/bandwidth-shaping/).
 
 # 8. Check IPv6 availability
 
