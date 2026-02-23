@@ -24,15 +24,15 @@ Here's a step-by-step guide to help you get started:
     Before diving into becoming a relay operator, it's important that you have a basic understanding of how the Tor network functions.
     You can read through our documentation and try routing traffic through the Tor network using the Tor Browser.
 2. **Assess your resources**
-    To operate a Tor relay, there are [technical requirements and resources](/relay/relays-requirements/) that you’ll need. 
+    To operate a Tor relay, there are [technical requirements and resources](../../../relays-requirements/) that you’ll need. 
     If you decide to become a relay operator, make sure you meet the requirements, have some technical expertise, and some time to maintain the relay. 
 3. **Choose your relay type**
-    There are [three types of relays](/relay/types-of-relays/) in the Tor network: entry relays, middle relays, and exit relays.
+    There are [three types of relays](../../../types-of-relays/) in the Tor network: entry relays, middle relays, and exit relays.
     As a relay operator, you can either run an exit relay or a non-exit relay because you cannot operate middle relays alone.
     Decide which type of relay you want to operate based on your resources and preferences.
 4. **Set up your relay**
-    Once you've chosen the type of relay you want to operate, you'll need to [configure the relay](/relay/setup/) on an operating system you’re comfortable with managing.
-    You can follow the [instructions](/relay/setup/) carefully to ensure your relay is set up securely and correctly.
+    Once you've chosen the type of relay you want to operate, you'll need to [configure the relay](../../../setup/) on an operating system you’re comfortable with managing.
+    You can follow the [instructions](../../../setup/) carefully to ensure your relay is set up securely and correctly.
 5. **Configure Bandwidth and Security Settings**
     As a relay operator, you can configure the bandwidth limits for your relay to ensure it doesn't overwhelm your internet connection.
     Additionally, you'll want to configure security settings to protect your relay from potential attacks and abuse.
@@ -46,6 +46,6 @@ Here's a step-by-step guide to help you get started:
     Lastly, help raise awareness about the importance of the Tor network and the role of relay operators in maintaining its integrity.
     Encourage others to become relay operators or support the Tor project in other ways.
 
-**Read our [Expectations for Relay Operators](/relay/governance/relay-operators/relay-operator-expectations) guide for more detail on what it means to be a good relay operator.**
+**Read our [Expectations for Relay Operators](../relay-operator-expectations) guide for more detail on what it means to be a good relay operator.**
 
 By following these steps, you can become a valuable contributor to the Tor community and play an important role in  safeguarding online privacy and freedom for users around the world.

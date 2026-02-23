@@ -16,7 +16,7 @@ section_id: governance
 ---
 body:
 
-Historically, the management of the Tor relay operator community was informal, depending on interactions among [relay operators](/relay/governance/relay-operators/becoming-relay-operator), [Directory Authorities](/relay/governance/policies-and-proposals/directory-authority), and Tor Project staff during meetups.
+Historically, the management of the Tor relay operator community was informal, depending on interactions among [relay operators](../../relay-operators/becoming-relay-operator), [Directory Authorities](../directory-authority), and Tor Project staff during meetups.
 However, as the community has grown and become more diverse, a structured process is necessary to evaluate and implement proposals systematically.
 
 The proposals for relay operators are focused on operational, policy, and community-related aspects specific to the relay operator community, contrasting with the technical specifications covered by [Tor specifications](https://spec.torproject.org/) (aka torspec).

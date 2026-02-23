@@ -14,13 +14,13 @@ The requirements for deploying a WebTunnel bridge are:
 4. A valid TLS certificate;
 5. At least 1 GB of memory RAM (4 GB recommended) to support the Tor process and WebTunnel transport. 
 
-For more details on system requirements, we recommend reading the [Tor relay requirements](/relay/relays-requirements) page.
+For more details on system requirements, we recommend reading the [Tor relay requirements](../../relays-requirements) page.
 
 Deploying a WebTunnel bridge involves configuring both a web server and a Tor bridge with this pluggable transport.
 The first part of this guide provides detailed instructions for configuring your web server to support WebTunnel.
 The second part, you will choose between two methods for running the WebTunnel bridge: either using Docker or by compiling from the source code.
 
-Please note that if you don't meet the requirements to run a WebTunnel or obfs4 bridge, running a [Snowflake proxy](/relay/setup/snowflake) is a great way to donate your bandwidth to help users circumvent censorship.
+Please note that if you don't meet the requirements to run a WebTunnel or obfs4 bridge, running a [Snowflake proxy](../../setup/snowflake) is a great way to donate your bandwidth to help users circumvent censorship.
 
 ### Web server configuration
 

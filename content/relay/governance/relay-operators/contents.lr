@@ -19,8 +19,8 @@ body:
 Relay operators form the backbone of the Tor network, facilitating anonymous and secure internet browsing for users worldwide. 
 Operating a relay involves running specialized software that routes encrypted traffic through a series of relays, protecting user privacy and security. 
 
-In the past, our approach to organizing the Tor relay operator community relied heavily on the informal dynamics between [relay operators](/relay/governance/relay-operators/becoming-relay-operator), [Directory Authorities](/relay/governance/policies-and-proposals/directory-authority-policy), and The Tor Project staff. 
+In the past, our approach to organizing the Tor relay operator community relied heavily on the informal dynamics between [relay operators](becoming-relay-operator), [Directory Authorities](../policies-and-proposals/directory-authority), and The Tor Project staff. 
 Now, through discussions and interactions in meetups and similar events, we collaborate with operators to determine best practices for managing Tor relays. 
-This is beneficial to both user safety and the continued effectiveness of [Directory Authorities](/relay/governance/policies-and-proposals/directory-authority) and The Tor Project.
+This is beneficial to both user safety and the continued effectiveness of [Directory Authorities](../policies-and-proposals/directory-authority) and The Tor Project.
 
 Relay operators contribute valuable bandwidth and computing resources to the network, enabling Tor users to access the internet anonymously.

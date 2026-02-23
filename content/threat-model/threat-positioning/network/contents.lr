@@ -29,7 +29,7 @@ Network adversaries can carry out a variety of attacks, which can generally fall
 ### 1. Running Malicious Relays
 
 Network attackers often run relays that are configured to harm the network or users in some way. 
-[Malicious relays](/relay/governance/handling-bad-relays/) can be designed to:
+[Malicious relays](../../../relay/governance/handling-bad-relays/) can be designed to:
 
 - Spy on traffic passing through them.
 - Disrupt communication between Tor users and the network.
