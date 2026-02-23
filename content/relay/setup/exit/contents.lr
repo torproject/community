@@ -14,7 +14,7 @@ key: 3
 ---
 body:
 
-We assume you read through the [relay guide](..) and [technical considerations](/relay/technical-considerations/) already. This subpage is for operators that want to turn on exiting on their relay.
+We assume you read through the [relay guide](..) and [technical considerations](../../technical-considerations/) already. This subpage is for operators that want to turn on exiting on their relay.
 
 It is recommended that you setup exit relays on servers dedicated to this purpose.
 It is not recommended to install Tor exit relays on servers that you need for other services as well.
