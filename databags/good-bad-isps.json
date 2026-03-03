@@ -1798,6 +1798,18 @@
         "exit": "Yes",
         "comment": "\"We allow Tor exits as long as they have a reduced exit policy.\" - I've used 10TB this month in total for all 3 of my exit nodes spread out in different locations. I've recieved 0 notices from Linode while using the free 100$ credits you get. I allow ports 53,80,443. My DE exit node is now the [2nd fastest](https://i.imgur.com/Owj6HkD.png) Linode relay, with UK third. I would recommend this host to use the free credits, but wouldn't really recommend paying as bandwidth is limited. Locations: US,CA,GB,DE,SG,JP,IN,AU,BR,SE,NL,ES",
         "last_updated": "10/07/2021"
+      },
+      {
+        "name": "Ultra.cc",
+        "url": "https://ultra.cc",
+        "asn": [
+          "AS208959"
+        ],
+        "bridge": "No",
+        "relay": "No",
+        "exit": "No",
+        "comment": "TOS explicitly forbids Tor relays: \"The following tools/programs are prohibited to be run on any Ultra.cc plan: Tor relays/exit nodes\". Reference: https://docs.ultra.cc/policies/terms-of-service",
+        "last_updated": "23/02/2026"
       }
     ],
     "Sweden": [
