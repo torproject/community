@@ -11,16 +11,16 @@ _slug: updates
 
 body:
 
-On Fedora you enable automatic updates via:
+On Fedora 43 and up, you can enable automatic updates via:
 
 ```
-dnf install dnf-automatic
+sudo dnf install dnf5-plugin-automatic
 ```
 
 Now enable and start automatic updates via:
 
 ```
-systemctl enable --now dnf-automatic-install.timer
+sudo systemctl enable --now dnf5-automatic.timer
 ```
 ---
 html: two-columns-page.html
