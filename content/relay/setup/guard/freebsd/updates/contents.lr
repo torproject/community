@@ -10,6 +10,8 @@ body:
 
 This guide should work for DragonFlyBSD, FreeBSD, and HardenedBSD operating system. It covers _ONLY_ packages updates/upgrades, and does not apply any other patch to base system or kernel.
 
+If you are running FreeBSD 15.0-RELEASE or above, the base system will be updated via `pkg` as well. Otherwise you would still need to rely on `freebsd-update` or building it from source. For more information, please see the official [FreeBSD Wiki](https://wiki.freebsd.org/pkgbase) or the [Handbook](https://docs.freebsd.org/en/books/handbook/cutting-edge/).
+
 **NOTE:** All steps documented on this page are considering that your server is dedicated to provide a Tor (bridge/guard/exit) relay service. Please be aware that _services will be restarted_ during the automatic software update process documented here.
 
 ### 1. Create the Update Script
@@ -19,7 +21,7 @@ Let's use `/root/bin/pkg-upgrade.sh` for our setup. This is how is must look lik
 ```
 #!/bin/sh
 PATH="/bin:/usr/bin:/sbin:/usr/sbin:/usr/local/bin:/usr/local/sbin"
-RAND=$(jot -r 1 900)
+RAND=$(jot -r 1 1980 5940)
 ENV="BATCH=yes IGNORE_OSVERSION=yes"
 sleep ${RAND}
 env ${ENV} pkg update -q -f && \
@@ -29,7 +31,9 @@ env ${ENV} HANDLE_RC_SCRIPTS=yes pkg upgrade -q -U -y
 
 ### 2. Schedule a `cron` Job
 
-For this particular schedule we opt to run the script every 0h00 (depending on your timezone), and will trigger the packages updates process itself depending on the value set to the `$RAND` variable - it's configured to produce a **sleep** between 0 and 900 seconds (15 minutes).
+For this particular schedule we opt to run the script every 0h00 (depending on your timezone), and will trigger the packages updates process itself depending on the value set to the `$RAND` variable - it's configured to produce a **sleep** between 1980 and 5940 seconds (or: 33 and 99 minutes).
+
+More information about the use of `jot` in there can be found [here](https://gitlab.torproject.org/tpo/community/relays/-/issues/123) - thanks to our anonymous cypherpunks. Adapt that to your needs should it be more suited to you.
 
 ```
 # echo "0 0 * * * root /bin/sh /root/bin/pkg-upgrade.sh" > /etc/cron.d/pkg-upgrade
