@@ -40,7 +40,7 @@ For more information on how they work, check the `tor(1)` manpage and the [Denia
 
 ### Proof of Work (PoW) before establishing Rendezvous Circuits
 
-A [Proof of Work (PoW)](https://spec.torproject.org/hspow-spec/index.html) defense mechanism is explained in length at the [PoW FAQ](https://gitlab.torproject.org/tpo/onion-services/onion-support/-/wikis/Documentation/PoW-FAQ), and can be configured for each Onion Service with the following `torrc` options:
+A [Proof of Work (PoW)](https://spec.torproject.org/hspow-spec/index.html) defense mechanism is explained in length at the [PoW FAQ](https://onionservices.torproject.org/technology/security/pow/), and can be configured for each Onion Service with the following `torrc` options:
 
 * `HiddenServicePoWDefensesEnabled`: Enable proof-of-work based service DoS mitigation.
    When enabled, tor will include parameters for an optional client puzzle in the encrypted portion of this hidden service's descriptor.
