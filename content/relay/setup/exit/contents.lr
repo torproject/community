@@ -45,7 +45,7 @@ We offer a [sample Tor exit notice HTML file](https://gitweb.torproject.org/tor.
 
 We also have a great blog post with some more [tips for running an exit relay](https://blog.torproject.org/tips-running-exit-node).
 
-Note: **DirPort** is deprecated since Tor 0.4.6.5, and self-tests are no longe being showed on `tor`'s logs.
+Note: **DirPort** is deprecated since Tor 0.4.6.5, and self-tests are no longer being showed on `tor`'s logs.
 For more information read its [release notes](https://blog.torproject.org/node/2041) and [ticket #40282](https://gitlab.torproject.org/tpo/core/tor/-/issues/40282).
 
 ## Exit policy
