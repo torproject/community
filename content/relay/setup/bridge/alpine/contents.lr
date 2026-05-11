@@ -1,0 +1,108 @@
+_model: page
+---
+color: primary
+---
+title: Alpine Linux
+---
+body:
+
+### 1. Enable Automatic Software Updates
+
+One of the most important things to keep your relay secure is to install security updates timely and ideally automatically so you can not forget about it.
+Follow the instructions to enable [automatic software updates](updates) for your operating system.
+
+### 2. Install Tor
+
+Ensure you update the packages database before installing the package, than call `apt` to install it:
+
+```
+# apk update
+# apk add tor
+```
+
+### 3. Install Lyrebird
+
+```
+# apk add lyrebird
+```
+
+### 4. Edit your Tor config file
+
+Copy the provided `/etc/tor/torrc.sample` to `/etc/tor/torrc` and set the following options:
+
+```
+BridgeRelay 1
+
+# Replace "TODO1" with a Tor port of your choice.
+# This port must be externally reachable.
+# Avoid port 9001 because it's commonly associated with Tor and censors may be scanning the Internet for this port.
+ORPort TODO1
+
+ServerTransportPlugin obfs4 exec /usr/bin/lyrebird
+
+# Replace "TODO2" with an obfs4 port of your choice.
+# This port must be externally reachable and must be different from the one specified for ORPort.
+# Avoid port 9001 because it's commonly associated with Tor and censors may be scanning the Internet for this port.
+ServerTransportListenAddr obfs4 0.0.0.0:TODO2
+
+# Local communication port between Tor and obfs4.  Always set this to "auto".
+# "Ext" means "extended", not "external".  Don't try to set a specific port number, nor listen on 0.0.0.0.
+ExtORPort auto
+
+# Replace "<address@email.com>" with your email address so we can contact you if there are problems with your bridge.
+# This is optional but encouraged.
+ContactInfo <address@email.com>
+
+# Pick a nickname that you like for your bridge.  This is optional.
+Nickname PickANickname
+```
+
+Don't forget to change the `ORPort`, `ServerTransportListenAddr`, `ContactInfo`, and `Nickname` options.
+
+Note that both Tor's OR port and its obfs4 port must be reachable. If your bridge is behind a firewall or NAT, make sure to open both ports. You can use our [reachability test](https://bridges.torproject.org/scan/) to see if your obfs4 port is reachable from the Internet.
+
+#### (Optional) Allow obfs4 binding to privileged ports
+
+If you decide to use a fixed obfs4 port smaller than 1024 (for example 80 or 443), you will need to give the Lyrebird executable `CAP_NET_BIND_SERVICE` capabilities so it can bind to the port without root privileges.
+
+Install the packages `libcap-setcap` and `libcap-getcap`, then do this:
+
+```
+# setcap cap_net_bind_service=+ep /usr/bin/lyrebird
+```
+
+You can query the currently assigned capabilities by running `getcap /usr/bin/lyrebird`. Should you ever decide to use an unprivileged port, remember to remove the capability with `setcap -r /usr/bin/lyrebird`.
+
+### 6. Start Tor
+
+Now start the Tor service.
+
+```
+# rc-service tor start
+```
+
+If the service starts successfully, proceed to the next step.
+
+### 7. Monitor your logs
+
+To confirm your bridge is running with no issues, you should see something like this, usually in `/var/log/tor/notices.log` (default) or `/var/log/messages` (syslog):
+```
+[notice] Your Tor server's identity key fingerprint is '<NICKNAME> <FINGERPRINT>'
+[notice] Your Tor bridge's hashed identity key fingerprint is '<NICKNAME> <HASHED FINGERPRINT>'
+[notice] Registered server transport 'obfs4' at '[::]:46396'
+[notice] Tor has successfully opened a circuit. Looks like client functionality is working.
+[notice] Bootstrapped 100%: Done
+[notice] Now checking whether ORPort <redacted>:3818 is reachable... (this may take up to 20 minutes -- look for log messages indicating success)
+[notice] Self-testing indicates your ORPort is reachable from the outside. Excellent. Publishing server descriptor.
+```
+
+### 8. Final Notes
+
+If you are having trouble setting up your bridge, have a look at [our help section](../../../getting-help/).
+If your bridge is now running, check out the [post-install notes](../post-install/).
+---
+key: 2
+---
+html: two-columns-page.html
+---
+subtitle: How to deploy an obfs4 bridge on Alpine Linux

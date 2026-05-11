@@ -1,0 +1,51 @@
+_model: page
+---
+color: primary
+---
+title: Alpine Linux
+---
+_discoverable: no
+---
+body:
+
+# 1. Install or build apk-autoupdate
+
+We'll be using a program named [apk-autoupdate](https://github.com/jirutka/apk-autoupdate). If you're running on the `edge` branch of Alpine, the package is available via `apk add apk-autoupdate`; otherwise, you'll have to build from source. Fortunately, it's a tiny program.
+
+First, get the build dependencies.
+```
+# apk add make gcc asciidoctor musl-dev
+```
+
+Clone the repository.
+```
+$ git clone https://github.com/jirutka/apk-autoupdate.git
+```
+
+There are no tags, so you'll be building from the `master` branch.
+```
+$ cd ./apk-autoupdate
+$ make
+# make install
+```
+
+# 2. Setup the cron job
+
+Configure cron to regularly run `apk-autoupdate`. The crontab line below will run it daily at 2 AM, assuming that the system is running at that time.
+```
+# min   hour   day   month   weekday   command
+0       2      *     *       *         apk-autoupdate
+```
+
+See the man page `autoupdate.conf(5)` for (optional) configuration.
+
+---
+html: two-columns-page.html
+---
+key: 1
+---
+section: Automatic Updates
+---
+section_id: automatic-updates
+---
+_slug: updates
