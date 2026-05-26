@@ -7,10 +7,10 @@
         <table class="table">
           <thead>
             <tr>
-              <th scope="col">Organization Name</th>
-              <th scope="col">Country</th>
-              <th scope="col">Status</th>
-              <th scope="col">Donate</th>
+              <th scope="col">{{ _('Organization Name') }}</th>
+              <th scope="col">{{ _('Country') }}</th>
+              <th scope="col">{{ _('Status') }}</th>
+              <th scope="col">{{ _('Donate') }}</th>
             </tr>
           </thead>
           <tbody>
@@ -27,13 +27,13 @@
                     <td>{{ item.country }}</td>
                   
                         {% if item.active=='True' %}
-                           <td>Active</td>
+                           <td>{{ _('Active') }}</td>
                         {% else %}
-                           <td>Inactive</td>
+                           <td>{{ _('Inactive') }}</td>
                        {% endif %}
                        <td>
                          {% if item.donate|length %}
-                             <a href="{{ item.donate }}">Donate now!</a>
+                             <a href="{{ item.donate }}">{{ _('Donate now!') }}</a>
                          {% else %}
                              {{ item.donate }}
                          {% endif %}
