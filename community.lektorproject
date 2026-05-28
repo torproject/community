@@ -36,6 +36,11 @@ name = Gaeilge
 url_prefix = /ga/
 locale = ga
 
+[alternatives.id]
+name = bahasa Indonesia
+url_prefix = /id/
+locale = id
+
 [alternatives.ja]
 name = 日本語
 url_prefix = /ja/
@@ -75,3 +80,8 @@ locale = tr
 name = українська
 url_prefix = /uk/
 locale = uk
+
+[alternatives.zh-TW]
+name = 正體中文
+url_prefix = /zh-TW/
+locale = zh-TW
