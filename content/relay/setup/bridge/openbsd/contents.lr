@@ -22,13 +22,15 @@ Follow the instructions to enable [automatic software updates](../../guard/openb
 ```
 
 ### 3. Install the obfuscator
+Lyrebird is a fork of obfs4proxy maintained by the Tor Project.
 
+Since OpenBSD 7.9, there is a lyrebird package.
 ```
-# pkg_add obfs4proxy
+# pkg_add lyrebird
 ```
 
-#### 3.1 Lyrebird
-Because `obfs4proxy` is unmaintained, you might want to build [lyrebird](https://gitlab.torproject.org/tpo/anti-censorship/pluggable-transports/lyrebird) from source, which is a fork maintained by the Tor Project.
+#### 3.1 Alternative: build lyrebird from source
+If you're not yet on OpenBSD 7.9, you might want to [build it from source](https://gitlab.torproject.org/tpo/anti-censorship/pluggable-transports/lyrebird).
 
 The `go` package is a build dependency.
 ```
@@ -46,7 +48,7 @@ Optionally checkout the latest version tag (e.g. `lyrebird-X.X.X`).
 $ git checkout VERSION_TAG
 ```
 
-Build the executable and install it in a location on your `PATH`.
+Build the executable and install it to a directory in your `PATH`.
 ```
 $ make build
 # cp ./lyrebird /usr/local/bin/lyrebird
@@ -63,9 +65,7 @@ BridgeRelay 1
 # censors may be scanning the Internet for this port.
 ORPort TODO1
 
-ServerTransportPlugin obfs4 exec /usr/local/bin/obfs4proxy
-# Or if using Lyrebird:
-#  ServerTransportPlugin obfs4 exec /usr/local/bin/lyrebird
+ServerTransportPlugin obfs4 exec /usr/local/bin/lyrebird
 
 # Replace "TODO2" with an obfs4 port of your choice.  This port must be
 # externally reachable and must be different from the one specified for ORPort.
