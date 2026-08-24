@@ -35,7 +35,7 @@ $ sudo sh get-docker.sh
 Download the [docker-compose.yml](https://gitlab.torproject.org/tpo/anti-censorship/pluggable-transports/snowflake/-/raw/main/docker-compose.yml?ref_type=heads) configuration file.
 Run the command to download it:
 ```
-$ wget -O docker-compose.yml https://gitlab.torproject.org/tpo/anti-censorship/pluggable-transports/snowflake/-/raw/main/docker-compose.yml?ref_type=heads
+$ curl -fsSL -o docker-compose.yml "https://gitlab.torproject.org/tpo/anti-censorship/pluggable-transports/snowflake/-/raw/main/docker-compose.yml?ref_type=heads"
 ```
 Then, deploy the proxy by running:
 ```
