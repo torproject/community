@@ -72,7 +72,7 @@ The supported values for `<key-type>` are: "x25519".
 
 The `<base32-encoded-public-key>` is the base32 representation of the raw key bytes only (32 bytes for x25519).
 
-For example, the file `/var/lib/tor/hidden_service/authorized_clients/alice.auth` should look like:
+For example, the file `/var/lib/tor/my_website/authorized_clients/alice.auth` should look like:
 
      descriptor:x25519:N2NU7BSRL6YODZCYPN4CREB54TYLKGIE2KYOQWLFYC23ZJVCE5DQ
 
