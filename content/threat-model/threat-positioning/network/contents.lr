@@ -45,13 +45,13 @@ Tor actively works to detect and remove these relays, but attackers often attemp
 
 ### 2. Exploiting Information Leaks
 
-Tor’s protocol, while designed to protect user anonymity, has known information leaks or "[side channels](https://gitlab.torproject.org/tpo/core/torspec/-/blob/main/proposals/344-protocol-info-leaks.txt)" that attackers can exploit. 
+Tor’s protocol, while designed to protect user anonymity, has known information leaks or "[side channels](https://spec.torproject.org/proposals/344-protocol-info-leaks.html)" that attackers can exploit. 
 A network adversary running relays can take advantage of these leaks to:
 
 - Deanonymize users directly by correlating traffic patterns between the entry and exit points of the Tor network.
 - Assist other deanonymization attempts by providing additional data that makes it easier to confirm which traffic belongs to a specific user.
 
-These information leaks are detailed in [*Proposal 344*](https://gitlab.torproject.org/tpo/core/torspec/-/blob/main/proposals/344-protocol-info-leaks.txt), which highlights the severity of each one. 
+These information leaks are detailed in [*Proposal 344*](https://spec.torproject.org/proposals/344-protocol-info-leaks.html), which highlights the severity of each one. 
 While not all require running relays to exploit, network adversaries who operate relays are in a better position to see more traffic and perform traffic analysis, making their attacks more effective.
 
 ### 3. Denial of Service (DoS) Attacks
