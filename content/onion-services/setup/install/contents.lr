@@ -20,7 +20,7 @@ body:
 
 **Admin access:** To install Tor you need root privileges.
 Below all commands that need to be run as root user like apt and dpkg are prepended with '#', while commands to be run as user with '$' resembling the standard prompt in a terminal. 
-To open a root terminal you have several options: sudo su, or sudo -i, or su -i. Note that sudo asks for your user password, while su expects the root password of your system. 
+To open a root terminal you have several options: sudo su, or sudo -i, or su -l. Note that sudo asks for your user password, while su expects the root password of your system. 
 
 ### macOS
 
