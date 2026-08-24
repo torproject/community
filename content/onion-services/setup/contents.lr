@@ -68,7 +68,7 @@ Depending on your operating system and setup, your Tor configuration file can be
 
 You will need to add the following two lines to your `torrc` file:
 
-     HiddenServiceDir /var/lib/tor/my_website/
+     HiddenServiceDir /var/lib/tor/my-website/
      HiddenServicePort 80 127.0.0.1:80
 
 The `HiddenServiceDir` line specifies the directory which should contain information and cryptographic keys for your Onion Service.

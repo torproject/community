@@ -87,9 +87,9 @@ To configure an Onion-Location header, the service operator should first configu
 **Step 1.** Create an Onion service by setting the following in `torrc`:
 
 ```
-HiddenServiceDir /var/lib/tor/hs-my-website/
+HiddenServiceDir /var/lib/tor/my-website/
 HiddenServiceVersion 3
-HiddenServicePort 80 unix:/var/run/tor-hs-my-website.sock
+HiddenServicePort 80 unix:/var/run/tor/my-website.sock
 ```
 
 **Step 2.** Edit website configuration file
