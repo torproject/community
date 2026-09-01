@@ -6,8 +6,8 @@ RewriteEngine On
 # set environment variables to attempt a redirect, see rules below
 RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} !-f
 RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} !-d
-RewriteCond "%{REQUEST_URI}" "^/([a-z]{2})(?:-[A-Z]{2})?/(.*)" [OR]
-RewriteCond "%{REQUEST_URI}" "^/([a-z]{2})(?:-[A-Z]{2})?$"
+RewriteCond "%{REQUEST_URI}" "^/([a-z]{2,3})(?:-[A-Z]{2})?/(.*)" [OR]
+RewriteCond "%{REQUEST_URI}" "^/([a-z]{2,3})(?:-[A-Z]{2})?$"
 RewriteRule ^ - [E=langredir:1,E=langredir_code:%1,E=langredir_subpath:%2]
 
 # redirect if the language code without region variant exists
