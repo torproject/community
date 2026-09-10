@@ -21,8 +21,6 @@ These lists can be unpleasant to maintain, and expensive to download.
 
 The Happy Families design is a new feature in Tor 0.4.9.2-alpha that will (eventually) provide a simpler way to configure relay families, and will also save a lot of traffic when clients are fetching network directory information.
 
-(Unfortunately, moving to happy families will create _additional_ work while the transition is going on. We think that it will be worth it in the long run.)
-
 You should read this if you are a relay operator who needs to configure a family on the Tor network.
 
 ## The basic idea
@@ -87,14 +85,6 @@ Once enough of the directory authorities are running 0.4.9.2-alpha or later, the
 family-ids ed25519:wweKJrJxUDs1EdtFFHCDtvVgTKftOC/crUl1mYJv830
 ```
 
-## NOTE: You still need to configure MyFamily!
-
-Unfortunately, you will still need to configure the `MyFamily` option as you did before: until clients all support Happy Families, they will need to look at the legacy family lists.
-
-We're going to try to keep this transitional period as short as is reasonable.
-
-We'll announce once it is no longer necessary to include `MyFamily`.
-
 ## Additional info: How to transition family keys
 
 If one of your relays is compromised, or if you accidentally leak a family key, you'll need to change the key.
@@ -110,14 +100,6 @@ To do this, we recommend a step-wise process.
 4. Wait for a few days, to give the new family information time to propagate.
 5. Remove the old `FamilyID` lines from your relays' configurations.
    Optionally, remove the old family keys as well.
-
-## Additional info: Expected savings from this transition
-
-We plan to remove `MyFamily` and legacy TAP onion keys at the same time.
-When we do, we estimate that the resulting network's microdescriptors will be something around 10% of their current size.
-
-(This might not be a permanent savings, unfortunately: when we transition to postquantum cryptography, we might have to make microdescriptors bigger again. But at least this change will free the room to do so.)
-
 
 ---
 seo_slug: happy-families
