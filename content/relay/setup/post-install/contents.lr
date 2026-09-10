@@ -38,7 +38,7 @@ The following Ansible Role has specifically been built for Tor relay operators a
 
 # 5. Important: if you run more than one Tor instance
 
-To avoid putting Tor clients at risk, when operating multiple relays you must set a proper [FamilyID](/family-ids/) value and have a valid [ContactInfo](https://2019.www.torproject.org/docs/tor-manual.html.en#ContactInfo) in your torrc configuration.
+To avoid putting Tor clients at risk, when operating multiple relays you must set a proper [FamilyID](family-ids/) value and have a valid [ContactInfo](https://2019.www.torproject.org/docs/tor-manual.html.en#ContactInfo) in your torrc configuration.
 The FamilyID setting is simply telling Tor clients what Tor relays are controlled by a single entity/operator/organization, so they are not used in multiple positions in a single circuit.
 
 Instead of setting up FamilyID manually, for big operators we recommend to automate it setting via a configuration management solution.
