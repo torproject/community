@@ -79,41 +79,49 @@ Also see the bandwidth entry in the [FAQ](https://support.torproject.org/relays/
 # 8. Check IPv6 availability
 
 We encourage everyone to enable IPv6 on their relays. This is especially valuable on exit and guard relays.
+Note that Tor requires IPv4 connectivity, you can not run a Tor relay on IPv6-only.
 
-Before enabling your tor daemon to use IPv6 in addition to IPv4 you should do some basic IPv6 connectivity tests.
-
+Before relying on IPv6, it's recommended to do some basic IPv6 connectivity tests.
 The following command line will ping the IPv6 addresses of Tor directory authorities from your server:
 
 ```
 ping6 -c2 2a02:16a8:662:2203::1 && ping6 -c2 2620:13:4000:6000::1000:118 && ping6 -c2 2001:67c:289c::9 && ping6 -c2 2001:678:558:1000::244 && ping6 -c2 2001:638:a000:4140::ffff:189 && echo OK.
 ```
 
-At the end of the output you should see "OK." if that is not the case, do not enable IPv6 in your torrc configuration file before IPv6 is indeed working.
+At the end of the output you should see "OK." If that is not the case, do not enable IPv6 in your torrc configuration file before IPv6 is indeed working.
 **If you enable IPv6 without working IPv6 connectivity, your entire relay will remain unused, regardless of whether IPv4 is working.**
 
-If it worked fine, make your Tor relay reachable via IPv6 by adding an additional ORPort line to your configuration (example for ORPort 9001):
+If IPv6 works, your relay is likely already reachable via IPv6.
+Since Tor 0.4.5, IPv6 address discovery is enabled by default. An ORPort line without an explicit address binds to both IPv4 and IPv6 (`0.0.0.0:9001` and `[::]:9001`), and Tor attempts to auto-discover your IPv6 address the same way it discovers your IPv4.
+If it can't find a working IPv6 address, it simply publishes IPv4 only.
+
+You can confirm which addresses Tor bound to and discovered by checking your notice log (look for the `Opened OR listener` lines and the reachability-check results).
+
+If you prefer to specify your IPv6 address explicitly - recommended if auto-discovery picks the wrong address - add a second ORPort line:
 
 ```
 ORPort [IPv6-address]:9001
 ```
 
+**Note:** Unlike an auto-discovered address (which Tor silently drops if unreachable), an explicitly configured IPv6 ORPort that fails its reachability check will stop your relay from publishing its descriptor at all, so only configure an address you know works.
+You have to explicitly specify your IPv6 address in square brackets.
+
 The location of that line in the configuration file does not matter.
 You can simply add it next to the first ORPort lines in your torrc file.
 
-Note: You have to explicitly specify your IPv6 address in square brackets, you can not tell tor to bind to any IPv6 (like you do for IPv4).
 If you have a global IPv6 address you should be able to find it in the output of the following command:
 
 ```
 ip -6 addr | grep global | sed 's/inet6//;s#/.*##'
 ```
 
+To turn IPv6 off entirely and disable auto-discovery, set `AddressDisableIPv6 1` in your torrc.
+
 If you are an exit relay with IPv6 connectivity, tell your tor daemon to allow exiting via IPv6 so clients can reach IPv6 destinations:
 
 ```
 IPv6Exit 1
 ```
-
-**Note: Tor requires IPv4 connectivity, you can not run a Tor relay on IPv6-only.**
 
 # 9. Maintaining a relay
 
@@ -173,7 +181,7 @@ Some practical advice:
 
 ## Tools
 
- This section lists a few tools that you might find handy as a Tor relay operator.
+This section lists a few tools that you might find handy as a Tor relay operator.
 
 * [Nyx](https://nyx.torproject.org/): is a Tor Project tool (formerly arm) that allows you to see real time data of your relay.
 
