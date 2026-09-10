@@ -38,19 +38,12 @@ The following Ansible Role has specifically been built for Tor relay operators a
 
 # 5. Important: if you run more than one Tor instance
 
-To avoid putting Tor clients at risk, when operating multiple relays you must set a proper [MyFamily](https://2019.www.torproject.org/docs/tor-manual.html.en#MyFamily) value and have a valid [ContactInfo](https://2019.www.torproject.org/docs/tor-manual.html.en#ContactInfo) in your torrc configuration.
-The MyFamily setting is simply telling Tor clients what Tor relays are controlled by a single entity/operator/organization, so they are not used in multiple positions in a single circuit.
+To avoid putting Tor clients at risk, when operating multiple relays you must set a proper [FamilyID](/family-ids/) value and have a valid [ContactInfo](https://2019.www.torproject.org/docs/tor-manual.html.en#ContactInfo) in your torrc configuration.
+The FamilyID setting is simply telling Tor clients what Tor relays are controlled by a single entity/operator/organization, so they are not used in multiple positions in a single circuit.
 
-If you run two relays and they have fingerprints AAAAAAAAAA and BBBBBBBB, you would add the following configuration to set MyFamily:
-
-```
-MyFamily AAAAAAAAAA,BBBBBBBB
-```
-
-to both relays. To find your relay's fingerprint you can look into the log files when tor starts up or find the file named "fingerprint" in your tor DataDirectory.
-
-Instead of doing so manually, for big operators we recommend to automate the MyFamily setting via a configuration management solution.
-Manually managing MyFamily for big relay groups is error-prone and can put Tor clients at risk.
+Instead of setting up FamilyID manually, for big operators we recommend to automate it setting via a configuration management solution.
+Manually managing FamilyID for big relay groups is error-prone and can put Tor clients at risk.
+Please note that `MyFamily`, the previous family configuration method, has been [removed](https://blog.torproject.org/sunsetting-tor-048/).
 
 # 6. Add firewall rules to protect against DDoS attacks
 
