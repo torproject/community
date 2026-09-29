@@ -8,7 +8,7 @@ section: Relay operations
 ---
 section_id: relay-operations
 ---
-title: Learn how to configure your relays' FamilyID
+title: Learn how to configure your relays' FamilyId
 ---
 color: primary
 ---
@@ -53,12 +53,12 @@ This will create a file called `MyKey.secret_family_key`; it will also write som
 FamilyId wweKJrJxUDs1EdtFFHCDtvVgTKftOC/crUl1mYJv830
 ```
 
-Save that `FamilyID` line; you're going to need it!
+Save that `FamilyId` line; you're going to need it!
 (Don't use the one from this example—that isn't your family ID.)
 
 ## Configuring your relay
 
-Copy the `MyKey.secret_family_key` file (or whatever you called it) into the `KeyDir` of every one of your relay.
+Copy the `MyKey.secret_family_key` file (or whatever you called it) into the `KeyDir` of every one of your relays.
 (By default, this is the `keys` subdirectory of your `DataDir`.)
 The file name needs to end with `.secret_family_key`.
 
@@ -95,10 +95,10 @@ To do this, we recommend a step-wise process.
 1. Generate a new family key as above.
    Give it a different filename from the old key.
 2. Copy the new family key to every one of your relays, without replacing the old family key.
-3. Add the new `FamilyID` line to all of your relays' configurations, without removing the old one.
+3. Add the new `FamilyId` line to all of your relays' configurations, without removing the old one.
    At this point, your relays will all be members of _two_ families.
 4. Wait for a few days, to give the new family information time to propagate.
-5. Remove the old `FamilyID` lines from your relays' configurations.
+5. Remove the old `FamilyId` lines from your relays' configurations.
    Optionally, remove the old family keys as well.
 
 ---
