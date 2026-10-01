@@ -24,8 +24,8 @@ For the technical details of how the Onion Service protocol works, see our Onion
 
 ## Step 0: Get a working Tor
 
-As part of this guide, we will assume you have a functional Tor in your machine.
-To set up Tor, please follow the [Tor installation guide](./install/).
+As part of this guide, we will assume you have a functional Tor on your machine.
+To set up Tor, please follow the [Tor installation guide](https://support.torproject.org/little-t-tor/getting-started/installing/).
 Tor should be up and running correctly for this guide to work.
 You should also know where Tor's configuration files are.
 
