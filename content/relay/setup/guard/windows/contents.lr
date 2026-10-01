@@ -37,7 +37,7 @@ First you will need to create a new account to allow Tor to run isolated from yo
 
 The next step is to download and install Windows Expert bundle as well as set up your torrc file.
 
-1. Head over to [Download Tor Source code]( https://www.torproject.org/download/tor/) and scroll down to select 'Windows Expert Bundle'. 
+1. Head over to [Download Tor](https://download.torproject.org/tor/) and scroll down to select 'Windows Expert Bundle'. 
 2. Head to your `C:\Users\torrelay\` directory. 
 3. Create a folder called `tor`.
 *(Optional. A custom path can be used, though you will have to make necessary modifications in the following steps.)
