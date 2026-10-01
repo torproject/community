@@ -1418,18 +1418,6 @@
         "last_updated": "05/2025"
       },
       {
-        "name": "VPSVAULT.HOST",
-        "url": "https://vpsvault.host",
-        "asn": [
-          "AS215925 "
-        ],
-        "bridge": "Yes",
-        "relay": "Yes",
-        "exit": "Yes",
-        "comment": "No problem, all allowed",
-        "last_updated": "05/2025"
-      },
-      {
         "name": "KPN",
         "url": "https://www.kpn.com",
         "asn": [
