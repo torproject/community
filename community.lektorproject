@@ -3,6 +3,7 @@ name = Tor Community Website
 url = https://community.torproject.org/
 url_style = relative
 locale = en_US
+donate_banner_link_id = community-yec2026-tor-banner
 
 [alternatives.en]
 name = English
