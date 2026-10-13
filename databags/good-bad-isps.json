@@ -378,6 +378,19 @@
         "exit": "No",
         "comment": "Fair use traffic, \"typically ~100TB/Month or ~300Mbps 95th Percentile is completely fine on 1Gbps, and 900TB/~3Gbps on 10Gbps Unmetered Servers\", IPv4 only AFAIK",
         "last_updated": "08/2024"
+      },
+      {
+        "name": "Packetra",
+        "url": "https://packetra.com/",
+        "asn": [
+          "AS207003",
+          "AS24940"
+        ],
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "No",
+        "comment": "Bridges and non-exit relays allowed, exit nodes not permitted. Turku runs on AS207003 (Web1 Oy network), Helsinki on Hetzner AS24940. Signup requires only an email and password, no KYC. BTC and XMR accepted via self-hosted BTCPay Server.",
+        "last_updated": "10/2026"
       }
     ],
     "Germany": [
@@ -1987,7 +2000,19 @@
         "exit": "Yes",
         "comment": "NOC: Hosting a Tor-Relay is no problem on Fiber7 plans. We do recommend using a static IP or even a subnet when hosting Tor-Exit-Nodes because they often end up on block lists because of the high traffic. That way you prevent your own traffic from being affected by those blocks.",
         "last_updated": "09/04/25"
-      }
+      },
+      {
+        "name": "Packetra",
+        "url": "https://packetra.com/",
+        "asn": [
+          "AS51852"
+        ],
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "No",
+        "comment": "Bridges and non-exit relays allowed, exit nodes not permitted. Zurich servers run on the Private Layer network, AS51852. Signup requires only an email and password, no KYC. BTC and XMR accepted via self-hosted BTCPay Server.",
+        "last_updated": "10/2026"
+      }  
     ],
     "South Africa": [
       {
