@@ -741,6 +741,23 @@
         "exit": "Yes",
         "comment": "\"We allow Tor exits as long as they have a reduced exit policy.\" - I've used 10TB this month in total for all 3 of my exit nodes spread out in different locations. I've recieved 0 notices from Linode while using the free 100$ credits you get. I allow ports 53,80,443. My DE exit node is now the [2nd fastest](https://i.imgur.com/Owj6HkD.png) Linode relay, with UK third. I would recommend this host to use the free credits, but wouldn't really recommend paying as bandwidth is limited. Locations: US,CA,GB,DE,SG,JP,IN,AU,BR,SE,NL,ES",
         "last_updated": "10/07/2021"
+      },
+      {
+        "name": "Servinga",
+        "url": "https://servinga.com/",
+        "asn": [
+          "AS39378",
+          "AS58329",
+          "AS200220",
+          "AS207408",
+          "AS212228",
+          "AS219399"
+        ],
+        "bridge": "No",
+        "relay": "No",
+        "exit": "No",
+        "comment": "From their Terms of Service: \"The following [...] are not permitted: [...] Operating TOR relays and/or TOR exit nodes.\". They have suspended one of my servers because they suspected I ran a TOR relay on it even though I didn't.",
+        "last_updated": "2026-10-17"
       }
     ],
     "Hong Kong": [
