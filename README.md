@@ -146,3 +146,10 @@ odp_link: link to the odp guide
 This lektor site uses a special plugin called `community-generator`, you can find it in the `packages` directory. This plugin generates a special set of lektor contents files used for a js-free filtering system on the training resources page.
 
 You shouldn't need to do anything or know anything about this plugin in order to use it. If you want to develop on this plugin, see the plugin's [README](packages/community-generator/README.md).
+
+## License
+
+Content on this site is © The Tor Project, Inc. Unless otherwise noted, copyrightable content is licensed under the [Creative Commons Attribution 4.0 International License](LICENSE-CC-BY-4.0), as described in Tor's [trademark and copyright policy](https://www.torproject.org/about/trademark/).
+The code is licensed under the [BSD 3-Clause License](LICENSE).
+
+Third-party libraries and fonts included in this repository keep their own licenses.
