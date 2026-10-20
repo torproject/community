@@ -80,6 +80,46 @@ Reboots and tor daemon restarts are fine.
 
 For security reasons, Tor relays should not downgrade their tor version from a supported to an unsupported version of tor. Some unsupported versions are insecure. Relays that attempt to downgrade to an insecure version will be rejected from the network automatically.
 
+# Transparency and contact
+
+Using Tor is an act of privacy. Running a relay is an act of transparency.
+
+Tor protects users by spreading trust across thousands of relays run by many different people.
+No single relay knows both who a user is and where they are going.
+This only works if no single person or group secretly controls a large part of the network.
+
+When operators are open about who they are and which relays they run, the community can check that the network stays diverse and can spot attackers early.
+Operators who hide this make the network harder to protect, even when they mean well.
+
+Before you start a relay, make sure you are ready to:
+- Set a working **ContactInfo**.
+Use an email address that you read regularly, so we can reach you if there is a problem with your relay.
+- Declare all your relays as one family.
+If you run more than one relay, [configure them as a family](/relay/setup/post-install/family-ids/), so that Tor clients never use two of your relays in the same circuit.
+- Be part of the community.
+Join the [tor-relays mailing list or the Tor forum](/relay/getting-help) and introduce yourself.
+
+If you don't want to run relays under your own legal identity, you can join or start a [relay association](/relay/community-resources/relay-associations/).
+An association protects the privacy of its members and is still accountable to the Tor community.
+
+# The Tor Project may contact you
+
+The Tor Project's Network Health and Community team keeps an eye on the Tor network for unusual changes and welcome new relay operators.
+Talking with relay operators helps us tell volunteers apart from malicious actors.
+
+For example, we may contact you if:
+- You add many relays in a short time.
+- Your relays carry a large part of the network's traffic.
+- Something about your relays looks broken or unusual.
+
+We might ask you to confirm that you run the relays, to tell us about your contributions, or to have a short conversation by email or call.
+This is a normal part of keeping the network healthy and our community open for new contributors.
+
+We will never ask you to record or share user traffic, to provide your legal identification, to give us access to your servers, or to pay us.
+If we cannot reach you, or cannot build trust with you, your relays may be rejected from the network.
+
+For more details, read section the [Expectations for Relay Operators](https://community.torproject.org/policies/relays/expectations-for-relay-operators/).
+
 # In Summary
 
 Bridge relay:
