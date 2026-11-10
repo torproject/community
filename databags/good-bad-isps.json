@@ -2718,6 +2718,19 @@
         "exit": "Yes",
         "comment": "Support states that all kinds of Tor nodes are allowed as long as they comply with their [fair-use policy](https://snowcore.io/legal/fair-use). They ask to notify them before running an exit node.",
         "last_updated": "05/16/2024"
+        
+      },
+      {
+        "name": "Kamatera",
+        "url": "https://www.kamatera.com/",
+        "asn": [
+          "AS36007"
+        ],
+        "bridge": "No",
+        "relay": "No",
+        "exit": "No",
+        "comment": "Kamatera confirmed via email on November 5, 2026, that Tor-related services are not permitted.",
+        "last_updated": "11/10/2026"
       }
     ]
   }
