@@ -18,7 +18,7 @@ body:
 
 **Note: You should only run a Windows relay if you can run it 24/7. If you are unable to guarantee that, a [Snowflake](https://snowflake.torproject.org/) is a better way to contribute resources.**
 
-Setting up a Windows system as a relay requires performing a few simple steps to set up a user account, download the `Windows expert bundle`, implement a torrc configuration file and start up Tor from the command line.
+Setting up a Windows system as a relay requires performing a few simple steps to set up a user account, download the `tor expert bundle`, implement a torrc configuration file and start up Tor from the command line.
 Below are detailed instructions on how to perform these steps - please ensure you follow them very carefully, and make any of the necessary modifications outlined along the way.
 
 # 1. Creating a user account for Tor
@@ -31,20 +31,20 @@ First you will need to create a new account to allow Tor to run isolated from yo
 5. On the next panel, select the similar text on the bottom stating "Set up user without using a Microsoft account".
 6. Enter a username for the user. Anything you like is fine, though within this guide the username `torrelay` will  be used. Then enter a strong password and continue.
 
-# 2. Downloading and configuring the Windows Expert bundle
+# 2. Downloading and configuring the tor expert bundle
 
 ## 2.1 Downloading
 
-The next step is to download and install Windows Expert bundle as well as set up your torrc file.
+The next step is to download and install tor expert bundle as well as set up your torrc file.
 
-1. Head over to [Download Tor](https://download.torproject.org/tor/) and scroll down to select 'Windows Expert Bundle'. 
+1. Head over to [Download Tor](https://download.torproject.org/tor/) and scroll down to select 'tor expert bundle'. 
 2. Head to your `C:\Users\torrelay\` directory. 
 3. Create a folder called `tor`.
 *(Optional. A custom path can be used, though you will have to make necessary modifications in the following steps.)
 
 ## 2.2 Configuration 
 
-1. Unpack the zipped Expert bundle into your newly created Tor directory. Two folders will be placed there; one called `Tor`, and the other `Data`.
+1. Unpack the zipped expert bundle into your newly created Tor directory. Two folders will be placed there; one called `Tor`, and the other `Data`.
 2. You should now create a folder called `log` in `C:\Users\torrelay\tor`.
 You'll then need to create an empty file and name it `notices.log` in the `log` folder.
 3. You will now need to create a torrc file to define the ruleset of your relay. 
