@@ -98,6 +98,18 @@
         "exit": "Yes",
         "comment": "No problem, all allowed",
         "last_updated": "05/2025"
+      },
+      {
+        "name": "aluy.net",
+        "url": "https://aluy.net",
+        "asn": [
+          "AS211507"
+        ],
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "Tor fully allowed and supported within fair-use bandwidth. Locations: NL,FI,BG,HK",
+        "last_updated": "11/2026"
       }
     ],
     "Brazil": [
@@ -391,6 +403,18 @@
         "exit": "No",
         "comment": "Bridges and non-exit relays allowed, exit nodes not permitted. Turku runs on AS207003 (Web1 Oy network), Helsinki on Hetzner AS24940. Signup requires only an email and password, no KYC. BTC and XMR accepted via self-hosted BTCPay Server.",
         "last_updated": "10/2026"
+      },
+      {
+        "name": "aluy.net",
+        "url": "https://aluy.net",
+        "asn": [
+          "AS211507"
+        ],
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "Tor fully allowed and supported within fair-use bandwidth. Locations: NL,FI,BG,HK",
+        "last_updated": "11/2026"
       }
     ],
     "Germany": [
@@ -797,6 +821,18 @@
         "exit": "No",
         "comment": "They don't allow exits and will suspend your active services and restrict your access to the account if they receive abuse messages. KVM VPS. IPv4+IPv6 native support. * Gnu/Linux, FreeBSD and Windows server supported. Unmetered traffic.",
         "last_updated": "05/2024"
+      },
+      {
+        "name": "aluy.net",
+        "url": "https://aluy.net",
+        "asn": [
+          "AS211507"
+        ],
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "Yes",
+        "comment": "Tor fully allowed and supported within fair-use bandwidth. Locations: NL,FI,BG,HK",
+        "last_updated": "11/2026"
       }
     ],
     "Hungary": [
@@ -1424,22 +1460,22 @@
         "last_updated": "11/2023"
       },
       {
-        "name": "Aluy",
-        "url": "https://al.uy",
+        "name": "aluy.net",
+        "url": "https://aluy.net",
         "asn": [
           "AS211507"
         ],
         "bridge": "Yes",
         "relay": "Yes",
         "exit": "Yes",
-        "comment": "Tor fully allowed and supported as long as within a fair-use bandwidth.",
-        "last_updated": "05/2025"
+        "comment": "Tor fully allowed and supported within fair-use bandwidth. Locations: NL,FI,BG,HK",
+        "last_updated": "11/2026"
       },
       {
         "name": "Trivox",
         "url": "https://trivox.sh",
         "asn": [
-          "AS216078 "
+          "AS216078"
         ],
         "bridge": "Yes",
         "relay": "Yes",
