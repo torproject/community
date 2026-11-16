@@ -1091,6 +1091,18 @@
         "exit": "No",
         "comment": "\"To not use Time4VPS services for any of the following: [...] Hosting public Proxy or Tor services;\"",
         "last_updated": "07/2022"
+      },
+      {
+        "name": "Cherry Servers",
+        "url": "https://www.cherryservers.com/",
+        "asn": [
+          "AS16125"
+        ],
+        "bridge": "Yes",
+        "relay": "Yes",
+        "exit": "No",
+        "comment": "Confirmed via email by staff on November 13, 2026: Cherry Servers only prohibits Exit Nodes; non-exit relays and Obfs4 bridges are allowed.",
+        "last_updated": "11/13/26"
       }
     ],
     "Luxembourg": [
@@ -1168,6 +1180,18 @@
         "exit": "No",
         "comment": "They don't allow exits and will suspend your active services and restrict your access to the account if they receive abuse messages. KVM VPS. IPv4+IPv6 native support. * Gnu/Linux, FreeBSD and Windows server supported. Unmetered traffic.",
         "last_updated": "05/2024"
+      },
+      {
+        "name": "IPHOST",
+        "url": "https://iphost.md/",
+        "asn": [
+          "AS60602"
+        ],
+        "bridge": "Yes",
+        "relay": "-",
+        "exit": "No",
+        "comment": "They prohibit the use of open proxies that may generate spam-related issues. However, operating a non-exit Obfs4 Tor bridge is not explicitly prohibited by their Acceptable Use Policy, as confirmed via email on November 6, 2026.",
+        "last_updated": "11/06/26"
       }
     ],
     "Netherlands": [
@@ -1826,6 +1850,18 @@
         "exit": "Yes",
         "comment": "-",
         "last_updated": "08/2024"
+      },
+      {
+        "name": "VerticHost",
+        "url": "https://vertichost.com/",
+        "asn": [
+          "-"
+        ],
+        "bridge": "No",
+        "relay": "No",
+        "exit": "No",
+        "comment": "Confirmed via email on November 8, 2026: they do not approve the operation of Tor bridges on their services, including non-exit obfs4 bridges.",
+        "last_updated": "11/08/26"
       }
     ],
     "Singapore": [
