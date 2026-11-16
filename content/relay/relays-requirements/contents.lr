@@ -95,11 +95,11 @@ Before you start a relay, make sure you are ready to:
 - Set a working **ContactInfo**.
 Use an email address that you read regularly, so we can reach you if there is a problem with your relay.
 - Declare all your relays as one family.
-If you run more than one relay, [configure them as a family](/relay/setup/post-install/family-ids/), so that Tor clients never use two of your relays in the same circuit.
+If you run more than one relay, [configure them as a family](../setup/post-install/family-ids/), so that Tor clients never use two of your relays in the same circuit.
 - Be part of the community.
-Join the [tor-relays mailing list or the Tor forum](/relay/getting-help) and introduce yourself.
+Join the [tor-relays mailing list or the Tor forum](../getting-help) and introduce yourself.
 
-If you don't want to run relays under your own legal identity, you can join or start a [relay association](/relay/community-resources/relay-associations/).
+If you don't want to run relays under your own legal identity, you can join or start a [relay association](../community-resources/relay-associations/).
 An association protects the privacy of its members and is still accountable to the Tor community.
 
 # The Tor Project may contact you
